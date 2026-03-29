@@ -1,5 +1,6 @@
 import Page_ProposalNav from '../pages/Page_ProposalNav';
 import Page_SWOTAnalysis from '../pages/Page_SWOTAnalysis';
+import Page_SWOTStrategy from '../pages/Page_SWOTStrategy';
 
 export const slideConfig = [
   // ——— 封面 & 目录 ———
@@ -45,8 +46,10 @@ export const slideConfig = [
   // ——— 篇章3: GEO优化 ———
   { type: 'chapter', title: 'GEO优化', subtitle: 'GEO OPTIMIZATION', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
   { type: 'section', title: '一级标题1' },
-  { type: 'page', title: '页面1' },
+  { type: 'page', title: '页面1', component: Page_SWOTStrategy },
   { type: 'section', title: '一级标题2' },
+  { type: 'page', title: '页面2' },
+  { type: 'section', title: '一级标题3' },
 
   // ——— 篇章4: 阶段性复盘报告 ———
   { type: 'chapter', title: '阶段性复盘报告', subtitle: 'PHASE REVIEW', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
