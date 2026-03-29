@@ -41,6 +41,9 @@ export const slideConfig = [
 
   // ——— 篇章3: GEO优化 ———
   { type: 'chapter', title: 'GEO优化', subtitle: 'GEO OPTIMIZATION', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
+  { type: 'section', title: '一级标题1' },
+  { type: 'page', title: '页面1' },
+  { type: 'section', title: '一级标题2' },
 
   // ——— 篇章4: 阶段性复盘报告 ———
   { type: 'chapter', title: '阶段性复盘报告', subtitle: 'PHASE REVIEW', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
