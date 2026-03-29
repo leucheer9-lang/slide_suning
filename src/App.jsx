@@ -62,10 +62,33 @@ export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const getInitialOrder = () => {
-    const valid =
-      initialOrder.length > 0 &&
-      initialOrder.every((id) => id in slideDictionary);
-    return valid ? [...initialOrder] : [...defaultOrder];
+    const validIds = new Set(Object.keys(slideDictionary));
+    const initialSet = new Set(initialOrder);
+
+    // 过滤掉已从 config 删除的旧页面
+    const filteredInitial = initialOrder.filter((id) => validIds.has(id));
+
+    // 找出 config 中新增但不在已保存顺序里的页面
+    const newSlides = defaultOrder.filter((id) => !initialSet.has(id));
+
+    if (newSlides.length === 0) return filteredInitial;
+
+    // 将新页面插入到它们在 defaultOrder 中自然位置的对应位置
+    const result = [...filteredInitial];
+    for (const newId of newSlides) {
+      const defaultIndex = defaultOrder.indexOf(newId);
+      let insertAfterIndex = -1;
+      for (let i = defaultIndex - 1; i >= 0; i--) {
+        const existingIndex = result.indexOf(defaultOrder[i]);
+        if (existingIndex !== -1) {
+          insertAfterIndex = existingIndex;
+          break;
+        }
+      }
+      result.splice(insertAfterIndex + 1, 0, newId);
+    }
+
+    return result;
   };
 
   const [slideOrder, setSlideOrder] = useState(getInitialOrder);

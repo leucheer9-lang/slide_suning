@@ -38,6 +38,9 @@ export const slideConfig = [
 
   // ——— 篇章2: GEO体检报告 ———
   { type: 'chapter', title: 'GEO体检报告', subtitle: 'GEO HEALTH CHECK', backgroundImage: '/proposal-chapters/proposal-chapter-cover-02.jpg' },
+  { type: 'section', title: '一级标题1' },
+  { type: 'page', title: '页面1' },
+  { type: 'section', title: '一级标题2' },
 
   // ——— 篇章3: GEO优化 ———
   { type: 'chapter', title: 'GEO优化', subtitle: 'GEO OPTIMIZATION', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
