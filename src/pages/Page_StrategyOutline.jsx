@@ -8,7 +8,7 @@ export default function Page_StrategyOutline() {
             </div>
 
             <div className="relative z-20 w-full flex flex-col items-center mt-10 lg:mt-12 flex-shrink-0">
-                <h1 className="text-4xl lg:text-5xl font-bold tracking-tight text-white mb-3 tracking-widest">战略与 GEO 行动建议</h1>
+                <h1 className="text-4xl lg:text-[2.8rem] font-bold tracking-tight text-white mb-3 tracking-widest font-['AlimamaShuHeiTi']">战略与 GEO 行动建议</h1>
             </div>
 
             <div className="flex-1 relative z-10 w-full flex items-center justify-center px-12 lg:px-20 py-2 pb-16 min-h-0">

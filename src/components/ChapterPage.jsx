@@ -14,6 +14,23 @@ function DefaultPlaceholder({ title }) {
 
 export default function ChapterPage({ chapterIndex, sectionIndex, pageIndex, component: ContentComponent, title }) {
 
+  if (ContentComponent && ContentComponent.isFullCanvasMode) {
+    return (
+      <div className="w-full h-full relative bg-black overflow-hidden text-white">
+        <div className="absolute inset-0 z-0">
+          <ContentComponent />
+        </div>
+        <div className="absolute top-0 left-0 w-full z-10 pointer-events-none [&>*]:pointer-events-auto">
+          <ChapterNav
+            chapterIndex={chapterIndex}
+            sectionIndex={sectionIndex}
+            pageIndex={pageIndex}
+          />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="w-full h-full flex flex-col relative bg-black overflow-hidden text-white">
       <div className="absolute inset-0 z-0">
