@@ -152,6 +152,10 @@ export const slideConfig = [
   // ══════════════════════════════════════════════════════════
   { type: 'chapter', title: '数据量化分析', subtitle: 'DATA QUANTIFICATION', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
 
+  { type: 'section', title: '投放平台量化分析' },
+
+  { type: 'section', title: '投放文章量化分析' },
+
   // ══════════════════════════════════════════════════════════
   // ——— 篇章6: 多余页面 ———
   // ══════════════════════════════════════════════════════════
@@ -164,6 +168,5 @@ export const slideConfig = [
   { type: 'section', title: '内容生成' },
   { type: 'page', title: '构建品牌知识库', component: PB_BrandKnowledgeBase },
   { type: 'page', title: '用户评论数据分析', component: PB_UserReviewAnalysis },
-  { type: 'page', title: '文章数据清洗分析', component: PB_ArticleDataAnalysis },
 
 ];

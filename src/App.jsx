@@ -219,9 +219,8 @@ export default function App() {
 
       {/* TOC Sidebar Drawer */}
       <div
-        className={`fixed top-0 left-0 h-full w-64 sm:w-80 bg-zinc-950/95 backdrop-blur-2xl border-r border-zinc-800/50 z-50 transform transition-transform duration-500 ease-out shadow-2xl flex flex-col ${
-          isMenuOpen ? 'translate-x-0' : '-translate-x-full'
-        }`}
+        className={`fixed top-0 left-0 h-full w-64 sm:w-80 bg-zinc-950/95 backdrop-blur-2xl border-r border-zinc-800/50 z-50 transform transition-transform duration-500 ease-out shadow-2xl flex flex-col ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'
+          }`}
         onClick={(e) => e.stopPropagation()}
       >
         <div className="p-8 flex flex-col h-full">
@@ -255,13 +254,12 @@ export default function App() {
                         <div
                           ref={provided.innerRef}
                           {...provided.draggableProps}
-                          className={`flex items-center rounded-xl transition-all duration-200 ${
-                            snapshot.isDragging
+                          className={`flex items-center rounded-xl transition-all duration-200 ${snapshot.isDragging
                               ? 'bg-zinc-800 shadow-xl opacity-90 z-50 scale-[1.02]'
                               : currentSlide === index
                                 ? 'bg-zinc-800 text-white font-medium'
                                 : 'text-zinc-400 hover:bg-zinc-900/80 hover:text-zinc-200 cursor-pointer'
-                          }`}
+                            }`}
                           onClick={() => jumpToSlide(index)}
                         >
                           <div
@@ -311,13 +309,12 @@ export default function App() {
                 <button
                   onClick={saveOrder}
                   disabled={isSaving}
-                  className={`w-full py-3 rounded-xl font-medium text-sm flex items-center justify-center gap-2 transition-all duration-300 shadow-lg ${
-                    saveStatus === 'success'
+                  className={`w-full py-3 rounded-xl font-medium text-sm flex items-center justify-center gap-2 transition-all duration-300 shadow-lg ${saveStatus === 'success'
                       ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/50'
                       : saveStatus === 'error'
                         ? 'bg-red-500/20 text-red-400 border border-red-500/50'
                         : 'bg-blue-600 hover:bg-blue-500 text-white shadow-blue-900/20'
-                  }`}
+                    }`}
                 >
                   {isSaving ? (
                     <span className="animate-pulse">保存中...</span>
@@ -387,7 +384,7 @@ export default function App() {
         onClick={(e) => {
           e.stopPropagation();
           if (!document.fullscreenElement) {
-            document.documentElement.requestFullscreen().catch(() => {});
+            document.documentElement.requestFullscreen().catch(() => { });
           } else {
             if (document.exitFullscreen) document.exitFullscreen();
           }
