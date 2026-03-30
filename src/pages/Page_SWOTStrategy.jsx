@@ -52,15 +52,12 @@ export default function Page_SWOTStrategy() {
         <div className="w-full h-full flex flex-col relative bg-black overflow-hidden text-white font-sans">
 
             {/* Header: Core Idea */}
-            <div className="relative z-20 w-full px-8 lg:px-16 pt-2 shrink-0">
-                <div className="flex flex-col gap-3">
-                    <div className="flex items-center gap-3">
-                        <div className="w-1.5 h-8 sm:h-10 bg-white rounded-full shadow-[0_0_15px_rgba(255,255,255,0.4)]" />
-                        <h1 className="text-3xl xl:text-4xl font-black text-white tracking-widest flex items-baseline">
-                            核心思路<span className="text-2xl xl:text-3xl font-bold ml-4 text-white/80 shrink-0">错位竞争，而不是正面消耗</span>
-                        </h1>
-                    </div>
-                    <div className="pl-4 lg:pl-5 border-l-2 border-white/20 ml-2 mt-2 xl:mt-3 max-w-5xl">
+            <div className="relative z-20 w-full px-8 lg:px-16 pt-2 shrink-0 flex flex-col items-center">
+                <div className="flex flex-col gap-1 xl:gap-2 items-center text-center max-w-5xl">
+                    <h1 className="text-3xl xl:text-4xl font-black text-white tracking-widest flex items-baseline justify-center">
+                        核心思路<span className="text-2xl xl:text-3xl font-bold ml-4 text-white/80 shrink-0">错位竞争，而不是正面消耗</span>
+                    </h1>
+                    <div className="mt-1 xl:mt-2">
                         <p className="text-[0.95rem] xl:text-[1.05rem] leading-relaxed text-zinc-300 font-medium tracking-wide">
                             避免在外观与空间设计上与成熟品牌正面对抗，把竞争重点转向<strong className="text-white font-bold mx-1">营养保留、数据验证和搜索场景中的决策影响力</strong>，将冰箱从“家电产品”重新定义为<strong className="text-white font-bold ml-1">“功能型设备”</strong>。
                         </p>
@@ -69,39 +66,39 @@ export default function Page_SWOTStrategy() {
             </div>
 
             {/* Main Content Area: 2x2 Grid for Strategies */}
-            <div className="flex-1 relative z-10 w-full px-8 lg:px-16 pb-16 xl:pb-24 pt-4 xl:pt-6 flex items-center justify-center min-h-0">
+            <div className="flex-1 relative z-10 w-full px-8 lg:px-16 pb-4 xl:pb-8 pt-2 flex items-center justify-center min-h-0">
                 <div className="w-full max-w-[1600px] h-full relative">
 
-                    <div className="grid grid-cols-2 grid-rows-2 h-full gap-5 sm:gap-6 pt-0 pb-0">
+                    <div className="grid grid-cols-2 grid-rows-2 h-full gap-3 xl:gap-5 pt-0 pb-0">
                         {strategies.map((strategy, idx) => (
                             <div key={idx} className="relative flex flex-col items-start bg-white/[0.015] rounded-2xl border border-rose-500/20 p-4 xl:p-5 overflow-hidden group">
                                 <div className="absolute inset-0 bg-gradient-to-br from-rose-500/5 to-transparent pointer-events-none" />
 
                                 {/* Strategy Header */}
-                                <div className="w-full flex justify-start items-start mb-3 xl:mb-4 relative z-10 shrink-0">
-                                    <div className="w-1.5 h-4 xl:h-5 bg-rose-500 rounded-full mr-2.5 shadow-[0_0_8px_rgba(244,63,94,0.4)] shrink-0 mt-[4px]" />
-                                    <h2 className="text-[1rem] xl:text-[1.1rem] font-bold tracking-wide text-rose-400 leading-snug">
+                                <div className="w-full flex justify-start items-start mb-1.5 xl:mb-2 relative z-10 shrink-0">
+                                    <div className="w-1.5 h-[1.32rem] xl:h-[1.45rem] bg-rose-500 rounded-full mr-2.5 shadow-[0_0_8px_rgba(244,63,94,0.4)] shrink-0 mt-[4px]" />
+                                    <h2 className="text-[1.32rem] xl:text-[1.45rem] font-bold tracking-wide text-rose-400 leading-tight">
                                         {strategy.id}：<span className="text-white/95">{strategy.title}</span>
                                     </h2>
                                 </div>
 
-                                <div className="flex-1 overflow-y-auto custom-scrollbar min-h-0 w-full flex flex-col gap-2.5 xl:gap-3 relative z-10 pr-2">
+                                <div className="flex-1 min-h-0 w-full flex flex-col gap-1.5 xl:gap-2.5 relative z-10 pr-1">
                                     {/* 问题本质 */}
-                                    <div className="flex flex-col gap-1">
-                                        <span className="text-white/80 font-bold block text-[0.8rem] xl:text-[0.85rem]">▼ 问题本质</span>
-                                        <p className="text-[0.75rem] xl:text-[0.8rem] text-white/50 leading-relaxed font-light">
+                                    <div className="flex flex-col gap-0.5 xl:gap-1">
+                                        <span className="text-white/80 font-bold block text-[1.05rem] xl:text-[1.12rem]">问题本质</span>
+                                        <p className="text-[0.99rem] xl:text-[1.05rem] text-white/50 leading-tight font-light">
                                             {strategy.problem}
                                         </p>
                                     </div>
 
                                     {/* 调整方向 */}
-                                    <div className="flex flex-col gap-1.5">
-                                        <span className="text-white/80 font-bold block text-[0.8rem] xl:text-[0.85rem]">▼ 调整方向</span>
-                                        <div className="flex flex-col gap-1.5 xl:gap-2 pl-1.5">
+                                    <div className="flex flex-col gap-1 xl:gap-1.5">
+                                        <span className="text-white/80 font-bold block text-[1.05rem] xl:text-[1.12rem]">调整方向</span>
+                                        <div className="flex flex-col gap-0.5 xl:gap-1 pl-1.5">
                                             {strategy.directions.map((dir, dIdx) => (
                                                 <div key={dIdx} className="flex gap-2 items-start">
-                                                    <span className="text-rose-400 font-bold text-[0.8rem] shrink-0 mt-[2px]">•</span>
-                                                    <div className="flex-1 text-[0.75rem] xl:text-[0.8rem] leading-snug">
+                                                    <span className="text-rose-400 font-bold text-[1.05rem] shrink-0 mt-[2px]">•</span>
+                                                    <div className="flex-1 text-[0.99rem] xl:text-[1.05rem] leading-tight">
                                                         <span className="font-bold text-white/80 mr-1.5">{dir.name}：</span>
                                                         <span className="text-white/50">{dir.desc}</span>
                                                     </div>

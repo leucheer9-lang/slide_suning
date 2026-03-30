@@ -8,7 +8,7 @@ export default function Page_DeliveryStrategy_Combo() {
             </div>
 
             <div className="relative z-20 w-full flex flex-col items-center mt-6 lg:mt-8 flex-shrink-0">
-                <h1 className="text-3xl lg:text-4xl font-bold tracking-tight text-white mb-3">特定组合投放策略</h1>
+                <h1 className="text-3xl lg:text-4xl font-bold tracking-tight text-white mb-3">特定组合</h1>
                 <p className="text-[1.1rem] lg:text-[1.2rem] text-rose-400 font-medium tracking-wide">
                     通过特定组合的投放配合内容策略进行定点精准覆盖（不投放主流“大平台”）
                 </p>

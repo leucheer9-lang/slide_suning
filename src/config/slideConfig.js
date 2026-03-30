@@ -57,6 +57,8 @@ export const slideConfig = [
 
   // ——— 篇章4: 阶段性复盘报告 ———
   { type: 'chapter', title: '阶段性复盘报告', subtitle: 'PHASE REVIEW', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
+  { type: 'section', title: '一级标题2' },
+  { type: 'page', title: '示例' },
 
   // ——— 篇章5: 方太新增 ———
   { type: 'chapter', title: '方太新增页面', subtitle: 'PHASE REVIEW', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },

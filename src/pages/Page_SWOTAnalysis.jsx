@@ -31,8 +31,7 @@ export default function Page_SWOTAnalysis() {
 
             {/* Header */}
             <div className="relative z-20 w-full px-8 lg:px-16 pt-4 sm:pt-6 shrink-0">
-                <div className="flex items-center gap-3 pl-2">
-                    <div className="w-1.5 h-8 sm:h-10 bg-rose-600 rounded-full shadow-[0_0_15px_rgba(225,29,72,0.4)]" />
+                <div className="flex items-center justify-center gap-3">
                     <h1 className="text-3xl sm:text-4xl font-black text-white tracking-widest flex items-baseline">
                         SWOT<span className="text-2xl sm:text-3xl font-bold ml-3 text-white/70">卡萨帝冰箱分析</span>
                     </h1>
@@ -40,7 +39,7 @@ export default function Page_SWOTAnalysis() {
             </div>
 
             {/* Main Content Area */}
-            <div className="flex-1 relative z-10 w-full px-8 lg:px-16 pb-16 lg:pb-24 pt-2 flex items-center justify-center min-h-0">
+            <div className="flex-1 relative z-10 w-full px-8 lg:px-16 pb-4 lg:pb-6 pt-0 mt-[10px] flex items-center justify-center min-h-0">
 
                 <div className="w-full max-w-[1500px] h-full relative">
 
@@ -57,18 +56,18 @@ export default function Page_SWOTAnalysis() {
                         <div className="relative flex flex-col items-start bg-white/[0.015] rounded-2xl border border-rose-500/20 p-4 lg:p-5 overflow-hidden group">
                             <div className="absolute inset-0 bg-gradient-to-br from-rose-500/5 to-transparent pointer-events-none" />
                             <div className="w-full flex justify-start items-center mb-3 relative z-10 shrink-0">
-                                <h2 className="text-2xl font-bold tracking-wider flex items-center gap-2">
+                                <h2 className="text-[1.7rem] lg:text-[1.8rem] font-bold tracking-wider flex items-center gap-2">
                                     <span className="text-rose-400">优势</span>
-                                    <span className="text-xl text-white/90">（Strengths）</span>
+                                    <span className="text-[1.35rem] text-white/90">（Strengths）</span>
                                 </h2>
                             </div>
-                            <div className="flex flex-col gap-2 lg:gap-3 relative z-10 w-full">
+                            <div className="flex flex-col gap-3 lg:gap-4 relative z-10 w-full">
                                 {swotData.S.map(item => (
                                     <div key={item.id} className="flex gap-3 leading-relaxed">
-                                        <span className="text-rose-400 text-base font-bold shrink-0 mt-0.5">• {item.id}</span>
+                                        <span className="text-rose-400 text-[1.05rem] lg:text-[1.15rem] font-bold shrink-0 mt-0.5">• {item.id}</span>
                                         <div className="flex flex-col gap-1">
-                                            <span className="font-bold text-[0.9rem] lg:text-[1rem] text-white/95">{item.title}</span>
-                                            <p className="text-[0.85rem] lg:text-[0.9rem] text-white/60">{item.content}</p>
+                                            <span className="font-bold text-[1.05rem] lg:text-[1.15rem] text-white/95">{item.title}</span>
+                                            <p className="text-[0.95rem] lg:text-[1.05rem] text-white/60">{item.content}</p>
                                         </div>
                                     </div>
                                 ))}
@@ -79,18 +78,18 @@ export default function Page_SWOTAnalysis() {
                         <div className="relative flex flex-col items-start bg-white/[0.015] rounded-2xl border border-white/5 p-4 lg:p-5 overflow-hidden group">
                             <div className="absolute inset-0 bg-gradient-to-bl from-white/5 to-transparent pointer-events-none" />
                             <div className="w-full flex justify-end items-center mb-3 relative z-10 shrink-0">
-                                <h2 className="text-2xl font-bold tracking-wider flex items-center gap-2">
+                                <h2 className="text-[1.7rem] lg:text-[1.8rem] font-bold tracking-wider flex items-center gap-2">
                                     <span className="text-white/90">劣势</span>
-                                    <span className="text-xl text-white/70">（Weaknesses）</span>
+                                    <span className="text-[1.35rem] text-white/70">（Weaknesses）</span>
                                 </h2>
                             </div>
-                            <div className="flex flex-col gap-2 lg:gap-3 relative z-10 w-full">
+                            <div className="flex flex-col gap-3 lg:gap-4 relative z-10 w-full">
                                 {swotData.W.map(item => (
                                     <div key={item.id} className="flex gap-3 leading-relaxed">
-                                        <span className="text-white/70 text-base font-bold shrink-0 mt-0.5">• {item.id}</span>
+                                        <span className="text-white/70 text-[1.05rem] lg:text-[1.15rem] font-bold shrink-0 mt-0.5">• {item.id}</span>
                                         <div className="flex flex-col gap-1">
-                                            <span className="font-bold text-[0.9rem] lg:text-[1rem] text-white/95">{item.title}</span>
-                                            <p className="text-[0.85rem] lg:text-[0.9rem] text-white/60">{item.content}</p>
+                                            <span className="font-bold text-[1.05rem] lg:text-[1.15rem] text-white/95">{item.title}</span>
+                                            <p className="text-[0.95rem] lg:text-[1.05rem] text-white/60">{item.content}</p>
                                         </div>
                                     </div>
                                 ))}
@@ -101,18 +100,18 @@ export default function Page_SWOTAnalysis() {
                         <div className="relative flex flex-col items-start bg-white/[0.015] rounded-2xl border border-white/5 p-4 lg:p-5 overflow-hidden group">
                             <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none" />
                             <div className="w-full flex justify-start items-center mb-3 relative z-10 shrink-0">
-                                <h2 className="text-2xl font-bold tracking-wider flex items-center gap-2">
+                                <h2 className="text-[1.7rem] lg:text-[1.8rem] font-bold tracking-wider flex items-center gap-2">
                                     <span className="text-white/90">威胁</span>
-                                    <span className="text-xl text-white/70">（Threats）</span>
+                                    <span className="text-[1.35rem] text-white/70">（Threats）</span>
                                 </h2>
                             </div>
-                            <div className="flex flex-col gap-2 lg:gap-3 relative z-10 w-full">
+                            <div className="flex flex-col gap-3 lg:gap-4 relative z-10 w-full">
                                 {swotData.T.map(item => (
                                     <div key={item.id} className="flex gap-3 leading-relaxed">
-                                        <span className="text-white/70 text-base font-bold shrink-0 mt-0.5">• {item.id}</span>
+                                        <span className="text-white/70 text-[1.05rem] lg:text-[1.15rem] font-bold shrink-0 mt-0.5">• {item.id}</span>
                                         <div className="flex flex-col gap-1">
-                                            <span className="font-bold text-[0.9rem] lg:text-[1rem] text-white/95">{item.title}</span>
-                                            <p className="text-[0.85rem] lg:text-[0.9rem] text-white/60">{item.content}</p>
+                                            <span className="font-bold text-[1.05rem] lg:text-[1.15rem] text-white/95">{item.title}</span>
+                                            <p className="text-[0.95rem] lg:text-[1.05rem] text-white/60">{item.content}</p>
                                         </div>
                                     </div>
                                 ))}
@@ -123,18 +122,18 @@ export default function Page_SWOTAnalysis() {
                         <div className="relative flex flex-col items-start bg-white/[0.015] rounded-2xl border border-rose-500/20 p-4 lg:p-5 overflow-hidden group">
                             <div className="absolute inset-0 bg-gradient-to-tl from-rose-500/5 to-transparent pointer-events-none" />
                             <div className="w-full flex justify-end items-center mb-3 relative z-10 shrink-0">
-                                <h2 className="text-2xl font-bold tracking-wider flex items-center gap-2">
+                                <h2 className="text-[1.7rem] lg:text-[1.8rem] font-bold tracking-wider flex items-center gap-2">
                                     <span className="text-rose-400">机遇</span>
-                                    <span className="text-xl text-white/90">（Opportunities）</span>
+                                    <span className="text-[1.35rem] text-white/90">（Opportunities）</span>
                                 </h2>
                             </div>
-                            <div className="flex flex-col gap-2 lg:gap-3 relative z-10 w-full">
+                            <div className="flex flex-col gap-3 lg:gap-4 relative z-10 w-full">
                                 {swotData.O.map(item => (
                                     <div key={item.id} className="flex gap-3 leading-relaxed">
-                                        <span className="text-rose-400 text-base font-bold shrink-0 mt-0.5">• {item.id}</span>
+                                        <span className="text-rose-400 text-[1.05rem] lg:text-[1.15rem] font-bold shrink-0 mt-0.5">• {item.id}</span>
                                         <div className="flex flex-col gap-1">
-                                            <span className="font-bold text-[0.9rem] lg:text-[1rem] text-white/95">{item.title}</span>
-                                            <p className="text-[0.85rem] lg:text-[0.9rem] text-white/60">{item.content}</p>
+                                            <span className="font-bold text-[1.05rem] lg:text-[1.15rem] text-white/95">{item.title}</span>
+                                            <p className="text-[0.95rem] lg:text-[1.05rem] text-white/60">{item.content}</p>
                                         </div>
                                     </div>
                                 ))}
