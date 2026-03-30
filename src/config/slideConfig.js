@@ -6,7 +6,12 @@ import Page_ArticleDataAnalysisHisense from '../pages/Page_ArticleDataAnalysisHi
 import Page_ArticleGenerationDemo from '../pages/Page_ArticleGenerationDemo';
 import Page_ArticleDataAnalysisStrategy2 from '../pages/Page_ArticleDataAnalysisStrategy2';
 import Page_ArticleGenerationDemo2 from '../pages/Page_ArticleGenerationDemo2';
-import Page_DeliveryStrategy from '../pages/Page_DeliveryStrategy';
+import Page_DeliveryStrategy_Platform from '../pages/Page_DeliveryStrategy_Platform';
+import Page_DeliveryStrategy_Combo from '../pages/Page_DeliveryStrategy_Combo';
+import Page_SectionCore from '../pages/Page_SectionCore';
+import Page_SectionBroad from '../pages/Page_SectionBroad';
+import Page_SectionExclusive from '../pages/Page_SectionExclusive';
+import Page_SectionSummary from '../pages/Page_SectionSummary';
 
 export const slideConfig = [
   // ——— 封面 & 目录 ———
@@ -54,8 +59,11 @@ export const slideConfig = [
   // ——— 篇章5: 方太新增 ———
   { type: 'chapter', title: '方太新增页面', subtitle: 'PHASE REVIEW', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
   { type: 'section', title: '数据分析' },
+  { type: 'page', title: '方太冰箱 GEO近期监测深度诊断与推演报告', },
+  { type: 'page', title: '战略与 GEO 行动建议', },
   { type: 'section', title: 'GEO战略规划' },
-  { type: 'page', title: '三个板块介绍' },
+  { type: 'page', title: '三个板块介绍', components: [Page_SectionCore, Page_SectionBroad, Page_SectionExclusive] },
+  { type: 'page', title: '总结', component: Page_SectionSummary },
   { type: 'section', title: '执行规划-“搭便车”具体执行要点' },
   { type: 'page', title: '方太冰箱SWOT分析', component: Page_SWOTAnalysisFotile },
   { type: 'page', title: '卡萨帝冰箱SWOT分析', component: Page_SWOTAnalysis },
@@ -64,11 +72,7 @@ export const slideConfig = [
   { type: 'page', title: '生成文章示意1', component: Page_ArticleGenerationDemo },
   { type: 'page', title: '两个内容策略2', component: Page_ArticleDataAnalysisStrategy2 },
   { type: 'page', title: '生成文章示意2', component: Page_ArticleGenerationDemo2 },
-  { type: 'page', title: '两个投放策略', component: Page_DeliveryStrategy },
-
-
-
-
+  { type: 'page', title: '两个投放策略', components: [Page_DeliveryStrategy_Platform, Page_DeliveryStrategy_Combo] },
 
 
 ];
