@@ -12,6 +12,8 @@ import Page_SectionCore from '../pages/Page_SectionCore';
 import Page_SectionBroad from '../pages/Page_SectionBroad';
 import Page_SectionExclusive from '../pages/Page_SectionExclusive';
 import Page_SectionSummary from '../pages/Page_SectionSummary';
+import Page_GeoReportAnalysis from '../pages/Page_GeoReportAnalysis';
+import Page_StrategyOutline from '../pages/Page_StrategyOutline';
 
 export const slideConfig = [
   // ——— 封面 & 目录 ———
@@ -59,8 +61,8 @@ export const slideConfig = [
   // ——— 篇章5: 方太新增 ———
   { type: 'chapter', title: '方太新增页面', subtitle: 'PHASE REVIEW', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
   { type: 'section', title: '数据分析' },
-  { type: 'page', title: '方太冰箱 GEO近期监测深度诊断与推演报告', },
-  { type: 'page', title: '战略与 GEO 行动建议', },
+  { type: 'page', title: '方太冰箱 GEO报告', component: Page_GeoReportAnalysis },
+  { type: 'page', title: '战略与 GEO 行动建议', component: Page_StrategyOutline },
   { type: 'section', title: 'GEO战略规划' },
   { type: 'page', title: '三个板块介绍', components: [Page_SectionCore, Page_SectionBroad, Page_SectionExclusive] },
   { type: 'page', title: '总结', component: Page_SectionSummary },
