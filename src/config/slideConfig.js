@@ -1,6 +1,12 @@
 import Page_ProposalNav from '../pages/Page_ProposalNav';
 import Page_SWOTAnalysis from '../pages/Page_SWOTAnalysis';
 import Page_SWOTStrategy from '../pages/Page_SWOTStrategy';
+import Page_SWOTAnalysisFotile from '../pages/Page_SWOTAnalysisFotile';
+import Page_ArticleDataAnalysisHisense from '../pages/Page_ArticleDataAnalysisHisense';
+import Page_ArticleGenerationDemo from '../pages/Page_ArticleGenerationDemo';
+import Page_ArticleDataAnalysisStrategy2 from '../pages/Page_ArticleDataAnalysisStrategy2';
+import Page_ArticleGenerationDemo2 from '../pages/Page_ArticleGenerationDemo2';
+import Page_DeliveryStrategy from '../pages/Page_DeliveryStrategy';
 
 export const slideConfig = [
   // ——— 封面 & 目录 ———
@@ -27,15 +33,6 @@ export const slideConfig = [
   { type: 'section', title: '目标行业信息' },
   { type: 'page', title: '冰箱是什么？', components: [Page_ProposalNav, Page_SWOTAnalysis] },
   { type: 'page', title: '冰箱卖给谁？', component: Page_SWOTAnalysis },
-  { type: 'page', title: '冰箱的主要品牌' },
-  { type: 'section', title: '目标产品信息' },
-  { type: 'page', title: '方太冰箱是什么？' },
-  { type: 'page', title: '测试' },
-  { type: 'page', title: '新明珠岩板卖给谁？' },
-  { type: 'section', title: '测试3' },
-  { type: 'page', title: '测试1' },
-  { type: 'page', title: '地短发短发' },
-  { type: 'page', title: '测试' },
 
   // ——— 篇章2: GEO体检报告 ———
   { type: 'chapter', title: 'GEO体检报告', subtitle: 'GEO HEALTH CHECK', backgroundImage: '/proposal-chapters/proposal-chapter-cover-02.jpg' },
@@ -53,4 +50,25 @@ export const slideConfig = [
 
   // ——— 篇章4: 阶段性复盘报告 ———
   { type: 'chapter', title: '阶段性复盘报告', subtitle: 'PHASE REVIEW', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
+
+  // ——— 篇章5: 方太新增 ———
+  { type: 'chapter', title: '方太新增页面', subtitle: 'PHASE REVIEW', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
+  { type: 'section', title: '数据分析' },
+  { type: 'section', title: 'GEO战略规划' },
+  { type: 'page', title: '三个板块介绍' },
+  { type: 'section', title: '执行规划-“搭便车”具体执行要点' },
+  { type: 'page', title: '方太冰箱SWOT分析', component: Page_SWOTAnalysisFotile },
+  { type: 'page', title: '卡萨帝冰箱SWOT分析', component: Page_SWOTAnalysis },
+  { type: 'page', title: 'SWOT分析与策略', component: Page_SWOTStrategy },
+  { type: 'page', title: '两个内容策略1', component: Page_ArticleDataAnalysisHisense },
+  { type: 'page', title: '生成文章示意1', component: Page_ArticleGenerationDemo },
+  { type: 'page', title: '两个内容策略2', component: Page_ArticleDataAnalysisStrategy2 },
+  { type: 'page', title: '生成文章示意2', component: Page_ArticleGenerationDemo2 },
+  { type: 'page', title: '两个投放策略', component: Page_DeliveryStrategy },
+
+
+
+
+
+
 ];

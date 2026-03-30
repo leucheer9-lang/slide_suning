@@ -1,27 +1,28 @@
 import React from 'react';
 
-export default function Page_SWOTAnalysis() {
+export default function Page_SWOTAnalysisFotile() {
     const swotData = {
         S: [
-            { id: 'S1', title: '行业标准的绝对定义权（高）', content: '联合制定“原创平嵌”标准，在空间美学上构筑了极深的护城河与话语权。' },
-            { id: 'S2', title: '极致的平嵌物理与工程设计（高）', content: '遵循594mm深度与前置散热，实现“零闪缝”无死角开门。' },
-            { id: 'S3', title: '庞大的智慧家庭生态协同能力（高）', content: '与旗下智慧厨电深度打通，提供一站式无缝饮食解决方案。' },
-            { id: 'S4', title: '绝对统治级的AI搜索心智与流量（高）', content: 'GEO数据总体提及率高达70.3%，Top1首选占比31.4%，展现压倒性优势。' },
+            { id: 'S1', title: '跨代际的“主动制氮”保鲜科技底牌（高）', content: '搭载“主动气调”，从被动防御升级为构建微环境，具备极高技术壁垒。' },
+            { id: 'S2', title: '降维打击的量化实测数据背书（高）', content: '首获TÜV认证，高达98.5%花青素留存率，重构冰洗功能评价标准。' },
+            { id: 'S3', title: '纯粹技术口碑与细分AI心智统治力（高）', content: 'AI舆情0负面，细分高价值搜索词提及率67.9%，呈现技术统治地位。' },
+            { id: 'S4', title: '优秀的物理空间嵌入设计基础（中）', content: '荣获iF设计金奖，成功解决全嵌难题，满足高端厨居基础美学要求。' },
         ],
         W: [
-            { id: 'W1', title: '保鲜技术的代际局限性（中/高）', content: '核心保鲜属“被动抑制”，易受“主动制氮”等跨界技术实施维度打击。' },
-            { id: 'W2', title: '评价标准的感官主观性（中）', content: '保鲜效果主要诉诸主观体验，缺乏权威量化的客观实验数据支撑。' },
-            { id: 'W3', title: '营销语境易陷入传统“物理参数”内卷（中）', content: '过度绑定“缝隙尺寸”等外在参数，易被后发破局者借全新赛道解构。' },
+            { id: 'W1', title: '冰箱品类“资历尚浅”带来的认知摩擦（高）', content: '面临超高端定价时，作为赛道新人缺乏“老钱”品牌底蕴式溢价支撑。' },
+            { id: 'W2', title: '全屋智能生态与品类横向广度的缺失（高）', content: '缺乏洗衣机等品类横向支撑，难以靠套系化总包分摊高昂价格感知。' },
+            { id: 'W3', title: '泛流量入口与大众心智的严重断层（中/高）', content: '在“高端冰箱推荐”等大泛商业词条提及率偏低，舆论场先发劣势明显。' },
+            { id: 'W4', title: '技术概念生僻导致市场教育成本过高（中）', content: '远洋气调等概念晦涩，若未转化为核心利益点易陷入孤芳自赏僵局。' },
         ],
         T: [
-            { id: 'T1', title: '跨界破局者的“降维打击”与赛道重新定义（高）', content: '厨电巨头携新科技入局，试图将标准从“外观美学”拉向“量化营养锁定”。' },
-            { id: 'T2', title: '传统巨头的战术跟进与价格封杀（中/高）', content: '竞争对手若推出平替产品或降价，将挤压终端铺货和溢价空间。' },
-            { id: 'T3', title: '消费决策面临更严苛的品味与溢价审视（中）', content: '经济周期下，消费者对高单价产品的功能价值与社交溢价审视更为苛刻。' },
+            { id: 'T1', title: '传统巨头对“行业评估标准”的强势绑架（高）', content: '传统竞品锁死物理外观与容量评估语境，若陷入此参数内卷将极其被动。' },
+            { id: 'T2', title: '头部品牌的线下防守反击与物理封杀（高）', content: '传统巨头拥有深厚分销推力，极可能用平替降价绞杀其终端铺货空间。' },
+            { id: 'T3', title: '消费者传统的“按件/按体积”比价思维（中）', content: '若未能建立“跨界替代”认知，极速与传统多门冰箱横向比价会产生价格抗拒。' },
         ],
         O: [
-            { id: 'O1', title: '高端定制与“厨居一体化”市场持续扩容（高）', content: '高净值人群对极简美学追求升级，一体化家装市场盘子仍在扩张。' },
-            { id: 'O2', title: '生成式AI技术重塑用户决策路径（高）*', content: '重度决策依赖AI调研，利好卡萨帝现有的高权重AI资产与流量流转。' },
-            { id: 'O3', title: '消费者对“全健康、无缝智能”的诉求升级（中/高）', content: '用户痛点从“不坏”转至“营养管理”，推动冰箱向健康仪器升维。' },
+            { id: 'O1', title: '饮食精细化引发的品类升维风口（高）', content: '用户对“保鲜”升维至“细胞营养锁定”，与医疗级营养舱定位完美共振。' },
+            { id: 'O2', title: '生成式AI带来决策路径弯道超车机遇（高）', content: '重度消费者极度依赖AI对比技术原理，利好方太凭核心技术数据破局。' },
+            { id: 'O3', title: '高端全嵌市场的持续扩容与红利（中/高）', content: '随着高定整体厨房普及，高端深嵌市场的基本盘持续扩容，增量巨大。' },
         ]
     };
 
@@ -34,7 +35,7 @@ export default function Page_SWOTAnalysis() {
                 <div className="flex items-center gap-3 pl-2">
                     <div className="w-1.5 h-8 sm:h-10 bg-rose-600 rounded-full shadow-[0_0_15px_rgba(225,29,72,0.4)]" />
                     <h1 className="text-3xl sm:text-4xl font-black text-white tracking-widest flex items-baseline">
-                        SWOT<span className="text-2xl sm:text-3xl font-bold ml-3 text-white/70">卡萨帝冰箱分析</span>
+                        SWOT<span className="text-2xl sm:text-3xl font-bold ml-3 text-white/70">方太冰箱分析</span>
                     </h1>
                 </div>
             </div>
