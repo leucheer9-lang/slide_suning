@@ -37,24 +37,34 @@ export default function TOCSlide({ bgImage, title, menuText, brandLabel, service
       </div>
 
       {/* Left: chapter list */}
-      <div className={`absolute z-10 flex flex-col ${dbg}`} style={{ top: '607px', left: '132px', gap: '0px' }}>
-        {chapters.map((chapter, i) => (
-          <div key={i} className="flex items-baseline" style={{ gap: '43px', lineHeight: '1.4' }}>
-            <span
-              className="text-[#004CE5]"
-              style={{ fontSize: '70px', fontFamily: "'MiSans', sans-serif", fontWeight: 200 }}
-            >
-              {String(i + 1).padStart(2, '0')}.
-            </span>
-            <span
-              className="text-white"
-              style={{ fontSize: '68px', letterSpacing: '0px', fontFamily: "'MiSans', sans-serif", fontWeight: 200 }}
-            >
-              {chapter.title}
-            </span>
+      {(() => {
+        const n = chapters.length;
+        const rowHeight = 100;
+        const topMin = 390;
+        const bottomMargin = 60;
+        const computedTop = Math.max(topMin, 1080 - bottomMargin - n * rowHeight);
+        const fontSize = Math.min(70, Math.floor(rowHeight / 1.45));
+        return (
+          <div className={`absolute z-10 flex flex-col ${dbg}`} style={{ top: `${computedTop}px`, left: '132px', gap: '0px' }}>
+            {chapters.map((chapter, i) => (
+              <div key={i} className="flex items-baseline" style={{ gap: '43px', lineHeight: '1.4' }}>
+                <span
+                  className="text-[#004CE5]"
+                  style={{ fontSize: `${fontSize}px`, fontFamily: "'MiSans', sans-serif", fontWeight: 200 }}
+                >
+                  {String(i + 1).padStart(2, '0')}.
+                </span>
+                <span
+                  className="text-white"
+                  style={{ fontSize: `${fontSize - 2}px`, letterSpacing: '0px', fontFamily: "'MiSans', sans-serif", fontWeight: 200 }}
+                >
+                  {chapter.title}
+                </span>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        );
+      })()}
 
       {/* Right: MENU */}
       <div className={`absolute z-10 flex flex-col items-end ${dbg}`} style={{ right: '114px', top: '76%', transform: 'translateY(-50%)' }}>
