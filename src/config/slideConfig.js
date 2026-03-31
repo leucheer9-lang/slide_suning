@@ -18,6 +18,9 @@ import Page_GeoReport_OverallProfile from '../pages/Page_GeoReport_OverallProfil
 import Page_GeoReport_SearchInsight from '../pages/Page_GeoReport_SearchInsight';
 import Page_GeoReport_Attribution from '../pages/Page_GeoReport_Attribution';
 import Page_StrategyOutline from '../pages/Page_StrategyOutline';
+import Page_PlatformFilterIntro from '../pages/Page_PlatformFilterIntro';
+import Page_PlatformFilterLogic from '../pages/Page_PlatformFilterLogic';
+import Page_PlatformFilterConclusion from '../pages/Page_PlatformFilterConclusion';
 
 // ——— 篇章1: 品牌信息调研 (Pages_Before) ———
 import PB_ProposalNav from '../Pages_Before/Page_ProposalNav';
@@ -120,7 +123,7 @@ export const slideConfig = [
   { type: 'chapter', title: 'GEO体检报告', subtitle: 'GEO HEALTH CHECK', backgroundImage: '/proposal-chapters/proposal-chapter-cover-02.jpg' },
 
   { type: 'section', title: '数据概要' },
-  { type: 'page', title: '总览', components: [PB_GeoReportOverview, PB_GeoReportOverview2, PB_GeoReportDashboard] },
+  { type: 'page', title: '总览', component: PB_GeoReportDashboard },
   { type: 'page', title: '词条', components: [PB_GeoReportEntries, PB_GeoReportEntries2, PB_GeoReportEntries3] },
   { type: 'page', title: '竞品', components: [PB_GeoReportCompetitors, PB_GeoReportCompetitors2, PB_GeoReportCompetitors3] },
   { type: 'page', title: '引用源', components: [PB_GeoReportSources, PB_GeoReportSources2] },
@@ -145,7 +148,7 @@ export const slideConfig = [
   { type: 'section', title: '综合大词如何执行' },
   { type: 'page', title: '方太和卡萨帝 SWOT 分析', components: [Page_SWOTAnalysisFotile, Page_SWOTAnalysis, Page_SWOTStrategy] },
   { type: 'page', title: '两个内容策略', components: [Page_ArticleDataAnalysisHisense, Page_ArticleGenerationDemo, Page_ArticleDataAnalysisStrategy2, Page_ArticleGenerationDemo2] },
-  { type: 'page', title: '两个投放策略', components: [Page_DeliveryStrategy_Platform, Page_DeliveryStrategy_Combo] },
+  { type: 'page', title: '两个投放策略', components: [Page_DeliveryStrategy_Combo, Page_DeliveryStrategy_Platform] },
 
   // ══════════════════════════════════════════════════════════
   // ——— 篇章5: 数据量化分析 ———
@@ -153,6 +156,9 @@ export const slideConfig = [
   { type: 'chapter', title: '数据量化分析', subtitle: 'DATA QUANTIFICATION', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
 
   { type: 'section', title: '投放平台量化分析' },
+  { type: 'page', title: '筛选逻辑', component: Page_PlatformFilterIntro },
+  { type: 'page', title: '筛选结果', component: Page_PlatformFilterLogic },
+  { type: 'page', title: '结论', component: Page_PlatformFilterConclusion },
 
   { type: 'section', title: '投放文章量化分析' },
 

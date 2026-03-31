@@ -8,17 +8,17 @@ export default function Page_DeliveryStrategy_Platform() {
             </div>
 
             <div className="relative z-20 w-full flex flex-col items-center mt-6 lg:mt-8 flex-shrink-0">
-                <h1 className="text-3xl lg:text-4xl font-bold tracking-tight text-white mb-3">自建高权重“平台”</h1>
+                <h1 className="text-3xl lg:text-4xl font-bold tracking-tight text-white mb-3">跟小众垂直平台深度合作</h1>
                 <p className="text-[1.1rem] lg:text-[1.2rem] text-zinc-300 font-medium tracking-wide">
-                    在冰箱领域建立一个百科、选购、品牌的专业性垂直网站-冰箱排名
+                    在冰箱领域寻找一个百科、选购、品牌的专业性垂直网站-冰箱排名
                 </p>
             </div>
 
             <div className="flex-1 relative z-10 w-full flex flex-col items-center justify-center px-8 lg:px-16 pt-8 pb-10 min-h-0 gap-6">
-                
+
                 {/* Browser Window Chrome container */}
                 <div className="w-full max-w-[1200px] flex-1 flex flex-col bg-[#1e1e1e] border border-white/10 rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.5)] overflow-hidden shrink-0 min-h-0 relative">
-                    
+
                     {/* Top Bar Navigation */}
                     <div className="w-full h-10 bg-[#2d2d2d] border-b border-white/5 flex items-center px-4 shrink-0 relative z-20">
                         <div className="flex items-center gap-2">
@@ -33,11 +33,11 @@ export default function Page_DeliveryStrategy_Platform() {
 
                     {/* Image Area */}
                     <div className="w-full flex-1 relative flex items-center justify-center overflow-hidden bg-black/40">
-                        <img 
-                            src="/charts/geo-delivery-strategy-site.png" 
-                            alt="自建高权重平台" 
-                            className="w-full h-full object-contain block" 
-                            onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.nextElementSibling.style.display = 'flex'; }} 
+                        <img
+                            src="/charts/geo-delivery-strategy-site.png"
+                            alt="自建高权重平台"
+                            className="w-full h-full object-contain block"
+                            onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.nextElementSibling.style.display = 'flex'; }}
                         />
                         <div className="hidden flex-col items-center justify-center w-full h-full text-zinc-600">
                             <div className="w-16 h-16 mb-4 rounded-2xl bg-white/[0.03] border border-white/5 flex items-center justify-center">

@@ -17,13 +17,13 @@ export default function Page_DeliveryStrategy_Combo() {
             <div className="flex-1 relative z-10 w-full flex flex-col justify-center px-8 lg:px-16 py-2 pb-16 min-h-0">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 w-full max-w-[1400px] mx-auto h-full items-start pt-10">
 
-                    {/* Item 1: 80% */}
+                    {/* Item 1: 60% */}
                     <div className="flex flex-col group relative">
                         <div className="w-full h-[8px] bg-zinc-800 rounded-full mb-8 relative overflow-hidden">
-                            <div className="absolute left-0 top-0 h-full rounded-full bg-gradient-to-r from-orange-600 to-orange-400" style={{ width: '80%', boxShadow: '0 0 15px rgba(249, 115, 22, 0.8)' }} />
+                            <div className="absolute left-0 top-0 h-full rounded-full bg-gradient-to-r from-orange-600 to-orange-400" style={{ width: '60%', boxShadow: '0 0 15px rgba(249, 115, 22, 0.8)' }} />
                         </div>
                         <div className="flex items-baseline mb-6">
-                            <span className="text-[6rem] lg:text-[8.5rem] leading-none font-bold tracking-tighter text-white transition-colors group-hover:text-orange-100">80</span>
+                            <span className="text-[6rem] lg:text-[8.5rem] leading-none font-bold tracking-tighter text-white transition-colors group-hover:text-orange-100">60</span>
                             <span className="text-4xl lg:text-5xl font-bold text-zinc-500 ml-2 mb-3">%</span>
                         </div>
                         <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4 pt-5 border-t border-white/10 group-hover:border-orange-500/50 transition-colors">测评对比：垂直媒体与论坛</h3>
@@ -33,13 +33,13 @@ export default function Page_DeliveryStrategy_Combo() {
                         </p>
                     </div>
 
-                    {/* Item 2: 20% */}
+                    {/* Item 2: 40% */}
                     <div className="flex flex-col group relative">
                         <div className="w-full h-[8px] bg-zinc-800 rounded-full mb-8 relative overflow-hidden">
-                            <div className="absolute left-0 top-0 h-full rounded-full bg-gradient-to-r from-blue-600 to-blue-400" style={{ width: '20%', boxShadow: '0 0 15px rgba(59, 130, 246, 0.8)' }} />
+                            <div className="absolute left-0 top-0 h-full rounded-full bg-gradient-to-r from-blue-600 to-blue-400" style={{ width: '40%', boxShadow: '0 0 15px rgba(59, 130, 246, 0.8)' }} />
                         </div>
                         <div className="flex items-baseline mb-6">
-                            <span className="text-[6rem] lg:text-[8.5rem] leading-none font-bold tracking-tighter text-white transition-colors group-hover:text-blue-100">20</span>
+                            <span className="text-[6rem] lg:text-[8.5rem] leading-none font-bold tracking-tighter text-white transition-colors group-hover:text-blue-100">40</span>
                             <span className="text-4xl lg:text-5xl font-bold text-zinc-500 ml-2 mb-3">%</span>
                         </div>
                         <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4 pt-5 border-t border-white/10 group-hover:border-blue-500/50 transition-colors">定位排行：只投专业媒体</h3>
