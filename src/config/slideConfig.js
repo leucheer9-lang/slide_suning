@@ -150,29 +150,4 @@ export const slideConfig = [
   { type: 'page', title: '两个内容策略', components: [Page_ArticleDataAnalysisHisense, Page_ArticleGenerationDemo, Page_ArticleDataAnalysisStrategy2, Page_ArticleGenerationDemo2] },
   { type: 'page', title: '两个投放策略', components: [Page_DeliveryStrategy_Combo, Page_DeliveryStrategy_Platform] },
 
-  // ══════════════════════════════════════════════════════════
-  // ——— 篇章5: 数据量化分析 ———
-  // ══════════════════════════════════════════════════════════
-  { type: 'chapter', title: '数据量化分析', subtitle: 'DATA QUANTIFICATION', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
-
-  { type: 'section', title: '投放平台量化分析' },
-  { type: 'page', title: '筛选逻辑', component: Page_PlatformFilterIntro },
-  { type: 'page', title: '筛选结果', component: Page_PlatformFilterLogic },
-  { type: 'page', title: '结论', component: Page_PlatformFilterConclusion },
-
-  { type: 'section', title: '投放文章量化分析' },
-
-  // ══════════════════════════════════════════════════════════
-  // ——— 篇章6: 多余页面 ———
-  // ══════════════════════════════════════════════════════════
-  { type: 'chapter', title: '多余页面', subtitle: 'PHASE REVIEW', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
-
-  { type: 'section', title: '投放数据' },
-  { type: 'page', title: '投放数据分析', component: PB_CampaignDataAnalysis },
-  { type: 'page', title: '投放数据分析-双插图', component: PB_CampaignDataAnalysis2 },
-
-  { type: 'section', title: '内容生成' },
-  { type: 'page', title: '构建品牌知识库', component: PB_BrandKnowledgeBase },
-  { type: 'page', title: '用户评论数据分析', component: PB_UserReviewAnalysis },
-
 ];
