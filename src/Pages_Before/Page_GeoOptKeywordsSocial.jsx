@@ -57,7 +57,7 @@ export default function Page_GeoOptKeywordsSocial() {
 
             {/* ── Titles ── */}
             <div className="relative z-20 w-full flex flex-col items-center mt-6 lg:mt-6 flex-shrink-0">
-                <h1 className="text-3xl lg:text-4xl font-bold tracking-tight text-white mb-2">数据采集（社媒数据）</h1>
+                <h1 className="text-3xl lg:text-4xl font-bold tracking-tight text-white mb-2">社媒数据</h1>
             </div>
 
             {/* ── Main Content Area (Two Columns) ── */}
