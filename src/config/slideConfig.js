@@ -20,7 +20,13 @@ import Page_GeoReport_Attribution from '../pages/Page_GeoReport_Attribution';
 import Page_StrategyOutline from '../pages/Page_StrategyOutline';
 import Page_PlatformFilterIntro from '../pages/Page_PlatformFilterIntro';
 import Page_PlatformFilterLogic from '../pages/Page_PlatformFilterLogic';
+import Page_PlatformFilterLogicB from '../pages/Page_PlatformFilterLogicB';
+import Page_PlatformFilterLogicC from '../pages/Page_PlatformFilterLogicC';
+import Page_PlatformFilterLogicC2 from '../pages/Page_PlatformFilterLogicC2';
 import Page_PlatformFilterConclusion from '../pages/Page_PlatformFilterConclusion';
+import Page_ArticleTypeAnalysis from '../pages/Page_ArticleTypeAnalysis';
+import Page_ArticleTypeDetails from '../pages/Page_ArticleTypeDetails';
+import Page_ArticleQuantityAnalysis from '../pages/Page_ArticleQuantityAnalysis';
 
 // ——— 篇章1: 品牌信息调研 (Pages_Before) ———
 import PB_ProposalNav from '../Pages_Before/Page_ProposalNav';
@@ -150,4 +156,17 @@ export const slideConfig = [
   { type: 'page', title: '两个内容策略', components: [Page_ArticleDataAnalysisHisense, Page_ArticleGenerationDemo, Page_ArticleDataAnalysisStrategy2, Page_ArticleGenerationDemo2] },
   { type: 'page', title: '两个投放策略', components: [Page_DeliveryStrategy_Combo, Page_DeliveryStrategy_Platform] },
 
+  // ══════════════════════════════════════════════════════════
+  // ——— 篇章5: 数据量化分析 ———
+  // ══════════════════════════════════════════════════════════
+  { type: 'chapter', title: '数据量化分析', subtitle: 'DATA QUANTIFICATION', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
+
+  { type: 'section', title: '投放平台量化分析' },
+  { type: 'page', title: '筛选逻辑总览', component: Page_PlatformFilterIntro },
+  { type: 'page', title: '筛选过程', components: [Page_PlatformFilterLogic, Page_PlatformFilterLogicB, Page_PlatformFilterLogicC, Page_PlatformFilterLogicC2] },
+  { type: 'page', title: '筛选结论', component: Page_PlatformFilterConclusion },
+
+  { type: 'section', title: '投放文章量化分析' },
+  { type: 'page', title: '投放文章类型', components: [Page_ArticleTypeAnalysis, Page_ArticleTypeDetails] },
+  { type: 'page', title: '投放文章数量', component: Page_ArticleQuantityAnalysis },
 ];
