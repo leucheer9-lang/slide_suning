@@ -3,83 +3,147 @@ import React from 'react';
 export default function Page_PlatformFilterConclusion() {
     return (
         <div className="w-full h-full flex flex-col relative bg-black overflow-hidden text-white">
-            {/* 顶部占位尽可能缩小 */}
-            <div className="h-[10px] shrink-0 pointer-events-none"></div>
+            <div className="h-[5px] shrink-0 pointer-events-none"></div>
 
-            <div className="w-full flex-col items-center justify-center text-center pt-2 pb-0 shrink-0">
-                <h1 className="text-4xl font-bold text-white tracking-widest mb-1">结论</h1>
+            <div className="w-full flex-col items-center justify-center text-center pt-2 pb-3 shrink-0">
+                <h1 className="text-4xl font-bold text-white tracking-widest mb-3">平台筛选结论总览</h1>
+                <p className="inline-block text-[#004CE5] text-[1.1rem] font-bold tracking-widest bg-[#004CE5]/10 px-6 py-2 rounded-full border border-[#004CE5]/30 shadow-[0_0_20px_rgba(0,76,229,0.15)]">
+                    未来的核心投放资源将完全聚焦于由上述三组精选的高价值平台构成的矩阵
+                </p>
             </div>
 
-            {/* ── Main Content Area ── */}
-            <div className="flex-1 relative z-10 w-full flex flex-col items-center justify-center pb-10 min-h-0 container mx-auto">
-                <div className="w-full max-w-[1300px] flex flex-col gap-6">
+            {/* ── Main Content Area (Three Columns Layout) ── */}
+            <div className="flex-1 w-full max-w-[1700px] mx-auto px-6 lg:px-12 pb-4 z-10 min-h-0 container grid grid-cols-3 gap-6 xl:gap-8">
 
-                    <div className="w-full text-center mb-1">
-                        <p className="inline-block text-[#004CE5] text-[1.35rem] font-bold tracking-widest bg-[#004CE5]/10 px-8 py-3 rounded-full border border-[#004CE5]/30 shadow-[0_0_20px_rgba(0,76,229,0.15)]">
-                            基于上述量化分析，未来的核心投放资源将聚焦于由上述三组平台构成的矩阵
-                        </p>
-                    </div>
-                    
-                    <div className="grid grid-cols-1 gap-6 w-full">
-                        {/* A组 */}
-                        <div className="relative w-full rounded-2xl bg-white/[0.02] border border-white/10 p-8 flex flex-col gap-5 shadow-2xl">
-                            <div className="absolute top-0 left-0 w-1.5 h-full rounded-l-2xl bg-white/20"></div>
-                            <div className="flex items-center justify-between gap-4">
-                                <div className="flex items-center gap-4">
-                                    <h2 className="text-3xl font-bold text-white tracking-widest">A 组 <span className="text-zinc-400 text-[1.35rem] font-normal tracking-normal ml-2">（5个）</span></h2>
+                {/* Column 1: A组 */}
+                <div className="flex flex-col min-h-0">
+                    <div className="relative w-full rounded-2xl bg-white/[0.02] border border-white/10 p-6 flex flex-col gap-4 shadow-2xl h-full">
+                        <div className="absolute top-0 left-0 w-1.5 h-full rounded-l-2xl bg-white/20"></div>
+                        <h2 className="text-[1.35rem] font-bold text-blue-100 tracking-widest flex items-center justify-between">
+                            A组：共性高频网站 <span className="text-zinc-400 text-[1.05rem]">（5个）</span>
+                        </h2>
+                        <div className="w-full h-px bg-white/5 my-0 shrink-0"></div>
+                        
+                        <div className="flex flex-col gap-3 pb-2 pt-1">
+                            {[
+                                { name: "搜狐网", num: "425", cover: "DeepSeek、腾讯元宝、豆包、通义千问" },
+                                { name: "中关村在线", num: "207", cover: "DeepSeek、腾讯元宝、豆包、通义千问" },
+                                { name: "网易", num: "140", cover: "DeepSeek、腾讯元宝、豆包、通义千问" },
+                                { name: "什么值得买", num: "308", cover: "腾讯元宝、豆包、通义千问" },
+                                { name: "新浪新闻", num: "317", cover: "腾讯元宝、豆包" }
+                            ].map((item, idx) => (
+                                <div key={idx} className="flex flex-col bg-white/[0.03] px-4 py-3 rounded-xl border border-white/5 transition-colors hover:bg-white/5">
+                                    <div className="flex items-center justify-between mb-2">
+                                        <span className="text-white/90 font-bold text-[1.15rem]"><span className="text-zinc-500 mr-2">{idx+1}.</span>{item.name}</span>
+                                        <span className="text-[#004CE5] font-mono text-[1.05rem] bg-[#004CE5]/10 px-2 py-0.5 rounded font-bold border border-[#004CE5]/20">引用 {item.num} 次</span>
+                                    </div>
+                                    <div className="text-zinc-400 text-[0.95rem] flex gap-2"><span className="text-zinc-500 shrink-0">模型覆盖:</span> <span className="truncate">{item.cover}</span></div>
                                 </div>
-                                <p className="text-[1.2rem] text-zinc-300 font-medium leading-relaxed">
-                                    保障全网基础曝光与 AI 普适性抓取。
-                                </p>
-                            </div>
-                            <div className="w-full h-px bg-white/5 my-0"></div>
-                            <div className="flex flex-wrap gap-3">
-                                {["搜狐网", "新浪新闻", "网易新闻", "知乎", "百家号"].map(t => (
-                                    <span key={t} className="px-4 py-2 bg-white/[0.06] rounded-md text-[1.1rem] text-white/80 border border-white/10 shadow-sm">{t}</span>
-                                ))}
-                            </div>
-                        </div>
-
-                        {/* B组 */}
-                        <div className="relative w-full rounded-2xl bg-white/[0.02] border border-white/10 p-8 flex flex-col gap-5 shadow-2xl">
-                            <div className="absolute top-0 left-0 w-1.5 h-full rounded-l-2xl bg-white/20"></div>
-                            <div className="flex items-center justify-between gap-4">
-                                <div className="flex items-center gap-4">
-                                    <h2 className="text-3xl font-bold text-white tracking-widest">B 组 <span className="text-zinc-400 text-[1.35rem] font-normal tracking-normal ml-2">（8个）</span></h2>
-                                </div>
-                                <p className="text-[1.2rem] text-zinc-300 font-medium leading-relaxed">
-                                    针对不同 AI 平台受众进行差异化深度渗透。
-                                </p>
-                            </div>
-                            <div className="w-full h-px bg-white/5 my-0"></div>
-                            <div className="flex flex-wrap gap-3">
-                                {["IT之家", "少数派", "抖音", "今日头条", "小红书", "微信公众号", "百度知道", "贴吧"].map(t => (
-                                    <span key={t} className="px-4 py-2 bg-white/[0.06] rounded-md text-[1.1rem] text-white/80 border border-white/10 shadow-sm">{t}</span>
-                                ))}
-                            </div>
-                        </div>
-
-                        {/* C组 */}
-                        <div className="relative w-full rounded-2xl bg-white/[0.02] border border-white/10 p-8 flex flex-col gap-5 shadow-2xl">
-                            <div className="absolute top-0 left-0 w-1.5 h-full rounded-l-2xl bg-white/20"></div>
-                            <div className="flex items-center justify-between gap-4">
-                                <div className="flex items-center gap-4">
-                                    <h2 className="text-3xl font-bold text-white tracking-widest">C 组 <span className="text-zinc-400 text-[1.35rem] font-normal tracking-normal ml-2">（5个）</span></h2>
-                                </div>
-                                <p className="text-[1.2rem] text-zinc-300 font-medium leading-relaxed">
-                                    确保品牌高相关内容的精准触达与转化效率。
-                                </p>
-                            </div>
-                            <div className="w-full h-px bg-white/5 my-0"></div>
-                            <div className="flex flex-wrap gap-3">
-                                {["太平洋科技", "什么值得买", "中关村在线", "天极网", "家电消费网"].map(t => (
-                                    <span key={t} className="px-4 py-2 bg-white/[0.06] rounded-md text-[1.1rem] text-white/80 border border-white/10 shadow-sm">{t}</span>
-                                ))}
-                            </div>
+                            ))}
                         </div>
                     </div>
-
                 </div>
+
+                {/* Column 2: B组 */}
+                <div className="flex flex-col min-h-0">
+                    <div className="relative w-full rounded-2xl bg-white/[0.02] border border-white/10 p-6 flex flex-col gap-4 shadow-2xl h-full">
+                        <div className="absolute top-0 left-0 w-1.5 h-full rounded-l-2xl bg-white/20"></div>
+                        <h2 className="text-[1.35rem] font-bold text-blue-100 tracking-widest flex items-center justify-between">
+                            B组：差异化特异台 <span className="text-zinc-400 text-[1.05rem]">（8个）</span>
+                        </h2>
+                        <div className="w-full h-px bg-white/5 my-0 shrink-0"></div>
+                        
+                        <div className="flex flex-col gap-3 pb-2 pt-1">
+                            {[
+                                { group: "DeepSeek", items: [ {n:"IT之家", c:"98"}, {n:"环球家电网", c:"45"} ] },
+                                { group: "腾讯元宝", items: [ {n:"QQ News", c:"143"}, {n:"京东", c:"143"} ] },
+                                { group: "豆包", items: [ {n:"抖音", c:"466"}, {n:"今日头条", c:"314"} ] },
+                                { group: "通义千问", items: [ {n:"百度知道", c:"94"}, {n:"哔哩哔哩", c:"39"} ] }
+                            ].map((g, i) => (
+                                <div key={i} className="flex flex-col gap-2 bg-white/[0.03] px-4 py-3 rounded-xl border border-white/5 transition-colors hover:bg-white/5">
+                                    <span className="text-zinc-300 font-bold text-[1rem] tracking-wider mb-1 px-1">{g.group} 对应极高权重池：</span>
+                                    <div className="flex justify-between items-center text-[1.05rem] bg-black/20 px-3 py-1.5 rounded-md">
+                                        <span className="text-white/80 font-medium truncate pr-2">· {g.items[0].n}</span>
+                                        <span className="text-zinc-400 font-mono shrink-0 text-[1rem]">{g.items[0].c} 次引用</span>
+                                    </div>
+                                    <div className="flex justify-between items-center text-[1.05rem] bg-black/20 px-3 py-1.5 rounded-md">
+                                        <span className="text-white/80 font-medium truncate pr-2">· {g.items[1].n}</span>
+                                        <span className="text-zinc-400 font-mono shrink-0 text-[1rem]">{g.items[1].c} 次引用</span>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
+                {/* Column 3: C组 & Remarks */}
+                <div className="flex flex-col min-h-0">
+                    <div className="relative w-full rounded-2xl bg-white/[0.02] border border-white/10 p-6 flex flex-col gap-4 shadow-2xl h-full">
+                        <div className="absolute top-0 left-0 w-1.5 h-full rounded-l-2xl bg-white/20"></div>
+                        <div className="flex items-center justify-between">
+                            <h2 className="text-[1.35rem] font-bold text-blue-100 tracking-widest">
+                                C组：高命中高频阵地
+                            </h2>
+                            <span className="text-zinc-400 text-[1.05rem]">（5个）</span>
+                        </div>
+                        <div className="w-full h-px bg-white/5 my-0 shrink-0"></div>
+                        
+                        <div className="flex flex-col gap-2 pb-2 pt-1 relative">
+                            {/* Table Header */}
+                            <div className="grid grid-cols-[1fr_40px_40px_60px] xl:grid-cols-[1fr_50px_50px_70px] gap-2 px-2 py-1 text-zinc-500 font-bold text-[0.85rem]">
+                                <span>卡萨帝高优平台</span>
+                                <span className="text-right">引用</span>
+                                <span className="text-right">命中</span>
+                                <span className="text-right">胜率</span>
+                            </div>
+
+                            {[
+                                { n: "十大品牌网CNPP", ref: 41, hit: 41, rate: "100%" },
+                                { n: "百家评测", ref: 30, hit: 30, rate: "100%" },
+                                { n: "排行榜123网", ref: 50, hit: 46, rate: "92.0%" },
+                                { n: "哔哩哔哩", ref: 63, hit: 56, rate: "88.9%" },
+                                { n: "买购网", ref: 77, hit: 67, rate: "87.0%" }
+                            ].map((item, idx) => (
+                                <div key={idx} className="grid grid-cols-[1fr_40px_40px_60px] xl:grid-cols-[1fr_50px_50px_70px] gap-2 items-center bg-white/[0.03] px-3 py-2 rounded-lg border border-white/5 transition-colors hover:bg-white/5">
+                                    <span className="text-white/90 font-bold text-[0.95rem] truncate" title={item.n}>{item.n}</span>
+                                    <span className="text-zinc-400 font-mono text-[0.95rem] text-right">{item.ref}</span>
+                                    <span className="text-zinc-400 font-mono text-[0.95rem] text-right">{item.hit}</span>
+                                    <span className="text-zinc-300 font-mono text-[0.95rem] font-black text-right">{item.rate}</span>
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* 说明区域 */}
+                        <div className="mt-4 pt-4 border-t border-white/5 flex flex-col gap-3">
+                            <span className="text-zinc-400 font-bold text-[1rem] tracking-widest flex items-center gap-2">
+                                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                说明
+                            </span>
+                            <div className="flex flex-col gap-1.5 border-l-2 border-white/20 pl-4 bg-white/[0.02] py-2.5 rounded-r-lg">
+                                <p className="flex items-start text-zinc-300 text-[0.9rem] leading-snug">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-white/50 inline-block mt-1.5 mr-2 shrink-0"></span>
+                                    <span className="flex-1">C组平台是卡萨帝品牌在AI引用中命中率最高的媒体/内容平台</span>
+                                </p>
+                                <p className="flex items-start text-zinc-300 text-[0.9rem] leading-snug">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-white/50 inline-block mt-1.5 mr-2 shrink-0"></span>
+                                    <span className="flex-1"><strong className="text-white/90">命中率 = </strong>引用文章中提及卡萨帝的次数 ÷ 该平台总引用次数</span>
+                                </p>
+                                <p className="flex items-start text-zinc-300 text-[0.9rem] leading-snug">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-white/50 inline-block mt-1.5 mr-2 shrink-0"></span>
+                                    <span className="flex-1">高命中率意味着该平台的内容经常同时提及方太和卡萨帝，竞争分析价值高</span>
+                                </p>
+                                <p className="flex items-start text-zinc-500 text-[0.85rem] leading-snug mt-1 border-t border-white/5 pt-2">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-zinc-600 inline-block mt-1.5 mr-2 shrink-0"></span>
+                                    <span className="flex-1">筛选条件：引用次数≥20，排除品牌自有平台（Haier、卡萨帝等）</span>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
     );

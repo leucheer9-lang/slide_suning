@@ -1,11 +1,91 @@
 import React from 'react';
 
 export default function Page_PlatformFilterIntro() {
-    const platforms = [
-        { name: 'DeepSeek', file: 'platform-deepseek.png' },
-        { name: '豆包', file: 'platform-doubao.png' },
-        { name: 'Kimi', file: 'platform-kimi.png' },
-        { name: '文心一言', file: 'platform-wenxin.png' },
+    const platformData = [
+        {
+            id: 'deepseek',
+            name: 'DeepSeek',
+            file: 'platform-deepseek.png',
+            color: 'from-[#004CE5]/10',
+            borderColor: 'border-[#004CE5]/20',
+            textColor: 'text-blue-100',
+            numColor: 'text-white/30',
+            data: [
+                { rank: 1, site: '中关村在线', count: 128 },
+                { rank: 2, site: 'IT之家', count: 98 },
+                { rank: 3, site: '环球家电网', count: 45 },
+                { rank: 4, site: '央广网', count: 36 },
+                { rank: 5, site: '搜狐网', count: 35 },
+                { rank: 6, site: '北京日报', count: 32 },
+                { rank: 7, site: '泡泡網', count: 24 },
+                { rank: 8, site: '网易', count: 23 },
+                { rank: 9, site: '现代家电网', count: 22 },
+                { rank: 10, site: '知乎', count: 22 }
+            ]
+        },
+        {
+            id: 'yuanbao',
+            name: '腾讯元宝',
+            file: 'platform-yuanbao.png',
+            color: 'from-[#004CE5]/10',
+            borderColor: 'border-[#004CE5]/20',
+            textColor: 'text-blue-100',
+            numColor: 'text-white/30',
+            data: [
+                { rank: 1, site: '新浪新闻', count: 220 },
+                { rank: 2, site: 'QQ News', count: 143 },
+                { rank: 3, site: '京东', count: 143 },
+                { rank: 4, site: '手机新浪网', count: 134 },
+                { rank: 5, site: '搜狐网', count: 114 },
+                { rank: 6, site: '中国家电网', count: 63 },
+                { rank: 7, site: '网易', count: 36 },
+                { rank: 8, site: '百度知道', count: 34 },
+                { rank: 9, site: '中关村在线', count: 33 },
+                { rank: 10, site: '什么值得买社区频道', count: 32 }
+            ]
+        },
+        {
+            id: 'doubao',
+            name: '豆包',
+            file: 'platform-doubao.png',
+            color: 'from-[#004CE5]/10',
+            borderColor: 'border-[#004CE5]/20',
+            textColor: 'text-blue-100',
+            numColor: 'text-white/30',
+            data: [
+                { rank: 1, site: '抖音', count: 466 },
+                { rank: 2, site: '今日头条', count: 314 },
+                { rank: 3, site: '什么值得买社区频道', count: 107 },
+                { rank: 4, site: '新浪新闻', count: 97 },
+                { rank: 5, site: '搜狐网', count: 87 },
+                { rank: 6, site: '中关村在线', count: 27 },
+                { rank: 7, site: '中国家电网', count: 22 },
+                { rank: 8, site: '买购网', count: 22 },
+                { rank: 9, site: '网易', count: 20 },
+                { rank: 10, site: '中国著名品牌网', count: 17 }
+            ]
+        },
+        {
+            id: 'qianwen',
+            name: '通义千问',
+            file: 'platform-qianwen.png',
+            color: 'from-[#004CE5]/10',
+            borderColor: 'border-[#004CE5]/20',
+            textColor: 'text-blue-100',
+            numColor: 'text-white/30',
+            data: [
+                { rank: 1, site: '搜狐网', count: 189 },
+                { rank: 2, site: '什么值得买社区频道', count: 169 },
+                { rank: 3, site: '百度知道', count: 94 },
+                { rank: 4, site: '网易', count: 61 },
+                { rank: 5, site: '哔哩哔哩', count: 39 },
+                { rank: 6, site: '十大品牌网CNPP', count: 30 },
+                { rank: 7, site: '百家评测', count: 30 },
+                { rank: 8, site: '买购网', count: 30 },
+                { rank: 9, site: 'IT之家', count: 22 },
+                { rank: 10, site: '中关村在线', count: 19 }
+            ]
+        }
     ];
 
     return (
@@ -20,7 +100,7 @@ export default function Page_PlatformFilterIntro() {
             </div>
 
             {/* ── Main Content Area ── */}
-            <div className="flex-1 w-full max-w-[1700px] mx-auto flex flex-col items-center pb-8 z-10 min-h-0">
+            <div className="flex-1 w-full max-w-[1700px] mx-auto flex flex-col items-center px-8 lg:px-16 pb-8 z-10 min-h-0">
 
                 {/* Top: Concise Logic row */}
                 <div className="w-full flex justify-center gap-10 mb-8 shrink-0">
@@ -41,35 +121,35 @@ export default function Page_PlatformFilterIntro() {
                     </div>
                 </div>
 
-                {/* Bottom: 4 Image Placeholders Horizontal */}
-                <div className="w-full flex-1 grid grid-cols-4 gap-6 min-h-0">
-                    {platforms.map((p, idx) => (
-                        <div key={idx} className="relative w-full h-full bg-white/[0.02] border border-white/10 rounded-2xl overflow-hidden flex flex-col items-center justify-center group hover:bg-white/[0.04] transition-colors shadow-2xl">
-
-                            {/* Image element (falls back to hidden if not found) */}
-                            <img
-                                src={`/proposal-platforms/${p.file}`}
-                                alt={p.name}
-                                className="absolute inset-0 w-full h-full object-cover object-top z-20"
-                                onError={(e) => { e.target.style.display = 'none'; }}
-                            />
-
-                            {/* Underlying Placeholder UI */}
-                            <div className="absolute inset-0 z-10 flex flex-col items-center justify-center pointer-events-none">
-                                <div className="w-20 h-20 mb-5 rounded-full bg-white/[0.03] flex items-center justify-center border border-white/5 transition-all text-white/20">
-                                    <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                    </svg>
-                                </div>
-                                <span className="text-zinc-400 text-xl font-bold tracking-widest">{p.name} 图片位</span>
-                                <span className="text-zinc-600/60 text-sm mt-3 font-mono">{p.file}</span>
+                {/* Bottom: 4 Tables Horizontal */}
+                <div className="w-full flex-1 grid grid-cols-4 gap-4 min-h-0">
+                    {platformData.map((platform, idx) => (
+                        <div key={idx} className={`flex flex-col bg-white/[0.02] backdrop-blur-md border ${platform.borderColor} rounded-xl overflow-hidden shadow-lg h-full`}>
+                            
+                            {/* Header */}
+                            <div className={`px-4 py-2.5 bg-gradient-to-r ${platform.color} to-transparent border-b ${platform.borderColor} flex items-center gap-2 shrink-0`}>
+                                <img src={`/proposal-platforms/${platform.file}`} alt={platform.name} className="w-5 h-5 object-contain rounded" onError={(e) => { e.target.style.display = 'none'; }} />
+                                <h2 className={`text-[1.05rem] font-bold ${platform.textColor} tracking-widest`}>{platform.name}</h2>
+                            </div>
+                            
+                            {/* Column Headers */}
+                            <div className="flex items-center px-4 py-2 border-b border-white/5 bg-white/[0.01] shrink-0">
+                                <span className="w-10 text-center text-[0.9rem] text-zinc-500 font-bold shrink-0">排名</span>
+                                <span className="flex-1 ml-2 text-[0.9rem] text-zinc-500 font-bold">网站名称</span>
+                                <span className="text-[0.9rem] text-zinc-500 font-bold text-right w-16 shrink-0">引用次数</span>
                             </div>
 
-                            {/* Image Overlay Gradient for styling if img loads correctly */}
-                            <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-black/80 to-transparent z-30 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                            <div className="absolute bottom-5 left-6 z-30 text-white/90 font-bold tracking-widest text-lg opacity-0 group-hover:opacity-100 transition-opacity">
-                                {p.name}
+                            {/* List */}
+                            <div className="flex flex-col flex-1 justify-around px-3 pt-2 pb-3 gap-0 overflow-hidden" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+                                {platform.data.map((item, i) => (
+                                    <div key={i} className="flex items-center py-1 px-1 rounded hover:bg-white/5 transition-colors group">
+                                        <span className={`font-mono text-[0.95rem] w-10 text-center shrink-0 ${platform.numColor} font-bold group-hover:text-white transition-colors`}>{item.rank}</span>
+                                        <span className="text-white/85 text-[0.95rem] flex-1 ml-2 truncate leading-tight group-hover:text-white transition-colors">{item.site}</span>
+                                        <span className="text-white/60 font-mono text-[0.95rem] text-right w-16 shrink-0 leading-tight group-hover:text-white/90">{item.count}</span>
+                                    </div>
+                                ))}
                             </div>
+
                         </div>
                     ))}
                 </div>
