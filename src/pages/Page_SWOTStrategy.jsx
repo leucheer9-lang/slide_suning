@@ -55,11 +55,11 @@ export default function Page_SWOTStrategy() {
             <div className="relative z-20 w-full px-8 lg:px-16 pt-2 shrink-0 flex flex-col items-center">
                 <div className="flex flex-col gap-1 xl:gap-2 items-center text-center max-w-5xl">
                     <h1 className="text-3xl xl:text-4xl font-black text-white tracking-widest flex items-baseline justify-center">
-                        核心思路<span className="text-2xl xl:text-3xl font-bold ml-4 text-white/80 shrink-0">错位竞争，而不是正面消耗</span>
+                        核心战略思想<span className="text-2xl xl:text-3xl font-bold ml-4 text-white/80 shrink-0"></span>
                     </h1>
                     <div className="mt-1 xl:mt-2">
                         <p className="text-[0.95rem] xl:text-[1.05rem] leading-relaxed text-zinc-300 font-medium tracking-wide">
-                            避免在外观与空间设计上与成熟品牌正面对抗，把竞争重点转向<strong className="text-white font-bold mx-1">营养保留、数据验证和搜索场景中的决策影响力</strong>，将冰箱从“家电产品”重新定义为<strong className="text-white font-bold ml-1">“功能型设备”</strong>。
+                            避免在外观与设计上与成熟品牌正面对抗，把竞争重点转向<strong className="text-white font-bold mx-1">营养保留、数据验证和搜索场景中的影响力</strong>，将冰箱从“家电产品”重新定义为<strong className="text-white font-bold ml-1">“功能型设备”</strong>。
                         </p>
                     </div>
                 </div>

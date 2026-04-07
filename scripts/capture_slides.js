@@ -11,18 +11,26 @@ async function main() {
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 
   const browser = await puppeteer.launch({
-    headless: true,
-    executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    headless: 'new',  // 新版 headless，字体渲染质量更好
+    channel: 'chrome', // 自动查找系统安装的 Chrome 流水线
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--font-render-hinting=none',  // 禁用字体微调，保持锐利
+    ],
   });
 
   const page = await browser.newPage();
-  // 1984×1144 → 留 64px 边距，让 slide zoom = 1.0（原始 1920×1080）
-  await page.setViewport({ width: 1984, height: 1144, deviceScaleFactor: 1 });
+  // 4K 分辨率：deviceScaleFactor 2 → 截图输出 1920×2=3840, 1080×2=2160
+  await page.setViewport({ width: 1984, height: 1144, deviceScaleFactor: 2 });
 
   console.log(`正在打开 ${SLIDE_URL}...`);
   await page.goto(SLIDE_URL, { waitUntil: 'networkidle2', timeout: 20000 });
-  await new Promise((r) => setTimeout(r, 2500));
+
+  // 等待所有自定义字体（MiSans、AlimamaShuHeiTi 等）加载完毕
+  await page.evaluate(() => document.fonts.ready);
+  // 额外等待图片和首屏动画稳定
+  await new Promise((r) => setTimeout(r, 3500));
 
   // ① 打开目录面板，从 DOM 中读取真实总页数
   await page.click('button[title="打开目录"]');
@@ -31,20 +39,29 @@ async function main() {
   const totalSlides = await page.$$eval('nav.flex-grow [draggable]', (els) => els.length);
   console.log(`✅ 检测到总页数：${totalSlides}`);
 
-  // ② 关闭目录面板，回到第一页（按住左键回到开头）
+  // ② 关闭目录面板，回到第一页
   const closeBtn = await page.$('button.text-zinc-500');
   if (closeBtn) await closeBtn.click();
   await new Promise((r) => setTimeout(r, 400));
 
-  // 回到第一页
   for (let i = 0; i < totalSlides; i++) {
     await page.keyboard.press('ArrowLeft');
   }
-  await new Promise((r) => setTimeout(r, 500));
+  await new Promise((r) => setTimeout(r, 600));
 
   // ③ 逐页截图
   for (let i = 0; i < totalSlides; i++) {
     const outputPath = path.join(OUTPUT_DIR, `slide_${String(i + 1).padStart(3, '0')}.png`);
+
+    // 等待图片和字体在当前页面渲染完毕
+    await page.evaluate(() =>
+      Promise.all(
+        [...document.images].map((img) =>
+          img.complete ? Promise.resolve() : new Promise((r) => { img.onload = r; img.onerror = r; })
+        )
+      )
+    );
+    await new Promise((r) => setTimeout(r, 400));
 
     const slideEl = await page.$('.bg-white.overflow-hidden');
     if (slideEl) {
@@ -57,7 +74,7 @@ async function main() {
 
     if (i < totalSlides - 1) {
       await page.keyboard.press('ArrowRight');
-      await new Promise((r) => setTimeout(r, 900));
+      await new Promise((r) => setTimeout(r, 1200));
     }
   }
 

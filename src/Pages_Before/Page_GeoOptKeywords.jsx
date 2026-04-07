@@ -81,7 +81,7 @@ export default function Page_GeoOptKeywords() {
 
             {/* ── Titles ── */}
             <div className="relative z-20 w-full flex flex-col items-center mt-6 lg:mt-6 flex-shrink-0">
-                <h1 className="text-3xl lg:text-4xl font-bold tracking-tight text-white mb-2">各平台热搜词条分析</h1>
+                <h1 className="text-3xl lg:text-4xl font-bold tracking-tight text-white mb-2">各平台热搜词</h1>
             </div>
 
             {/* ── Main Content Area ── */}
@@ -94,11 +94,11 @@ export default function Page_GeoOptKeywords() {
                             <h2 className={`text-[1.05rem] font-bold ${platform.textColor} tracking-widest`}>{platform.name}</h2>
                         </div>
                         {/* List */}
-                        <div className="flex flex-col flex-1 px-3 py-2 gap-0 overflow-y-auto" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+                        <div className="flex flex-col flex-1 justify-around px-3 pt-2 pb-3 gap-0 overflow-hidden" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
                             {platform.keywords.map((kw, i) => (
-                                <div key={i} className="flex items-center gap-3 py-1.5 px-2 rounded hover:bg-white/5 transition-colors group">
+                                <div key={i} className="flex items-center gap-3 py-1 px-2 rounded hover:bg-white/5 transition-colors group">
                                     <span className={`font-mono text-[0.85rem] w-4 text-right shrink-0 ${platform.numColor} group-hover:text-white transition-colors`}>{i + 1}.</span>
-                                    <span className="text-white/85 text-[0.85rem] sm:text-[0.9rem] leading-snug">{kw}</span>
+                                    <span className="text-white/85 text-[0.8rem] sm:text-[0.85rem] leading-tight truncate">{kw}</span>
                                 </div>
                             ))}
                         </div>

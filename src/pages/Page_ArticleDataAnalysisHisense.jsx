@@ -17,9 +17,9 @@ export default function Page_ArticleDataAnalysisHisense() {
 
             {/* ── Titles ── */}
             <div className="relative z-20 w-full flex flex-col items-center mt-3 lg:mt-5 flex-shrink-0">
-                <h1 className="text-2xl lg:text-3xl font-bold tracking-tight text-white mb-3">评测对比类文章结构分析</h1>
+                <h1 className="text-2xl lg:text-3xl font-bold tracking-tight text-white mb-3">评测对比</h1>
                 <p className="text-[1.05rem] lg:text-[1.15rem] text-zinc-300 font-medium tracking-wide">
-                    通过撰写专业深度的方太冰箱 VS 卡萨帝冰箱测评文章，用卡萨帝的权威性间接提高方太的权威性。
+                    通过撰写专业的方太冰箱 VS 卡萨帝冰箱测评文章，用卡萨帝的权威性间接提高方太的权威性。
                 </p>
             </div>
 

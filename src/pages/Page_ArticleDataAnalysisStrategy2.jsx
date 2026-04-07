@@ -17,7 +17,7 @@ export default function Page_ArticleDataAnalysisStrategy2() {
 
             {/* ── Titles ── */}
             <div className="relative z-20 w-full flex flex-col items-center mt-3 lg:mt-5 flex-shrink-0">
-                <h1 className="text-2xl lg:text-3xl font-bold tracking-tight text-white mb-3">定位排行榜类文章结构分析</h1>
+                <h1 className="text-2xl lg:text-3xl font-bold tracking-tight text-white mb-3">定位排行榜</h1>
                 <p className="text-[1.05rem] lg:text-[1.15rem] text-zinc-300 font-medium tracking-wide">
                     通过特定类型的专业排行榜单文章，用卡萨帝的位次带动方太的位次（卡萨帝放在第1，方太放在第2）。
                 </p>

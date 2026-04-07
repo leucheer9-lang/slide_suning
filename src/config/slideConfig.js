@@ -7,6 +7,7 @@ import Page_ArticleDataAnalysisHisense from '../pages/Page_ArticleDataAnalysisHi
 import Page_ArticleGenerationDemo from '../pages/Page_ArticleGenerationDemo';
 import Page_ArticleDataAnalysisStrategy2 from '../pages/Page_ArticleDataAnalysisStrategy2';
 import Page_ArticleGenerationDemo2 from '../pages/Page_ArticleGenerationDemo2';
+import Page_ArticleGenerationDemo3 from '../pages/Page_ArticleGenerationDemo3';
 import Page_DeliveryStrategy_Platform from '../pages/Page_DeliveryStrategy_Platform';
 import Page_DeliveryStrategy_Combo from '../pages/Page_DeliveryStrategy_Combo';
 import Page_SectionCore from '../pages/Page_SectionCore';
@@ -152,8 +153,8 @@ export const slideConfig = [
   { type: 'page', title: '总结', component: Page_SectionSummary },
 
   { type: 'section', title: '综合大词如何执行' },
-  { type: 'page', title: '方太和卡萨帝 SWOT 分析', components: [Page_SWOTAnalysisFotile, Page_SWOTAnalysis, Page_SWOTStrategy] },
-  { type: 'page', title: '两个内容策略', components: [Page_ArticleDataAnalysisHisense, Page_ArticleGenerationDemo, Page_ArticleDataAnalysisStrategy2, Page_ArticleGenerationDemo2] },
+  { type: 'page', title: '方太和卡萨帝 SWOT 分析', components: [Page_SWOTAnalysis, Page_SWOTAnalysisFotile, Page_SWOTStrategy] },
+  { type: 'page', title: '两个内容策略', components: [Page_ArticleDataAnalysisHisense, Page_ArticleGenerationDemo, Page_ArticleDataAnalysisStrategy2, Page_ArticleGenerationDemo2, Page_ArticleGenerationDemo3] },
   { type: 'page', title: '两个投放策略', components: [Page_DeliveryStrategy_Combo, Page_DeliveryStrategy_Platform] },
 
   // ══════════════════════════════════════════════════════════
@@ -169,4 +170,15 @@ export const slideConfig = [
   { type: 'section', title: '投放文章量化分析' },
   { type: 'page', title: '投放文章类型', components: [Page_ArticleTypeAnalysis, Page_ArticleTypeDetails] },
   { type: 'page', title: '投放文章数量', component: Page_ArticleQuantityAnalysis },
+
+  // ══════════════════════════════════════════════════════════
+  // ——— 篇章6: 阶段性复盘报告 ———
+  // ══════════════════════════════════════════════════════════
+  { type: 'chapter', title: '阶段性复盘报告', subtitle: 'PHASED REVIEW REPORT', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
+  { type: 'section', title: '系统回看' },
+  { type: 'page', title: '系统回看当前GEO效果与问题', component: PB_CampaignDataAnalysis },
+  { type: 'section', title: '重构下一阶段目标' },
+  { type: 'page', title: '重构下一阶段GEO优化目标', component: PB_CampaignDataAnalysis2 },
+
+
 ];

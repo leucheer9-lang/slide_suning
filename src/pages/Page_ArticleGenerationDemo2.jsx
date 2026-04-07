@@ -16,7 +16,7 @@ export default function Page_ArticleGenerationDemo2() {
 
             {/* ── Titles ── */}
             <div className="relative z-20 w-full flex flex-col items-center mt-6 lg:mt-8 flex-shrink-0">
-                <h1 className="text-3xl lg:text-4xl font-bold tracking-tight text-white mb-2">生成文章示意</h1>
+                <h1 className="text-3xl lg:text-4xl font-bold tracking-tight text-white mb-2">定位排行榜文章示意</h1>
             </div>
 
             {/* ── Main Content Area (Vertical Layout) ── */}
