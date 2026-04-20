@@ -69,6 +69,14 @@ import PB_ArticleDataAnalysis from '../Pages_Before/Page_ArticleDataAnalysis';
 import PB_CampaignDataAnalysis from '../Pages_Before/Page_CampaignDataAnalysis';
 import PB_CampaignDataAnalysis2 from '../Pages_Before/Page_CampaignDataAnalysis2';
 
+// ——— 篇章7: 知乎方案新增 ———
+import Page_Zhihu_AIData from '../pages/Page_Zhihu_AIData';
+import Page_Zhihu_AIDataDecision from '../pages/Page_Zhihu_AIDataDecision';
+import Page_Zhihu_AIInternetData from '../pages/Page_Zhihu_AIInternetData';
+import Page_Zhihu_AIInternetProcess from '../pages/Page_Zhihu_AIInternetProcess';
+import Page_Zhihu_ARES_Architecture from '../pages/Page_Zhihu_ARES_Architecture';
+import Page_Zhihu_ARES_Detail12 from '../pages/Page_Zhihu_ARES_Detail12';
+
 export const slideConfig = [
   // ——— 封面 & 目录 ———
   {
@@ -175,10 +183,29 @@ export const slideConfig = [
   // ——— 篇章6: 阶段性复盘报告 ———
   // ══════════════════════════════════════════════════════════
   { type: 'chapter', title: '阶段性复盘报告', subtitle: 'PHASED REVIEW REPORT', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
+
   { type: 'section', title: '系统回看' },
   { type: 'page', title: '系统回看当前GEO效果与问题', component: PB_CampaignDataAnalysis },
+
   { type: 'section', title: '重构下一阶段目标' },
   { type: 'page', title: '重构下一阶段GEO优化目标', component: PB_CampaignDataAnalysis2 },
+
+  // ══════════════════════════════════════════════════════════
+  // ——— 篇章7: 知乎方案新增 ———
+  // ══════════════════════════════════════════════════════════
+  { type: 'chapter', title: '知乎方案新增', subtitle: 'ZHIHU PLAN', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
+
+  { type: 'section', title: 'GEO效果量化对冲模型' },
+  { type: 'page', title: 'AI模型用什么数据回答用户的问题', components: [Page_Zhihu_AIData, Page_Zhihu_AIDataDecision] },
+  { type: 'page', title: 'AI模型到底是如何用互联网数据的', components: [Page_Zhihu_AIInternetData, Page_Zhihu_AIInternetProcess] },
+  { type: 'page', title: '对抗策略', components: [Page_Zhihu_ARES_Architecture, Page_Zhihu_ARES_Detail12] },
+
+  { type: 'section', title: '数据清晰和结构化处理的技术流程是什么？' },
+  { type: 'page', title: '数据清晰和结构化处理的技术流程', },
+
+  { type: 'section', title: '知乎数据引用' },
+  { type: 'page', title: '理解核心：知乎在 GEO 中的“水源”地位', },
+  { type: 'page', title: '基于知乎特点的 GEO 优化方案', },
 
 
 ];
