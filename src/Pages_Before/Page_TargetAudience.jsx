@@ -1,19 +1,17 @@
 import React from 'react';
-import { Snowflake, Layout, ShieldCheck, Maximize, Zap, Leaf, ShoppingBag, Coffee } from 'lucide-react';
+import { ShieldCheck, TrendingUp, Heart, Calendar, Coffee, Droplet } from 'lucide-react';
 
 export default function Page_TargetAudience() {
     const motives = [
-        { title: "极致保鲜", desc: "解决食材失水风干、口感变差及营养流失痛点；追求精准控温、长效动态保鲜，让绿叶菜和高档食材存放更久。", icon: Snowflake },
-        { title: "家居美学", desc: "解决传统冰箱厚重、两侧留缝难看且积灰的痛点；追求超薄平嵌设计，提升厨房整洁感与档次。", icon: Layout },
-        { title: "健康除菌", desc: "解决冰箱异味、串味及细菌滋生的担忧；追求主动净味、分区除菌，为母婴或过敏体质家庭提供安全环境。", icon: ShieldCheck },
-        { title: "空间管理", desc: "解决囤货需求大但找东西难、冷冻室空间紧促的痛点；追求大容量且科学的分区，提升空间利用率。", icon: Maximize },
-        { title: "运行体验", desc: "解决夜晚工作噪音大、耗电高的长期困扰；追求变频压缩机的稳定性、一级能效及低分贝运行，确保生活舒适度。", icon: Zap },
+        { title: "中老年骨质流失防御", desc: "应对绝经后女性及老年群体高发的严重骨质疏松与关节疼痛。核心动机是维持行动能力，极度恐惧因骨脆性增加而导致的致命骨折。", icon: ShieldCheck },
+        { title: "婴童青少年发育焦虑", desc: "害怕孩子长不高或出牙晚。此类动机伴随极强的“成长期不可逆”压迫感，家长对促高、促发育的科学配方有着极高的支付意愿。", icon: TrendingUp },
+        { title: "孕产期母婴双向干预", desc: "孕妇面临胎儿骨骼发育的极强抽吸效应，常出现抽筋骨盆痛。动机是绝对的生理性止痛与保障胎儿正常发育。", icon: Heart },
     ];
 
     const scenarios = [
-        { title: "深度日常储鲜", desc: "涵盖每日三餐食材、绿叶蔬菜及剩菜存放。核心驱动力是长效保鲜、不串味及除菌安全。", icon: Leaf },
-        { title: "长周期批量囤货", desc: "涵盖周末集中采购、大量冻肉及速冻食品存储。用户极其关心冷冻室的有效容量与冷冻爆发力。", icon: ShoppingBag },
-        { title: "生活方式体验", desc: "涵盖冰咖制作、调酒、取用冷饮。用户核心关切在于自动制冰速度、制冰卫生以及取用的便捷性。", icon: Coffee },
+        { title: "每日固定打卡送服", desc: "发生在家中餐桌或床头，搭配温水或牛奶一口吞服，对产品的长期依从性（能不能坚持每天吃）要求极高。", icon: Calendar },
+        { title: "随餐饮食同服", desc: "特定剂型限制。如许多传统无机钙必须依赖胃酸才能分解，被强制设定在饭后服用。常放在餐桌上作为附带动作。", icon: Coffee },
+        { title: "婴幼儿辅食诱导喂养", desc: "针对缺乏咀嚼能力的婴幼儿，需滴入嘴里或混入牛奶米粉中。此场景对产品的溶解度、腥异味要求极其苛刻。", icon: Droplet },
     ];
 
     return (
@@ -23,7 +21,7 @@ export default function Page_TargetAudience() {
             <div className="flex-1 relative z-10 w-full flex flex-col items-center justify-start px-8 lg:px-16 pb-8 min-h-0 container mx-auto mt-2 overflow-hidden">
                 {/* Centered Title */}
                 <h1 className="text-3xl sm:text-[2.2rem] font-bold text-white tracking-widest text-center mb-5 font-['AlimamaShuHeiTi'] shrink-0">
-                    冰箱卖给谁？
+                    口服补钙产品卖给谁？
                 </h1>
 
                 <div className="w-full max-w-[1700px] flex-1 flex items-center justify-between relative mt-8">
@@ -31,7 +29,7 @@ export default function Page_TargetAudience() {
                     {/* Left Items (Motives) */}
                     <div className="w-[34%] flex flex-col justify-center gap-6 z-20 h-full pb-16 pt-2 text-right">
                         {motives.map((motive, idx) => {
-                            const marginClass = [0, 4].includes(idx) ? 'mr-0' : [1, 3].includes(idx) ? 'mr-12' : 'mr-16';
+                            const marginClass = [0, 2].includes(idx) ? 'mr-0' : 'mr-12';
                             return (
                                 <div key={idx} className={`flex flex-col items-end ${marginClass}`}>
                                     <div className="flex items-center gap-4 mb-2">

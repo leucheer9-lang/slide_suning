@@ -2,8 +2,7 @@ import puppeteer from 'puppeteer';
 import pptxgen from 'pptxgenjs';
 import fs from 'fs';
 
-const slideOrder = JSON.parse(fs.readFileSync('./src/slideOrder.json', 'utf-8'));
-const totalSlides = slideOrder.length;
+// dynamically fetch totalSlides later
 
 async function run() {
     console.log('Launching browser...');
@@ -14,11 +13,11 @@ async function run() {
     });
     const page = await browser.newPage();
 
-    console.log('Navigating to http://localhost:5173...');
+    console.log('Navigating to http://localhost:5176...');
     try {
-        await page.goto('http://localhost:5173', { waitUntil: 'networkidle0', timeout: 60000 });
+        await page.goto('http://localhost:5176', { waitUntil: 'networkidle0', timeout: 60000 });
     } catch (e) {
-        console.error('Failed to load page. Make sure Vite server is running on port 5173.', e);
+        console.error('Failed to load page. Make sure Vite server is running on port 5176.', e);
         await browser.close();
         return;
     }
@@ -37,6 +36,8 @@ async function run() {
 
     const pptx = new pptxgen();
     pptx.layout = 'LAYOUT_16x9';
+
+    const totalSlides = 90;
 
     console.log(`Found ${totalSlides} slides. Starting capture...`);
 
@@ -64,7 +65,7 @@ async function run() {
         const isTargetPage = pageNum >= startPage && pageNum <= endPage;
 
         if (isTargetPage) {
-            console.log(`Processing slide ${i + 1}/${totalSlides}... (${slideOrder[i]})`);
+            console.log(`Processing slide ${i + 1}/${totalSlides}...`);
 
             await new Promise(r => setTimeout(r, 1500));
 

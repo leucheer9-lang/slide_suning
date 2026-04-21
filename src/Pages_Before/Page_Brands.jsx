@@ -3,33 +3,26 @@ import React from 'react';
 export default function Page_Brands() {
     const brandsData = [
         {
-            category: "全球领导者",
+            category: "全球巨头",
             list: [
-                { rank: "1", name: "海尔（Haier）", dynamic: "全球第一（约20%+全球份额）", advantage: "【全球白电领导者】覆盖全球市场，产品线从入门到高端齐全，智慧家电生态完善，渠道与制造规模优势明显。" },
-                { rank: "2", name: "三星（Samsung）", dynamic: "全球高端份额领先", advantage: "【智能冰箱领导者】主打 AI 家电与智能屏幕冰箱，SmartThings 生态连接能力强，在高端市场影响力突出。" },
-                { rank: "3", name: "LG", dynamic: "全球高端技术品牌", advantage: "【变频压缩机技术领先】Linear Inverter 技术以节能和低噪音著称，高端设计与可靠性强。" },
-                { rank: "4", name: "博世 / 西门子（BSH）", dynamic: "欧洲高端市场领先", advantage: "【德系高端家电】嵌入式厨房生态完善，制造工艺与品质口碑强，高端家庭用户占比高。" },
-                { rank: "5", name: "惠而浦（Whirlpool）", dynamic: "北美市场龙头", advantage: "【北美传统家电巨头】产品耐用性强，渠道与品牌历史优势明显。" }
+                { rank: "1", name: "钙尔奇 (Caltrate)", dynamic: "稳居国内钙制剂零售额榜首（在国内拥有百亿级大盘体量）。", advantage: "【传统骨骼健康绝对霸主】背靠赫力昂（原葛兰素史克消费保健品），拥有统治级的医院骨科/妇产科医生推荐背书和线下连锁药房货架占有率，是中老年防骨质疏松的默认首选。" },
+                { rank: "2", name: "斯维诗 (Swisse)", dynamic: "国内跨境保健品钙品类销量断层领先（母公司健合集团年营收超百亿）。", advantage: "【年轻化与海淘风向标】凭借“娘娘钙”（柠檬酸钙+D3）成功教育了中国市场。主打温和好吸收，在跨境电商和一二线城市年轻白领、抗初老人群中占据极高心智。" },
+                { rank: "3", name: "奥斯特林 (Ostelin)", dynamic: "澳洲药房销量第一（国内母婴海淘头部品牌）。", advantage: "【澳洲专业骨骼营养标杆】专注钙与维生素D的研发，其“恐龙钙”系列在国内母婴海淘圈享有盛誉，是高净值家庭儿童补钙的核心选项之一。" }
             ]
         },
         {
-            category: "中国巨头",
+            category: "国内巨头",
             list: [
-                { rank: "1", name: "海尔", dynamic: "中国市场长期第一", advantage: "【高端与智能化双线布局】卡萨帝高端品牌带动高端市场，智慧家庭生态持续扩张。" },
-                { rank: "2", name: "美的（Midea）", dynamic: "中国市场第二", advantage: "【制造与供应链优势】规模化制造与成本控制能力强，产品覆盖全价位市场。" },
-                { rank: "3", name: "容声（Ronshen）", dynamic: "中国老牌冰箱品牌", advantage: "【制冷技术口碑强】长期深耕冰箱领域，在节能与保鲜技术上积累深厚。" },
-                { rank: "4", name: "美菱（Meiling）", dynamic: "国内传统品牌", advantage: "【性价比优势】主打稳定制冷技术与大众价格区间，在下沉市场占有率高。" },
-                { rank: "5", name: "TCL冰箱", dynamic: "新晋综合家电品牌", advantage: "【渠道扩张能力强】依托电视品牌渠道和海外市场快速扩张。" }
+                { rank: "1", name: "汤臣倍健 (By-health)", dynamic: "VDS整体年营收超90亿元（骨骼健康为核心贡献品类之一）。", advantage: "【全人群终端拦截王】国内VDS龙头。产品线极其丰富（如钙DK等），凭借下沉极深的线下地推网络和药店“驻店营养师”的贴身推销，牢牢把控中国家庭的日常采购大盘。" },
+                { rank: "2", name: "哈药 (Hayao)", dynamic: "相关单品年销超10亿元规模（蓝瓶钙为超级大单品）。", advantage: "【国民级下沉市场王者】凭借洗脑级的“蓝瓶的钙，好喝的钙”，在广袤的下沉市场和中老年、儿童群体中拥有不可磨灭的品牌资产，主打基础补充与极致性价比。" },
+                { rank: "3", name: "仁和 / 修正 等", dynamic: "电商平价白牌代工销量极高（分散出货，单品体量庞大）。", advantage: "【贴牌代工与电商流量收割者】依托传统老字号药企的商标背书，通过大规模OEM代工，在电商平台主打百元以内的平价多维钙片，收割价格敏感型人群。" }
             ]
         },
         {
-            category: "“新势力”",
+            category: "新兴势力",
             list: [
-                { rank: "1", name: "米家（MIJIA）", dynamic: "线上增长最快", advantage: "【互联网家电代表】高性价比与智能生态连接能力强，年轻消费群体接受度高。" },
-                { rank: "2", name: "云米（VIOMI）", dynamic: "智能家电新品牌", advantage: "【IoT智能家电】主打全屋智能家电系统，与互联网平台生态结合。" },
-                { rank: "3", name: "COLMO", dynamic: "高端 AI 家电", advantage: "【美的高端品牌】主打 AI 智能控制与高端设计，定位高端智能厨房。" },
-                { rank: "4", name: "奥马（Homa）", dynamic: "全球ODM龙头", advantage: "【出口制造优势】长期为国际品牌代工，在欧洲市场销量较大。" },
-                { rank: "5", name: "康佳（Konka）", dynamic: "综合家电品牌", advantage: "【价格与渠道优势】在三四线城市及线上渠道具有较高渗透率。" }
+                { rank: "1", name: "WonderLab / 万益蓝", dynamic: "细分赛道破亿元规模（高客单价，复购率极高）。", advantage: "【剂型创新与情绪消费收割机】跨界玩家，将补钙做成高颜值的“夹心软糖”形态。深谙社媒流量与成分党玩法，精准狙击追求“去吃药化”和颜值主义的新锐年轻群体。" },
+                { rank: "2", name: "inne / Bio Island", dynamic: "母婴垂直赛道头部销冠（婴童营养品增速极快）。", advantage: "【母婴精细化喂养破局者】绕开传统巨头，专攻“婴童第一口钙”。主打独立条装防腐剂零添加、或者是易于剪开的乳钙软胶囊，在小红书等母婴社区拥有极高的话语权。" }
             ]
         }
     ];
@@ -41,7 +34,7 @@ export default function Page_Brands() {
             <div className="flex-1 relative z-10 w-full flex flex-col items-center justify-start px-8 lg:px-16 pb-6 min-h-0 container mx-auto mt-2 overflow-hidden">
                 {/* Centered Title */}
                 <h1 className="text-3xl sm:text-[2.2rem] font-bold text-white tracking-widest text-center mb-5 font-['AlimamaShuHeiTi'] shrink-0">
-                    冰箱的主要品牌
+                    钙制剂核心品牌梯队与市场定位
                 </h1>
 
                 {/* Table Container */}

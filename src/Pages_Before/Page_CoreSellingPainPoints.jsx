@@ -3,52 +3,37 @@ import React from 'react';
 export default function Page_CoreSellingPainPoints() {
     const sellingData = [
         {
-            dimension: "全隐美学",
-            desc: "首创隐形油烟机 & 0 缝全隐安装",
-            performance: "采用航空级折叠结构，不工作时机身光学隐身；330mm 超薄机身适配主流橱柜，实现厨居一体化无界美学。"
+            rank: "1",
+            feature: "不挑时间，空腹也能喝",
+            difference: "因为是柠檬酸钙，不依赖胃酸。不管是还没吃饭还是临睡前，想喝就喝，吸收效果都一样稳。"
         },
         {
-            dimension: "智慧控烟",
-            desc: "AI 全域净吸科技 & AI 温感监测",
-            performance: "“十四五”国家课题成果应用；内置云腾智驱引擎，毫秒级预判油烟量并自动调档，实现油烟源头阻断。"
+            rank: "2",
+            feature: "对肚子真的温和",
+            difference: "真的不导致便秘。通过去掉卡拉胶和使用有机钙源，解决了传统补钙最让人头疼的“堵心”问题。"
         },
         {
-            dimension: "智感守护",
-            desc: "全球首款哨兵灶 & 人感雷达科技",
-            performance: "4D 毫米波雷达 360° 监控；人离灶即开启定时看护，长时未归自动关火，全时段筑牢厨房明火安全防线。"
+            rank: "3",
+            feature: "依从性极高",
+            difference: "翻译成白话就是：因为它好喝、方便，你才能真的坚持住。补钙这事，坚持不下来含量再高也没用。"
         },
         {
-            dimension: "全效净化",
-            desc: "24 小时哨兵监控 & 智感净味技术",
-            performance: "主动监测并快速净化甲醛、一氧化碳等 9 种有害气体；有效预防老旧社区燃气微泄漏隐患，保障空间持久清新。"
-        },
-        {
-            dimension: "舒适静音",
-            desc: "全路径仿生降噪科技",
-            performance: "行业首例仿生鹦鹉螺畅吸风道，从源头消减噪音；打造图书馆级静音环境，完美适配开放式厨房的社交互动需求。"
-        },
-        {
-            dimension: "一体智联",
-            desc: "烟灶蒸烤一体智联科技",
-            performance: "打破设备孤岛，灶具启动烟机自动感应；烹饪结束自动增压排气，防止蒸汽扑面，实现全流程无感智能体验。"
+            rank: "4",
+            feature: "品牌硬，安全看得见",
+            difference: "迪巧是大药厂牌子，每批货都有 SGS 检测报告。在 2026 年，这种“有证可查”的安全性比什么广告都管用。"
         }
     ];
 
     const painData = [
         {
             rank: "1",
-            pain: "安装环境的高适配性要求",
-            challenge: "虽然主打“0缝全隐”和适配多种橱柜，但对于老旧厨房改建，需面临不平整墙面、老旧吊柜规格及烟道改造的复杂性。若施工精度或预留空间不足，可能导致“隐形”效果大打折扣或产生安装溢价。"
+            pain: "单毫克钙的价格较高",
+            challenge: "成本问题：液体钙的包装和物流成本远高于片剂。按钙元素单价计算，它属于高端消费，对于极度敏感价格的家庭有一定压力。"
         },
         {
             rank: "2",
-            pain: "精密航天结构的长期可靠性",
-            challenge: "行业首创的“航空级折叠升降结构”虽通过5万次寿命测试，但这种精密机械结构在厨房重油烟环境下，其长期运行的顺畅度及5-10年后的机械维护成本，是高端用户在享受科技便利时的潜在焦虑。"
-        },
-        {
-            rank: "3",
-            pain: "高端AI功能的价值感知门槛",
-            challenge: "“AI温感监测”和“人感雷达”的价值主要体现在重油烟爆炒或家里有老人等特定高危场景下。对于不常爆炒或饮食极其简单的用户，可能会觉得这些为了“极致安全”和“无感智能”支付的专利溢价过高。"
+            pain: "营养协同的进阶需求",
+            challenge: "成分单一：部分极高端用户在 2026 年追求“钙+D3+K2”的三重组合，迪巧小粉条目前主攻 D3 辅助，尚未集成维生素 K2（引钙入骨）。"
         }
     ];
 
@@ -63,29 +48,33 @@ export default function Page_CoreSellingPainPoints() {
                         <h2 className="text-[1.25rem] font-bold text-blue-200">核心卖点</h2>
                         <p className="text-[0.95rem] text-blue-300/80 mt-1 flex items-center gap-2">
                              <div className="w-1.5 h-1.5 rounded-full bg-[#004CE5]"></div>
-                             全面打造“隐无界、智无感、净无忧”的全维厨居生态体验。
+                             基于产品本质，建立起难以被竞争对手复制的功能与品牌优势。
                         </p>
                     </div>
                     {/* Table Header */}
-                    <div className="grid grid-cols-[1.5fr_2fr] xl:grid-cols-[1.5fr_2fr] bg-white/[0.02] border-b border-white/10 shrink-0 w-full">
-                        <div className="py-3 px-4 sm:px-5 text-[0.95rem] lg:text-[1.05rem] font-bold text-blue-200/80 tracking-wider">核心卖点描述</div>
-                        <div className="py-3 px-4 sm:px-5 text-[0.95rem] lg:text-[1.05rem] font-bold text-blue-200/80 tracking-wider">2026 年实战表现</div>
+                    <div className="grid grid-cols-[80px_1fr_2.5fr] xl:grid-cols-[100px_1fr_2.5fr] bg-white/[0.02] border-b border-white/10 shrink-0 w-full">
+                        <div className="py-3 px-4 sm:px-5 text-[0.95rem] lg:text-[1.05rem] font-bold text-blue-200/80 tracking-wider text-center">排名</div>
+                        <div className="py-3 px-4 sm:px-5 text-[0.95rem] lg:text-[1.05rem] font-bold text-blue-200/80 tracking-wider">核心优势</div>
+                        <div className="py-3 px-4 sm:px-5 text-[0.95rem] lg:text-[1.05rem] font-bold text-blue-200/80 tracking-wider">相较于竞争对手的差异化事实</div>
                     </div>
                     {/* Table Body */}
                     <div className="w-full flex-1 overflow-hidden flex flex-col">
                         <div className="flex flex-col flex-1">
                             {sellingData.map((item, idx) => (
-                                <div key={idx} className={`grid grid-cols-[1.5fr_2fr] xl:grid-cols-[1.5fr_2fr] group ${idx !== sellingData.length - 1 ? 'border-b border-white/[0.05]' : ''} hover:bg-white/[0.02] transition-colors w-full flex-1`}>
-                                    <div className="py-2 px-4 sm:px-5 flex items-center text-white/90 font-bold text-[1.1rem]">
-                                        {item.desc}
+                                <div key={idx} className={`grid grid-cols-[80px_1fr_2.5fr] xl:grid-cols-[100px_1fr_2.5fr] group ${idx !== sellingData.length - 1 ? 'border-b border-white/[0.05]' : ''} hover:bg-white/[0.02] transition-colors w-full flex-1`}>
+                                    <div className="py-3 px-4 sm:px-5 flex items-center justify-center shrink-0">
+                                        <div className="font-bold text-blue-400 text-[1.4rem] leading-snug whitespace-nowrap">{item.rank}</div>
                                     </div>
-                                    <div className="py-2 px-4 sm:px-5 border-l border-white/5 flex items-center text-zinc-300 leading-relaxed font-medium text-[1.05rem] pr-6">
-                                        {item.performance.split('；').map((segment, i, arr) => (
-                                            <React.Fragment key={i}>
-                                                {segment}{i < arr.length - 1 ? '；' : ''}
-                                                {i === 0 && <br/>}
-                                            </React.Fragment>
-                                        ))}
+                                    <div className="py-3 px-4 sm:px-5 border-l border-white/5 flex items-center text-white/90 font-bold text-[1.1rem]">
+                                        {item.feature}
+                                    </div>
+                                    <div className="py-3 px-4 sm:px-5 border-l border-white/5 flex items-center text-zinc-300 leading-relaxed font-medium text-[1.05rem] pr-6">
+                                        {item.difference.split('：').map((segment, i, arr) => {
+                                            if (i === 0 && arr.length > 1) {
+                                                return <React.Fragment key={i}><span className="font-bold text-blue-300">{segment}：</span></React.Fragment>;
+                                            }
+                                            return <React.Fragment key={i}>{segment}</React.Fragment>;
+                                        })}
                                     </div>
                                 </div>
                             ))}
@@ -99,24 +88,33 @@ export default function Page_CoreSellingPainPoints() {
                         <h2 className="text-[1.25rem] font-bold text-blue-200">核心痛点</h2>
                         <p className="text-[0.95rem] text-blue-300/80 mt-1 flex items-center gap-2">
                              <div className="w-1.5 h-1.5 rounded-full bg-[#004CE5]"></div>
-                             用户与市场的真实挑战（针对方太高端系列）。
+                             面对市场的真实挑战与品牌需要突破的发展瓶颈。
                         </p>
                     </div>
                     {/* Table Header */}
-                    <div className="grid grid-cols-[1fr_2.5fr] xl:grid-cols-[1fr_2.5fr] bg-white/[0.02] border-b border-white/10 shrink-0 w-full">
+                    <div className="grid grid-cols-[80px_1.5fr_2.5fr] xl:grid-cols-[100px_1.5fr_2.5fr] bg-white/[0.02] border-b border-white/10 shrink-0 w-full">
+                        <div className="py-2.5 px-4 sm:px-5 text-[0.95rem] lg:text-[1.05rem] font-bold text-blue-200/80 tracking-wider text-center">排名</div>
                         <div className="py-2.5 px-4 sm:px-5 text-[0.95rem] lg:text-[1.05rem] font-bold text-blue-200/80 tracking-wider">核心痛点</div>
-                        <div className="py-2.5 px-4 sm:px-5 text-[0.95rem] lg:text-[1.05rem] font-bold text-blue-200/80 tracking-wider">用户与市场的真实挑战</div>
+                        <div className="py-2.5 px-4 sm:px-5 text-[0.95rem] lg:text-[1.05rem] font-bold text-blue-200/80 tracking-wider">真实存在的挑战描述</div>
                     </div>
                     {/* Table Body */}
                     <div className="w-full flex-1 overflow-hidden flex flex-col">
                         <div className="flex flex-col flex-1">
                             {painData.map((item, idx) => (
-                                <div key={idx} className={`grid grid-cols-[1fr_2.5fr] xl:grid-cols-[1fr_2.5fr] group ${idx !== painData.length - 1 ? 'border-b border-white/[0.05]' : ''} hover:bg-white/[0.02] transition-colors w-full flex-1`}>
-                                    <div className="py-2 px-4 sm:px-5 flex items-center text-white/90 font-bold text-[1.12rem]">
+                                <div key={idx} className={`grid grid-cols-[80px_1.5fr_2.5fr] xl:grid-cols-[100px_1.5fr_2.5fr] group ${idx !== painData.length - 1 ? 'border-b border-white/[0.05]' : ''} hover:bg-white/[0.02] transition-colors w-full flex-1`}>
+                                    <div className="py-2 px-4 sm:px-5 flex items-center justify-center shrink-0">
+                                        <div className="font-bold text-blue-400 text-[1.4rem] leading-snug whitespace-nowrap">{item.rank}</div>
+                                    </div>
+                                    <div className="py-2 px-4 sm:px-5 border-l border-white/5 flex items-center text-[#ff6b6b]/90 font-bold text-[1.12rem]">
                                         {item.pain}
                                     </div>
                                     <div className="py-2 px-4 sm:px-5 border-l border-white/5 flex items-center text-zinc-300 leading-snug font-medium text-[1.05rem] pr-6">
-                                        {item.challenge}
+                                        {item.challenge.split(/：|:/).map((segment, i, arr) => {
+                                            if (i === 0 && arr.length > 1) {
+                                                return <React.Fragment key={i}><span className="font-bold text-blue-900 bg-blue-200 px-2 py-0.5 rounded mr-2 text-[0.9rem] flex-shrink-0">{segment}</span></React.Fragment>;
+                                            }
+                                            return <div key={i}>{segment}</div>;
+                                        })}
                                     </div>
                                 </div>
                             ))}

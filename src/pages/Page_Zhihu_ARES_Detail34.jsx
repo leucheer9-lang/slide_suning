@@ -1,64 +1,64 @@
 import React from 'react';
 
-export default function Page_Zhihu_ARES_Detail12() {
+export default function Page_Zhihu_ARES_Detail34() {
     // ----------------------
     // 1. Zoomed-In Architecture Node Data
     // ----------------------
     const phases = [
         {
-            id: 'phase1',
+            id: 'phase3',
             hubX: 400, hubY: 350,
-            step: "Step 1. 查询扩展",
-            title: "意图拆解监测模块",
-            iconId: "search",
-            target: "识别用户极其模糊的原始输入，与 AI 后台最终拆解出的执行指令之间的「语义增量」。",
+            step: "Step 3. 语义打分因子逆向模块（重排阶段）",
+            title: "反推重排偏好加权值",
+            iconId: "activity",
+            target: "反推 AI 重排算法的内容偏好加权值。",
 
             methods: [
                 {
                     x: 200, y: 120,
-                    iconId: 'terminal',
-                    name: "日志探测 API",
-                    detail: "通过底层接口反向抓取截获 AI 后端的 search_queries 元数据序列及其行为轨迹。"
+                    iconId: 'layers',
+                    name: "对照组扫描",
+                    detail: "对“入选网页”与“未入选网页”进行全量内容抓取。"
                 },
                 {
                     x: 600, y: 120,
-                    iconId: 'command',
-                    name: "提示词劫持验证",
-                    detail: "在测试提问体中强力注入限定思考指令，诱因逼迫其先行脱出分阶段提问规划。"
+                    iconId: 'bar-chart',
+                    name: "特征权重回归",
+                    detail: "通过 NLP 算法分析入选网页的共同特征（如：Markdown 表格占比、特定行业词密度）。"
                 }
             ],
 
             output: {
-                label: "意图规律模板",
-                detail: "通过多重解构，绝对定型该类目下 AI 必定会自动补全的核⼼维度（如：“价格体系”、“极速响应度”等）。"
+                label: "AI评分权重表",
+                detail: "还原 AI 的评分权重表。例如：在当前品类下，拥有表格的网页被选中的概率是纯文本网页的 3.5 倍。"
             }
         },
         {
-            id: 'phase2',
+            id: 'phase4',
             hubX: 1200, hubY: 350,
-            step: "Step 2. 初始检索",
-            title: "候选池镜像审计模块",
-            iconId: "database",
-            target: "精准量化各大主流 AI 底层爬虫的站点数据信任边界与入库的绝对门槛。",
+            step: "Step 4. 提取锚点回溯模块（注入阶段）",
+            title: "锁定信息抓取物理规则",
+            iconId: "target",
+            target: "锁定 AI 抓取信息的物理规则（从哪剪、剪多长）。",
 
             methods: [
                 {
                     x: 1000, y: 120,
-                    iconId: 'refresh',
-                    name: "高并发截留采样",
-                    detail: "在 AI 搜寻极短毫秒内，调动底层搜索引擎 API 同频固化获取该词条下前 Top100 网页镜像池。"
+                    iconId: 'map-pin',
+                    name: "坐标回溯",
+                    detail: "将 AI 答案中的文本段落通过模糊匹配，定位到原始 HTML 中的物理坐标。"
                 },
                 {
                     x: 1400, y: 120,
-                    iconId: 'git-merge',
-                    name: "绝对交集比照法",
-                    detail: "将“引擎抓出的 100 名原材料”与被 AI 最终确认引用的源链进行绝对映射穿透交叉比对。"
+                    iconId: 'git-commit',
+                    name: "路径分析",
+                    detail: "记录该切片在网页中的 DOM 路径（是 H2 下的首段，还是 <table> 里的单元格）。"
                 }
             ],
 
             output: {
-                label: "过滤权重底牌线",
-                detail: "探测定位权重基准。看清 AI 是只死脑筋选用全球 Top 20，还是存在破格录取低排位小站的机制漏洞。"
+                label: "内容提取规则",
+                detail: "制定内容布局的黄金切片标准。例如：识别出 AI 偏好提取长度在 300 字符以内、且紧跟在结论性标题后的文本块。"
             }
         }
     ];
@@ -68,12 +68,12 @@ export default function Page_Zhihu_ARES_Detail12() {
     // ----------------------
     const getIcon = (id, strokeParams) => {
         const icons = {
-            'search': <><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></>,
-            'database': <><ellipse cx="12" cy="5" rx="9" ry="3" /><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" /><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" /></>,
-            'terminal': <><polyline points="4 17 10 11 4 5" /><line x1="12" y1="19" x2="20" y2="19" /></>,
-            'command': <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z" />,
-            'refresh': <><polyline points="23 4 23 10 17 10" /><polyline points="1 20 1 14 7 14" /><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15" /></>,
-            'git-merge': <><circle cx="18" cy="18" r="3" /><circle cx="6" cy="6" r="3" /><path d="M6 21V9a9 9 0 0 0 9 9" /></>,
+            'activity': <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />,
+            'layers': <><polygon points="12 2 2 7 12 12 22 7 12 2" /><polyline points="2 17 12 22 22 17" /><polyline points="2 12 12 17 22 12" /></>,
+            'bar-chart': <><line x1="12" y1="20" x2="12" y2="10" /><line x1="18" y1="20" x2="18" y2="4" /><line x1="6" y1="20" x2="6" y2="16" /></>,
+            'target': <><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></>,
+            'map-pin': <><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></>,
+            'git-commit': <><circle cx="12" cy="12" r="3" /><line x1="3" y1="12" x2="9" y2="12" /><line x1="15" y1="12" x2="21" y2="12" /></>,
         };
         return (
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeParams || "1.5"} strokeLinecap="round" strokeLinejoin="round" className="opacity-90 w-full h-full p-[6px]">
@@ -133,7 +133,7 @@ export default function Page_Zhihu_ARES_Detail12() {
                                     {/* Detailed Text Hub projecting down centrally */}
                                     <div className="absolute top-[100%] left-1/2 -translate-x-1/2 flex flex-col w-[700px] items-center z-30 pt-[24px]">
                                         <span className="font-mono text-zinc-400 text-[19px] uppercase tracking-widest mb-1">{phase.step}</span>
-                                        <span className="font-black text-[32px] xl:text-[34px] tracking-widest text-zinc-100 mb-6">{phase.title}</span>
+                                        <span className="font-black text-[32px] xl:text-[34px] tracking-widest text-zinc-100 mb-6 whitespace-nowrap">{phase.title}</span>
 
                                         <div className="w-full flex gap-4 h-[190px]">
                                             {/* Target Information Left Card */}

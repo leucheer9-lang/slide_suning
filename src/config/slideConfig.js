@@ -76,6 +76,11 @@ import Page_Zhihu_AIInternetData from '../pages/Page_Zhihu_AIInternetData';
 import Page_Zhihu_AIInternetProcess from '../pages/Page_Zhihu_AIInternetProcess';
 import Page_Zhihu_ARES_Architecture from '../pages/Page_Zhihu_ARES_Architecture';
 import Page_Zhihu_ARES_Detail12 from '../pages/Page_Zhihu_ARES_Detail12';
+import Page_Zhihu_ARES_Detail34 from '../pages/Page_Zhihu_ARES_Detail34';
+import Page_Zhihu_DataProcess from '../pages/Page_Zhihu_DataProcess';
+import Page_Zhihu_WaterSource from '../pages/Page_Zhihu_WaterSource';
+import Page_Zhihu_GeoStrategy from '../pages/Page_Zhihu_GeoStrategy';
+import Page_Zhihu_CompanyArchitecture from '../pages/Page_Zhihu_CompanyArchitecture';
 
 export const slideConfig = [
   // ——— 封面 & 目录 ———
@@ -103,25 +108,25 @@ export const slideConfig = [
   { type: 'chapter', title: '品牌信息调研', subtitle: 'BRAND DISCOVERY', backgroundImage: '/' },
 
   { type: 'section', title: '目标行业信息' },
-  { type: 'page', title: '冰箱是什么？', component: PB_ProposalNav },
-  { type: 'page', title: '卖给谁？', component: PB_TargetAudience },
-  { type: 'page', title: '冰箱的主要品牌', component: PB_Brands },
+  { type: 'page', title: '口服补钙产品是什么？', component: PB_ProposalNav },
+  { type: 'page', title: '口服补钙产品卖给谁？', component: PB_TargetAudience },
+  { type: 'page', title: '口服补钙产品的主要品牌', component: PB_Brands },
 
   { type: 'section', title: '目标产品信息' },
-  { type: 'page', title: '方太冰箱X20.i是什么？', component: PB_TargetProduct },
-  { type: 'page', title: '方太冰箱X20.i卖给谁？', component: PB_TargetUser },
-  { type: 'page', title: '核心卖点及痛点', component: PB_CoreSellingPainPoints },
+  { type: 'page', title: '迪巧小粉条液体钙是什么？', component: PB_TargetProduct },
+  { type: 'page', title: '迪巧小粉条液体钙卖给谁？', component: PB_TargetUser },
+  { type: 'page', title: '迪巧小粉条液体钙的核心卖点及痛点', component: PB_CoreSellingPainPoints },
+
+  { type: 'section', title: '搜索及社媒数据' },
+  { type: 'page', title: '百度搜索数据', },
+  { type: 'page', title: '各平台热搜词', component: PB_GeoOptKeywords },
+  { type: 'page', title: '社媒数据', component: PB_GeoOptKeywordsSocial },
+  { type: 'page', title: '数据导入分析', },
 
   // ══════════════════════════════════════════════════════════
   // ——— 篇章2: 词条选择 ———
   // ══════════════════════════════════════════════════════════
   { type: 'chapter', title: '词条选择', subtitle: 'KEYWORD SELECTION', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
-
-  { type: 'section', title: '数据采集' },
-  { type: 'page', title: '百度搜索数据', },
-  { type: 'page', title: '各平台热搜词', component: PB_GeoOptKeywords },
-  { type: 'page', title: '社媒数据', component: PB_GeoOptKeywordsSocial },
-  { type: 'page', title: '数据导入分析', },
 
   { type: 'section', title: '词条穷举及清洗' },
   { type: 'page', title: '词条穷举及清洗', components: [PB_GeoOptKeywordsClassify, PB_GeoOptKeywordsClassify2] },
@@ -198,14 +203,15 @@ export const slideConfig = [
   { type: 'section', title: 'GEO效果量化对冲模型' },
   { type: 'page', title: 'AI模型用什么数据回答用户的问题', components: [Page_Zhihu_AIData, Page_Zhihu_AIDataDecision] },
   { type: 'page', title: 'AI模型到底是如何用互联网数据的', components: [Page_Zhihu_AIInternetData, Page_Zhihu_AIInternetProcess] },
-  { type: 'page', title: '对抗策略', components: [Page_Zhihu_ARES_Architecture, Page_Zhihu_ARES_Detail12] },
+  { type: 'page', title: '对抗策略', components: [Page_Zhihu_ARES_Architecture, Page_Zhihu_ARES_Detail12, Page_Zhihu_ARES_Detail34] },
 
-  { type: 'section', title: '数据清晰和结构化处理的技术流程是什么？' },
-  { type: 'page', title: '数据清晰和结构化处理的技术流程', },
+  { type: 'section', title: '数据清洗和结构化处理的技术流程是什么？' },
+  { type: 'page', title: '数据清洗和结构化处理的技术流程', component: Page_Zhihu_DataProcess },
 
   { type: 'section', title: '知乎数据引用' },
-  { type: 'page', title: '理解核心：知乎在 GEO 中的“水源”地位', },
-  { type: 'page', title: '基于知乎特点的 GEO 优化方案', },
+  { type: 'page', title: '理解核心：知乎在 GEO 中的“水源”地位', component: Page_Zhihu_WaterSource },
+  { type: 'page', title: '基于知乎特点的 GEO 优化方案', component: Page_Zhihu_GeoStrategy },
+  { type: 'page', title: '公司架构', component: Page_Zhihu_CompanyArchitecture },
 
 
 ];

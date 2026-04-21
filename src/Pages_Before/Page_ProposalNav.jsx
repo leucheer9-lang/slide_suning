@@ -12,7 +12,7 @@ export default function Page_ProposalNav() {
                     <div className="flex flex-col gap-4">
                         <div className="flex items-end gap-3">
                             <h1 className="text-4xl sm:text-[4.5rem] font-normal text-white leading-tight tracking-tight font-['AlimamaShuHeiTi']">
-                                冰箱是什么？
+                                口服补钙产品是什么？
                             </h1>
                             <svg className="w-10 h-10 text-[#004CE5] mb-3 stroke-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
@@ -39,7 +39,7 @@ export default function Page_ProposalNav() {
                             <div>
                                 <h3 className="text-2xl sm:text-[1.8rem] font-bold mb-4 tracking-wide text-white">基本概念</h3>
                                 <p className="text-lg sm:text-xl leading-[1.85] font-medium text-white/90">
-                                    冰箱（Refrigerator）是一种通过制冷系统降低内部温度，用于储存和延长食材保鲜时间的家用电器。它通过压缩机驱动制冷剂循环，使冷藏室维持在约 2–8℃、冷冻室维持在约 −18℃左右，从而减缓食物腐败、细菌繁殖和水分流失。冰箱通常由冷藏区、冷冻区以及部分变温区组成，可用于储存蔬菜、水果、肉类、乳制品及冷冻食品，是现代家庭长期运行的基础厨房电器。
+                                    以补充人体骨骼及生理代谢所需的钙元素为核心目的，经过特定制剂工艺（如片剂、胶囊、颗粒、液体等）加工而成，通过口服途径摄入的维生素与膳食补充剂（VDS）或非处方药（OTC）。
                                 </p>
                             </div>
 
@@ -54,10 +54,15 @@ export default function Page_ProposalNav() {
                             </div>
 
                             <div>
-                                <h3 className="text-2xl sm:text-[1.8rem] font-bold mb-4 tracking-wide text-white">其他称呼</h3>
-                                <p className="text-lg sm:text-xl leading-[1.85] font-medium text-white/90">
-                                    1. 电冰箱（正式及书面全称） 2. 冰柜/冷柜（行业或针对特定深冷功能的称呼）
-                                </p>
+                                <h3 className="text-2xl sm:text-[1.8rem] font-bold mb-4 tracking-wide text-white">
+                                    其他称呼
+                                    <span className="text-[20px] font-normal text-white/60 ml-3">（按消费者真实搜索与口语习惯排序）</span>
+                                </h3>
+                                <div className="text-lg sm:text-xl leading-[1.85] font-medium text-white/90 flex flex-col gap-2">
+                                    <p>1. 钙片（绝对的国民级泛称，无论什么形态，大众都习惯统称买钙片）。</p>
+                                    <p>2. 钙剂（医生、药师、营养师等专业语境的称呼）。</p>
+                                    <p>3. 骨骼健康营养品（高端保健品或抗衰语境下的包装词）。</p>
+                                </div>
                             </div>
                         </div>
 
