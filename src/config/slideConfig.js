@@ -58,8 +58,13 @@ import PB_GeoOptKeywords from '../Pages_Before/Page_GeoOptKeywords';
 import PB_GeoOptKeywordsSocial from '../Pages_Before/Page_GeoOptKeywordsSocial';
 import PB_GeoOptKeywordsClassify from '../Pages_Before/Page_GeoOptKeywordsClassify';
 import PB_GeoOptKeywordsClassify2 from '../Pages_Before/Page_GeoOptKeywordsClassify2';
+import PB_GeoOptKeywordsClassify_New from '../Pages_Before/Page_GeoOptKeywordsClassify_New';
 import PB_GeoOptKeywordsClassify3 from '../Pages_Before/Page_GeoOptKeywordsClassify3';
+import PB_GeoOptKeywordsClassify4 from '../Pages_Before/Page_GeoOptKeywordsClassify4';
 import PB_GeoOptKeywordsCleaning1 from '../Pages_Before/Page_GeoOptKeywordsCleaning1';
+import PB_GeoOptKeywordsCleaning2 from '../Pages_Before/Page_GeoOptKeywordsCleaning2';
+import PB_GeoOptKeywordsCleaning3 from '../Pages_Before/Page_GeoOptKeywordsCleaning3';
+import PB_GeoOptKeywordsCleaning4 from '../Pages_Before/Page_GeoOptKeywordsCleaning4';
 import PB_AgentDataFlow from '../Pages_Before/Page_AgentDataFlow';
 import PB_BrandKnowledgeBase from '../Pages_Before/Page_BrandKnowledgeBase';
 import PB_UserReviewAnalysis from '../Pages_Before/Page_UserReviewAnalysis';
@@ -121,21 +126,18 @@ export const slideConfig = [
   { type: 'page', title: '百度搜索数据', },
   { type: 'page', title: '各平台热搜词', component: PB_GeoOptKeywords },
   { type: 'page', title: '社媒数据', component: PB_GeoOptKeywordsSocial },
-  { type: 'page', title: '数据导入分析', },
 
   // ══════════════════════════════════════════════════════════
   // ——— 篇章2: 词条选择 ———
   // ══════════════════════════════════════════════════════════
   { type: 'chapter', title: '词条选择', subtitle: 'KEYWORD SELECTION', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
 
+  { type: 'section', title: '数据分析 agent中心' },
+
   { type: 'section', title: '词条穷举及清洗' },
-  { type: 'page', title: '词条穷举及清洗', components: [PB_GeoOptKeywordsClassify, PB_GeoOptKeywordsClassify2] },
-
-  { type: 'section', title: '词条分类及拓展' },
-  { type: 'page', title: '词条分类及拓展', component: PB_GeoOptKeywordsClassify3 },
-
-  { type: 'section', title: '词条确定' },
-  { type: 'page', title: '词条确定', component: PB_GeoOptKeywordsCleaning1 },
+  { type: 'page', title: '词条穷举及清洗', components: [PB_GeoOptKeywordsClassify, PB_GeoOptKeywordsClassify2, PB_GeoOptKeywordsClassify_New] },
+  { type: 'page', title: '词条分类及拓展', components: [PB_GeoOptKeywordsClassify3, PB_GeoOptKeywordsClassify4] },
+  { type: 'page', title: '词条确定', components: [PB_GeoOptKeywordsCleaning1, PB_GeoOptKeywordsCleaning2, PB_GeoOptKeywordsCleaning3, PB_GeoOptKeywordsCleaning4] },
 
   // ══════════════════════════════════════════════════════════
   // ——— 篇章3: GEO体检报告 ———
@@ -157,21 +159,7 @@ export const slideConfig = [
   { type: 'page', title: '战略与 GEO 行动建议', component: Page_StrategyOutline },
 
   // ══════════════════════════════════════════════════════════
-  // ——— 篇章4: GEO优化 ———
-  // ══════════════════════════════════════════════════════════
-  { type: 'chapter', title: 'GEO优化', subtitle: 'GEO OPTIMIZATION', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
-
-  { type: 'section', title: 'GEO战略规划' },
-  { type: 'page', title: '三个板块介绍', components: [Page_SectionCore, Page_SectionBroad, Page_SectionExclusive] },
-  { type: 'page', title: '总结', component: Page_SectionSummary },
-
-  { type: 'section', title: '综合大词如何执行' },
-  { type: 'page', title: '方太和卡萨帝 SWOT 分析', components: [Page_SWOTAnalysis, Page_SWOTAnalysisFotile, Page_SWOTStrategy] },
-  { type: 'page', title: '两个内容策略', components: [Page_ArticleDataAnalysisHisense, Page_ArticleGenerationDemo, Page_ArticleDataAnalysisStrategy2, Page_ArticleGenerationDemo2, Page_ArticleGenerationDemo3] },
-  { type: 'page', title: '两个投放策略', components: [Page_DeliveryStrategy_Combo, Page_DeliveryStrategy_Platform] },
-
-  // ══════════════════════════════════════════════════════════
-  // ——— 篇章5: 数据量化分析 ———
+  // ——— 篇章4: 数据量化分析 ———
   // ══════════════════════════════════════════════════════════
   { type: 'chapter', title: '数据量化分析', subtitle: 'DATA QUANTIFICATION', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
 
@@ -183,6 +171,20 @@ export const slideConfig = [
   { type: 'section', title: '投放文章量化分析' },
   { type: 'page', title: '投放文章类型', components: [Page_ArticleTypeAnalysis, Page_ArticleTypeDetails] },
   { type: 'page', title: '投放文章数量', component: Page_ArticleQuantityAnalysis },
+
+  // ══════════════════════════════════════════════════════════
+  // ——— 篇章5: GEO优化 ———
+  // ══════════════════════════════════════════════════════════
+  { type: 'chapter', title: 'GEO优化', subtitle: 'GEO OPTIMIZATION', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
+
+  { type: 'section', title: 'GEO战略规划' },
+  { type: 'page', title: '三个板块介绍', components: [Page_SectionCore, Page_SectionBroad, Page_SectionExclusive] },
+  { type: 'page', title: '总结', component: Page_SectionSummary },
+
+  { type: 'section', title: '综合大词如何执行' },
+  { type: 'page', title: '方太和卡萨帝 SWOT 分析', components: [Page_SWOTAnalysis, Page_SWOTAnalysisFotile, Page_SWOTStrategy] },
+  { type: 'page', title: '两个内容策略', components: [Page_ArticleDataAnalysisHisense, Page_ArticleGenerationDemo, Page_ArticleDataAnalysisStrategy2, Page_ArticleGenerationDemo2, Page_ArticleGenerationDemo3] },
+  { type: 'page', title: '两个投放策略', components: [Page_DeliveryStrategy_Combo, Page_DeliveryStrategy_Platform] },
 
   // ══════════════════════════════════════════════════════════
   // ——— 篇章6: 阶段性复盘报告 ———

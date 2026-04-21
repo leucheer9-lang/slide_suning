@@ -4,52 +4,52 @@ export default function Page_GeoOptKeywordsSocial() {
 
     // --- Xiaohongshu Data (Red Theme) ---
     const xhsSearchData = [
-        { keyword: "1. 冰箱冷藏数字0-7", type: "功能科普", volume: "345.2w" },
-        { keyword: "2. 冰箱怎么挑选攻略", type: "选购指南", volume: "284.1w" },
-        { keyword: "3. 冰箱档位0-7正确调法", type: "使用教程", volume: "198.5w" },
-        { keyword: "4. 冰箱除异味", type: "痛点求助", volume: "172.3w" },
-        { keyword: "5. 冰箱结冰严重怎么去除", type: "售后维修", volume: "156.4w" },
-        { keyword: "6. 冰箱嵌入式推荐", type: "颜值挑选", volume: "125.8w" },
-        { keyword: "7. 冰箱餐边柜一体设计", type: "装修灵感", volume: "98.6w" },
-        { keyword: "8. 冰箱密封条发霉怎么清洗", type: "生活妙招", volume: "85.2w" },
-        { keyword: "9. 冰箱异味怎么彻底去除", type: "深层痛点", volume: "64.1w" },
-        { keyword: "10. 冰箱什么品牌最好", type: "品牌背书", volume: "45.7w" }
+        { keyword: "1. 补钙产品推荐", type: "泛需种草", volume: "345.2w" },
+        { keyword: "2. 补钙产品排行榜", type: "购买决策", volume: "284.1w" },
+        { keyword: "3. 适合高中生补钙的产品推荐", type: "人群细分", volume: "198.5w" },
+        { keyword: "4. 补钙产品怎么选", type: "知识科普", volume: "172.3w" },
+        { keyword: "5. 补钙产品什么时间吃", type: "服用指导", volume: "156.4w" },
+        { keyword: "6. 补钙产品什么时候吃", type: "服用指导", volume: "125.8w" },
+        { keyword: "7. 补钙产品测评", type: "横线对比", volume: "98.6w" },
+        { keyword: "8. 医生推荐的儿童补钙产品", type: "权威背书", volume: "85.2w" },
+        { keyword: "9. 适合青少年补钙的产品推荐", type: "人群细分", volume: "64.1w" },
+        { keyword: "10. 成人补钙产品推荐", type: "人群细分", volume: "45.7w" }
     ];
 
     const xhsTopicData = [
-        { topic: "# 冰箱推荐", trait: "全品类心智，提供多维选购公式", views: "14.5亿" },
-        { topic: "# 嵌入式冰箱", trait: "高颜值装修必备，主打无缝嵌入", views: "8.8亿" },
-        { topic: "# 冰箱收纳", trait: "收纳强迫症福音，提升日常治愈感", views: "5.2亿" },
-        { topic: "# 高端冰箱", trait: "高端生活方式，强调大容量与质感", views: "3.5亿" },
-        { topic: "# 法式冰箱", trait: "法式浪漫复古风，多门分区生活", views: "2.1亿" },
-        { topic: "# 冰箱好物", trait: "垂直场景延展，提升带货转化率", views: "1.7亿" },
-        { topic: "# 租房冰箱", trait: "刚需场景，主打高性价比与小户型", views: "8562.6w" },
-        { topic: "# 冰箱清洁", trait: "日常清洁分享，展示主妇精致生活", views: "6543.4w" },
+        { topic: "# 补钙推荐", trait: "全品类知识科普，提供人群补钙经验", views: "14.5亿" },
+        { topic: "# 液体钙", trait: "年轻消费新趋势，主打高吸收免吞咽", views: "8.8亿" },
+        { topic: "# 孕妇补钙", trait: "母婴极客人群，强调安全成分与零添加", views: "5.2亿" },
+        { topic: "# 儿童长高秘籍", trait: "宝妈群体刚需，身高焦虑驱动口碑分享", views: "3.5亿" },
+        { topic: "# 骨质疏松", trait: "中老年隐患防护前置，保健意识觉醒", views: "2.1亿" },
+        { topic: "# 迪巧小粉条", trait: "品牌单品内容种草，搜索转化效率极高", views: "1.7亿" },
+        { topic: "# 补钙怎么选", trait: "成分党横向测评对比，树立专业人设", views: "8562.6w" },
+        { topic: "# 上班族养生", trait: "办公桌健康好物，轻量级场景高频植入", views: "6543.4w" }
     ];
 
     // --- Douyin Data (Cyan/Dark Blue Theme) ---
     const douyinSearchData = [
-        { keyword: "1. 冰箱不制冷", type: "故障求助", volume: "845.2w" },
-        { keyword: "2. 冰箱什么牌子的好...", type: "品牌评测", volume: "756.1w" },
-        { keyword: "3. 冰箱怎么调节温度", type: "科普扫盲", volume: "623.5w" },
-        { keyword: "4. 冰箱结冰的解决方法", type: "生活妙招", volume: "512.4w" },
-        { keyword: "5. 冰箱小型家用", type: "单品选购", volume: "485.6w" },
-        { keyword: "6. 冰箱清洗", type: "家政服务", volume: "396.2w" },
-        { keyword: "7. 冰箱除异味", type: "痛点测评", volume: "345.8w" },
-        { keyword: "8. 冰箱维修", type: "专业拆解", volume: "285.4w" },
-        { keyword: "9. 冰箱不制冷一招搞定", type: "硬核干货", volume: "194.2w" },
-        { keyword: "10. 冰箱小型", type: "租房好物", volume: "158.5w" }
+        { keyword: "1. 补钙吃什么食物", type: "健康科普", volume: "845.2w" },
+        { keyword: "2. 补钙产品测评", type: "开箱实测", volume: "756.1w" },
+        { keyword: "3. 补钙产品推荐", type: "直观种草", volume: "623.5w" },
+        { keyword: "4. 液体钙哪个牌子好", type: "选购依据", volume: "512.4w" },
+        { keyword: "5. 孕妇缺钙的症状", type: "痛点对症", volume: "485.6w" },
+        { keyword: "6. 儿童长高补钙", type: "育儿教育", volume: "396.2w" },
+        { keyword: "7. 中老年防骨折补钙", type: "特殊关爱", volume: "345.8w" },
+        { keyword: "8. 迪巧液体钙好不好", type: "品牌检索", volume: "285.4w" },
+        { keyword: "9. 最安全的补钙产品", type: "安全防雷", volume: "194.2w" },
+        { keyword: "10. 补钙产品排行第一", type: "跟风拔草", volume: "158.5w" }
     ];
 
     const douyinTopicData = [
-        { topic: "# 冰箱", trait: "全网通用大词，覆盖海量泛娱乐流量", views: "189.2亿" },
-        { topic: "# 冰箱维修", trait: "硬核维修教学，解决突发刚需故障", views: "54.7亿" },
-        { topic: "# 冰箱妙招", trait: "生活科普类，极易引发大众讨论", views: "41.5亿" },
-        { topic: "# 智能冰箱", trait: "黑科技展示，吸引年轻极客群体", views: "25.2亿" },
-        { topic: "# 冰箱测评", trait: "横向硬核测评，建立消费者选购依据", views: "18.9亿" },
-        { topic: "# 厨房冰箱", trait: "大面积应用场景展示，极易打造爆款", views: "15.6亿" },
-        { topic: "# 冰箱收纳", trait: "解压治愈类视频，拉长用户停留时长", views: "10.8亿" },
-        { topic: "# 定制冰箱", trait: "一体化装修流量池，精准触达新房客群", views: "9.5亿" },
+        { topic: "# 补钙", trait: "全网通用极大词，覆盖海量泛健康流量", views: "189.2亿" },
+        { topic: "# 医生讲骨骼", trait: "医疗白大褂硬核背书，转化高信任群体", views: "54.7亿" },
+        { topic: "# 补钙测评", trait: "营养师横评，直接引导直播间小黄车", views: "41.5亿" },
+        { topic: "# 液体钙推荐", trait: "短平快的剧情展示，直接打透好喝不卡嗓", views: "25.2亿" },
+        { topic: "# 孕期囤货", trait: "母婴好物分享大全，达人矩阵集体宣发", views: "18.9亿" },
+        { topic: "# 养生小妙招", trait: "下沉资讯短片分发，迅速积累庞大泛播放", views: "15.6亿" },
+        { topic: "# 长高宝典", trait: "配合成长科普内容一起输出，完播率极高", views: "10.8亿" },
+        { topic: "# 迪巧小粉条", trait: "官方全民任务挑战赛，实现破圈级曝光", views: "9.5亿" }
     ];
 
     return (

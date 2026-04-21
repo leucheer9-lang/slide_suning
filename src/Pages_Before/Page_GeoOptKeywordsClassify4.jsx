@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Page_GeoOptKeywordsClassify3() {
+export default function Page_GeoOptKeywordsClassify4() {
 
     return (
         <div className="w-full h-full flex flex-col relative bg-black overflow-hidden text-white">
@@ -23,7 +23,8 @@ export default function Page_GeoOptKeywordsClassify3() {
                     <div className="w-full flex-1 relative flex flex-col items-center justify-center overflow-hidden bg-white/[0.01]">
                         <div className="absolute inset-0 bg-gradient-to-b from-blue-500/5 to-transparent opacity-50 z-0 pointer-events-none transition-opacity group-hover:opacity-100" />
                         <img
-                            src="/charts/geo-opt-keywords-classify-expand.png"          alt="词条分类及拓展"
+                            src="/charts/geo-opt-keywords-classify-expand-2.png"
+                            alt="词条分类及拓展 新增截图"
                             className="w-full h-full object-contain z-10 relative block mix-blend-screen"
                             onError={(e) => {
                                 e.currentTarget.style.display = 'none';
@@ -34,14 +35,12 @@ export default function Page_GeoOptKeywordsClassify3() {
                             <div className="w-16 h-16 sm:w-20 sm:h-20 mb-4 sm:mb-6 rounded-full bg-white/[0.02] border border-white/10 flex items-center justify-center shadow-inner">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2" /><circle cx="8.5" cy="8.5" r="1.5" /><polyline points="21 15 16 10 5 21" /></svg>
                             </div>
-                            <span className="text-base sm:text-lg font-medium tracking-widest uppercase">词条分类及拓展 完整截图</span>
+                            <span className="text-base sm:text-lg font-medium tracking-widest uppercase">词条分类及拓展 新增截图</span>
                             <span className="text-xs sm:text-sm mt-3 opacity-80 pl-2 pr-2 text-center">此处将展示完整截图的内容，请最大化呈现以利用空间</span>
                         </div>
                     </div>
                 </div>
             </div>
-
-            
 
             <style dangerouslySetInnerHTML={{
                 __html: `
