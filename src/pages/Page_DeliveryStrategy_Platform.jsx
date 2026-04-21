@@ -10,7 +10,7 @@ export default function Page_DeliveryStrategy_Platform() {
             <div className="relative z-20 w-full flex flex-col items-center mt-6 lg:mt-8 flex-shrink-0">
                 <h1 className="text-3xl lg:text-4xl font-bold tracking-tight text-white mb-3">跟小众垂直平台深度合作</h1>
                 <p className="text-[1.1rem] lg:text-[1.2rem] text-zinc-300 font-medium tracking-wide">
-                    在冰箱领域寻找一个百科、选购、品牌的专业性垂直网站-冰箱排名
+                    在健康领域寻找一个百科、选购、品牌的专业性垂直网站-复禾健康网
                 </p>
             </div>
 

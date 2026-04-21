@@ -12,18 +12,18 @@ export default function Page_PlatformFilterLogicC2() {
                 <div className="w-full bg-white/[0.02] border border-[#004CE5]/20 backdrop-blur-md rounded-2xl px-8 py-5 flex flex-col gap-4 shadow-lg shrink-0">
                     <div className="flex items-center gap-3">
                         <div className="w-2.5 h-2.5 rounded-full bg-[#004CE5] shadow-[0_0_10px_#004CE5]"></div>
-                        <h2 className="text-2xl font-bold text-blue-100 tracking-widest">C组：卡萨帝命中数据验证</h2>
+                        <h2 className="text-2xl font-bold text-blue-100 tracking-widest">C组：金钙尔奇命中数据验证</h2>
                     </div>
 
                     <div className="grid grid-cols-[1.5fr_3fr] gap-8">
                         <div className="flex flex-col gap-2">
                             <span className="text-zinc-500 font-bold text-[1.05rem] uppercase tracking-wider">验证维度</span>
-                            <p className="text-white/90 text-[1.2rem] font-bold tracking-wide mt-1">C 组平台在各 AI 模型的卡萨帝命中比对</p>
+                            <p className="text-white/90 text-[1.2rem] font-bold tracking-wide mt-1">C 组平台在各 AI 模型的金钙尔奇命中比对</p>
                         </div>
                         <div className="flex flex-col gap-2 border-l border-white/10 pl-8">
                             <span className="text-zinc-500 font-bold text-[1.05rem] uppercase tracking-wider">数据分析动作</span>
                             <p className="text-zinc-300 text-[1.15rem] leading-relaxed mt-1">
-                                提取 C 组筛选出的高频平台在各大 AI 平台中的卡萨帝信息曝光命中率。通过跨平台的交叉横评比对，精准验证该批平台在核心竞品相关推导下的极高推荐权重与决策收录价值。
+                                提取 C 组筛选出的高频平台在各大 AI 平台中的金钙尔奇信息曝光命中率。通过跨平台的交叉横评比对，精准验证该批平台在核心竞品相关推导下的极高推荐权重与决策收录价值。
                             </p>
                         </div>
                     </div>

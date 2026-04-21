@@ -8,44 +8,60 @@ export default function Page_DeliveryStrategy_Combo() {
             </div>
 
             <div className="relative z-20 w-full flex flex-col items-center mt-6 lg:mt-8 flex-shrink-0">
-                <h1 className="text-3xl lg:text-4xl font-bold tracking-tight text-white mb-3">特定组合</h1>
+                <h1 className="text-3xl lg:text-4xl font-bold tracking-tight text-white mb-3">媒体矩阵分配</h1>
                 <p className="text-[1.1rem] lg:text-[1.2rem] text-rose-400 font-medium tracking-wide">
-                    通过特定组合的投放配合内容策略进行定点精准覆盖（不投放主流“大平台”）
+                    根据营销链路与内容属性精细化分配矩阵资源
                 </p>
             </div>
 
-            <div className="flex-1 relative z-10 w-full flex flex-col justify-center px-8 lg:px-16 py-2 pb-16 min-h-0">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 w-full max-w-[1400px] mx-auto h-full items-start pt-10">
+            <div className="flex-1 relative z-10 w-full flex flex-col justify-center px-4 lg:px-12 py-2 pb-16 min-h-0">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 w-full max-w-[1600px] mx-auto h-full items-start pt-10">
 
-                    {/* Item 1: 60% */}
+                    {/* Item 1: 70% */}
                     <div className="flex flex-col group relative">
                         <div className="w-full h-[8px] bg-zinc-800 rounded-full mb-8 relative overflow-hidden">
-                            <div className="absolute left-0 top-0 h-full rounded-full bg-gradient-to-r from-orange-600 to-orange-400" style={{ width: '60%', boxShadow: '0 0 15px rgba(249, 115, 22, 0.8)' }} />
+                            <div className="absolute left-0 top-0 h-full rounded-full bg-gradient-to-r from-orange-600 to-orange-400" style={{ width: '70%', boxShadow: '0 0 15px rgba(249, 115, 22, 0.8)' }} />
                         </div>
                         <div className="flex items-baseline mb-6">
-                            <span className="text-[6rem] lg:text-[8.5rem] leading-none font-bold tracking-tighter text-white transition-colors group-hover:text-orange-100">60</span>
-                            <span className="text-4xl lg:text-5xl font-bold text-zinc-500 ml-2 mb-3">%</span>
+                            <span className="text-[5rem] lg:text-[7.5rem] leading-none font-bold tracking-tighter text-white transition-colors group-hover:text-orange-100">70</span>
+                            <span className="text-3xl lg:text-4xl font-bold text-zinc-500 ml-2 mb-3">%</span>
                         </div>
-                        <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4 pt-5 border-t border-white/10 group-hover:border-orange-500/50 transition-colors">测评对比：垂直媒体与论坛</h3>
-                        <p className="text-base lg:text-lg font-medium text-orange-300 mb-6 tracking-wide leading-relaxed">大众家电网、大众网家居频道、消费日报网家电、家电消费网、环球家电网、艾肯家电网</p>
-                        <p className="text-base sm:text-lg lg:text-xl text-zinc-400 leading-relaxed font-light text-justify">
-                            <strong className="text-zinc-300 font-medium tracking-wide">深度种草与口碑群落扩散。</strong>通过在主流垂直家电媒体与专业家居论坛的「多覆盖」策略，以横向对比和评测导购形式建立真实的口碑基础。这不仅能够快速截获各平台正在比对高意向用户，更能为前端AI搜索引擎的「通用候选视野」提供高密度的底层语料背书。
+                        <h3 className="text-xl lg:text-2.5xl font-bold text-white mb-4 pt-5 border-t border-white/10 group-hover:border-orange-500/50 transition-colors leading-snug">小众专业垂直媒体</h3>
+                        <p className="text-[1.05rem] lg:text-[1.15rem] font-medium text-orange-300 mb-6 tracking-wide leading-relaxed">复禾健康网、医疗资讯网、中国健康网、大众健康、买购网</p>
+                        <p className="text-[1.12rem] lg:text-[1.25rem] xl:text-[1.3rem] text-zinc-400 leading-relaxed font-light text-justify">
+                            <strong className="text-zinc-300 font-medium tracking-wide">深度种草与口碑渗透。</strong>通过专业视角的长图文或深度测评，建立品牌技术壁垒与专业形象，精准触达高意向核心用户，以高信度、高密度的干货内容强力影响最终决策。
                         </p>
                     </div>
 
-                    {/* Item 2: 40% */}
+                    {/* Item 2: 20% */}
                     <div className="flex flex-col group relative">
                         <div className="w-full h-[8px] bg-zinc-800 rounded-full mb-8 relative overflow-hidden">
-                            <div className="absolute left-0 top-0 h-full rounded-full bg-gradient-to-r from-blue-600 to-blue-400" style={{ width: '40%', boxShadow: '0 0 15px rgba(59, 130, 246, 0.8)' }} />
+                            <div className="absolute left-0 top-0 h-full rounded-full bg-gradient-to-r from-blue-600 to-blue-400" style={{ width: '20%', boxShadow: '0 0 15px rgba(59, 130, 246, 0.8)' }} />
                         </div>
                         <div className="flex items-baseline mb-6">
-                            <span className="text-[6rem] lg:text-[8.5rem] leading-none font-bold tracking-tighter text-white transition-colors group-hover:text-blue-100">40</span>
-                            <span className="text-4xl lg:text-5xl font-bold text-zinc-500 ml-2 mb-3">%</span>
+                            <span className="text-[5rem] lg:text-[7.5rem] leading-none font-bold tracking-tighter text-white transition-colors group-hover:text-blue-100">20</span>
+                            <span className="text-3xl lg:text-4xl font-bold text-zinc-500 ml-2 mb-3">%</span>
                         </div>
-                        <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4 pt-5 border-t border-white/10 group-hover:border-blue-500/50 transition-colors">定位排行：只投专业媒体</h3>
-                        <p className="text-base lg:text-lg font-medium text-blue-300 mb-6 tracking-wide leading-relaxed">中国家电网、中关村在线家电</p>
-                        <p className="text-base sm:text-lg lg:text-xl text-zinc-400 leading-relaxed font-light text-justify">
-                            <strong className="text-zinc-300 font-medium tracking-wide">硬核背书与行业地位定调。</strong>聚焦高权重、高公信力的重点权威媒体，投入针对性预算卡位具有行业公信力的排行榜以及定调文章，实现「少而精」的穿透。凭借极强的公关权威属性，该策略能最直接有效地拉升方太相关词条在AI分析模型中的权重与评价倾向。
+                        <h3 className="text-xl lg:text-2.5xl font-bold text-white mb-4 pt-5 border-t border-white/10 group-hover:border-blue-500/50 transition-colors leading-snug">主流媒体平台</h3>
+                        <p className="text-[1.05rem] lg:text-[1.15rem] font-medium text-blue-300 mb-6 tracking-wide leading-relaxed">搜狐、今日头条、网易、什么值得买</p>
+                        <p className="text-[1.12rem] lg:text-[1.25rem] xl:text-[1.3rem] text-zinc-400 leading-relaxed font-light text-justify">
+                            <strong className="text-zinc-300 font-medium tracking-wide">话题势能放大与泛人群覆盖。</strong>聚焦核心卖点，利用可视化短视频与场景化图文笔记，打造矩阵式爆款话题，提升品牌全域声量，实现目标圈层的高效破圈与认知普及。
+                        </p>
+                    </div>
+
+                    {/* Item 3: 10% */}
+                    <div className="flex flex-col group relative">
+                        <div className="w-full h-[8px] bg-zinc-800 rounded-full mb-8 relative overflow-hidden">
+                            <div className="absolute left-0 top-0 h-full rounded-full bg-gradient-to-r from-emerald-600 to-emerald-400" style={{ width: '10%', boxShadow: '0 0 15px rgba(16, 185, 129, 0.8)' }} />
+                        </div>
+                        <div className="flex items-baseline mb-6">
+                            <span className="text-[5rem] lg:text-[7.5rem] leading-none font-bold tracking-tighter text-white transition-colors group-hover:text-emerald-100">10</span>
+                            <span className="text-3xl lg:text-4xl font-bold text-zinc-500 ml-2 mb-3">%</span>
+                        </div>
+                        <h3 className="text-xl lg:text-2.5xl font-bold text-white mb-4 pt-5 border-t border-white/10 group-hover:border-emerald-500/50 transition-colors leading-snug">权威官方媒体</h3>
+                        <p className="text-[1.05rem] lg:text-[1.15rem] font-medium text-emerald-300 mb-6 tracking-wide leading-relaxed">人民网、新华网等央媒，及头部商业白皮书</p>
+                        <p className="text-[1.12rem] lg:text-[1.25rem] xl:text-[1.3rem] text-zinc-400 leading-relaxed font-light text-justify">
+                            <strong className="text-zinc-300 font-medium tracking-wide">信任背书与公信力构建。</strong>以行业报告、高管宏观访谈、技术升级发布等公关属性内容为主，夯实品牌头部地位，为全链路的营销转化奠定坚实的信任基础。
                         </p>
                     </div>
 

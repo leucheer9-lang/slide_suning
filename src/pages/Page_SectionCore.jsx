@@ -21,7 +21,7 @@ export default function Page_SectionCore() {
                             定义
                         </div>
                         <div className="flex-1 text-white/90 text-[1.25rem] leading-relaxed tracking-wide">
-                            产品核心竞争力与核心消费人群高度集中的词条，也是品牌已经具备一定认知基础的词条。
+                            产品具备压倒性优势、核心痛点高度集中的词条，是品牌立足 AI 搜索生态的基石。
                         </div>
                     </div>
 
@@ -32,7 +32,7 @@ export default function Page_SectionCore() {
                             词条
                         </div>
                         <div className="flex-1 flex flex-wrap gap-4">
-                            {['嵌入式冰箱品牌推荐', '保鲜效果好的冰箱推荐', '2w预算冰箱品牌推荐', '好看的冰箱推荐'].map((tag, idx) => (
+                            {['吞咽方便的女性补钙产品推荐', '口感好的女性补钙产品推荐', '吃了不便秘不打嗝的补钙产品推荐', '适合产后哺乳期的液体钙推荐'].map((tag, idx) => (
                                 <div key={idx} className="bg-white/5 border border-white/10 px-5 py-2.5 rounded-xl text-zinc-100 text-[1.15rem] flex items-center shadow-sm">
                                     {tag}
                                 </div>
@@ -59,7 +59,7 @@ export default function Page_SectionCore() {
                         </div>
                         <div className="flex-1 text-white/90 text-[1.25rem] leading-relaxed tracking-wide text-justify">
                             <span className="font-bold text-blue-400 mb-2 block tracking-wider">“打阵地（占位巩固）”</span>
-                            这一板块是方太立足AI搜索生态的基础中的基础。品牌必须将其列为最先启动，策略上无需花哨，必须通过持续、稳定且高质量的内容输出，牢牢占据这些核心痛点场景的推荐位，率先强势突围，巩固品牌在核心人群中的影响力底盘。
+                            这一板块是迪巧立足AI搜索生态的基础中的基础。品牌必须将其列为最先启动，策略上无需花哨，必须通过持续、稳定且高质量的内容输出，牢牢占据这些核心痛点场景的推荐位，率先强势突围，巩固品牌在核心人群中的影响力底盘。
                         </div>
                     </div>
 

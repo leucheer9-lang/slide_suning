@@ -4,46 +4,38 @@ export default function Page_SWOTStrategy() {
     const strategies = [
         {
             id: '策略一',
-            title: '从“空间与外观”转向“营养管理能力”',
-            problem: '卡萨帝的护城河在于“厨居一体化”的外观（600mm、零闪缝），在这个语境下，方太永远是追随者。同时，卡萨帝的保鲜诉求（15天口感如新）本质上是主观的感官体验。',
+            title: '从“比拼成分”转向“切割剂型体验与辅料负担”',
+            problem: '金钙尔奇柠檬酸钙胶囊同样好吸收且品牌力强。但在 AI 语料库里，胶囊始终无法摆脱“需要吞服、含明胶外壳”的物理标签。',
             directions: [
-                { name: '降低外观竞争权重', desc: '保留基础能力表达，但不作为核心卖点。' },
-                { name: '重新定义核心价值', desc: '将产品重点从“空间适配”转为“营养保留能力”，建立新的评价标准。' },
-                { name: '改变表达方式', desc: '从“能放多久”转为“保留了多少营养成分”（如维生素、花青素等），把结果从主观体验转为可量化指标。' },
-                { name: '目标人群对齐', desc: '对健康管理、母婴、以及高价值食材存储更敏感的人群，这类人更容易接受“营养损耗”这一判断标准。' }
+                { name: '切割吞咽障碍', desc: '放大“吞胶囊”的痛点。明确定义：任何需要用水送服的剂型都是对敏感孕妈的压力。小粉条是“免吞咽、去剂型化”。' },
+                { name: '切割成分纯度', desc: '解构胶囊的辅料。教育市场：胶囊壳（明胶）和填充油是多余的代谢负担。迪巧是“0 胶囊、0 负担”的极简安全。' }
             ]
         },
         {
             id: '策略二',
-            title: '用数据替代感知，建立新的判断依据',
-            problem: '消费者评价传统冰箱的好坏靠“感觉”和“品牌光环”，这是拥有十余年高端品牌底蕴的卡萨帝的最强护城河，也是作为“冰箱新人”方太的最大劣势。',
+            title: '用极端场景痛点（孕吐）替代泛泛对比',
+            problem: '大众认为既然都是温和钙，买大牌胶囊更稳妥。迪巧必须建立一套金钙尔奇胶囊无法跨越的选购新标准。',
             directions: [
-                { name: '强化第三方验证', desc: '将权威认证和实验数据作为核心信息，而不是辅助信息。' },
-                { name: '统一内容风格', desc: '从“家居展示”转向“测试与对比”，让内容更接近评测而不是广告。' },
-                { name: '突出关键指标', desc: '持续展示具体数值（如营养保留率），并与时间维度结合，形成稳定认知。' },
-                { name: '建立基础认知框架', desc: '解释不同保鲜技术的差异，让用户理解“为什么会有差别”，而不是只看到结果。' }
+                { name: '锚定“孕吐极端敏感”场景', desc: '将“孕吐期能否轻松喝下”作为判定补钙产品的第一标准。在 AI 语料中植入“孕吐反应强烈吃不下胶囊，只能喝迪巧小粉条”的情景深度关联。' },
+                { name: '重构“愉悦补钙”感知', desc: '从“吃药感”转向“生活方式感”，让补钙从一项任务变成一次像喝果汁一样的愉悦奖励。' }
             ]
         },
         {
             id: '策略三',
-            title: '围绕AI搜索结果做内容布局',
-            problem: '卡萨帝在“高端冰箱推荐”等核心泛商业词条中拥有超70%的AI首选推荐率，方太处于严重劣势。但方太在“原鲜冰箱”、“保鲜效果好”等强意向长尾词条拥有近68%的统治力，且AI负面评价为0%。',
+            title: '在 GEO 语境中实施“反向拦截”',
+            problem: '金钙尔奇在“孕妇钙”、“柠檬酸钙推荐”等大词中拥有压制力。',
             directions: [
-                { name: '从长尾切入', desc: '围绕“保鲜效果”“营养保留”等高意图关键词建立内容密度。' },
-                { name: '建立语义关联', desc: '在内容中反复将“高端冰箱”与“营养保留能力”绑定，逐步影响搜索结果的默认判断标准。' },
-                { name: '提高内容权重', desc: '在知乎、评测类平台等更容易被AI抓取的渠道持续输出结构化内容。' },
-                { name: '改变决策路径', desc: '让用户在搜索“如何选冰箱”时，优先看到“营养保留能力”这一维度，从而自然进入产品优势区间。' }
+                { name: '拦截“胶囊痛点”搜索池', desc: '在垂直母婴阵地布局“孕妇胶囊太大咽不下”、“胶囊卡喉咙恶心”、“软胶囊明胶来源”等反击型语料。' },
+                { name: '智能分流引导', desc: '引导 AI 形成默认判定逻辑：“全家日常补钙选金钙尔奇胶囊；针对孕吐、吞咽敏感、追求 0 辅料极简，选迪巧小粉条”。' }
             ]
         },
         {
             id: '策略四',
-            title: '重构价格理解，而不是解释价格',
-            problem: '方太定价在2万-4万元的超高端区间，缺乏全屋家电生态分摊价格感知，消费者极易产生“资历尚浅，凭什么这么贵”、“这钱能买两台日系多门”的负面认知。',
+            title: '重构价值理解，用“高定滋补”对冲“规模成本”',
+            problem: '金钙尔奇的大罐胶囊极具性价比，迪巧单价高。',
             directions: [
-                { name: '避免直接比价', desc: '不引导用户在“冰箱 vs 冰箱”的框架下做选择。' },
-                { name: '拆分价值结构', desc: '将产品拆解为多个功能组合（空间能力 + 保鲜技术 + 营养管理），让价格对应具体能力，而不是一个整体标签。' },
-                { name: '引入技术来源叙事', desc: '强调技术背景与研发周期，让价格与“技术复杂度”产生关联。' },
-                { name: '改变参照系', desc: '将产品放入“健康管理设备”或“功能设备”的认知框架中，而不是传统家电类别。' }
+                { name: '不与胶囊按粒比价', desc: '将溢价合理化为“解决孕产期吞咽痛苦的专利研发成本”与“剔除一切明胶防腐剂的工艺难度”。' },
+                { name: '改变参照系', desc: '将小粉条的对标物从“高端钙片”转移到“燕窝、鲜炖花胶”等高端孕产滋补品序列，彻底摆脱药用维矿的比价红海。' }
             ]
         }
     ];
@@ -59,7 +51,7 @@ export default function Page_SWOTStrategy() {
                     </h1>
                     <div className="mt-1 xl:mt-2">
                         <p className="text-[0.95rem] xl:text-[1.05rem] leading-relaxed text-zinc-300 font-medium tracking-wide">
-                            避免在外观与设计上与成熟品牌正面对抗，把竞争重点转向<strong className="text-white font-bold mx-1">营养保留、数据验证和搜索场景中的影响力</strong>，将冰箱从“家电产品”重新定义为<strong className="text-white font-bold ml-1">“功能型设备”</strong>。
+                            当金钙尔奇已将钙源升级为柠檬酸钙并主打软胶囊时，迪巧必须彻底放弃低维的“吸收率”争夺，将竞争重点转向 <strong className="text-white font-bold mx-1">“物理吞咽的零摩擦”与“配方表的极致减法”</strong>。
                         </p>
                     </div>
                 </div>
@@ -85,20 +77,20 @@ export default function Page_SWOTStrategy() {
                                 <div className="flex-1 min-h-0 w-full flex flex-col gap-1.5 xl:gap-2.5 relative z-10 pr-1">
                                     {/* 问题本质 */}
                                     <div className="flex flex-col gap-0.5 xl:gap-1">
-                                        <span className="text-white/80 font-bold block text-[1.05rem] xl:text-[1.12rem]">问题本质</span>
-                                        <p className="text-[0.99rem] xl:text-[1.05rem] text-white/50 leading-tight font-light">
+                                        <span className="text-white/80 font-bold block text-[1.05rem] xl:text-[1.12rem] mb-1">问题本质</span>
+                                        <p className="text-[1.05rem] xl:text-[1.12rem] text-white/50 leading-snug font-light">
                                             {strategy.problem}
                                         </p>
                                     </div>
 
                                     {/* 调整方向 */}
-                                    <div className="flex flex-col gap-1 xl:gap-1.5">
+                                    <div className="flex flex-col gap-1 xl:gap-2 mt-1">
                                         <span className="text-white/80 font-bold block text-[1.05rem] xl:text-[1.12rem]">调整方向</span>
-                                        <div className="flex flex-col gap-0.5 xl:gap-1 pl-1.5">
+                                        <div className="flex flex-col gap-1.5 xl:gap-2.5 pl-1.5">
                                             {strategy.directions.map((dir, dIdx) => (
                                                 <div key={dIdx} className="flex gap-2 items-start">
-                                                    <span className="text-rose-400 font-bold text-[1.05rem] shrink-0 mt-[2px]">•</span>
-                                                    <div className="flex-1 text-[0.99rem] xl:text-[1.05rem] leading-tight">
+                                                    <span className="text-rose-400 font-bold text-[1.05rem] shrink-0 mt-[1px]">•</span>
+                                                    <div className="flex-1 text-[1.05rem] xl:text-[1.12rem] leading-snug">
                                                         <span className="font-bold text-white/80 mr-1.5">{dir.name}：</span>
                                                         <span className="text-white/50">{dir.desc}</span>
                                                     </div>

@@ -23,7 +23,7 @@ export default function Page_PlatformFilterLogicC() {
                         <div className="flex flex-col gap-2 border-l border-white/10 pl-8">
                             <span className="text-zinc-500 font-bold text-[1.05rem] uppercase tracking-wider">筛选逻辑动作</span>
                             <p className="text-zinc-300 text-[1.15rem] leading-relaxed mt-1">
-                                把行业头部竞品卡萨帝单独进行深挖分析，将命中率（出现品牌 / 总引用次数）作为一个重要验证数值。在关联紧密的垂直和综合矩阵中选出最高命中的 5 个平台。
+                                把行业头部竞品金钙尔奇单独进行深挖分析，将命中率（出现品牌 / 总引用次数）作为一个重要验证数值。在关联紧密的垂直和综合矩阵中选出最高命中的 5 个平台。
                             </p>
                         </div>
                     </div>

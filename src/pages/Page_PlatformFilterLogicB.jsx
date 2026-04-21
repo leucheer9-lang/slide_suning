@@ -7,14 +7,14 @@ export default function Page_PlatformFilterLogicB() {
 
             {/* ── Main Content Area ── */}
             <div className="flex-1 w-full max-w-[1700px] mx-auto flex flex-col items-center px-8 lg:px-16 pt-4 pb-4 z-10 min-h-0 gap-5">
-                
+
                 {/* ── 纯净信息卡片：展示分组、维度、逻辑 ── */}
                 <div className="w-full bg-white/[0.02] border border-[#004CE5]/20 backdrop-blur-md rounded-2xl px-8 py-5 flex flex-col gap-4 shadow-lg shrink-0">
                     <div className="flex items-center gap-3">
                         <div className="w-2.5 h-2.5 rounded-full bg-[#004CE5] shadow-[0_0_10px_#004CE5]"></div>
                         <h2 className="text-2xl font-bold text-blue-100 tracking-widest">B组：平台特异性</h2>
                     </div>
-                    
+
                     <div className="grid grid-cols-[1.5fr_3fr] gap-8">
                         <div className="flex flex-col gap-2">
                             <span className="text-zinc-500 font-bold text-[1.05rem] uppercase tracking-wider">筛选维度</span>
@@ -23,7 +23,7 @@ export default function Page_PlatformFilterLogicB() {
                         <div className="flex flex-col gap-2 border-l border-white/10 pl-8">
                             <span className="text-zinc-500 font-bold text-[1.05rem] uppercase tracking-wider">筛选逻辑动作</span>
                             <p className="text-zinc-300 text-[1.15rem] leading-relaxed mt-1">
-                                除共性网站外，针对不同 AI 平台偏好，每个平台筛选出 2 个特定网站，最能体现该 AI 平台差异化特征和信息抓取习惯，共计 8 个网站。
+                                针对不同 AI 平台偏好，每个平台筛选出1个特定网站，最能体现该 AI 平台差异化特征和信息抓取习惯。
                             </p>
                         </div>
                     </div>
@@ -31,13 +31,13 @@ export default function Page_PlatformFilterLogicB() {
 
                 {/* ── 空白图片位：占据剩余几乎所有高度 ── */}
                 <div className="w-full flex-1 relative bg-white/[0.02] border border-white/10 rounded-2xl overflow-hidden flex flex-col items-center justify-center group shadow-2xl">
-                    <img 
-                        src="/Add_Charts/platform-filter-logic-b.png" 
-                        alt="B组筛选逻辑图" 
+                    <img
+                        src="/Add_Charts/platform-filter-logic-b.png"
+                        alt="B组筛选逻辑图"
                         className="absolute inset-0 w-full h-full object-contain p-1 z-20"
                         onError={(e) => { e.target.style.display = 'none'; }}
                     />
-                    
+
                     {/* Placeholder UI */}
                     <div className="absolute inset-0 z-10 flex flex-col items-center justify-center pointer-events-none">
                         <div className="w-20 h-20 mb-5 rounded-full bg-white/[0.03] flex items-center justify-center border border-white/5 text-white/20 transition-all group-hover:bg-[#004CE5]/10 group-hover:text-[#004CE5]/50 group-hover:border-[#004CE5]/30">

@@ -182,20 +182,23 @@ export const slideConfig = [
   { type: 'page', title: '总结', component: Page_SectionSummary },
 
   { type: 'section', title: '综合大词如何执行' },
-  { type: 'page', title: '方太和卡萨帝 SWOT 分析', components: [Page_SWOTAnalysis, Page_SWOTAnalysisFotile, Page_SWOTStrategy] },
+  { type: 'page', title: '金钙尔奇和迪巧 SWOT 分析', components: [Page_SWOTAnalysis, Page_SWOTAnalysisFotile, Page_SWOTStrategy] },
   { type: 'page', title: '两个内容策略', components: [Page_ArticleDataAnalysisHisense, Page_ArticleGenerationDemo, Page_ArticleDataAnalysisStrategy2, Page_ArticleGenerationDemo2, Page_ArticleGenerationDemo3] },
   { type: 'page', title: '两个投放策略', components: [Page_DeliveryStrategy_Combo, Page_DeliveryStrategy_Platform] },
 
   // ══════════════════════════════════════════════════════════
-  // ——— 篇章6: 阶段性复盘报告 ———
+  // ——— 篇章6: Q&A ———
   // ══════════════════════════════════════════════════════════
-  { type: 'chapter', title: '阶段性复盘报告', subtitle: 'PHASED REVIEW REPORT', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
+  { type: 'chapter', title: 'Q&A', subtitle: 'Q&A', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
 
-  { type: 'section', title: '系统回看' },
-  { type: 'page', title: '系统回看当前GEO效果与问题', component: PB_CampaignDataAnalysis },
+  { type: 'section', title: '数据清洗和结构化处理的技术流程是什么？' },
+  { type: 'page', title: '数据清洗和结构化处理的技术流程', component: Page_Zhihu_DataProcess },
 
-  { type: 'section', title: '重构下一阶段目标' },
-  { type: 'page', title: '重构下一阶段GEO优化目标', component: PB_CampaignDataAnalysis2 },
+  { type: 'section', title: '知乎数据应用建议' },
+  { type: 'page', title: '知乎数据应用建议', component: Page_Zhihu_WaterSource },
+
+  { type: 'section', title: '技术答疑' },
+
 
   // ══════════════════════════════════════════════════════════
   // ——— 篇章7: 知乎方案新增 ———
@@ -206,14 +209,6 @@ export const slideConfig = [
   { type: 'page', title: 'AI模型用什么数据回答用户的问题', components: [Page_Zhihu_AIData, Page_Zhihu_AIDataDecision] },
   { type: 'page', title: 'AI模型到底是如何用互联网数据的', components: [Page_Zhihu_AIInternetData, Page_Zhihu_AIInternetProcess] },
   { type: 'page', title: '对抗策略', components: [Page_Zhihu_ARES_Architecture, Page_Zhihu_ARES_Detail12, Page_Zhihu_ARES_Detail34] },
-
-  { type: 'section', title: '数据清洗和结构化处理的技术流程是什么？' },
-  { type: 'page', title: '数据清洗和结构化处理的技术流程', component: Page_Zhihu_DataProcess },
-
-  { type: 'section', title: '知乎数据引用' },
-  { type: 'page', title: '理解核心：知乎在 GEO 中的“水源”地位', component: Page_Zhihu_WaterSource },
-  { type: 'page', title: '基于知乎特点的 GEO 优化方案', component: Page_Zhihu_GeoStrategy },
   { type: 'page', title: '公司架构', component: Page_Zhihu_CompanyArchitecture },
-
 
 ];

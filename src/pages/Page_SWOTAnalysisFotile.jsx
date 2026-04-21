@@ -3,26 +3,19 @@ import React from 'react';
 export default function Page_SWOTAnalysisFotile() {
     const swotData = {
         S: [
-            { id: 'S1', title: '跨代际的“主动制氮”保鲜科技底牌（高）', content: '搭载“主动气调”，从被动防御升级为构建微环境，具备极高技术壁垒。' },
-            { id: 'S2', title: '降维打击的量化实测数据背书（高）', content: '首获TÜV认证，高达98.5%花青素留存率，重构冰洗功能评价标准。' },
-            { id: 'S3', title: '纯粹技术口碑与细分AI心智统治力（高）', content: 'AI舆情0负面，细分高价值搜索词提及率67.9%，呈现技术统治地位。' },
-            { id: 'S4', title: '优秀的物理空间嵌入设计基础（中）', content: '荣获iF设计金奖，成功解决全嵌难题，满足高端厨居基础美学要求。' },
+            { id: 'S1', title: '绝对差异化的“免吞咽直饮体验”（高）', content: '面对金钙尔奇的软胶囊，迪巧实现了“0吞咽阻力、0生理抗拒”。撕开即饮的酸甜感，彻底终结了孕期吞服胶囊的焦虑。' },
+            { id: 'S2', title: '医疗级“0添加”的配方净度（高）', content: '0明胶、0甘油、0防腐剂。不只是钙源纯，而是整机配方极简，完美切中高端母婴人群对“纯粹无负担”的终极追求。' },
+            { id: 'S3', title: '极高的 AI 推荐倾向与 0 负面口碑（高）', content: '在“孕吐期好吞、不反胃”等细分痛点词下，AI 语料呈现压倒性的技术统治位。' },
         ],
         W: [
-            { id: 'W1', title: '冰箱品类“资历尚浅”带来的认知摩擦（高）', content: '面临超高端定价时，作为赛道新人缺乏“老钱”品牌底蕴式溢价支撑。' },
-            { id: 'W2', title: '全屋智能生态与品类横向广度的缺失（高）', content: '缺乏洗衣机等品类横向支撑，难以靠套系化总包分摊高昂价格感知。' },
-            { id: 'W3', title: '泛流量入口与大众心智的严重断层（中/高）', content: '在“高端冰箱推荐”等大泛商业词条提及率偏低，舆论场先发劣势明显。' },
-            { id: 'W4', title: '技术概念生僻导致市场教育成本过高（中）', content: '远洋气调等概念晦涩，若未转化为核心利益点易陷入孤芳自赏僵局。' },
+            { id: 'W1', title: '巨头补齐成分短板后的“同质化”竞争压力（高）', content: '当金钙尔奇也采用柠檬酸钙时，迪巧必须在剂型深度上做更深层的“直饮 vs 胶囊”切割。' },
+            { id: 'W2', title: '泛人群搜索语境下的可见度弱势（中/高）', content: '在大众综合榜单中，AI 优先抓取基建语料庞大的金钙尔奇，迪巧面临搜索长尾拦截的挑战。' },
         ],
         T: [
-            { id: 'T1', title: '传统巨头对“行业评估标准”的强势绑架（高）', content: '传统竞品锁死物理外观与容量评估语境，若陷入此参数内卷将极其被动。' },
-            { id: 'T2', title: '头部品牌的线下防守反击与物理封杀（高）', content: '传统巨头拥有深厚分销推力，极可能用平替降价绞杀其终端铺货空间。' },
-            { id: 'T3', title: '消费者传统的“按件/按体积”比价思维（中）', content: '若未能建立“跨界替代”认知，极速与传统多门冰箱横向比价会产生价格抗拒。' },
+            { id: 'T1', title: '巨头“多维营养”的认知绑架（高）', content: '金钙尔奇通过强调 K2 等复合成分，可能让消费者忽略剂型上的吞咽痛苦。' },
         ],
         O: [
-            { id: 'O1', title: '饮食精细化引发的品类升维风口（高）', content: '用户对“保鲜”升维至“细胞营养锁定”，与医疗级营养舱定位完美共振。' },
-            { id: 'O2', title: '生成式AI带来决策路径弯道超车机遇（高）', content: '重度消费者极度依赖AI对比技术原理，利好方太凭核心技术数据破局。' },
-            { id: 'O3', title: '高端全嵌市场的持续扩容与红利（中/高）', content: '随着高定整体厨房普及，高端深嵌市场的基本盘持续扩容，增量巨大。' },
+            { id: 'O1', title: '孕产女性对“孕期尊严与舒适度”的追求（高）', content: '现代孕妈拒绝一切痛苦体感，小粉条的悦己属性与高端精细化风口完美共振。' },
         ]
     };
 
@@ -34,7 +27,7 @@ export default function Page_SWOTAnalysisFotile() {
             <div className="relative z-20 w-full px-8 lg:px-16 pt-4 sm:pt-6 shrink-0">
                 <div className="flex items-center justify-center gap-3">
                     <h1 className="text-3xl sm:text-4xl font-black text-white tracking-widest flex items-baseline">
-                        SWOT<span className="text-2xl sm:text-3xl font-bold ml-3 text-white/70">方太冰箱分析</span>
+                        SWOT<span className="text-2xl sm:text-3xl font-bold ml-3 text-white/70">迪巧小粉条分析</span>
                     </h1>
                 </div>
             </div>

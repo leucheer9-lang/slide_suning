@@ -11,16 +11,16 @@ export default function Page_PlatformFilterIntro() {
             textColor: 'text-blue-100',
             numColor: 'text-white/30',
             data: [
-                { rank: 1, site: '中关村在线', count: 128 },
-                { rank: 2, site: 'IT之家', count: 98 },
-                { rank: 3, site: '环球家电网', count: 45 },
-                { rank: 4, site: '央广网', count: 36 },
-                { rank: 5, site: '搜狐网', count: 35 },
-                { rank: 6, site: '北京日报', count: 32 },
-                { rank: 7, site: '泡泡網', count: 24 },
-                { rank: 8, site: '网易', count: 23 },
-                { rank: 9, site: '现代家电网', count: 22 },
-                { rank: 10, site: '知乎', count: 22 }
+                { rank: 1, site: '淘宝网', count: 30 },
+                { rank: 2, site: '中国发展网', count: 23 },
+                { rank: 3, site: '中国医药信息查询平台', count: 21 },
+                { rank: 4, site: 'QQ News', count: 16 },
+                { rank: 5, site: 'www.baheal.cn', count: 15 },
+                { rank: 6, site: '新京报', count: 15 },
+                { rank: 7, site: '家庭医生在线', count: 14 },
+                { rank: 8, site: '新华网', count: 13 },
+                { rank: 9, site: 'www.foodaily.com', count: 9 },
+                { rank: 10, site: 'peopledailyhealth.com', count: 9 }
             ]
         },
         {
@@ -32,16 +32,16 @@ export default function Page_PlatformFilterIntro() {
             textColor: 'text-blue-100',
             numColor: 'text-white/30',
             data: [
-                { rank: 1, site: '新浪新闻', count: 220 },
-                { rank: 2, site: 'QQ News', count: 143 },
-                { rank: 3, site: '京东', count: 143 },
-                { rank: 4, site: '手机新浪网', count: 134 },
-                { rank: 5, site: '搜狐网', count: 114 },
-                { rank: 6, site: '中国家电网', count: 63 },
-                { rank: 7, site: '网易', count: 36 },
-                { rank: 8, site: '百度知道', count: 34 },
-                { rank: 9, site: '中关村在线', count: 33 },
-                { rank: 10, site: '什么值得买社区频道', count: 32 }
+                { rank: 1, site: 'QQ News', count: 75 },
+                { rank: 2, site: '京东', count: 69 },
+                { rank: 3, site: '新京报', count: 32 },
+                { rank: 4, site: '博禾医生', count: 30 },
+                { rank: 5, site: '中国医药信息查询平台', count: 29 },
+                { rank: 6, site: '复禾健康', count: 26 },
+                { rank: 7, site: '买购网', count: 24 },
+                { rank: 8, site: '淘宝网', count: 23 },
+                { rank: 9, site: '99健康网', count: 22 },
+                { rank: 10, site: '民福康', count: 22 }
             ]
         },
         {
@@ -53,16 +53,16 @@ export default function Page_PlatformFilterIntro() {
             textColor: 'text-blue-100',
             numColor: 'text-white/30',
             data: [
-                { rank: 1, site: '抖音', count: 466 },
-                { rank: 2, site: '今日头条', count: 314 },
-                { rank: 3, site: '什么值得买社区频道', count: 107 },
-                { rank: 4, site: '新浪新闻', count: 97 },
-                { rank: 5, site: '搜狐网', count: 87 },
-                { rank: 6, site: '中关村在线', count: 27 },
-                { rank: 7, site: '中国家电网', count: 22 },
-                { rank: 8, site: '买购网', count: 22 },
-                { rank: 9, site: '网易', count: 20 },
-                { rank: 10, site: '中国著名品牌网', count: 17 }
+                { rank: 1, site: '今日头条', count: 131 },
+                { rank: 2, site: '抖音', count: 129 },
+                { rank: 3, site: '什么值得买社区频道', count: 70 },
+                { rank: 4, site: '搜狐网', count: 45 },
+                { rank: 5, site: '博禾医生', count: 33 },
+                { rank: 6, site: '买购网', count: 23 },
+                { rank: 7, site: '网易', count: 17 },
+                { rank: 8, site: '太原新闻网', count: 16 },
+                { rank: 9, site: '廊坊新闻网', count: 14 },
+                { rank: 10, site: '排行榜123网', count: 14 }
             ]
         },
         {
@@ -74,16 +74,16 @@ export default function Page_PlatformFilterIntro() {
             textColor: 'text-blue-100',
             numColor: 'text-white/30',
             data: [
-                { rank: 1, site: '搜狐网', count: 189 },
-                { rank: 2, site: '什么值得买社区频道', count: 169 },
-                { rank: 3, site: '百度知道', count: 94 },
-                { rank: 4, site: '网易', count: 61 },
-                { rank: 5, site: '哔哩哔哩', count: 39 },
-                { rank: 6, site: '十大品牌网CNPP', count: 30 },
-                { rank: 7, site: '百家评测', count: 30 },
-                { rank: 8, site: '买购网', count: 30 },
-                { rank: 9, site: 'IT之家', count: 22 },
-                { rank: 10, site: '中关村在线', count: 19 }
+                { rank: 1, site: '夸克', count: 94 },
+                { rank: 2, site: '新京报', count: 69 },
+                { rank: 3, site: '哔哩哔哩', count: 40 },
+                { rank: 4, site: '什么值得买社区频道', count: 28 },
+                { rank: 5, site: '39健康网', count: 21 },
+                { rank: 6, site: '十大品牌网CNPP', count: 13 },
+                { rank: 7, site: '今日头条', count: 11 },
+                { rank: 8, site: '舜网', count: 10 },
+                { rank: 9, site: '百度知道', count: 8 },
+                { rank: 10, site: '搜狐网', count: 8 }
             ]
         }
     ];

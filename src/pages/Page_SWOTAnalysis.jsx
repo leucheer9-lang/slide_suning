@@ -3,25 +3,21 @@ import React from 'react';
 export default function Page_SWOTAnalysis() {
     const swotData = {
         S: [
-            { id: 'S1', title: '行业标准的绝对定义权（高）', content: '联合制定“原创平嵌”标准，在空间美学上构筑了极深的护城河与话语权。' },
-            { id: 'S2', title: '极致的平嵌物理与工程设计（高）', content: '遵循594mm深度与前置散热，实现“零闪缝”无死角开门。' },
-            { id: 'S3', title: '庞大的智慧家庭生态协同能力（高）', content: '与旗下智慧厨电深度打通，提供一站式无缝饮食解决方案。' },
-            { id: 'S4', title: '绝对统治级的AI搜索心智与流量（高）', content: 'GEO数据总体提及率高达70.3%，Top1首选占比31.4%，展现压倒性优势。' },
+            { id: 'S1', title: '钙源代际升级带来的竞争力（高）', content: '已升级为有机柠檬酸钙，成功洗脱传统碳酸钙带来的“胀气、便秘”历史标签。' },
+            { id: 'S2', title: '黄金营养矩阵的背书（高）', content: '钙+VD3+VK2（引钙入骨）三效合一，符合大众对“全面补钙”的权威认知。' },
+            { id: 'S3', title: '统治级的医疗与全渠道渗透（高）', content: '百年巨头地位带来的医生/药师高推荐率，AI 语料库中品牌提及率具备压倒性优势。' },
         ],
         W: [
-            { id: 'W1', title: '保鲜技术的代际局限性（中/高）', content: '核心保鲜属“被动抑制”，易受“主动制氮”等跨界技术实施维度打击。' },
-            { id: 'W2', title: '评价标准的感官主观性（中）', content: '保鲜效果主要诉诸主观体验，缺乏权威量化的客观实验数据支撑。' },
-            { id: 'W3', title: '营销语境易陷入传统“物理参数”内卷（中）', content: '过度绑定“缝隙尺寸”等外在参数，易被后发破局者借全新赛道解构。' },
+            { id: 'W1', title: '胶囊剂型带来的“物理吞咽障碍”（高）', content: '虽然胶囊宣称“易吞服”，但本质仍需水送服。对于孕吐严重、喉咙敏感的孕妈，大颗胶囊极易引发恶心感和心理压力。' },
+            { id: 'W2', title: '胶囊外壳及填充物的辅料负担（中/高）', content: '制作胶囊不可避免涉及明胶、甘油甚至着色剂（如二氧化钛）。在极致追求“0添加”的母婴圈层中，成分表不够纯净。' },
+            { id: 'W3', title: '普适化品牌的“高定感”缺失（中）', content: '作为全家品牌下的延伸线，缺乏针对高敏人群、高净值女性的专属定制感。' },
         ],
         T: [
-            { id: 'T1', title: '跨界破局者的“降维打击”与赛道重新定义（高）', content: '厨电巨头携新科技入局，试图将标准从“外观美学”拉向“量化营养锁定”。' },
-            { id: 'T2', title: '传统巨头的战术跟进与价格封杀（中/高）', content: '竞争对手若推出平替产品或降价，将挤压终端铺货和溢价空间。' },
-            { id: 'T3', title: '消费决策面临更严苛的品味与溢价审视（中）', content: '经济周期下，消费者对高单价产品的功能价值与社交溢价审视更为苛刻。' },
+            { id: 'T1', title: '垂直赛道“免吞咽直饮钙”的降维打击（高）', content: '迪巧小粉条以“撕开即饮”的去剂型化体验，正在解构“吞胶囊”这一传统行为。' },
+            { id: 'T2', title: '母婴“成分党”对隐形添加的审视（中/高）', content: '社媒评测开始关注胶囊壳的明胶来源及辅料，对巨头形成的纯净度挑战日益严峻。' },
         ],
         O: [
-            { id: 'O1', title: '高端定制与“厨居一体化”市场持续扩容（高）', content: '高净值人群对极简美学追求升级，一体化家装市场盘子仍在扩张。' },
-            { id: 'O2', title: '生成式AI技术重塑用户决策路径（高）*', content: '重度决策依赖AI调研，利好卡萨帝现有的高权重AI资产与流量流转。' },
-            { id: 'O3', title: '消费者对“全健康、无缝智能”的诉求升级（中/高）', content: '用户痛点从“不坏”转至“营养管理”，推动冰箱向健康仪器升维。' },
+            { id: 'O1', title: '液体钙市场的整体教育红利（高）', content: '巨头主推液体钙，加速了片剂的淘汰。' },
         ]
     };
 
@@ -33,7 +29,7 @@ export default function Page_SWOTAnalysis() {
             <div className="relative z-20 w-full px-8 lg:px-16 pt-4 sm:pt-6 shrink-0">
                 <div className="flex items-center justify-center gap-3">
                     <h1 className="text-3xl sm:text-4xl font-black text-white tracking-widest flex items-baseline">
-                        SWOT<span className="text-2xl sm:text-3xl font-bold ml-3 text-white/70">卡萨帝冰箱分析</span>
+                        SWOT<span className="text-2xl sm:text-3xl font-bold ml-3 text-white/70">金钙尔奇（孕妇液体钙软胶囊）分析</span>
                     </h1>
                 </div>
             </div>

@@ -21,7 +21,7 @@ export default function Page_SectionBroad() {
                             定义
                         </div>
                         <div className="flex-1 text-white/90 text-[1.25rem] leading-relaxed tracking-wide">
-                            搜索需求高、竞争最激烈、品牌当前存在感较弱的词条。
+                            搜索需求高、竞争最激烈，但品牌当前存在感较弱的行业大词。
                         </div>
                     </div>
 
@@ -32,7 +32,7 @@ export default function Page_SectionBroad() {
                             词条
                         </div>
                         <div className="flex-1 flex flex-wrap gap-4">
-                            {['家用冰箱推荐', '高端冰箱品牌推荐', '冰箱排行榜前十', '高端冰箱排行榜前十'].map((tag, idx) => (
+                            {['液体钙推荐', '孕妇补钙产品品牌推荐', '补钙产品品牌排行榜'].map((tag, idx) => (
                                 <div key={idx} className="bg-white/5 border border-white/10 px-5 py-2.5 rounded-xl text-zinc-100 text-[1.15rem] flex items-center shadow-sm">
                                     {tag}
                                 </div>
@@ -59,7 +59,7 @@ export default function Page_SectionBroad() {
                         </div>
                         <div className="flex-1 text-white/90 text-[1.25rem] leading-relaxed tracking-wide text-justify">
                             <span className="font-bold text-blue-400 mb-2 block tracking-wider">“搭便车（借势渗透）”</span>
-                            这是破局中难点中的难点。面对传统巨头筑起的海量语料高墙，按部就班地正面强攻毫无胜算。因此，在时间规划上，这部分高地攻坚必须放在整个规划的后期（待板块一的基础打牢之后）。在战术上，必须出奇招致胜——采取<strong className="text-white mx-1">“搭便车（借势渗透）”</strong>的核心策略。主动制造包含头部巨头（如卡萨帝、海尔）的深度横评合集，借助竞争对手已形成的市场认知和内容搜索权重，巧妙地将方太植入其中，从而强行进入用户与AI的通用候选视野。
+                            这是破局中难点中的难点。面对海量语料高墙，按部就班地正面强攻毫无胜算。因此，在时间规划上，这部分高地攻坚必须放在整个规划的后期（待板块一的基础打牢之后）。在战术上，必须出奇招致胜——采取“搭便车（借势渗透）”的核心策略。主动制造包含行业头部巨头（如钙尔奇、金钙尔奇、斯维诗）的深度横评合集，借助市场已形成的内容搜索权重，巧妙地将迪巧植入其中，从而强行进入用户与AI的通用候选视野。
                         </div>
                     </div>
 

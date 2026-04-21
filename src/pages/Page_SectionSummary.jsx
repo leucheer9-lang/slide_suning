@@ -23,7 +23,7 @@ export default function Page_SectionSummary() {
                             <div className="relative z-10">
                                 <div className="w-12 h-1.5 bg-[#004CE5] mb-6 rounded-full shadow-[0_0_15px_rgba(0,76,229,0.5)]" />
                                 <p className="text-[1.2rem] lg:text-[1.35rem] text-zinc-200 leading-relaxed font-light text-justify tracking-wide">
-                                    综上所述，当前的数据图谱极其清晰地揭示了方太干预AI生态的正确路径。这三个板块之间并非平行的优化选项，而是存在着极其严密的<strong className="text-white font-bold mx-1">先后依存与战略支撑关系：</strong>
+                                    综上所述，当前的数据图谱极其清晰地揭示了迪巧干预AI生态的正确路径。这三个板块之间并非平行的优化选项，而是存在着极其严密的<strong className="text-white font-bold mx-1">先后依存与战略支撑关系：</strong>
                                 </p>
                             </div>
 
@@ -31,7 +31,7 @@ export default function Page_SectionSummary() {
                                 <div className="w-full h-px bg-white/10 mb-8" />
 
                                 <p className="text-[1.25rem] lg:text-[1.4rem] text-[#004CE5] leading-relaxed font-bold tracking-wide text-justify font-['AlimamaShuHeiTi',sans-serif]">
-                                    唯有遵循这套由数据底层逻辑推导出的“依势定序、梯次推进”战略规划，方太冰箱才能在AI生成式搜索时代，以最高的效率重塑高端品牌的推荐格局。
+                                    唯有遵循这套由数据底层逻辑推导出的“依势定序、梯次推进”战略规划，迪巧才能在AI生成式搜索时代，以最高的效率重塑品牌的推荐格局。
                                 </p>
                             </div>
                         </div>
@@ -55,7 +55,7 @@ export default function Page_SectionSummary() {
                                     板块一：核心场景
                                 </h3>
                                 <p className="text-[1.15rem] lg:text-[1.25rem] leading-relaxed text-zinc-300 font-light text-justify relative z-10">
-                                    必须最先强势突围并贯穿始终。稳扎稳打占据“2W预算、嵌入、保鲜”的推荐位，这是为品牌提供商业转化兜底、并向外界证明实力的基石。
+                                    必须最先强势突围并贯穿始终。稳扎稳打占据“不便秘、好吞咽、产后”的推荐位，这是为品牌提供商业转化兜底、并向外界证明实力的基石。
                                 </p>
                             </div>
                         </div>
@@ -73,7 +73,7 @@ export default function Page_SectionSummary() {
                                     板块二：综合大词
                                 </h3>
                                 <p className="text-[1.15rem] lg:text-[1.25rem] leading-relaxed text-zinc-300 font-light text-justify relative z-10">
-                                    作为难点中的难点，不能按部就班。必须等待基石稳固后，在后期利用巧妙的借势手段（搭便车），撕开巨头的流量封锁线。
+                                    作为难点中的难点，不能按部就班。必须等待基石稳固后，在后期利用巧妙的借势手段（搭便车），撕开流量封锁线。
                                 </p>
                             </div>
                         </div>
