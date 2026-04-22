@@ -8,7 +8,7 @@ export default function Page_ArticleQuantityAnalysis() {
             <div className="w-full flex-col items-center justify-center text-center pt-2 pb-6 shrink-0">
                 <h1 className="text-4xl font-bold text-white tracking-widest mb-3">投放文章数量</h1>
                 <p className="inline-block text-[#004CE5] text-[1.1rem] font-bold tracking-widest bg-[#004CE5]/10 px-6 py-2 rounded-full border border-[#004CE5]/30 shadow-[0_0_20px_rgba(0,76,229,0.15)]">
-                    各品牌投放文章数量月均对比
+                    各品牌投放文章数量对比
                 </p>
             </div>
 
@@ -22,23 +22,23 @@ export default function Page_ArticleQuantityAnalysis() {
                         <div className="bg-white/5 border border-white/10 rounded-3xl overflow-hidden shadow-2xl p-8 backdrop-blur-md shrink-0">
                             <h2 className="text-2xl font-bold mb-6 text-white flex items-center gap-3">
                                 <span className="w-2 h-6 bg-[#004CE5] rounded-full inline-block shadow-[0_0_10px_rgba(0,76,229,0.5)]"></span>
-                                投放文章数量（月均）
+                                投放文章数量
                             </h2>
                             <table className="w-full text-left border-collapse">
                                 <thead>
                                     <tr className="border-b border-white/20 text-zinc-400 text-lg">
                                         <th className="py-4 px-6 font-medium whitespace-nowrap">平台</th>
-                                        <th className="py-4 px-6 font-medium whitespace-nowrap text-center">卡萨帝</th>
-                                        <th className="py-4 px-6 font-medium whitespace-nowrap text-center">美的</th>
-                                        <th className="py-4 px-6 font-medium whitespace-nowrap text-center">海尔</th>
+                                        <th className="py-4 px-6 font-medium whitespace-nowrap text-center">Swisse</th>
+                                        <th className="py-4 px-6 font-medium whitespace-nowrap text-center">inne</th>
+                                        <th className="py-4 px-6 font-medium whitespace-nowrap text-center">金钙尔奇</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr className="border-b border-white/10 text-white hover:bg-white/5 transition-colors group">
-                                        <td className="py-5 px-6 font-medium text-[#004CE5] text-xl group-hover:text-blue-400 transition-colors">搜狐网</td>
-                                        <td className="py-5 px-6 font-bold text-3xl text-center">82</td>
-                                        <td className="py-5 px-6 font-bold text-3xl text-center">238</td>
-                                        <td className="py-5 px-6 font-bold text-3xl text-center">294</td>
+                                        <td className="py-5 px-6 font-medium text-[#004CE5] text-xl group-hover:text-blue-400 transition-colors">新京报</td>
+                                        <td className="py-5 px-6 font-bold text-3xl text-center">39</td>
+                                        <td className="py-5 px-6 font-bold text-3xl text-center">34</td>
+                                        <td className="py-5 px-6 font-bold text-3xl text-center">8</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -48,11 +48,11 @@ export default function Page_ArticleQuantityAnalysis() {
                         <div className="mt-8 flex flex-col gap-4 shrink-0">
                             <div className="flex gap-4 items-start bg-white/[0.03] p-5 rounded-2xl border border-white/10 hover:border-[#004CE5]/40 transition-colors">
                                 <span className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-[#004CE5]/20 text-[#004CE5] font-bold text-sm">1</span>
-                                <span className="text-zinc-300 text-[1.05rem] leading-relaxed pt-0.5">确定目前四个AI平台提到最多的产品，分别是<span className="text-white font-bold">卡萨帝</span>、<span className="text-white font-bold">美的</span>、<span className="text-white font-bold">海尔</span></span>
+                                <span className="text-zinc-300 text-[1.05rem] leading-relaxed pt-0.5">确定目前四个AI平台提到最多的产品，分别是<span className="text-white font-bold">Swisse</span>、<span className="text-white font-bold">inne</span>、<span className="text-white font-bold">金钙尔奇</span></span>
                             </div>
                             <div className="flex gap-4 items-start bg-white/[0.03] p-5 rounded-2xl border border-white/10 hover:border-[#004CE5]/40 transition-colors">
                                 <span className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-[#004CE5]/20 text-[#004CE5] font-bold text-sm">2</span>
-                                <span className="text-zinc-300 text-[1.05rem] leading-relaxed pt-0.5">查询出这三个产品在<span className="text-white font-bold">A组</span>中投放出的文章月均数量</span>
+                                <span className="text-zinc-300 text-[1.05rem] leading-relaxed pt-0.5">查询出这三个产品在<span className="text-white font-bold">A组</span>中投放出的文章数量</span>
                             </div>
                             <div className="flex gap-4 items-start bg-white/[0.03] p-5 rounded-2xl border border-white/10 hover:border-[#004CE5]/40 transition-colors">
                                 <span className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-[#004CE5]/20 text-[#004CE5] font-bold text-sm">3</span>
@@ -64,7 +64,7 @@ export default function Page_ArticleQuantityAnalysis() {
                     {/* Right: Picture Placeholder - Fully Adaptive */}
                     <div className="w-full h-full relative bg-white/[0.02] border border-white/10 rounded-3xl overflow-hidden shadow-2xl group flex flex-col items-center justify-center backdrop-blur-sm">
                         <img
-                            src="/Add_Charts/article-quantity-placeholder.png"
+                            src="/Add_Charts/article-push-search.png"
                             alt="数量分布占位图"
                             className="absolute inset-0 w-full h-full object-contain p-2 z-20"
                             onError={(e) => { e.target.style.display = 'none'; }}
