@@ -13,7 +13,7 @@ export default function Page_SectionCore() {
             {/* Main Content Area: Table Form Layout */}
             <div className="flex-1 relative w-full px-12 lg:px-20 pb-16 pt-10 flex items-stretch min-h-0">
                 <div className="w-full h-full bg-[#101010] border border-white/10 rounded-2xl px-12 py-6 shadow-2xl flex flex-col overflow-y-auto custom-scrollbar">
-                    
+
                     {/* Row 1: 定义 */}
                     <div className="flex border-b border-white/10 py-8">
                         <div className="w-[20%] xl:w-[15%] shrink-0 text-white font-bold text-[1.4rem] flex items-start gap-3">
@@ -21,7 +21,7 @@ export default function Page_SectionCore() {
                             定义
                         </div>
                         <div className="flex-1 text-white/90 text-[1.25rem] leading-relaxed tracking-wide">
-                            产品具备压倒性优势、核心痛点高度集中的词条，是品牌立足 AI 搜索生态的基石。
+                            产品具备一定优势、核心痛点高度集中的词条，是品牌立足 AI 搜索生态的基石。
                         </div>
                     </div>
 
@@ -65,7 +65,7 @@ export default function Page_SectionCore() {
 
                 </div>
             </div>
-            
+
             <style dangerouslySetInnerHTML={{
                 __html: `
                 .custom-scrollbar::-webkit-scrollbar { width: 6px; }

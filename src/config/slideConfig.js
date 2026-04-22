@@ -59,6 +59,7 @@ import PB_GeoOptKeywordsSocial from '../Pages_Before/Page_GeoOptKeywordsSocial';
 import PB_GeoOptKeywordsClassify from '../Pages_Before/Page_GeoOptKeywordsClassify';
 import PB_GeoOptKeywordsClassify2 from '../Pages_Before/Page_GeoOptKeywordsClassify2';
 import PB_GeoOptKeywordsClassify_New from '../Pages_Before/Page_GeoOptKeywordsClassify_New';
+import PB_GeoOptKeywordsClassify_New2 from '../Pages_Before/Page_GeoOptKeywordsClassify_New2';
 import PB_GeoOptKeywordsClassify3 from '../Pages_Before/Page_GeoOptKeywordsClassify3';
 import PB_GeoOptKeywordsClassify4 from '../Pages_Before/Page_GeoOptKeywordsClassify4';
 import PB_GeoOptKeywordsCleaning1 from '../Pages_Before/Page_GeoOptKeywordsCleaning1';
@@ -109,7 +110,7 @@ export const slideConfig = [
     type: 'cover',
     title: '封面',
     backgroundImage: '/proposal-cover/proposal-cover-new.png',
-    brand: '方太冰箱',
+    brand: '迪巧小粉条液体钙',
     subtitle: 'GEO\n年度规划方案',
     date: 'March 2026',
   },
@@ -151,7 +152,7 @@ export const slideConfig = [
   { type: 'section', title: '数据分析 agent中心' },
 
   { type: 'section', title: '词条穷举及清洗' },
-  { type: 'page', title: '词条穷举及清洗', components: [PB_GeoOptKeywordsClassify, PB_GeoOptKeywordsClassify2, PB_GeoOptKeywordsClassify_New] },
+  { type: 'page', title: '词条穷举及清洗', components: [PB_GeoOptKeywordsClassify, PB_GeoOptKeywordsClassify2, PB_GeoOptKeywordsClassify_New, PB_GeoOptKeywordsClassify_New2] },
   { type: 'page', title: '词条分类及拓展', components: [PB_GeoOptKeywordsClassify3, PB_GeoOptKeywordsClassify4] },
   { type: 'page', title: '词条确定', components: [PB_GeoOptKeywordsCleaning1, PB_GeoOptKeywordsCleaning2, PB_GeoOptKeywordsCleaning3, PB_GeoOptKeywordsCleaning4] },
 
@@ -167,13 +168,6 @@ export const slideConfig = [
   { type: 'page', title: '引用源', components: [PB_GeoReportSources, PB_GeoReportSources2] },
   { type: 'page', title: '正负向分析', components: [PB_GeoReportSentiment_Pre, PB_GeoReportSentiment] },
 
-  { type: 'section', title: '数据报告' },
-  { type: 'page', title: '核心摘要', component: Page_GeoReport_CoreSummary },
-  { type: 'page', title: '大盘画像', component: Page_GeoReport_OverallProfile },
-  { type: 'page', title: '搜索词洞察', component: Page_GeoReport_SearchInsight },
-  { type: 'page', title: '归因诊断', component: Page_GeoReport_Attribution },
-  { type: 'page', title: '战略与 GEO 行动建议', component: Page_StrategyOutline },
-
   // ══════════════════════════════════════════════════════════
   // ——— 篇章4: 数据量化分析 ———
   // ══════════════════════════════════════════════════════════
@@ -181,7 +175,7 @@ export const slideConfig = [
 
   { type: 'section', title: '投放平台量化分析' },
   { type: 'page', title: '筛选逻辑总览', component: Page_PlatformFilterIntro },
-  { type: 'page', title: '筛选过程', components: [Page_PlatformFilterLogic, Page_PlatformFilterLogicB, Page_PlatformFilterLogicC, Page_PlatformFilterLogicC2] },
+  { type: 'page', title: '筛选过程', components: [Page_PlatformFilterLogic, Page_PlatformFilterLogicB, Page_PlatformFilterLogicC] },
   { type: 'page', title: '筛选结论', component: Page_PlatformFilterConclusion },
 
   { type: 'section', title: '投放文章量化分析' },
@@ -218,16 +212,5 @@ export const slideConfig = [
   { type: 'page', title: '实战效果与数据', components: [Page_QA_Data_1_1, Page_QA_Data_2_1, Page_QA_Data_3_1] },
   { type: 'page', title: '合规与安全', components: [Page_QA_Comp_1_1, Page_QA_Comp_2_1, Page_QA_Comp_2_4, Page_QA_Comp_3_1] },
   { type: 'page', title: '成本与性价比 & 战略匹配度', component: Page_QA_Misc_1_1 },
-
-  // ══════════════════════════════════════════════════════════
-  // ——— 篇章7: 知乎方案新增 ———
-  // ══════════════════════════════════════════════════════════
-  { type: 'chapter', title: '知乎方案新增', subtitle: 'ZHIHU PLAN', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
-
-  { type: 'section', title: 'GEO效果量化对冲模型' },
-  { type: 'page', title: 'AI模型用什么数据回答用户的问题', components: [Page_Zhihu_AIData, Page_Zhihu_AIDataDecision] },
-  { type: 'page', title: 'AI模型到底是如何用互联网数据的', components: [Page_Zhihu_AIInternetData, Page_Zhihu_AIInternetProcess] },
-  { type: 'page', title: '对抗策略', components: [Page_Zhihu_ARES_Architecture, Page_Zhihu_ARES_Detail12, Page_Zhihu_ARES_Detail34] },
-  { type: 'page', title: '公司架构', component: Page_Zhihu_CompanyArchitecture },
 
 ];

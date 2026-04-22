@@ -26,11 +26,11 @@ export default function Page_PlatformFilterConclusion() {
                         
                         <div className="flex flex-col gap-3 pb-2 pt-1">
                             {[
-                                { name: "新京报", num: "116", cover: "DeepSeek、腾讯元宝、通义千问" },
-                                { name: "今日头条", num: "142", cover: "豆包、通义千问" },
-                                { name: "什么值得买", num: "98", cover: "豆包、通义千问" },
-                                { name: "QQ News", num: "91", cover: "DeepSeek、腾讯元宝" },
-                                { name: "博禾医生", num: "63", cover: "腾讯元宝、豆包" }
+                                { name: "新京报", num: "1204", cover: "DeepSeek、文心、腾讯元宝、通义千问" },
+                                { name: "博禾医生", num: "1623", cover: "文心、腾讯元宝、豆包" },
+                                { name: "QQ News", num: "963", cover: "DeepSeek、文心、腾讯元宝" },
+                                { name: "百度知道", num: "2912", cover: "文心、通义千问" },
+                                { name: "今日头条", num: "1422", cover: "豆包、通义千问" }
                             ].map((item, idx) => (
                                 <div key={idx} className="flex flex-col bg-white/[0.03] px-4 py-3 rounded-xl border border-white/5 transition-colors hover:bg-white/5">
                                     <div className="flex items-center justify-between mb-2">
@@ -49,20 +49,21 @@ export default function Page_PlatformFilterConclusion() {
                     <div className="relative w-full rounded-2xl bg-white/[0.02] border border-white/10 p-6 flex flex-col gap-4 shadow-2xl h-full">
                         <div className="absolute top-0 left-0 w-1.5 h-full rounded-l-2xl bg-white/20"></div>
                         <h2 className="text-[1.35rem] font-bold text-blue-100 tracking-widest flex items-center justify-between">
-                            B组：差异化特异台 <span className="text-zinc-400 text-[1.05rem]">（4个）</span>
+                            B组：差异化特异台 <span className="text-zinc-400 text-[1.05rem]">（5个）</span>
                         </h2>
                         <div className="w-full h-px bg-white/5 my-0 shrink-0"></div>
                         
                         <div className="flex flex-col gap-3 pb-2 pt-1">
                             {[
-                                { group: "DeepSeek", items: [ {n:"中国发展网", c:"23"} ] },
+                                { group: "DeepSeek", items: [ {n:"淘宝网", c:"30"} ] },
+                                { group: "文心", items: [ {n:"哔哩哔哩", c:"46"} ] },
                                 { group: "腾讯元宝", items: [ {n:"京东", c:"69"} ] },
                                 { group: "豆包", items: [ {n:"抖音", c:"129"} ] },
                                 { group: "通义千问", items: [ {n:"夸克", c:"94"} ] }
                             ].map((g, i) => (
-                                <div key={i} className="flex flex-col gap-2 bg-white/[0.03] px-4 py-4 rounded-xl border border-white/5 transition-colors hover:bg-white/5">
-                                    <span className="text-zinc-300 font-bold text-[1.2rem] tracking-wider mb-2 px-1">{g.group} 对应极高权重池：</span>
-                                    <div className="flex justify-between items-center text-[1.2rem] bg-black/20 px-3 py-2 rounded-md">
+                                <div key={i} className="flex flex-col gap-1.5 bg-white/[0.03] px-4 py-2.5 rounded-xl border border-white/5 transition-colors hover:bg-white/5">
+                                    <span className="text-zinc-300 font-bold text-[1.2rem] tracking-wider mb-0.5 px-1">{g.group} 对应极高权重池：</span>
+                                    <div className="flex justify-between items-center text-[1.2rem] bg-black/20 px-3 py-1.5 rounded-md">
                                         <span className="text-white/80 font-medium truncate pr-2">· {g.items[0].n}</span>
                                         <span className="text-zinc-400 font-mono shrink-0 text-[1.1rem]">{g.items[0].c} 次引用</span>
                                     </div>
@@ -86,7 +87,7 @@ export default function Page_PlatformFilterConclusion() {
                         
                         <div className="flex flex-col gap-2 pb-2 pt-1 relative">
                             {/* Table Header */}
-                            <div className="grid grid-cols-[1fr_40px_40px_60px] xl:grid-cols-[1fr_50px_50px_70px] gap-2 px-2 py-1 text-zinc-500 font-bold text-[1rem]">
+                            <div className="grid grid-cols-[1fr_50px_50px_80px] xl:grid-cols-[1fr_60px_60px_90px] gap-3 xl:gap-4 px-2 py-1 text-zinc-500 font-bold text-[1rem]">
                                 <span>金钙尔奇高优平台</span>
                                 <span className="text-right">引用</span>
                                 <span className="text-right">命中</span>
@@ -94,13 +95,13 @@ export default function Page_PlatformFilterConclusion() {
                             </div>
 
                             {[
-                                { n: "十大品牌网CNPP", ref: 41, hit: 41, rate: "100%" },
-                                { n: "99健康网", ref: 35, hit: 35, rate: "100%" },
-                                { n: "民福康", ref: 50, hit: 46, rate: "92.0%" },
-                                { n: "哔哩哔哩", ref: 63, hit: 56, rate: "88.9%" },
-                                { n: "买购网", ref: 77, hit: 67, rate: "87.0%" }
+                                { n: "中国报告大厅", ref: 16, hit: 16, rate: "100.00%" },
+                                { n: "有来医生", ref: 13, hit: 13, rate: "100.00%" },
+                                { n: "妈妈网", ref: 10, hit: 10, rate: "100.00%" },
+                                { n: "妙手医生", ref: 8, hit: 8, rate: "100.00%" },
+                                { n: "唯品会", ref: 7, hit: 7, rate: "100.00%" }
                             ].map((item, idx) => (
-                                <div key={idx} className="grid grid-cols-[1fr_40px_40px_60px] xl:grid-cols-[1fr_50px_50px_70px] gap-2 items-center bg-white/[0.03] px-3 py-2 rounded-lg border border-white/5 transition-colors hover:bg-white/5">
+                                <div key={idx} className="grid grid-cols-[1fr_50px_50px_80px] xl:grid-cols-[1fr_60px_60px_90px] gap-3 xl:gap-4 items-center bg-white/[0.03] px-3 py-2 rounded-lg border border-white/5 transition-colors hover:bg-white/5">
                                     <span className="text-white/90 font-bold text-[1.1rem] truncate" title={item.n}>{item.n}</span>
                                     <span className="text-zinc-400 font-mono text-[1.1rem] text-right">{item.ref}</span>
                                     <span className="text-zinc-400 font-mono text-[1.1rem] text-right">{item.hit}</span>
