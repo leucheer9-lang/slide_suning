@@ -27,7 +27,7 @@ export default function Page_DeliveryStrategy_Combo() {
                             <span className="text-3xl lg:text-4xl font-bold text-zinc-500 ml-2 mb-3">%</span>
                         </div>
                         <h3 className="text-xl lg:text-2.5xl font-bold text-white mb-4 pt-5 border-t border-white/10 group-hover:border-orange-500/50 transition-colors leading-snug">小众专业垂直媒体</h3>
-                        <p className="text-[1.05rem] lg:text-[1.15rem] font-medium text-orange-300 mb-6 tracking-wide leading-relaxed">复禾健康网、医疗资讯网、中国健康网、大众健康、买购网</p>
+                        <p className="text-[1.05rem] lg:text-[1.15rem] font-medium text-orange-300 mb-6 tracking-wide leading-relaxed">博禾医生、妙手医生、妈妈网、有来医生、买购网</p>
                         <p className="text-[1.12rem] lg:text-[1.25rem] xl:text-[1.3rem] text-zinc-400 leading-relaxed font-light text-justify">
                             <strong className="text-zinc-300 font-medium tracking-wide">深度种草与口碑渗透。</strong>通过专业视角的长图文或深度测评，建立品牌技术壁垒与专业形象，精准触达高意向核心用户，以高信度、高密度的干货内容强力影响最终决策。
                         </p>
@@ -43,7 +43,7 @@ export default function Page_DeliveryStrategy_Combo() {
                             <span className="text-3xl lg:text-4xl font-bold text-zinc-500 ml-2 mb-3">%</span>
                         </div>
                         <h3 className="text-xl lg:text-2.5xl font-bold text-white mb-4 pt-5 border-t border-white/10 group-hover:border-blue-500/50 transition-colors leading-snug">主流媒体平台</h3>
-                        <p className="text-[1.05rem] lg:text-[1.15rem] font-medium text-blue-300 mb-6 tracking-wide leading-relaxed">搜狐、今日头条、网易、什么值得买</p>
+                        <p className="text-[1.05rem] lg:text-[1.15rem] font-medium text-blue-300 mb-6 tracking-wide leading-relaxed">百度知道、今日头条、QQ News、淘宝网</p>
                         <p className="text-[1.12rem] lg:text-[1.25rem] xl:text-[1.3rem] text-zinc-400 leading-relaxed font-light text-justify">
                             <strong className="text-zinc-300 font-medium tracking-wide">话题势能放大与泛人群覆盖。</strong>聚焦核心卖点，利用可视化短视频与场景化图文笔记，打造矩阵式爆款话题，提升品牌全域声量，实现目标圈层的高效破圈与认知普及。
                         </p>
@@ -59,7 +59,7 @@ export default function Page_DeliveryStrategy_Combo() {
                             <span className="text-3xl lg:text-4xl font-bold text-zinc-500 ml-2 mb-3">%</span>
                         </div>
                         <h3 className="text-xl lg:text-2.5xl font-bold text-white mb-4 pt-5 border-t border-white/10 group-hover:border-emerald-500/50 transition-colors leading-snug">权威官方媒体</h3>
-                        <p className="text-[1.05rem] lg:text-[1.15rem] font-medium text-emerald-300 mb-6 tracking-wide leading-relaxed">人民网、新华网等央媒，及头部商业白皮书</p>
+                        <p className="text-[1.05rem] lg:text-[1.15rem] font-medium text-emerald-300 mb-6 tracking-wide leading-relaxed">新京报、中国报告大厅等央媒，及头部商业白皮书</p>
                         <p className="text-[1.12rem] lg:text-[1.25rem] xl:text-[1.3rem] text-zinc-400 leading-relaxed font-light text-justify">
                             <strong className="text-zinc-300 font-medium tracking-wide">信任背书与公信力构建。</strong>以行业报告、高管宏观访谈、技术升级发布等公关属性内容为主，夯实品牌头部地位，为全链路的营销转化奠定坚实的信任基础。
                         </p>
