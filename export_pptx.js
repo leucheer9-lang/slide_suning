@@ -37,7 +37,7 @@ async function run() {
     const pptx = new pptxgen();
     pptx.layout = 'LAYOUT_16x9';
 
-    const totalSlides = 90;
+    const totalSlides = 108;
 
     console.log(`Found ${totalSlides} slides. Starting capture...`);
 
