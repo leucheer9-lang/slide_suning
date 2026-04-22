@@ -86,32 +86,20 @@ import Page_Zhihu_DataProcess from '../pages/Page_Zhihu_DataProcess';
 import Page_Zhihu_WaterSource from '../pages/Page_Zhihu_WaterSource';
 
 import Page_QA_Tech_1_1 from '../pages/Page_QA_Tech_1_1';
-import Page_QA_Tech_1_2 from '../pages/Page_QA_Tech_1_2';
 import Page_QA_Tech_2_1 from '../pages/Page_QA_Tech_2_1';
-import Page_QA_Tech_3_1 from '../pages/Page_QA_Tech_3_1';
 import Page_QA_Tech_4_1 from '../pages/Page_QA_Tech_4_1';
 import Page_QA_Tech_5_1 from '../pages/Page_QA_Tech_5_1';
 
 import Page_QA_Data_1_1 from '../pages/Page_QA_Data_1_1';
-import Page_QA_Data_1_2 from '../pages/Page_QA_Data_1_2';
 import Page_QA_Data_2_1 from '../pages/Page_QA_Data_2_1';
-import Page_QA_Data_2_2 from '../pages/Page_QA_Data_2_2';
-import Page_QA_Data_2_3 from '../pages/Page_QA_Data_2_3';
 import Page_QA_Data_3_1 from '../pages/Page_QA_Data_3_1';
 
 import Page_QA_Comp_1_1 from '../pages/Page_QA_Comp_1_1';
-import Page_QA_Comp_1_2 from '../pages/Page_QA_Comp_1_2';
-import Page_QA_Comp_1_3 from '../pages/Page_QA_Comp_1_3';
 import Page_QA_Comp_2_1 from '../pages/Page_QA_Comp_2_1';
-import Page_QA_Comp_2_2 from '../pages/Page_QA_Comp_2_2';
-import Page_QA_Comp_2_3 from '../pages/Page_QA_Comp_2_3';
 import Page_QA_Comp_2_4 from '../pages/Page_QA_Comp_2_4';
-import Page_QA_Comp_2_5 from '../pages/Page_QA_Comp_2_5';
-import Page_QA_Comp_2_6 from '../pages/Page_QA_Comp_2_6';
 import Page_QA_Comp_3_1 from '../pages/Page_QA_Comp_3_1';
 
 import Page_QA_Misc_1_1 from '../pages/Page_QA_Misc_1_1';
-import Page_QA_Misc_2_1 from '../pages/Page_QA_Misc_2_1';
 import Page_Zhihu_GeoStrategy from '../pages/Page_Zhihu_GeoStrategy';
 import Page_Zhihu_CompanyArchitecture from '../pages/Page_Zhihu_CompanyArchitecture';
 
@@ -226,7 +214,10 @@ export const slideConfig = [
   { type: 'page', title: '知乎数据应用建议', component: Page_Zhihu_WaterSource },
 
   { type: 'section', title: '技术答疑' },
-  { type: 'page', title: '技术答疑', components: [Page_QA_Tech_1_1, Page_QA_Tech_1_2, Page_QA_Tech_2_1, Page_QA_Tech_3_1, Page_QA_Tech_4_1, Page_QA_Tech_5_1, Page_QA_Data_1_1, Page_QA_Data_1_2, Page_QA_Data_2_1, Page_QA_Data_2_1, Page_QA_Data_2_2, Page_QA_Data_2_3, Page_QA_Data_3_1, Page_QA_Comp_1_1, Page_QA_Comp_1_2, Page_QA_Comp_1_3, Page_QA_Comp_2_1, Page_QA_Comp_2_2, Page_QA_Comp_2_3, Page_QA_Comp_2_4, Page_QA_Comp_2_5, Page_QA_Comp_2_6, Page_QA_Comp_3_1, Page_QA_Misc_1_1, Page_QA_Misc_2_1] },
+  { type: 'page', title: '技术实力', components: [Page_QA_Tech_1_1, Page_QA_Tech_2_1, Page_QA_Tech_4_1, Page_QA_Tech_5_1] },
+  { type: 'page', title: '实战效果与数据', components: [Page_QA_Data_1_1, Page_QA_Data_2_1, Page_QA_Data_3_1] },
+  { type: 'page', title: '合规与安全', components: [Page_QA_Comp_1_1, Page_QA_Comp_2_1, Page_QA_Comp_2_4, Page_QA_Comp_3_1] },
+  { type: 'page', title: '成本与性价比 & 战略匹配度', component: Page_QA_Misc_1_1 },
 
   // ══════════════════════════════════════════════════════════
   // ——— 篇章7: 知乎方案新增 ———
