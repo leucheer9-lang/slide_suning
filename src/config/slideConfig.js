@@ -14,6 +14,8 @@ import Page_SectionCore from '../pages/Page_SectionCore';
 import Page_SectionBroad from '../pages/Page_SectionBroad';
 import Page_SectionExclusive from '../pages/Page_SectionExclusive';
 import Page_SectionSummary from '../pages/Page_SectionSummary';
+import Page_GeoReport_BasicInfo1 from '../pages/Page_GeoReport_BasicInfo1';
+import Page_GeoReport_BasicInfo2 from '../pages/Page_GeoReport_BasicInfo2';
 import Page_GeoReport_CoreSummary from '../pages/Page_GeoReport_CoreSummary';
 import Page_GeoReport_OverallProfile from '../pages/Page_GeoReport_OverallProfile';
 import Page_GeoReport_SearchInsight from '../pages/Page_GeoReport_SearchInsight';
@@ -161,7 +163,8 @@ export const slideConfig = [
   // ══════════════════════════════════════════════════════════
   { type: 'chapter', title: 'GEO体检报告', subtitle: 'GEO HEALTH CHECK', backgroundImage: '/proposal-chapters/proposal-chapter-cover-02.jpg' },
 
-  { type: 'section', title: '数据概要' },
+  { type: 'section', title: '数据分析报告' },
+  { type: 'page', title: '报告说明', components: [Page_GeoReport_BasicInfo1, Page_GeoReport_BasicInfo2] },
   { type: 'page', title: '总览', component: PB_GeoReportDashboard },
   { type: 'page', title: '词条', components: [PB_GeoReportEntries, PB_GeoReportEntries2, PB_GeoReportEntries3] },
   { type: 'page', title: '竞品', components: [PB_GeoReportCompetitors, PB_GeoReportCompetitors2, PB_GeoReportCompetitors3] },
