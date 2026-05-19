@@ -105,6 +105,16 @@ import Page_QA_Comp_3_1 from '../pages/Page_QA_Comp_3_1';
 import Page_QA_Misc_1_1 from '../pages/Page_QA_Misc_1_1';
 import Page_Zhihu_GeoStrategy from '../pages/Page_Zhihu_GeoStrategy';
 import Page_Zhihu_CompanyArchitecture from '../pages/Page_Zhihu_CompanyArchitecture';
+import Page_BrandInfo from '../pages/Page_BrandInfo';
+import Page_BrandProducts from '../pages/Page_BrandProducts';
+import Page_BrandTech from '../pages/Page_BrandTech';
+import Page_BrandChannel from '../pages/Page_BrandChannel';
+import Page_BrandCompetitors from '../pages/Page_BrandCompetitors';
+import Page_IndustryPainPoints from '../pages/Page_IndustryPainPoints';
+import Page_PainPoint1_WordCloud from '../pages/Page_PainPoint1_WordCloud';
+import Page_PainPoint2_Industry from '../pages/Page_PainPoint2_Industry';
+import Page_PainPoint3_Service from '../pages/Page_PainPoint3_Service';
+import Page_PainPoint4_SalesModel from '../pages/Page_PainPoint4_SalesModel';
 
 export const slideConfig = [
   // ——— 封面 & 目录 ———
@@ -112,7 +122,7 @@ export const slideConfig = [
     type: 'cover',
     title: '封面',
     backgroundImage: '/proposal-cover/proposal-cover-new.png',
-    brand: '迪巧小粉条液体钙',
+    brand: '萨米特瓷砖',
     subtitle: 'GEO\n年度规划方案',
     date: 'March 2026',
   },
@@ -127,39 +137,31 @@ export const slideConfig = [
   },
 
   // ══════════════════════════════════════════════════════════
-  // ——— 篇章1: 品牌信息调研 ———
+  // ——— 篇章1: 品牌信息调研及词条策略 ———
   // ══════════════════════════════════════════════════════════
-  { type: 'chapter', title: '品牌信息调研', subtitle: 'BRAND DISCOVERY', backgroundImage: '/' },
+  { type: 'chapter', title: '品牌信息调研及词条策略', subtitle: 'BRAND DISCOVERY', backgroundImage: '/' },
 
-  { type: 'section', title: '目标行业信息' },
-  { type: 'page', title: '口服补钙产品是什么？', component: PB_ProposalNav },
-  { type: 'page', title: '口服补钙产品卖给谁？', component: PB_TargetAudience },
-  { type: 'page', title: '口服补钙产品的主要品牌', component: PB_Brands },
+  { type: 'section', title: '品牌信息' },
+  { type: 'page', title: '品牌基础信息', component: Page_BrandInfo },
+  { type: 'page', title: '品牌主要产品线', component: Page_BrandProducts },
+  { type: 'page', title: '产品核心技术壁垒', component: Page_BrandTech },
+  { type: 'page', title: '品牌商业模式与渠道体系', component: Page_BrandChannel },
+  { type: 'page', title: '核心品牌竞品对比分析', component: Page_BrandCompetitors },
 
-  { type: 'section', title: '目标产品信息' },
-  { type: 'page', title: '迪巧小粉条液体钙是什么？', component: PB_TargetProduct },
-  { type: 'page', title: '迪巧小粉条液体钙卖给谁？', component: PB_TargetUser },
-  { type: 'page', title: '迪巧小粉条液体钙的核心卖点及痛点', component: PB_CoreSellingPainPoints },
+  { type: 'section', title: '行业特点' },
+  { type: 'page', title: '萨米特瓷砖 GEO 困境分析', component: Page_IndustryPainPoints },
+  { type: 'page', title: '产品线繁杂、目标词难以集中', component: Page_PainPoint1_WordCloud },
+  { type: 'page', title: '行业认知度极低、竞争非常激烈', component: Page_PainPoint2_Industry },
+  { type: 'page', title: '极度依赖安装水平和售后服务', component: Page_PainPoint3_Service },
+  { type: 'page', title: '销售模式大多为经销商体系，信息错乱', component: Page_PainPoint4_SalesModel },
 
-  { type: 'section', title: '搜索及社媒数据' },
-  { type: 'page', title: '百度搜索数据', },
-  { type: 'page', title: '各平台热搜词', component: PB_GeoOptKeywords },
-  { type: 'page', title: '社媒数据', component: PB_GeoOptKeywordsSocial },
-
-  // ══════════════════════════════════════════════════════════
-  // ——— 篇章2: 词条选择 ———
-  // ══════════════════════════════════════════════════════════
-  { type: 'chapter', title: '词条选择', subtitle: 'KEYWORD SELECTION', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
-
-  { type: 'section', title: '数据分析 agent中心' },
-
-  { type: 'section', title: '词条穷举及清洗' },
+  { type: 'section', title: '词条策略' },
   { type: 'page', title: '词条穷举及清洗', components: [PB_GeoOptKeywordsClassify, PB_GeoOptKeywordsClassify2, PB_GeoOptKeywordsClassify_New, PB_GeoOptKeywordsClassify_New2] },
   { type: 'page', title: '词条分类及拓展', components: [PB_GeoOptKeywordsClassify3, PB_GeoOptKeywordsClassify4] },
   { type: 'page', title: '词条确定', components: [PB_GeoOptKeywordsCleaning1, PB_GeoOptKeywordsCleaning2, PB_GeoOptKeywordsCleaning3, PB_GeoOptKeywordsCleaning4] },
 
   // ══════════════════════════════════════════════════════════
-  // ——— 篇章3: GEO体检报告 ———
+  // ——— 篇章2: GEO体检报告 ———
   // ══════════════════════════════════════════════════════════
   { type: 'chapter', title: 'GEO体检报告', subtitle: 'GEO HEALTH CHECK', backgroundImage: '/proposal-chapters/proposal-chapter-cover-02.jpg' },
 
@@ -172,7 +174,7 @@ export const slideConfig = [
   { type: 'page', title: '正负向分析', components: [PB_GeoReportSentiment_Pre, PB_GeoReportSentiment] },
 
   // ══════════════════════════════════════════════════════════
-  // ——— 篇章4: 数据量化分析 ———
+  // ——— 篇章3: 数据量化分析 ———
   // ══════════════════════════════════════════════════════════
   { type: 'chapter', title: '数据量化分析', subtitle: 'DATA QUANTIFICATION', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
 
@@ -186,7 +188,7 @@ export const slideConfig = [
   { type: 'page', title: '投放文章数量', component: Page_ArticleQuantityAnalysis },
 
   // ══════════════════════════════════════════════════════════
-  // ——— 篇章5: GEO优化 ———
+  // ——— 篇章4: GEO优化 ———
   // ══════════════════════════════════════════════════════════
   { type: 'chapter', title: 'GEO优化', subtitle: 'GEO OPTIMIZATION', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
 
@@ -199,21 +201,5 @@ export const slideConfig = [
   { type: 'page', title: '两个内容策略', components: [Page_ArticleDataAnalysisHisense, Page_ArticleGenerationDemo, Page_ArticleDataAnalysisStrategy2, Page_ArticleGenerationDemo2, Page_ArticleGenerationDemo3] },
   { type: 'page', title: '两个投放策略', components: [Page_DeliveryStrategy_Combo, Page_DeliveryStrategy_Platform] },
 
-  // ══════════════════════════════════════════════════════════
-  // ——— 篇章6: Q&A ———
-  // ══════════════════════════════════════════════════════════
-  { type: 'chapter', title: 'Q&A', subtitle: 'Q&A', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
-
-  { type: 'section', title: '数据清洗和结构化处理的技术流程是什么？' },
-  { type: 'page', title: '数据清洗和结构化处理的技术流程', component: Page_Zhihu_DataProcess },
-
-  { type: 'section', title: '知乎数据应用建议' },
-  { type: 'page', title: '知乎数据应用建议', component: Page_Zhihu_WaterSource },
-
-  { type: 'section', title: '技术答疑' },
-  { type: 'page', title: '技术实力', components: [Page_QA_Tech_1_1, Page_QA_Tech_2_1, Page_QA_Tech_4_1, Page_QA_Tech_5_1] },
-  { type: 'page', title: '实战效果与数据', components: [Page_QA_Data_1_1, Page_QA_Data_2_1, Page_QA_Data_3_1] },
-  { type: 'page', title: '合规与安全', components: [Page_QA_Comp_1_1, Page_QA_Comp_2_1, Page_QA_Comp_2_4, Page_QA_Comp_3_1] },
-  { type: 'page', title: '成本与性价比 & 战略匹配度', component: Page_QA_Misc_1_1 },
 
 ];
