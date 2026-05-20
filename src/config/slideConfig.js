@@ -181,6 +181,7 @@ export const slideConfig = [
   // ——— 篇章3: KPI及验收标准 ———
   // ══════════════════════════════════════════════════════════
   { type: 'chapter', title: 'KPI及验收标准', subtitle: 'KPI & ACCEPTANCE CRITERIA', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
+
   { type: 'section', title: 'KPI及验收标准' },
 
 
