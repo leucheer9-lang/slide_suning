@@ -44,9 +44,12 @@ import PB_CoreSellingPainPoints from '../Pages_Before/Page_CoreSellingPainPoints
 import PB_GeoReportOverview from '../Pages_Before/Page_GeoReportOverview';
 import PB_GeoReportOverview2 from '../Pages_Before/Page_GeoReportOverview2';
 import PB_GeoReportDashboard from '../Pages_Before/Page_GeoReportDashboard';
+import PB_GeoReportDashboard2 from '../Pages_Before/Page_GeoReportDashboard2';
 import PB_GeoReportEntries from '../Pages_Before/Page_GeoReportEntries';
+import PB_GeoReportEntries_Analysis from '../Pages_Before/Page_GeoReportEntries_Analysis';
 import PB_GeoReportEntries2 from '../Pages_Before/Page_GeoReportEntries2';
 import PB_GeoReportEntries3 from '../Pages_Before/Page_GeoReportEntries3';
+import PB_GeoReportCompetitors_Analysis from '../Pages_Before/Page_GeoReportCompetitors_Analysis';
 import PB_GeoReportCompetitors from '../Pages_Before/Page_GeoReportCompetitors';
 import PB_GeoReportCompetitors2 from '../Pages_Before/Page_GeoReportCompetitors2';
 import PB_GeoReportCompetitors3 from '../Pages_Before/Page_GeoReportCompetitors3';
@@ -167,11 +170,12 @@ export const slideConfig = [
 
   { type: 'section', title: '数据分析报告' },
   { type: 'page', title: '报告说明', components: [Page_GeoReport_BasicInfo1, Page_GeoReport_BasicInfo2] },
-  { type: 'page', title: '总览', component: PB_GeoReportDashboard },
-  { type: 'page', title: '词条', components: [PB_GeoReportEntries, PB_GeoReportEntries2, PB_GeoReportEntries3] },
-  { type: 'page', title: '竞品', components: [PB_GeoReportCompetitors, PB_GeoReportCompetitors2, PB_GeoReportCompetitors3] },
+  { type: 'page', title: '总览', components: [PB_GeoReportDashboard, PB_GeoReportDashboard2] },
+  { type: 'page', title: '词条', components: [PB_GeoReportEntries, PB_GeoReportEntries_Analysis] },
+  { type: 'page', title: '竞品', component: PB_GeoReportCompetitors_Analysis },
   { type: 'page', title: '引用源', components: [PB_GeoReportSources, PB_GeoReportSources2] },
-  { type: 'page', title: '正负向分析', components: [PB_GeoReportSentiment_Pre, PB_GeoReportSentiment] },
+  { type: 'page', title: '正负面', components: [PB_GeoReportSentiment_Pre, PB_GeoReportSentiment] },
+
 
   // ══════════════════════════════════════════════════════════
   // ——— 篇章3: KPI及验收标准 ———
