@@ -38,7 +38,6 @@ export default function Page_BrandInfo() {
                         <h3 className="text-2xl lg:text-3xl font-bold text-white tracking-widest mb-4 flex items-center gap-3">
                             <span className="w-2.5 h-2.5 rounded-full bg-[#004CE5]"></span>
                             品牌基础简介
-                            <span className="text-sm lg:text-base text-zinc-500 font-normal ml-3 border border-white/10 px-3 py-1 rounded-full">摘自官网</span>
                         </h3>
                         <p className="text-zinc-300 text-[1.15rem] lg:text-[1.25rem] leading-relaxed text-justify tracking-wide flex-1">
                             萨米特瓷砖始创于2000年，是佛山知名的陶瓷大品牌。品牌主打<strong className="text-white">“设计+生活”</strong>理念，在全国拥有超6000家门店，主营岩板、大理石瓷砖等全品类高质量产品，致力于为用户打造个性化的美好家居空间。

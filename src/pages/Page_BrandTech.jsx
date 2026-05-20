@@ -7,7 +7,10 @@ export default function Page_BrandTech() {
 
             {/* Header */}
             <div className="w-full max-w-[1600px] mx-auto mb-10 lg:mb-12 relative z-10 flex flex-col items-start pt-4 lg:pt-6 shrink-0">
-                <h1 className="text-5xl lg:text-6xl xl:text-[72px] font-black text-white tracking-tight leading-[1.4] mb-2">
+                <h1 
+                    className="text-5xl lg:text-6xl xl:text-[72px] font-black text-white tracking-tight mb-2"
+                    style={{ lineHeight: '1.3' }}
+                >
                     产品核心<br />技术壁垒
                 </h1>
             </div>

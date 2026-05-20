@@ -35,7 +35,7 @@ export default function CoverSlide({ bgImage, brand, subtitle, date }) {
                         className="text-white font-bold"
                         style={{
                             fontFamily: "'AlimamaShuHeiTi', sans-serif",
-                            fontSize: '130px',
+                            fontSize: '120px',
                             lineHeight: '1.2',
                             letterSpacing: '0em',
                             color: 'white',

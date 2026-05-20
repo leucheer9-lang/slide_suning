@@ -110,7 +110,7 @@ export default function Page_PainPoint1_WordCloud() {
                                 <span className="text-[#004CE5] font-black text-xl">B</span>
                             </div>
                             <div>
-                                <h3 className="text-2xl font-bold text-white tracking-widest">内部专业命名</h3>
+                                <h3 className="text-2xl font-bold text-white tracking-widest">品牌专业命名</h3>
                             </div>
                         </div>
 

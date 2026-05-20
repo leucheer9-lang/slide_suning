@@ -16,14 +16,26 @@ export default function Page_BrandProducts() {
                 <div className="bg-[#111] border border-white/10 rounded-xl flex flex-col lg:flex-row overflow-hidden shadow-2xl relative group">
                     <div className="absolute top-0 left-0 w-1.5 h-full bg-[#004CE5]"></div>
                     {/* Left Col */}
-                    <div className="w-full lg:w-[24%] p-5 lg:p-6 border-b lg:border-b-0 lg:border-r border-white/10 bg-black/40 flex flex-col justify-center">
-                        <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 tracking-widest">瓷砖系列</h2>
-                        <p className="text-zinc-400 text-[1.1rem] lg:text-[1.15rem] leading-relaxed text-justify">
-                            主打<strong className="text-zinc-200">“触感、微缝与个性色彩”</strong>，多为日常规格（如800×800、600×1200、750×1500mm），满足大众刚需与改善型住房需求。
-                        </p>
+                    <div className="w-full lg:w-[28%] p-5 lg:p-6 border-b lg:border-b-0 lg:border-r border-white/10 bg-black/40 flex flex-col justify-between">
+                        <div>
+                            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-3 tracking-widest">瓷砖系列</h2>
+                            <p className="text-zinc-400 text-[1rem] lg:text-[1.05rem] leading-relaxed text-justify mb-4">
+                                主打<strong className="text-zinc-200">“触感、微缝与个性色彩”</strong>，多为日常规格（如800×800、600×1200、750×1500mm），满足大众刚需与改善型住房需求。
+                            </p>
+                        </div>
+                        {/* 销售数据看板 */}
+                        <div className="mt-auto pt-4 border-t border-white/10 flex flex-col gap-2 text-left">
+                            <span className="text-[14px] text-zinc-400 font-bold tracking-wider">2022年集团销售额 (新明珠整体)</span>
+                            <div className="flex items-baseline gap-2 mt-1">
+                                <span className="text-4xl lg:text-5xl font-black text-[#004CE5] tracking-tight">53.92</span>
+                                <span className="text-lg text-zinc-300 font-bold">亿元</span>
+                                <span className="text-base text-blue-400 font-bold ml-1.5">(占比 73.14%)</span>
+                            </div>
+                            <span className="text-[12px] text-zinc-500 italic mt-0.5">※ 母公司整体数据，非萨米特单品牌</span>
+                        </div>
                     </div>
                     {/* Right Col */}
-                    <div className="w-full lg:w-[76%] p-5 lg:p-6 grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4 lg:gap-y-5">
+                    <div className="w-full lg:w-[72%] p-5 lg:p-6 grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4 lg:gap-y-5">
                         <div>
                             <h4 className="text-white font-bold text-[1.15rem] lg:text-[1.2rem] mb-1.5 flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-[#004CE5]"></span>肤感美学系列（主打王牌）</h4>
                             <p className="text-zinc-400 text-[1.05rem] lg:text-[1.1rem] leading-relaxed text-justify">以2025年主推“可可西里系列”为代表，采用金丝绒复刻釉或玉质肤感技术，表面无刺眼光泽，触感温润，主攻侘寂风、奶油风。</p>
@@ -51,14 +63,26 @@ export default function Page_BrandProducts() {
                 <div className="bg-[#111] border border-white/10 rounded-xl flex flex-col lg:flex-row overflow-hidden shadow-2xl relative group">
                     <div className="absolute top-0 left-0 w-1.5 h-full bg-blue-500"></div>
                     {/* Left Col */}
-                    <div className="w-full lg:w-[24%] p-5 lg:p-6 border-b lg:border-b-0 lg:border-r border-white/10 bg-black/40 flex flex-col justify-center">
-                        <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 tracking-widest">岩板系列</h2>
-                        <p className="text-zinc-400 text-[1.1rem] lg:text-[1.15rem] leading-relaxed text-justify">
-                            主打<strong className="text-zinc-200">“超大规格、材质跨界、全屋定制”</strong>，尺寸多为1200×2400等大规格，可上墙铺地、用于餐桌/橱柜面板等。
-                        </p>
+                    <div className="w-full lg:w-[28%] p-5 lg:p-6 border-b lg:border-b-0 lg:border-r border-white/10 bg-black/40 flex flex-col justify-between">
+                        <div>
+                            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-3 tracking-widest">岩板系列</h2>
+                            <p className="text-zinc-400 text-[1rem] lg:text-[1.05rem] leading-relaxed text-justify mb-4">
+                                主打<strong className="text-zinc-200">“超大规格、材质跨界、全屋定制”</strong>，尺寸多为1200×2400等大规格，可上墙铺地、用于餐桌/橱柜面板等。
+                            </p>
+                        </div>
+                        {/* 销售数据看板 */}
+                        <div className="mt-auto pt-4 border-t border-white/10 flex flex-col gap-2 text-left">
+                            <span className="text-[14px] text-zinc-400 font-bold tracking-wider">2022年集团销售额 (新明珠整体)</span>
+                            <div className="flex items-baseline gap-2 mt-1">
+                                <span className="text-4xl lg:text-5xl font-black text-blue-500 tracking-tight">19.69</span>
+                                <span className="text-lg text-zinc-300 font-bold">亿元</span>
+                                <span className="text-base text-blue-400 font-bold ml-1.5">(占比 26.71%)</span>
+                            </div>
+                            <span className="text-[12px] text-zinc-500 italic mt-0.5">※ 母公司整体数据，非萨米特单品牌</span>
+                        </div>
                     </div>
                     {/* Right Col */}
-                    <div className="w-full lg:w-[76%] p-5 lg:p-6 grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4 lg:gap-y-5">
+                    <div className="w-full lg:w-[72%] p-5 lg:p-6 grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4 lg:gap-y-5">
                         <div>
                             <h4 className="text-white font-bold text-[1.15rem] lg:text-[1.2rem] mb-1.5 flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-blue-500"></span>Master大师高端系列</h4>
                             <p className="text-zinc-400 text-[1.05rem] lg:text-[1.1rem] leading-relaxed text-justify">结合现代科技复刻世界经典艺术质感，专攻大平层和高端圈层，是其冲击顶奢市场的代表作。</p>

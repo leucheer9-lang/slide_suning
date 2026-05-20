@@ -122,8 +122,8 @@ export const slideConfig = [
     type: 'cover',
     title: '封面',
     backgroundImage: '/proposal-cover/proposal-cover-new.png',
-    brand: '萨米特瓷砖',
-    subtitle: 'GEO\n年度规划方案',
+    brand: 'GEO索引未来',
+    subtitle: '萨米特瓷砖\nGEO年度规划方案',
     date: 'March 2026',
   },
 
@@ -156,9 +156,9 @@ export const slideConfig = [
   { type: 'page', title: '销售模式大多为经销商体系，信息错乱', component: Page_PainPoint4_SalesModel },
 
   { type: 'section', title: '词条策略' },
-  { type: 'page', title: '词条穷举及清洗', components: [PB_GeoOptKeywordsClassify, PB_GeoOptKeywordsClassify2, PB_GeoOptKeywordsClassify_New, PB_GeoOptKeywordsClassify_New2] },
-  { type: 'page', title: '词条分类及拓展', components: [PB_GeoOptKeywordsClassify3, PB_GeoOptKeywordsClassify4] },
-  { type: 'page', title: '词条确定', components: [PB_GeoOptKeywordsCleaning1, PB_GeoOptKeywordsCleaning2, PB_GeoOptKeywordsCleaning3, PB_GeoOptKeywordsCleaning4] },
+  // { type: 'page', title: '词条穷举及清洗', components: [PB_GeoOptKeywordsClassify, PB_GeoOptKeywordsClassify2, PB_GeoOptKeywordsClassify_New, PB_GeoOptKeywordsClassify_New2] },
+  // { type: 'page', title: '词条分类及拓展', components: [PB_GeoOptKeywordsClassify3, PB_GeoOptKeywordsClassify4] },
+  // { type: 'page', title: '词条确定', components: [PB_GeoOptKeywordsCleaning1, PB_GeoOptKeywordsCleaning2, PB_GeoOptKeywordsCleaning3, PB_GeoOptKeywordsCleaning4] },
 
   // ══════════════════════════════════════════════════════════
   // ——— 篇章2: GEO体检报告 ———
@@ -174,9 +174,15 @@ export const slideConfig = [
   { type: 'page', title: '正负向分析', components: [PB_GeoReportSentiment_Pre, PB_GeoReportSentiment] },
 
   // ══════════════════════════════════════════════════════════
-  // ——— 篇章3: 数据量化分析 ———
+  // ——— 篇章3: KPI及验收标准 ———
   // ══════════════════════════════════════════════════════════
-  { type: 'chapter', title: '数据量化分析', subtitle: 'DATA QUANTIFICATION', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
+  { type: 'chapter', title: 'KPI及验收标准', subtitle: 'KPI & ACCEPTANCE CRITERIA', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
+
+
+  // ══════════════════════════════════════════════════════════
+  // ——— 篇章4: 执行方案细节阐述 ———
+  // ══════════════════════════════════════════════════════════
+  { type: 'chapter', title: '执行方案细节阐述', subtitle: 'EXECUTION PLAN DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
 
   { type: 'section', title: '投放平台量化分析' },
   { type: 'page', title: '筛选逻辑总览', component: Page_PlatformFilterIntro },
@@ -186,11 +192,6 @@ export const slideConfig = [
   { type: 'section', title: '投放文章量化分析' },
   { type: 'page', title: '投放文章类型', components: [Page_ArticleTypeAnalysis, Page_ArticleTypeDetails] },
   { type: 'page', title: '投放文章数量', component: Page_ArticleQuantityAnalysis },
-
-  // ══════════════════════════════════════════════════════════
-  // ——— 篇章4: GEO优化 ———
-  // ══════════════════════════════════════════════════════════
-  { type: 'chapter', title: 'GEO优化', subtitle: 'GEO OPTIMIZATION', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
 
   { type: 'section', title: 'GEO战略规划' },
   { type: 'page', title: '三个板块介绍', components: [Page_SectionCore, Page_SectionBroad, Page_SectionExclusive] },
