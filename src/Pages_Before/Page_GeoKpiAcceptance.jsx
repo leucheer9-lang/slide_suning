@@ -6,8 +6,8 @@ function Page_GeoKpiAcceptance() {
             <div className="w-full max-w-[1700px] mx-auto flex flex-col flex-1 min-h-0 relative z-10 pt-0 gap-3">
 
                 {/* Header Section */}
-                <div className="text-center shrink-0 mb-0.5">
-                    <h1 className="text-[38px] lg:text-[40px] xl:text-[42px] font-extrabold text-white tracking-widest leading-tight">
+                <div className="text-center shrink-0 mb-0.5 mt-[-12px]">
+                    <h1 className="text-[32px] font-extrabold text-white tracking-widest leading-tight">
                         KPI 及验收标准
                     </h1>
                 </div>
@@ -83,16 +83,16 @@ function Page_GeoKpiAcceptance() {
                 </div>
 
                 {/* Bottom Section: KPI & Acceptance Table */}
-                <div className="flex-1 min-h-0 bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] rounded-2xl p-5 shadow-2xl flex flex-col justify-between">
-                    <div className="flex items-center justify-between shrink-0 mb-3 pl-1">
+                <div className="w-full bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] rounded-2xl p-5 shadow-2xl flex flex-col gap-3">
+                    <div className="flex items-center justify-between shrink-0 mb-2 pl-1">
                         <h3 className="text-[21px] xl:text-[23px] font-bold text-white flex items-center gap-2.5">
                             <span className="w-2 h-5 bg-[#004CE5] rounded-full shadow-[0_0_8px_rgba(0,76,229,0.8)]" />
                             运营目标与交付标准制定 (KPI & ACCEPTANCE STANDARDS)
                         </h3>
                     </div>
                     
-                    {/* Table wrapper with elegant custom scrollbar */}
-                    <div className="flex-1 min-h-0 overflow-y-auto pr-1">
+                    {/* Table wrapper showing the full layout without vertical scrollbar */}
+                    <div className="w-full overflow-x-auto">
                         <table className="w-full text-left border-collapse min-w-[1000px]">
                             <thead>
                                 <tr className="border-b border-white/10 text-zinc-300 text-[16px] xl:text-[17px] font-bold">
@@ -153,8 +153,8 @@ function Page_GeoKpiAcceptance() {
                                             </div>
                                         </div>
                                     </td>
-                                    <td rowSpan={2} className="py-3 text-zinc-300 align-top pr-3 text-[14.5px] xl:text-[15.5px] leading-relaxed border-l border-white/5 pl-4">
-                                        <div className="flex flex-col gap-3 bg-[#004CE5]/5 border border-[#004CE5]/15 p-4 rounded-xl h-full justify-center">
+                                    <td rowSpan={2} className="py-3 text-zinc-300 align-middle pr-3 text-[14.5px] xl:text-[15.5px] leading-relaxed border-l border-white/5 pl-4">
+                                        <div className="flex flex-col gap-3 bg-[#004CE5]/5 border border-[#004CE5]/15 p-4 rounded-xl">
                                             <p className="text-zinc-200">
                                                 在 <strong className="text-white font-semibold">DeepSeek、豆包、通义千问</strong> 等 AI 平台搜索约定词条时，AI 回答中应出现品牌/产品推荐、推荐理由及基于官方信息的产品表述。
                                             </p>
