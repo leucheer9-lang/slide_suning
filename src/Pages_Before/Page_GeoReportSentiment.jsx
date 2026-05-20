@@ -79,7 +79,7 @@ function Page_GeoReportSentiment() {
                                             1. 终端渠道与服务折损
                                         </h4>
                                         <p className="text-[16.5px] lg:text-[17.5px] xl:text-[18.5px] text-zinc-300 leading-relaxed font-normal overflow-y-auto">
-                                            数据抓取到的核心负面标签之一是“<strong className="text-white font-semibold">执行存在差异</strong>”。在具体的长文本测试中，当询问“萨米特瓷砖售后服务怎么样”或“好不好”时，AI 明确指出萨米特的售后服务呈现出明显的“<strong className="text-rose-300 font-semibold">两面性</strong>”。
+                                            数据抓取到的核心负面标签之一是“<strong className="text-white font-semibold">执行存在差异</strong>”。当询问“萨米特瓷砖售后服务怎么样”或“好不好”时，AI 明确指出萨米特的售后服务呈现出明显的“<strong className="text-rose-300 font-semibold">两面性</strong>”。
                                         </p>
                                     </div>
                                 </div>
