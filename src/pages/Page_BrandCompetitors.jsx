@@ -8,14 +8,14 @@ export default function Page_BrandCompetitors() {
 
             {/* Header */}
             <div className="w-full flex-col items-center justify-center text-center pt-3 lg:pt-4 pb-2 relative z-10 shrink-0">
-                <h1 className="text-[36px] font-black text-white tracking-widest mb-1 -translate-y-[4px]">核心品牌竞品对比分析</h1>
+                <h1 className="text-[36px] font-black text-white tracking-widest mb-1 -translate-y-[4px]">核心竞品对比分析</h1>
             </div>
 
             <div className="flex-1 w-full max-w-[1700px] mx-auto px-6 lg:px-8 pb-4 relative z-10 flex flex-col justify-start min-h-0 -translate-y-[6px]">
-                
+
                 {/* Table Container */}
                 <div className="w-full flex flex-col border border-white/10 rounded-xl overflow-hidden bg-[#111]/80 shadow-2xl relative">
-                    
+
                     {/* Header Row */}
                     <div className="grid grid-cols-[120px_1fr_1fr_1fr_1fr] bg-black/60 border-b border-white/10 shrink-0">
                         <div className="p-2 lg:p-3 flex items-center justify-center border-r border-white/10">
@@ -42,11 +42,11 @@ export default function Page_BrandCompetitors() {
 
                     {/* Body Rows */}
                     <div className="flex flex-col">
-                        
+
                         {/* Row 1: 财务 */}
                         <div className="grid grid-cols-[120px_1fr_1fr_1fr_1fr] border-b border-white/5 group hover:bg-white/[0.02] transition-colors">
                             <div className="p-2.5 lg:p-3 flex items-center justify-center border-r border-white/5 bg-black/40">
-                                <span className="font-bold text-zinc-300 text-center text-sm lg:text-[0.95rem]">2025年<br/>财务表现</span>
+                                <span className="font-bold text-zinc-300 text-center text-sm lg:text-[0.95rem]">2025年<br />财务表现</span>
                             </div>
                             <div className="p-2.5 lg:p-3 border-r border-white/5 bg-[#004CE5]/5 flex flex-col justify-center">
                                 <p className="text-zinc-300 text-[0.85rem] lg:text-[0.9rem] leading-relaxed">具体财报未公开。</p>
@@ -170,7 +170,7 @@ export default function Page_BrandCompetitors() {
                         {/* Row 5: 品牌定调 */}
                         <div className="grid grid-cols-[120px_1fr_1fr_1fr_1fr] border-b border-white/5 group hover:bg-white/[0.02] transition-colors">
                             <div className="p-2.5 lg:p-3 flex items-center justify-center border-r border-white/5 bg-black/40">
-                                <span className="font-bold text-zinc-300 text-center text-sm lg:text-[0.95rem]">核心品牌<br/>定调</span>
+                                <span className="font-bold text-zinc-300 text-center text-sm lg:text-[0.95rem]">核心品牌<br />定调</span>
                             </div>
                             <div className="p-2.5 lg:p-3 border-r border-white/5 bg-[#004CE5]/5 flex flex-col justify-center">
                                 <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5 text-center">“设计+生活”的国际潮牌</strong>
@@ -193,7 +193,7 @@ export default function Page_BrandCompetitors() {
                         {/* Row 6: 竞争态势 */}
                         <div className="grid grid-cols-[120px_1fr_1fr_1fr_1fr] group hover:bg-white/[0.02] transition-colors bg-[#111]">
                             <div className="p-2.5 lg:p-3 flex items-center justify-center border-r border-white/5 bg-black/40">
-                                <span className="font-bold text-zinc-300 text-center text-sm lg:text-[0.95rem]">相对竞争<br/>态势</span>
+                                <span className="font-bold text-zinc-300 text-center text-sm lg:text-[0.95rem]">相对竞争<br />态势</span>
                             </div>
                             <div className="p-2.5 lg:p-3 border-r border-white/5 bg-[#004CE5]/10 flex flex-col justify-center border-b-2 border-b-[#004CE5]">
                                 <strong className="text-[#004CE5] text-[0.95rem] lg:text-[1rem] mb-1">差异化破局者</strong>

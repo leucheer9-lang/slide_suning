@@ -146,10 +146,10 @@ export const slideConfig = [
   { type: 'page', title: '品牌主要产品线', component: Page_BrandProducts },
   { type: 'page', title: '产品核心技术壁垒', component: Page_BrandTech },
   { type: 'page', title: '品牌商业模式与渠道体系', component: Page_BrandChannel },
-  { type: 'page', title: '核心品牌竞品对比分析', component: Page_BrandCompetitors },
+  { type: 'page', title: '核心竞品对比分析', component: Page_BrandCompetitors },
 
   { type: 'section', title: '行业特点' },
-  { type: 'page', title: '萨米特瓷砖 GEO 困境分析', component: Page_IndustryPainPoints },
+  { type: 'page', title: '建陶行业GEO难点解析', component: Page_IndustryPainPoints },
   { type: 'page', title: '产品线繁杂、目标词难以集中', component: Page_PainPoint1_WordCloud },
   { type: 'page', title: '行业认知度极低、竞争非常激烈', component: Page_PainPoint2_Industry },
   { type: 'page', title: '极度依赖安装水平和售后服务', component: Page_PainPoint3_Service },

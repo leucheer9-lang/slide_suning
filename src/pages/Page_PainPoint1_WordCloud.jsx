@@ -92,8 +92,9 @@ export default function Page_PainPoint1_WordCloud() {
                     <h1 className="text-4xl lg:text-[44px] font-black text-white tracking-widest mb-6 leading-tight">
                         产品线繁杂，目标词难以集中
                     </h1>
+
                     <p className="text-zinc-400 text-[1.15rem] lg:text-[1.25rem] leading-relaxed max-w-[1400px] tracking-wide">
-                        AI引擎在回答用户宽泛问题时，很难将<strong className="text-[#004CE5]">萨米特内部繁杂的专业命名</strong>与<strong className="text-white">用户的口语化需求</strong>对齐。
+                        整个行业从大类到小类可能有几百个SKU，如果逐一撒网优化每个具体型号或行业术语，预算会被严重稀释。品牌方往往觉得无从下手，找不到发力点，导致整个 GEO 项目极难落地。
                     </p>
                 </div>
 
@@ -162,6 +163,17 @@ export default function Page_PainPoint1_WordCloud() {
                         </div>
                     </div>
 
+                </div>
+
+                {/* Solution Section */}
+                <div className="mt-4 shrink-0 bg-gradient-to-r from-[#004CE5]/10 via-black to-[#0a0a0a] border border-[#004CE5]/30 rounded-2xl p-5 lg:p-6 shadow-[0_0_20px_rgba(0,76,229,0.15)] relative overflow-hidden flex items-start gap-4">
+                    <div className="absolute top-0 left-0 w-2 h-full bg-[#004CE5] shadow-[0_0_10px_rgba(0,76,229,0.5)]"></div>
+                    <div className="bg-[#004CE5]/10 border border-[#004CE5]/30 px-3 py-1.5 rounded-lg text-[#004CE5] text-sm lg:text-base font-black tracking-widest shrink-0 uppercase mt-0.5 shadow-[0_0_8px_rgba(0,76,229,0.2)]">
+                        解法
+                    </div>
+                    <p className="text-zinc-200 text-sm lg:text-[1.1rem] font-bold leading-relaxed text-justify">
+                        我们会通过数据系统，摸清用户的真实搜索习惯，把几百个繁杂的产品词，打包提炼成几十个真正带流量、能覆盖绝大多数装修场景的核心词，把预算集中打在真正能带来转化的词上。
+                    </p>
                 </div>
             </div>
         </div>
