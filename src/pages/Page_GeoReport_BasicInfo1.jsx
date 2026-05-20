@@ -22,7 +22,7 @@ export default function Page_GeoReport_BasicInfo1() {
                         <span className="text-zinc-400 text-[1.05rem] lg:text-[1.1rem] tracking-widest mb-1 font-bold">
                             品牌名称
                         </span>
-                        <div className="text-2xl lg:text-3xl font-bold text-white tracking-wide mt-1">迪巧</div>
+                        <div className="text-2xl lg:text-3xl font-bold text-white tracking-wide mt-1">萨米特</div>
                     </div>
 
                     <div className="bg-[#111] border border-white/10 rounded-2xl p-6 shadow-2xl flex flex-col justify-center relative group hover:border-white/30 transition-colors">
@@ -30,7 +30,7 @@ export default function Page_GeoReport_BasicInfo1() {
                         <span className="text-zinc-400 text-[1.05rem] lg:text-[1.1rem] tracking-widest mb-1 font-bold">
                             目标产品
                         </span>
-                        <div className="text-2xl lg:text-3xl font-bold text-white tracking-wide mt-1">迪巧小粉条液体钙</div>
+                        <div className="text-2xl lg:text-3xl font-bold text-white tracking-wide mt-1">萨米特瓷砖</div>
                     </div>
                 </div>
 
@@ -43,12 +43,12 @@ export default function Page_GeoReport_BasicInfo1() {
                                 监测词条
                             </span>
                             <div className="flex items-end gap-3 mt-1">
-                                <span className="text-2xl lg:text-3xl font-bold text-white tracking-wide">共计 41 项核心词条</span>
+                                <span className="text-2xl lg:text-3xl font-bold text-white tracking-wide">共计 20 项核心词条</span>
                                 <span className="text-zinc-500 text-[1.05rem] lg:text-lg font-medium mb-1 tracking-wider">/ 每日全频提问一次</span>
                             </div>
                         </div>
                     </div>
-                    <div className="mt-4 pt-3 border-t border-white/5 text-zinc-500 text-[0.95rem] tracking-wide flex items-center gap-2">
+                    <div className="mt-4 pt-3 border-t border-t-white/5 text-zinc-500 text-[0.95rem] tracking-wide flex items-center gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-zinc-500 inline-block"></span>
                         已针对本产品自动生成监测项采集逻辑，实时覆盖全链路核心表现。
                     </div>
@@ -68,16 +68,16 @@ export default function Page_GeoReport_BasicInfo1() {
                         </div>
 
                         <p className="text-[1.1rem] lg:text-[1.15rem] text-zinc-300 leading-relaxed mb-4 text-justify tracking-wide">
-                            从4月17日~4月17日，围绕 <strong className="text-white font-bold px-1">迪巧小粉条液体钙</strong> 数据监测工作按基准计划持续推进。<br />
-                            累计执行周期 1 天，全面覆盖了 5 个主流 AI 闭环生态（DeepSeek、豆包、腾讯元宝、文心一言、通义千问）。
+                            从5月19日～5月19日，围绕 <strong className="text-white font-bold px-1">萨米特</strong> 品牌负面评价数据监测工作按计划持续推进。<br />
+                            累计执行周期 1 天，覆盖 3 个主流 AI 平台（DeepSeek、豆包、通义千问）。
                         </p>
 
                         <div className="bg-black/40 border border-white/5 p-5 rounded-xl relative">
                             <div className="absolute left-0 top-0 bottom-0 w-1 bg-zinc-700/60 rounded-l-xl"></div>
                             <p className="text-[1.0rem] lg:text-[1.05rem] text-zinc-400 leading-relaxed text-justify tracking-wide">
-                                本周期共系统级监测了 41 个关键词条，在 5 个平台完成 1 天连续的交叉查询作业，期间合计执行机器查询 <strong className="text-white font-bold font-mono text-[1.15rem]">205</strong> 次，
-                                精准抓取并语义识别有效引用文章 <strong className="text-white font-bold font-mono text-[1.15rem]">2,652</strong> 篇，同期横向识别关联竞品品牌 <strong className="text-white font-bold font-mono text-[1.15rem]">150</strong> 家，
-                                全程执行结果与屏幕截图原始存证覆盖率达 <strong className="text-white font-bold font-mono text-[1.15rem]">100%</strong>。多维数据采样健康度均在最佳阈值范围内，报告指标源稳定、真实、详尽。
+                                本周共监测 20 个关键词条，在 3 个平台完成 1 天连续查询，合计执行查询 <strong className="text-white font-bold font-mono text-[1.15rem]">60</strong> 次，
+                                抓取并识别引用文章 <strong className="text-white font-bold font-mono text-[1.15rem]">659</strong> 篇，同期识别竞品品牌 <strong className="text-white font-bold font-mono text-[1.15rem]">17</strong> 家，
+                                截图覆盖率达 <strong className="text-white font-bold font-mono text-[1.15rem]">100%</strong>。各项数据指标均在预期执行范围内，整体运行稳定。
                             </p>
                         </div>
                     </div>
