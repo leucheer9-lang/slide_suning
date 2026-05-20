@@ -59,42 +59,45 @@ function Page_GeoReportSentiment() {
                         )}
                     </div>
 
-                    {/* Bottom Section: Two-Column Negative Breakdown (More compact vertically, matching image width exactly) */}
-                    <div className="h-[24%] min-h-[145px] max-h-[185px] shrink-0 flex flex-col gap-2 w-full">
-                        {/* Intro Text */}
-                        <div className="text-[17px] lg:text-[18px] xl:text-[19.5px] text-zinc-400 shrink-0 font-medium pl-0.5">
-                            负面回答类型解析：
-                        </div>
+                    {/* Bottom Section: Single Glassmorphic Container wrapping Title and Two-Column Negative Breakdown */}
+                    <div className="h-[27%] min-h-[175px] max-h-[225px] shrink-0 w-full">
+                        <div className="bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] rounded-2xl p-4 lg:p-5 flex flex-col h-full justify-between gap-3 shadow-2xl">
+                            {/* Section Title */}
+                            <h3 className="text-[20px] lg:text-[21px] xl:text-[22.5px] font-bold text-white flex items-center gap-2 shrink-0 pl-0.5">
+                                <span className="w-1.5 h-4.5 bg-rose-500 rounded-full shadow-[0_0_8px_rgba(239,68,68,0.8)]" />
+                                负面回答类型解析：
+                            </h3>
 
-                        {/* Two-Column Grid */}
-                        <div className="flex-1 grid grid-cols-12 gap-4 min-h-0">
+                            {/* Two-Column Grid Content */}
+                            <div className="flex-1 grid grid-cols-12 gap-4 min-h-0">
 
-                            {/* Point 1: Terminal Channels & Services */}
-                            <div className="col-span-6 flex flex-col min-h-0 h-full">
-                                <div className="bg-white/[0.02] border border-white/[0.08] border-l-4 border-l-rose-500 rounded-r-2xl px-4 py-3 lg:px-5 lg:py-3.5 flex flex-col h-full justify-start gap-1 transition-all duration-300 hover:bg-white/[0.04]">
-                                    <h4 className="text-[18.5px] lg:text-[19.5px] xl:text-[21px] font-bold text-white flex items-center gap-2 shrink-0">
-                                        <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
-                                        1. 终端渠道与服务折损
-                                    </h4>
-                                    <p className="text-[15.5px] lg:text-[16.5px] xl:text-[17.5px] text-zinc-300 leading-normal font-normal overflow-y-auto">
-                                        数据抓取到的核心负面标签之一是“<strong className="text-white font-semibold">执行存在差异</strong>”。在具体的长文本测试中，当询问“萨米特瓷砖售后服务怎么样”或“好不好”时，AI 明确指出萨米特的售后服务呈现出明显的“<strong className="text-rose-300 font-semibold">两面性</strong>”。
-                                    </p>
+                                {/* Point 1: Terminal Channels & Services */}
+                                <div className="col-span-6 flex flex-col min-h-0 h-full">
+                                    <div className="bg-white/[0.015] border border-white/[0.06] border-l-4 border-l-rose-500 rounded-r-xl px-4 py-2.5 lg:px-4.5 lg:py-3 flex flex-col h-full justify-start gap-1 transition-all duration-300 hover:bg-white/[0.03]">
+                                        <h4 className="text-[19.5px] lg:text-[20.5px] xl:text-[21.5px] font-bold text-white flex items-center gap-2 shrink-0">
+                                            <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
+                                            1. 终端渠道与服务折损
+                                        </h4>
+                                        <p className="text-[16.5px] lg:text-[17.5px] xl:text-[18.5px] text-zinc-300 leading-relaxed font-normal overflow-y-auto">
+                                            数据抓取到的核心负面标签之一是“<strong className="text-white font-semibold">执行存在差异</strong>”。在具体的长文本测试中，当询问“萨米特瓷砖售后服务怎么样”或“好不好”时，AI 明确指出萨米特的售后服务呈现出明显的“<strong className="text-rose-300 font-semibold">两面性</strong>”。
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
 
-                            {/* Point 2: Brand Information & Price Errors */}
-                            <div className="col-span-6 flex flex-col min-h-0 h-full">
-                                <div className="bg-gradient-to-br from-rose-500/10 to-white/[0.01] border border-rose-500/30 border-l-4 border-l-rose-500 rounded-r-2xl px-4 py-3 lg:px-5 lg:py-3.5 flex flex-col h-full justify-start gap-1 transition-all duration-300 hover:bg-white/[0.04] shadow-[0_0_20px_rgba(239,68,68,0.03)]">
-                                    <h4 className="text-[18.5px] lg:text-[19.5px] xl:text-[21px] font-bold text-white flex items-center gap-2 shrink-0">
-                                        <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
-                                        2. 品牌信息错误及价格错误
-                                    </h4>
-                                    <p className="text-[15.5px] lg:text-[16.5px] xl:text-[17.5px] text-zinc-300 leading-normal font-normal overflow-y-auto">
-                                        在部分回答中，因为AI抓取到了一篇具有错误信息的文章，导致在回答中出现了明显的<strong className="text-rose-300 font-semibold">价格错误</strong>以及<strong className="text-rose-300 font-semibold">产品规格错误</strong>，容易给用户造成误解。
-                                    </p>
+                                {/* Point 2: Brand Information & Price Errors */}
+                                <div className="col-span-6 flex flex-col min-h-0 h-full">
+                                    <div className="bg-rose-500/[0.015] border border-rose-500/15 border-l-4 border-l-rose-500 rounded-r-xl px-4 py-2.5 lg:px-4.5 lg:py-3 flex flex-col h-full justify-start gap-1 transition-all duration-300 hover:bg-white/[0.03] shadow-[0_0_15px_rgba(239,68,68,0.02)]">
+                                        <h4 className="text-[19.5px] lg:text-[20.5px] xl:text-[21.5px] font-bold text-white flex items-center gap-2 shrink-0">
+                                            <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
+                                            2. 品牌信息错误及价格错误
+                                        </h4>
+                                        <p className="text-[16.5px] lg:text-[17.5px] xl:text-[18.5px] text-zinc-300 leading-relaxed font-normal overflow-y-auto">
+                                            在部分回答中，因为AI抓取到了一篇具有错误信息的文章，导致在回答中出现了明显的<strong className="text-rose-300 font-semibold">价格错误</strong>以及<strong className="text-rose-300 font-semibold">产品规格错误</strong>，容易给用户造成误解。
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
 
+                            </div>
                         </div>
                     </div>
                 </div>
