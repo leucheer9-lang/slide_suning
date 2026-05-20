@@ -60,13 +60,13 @@ function Page_GeoReportSentiment_Pre() {
                     </div>
 
                     {/* Bottom Section: Single Full-width Banner Card (More compact vertically, matching image width exactly) */}
-                    <div className="h-[21%] min-h-[125px] max-h-[165px] shrink-0 w-full">
+                    <div className="h-[23%] min-h-[135px] max-h-[180px] shrink-0 w-full">
                         <div className="bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] rounded-2xl px-5 py-3.5 lg:px-6 lg:py-4 flex flex-col h-full justify-center gap-1.5">
-                            <h3 className="text-[20px] lg:text-[22px] xl:text-[23px] font-bold text-white flex items-center gap-2 shrink-0">
+                            <h3 className="text-[21px] lg:text-[23px] xl:text-[24.5px] font-bold text-white flex items-center gap-2 shrink-0">
                                 <span className="w-1.5 h-4.5 bg-[#004CE5] rounded-full shadow-[0_0_8px_rgba(0,76,229,0.8)]" />
                                 基本情况概述
                             </h3>
-                            <div className="text-[17px] lg:text-[18px] xl:text-[19px] text-zinc-300 leading-normal font-normal flex flex-col gap-1.5">
+                            <div className="text-[18px] lg:text-[19.5px] xl:text-[21px] text-zinc-300 leading-normal font-normal flex flex-col gap-1.5">
                                 <p>
                                     目标产品的正面回答率达 <strong className="text-emerald-400 font-bold">88.3%</strong>，主要的正面评价高度集中在“<strong className="text-white font-semibold">性价比高、品牌实力强、品质可靠</strong>”等通用褒义词汇上。
                                 </p>
