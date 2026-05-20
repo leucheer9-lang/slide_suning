@@ -57,6 +57,7 @@ import PB_GeoReportSources from '../Pages_Before/Page_GeoReportSources';
 import PB_GeoReportSources2 from '../Pages_Before/Page_GeoReportSources2';
 import PB_GeoReportSentiment_Pre from '../Pages_Before/Page_GeoReportSentiment_Pre';
 import PB_GeoReportSentiment from '../Pages_Before/Page_GeoReportSentiment';
+import PB_GeoKpiAcceptance from '../Pages_Before/Page_GeoKpiAcceptance';
 
 // ——— 篇章3: GEO优化 (Pages_Before) ———
 import PB_GeoOptKeywords from '../Pages_Before/Page_GeoOptKeywords';
@@ -183,6 +184,7 @@ export const slideConfig = [
   { type: 'chapter', title: 'KPI及验收标准', subtitle: 'KPI & ACCEPTANCE CRITERIA', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
 
   { type: 'section', title: 'KPI及验收标准' },
+  { type: 'page', title: '现状与KPI设定', component: PB_GeoKpiAcceptance },
 
 
   // ══════════════════════════════════════════════════════════
