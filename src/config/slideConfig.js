@@ -184,7 +184,7 @@ export const slideConfig = [
   { type: 'chapter', title: 'KPI及验收标准', subtitle: 'KPI & ACCEPTANCE CRITERIA', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
 
   { type: 'section', title: 'KPI及验收标准' },
-  { type: 'page', title: '现状与KPI设定', component: PB_GeoKpiAcceptance },
+  { type: 'page', title: '品牌现状与KPI设定', component: PB_GeoKpiAcceptance },
 
 
   // ══════════════════════════════════════════════════════════
