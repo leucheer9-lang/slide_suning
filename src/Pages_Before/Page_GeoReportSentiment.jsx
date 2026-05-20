@@ -60,9 +60,9 @@ function Page_GeoReportSentiment() {
                     </div>
 
                     {/* Bottom Section: Two-Column Negative Breakdown (More compact vertically, matching image width exactly) */}
-                    <div className="h-[28%] min-h-[170px] max-h-[220px] shrink-0 flex flex-col gap-2 w-full">
+                    <div className="h-[22%] min-h-[130px] max-h-[160px] shrink-0 flex flex-col gap-1.5 w-full">
                         {/* Intro Text */}
-                        <div className="text-[16px] lg:text-[17px] xl:text-[18px] text-zinc-400 shrink-0 font-medium pl-0.5">
+                        <div className="text-[14px] lg:text-[15px] xl:text-[16px] text-zinc-400 shrink-0 font-medium pl-0.5">
                             根据监测到的数据，AI在生成关于萨米特的答案时出现的负面回答主要分为下面两种：
                         </div>
                         
@@ -71,12 +71,12 @@ function Page_GeoReportSentiment() {
                             
                             {/* Point 1: Terminal Channels & Services */}
                             <div className="col-span-6 flex flex-col min-h-0 h-full">
-                                <div className="bg-white/[0.02] border border-white/[0.08] border-l-4 border-l-rose-500 rounded-r-2xl p-4 lg:p-5 flex flex-col h-full justify-start gap-1.5 transition-all duration-300 hover:bg-white/[0.04]">
-                                    <h4 className="text-[17px] lg:text-[18px] xl:text-[19px] font-bold text-white flex items-center gap-2 shrink-0">
+                                <div className="bg-white/[0.02] border border-white/[0.08] border-l-4 border-l-rose-500 rounded-r-2xl px-4 py-3 lg:px-5 lg:py-3.5 flex flex-col h-full justify-start gap-1 transition-all duration-300 hover:bg-white/[0.04]">
+                                    <h4 className="text-[16px] lg:text-[17px] xl:text-[18px] font-bold text-white flex items-center gap-2 shrink-0">
                                         <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
                                         1. 终端渠道与服务折损
                                     </h4>
-                                    <p className="text-[15px] lg:text-[16px] text-zinc-300 leading-relaxed font-normal overflow-y-auto">
+                                    <p className="text-[13.5px] lg:text-[14.5px] text-zinc-300 leading-normal font-normal overflow-y-auto">
                                         数据抓取到的核心负面标签之一是“<strong className="text-white font-semibold">执行存在差异</strong>”。在具体的长文本测试中，当询问“萨米特瓷砖售后服务怎么样”或“好不好”时，AI 明确指出萨米特的售后服务呈现出明显的“<strong className="text-rose-300 font-semibold">两面性</strong>”。
                                     </p>
                                 </div>
@@ -84,12 +84,12 @@ function Page_GeoReportSentiment() {
 
                             {/* Point 2: Brand Information & Price Errors */}
                             <div className="col-span-6 flex flex-col min-h-0 h-full">
-                                <div className="bg-gradient-to-br from-rose-500/10 to-white/[0.01] border border-rose-500/30 border-l-4 border-l-rose-500 rounded-r-2xl p-4 lg:p-5 flex flex-col h-full justify-start gap-1.5 transition-all duration-300 hover:bg-white/[0.04] shadow-[0_0_20px_rgba(239,68,68,0.03)]">
-                                    <h4 className="text-[17px] lg:text-[18px] xl:text-[19px] font-bold text-white flex items-center gap-2 shrink-0">
+                                <div className="bg-gradient-to-br from-rose-500/10 to-white/[0.01] border border-rose-500/30 border-l-4 border-l-rose-500 rounded-r-2xl px-4 py-3 lg:px-5 lg:py-3.5 flex flex-col h-full justify-start gap-1 transition-all duration-300 hover:bg-white/[0.04] shadow-[0_0_20px_rgba(239,68,68,0.03)]">
+                                    <h4 className="text-[16px] lg:text-[17px] xl:text-[18px] font-bold text-white flex items-center gap-2 shrink-0">
                                         <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
                                         2. 品牌信息错误及价格错误
                                     </h4>
-                                    <p className="text-[15px] lg:text-[16px] text-zinc-300 leading-relaxed font-normal overflow-y-auto">
+                                    <p className="text-[13.5px] lg:text-[14.5px] text-zinc-300 leading-normal font-normal overflow-y-auto">
                                         在部分回答中，因为AI抓取到了一篇具有错误信息的文章，导致在回答中出现了明显的<strong className="text-rose-300 font-semibold">价格错误</strong>以及<strong className="text-rose-300 font-semibold">产品规格错误</strong>，容易给用户造成误解。
                                     </p>
                                 </div>
