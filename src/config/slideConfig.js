@@ -33,6 +33,8 @@ import Page_ArticleQuantityAnalysis from '../pages/Page_ArticleQuantityAnalysis'
 import Page_KeywordGenerationLogic from '../pages/Page_KeywordGenerationLogic';
 import Page_KeywordTaggingLogic from '../pages/Page_KeywordTaggingLogic';
 import Page_KeywordExpansionLogic from '../pages/Page_KeywordExpansionLogic';
+import Page_GeoOptImplementation from '../pages/Page_GeoOptImplementation';
+
 
 
 // ——— 篇章1: 品牌信息调研 (Pages_Before) ———
@@ -226,6 +228,9 @@ export const slideConfig = [
   { type: 'page', title: '筛选过程', components: [Page_PlatformFilterLogic, Page_PlatformFilterLogicB, Page_PlatformFilterLogicC] },
   { type: 'page', title: '筛选结论', component: Page_PlatformFilterConclusion },
   { type: 'page', title: '按权分发', component: Page_DeliveryStrategy_Combo },
+
+  { type: 'section', title: '可量化且合规的GEO优化如何实现' },
+  { type: 'page', title: '可量化且合规的GEO优化如何实现', component: Page_GeoOptImplementation },
 
   // { type: 'section', title: '投放文章量化分析' },
   // { type: 'page', title: '投放文章类型', components: [Page_ArticleTypeAnalysis, Page_ArticleTypeDetails] },
