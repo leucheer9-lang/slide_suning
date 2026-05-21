@@ -139,16 +139,16 @@ function Page_GeoKpiAcceptance() {
                                     </td>
                                     <td className="py-4 text-zinc-300 align-top pr-4">
                                         <div className="flex flex-col gap-2.5 font-medium text-[14.8px] xl:text-[15.8px]">
-                                            <div className="flex flex-col">
-                                                <span className="text-[#7ca2ff] font-bold text-[14.2px] xl:text-[15.2px]">阶段一考核</span>
+                                            <div className="leading-relaxed">
+                                                <span className="text-[#7ca2ff] font-bold text-[14.2px] xl:text-[15.2px] mr-1.5">阶段一考核：</span>
                                                 <span className="text-zinc-300">提及率提升至 <strong className="text-white font-bold">33%</strong>，位次提升至 <strong className="text-white font-semibold">6</strong></span>
                                             </div>
-                                            <div className="flex flex-col">
-                                                <span className="text-[#7ca2ff] font-bold text-[14.2px] xl:text-[15.2px]">阶段二考核</span>
+                                            <div className="leading-relaxed">
+                                                <span className="text-[#7ca2ff] font-bold text-[14.2px] xl:text-[15.2px] mr-1.5">阶段二考核：</span>
                                                 <span className="text-zinc-300">提及率提升至 <strong className="text-white font-bold">75%</strong>，位次提升至 <strong className="text-white font-semibold">2</strong></span>
                                             </div>
-                                            <div className="flex flex-col">
-                                                <span className="text-[#7ca2ff] font-bold text-[14.2px] xl:text-[15.2px]">阶段三考核</span>
+                                            <div className="leading-relaxed">
+                                                <span className="text-[#7ca2ff] font-bold text-[14.2px] xl:text-[15.2px] mr-1.5">阶段三考核：</span>
                                                 <span className="text-zinc-300">提及率提升至 <strong className="text-white font-bold">85%</strong>，位次提升至 <strong className="text-white font-semibold">1.5</strong></span>
                                             </div>
                                         </div>
@@ -200,16 +200,16 @@ function Page_GeoKpiAcceptance() {
                                     </td>
                                     <td className="py-4 text-zinc-300 align-top pr-4">
                                         <div className="flex flex-col gap-2.5 font-medium text-[14.8px] xl:text-[15.8px]">
-                                            <div className="flex flex-col">
-                                                <span className="text-[#7ca2ff] font-bold text-[14.2px] xl:text-[15.2px]">阶段一考核</span>
+                                            <div className="leading-relaxed">
+                                                <span className="text-[#7ca2ff] font-bold text-[14.2px] xl:text-[15.2px] mr-1.5">阶段一考核：</span>
                                                 <span className="text-zinc-300">提及率提升至 <strong className="text-white font-bold">20%</strong>，位次提升至 <strong className="text-white font-semibold">8</strong></span>
                                             </div>
-                                            <div className="flex flex-col">
-                                                <span className="text-[#7ca2ff] font-bold text-[14.2px] xl:text-[15.2px]">阶段二考核</span>
+                                            <div className="leading-relaxed">
+                                                <span className="text-[#7ca2ff] font-bold text-[14.2px] xl:text-[15.2px] mr-1.5">阶段二考核：</span>
                                                 <span className="text-zinc-300">提及率提升至 <strong className="text-white font-bold">70%</strong>，位次提升至 <strong className="text-white font-semibold">3</strong></span>
                                             </div>
-                                            <div className="flex flex-col">
-                                                <span className="text-[#7ca2ff] font-bold text-[14.2px] xl:text-[15.2px]">阶段三考核</span>
+                                            <div className="leading-relaxed">
+                                                <span className="text-[#7ca2ff] font-bold text-[14.2px] xl:text-[15.2px] mr-1.5">阶段三考核：</span>
                                                 <span className="text-zinc-300">提及率提升至 <strong className="text-white font-bold">85%</strong>，位次提升至 <strong className="text-white font-semibold">1.5</strong></span>
                                             </div>
                                         </div>
