@@ -70,7 +70,7 @@ export default function Page_BrandInfo() {
 
                     <div className="grid grid-cols-2 gap-5 lg:gap-6">
                         {/* 客群一 */}
-                        <div className="bg-black/40 border border-white/5 p-5 lg:p-6 rounded-xl relative flex flex-col justify-center">
+                        <div className="bg-black/40 border border-white/5 p-5 lg:p-6 rounded-xl relative flex flex-col justify-start">
                             <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-zinc-500 rounded-l-xl"></div>
                             <h4 className="text-xl lg:text-2xl font-bold text-white mb-3 tracking-widest">第一类：年轻装修人群</h4>
                             <p className="text-[1.1rem] lg:text-[1.2rem] text-zinc-400 leading-relaxed text-justify tracking-wide">
@@ -78,7 +78,7 @@ export default function Page_BrandInfo() {
                             </p>
                         </div>
                         {/* 客群二 */}
-                        <div className="bg-black/40 border border-white/5 p-5 lg:p-6 rounded-xl relative flex flex-col justify-center">
+                        <div className="bg-black/40 border border-white/5 p-5 lg:p-6 rounded-xl relative flex flex-col justify-start">
                             <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-zinc-500 rounded-l-xl"></div>
                             <h4 className="text-xl lg:text-2xl font-bold text-white mb-3 tracking-widest">第二类：设计师渠道</h4>
                             <p className="text-[1.1rem] lg:text-[1.2rem] text-zinc-400 leading-relaxed text-justify tracking-wide">

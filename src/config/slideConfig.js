@@ -135,7 +135,7 @@ export const slideConfig = [
     title: '封面',
     backgroundImage: '/proposal-cover/proposal-cover-new.png',
     brand: 'GEO索引未来',
-    subtitle: '萨米特瓷砖\nGEO年度规划方案',
+    subtitle: '萨米特瓷砖\nGEO规划方案',
     date: 'March 2026',
   },
 
@@ -230,5 +230,9 @@ export const slideConfig = [
   // { type: 'page', title: '两个内容策略', components: [Page_ArticleDataAnalysisHisense, Page_ArticleGenerationDemo, Page_ArticleDataAnalysisStrategy2, Page_ArticleGenerationDemo2, Page_ArticleGenerationDemo3] },
   // { type: 'page', title: '两个投放策略', components: [Page_DeliveryStrategy_Combo, Page_DeliveryStrategy_Platform] },
 
+  // ══════════════════════════════════════════════════════════
+  // ——— 篇章5: 关于我们 ———
+  // ══════════════════════════════════════════════════════════
+  { type: 'chapter', title: '关于我们', subtitle: 'ABOUT US', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
 
 ];
