@@ -22,11 +22,13 @@ export default function Page_GeoOptImplementation() {
                     
                     {/* Step 1 */}
                     <div className="flex-1 flex flex-col bg-zinc-950/45 backdrop-blur border border-white/5 hover:border-[#004CE5]/20 hover:shadow-[0_0_30px_rgba(0,76,229,0.12)] rounded-2xl p-4 lg:p-5 xl:p-6 transition-all duration-300 relative group">
-                        {/* Unified Card Header: Step number + AI mechanism label */}
-                        <div className="flex items-baseline gap-2 xl:gap-3 mb-3 border-b border-white/10 pb-2 shrink-0">
-                            <span className="text-4xl xl:text-5xl font-black font-mono text-[#004CE5] group-hover:text-white transition-colors duration-300">01</span>
-                            <span className="text-zinc-350 font-extrabold text-[13.5px] lg:text-[15px] xl:text-[17px] tracking-wide">
-                                AI 真实的搜索机制（背景与原理）
+                        {/* Unified Card Header: AI mechanism label + lighter Step number placed after it */}
+                        <div className="flex items-baseline gap-2 mb-3 border-b border-white/10 pb-2.5 shrink-0">
+                            <span className="text-zinc-300 font-extrabold text-[14px] lg:text-[16px] xl:text-[18px] tracking-wide">
+                                AI真实的搜索机制
+                            </span>
+                            <span className="text-[15px] lg:text-[18px] xl:text-[21px] font-bold font-mono text-zinc-500 group-hover:text-zinc-400 transition-colors duration-300 leading-none">
+                                01
                             </span>
                         </div>
 
@@ -35,7 +37,7 @@ export default function Page_GeoOptImplementation() {
                             <h4 className="text-white font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0">
                                 把“单个关键词”当成“复杂问题场景”
                             </h4>
-                            <p className="text-zinc-350 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed">
+                            <p className="text-zinc-400 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed">
                                 用户搜“瓷砖品牌推荐”，AI 不是去傻傻匹配这六个字，而是去猜用户是想直接买、想看排名、想做对比，还是怕踩坑。
                             </p>
                         </div>
@@ -75,11 +77,13 @@ export default function Page_GeoOptImplementation() {
 
                     {/* Step 2 */}
                     <div className="flex-1 flex flex-col bg-zinc-950/45 backdrop-blur border border-white/5 hover:border-[#004CE5]/20 hover:shadow-[0_0_30px_rgba(0,76,229,0.12)] rounded-2xl p-4 lg:p-5 xl:p-6 transition-all duration-300 relative group">
-                        {/* Unified Card Header: Step number + AI mechanism label */}
-                        <div className="flex items-baseline gap-2 xl:gap-3 mb-3 border-b border-white/10 pb-2 shrink-0">
-                            <span className="text-4xl xl:text-5xl font-black font-mono text-[#004CE5] group-hover:text-white transition-colors duration-300">02</span>
-                            <span className="text-zinc-350 font-extrabold text-[13.5px] lg:text-[15px] xl:text-[17px] tracking-wide">
-                                AI 真实的搜索机制（背景与原理）
+                        {/* Unified Card Header: AI mechanism label + lighter Step number placed after it */}
+                        <div className="flex items-baseline gap-2 mb-3 border-b border-white/10 pb-2.5 shrink-0">
+                            <span className="text-zinc-300 font-extrabold text-[14px] lg:text-[16px] xl:text-[18px] tracking-wide">
+                                AI真实的搜索机制
+                            </span>
+                            <span className="text-[15px] lg:text-[18px] xl:text-[21px] font-bold font-mono text-zinc-500 group-hover:text-zinc-400 transition-colors duration-300 leading-none">
+                                02
                             </span>
                         </div>
 
@@ -88,16 +92,16 @@ export default function Page_GeoOptImplementation() {
                             <h4 className="text-white font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0">
                                 自动把问题拆解成多个“搜索方向”
                             </h4>
-                            <div className="text-zinc-350 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed">
+                            <div className="text-zinc-400 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed">
                                 面对同一个问题，AI 会兵分几路去查：
                                 <div className="mt-1.5 space-y-1 pl-2">
-                                    <span className="block text-zinc-200 font-semibold">
+                                    <span className="block text-zinc-300 font-semibold">
                                         ① 查榜单（如：瓷砖十大品牌排行）
                                     </span>
-                                    <span className="block text-zinc-200 font-semibold">
+                                    <span className="block text-zinc-300 font-semibold">
                                         ② 查对比（如：萨米特和东鹏哪个好）
                                     </span>
-                                    <span className="block text-zinc-200 font-semibold">
+                                    <span className="block text-zinc-300 font-semibold">
                                         ③ 查避坑（如：某品牌有什么质量负面）
                                     </span>
                                 </div>
@@ -139,11 +143,13 @@ export default function Page_GeoOptImplementation() {
 
                     {/* Step 3 */}
                     <div className="flex-1 flex flex-col bg-zinc-950/45 backdrop-blur border border-white/5 hover:border-[#004CE5]/20 hover:shadow-[0_0_30px_rgba(0,76,229,0.12)] rounded-2xl p-4 lg:p-5 xl:p-6 transition-all duration-300 relative group">
-                        {/* Unified Card Header: Step number + AI mechanism label */}
-                        <div className="flex items-baseline gap-2 xl:gap-3 mb-3 border-b border-white/10 pb-2 shrink-0">
-                            <span className="text-4xl xl:text-5xl font-black font-mono text-[#004CE5] group-hover:text-white transition-colors duration-300">03</span>
-                            <span className="text-zinc-350 font-extrabold text-[13.5px] lg:text-[15px] xl:text-[17px] tracking-wide">
-                                AI 真实的搜索机制（背景与原理）
+                        {/* Unified Card Header: AI mechanism label + lighter Step number placed after it */}
+                        <div className="flex items-baseline gap-2 mb-3 border-b border-white/10 pb-2.5 shrink-0">
+                            <span className="text-zinc-300 font-extrabold text-[14px] lg:text-[16px] xl:text-[18px] tracking-wide">
+                                AI真实的搜索机制
+                            </span>
+                            <span className="text-[15px] lg:text-[18px] xl:text-[21px] font-bold font-mono text-zinc-500 group-hover:text-zinc-400 transition-colors duration-300 leading-none">
+                                03
                             </span>
                         </div>
 
@@ -192,11 +198,13 @@ export default function Page_GeoOptImplementation() {
 
                     {/* Step 4 */}
                     <div className="flex-1 flex flex-col bg-zinc-950/45 backdrop-blur border border-white/5 hover:border-[#004CE5]/20 hover:shadow-[0_0_30px_rgba(0,76,229,0.12)] rounded-2xl p-4 lg:p-5 xl:p-6 transition-all duration-300 relative group">
-                        {/* Unified Card Header: Step number + AI mechanism label */}
-                        <div className="flex items-baseline gap-2 xl:gap-3 mb-3 border-b border-white/10 pb-2 shrink-0">
-                            <span className="text-4xl xl:text-5xl font-black font-mono text-[#004CE5] group-hover:text-white transition-colors duration-300">04</span>
-                            <span className="text-zinc-350 font-extrabold text-[13.5px] lg:text-[15px] xl:text-[17px] tracking-wide">
-                                AI 真实的搜索机制（背景与原理）
+                        {/* Unified Card Header: AI mechanism label + lighter Step number placed after it */}
+                        <div className="flex items-baseline gap-2 mb-3 border-b border-white/10 pb-2.5 shrink-0">
+                            <span className="text-zinc-300 font-extrabold text-[14px] lg:text-[16px] xl:text-[18px] tracking-wide">
+                                AI真实的搜索机制
+                            </span>
+                            <span className="text-[15px] lg:text-[18px] xl:text-[21px] font-bold font-mono text-zinc-500 group-hover:text-zinc-400 transition-colors duration-300 leading-none">
+                                04
                             </span>
                         </div>
 
