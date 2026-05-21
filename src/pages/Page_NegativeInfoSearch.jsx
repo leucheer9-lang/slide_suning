@@ -100,14 +100,14 @@ export default function Page_NegativeInfoSearch() {
                             <div className="absolute inset-0 bg-[radial-gradient(#004ce515_2.5px,transparent_2.5px)] bg-[size:36px_36px] opacity-60 z-0 pointer-events-none"></div>
 
                             {/* Concentric Radar Rings - Simple, Thick, Sharp */}
-                            <div className="absolute w-[180px] h-[180px] border-2 border-white/10 rounded-full z-0 pointer-events-none"></div>
-                            <div className="absolute w-[340px] h-[340px] border-2 border-[#004CE5]/20 rounded-full z-0 pointer-events-none"></div>
-                            <div className="absolute w-[500px] h-[500px] border-2 border-white/5 rounded-full z-0 pointer-events-none"></div>
+                            <div className="absolute w-[200px] h-[200px] border-2 border-white/10 rounded-full z-0 pointer-events-none"></div>
+                            <div className="absolute w-[360px] h-[360px] border-2 border-[#004CE5]/20 rounded-full z-0 pointer-events-none"></div>
+                            <div className="absolute w-[520px] h-[520px] border-2 border-white/5 rounded-full z-0 pointer-events-none"></div>
 
                             {/* Solid Connective Ring (Static visual bridge connecting the 4 nodes) */}
                             <svg className="absolute inset-0 w-full h-full pointer-events-none z-10" viewBox="0 0 600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path 
-                                    d="M 100,100 Q 300,30 500,100 Q 540,250 500,400 Q 300,470 100,400 Q 60,250 100,100 Z" 
+                                    d="M 80,80 Q 300,10 520,80 Q 560,250 520,420 Q 300,490 80,420 Q 40,250 80,80 Z" 
                                     fill="none" 
                                     stroke="#004CE5" 
                                     strokeWidth="3.5" 
@@ -116,69 +116,69 @@ export default function Page_NegativeInfoSearch() {
                             </svg>
 
                             {/* ════════════ NODE 1: Dealer Pricing Risk (Top-Left) ════════════ */}
-                            <div className="absolute top-[14%] left-[6%] z-20 flex items-center gap-3.5 bg-zinc-900 border-2 border-red-500 rounded-2xl p-3.5 pr-4.5 shadow-[0_6px_24px_rgba(0,0,0,0.6)]">
-                                <div className="w-11 h-11 rounded-full bg-red-950 flex items-center justify-center shrink-0 border-2 border-red-500">
-                                    <AlertTriangle className="w-5.5 h-5.5 text-red-500" />
+                            <div className="absolute top-[8%] left-[2%] z-20 flex items-center gap-4.5 bg-zinc-900 border-2 border-red-500 rounded-3xl p-4.5 pr-6 shadow-[0_8px_32px_rgba(0,0,0,0.7)] whitespace-nowrap">
+                                <div className="w-14 h-14 rounded-full bg-red-950 flex items-center justify-center shrink-0 border-2 border-red-500">
+                                    <AlertTriangle className="w-7 h-7 text-red-500" />
                                 </div>
                                 <div className="flex flex-col gap-0.5">
-                                    <span className="text-[16px] lg:text-[18px] xl:text-[20px] font-black text-white">
+                                    <span className="text-[20px] lg:text-[23px] xl:text-[26px] font-black text-white">
                                         经销商乱报价
                                     </span>
-                                    <span className="text-[11.5px] lg:text-[12px] xl:text-[13px] font-black text-red-500">
+                                    <span className="text-[14px] lg:text-[16px] xl:text-[18px] font-black text-red-500">
                                         ● 触发价格预警
                                     </span>
                                 </div>
                             </div>
 
                             {/* ════════════ NODE 2: Construction Quality Reviews (Top-Right) ════════════ */}
-                            <div className="absolute top-[14%] right-[6%] z-20 flex items-center gap-3.5 bg-zinc-900 border-2 border-red-500 rounded-2xl p-3.5 pr-4.5 shadow-[0_6px_24px_rgba(0,0,0,0.6)]">
-                                <div className="w-11 h-11 rounded-full bg-red-950 flex items-center justify-center shrink-0 border-2 border-red-500">
-                                    <AlertTriangle className="w-5.5 h-5.5 text-red-500" />
+                            <div className="absolute top-[8%] right-[2%] z-20 flex items-center gap-4.5 bg-zinc-900 border-2 border-red-500 rounded-3xl p-4.5 pr-6 shadow-[0_8px_32px_rgba(0,0,0,0.7)] whitespace-nowrap">
+                                <div className="w-14 h-14 rounded-full bg-red-950 flex items-center justify-center shrink-0 border-2 border-red-500">
+                                    <AlertTriangle className="w-7 h-7 text-red-500" />
                                 </div>
                                 <div className="flex flex-col gap-0.5">
-                                    <span className="text-[16px] lg:text-[18px] xl:text-[20px] font-black text-white">
+                                    <span className="text-[20px] lg:text-[23px] xl:text-[26px] font-black text-white">
                                         泥瓦工吐槽
                                     </span>
-                                    <span className="text-[11.5px] lg:text-[12px] xl:text-[13px] font-black text-red-500">
+                                    <span className="text-[14px] lg:text-[16px] xl:text-[18px] font-black text-red-500">
                                         ● 触发负面警告
                                     </span>
                                 </div>
                             </div>
 
                             {/* ════════════ NODE 3: Active AI Crawler Crawling (Bottom-Right) ════════════ */}
-                            <div className="absolute bottom-[14%] right-[6%] z-20 flex items-center gap-3.5 bg-zinc-900 border-2 border-blue-500 rounded-2xl p-3.5 pr-4.5 shadow-[0_6px_24px_rgba(0,0,0,0.6)]">
-                                <div className="w-11 h-11 rounded-full bg-blue-950 flex items-center justify-center shrink-0 border-2 border-blue-500">
-                                    <Search className="w-5.5 h-5.5 text-blue-400" />
+                            <div className="absolute bottom-[8%] right-[2%] z-20 flex items-center gap-4.5 bg-zinc-900 border-2 border-blue-500 rounded-3xl p-4.5 pr-6 shadow-[0_8px_32px_rgba(0,0,0,0.7)] whitespace-nowrap">
+                                <div className="w-14 h-14 rounded-full bg-blue-950 flex items-center justify-center shrink-0 border-2 border-blue-500">
+                                    <Search className="w-7 h-7 text-blue-400" />
                                 </div>
                                 <div className="flex flex-col gap-0.5">
-                                    <span className="text-[16px] lg:text-[18px] xl:text-[20px] font-black text-white">
+                                    <span className="text-[20px] lg:text-[23px] xl:text-[26px] font-black text-white">
                                         大模型数据抓取
                                     </span>
-                                    <span className="text-[11.5px] lg:text-[12px] xl:text-[13px] font-black text-blue-400">
+                                    <span className="text-[14px] lg:text-[16px] xl:text-[18px] font-black text-blue-400">
                                         ● 全天实时监测
                                     </span>
                                 </div>
                             </div>
 
                             {/* ════════════ NODE 4: All-Web Knowledge Fragments (Bottom-Left) ════════════ */}
-                            <div className="absolute bottom-[14%] left-[6%] z-20 flex items-center gap-3.5 bg-zinc-900 border-2 border-blue-500 rounded-2xl p-3.5 pr-4.5 shadow-[0_6px_24px_rgba(0,0,0,0.6)]">
-                                <div className="w-11 h-11 rounded-full bg-blue-950 flex items-center justify-center shrink-0 border-2 border-blue-500">
-                                    <Activity className="w-5.5 h-5.5 text-blue-400" />
+                            <div className="absolute bottom-[8%] left-[2%] z-20 flex items-center gap-4.5 bg-zinc-900 border-2 border-blue-500 rounded-3xl p-4.5 pr-6 shadow-[0_8px_32px_rgba(0,0,0,0.7)] whitespace-nowrap">
+                                <div className="w-14 h-14 rounded-full bg-blue-950 flex items-center justify-center shrink-0 border-2 border-blue-500">
+                                    <Activity className="w-7 h-7 text-blue-400" />
                                 </div>
                                 <div className="flex flex-col gap-0.5">
-                                    <span className="text-[16px] lg:text-[18px] xl:text-[20px] font-black text-white">
+                                    <span className="text-[20px] lg:text-[23px] xl:text-[26px] font-black text-white">
                                         全网知识碎片
                                     </span>
-                                    <span className="text-[11.5px] lg:text-[12px] xl:text-[13px] font-black text-blue-400">
+                                    <span className="text-[14px] lg:text-[16px] xl:text-[18px] font-black text-blue-400">
                                         ● 来源合规纠偏
                                     </span>
                                 </div>
                             </div>
 
                             {/* ════════════ CENTER HUB: AI Corrective Radar (Much Bigger, High-Contrast) ════════════ */}
-                            <div className="relative w-36 h-36 lg:w-40 h-40 xl:w-44 h-44 rounded-full bg-[#004CE5] shadow-[0_0_40px_rgba(0,76,229,0.5)] flex flex-col items-center justify-center border-4 border-white z-20">
-                                <Radar className="w-9 h-9 lg:w-10 h-10 text-white mb-1.5" />
-                                <span className="text-[18px] lg:text-[22px] xl:text-[25px] font-black text-white tracking-widest leading-none">
+                            <div className="relative w-44 h-44 lg:w-48 h-48 xl:w-52 h-52 rounded-full bg-[#004CE5] shadow-[0_0_50px_rgba(0,76,229,0.6)] flex flex-col items-center justify-center border-[5px] border-white z-20">
+                                <Radar className="w-11 h-11 lg:w-13 h-13 text-white mb-2" />
+                                <span className="text-[22px] lg:text-[26px] xl:text-[30px] font-black text-white tracking-widest leading-none">
                                     纠偏雷达
                                 </span>
                             </div>
