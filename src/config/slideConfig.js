@@ -126,6 +126,7 @@ import Page_KeywordGroupingConclusion from '../pages/Page_KeywordGroupingConclus
 import Page_ContentStrategyBacktrack from '../pages/Page_ContentStrategyBacktrack';
 import Page_ContentStrategyDeconstruct from '../pages/Page_ContentStrategyDeconstruct';
 import Page_ContentStrategyDemo from '../pages/Page_ContentStrategyDemo';
+import Page_BrandDatabaseBuild from '../pages/Page_BrandDatabaseBuild';
 
 export const slideConfig = [
   // ——— 封面 & 目录 ———
@@ -205,6 +206,7 @@ export const slideConfig = [
   { type: 'chapter', title: '执行方案细节阐述', subtitle: 'EXECUTION PLAN DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
 
   { type: 'section', title: '品牌数据库建立' },
+  { type: 'page', title: '品牌数据库建立', component: Page_BrandDatabaseBuild },
 
   { type: 'section', title: '内容策略' },
   { type: 'page', title: '内容策略', components: [Page_ContentStrategyBacktrack, Page_ContentStrategyDeconstruct, Page_ContentStrategyDemo] },
