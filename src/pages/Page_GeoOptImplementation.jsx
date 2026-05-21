@@ -22,44 +22,45 @@ export default function Page_GeoOptImplementation() {
                     
                     {/* Step 1 */}
                     <div className="flex-1 flex flex-col bg-zinc-950/45 backdrop-blur border border-white/5 hover:border-[#004CE5]/20 hover:shadow-[0_0_30px_rgba(0,76,229,0.12)] rounded-2xl p-4 lg:p-5 xl:p-6 transition-all duration-300 relative group">
-                        {/* Card Header with Step Number */}
-                        <div className="flex justify-between items-center mb-3 lg:mb-4 xl:mb-5 shrink-0">
-                            <span className="text-4xl lg:text-5xl xl:text-6xl font-black font-mono text-zinc-700/60 group-hover:text-[#004CE5] transition-colors duration-300">01</span>
-                            <span className="w-2 h-2 rounded-full bg-[#004CE5]/40 group-hover:bg-[#004CE5] transition-colors duration-300 shadow-[0_0_8px_rgba(0,76,229,0.6)]"></span>
+                        {/* Unified Card Header: Step number + AI mechanism label */}
+                        <div className="flex items-baseline gap-2 xl:gap-3 mb-3 border-b border-white/10 pb-2 shrink-0">
+                            <span className="text-4xl xl:text-5xl font-black font-mono text-[#004CE5] group-hover:text-white transition-colors duration-300">01</span>
+                            <span className="text-zinc-350 font-extrabold text-[13.5px] lg:text-[15px] xl:text-[17px] tracking-wide">
+                                AI 真实的搜索机制（背景与原理）
+                            </span>
                         </div>
 
-                        {/* AI Mechanism block */}
-                        <div className="flex-1 flex flex-col gap-2 bg-white/[0.02] border border-white/5 rounded-xl p-3.5 lg:p-4 hover:bg-white/[0.04] transition-colors duration-300">
-                            <div className="flex items-center gap-2 text-zinc-450 font-bold text-[12px] lg:text-[13px] xl:text-[14px] tracking-wider border-b border-white/5 pb-1.5 shrink-0">
-                                <span className="w-1.5 h-1.5 bg-zinc-550 rounded-full"></span>
-                                AI 真实搜索机制（背景与原理）
-                            </div>
-                            <h4 className="text-white font-extrabold text-[15px] lg:text-[17px] xl:text-[19px] leading-snug shrink-0">
+                        {/* AI Mechanism block details */}
+                        <div className="flex-1 flex flex-col gap-2 bg-white/[0.02] border border-white/5 rounded-xl p-3.5 lg:p-4 hover:bg-white/[0.04] transition-colors duration-300 justify-center">
+                            <h4 className="text-white font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0">
                                 把“单个关键词”当成“复杂问题场景”
                             </h4>
-                            <p className="text-zinc-400 text-[13px] lg:text-[14.5px] xl:text-[16px] leading-relaxed">
+                            <p className="text-zinc-350 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed">
                                 用户搜“瓷砖品牌推荐”，AI 不是去傻傻匹配这六个字，而是去猜用户是想直接买、想看排名、想做对比，还是怕踩坑。
                             </p>
                         </div>
 
                         {/* Link between top and bottom in card */}
-                        <div className="shrink-0 flex items-center justify-center my-1.5">
-                            <div className="h-4 w-[1px] border-l border-dashed border-[#004CE5]/40 relative">
+                        <div className="shrink-0 flex items-center justify-center my-2">
+                            <div className="h-5 w-[1px] border-l border-dashed border-[#004CE5]/40 relative">
                                 <div className="absolute bottom-0 -left-[2.5px] w-1.5 h-1.5 rounded-full bg-[#004CE5] shadow-[0_0_6px_rgba(0,76,229,0.8)]"></div>
                             </div>
                         </div>
 
                         {/* White-Hat Strategy block */}
-                        <div className="flex-1 flex flex-col gap-2 bg-[#004CE5]/5 border border-[#004CE5]/25 rounded-xl p-3.5 lg:p-4 hover:bg-[#004CE5]/10 transition-colors duration-300 relative overflow-hidden group-hover:border-[#004CE5]/40">
+                        <div className="flex-1 flex flex-col gap-2 bg-[#004CE5]/5 border border-[#004CE5]/25 rounded-xl p-3.5 lg:p-4 hover:bg-[#004CE5]/10 transition-colors duration-300 relative overflow-hidden group-hover:border-[#004CE5]/40 justify-center">
                             <div className="absolute top-0 right-0 w-20 h-20 bg-[#004CE5]/10 rounded-full blur-xl pointer-events-none"></div>
-                            <div className="flex items-center gap-2 text-[#004CE5] font-extrabold text-[12px] lg:text-[13px] xl:text-[14px] tracking-wider border-b border-[#004CE5]/10 pb-1.5 shrink-0 z-10">
+                            
+                            {/* Simplified Strategy subhead */}
+                            <div className="flex items-center gap-2 text-[#004CE5] font-extrabold text-[12.5px] lg:text-[14px] xl:text-[15.5px] tracking-wider border-b border-[#004CE5]/10 pb-1.5 shrink-0 z-10">
                                 <span className="w-1.5 h-1.5 bg-[#004CE5] rounded-full shadow-[0_0_6px_rgba(0,76,229,0.8)]"></span>
-                                我们的白帽优化应对策略（思路与做法）
+                                我们的应对策略
                             </div>
-                            <h4 className="text-[#004CE5] font-black text-[15px] lg:text-[17px] xl:text-[19px] leading-snug shrink-0 z-10">
+
+                            <h4 className="text-[#004CE5] font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0 z-10">
                                 全场景覆盖，不做关键词堆砌
                             </h4>
-                            <p className="text-zinc-300 text-[13px] lg:text-[14.5px] xl:text-[16px] leading-relaxed z-10">
+                            <p className="text-zinc-200 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed z-10">
                                 我们的目的不是像传统作弊那样在一篇文章里狂塞关键词（不投毒），而是围绕用户“买、比、防雷”等真实诉求，提供高质量的标准答案。
                             </p>
                         </div>
@@ -74,53 +75,56 @@ export default function Page_GeoOptImplementation() {
 
                     {/* Step 2 */}
                     <div className="flex-1 flex flex-col bg-zinc-950/45 backdrop-blur border border-white/5 hover:border-[#004CE5]/20 hover:shadow-[0_0_30px_rgba(0,76,229,0.12)] rounded-2xl p-4 lg:p-5 xl:p-6 transition-all duration-300 relative group">
-                        {/* Card Header with Step Number */}
-                        <div className="flex justify-between items-center mb-3 lg:mb-4 xl:mb-5 shrink-0">
-                            <span className="text-4xl lg:text-5xl xl:text-6xl font-black font-mono text-zinc-700/60 group-hover:text-[#004CE5] transition-colors duration-300">02</span>
-                            <span className="w-2 h-2 rounded-full bg-[#004CE5]/40 group-hover:bg-[#004CE5] transition-colors duration-300 shadow-[0_0_8px_rgba(0,76,229,0.6)]"></span>
+                        {/* Unified Card Header: Step number + AI mechanism label */}
+                        <div className="flex items-baseline gap-2 xl:gap-3 mb-3 border-b border-white/10 pb-2 shrink-0">
+                            <span className="text-4xl xl:text-5xl font-black font-mono text-[#004CE5] group-hover:text-white transition-colors duration-300">02</span>
+                            <span className="text-zinc-350 font-extrabold text-[13.5px] lg:text-[15px] xl:text-[17px] tracking-wide">
+                                AI 真实的搜索机制（背景与原理）
+                            </span>
                         </div>
 
-                        {/* AI Mechanism block */}
-                        <div className="flex-1 flex flex-col gap-2 bg-white/[0.02] border border-white/5 rounded-xl p-3.5 lg:p-4 hover:bg-white/[0.04] transition-colors duration-300">
-                            <div className="flex items-center gap-2 text-zinc-450 font-bold text-[12px] lg:text-[13px] xl:text-[14px] tracking-wider border-b border-white/5 pb-1.5 shrink-0">
-                                <span className="w-1.5 h-1.5 bg-zinc-550 rounded-full"></span>
-                                AI 真实搜索机制（背景与原理）
-                            </div>
-                            <h4 className="text-white font-extrabold text-[15px] lg:text-[17px] xl:text-[19px] leading-snug shrink-0">
+                        {/* AI Mechanism block details */}
+                        <div className="flex-1 flex flex-col gap-2 bg-white/[0.02] border border-white/5 rounded-xl p-3.5 lg:p-4 hover:bg-white/[0.04] transition-colors duration-300 justify-center">
+                            <h4 className="text-white font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0">
                                 自动把问题拆解成多个“搜索方向”
                             </h4>
-                            <div className="text-zinc-400 text-[13px] lg:text-[14.5px] xl:text-[16px] leading-relaxed">
+                            <div className="text-zinc-350 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed">
                                 面对同一个问题，AI 会兵分几路去查：
-                                <span className="block text-zinc-300 mt-1 pl-2 font-semibold">
-                                    ① 查榜单（如：瓷砖十大品牌排行）
-                                </span>
-                                <span className="block text-zinc-300 pl-2 font-semibold">
-                                    ② 查对比（如：萨米特和东鹏哪个好）
-                                </span>
-                                <span className="block text-zinc-300 pl-2 font-semibold">
-                                    ③ 查避坑（如：某品牌有什么质量负面）
-                                </span>
+                                <div className="mt-1.5 space-y-1 pl-2">
+                                    <span className="block text-zinc-200 font-semibold">
+                                        ① 查榜单（如：瓷砖十大品牌排行）
+                                    </span>
+                                    <span className="block text-zinc-200 font-semibold">
+                                        ② 查对比（如：萨米特和东鹏哪个好）
+                                    </span>
+                                    <span className="block text-zinc-200 font-semibold">
+                                        ③ 查避坑（如：某品牌有什么质量负面）
+                                    </span>
+                                </div>
                             </div>
                         </div>
 
                         {/* Link between top and bottom in card */}
-                        <div className="shrink-0 flex items-center justify-center my-1.5">
-                            <div className="h-4 w-[1px] border-l border-dashed border-[#004CE5]/40 relative">
+                        <div className="shrink-0 flex items-center justify-center my-2">
+                            <div className="h-5 w-[1px] border-l border-dashed border-[#004CE5]/40 relative">
                                 <div className="absolute bottom-0 -left-[2.5px] w-1.5 h-1.5 rounded-full bg-[#004CE5] shadow-[0_0_6px_rgba(0,76,229,0.8)]"></div>
                             </div>
                         </div>
 
                         {/* White-Hat Strategy block */}
-                        <div className="flex-1 flex flex-col gap-2 bg-[#004CE5]/5 border border-[#004CE5]/25 rounded-xl p-3.5 lg:p-4 hover:bg-[#004CE5]/10 transition-colors duration-300 relative overflow-hidden group-hover:border-[#004CE5]/40">
+                        <div className="flex-1 flex flex-col gap-2 bg-[#004CE5]/5 border border-[#004CE5]/25 rounded-xl p-3.5 lg:p-4 hover:bg-[#004CE5]/10 transition-colors duration-300 relative overflow-hidden group-hover:border-[#004CE5]/40 justify-center">
                             <div className="absolute top-0 right-0 w-20 h-20 bg-[#004CE5]/10 rounded-full blur-xl pointer-events-none"></div>
-                            <div className="flex items-center gap-2 text-[#004CE5] font-extrabold text-[12px] lg:text-[13px] xl:text-[14px] tracking-wider border-b border-[#004CE5]/10 pb-1.5 shrink-0 z-10">
+                            
+                            {/* Simplified Strategy subhead */}
+                            <div className="flex items-center gap-2 text-[#004CE5] font-extrabold text-[12.5px] lg:text-[14px] xl:text-[15.5px] tracking-wider border-b border-[#004CE5]/10 pb-1.5 shrink-0 z-10">
                                 <span className="w-1.5 h-1.5 bg-[#004CE5] rounded-full shadow-[0_0_6px_rgba(0,76,229,0.8)]"></span>
-                                我们的白帽优化应对策略（思路与做法）
+                                我们的应对策略
                             </div>
-                            <h4 className="text-[#004CE5] font-black text-[15px] lg:text-[17px] xl:text-[19px] leading-snug shrink-0 z-10">
+
+                            <h4 className="text-[#004CE5] font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0 z-10">
                                 根据 AI 的拆解路径，提前铺设“内容路标”
                             </h4>
-                            <p className="text-zinc-300 text-[13px] lg:text-[14.5px] xl:text-[16px] leading-relaxed z-10">
+                            <p className="text-zinc-200 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed z-10">
                                 AI 搜榜单，我们就准备权威推荐稿；AI 搜对比，我们就发详实的实景测评；AI 搜避坑，我们就铺设官方澄清和优质好评。让 AI 无论走哪条路，都能看到我们的正面信息。
                             </p>
                         </div>
@@ -135,44 +139,45 @@ export default function Page_GeoOptImplementation() {
 
                     {/* Step 3 */}
                     <div className="flex-1 flex flex-col bg-zinc-950/45 backdrop-blur border border-white/5 hover:border-[#004CE5]/20 hover:shadow-[0_0_30px_rgba(0,76,229,0.12)] rounded-2xl p-4 lg:p-5 xl:p-6 transition-all duration-300 relative group">
-                        {/* Card Header with Step Number */}
-                        <div className="flex justify-between items-center mb-3 lg:mb-4 xl:mb-5 shrink-0">
-                            <span className="text-4xl lg:text-5xl xl:text-6xl font-black font-mono text-zinc-700/60 group-hover:text-[#004CE5] transition-colors duration-300">03</span>
-                            <span className="w-2 h-2 rounded-full bg-[#004CE5]/40 group-hover:bg-[#004CE5] transition-colors duration-300 shadow-[0_0_8px_rgba(0,76,229,0.6)]"></span>
+                        {/* Unified Card Header: Step number + AI mechanism label */}
+                        <div className="flex items-baseline gap-2 xl:gap-3 mb-3 border-b border-white/10 pb-2 shrink-0">
+                            <span className="text-4xl xl:text-5xl font-black font-mono text-[#004CE5] group-hover:text-white transition-colors duration-300">03</span>
+                            <span className="text-zinc-350 font-extrabold text-[13.5px] lg:text-[15px] xl:text-[17px] tracking-wide">
+                                AI 真实的搜索机制（背景与原理）
+                            </span>
                         </div>
 
-                        {/* AI Mechanism block */}
-                        <div className="flex-1 flex flex-col gap-2 bg-white/[0.02] border border-white/5 rounded-xl p-3.5 lg:p-4 hover:bg-white/[0.04] transition-colors duration-300">
-                            <div className="flex items-center gap-2 text-zinc-450 font-bold text-[12px] lg:text-[13px] xl:text-[14px] tracking-wider border-b border-white/5 pb-1.5 shrink-0">
-                                <span className="w-1.5 h-1.5 bg-zinc-500 rounded-full"></span>
-                                AI 真实搜索机制（背景与原理）
-                            </div>
-                            <h4 className="text-white font-extrabold text-[15px] lg:text-[17px] xl:text-[19px] leading-snug shrink-0">
+                        {/* AI Mechanism block details */}
+                        <div className="flex-1 flex flex-col gap-2 bg-white/[0.02] border border-white/5 rounded-xl p-3.5 lg:p-4 hover:bg-white/[0.04] transition-colors duration-300 justify-center">
+                            <h4 className="text-white font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0">
                                 像学者一样去各大平台“抓取并拼凑”答案
                             </h4>
-                            <p className="text-zinc-400 text-[13px] lg:text-[14.5px] xl:text-[16px] leading-relaxed">
+                            <p className="text-zinc-400 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed">
                                 AI 带着拆解好的方向，去全网各个它信任的平台寻找知识碎片，最后重组为一个完整的回答。
                             </p>
                         </div>
 
                         {/* Link between top and bottom in card */}
-                        <div className="shrink-0 flex items-center justify-center my-1.5">
-                            <div className="h-4 w-[1px] border-l border-dashed border-[#004CE5]/40 relative">
+                        <div className="shrink-0 flex items-center justify-center my-2">
+                            <div className="h-5 w-[1px] border-l border-dashed border-[#004CE5]/40 relative">
                                 <div className="absolute bottom-0 -left-[2.5px] w-1.5 h-1.5 rounded-full bg-[#004CE5] shadow-[0_0_6px_rgba(0,76,229,0.8)]"></div>
                             </div>
                         </div>
 
                         {/* White-Hat Strategy block */}
-                        <div className="flex-1 flex flex-col gap-2 bg-[#004CE5]/5 border border-[#004CE5]/25 rounded-xl p-3.5 lg:p-4 hover:bg-[#004CE5]/10 transition-colors duration-300 relative overflow-hidden group-hover:border-[#004CE5]/40">
+                        <div className="flex-1 flex flex-col gap-2 bg-[#004CE5]/5 border border-[#004CE5]/25 rounded-xl p-3.5 lg:p-4 hover:bg-[#004CE5]/10 transition-colors duration-300 relative overflow-hidden group-hover:border-[#004CE5]/40 justify-center">
                             <div className="absolute top-0 right-0 w-20 h-20 bg-[#004CE5]/10 rounded-full blur-xl pointer-events-none"></div>
-                            <div className="flex items-center gap-2 text-[#004CE5] font-extrabold text-[12px] lg:text-[13px] xl:text-[14px] tracking-wider border-b border-[#004CE5]/10 pb-1.5 shrink-0 z-10">
+                            
+                            {/* Simplified Strategy subhead */}
+                            <div className="flex items-center gap-2 text-[#004CE5] font-extrabold text-[12.5px] lg:text-[14px] xl:text-[15.5px] tracking-wider border-b border-[#004CE5]/10 pb-1.5 shrink-0 z-10">
                                 <span className="w-1.5 h-1.5 bg-[#004CE5] rounded-full shadow-[0_0_6px_rgba(0,76,229,0.8)]"></span>
-                                我们的白帽优化应对策略（思路与做法）
+                                我们的应对策略
                             </div>
-                            <h4 className="text-[#004CE5] font-black text-[15px] lg:text-[17px] xl:text-[19px] leading-snug shrink-0 z-10">
+
+                            <h4 className="text-[#004CE5] font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0 z-10">
                                 投其所好，在 AI 信任的阵地上“喂”好内容
                             </h4>
-                            <p className="text-zinc-350 text-[13px] lg:text-[14.5px] xl:text-[16px] leading-relaxed z-10">
+                            <p className="text-zinc-200 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed z-10">
                                 我们不瞎发通稿，而是根据数据监测，把专门定制的高质量语料，发到 AI 当前最喜欢引用的平台（如家居门户、资讯端）上，让 AI 顺理成章地抓取采纳。
                             </p>
                         </div>
@@ -187,44 +192,45 @@ export default function Page_GeoOptImplementation() {
 
                     {/* Step 4 */}
                     <div className="flex-1 flex flex-col bg-zinc-950/45 backdrop-blur border border-white/5 hover:border-[#004CE5]/20 hover:shadow-[0_0_30px_rgba(0,76,229,0.12)] rounded-2xl p-4 lg:p-5 xl:p-6 transition-all duration-300 relative group">
-                        {/* Card Header with Step Number */}
-                        <div className="flex justify-between items-center mb-3 lg:mb-4 xl:mb-5 shrink-0">
-                            <span className="text-4xl lg:text-5xl xl:text-6xl font-black font-mono text-zinc-700/60 group-hover:text-[#004CE5] transition-colors duration-300">04</span>
-                            <span className="w-2 h-2 rounded-full bg-[#004CE5]/40 group-hover:bg-[#004CE5] transition-colors duration-300 shadow-[0_0_8px_rgba(0,76,229,0.6)]"></span>
+                        {/* Unified Card Header: Step number + AI mechanism label */}
+                        <div className="flex items-baseline gap-2 xl:gap-3 mb-3 border-b border-white/10 pb-2 shrink-0">
+                            <span className="text-4xl xl:text-5xl font-black font-mono text-[#004CE5] group-hover:text-white transition-colors duration-300">04</span>
+                            <span className="text-zinc-350 font-extrabold text-[13.5px] lg:text-[15px] xl:text-[17px] tracking-wide">
+                                AI 真实的搜索机制（背景与原理）
+                            </span>
                         </div>
 
-                        {/* AI Mechanism block */}
-                        <div className="flex-1 flex flex-col gap-2 bg-white/[0.02] border border-white/5 rounded-xl p-3.5 lg:p-4 hover:bg-white/[0.04] transition-colors duration-300">
-                            <div className="flex items-center gap-2 text-zinc-450 font-bold text-[12px] lg:text-[13px] xl:text-[14px] tracking-wider border-b border-white/5 pb-1.5 shrink-0">
-                                <span className="w-1.5 h-1.5 bg-zinc-500 rounded-full"></span>
-                                AI 真实搜索机制（背景与原理）
-                            </div>
-                            <h4 className="text-white font-extrabold text-[15px] lg:text-[17px] xl:text-[19px] leading-snug shrink-0">
+                        {/* AI Mechanism block details */}
+                        <div className="flex-1 flex flex-col gap-2 bg-white/[0.02] border border-white/5 rounded-xl p-3.5 lg:p-4 hover:bg-white/[0.04] transition-colors duration-300 justify-center">
+                            <h4 className="text-white font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0">
                                 算法不断学习，答案是动态变化的
                             </h4>
-                            <p className="text-zinc-400 text-[13px] lg:text-[14.5px] xl:text-[16px] leading-relaxed">
+                            <p className="text-zinc-400 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed">
                                 AI 的回答不是一成不变的，随着新数据的加入，它推荐的品牌和引用的内容随时可能发生变化。
                             </p>
                         </div>
 
                         {/* Link between top and bottom in card */}
-                        <div className="shrink-0 flex items-center justify-center my-1.5">
-                            <div className="h-4 w-[1px] border-l border-dashed border-[#004CE5]/40 relative">
+                        <div className="shrink-0 flex items-center justify-center my-2">
+                            <div className="h-5 w-[1px] border-l border-dashed border-[#004CE5]/40 relative">
                                 <div className="absolute bottom-0 -left-[2.5px] w-1.5 h-1.5 rounded-full bg-[#004CE5] shadow-[0_0_6px_rgba(0,76,229,0.8)]"></div>
                             </div>
                         </div>
 
                         {/* White-Hat Strategy block */}
-                        <div className="flex-1 flex flex-col gap-2 bg-[#004CE5]/5 border border-[#004CE5]/25 rounded-xl p-3.5 lg:p-4 hover:bg-[#004CE5]/10 transition-colors duration-300 relative overflow-hidden group-hover:border-[#004CE5]/40">
+                        <div className="flex-1 flex flex-col gap-2 bg-[#004CE5]/5 border border-[#004CE5]/25 rounded-xl p-3.5 lg:p-4 hover:bg-[#004CE5]/10 transition-colors duration-300 relative overflow-hidden group-hover:border-[#004CE5]/40 justify-center">
                             <div className="absolute top-0 right-0 w-20 h-20 bg-[#004CE5]/10 rounded-full blur-xl pointer-events-none"></div>
-                            <div className="flex items-center gap-2 text-[#004CE5] font-extrabold text-[12px] lg:text-[13px] xl:text-[14px] tracking-wider border-b border-[#004CE5]/10 pb-1.5 shrink-0 z-10">
+                            
+                            {/* Simplified Strategy subhead */}
+                            <div className="flex items-center gap-2 text-[#004CE5] font-extrabold text-[12.5px] lg:text-[14px] xl:text-[15.5px] tracking-wider border-b border-[#004CE5]/10 pb-1.5 shrink-0 z-10">
                                 <span className="w-1.5 h-1.5 bg-[#004CE5] rounded-full shadow-[0_0_6px_rgba(0,76,229,0.8)]"></span>
-                                我们的白帽优化应对策略（思路与做法）
+                                我们的应对策略
                             </div>
-                            <h4 className="text-[#004CE5] font-black text-[15px] lg:text-[17px] xl:text-[19px] leading-snug shrink-0 z-10">
+
+                            <h4 className="text-[#004CE5] font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0 z-10">
                                 通过持续的数据监测，进行闭环验证与调整
                             </h4>
-                            <p className="text-zinc-350 text-[13px] lg:text-[14.5px] xl:text-[16px] leading-relaxed z-10">
+                            <p className="text-zinc-200 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed z-10">
                                 文章发出去只是开始。我们会每天监测 AI 到底引用了哪些文章、萨米特排在第几名。根据这些真实反馈，不断调整我们要发什么内容、去哪个平台发。
                             </p>
                         </div>
