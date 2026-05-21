@@ -6,7 +6,7 @@ function Page_GeoKpiAcceptance() {
             <div className="w-full max-w-[1700px] mx-auto flex flex-col flex-1 min-h-0 relative z-10 pt-0 gap-2">
 
                 {/* Header Section */}
-                <div className="text-center shrink-0 mb-0 mt-[-16px]">
+                <div className="text-center shrink-0 mb-1 mt-1">
                     <h1 className="text-[32px] font-extrabold text-white tracking-widest leading-tight">
                         KPI 及验收标准
                     </h1>
@@ -15,75 +15,75 @@ function Page_GeoKpiAcceptance() {
                 {/* Top Section: Current Status Panels */}
                 <div className="grid grid-cols-12 gap-3 shrink-0">
                     {/* Panel 1: Tiles */}
-                    <div className="col-span-4 bg-white/[0.02] backdrop-blur-xl border border-white/[0.06] border-t-2 border-t-[#004CE5] rounded-2xl p-[26px] xl:p-[32px] flex flex-col justify-between gap-3.5 shadow-xl hover:bg-white/[0.03] transition-all duration-300">
+                    <div className="col-span-4 bg-white/[0.02] backdrop-blur-xl border border-white/[0.06] border-t-2 border-t-[#004CE5] rounded-2xl p-[16px] xl:p-[20px] flex flex-col gap-2.5 shadow-xl hover:bg-white/[0.03] transition-all duration-300">
                         <div className="flex items-center justify-between">
-                            <span className="text-[18px] xl:text-[20px] font-bold text-zinc-100 flex items-center gap-2">
+                            <span className="text-[16.5px] xl:text-[18px] font-bold text-zinc-100 flex items-center gap-2">
                                 <span className="w-2 h-4 bg-[#004CE5] rounded-full" />
                                 主要产品（瓷砖）现状：
                             </span>
                         </div>
-                        <div className="flex items-center gap-8 my-1">
+                        <div className="flex items-center gap-6 my-0.5">
                             <div className="flex flex-col">
-                                <span className="text-zinc-400 text-[13.5px] xl:text-[14.5px] font-medium">提及率</span>
-                                <span className="text-[29px] xl:text-[34px] font-extrabold text-[#004CE5] leading-none mt-1">5.8%</span>
+                                <span className="text-zinc-400 text-[12.5px] xl:text-[13.5px] font-medium">提及率</span>
+                                <span className="text-[26px] xl:text-[30px] font-extrabold text-[#004CE5] leading-none mt-0.5">5.8%</span>
                             </div>
-                            <div className="w-px h-10 bg-white/10" />
+                            <div className="w-px h-8 bg-white/10" />
                             <div className="flex flex-col">
-                                <span className="text-zinc-400 text-[13.5px] xl:text-[14.5px] font-medium">平均提及位次</span>
-                                <span className="text-[29px] xl:text-[34px] font-extrabold text-[#004CE5] leading-none mt-1">NO. 8.1</span>
+                                <span className="text-zinc-400 text-[12.5px] xl:text-[13.5px] font-medium">平均提及位次</span>
+                                <span className="text-[26px] xl:text-[30px] font-extrabold text-[#004CE5] leading-none mt-0.5">NO. 8.1</span>
                             </div>
                         </div>
-                        <p className="text-[14.5px] xl:text-[15.8px] text-zinc-300 leading-relaxed">
+                        <p className="text-[13.8px] xl:text-[14.8px] text-zinc-300 leading-relaxed">
                             在核心瓷砖大词下，萨米特陷入了“<strong className="text-white font-semibold">极少被提及、提了也垫底</strong>”的极度弱势局面，在 AI 的基础推荐库中几乎处于全面失声状态。
                         </p>
                     </div>
 
                     {/* Panel 2: Sintered Slabs */}
-                    <div className="col-span-4 bg-white/[0.02] backdrop-blur-xl border border-white/[0.06] border-t-2 border-t-[#004CE5] rounded-2xl p-[26px] xl:p-[32px] flex flex-col justify-between gap-3.5 shadow-xl hover:bg-white/[0.03] transition-all duration-300">
+                    <div className="col-span-4 bg-white/[0.02] backdrop-blur-xl border border-white/[0.06] border-t-2 border-t-[#004CE5] rounded-2xl p-[16px] xl:p-[20px] flex flex-col gap-2.5 shadow-xl hover:bg-white/[0.03] transition-all duration-300">
                         <div className="flex items-center justify-between">
-                            <span className="text-[18px] xl:text-[20px] font-bold text-zinc-100 flex items-center gap-2">
+                            <span className="text-[16.5px] xl:text-[18px] font-bold text-zinc-100 flex items-center gap-2">
                                 <span className="w-2 h-4 bg-[#004CE5] rounded-full" />
                                 新品（岩板）现状：
                             </span>
                         </div>
-                        <div className="flex items-center gap-8 my-1">
+                        <div className="flex items-center gap-6 my-0.5">
                             <div className="flex flex-col">
-                                <span className="text-zinc-400 text-[13.5px] xl:text-[14.5px] font-medium">提及率</span>
-                                <span className="text-[29px] xl:text-[34px] font-extrabold text-[#004CE5] leading-none mt-1">0.0%</span>
+                                <span className="text-zinc-400 text-[12.5px] xl:text-[13.5px] font-medium">提及率</span>
+                                <span className="text-[26px] xl:text-[30px] font-extrabold text-[#004CE5] leading-none mt-0.5">0.0%</span>
                             </div>
-                            <div className="w-px h-10 bg-white/10" />
+                            <div className="w-px h-8 bg-white/10" />
                             <div className="flex flex-col">
-                                <span className="text-zinc-400 text-[13.5px] xl:text-[14.5px] font-medium">平均提及位次</span>
-                                <span className="text-[15.5px] xl:text-[16.5px] font-bold text-zinc-400 leading-tight mt-1.5">（因未被提及而无排名数据）</span>
+                                <span className="text-zinc-400 text-[12.5px] xl:text-[13.5px] font-medium">平均提及位次</span>
+                                <span className="text-[13.5px] xl:text-[14.5px] font-bold text-zinc-400 leading-tight mt-1">（因未被提及而无排名数据）</span>
                             </div>
                         </div>
-                        <p className="text-[14.5px] xl:text-[15.8px] text-zinc-300 leading-relaxed">
+                        <p className="text-[13.8px] xl:text-[14.8px] text-zinc-300 leading-relaxed">
                             萨米特在岩板相关领域的 AI 认知里<strong className="text-white font-semibold">完全为零</strong>，尚未建立起任何有效的品类关联，处于彻底隐形的“流量真空”状态。
                         </p>
                     </div>
 
                     {/* Panel 3: Negative Reviews */}
-                    <div className="col-span-4 bg-white/[0.02] backdrop-blur-xl border border-white/[0.06] border-t-2 border-t-[#004CE5] rounded-2xl p-[26px] xl:p-[32px] flex flex-col justify-between gap-3.5 shadow-xl hover:bg-white/[0.03] transition-all duration-300">
+                    <div className="col-span-4 bg-white/[0.02] backdrop-blur-xl border border-white/[0.06] border-t-2 border-t-[#004CE5] rounded-2xl p-[16px] xl:p-[20px] flex flex-col gap-2.5 shadow-xl hover:bg-white/[0.03] transition-all duration-300">
                         <div className="flex items-center justify-between">
-                            <span className="text-[18px] xl:text-[20px] font-bold text-zinc-100 flex items-center gap-2">
+                            <span className="text-[16.5px] xl:text-[18px] font-bold text-zinc-100 flex items-center gap-2">
                                 <span className="w-2 h-4 bg-[#004CE5] rounded-full" />
                                 负面信息现状：
                             </span>
                         </div>
-                        <div className="flex items-center gap-8 my-1">
+                        <div className="flex items-center gap-6 my-0.5">
                             <div className="flex flex-col">
-                                <span className="text-zinc-400 text-[13.5px] xl:text-[14.5px] font-medium">负面信息比例</span>
-                                <span className="text-[29px] xl:text-[34px] font-extrabold text-[#004CE5] leading-none mt-1">11.7%</span>
+                                <span className="text-zinc-400 text-[12.5px] xl:text-[13.5px] font-medium">负面信息比例</span>
+                                <span className="text-[26px] xl:text-[30px] font-extrabold text-[#004CE5] leading-none mt-0.5">11.7%</span>
                             </div>
                         </div>
-                        <p className="text-[14.5px] xl:text-[15.8px] text-zinc-300 leading-relaxed">
+                        <p className="text-[13.8px] xl:text-[14.8px] text-zinc-300 leading-relaxed">
                             负面信息比例为 <strong className="text-white font-semibold">11.7%</strong>，集中在“<strong className="text-white font-semibold">执行存在差异</strong>”以及“<strong className="text-white font-semibold">质量投诉等问题上</strong>”，并且存在部分的品牌信息 and 产品价格错误。
                         </p>
                     </div>
                 </div>
 
                 {/* Bottom Section: KPI & Acceptance Table */}
-                <div className="w-full bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] rounded-2xl py-[20px] px-[26px] xl:py-[24px] xl:px-[32px] shadow-2xl flex flex-col gap-3.5">
+                <div className="w-full bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] rounded-2xl py-[16px] px-[22px] xl:py-[20px] xl:px-[28px] shadow-2xl flex flex-col gap-2.5">
                     <div className="flex items-center justify-between shrink-0 mb-1 pl-1">
                         <h3 className="text-[19px] xl:text-[21px] font-bold text-white flex items-center gap-2.5">
                             <span className="w-2 h-5 bg-[#004CE5] rounded-full shadow-[0_0_8px_rgba(0,76,229,0.8)]" />
