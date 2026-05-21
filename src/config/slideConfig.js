@@ -30,6 +30,10 @@ import Page_PlatformFilterConclusion from '../pages/Page_PlatformFilterConclusio
 import Page_ArticleTypeAnalysis from '../pages/Page_ArticleTypeAnalysis';
 import Page_ArticleTypeDetails from '../pages/Page_ArticleTypeDetails';
 import Page_ArticleQuantityAnalysis from '../pages/Page_ArticleQuantityAnalysis';
+import Page_KeywordGenerationLogic from '../pages/Page_KeywordGenerationLogic';
+import Page_KeywordTaggingLogic from '../pages/Page_KeywordTaggingLogic';
+import Page_KeywordExpansionLogic from '../pages/Page_KeywordExpansionLogic';
+
 
 // ——— 篇章1: 品牌信息调研 (Pages_Before) ———
 import PB_ProposalNav from '../Pages_Before/Page_ProposalNav';
@@ -77,6 +81,8 @@ import PB_AgentDataFlow from '../Pages_Before/Page_AgentDataFlow';
 import PB_BrandKnowledgeBase from '../Pages_Before/Page_BrandKnowledgeBase';
 import PB_UserReviewAnalysis from '../Pages_Before/Page_UserReviewAnalysis';
 import PB_ArticleDataAnalysis from '../Pages_Before/Page_ArticleDataAnalysis';
+
+import PB_DataImportAnalysis from '../Pages_Before/Page_DataImportAnalysis';
 
 // ——— 篇章4: 阶段性复盘报告 (Pages_Before) ———
 import PB_CampaignDataAnalysis from '../Pages_Before/Page_CampaignDataAnalysis';
@@ -172,9 +178,13 @@ export const slideConfig = [
   { type: 'page', title: '词条分组结论', component: Page_KeywordGroupingConclusion },
 
   { type: 'section', title: '词条推导及确定过程' },
+  { type: 'page', title: '数据导入分析', component: PB_DataImportAnalysis },
+  { type: 'page', title: '词条生成逻辑', component: Page_KeywordGenerationLogic },
+  { type: 'page', title: '词条打标逻辑', component: Page_KeywordTaggingLogic },
+  { type: 'page', title: '词条拓展逻辑', component: Page_KeywordExpansionLogic },
   { type: 'page', title: '词条穷举及清洗', components: [PB_GeoOptKeywordsClassify, PB_GeoOptKeywordsClassify2, PB_GeoOptKeywordsClassify_New, PB_GeoOptKeywordsClassify_New2] },
   { type: 'page', title: '词条分类及拓展', components: [PB_GeoOptKeywordsClassify3, PB_GeoOptKeywordsClassify4] },
-  { type: 'page', title: '词条确定', components: [PB_GeoOptKeywordsCleaning1, PB_GeoOptKeywordsCleaning2, PB_GeoOptKeywordsCleaning3, PB_GeoOptKeywordsCleaning4] },
+  { type: 'page', title: '词条确定', components: [PB_GeoOptKeywordsCleaning1, PB_GeoOptKeywordsCleaning2, PB_GeoOptKeywordsCleaning3] },
 
   // ══════════════════════════════════════════════════════════
   // ——— 篇章2: GEO体检报告 ———
@@ -201,9 +211,9 @@ export const slideConfig = [
 
 
   // ══════════════════════════════════════════════════════════
-  // ——— 篇章4: 执行方案细节阐述 ———
+  // ——— 篇章4: 执行方案细节 ———
   // ══════════════════════════════════════════════════════════
-  { type: 'chapter', title: '执行方案细节阐述', subtitle: 'EXECUTION PLAN DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
+  { type: 'chapter', title: '执行方案细节', subtitle: 'EXECUTION PLAN DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
 
   { type: 'section', title: '品牌数据库建立' },
   { type: 'page', title: '品牌数据库建立', component: Page_BrandDatabaseBuild },

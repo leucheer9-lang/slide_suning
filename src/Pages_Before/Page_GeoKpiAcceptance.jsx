@@ -2,7 +2,7 @@ import React from 'react';
 
 function Page_GeoKpiAcceptance() {
     return (
-        <div className="w-full h-full flex flex-col relative text-white font-sans px-12 sm:px-16 pt-1.5 pb-4 sm:pb-5 overflow-hidden animate-fade-in">
+        <div className="w-full h-full flex flex-col relative text-white font-sans px-12 sm:px-16 pt-1.5 pb-2.5 xl:pb-4 overflow-hidden animate-fade-in">
             <div className="w-full max-w-[1700px] mx-auto flex flex-col flex-1 min-h-0 relative z-10 pt-0 gap-1 xl:gap-1.5">
 
                 {/* Header Section */}
@@ -91,7 +91,7 @@ function Page_GeoKpiAcceptance() {
                 </div>
 
                 {/* Premium Horizontal Divider Line */}
-                <div className="w-full h-px bg-white/[0.08] mt-3 xl:mt-4.5 mb-1.5 xl:mb-2.5" />
+                <div className="w-full h-px bg-white/[0.08] mt-2.5 xl:mt-3 mb-1 xl:mb-2" />
 
                 {/* H3 placed outside the table card, position remains the same in flow */}
                 <div className="flex items-center justify-between shrink-0 pl-1 mt-0">
@@ -102,83 +102,83 @@ function Page_GeoKpiAcceptance() {
                 </div>
 
                 {/* Bottom Section: KPI & Acceptance Table */}
-                <div className="w-full mt-1.5 xl:mt-2 bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] rounded-2xl py-[8px] px-[16px] xl:py-[10px] xl:px-[20px] shadow-2xl flex flex-col gap-1.5 xl:gap-2">
+                <div className="w-full mt-1.5 xl:mt-2 bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] rounded-2xl py-[12px] px-[16px] xl:py-[16px] xl:px-[24px] shadow-2xl flex flex-col gap-2 xl:gap-2.5 flex-1">
 
                     {/* Table wrapper showing the full layout without vertical scrollbar */}
-                    <div className="w-full overflow-x-auto">
-                        <table className="w-full text-left border-collapse min-w-[1000px]">
+                    <div className="w-full overflow-x-auto flex-1 flex flex-col justify-center">
+                        <table className="w-full text-left border-collapse min-w-[1000px] h-full">
                             <thead>
-                                <tr className="border-b border-white/[0.22] text-zinc-300 text-[14.5px] xl:text-[15px] font-bold">
-                                    <th className="pb-1.5 pl-3.5 w-[14%]">词组分类</th>
-                                    <th className="pb-1.5 w-[34%]">运营目标与三阶段演进策略</th>
-                                    <th className="pb-1.5 w-[24%]">阶段性交付标准与 KPI 考核</th>
-                                    <th className="pb-1.5 pr-3.5 w-[28%] pl-5">最终展现权益及交付标准</th>
+                                <tr className="border-b-2 border-white/[0.22] text-zinc-300 text-[15.5px] xl:text-[16.5px] font-black">
+                                    <th className="pb-2.5 pl-4 w-[14%]">词组分类</th>
+                                    <th className="pb-2.5 w-[34%]">运营目标与三阶段演进策略</th>
+                                    <th className="pb-2.5 w-[24%]">阶段性交付标准与 KPI 考核</th>
+                                    <th className="pb-2.5 pr-4 w-[28%] pl-6">最终展现权益及交付标准</th>
                                 </tr>
                             </thead>
-                            <tbody className="text-[14.8px] xl:text-[15.8px] leading-relaxed">
+                            <tbody className="text-[15.5px] xl:text-[16.5px] leading-relaxed">
 
                                 {/* Row 1: Tiles */}
                                 <tr className="hover:bg-white/[0.01] transition-colors duration-200">
-                                    <td className="py-1.5 xl:py-2 pl-3.5 font-semibold text-zinc-100 align-top border-b border-white/[0.22]">
+                                    <td className="py-2 xl:py-3 pl-4 font-semibold text-zinc-100 align-top border-b border-white/[0.22]">
                                         <div className="flex flex-col gap-1">
-                                            <span className="text-[16px] xl:text-[17.5px] text-white font-bold">主要产品词</span>
-                                            <span className="text-[13px] xl:text-[13.8px] text-zinc-400 font-medium">（瓷砖）</span>
+                                            <span className="text-[17px] xl:text-[18.5px] text-white font-extrabold">主要产品词</span>
+                                            <span className="text-[13.5px] xl:text-[14px] text-zinc-400 font-bold">（瓷砖）</span>
                                         </div>
                                     </td>
-                                    <td className="py-1.5 xl:py-2 text-zinc-300 align-top pr-4 border-b border-white/[0.22]">
-                                        <div className="flex flex-col gap-2.5">
+                                    <td className="py-2 xl:py-3 text-zinc-300 align-top pr-4 border-b border-white/[0.22]">
+                                        <div className="flex flex-col gap-2 xl:gap-3">
                                             <div className="flex items-start gap-2">
-                                                <span className="text-[12px] xl:text-[12.8px] font-bold bg-white/10 text-zinc-200 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段一</span>
-                                                <div className="text-[14.8px] xl:text-[15.8px] leading-relaxed">
-                                                    <span className="text-white font-semibold">打地基｜3个月</span>
-                                                    <span className="text-zinc-400 ml-2">提升基础曝光，打破低提及现状</span>
+                                                <span className="text-[12.5px] xl:text-[13.5px] font-black bg-white/10 text-zinc-200 px-2 py-[1.5px] rounded shrink-0 mt-0.5">阶段一</span>
+                                                <div className="text-[15.5px] xl:text-[16.5px] leading-relaxed">
+                                                    <span className="text-white font-black">打地基｜3个月</span>
+                                                    <span className="text-zinc-400 ml-2.5">提升基础曝光，打破低提及现状</span>
                                                 </div>
                                             </div>
                                             <div className="flex items-start gap-2">
-                                                <span className="text-[12px] xl:text-[12.8px] font-bold bg-white/10 text-zinc-200 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段二</span>
-                                                <div className="text-[14.8px] xl:text-[15.8px] leading-relaxed">
-                                                    <span className="text-white font-semibold">稳提升｜6个月</span>
-                                                    <span className="text-zinc-400 ml-2">拉升品牌提及，挤入核心推荐榜</span>
+                                                <span className="text-[12.5px] xl:text-[13.5px] font-black bg-white/10 text-zinc-200 px-2 py-[1.5px] rounded shrink-0 mt-0.5">阶段二</span>
+                                                <div className="text-[15.5px] xl:text-[16.5px] leading-relaxed">
+                                                    <span className="text-white font-black">稳提升｜6个月</span>
+                                                    <span className="text-zinc-400 ml-2.5">拉升品牌提及，挤入核心推荐榜</span>
                                                 </div>
                                             </div>
                                             <div className="flex items-start gap-2">
-                                                <span className="text-[12px] xl:text-[12.8px] font-bold bg-white/10 text-zinc-200 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段三</span>
-                                                <div className="text-[14.8px] xl:text-[15.8px] leading-relaxed">
-                                                    <span className="text-white font-semibold">占高位｜3个月</span>
-                                                    <span className="text-zinc-400 ml-2">稳定核心词条位次，持续压制竞品</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td className="py-1.5 xl:py-2 text-zinc-300 align-top pr-4 border-b border-white/[0.22]">
-                                        <div className="flex flex-col gap-2.5">
-                                            <div className="flex items-start gap-2">
-                                                <span className="text-[12px] xl:text-[12.8px] font-bold bg-[#004CE5]/15 text-[#7ca2ff] border border-[#004CE5]/30 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段一考核</span>
-                                                <div className="text-[14.8px] xl:text-[15.8px] leading-relaxed text-zinc-300">
-                                                    提及率提升至 <strong className="text-white font-bold">33%</strong>，位次提升至 <strong className="text-white font-semibold">6</strong>
-                                                </div>
-                                            </div>
-                                            <div className="flex items-start gap-2">
-                                                <span className="text-[12px] xl:text-[12.8px] font-bold bg-[#004CE5]/15 text-[#7ca2ff] border border-[#004CE5]/30 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段二考核</span>
-                                                <div className="text-[14.8px] xl:text-[15.8px] leading-relaxed text-zinc-300">
-                                                    提及率提升至 <strong className="text-white font-bold">75%</strong>，位次提升至 <strong className="text-white font-semibold">2</strong>
-                                                </div>
-                                            </div>
-                                            <div className="flex items-start gap-2">
-                                                <span className="text-[12px] xl:text-[12.8px] font-bold bg-[#004CE5]/15 text-[#7ca2ff] border border-[#004CE5]/30 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段三考核</span>
-                                                <div className="text-[14.8px] xl:text-[15.8px] leading-relaxed text-zinc-300">
-                                                    提及率提升至 <strong className="text-white font-bold">85%</strong>，位次提升至 <strong className="text-white font-semibold">1.5</strong>
+                                                <span className="text-[12.5px] xl:text-[13.5px] font-black bg-white/10 text-zinc-200 px-2 py-[1.5px] rounded shrink-0 mt-0.5">阶段三</span>
+                                                <div className="text-[15.5px] xl:text-[16.5px] leading-relaxed">
+                                                    <span className="text-white font-black">占高位｜3个月</span>
+                                                    <span className="text-zinc-400 ml-2.5">稳定核心词条位次，持续压制竞品</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </td>
-                                    <td rowSpan={2} className="py-1.5 xl:py-2 text-zinc-300 align-middle pr-3 leading-relaxed border-l border-white/[0.22] pl-5 border-b border-white/[0.22]">
-                                        <div className="flex flex-col gap-1.5 xl:gap-2 bg-[#004CE5]/5 border border-[#004CE5]/15 p-3 xl:p-3.5 rounded-xl">
-                                            <p className="text-zinc-200 text-[14.5px] xl:text-[15.5px]">
-                                                在 <strong className="text-white font-semibold">DeepSeek、豆包、通义千问</strong> 等 AI 平台搜索约定词条时，AI 回答中应出现品牌/产品推荐、推荐理由及基于官方信息的产品表述。
+                                    <td className="py-2 xl:py-3 text-zinc-300 align-top pr-4 border-b border-white/[0.22]">
+                                        <div className="flex flex-col gap-2 xl:gap-3">
+                                            <div className="flex items-start gap-2">
+                                                <span className="text-[12.5px] xl:text-[13.5px] font-black bg-[#004CE5]/20 text-[#8cb1ff] border-2 border-[#004CE5]/40 px-2 py-[1.5px] rounded shrink-0 mt-0.5">阶段一考核</span>
+                                                <div className="text-[15.5px] xl:text-[16.5px] leading-relaxed text-zinc-200">
+                                                    提及率提升至 <strong className="text-white font-black">33%</strong>，位次提升至 <strong className="text-white font-bold">6</strong>
+                                                </div>
+                                            </div>
+                                            <div className="flex items-start gap-2">
+                                                <span className="text-[12.5px] xl:text-[13.5px] font-black bg-[#004CE5]/20 text-[#8cb1ff] border-2 border-[#004CE5]/40 px-2 py-[1.5px] rounded shrink-0 mt-0.5">阶段二考核</span>
+                                                <div className="text-[15.5px] xl:text-[16.5px] leading-relaxed text-zinc-200">
+                                                    提及率提升至 <strong className="text-white font-black">75%</strong>，位次提升至 <strong className="text-white font-bold">2</strong>
+                                                </div>
+                                            </div>
+                                            <div className="flex items-start gap-2">
+                                                <span className="text-[12.5px] xl:text-[13.5px] font-black bg-[#004CE5]/20 text-[#8cb1ff] border-2 border-[#004CE5]/40 px-2 py-[1.5px] rounded shrink-0 mt-0.5">阶段三考核</span>
+                                                <div className="text-[15.5px] xl:text-[16.5px] leading-relaxed text-zinc-200">
+                                                    提及率提升至 <strong className="text-white font-black">85%</strong>，位次提升至 <strong className="text-white font-bold">1.5</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td rowSpan={2} className="py-2 xl:py-3 text-zinc-300 align-middle pr-4 leading-relaxed border-l border-white/[0.22] pl-6 border-b border-white/[0.22]">
+                                        <div className="flex flex-col gap-2 bg-[#004CE5]/5 border border-[#004CE5]/15 p-3 xl:p-4 rounded-xl">
+                                            <p className="text-zinc-150 text-[14.5px] xl:text-[15.5px]">
+                                                在 <strong className="text-white font-bold">DeepSeek、豆包、通义千问</strong> 等 AI 平台搜索约定词条时，AI 回答中应出现品牌/产品推荐、推荐理由及基于官方信息的产品表述。
                                             </p>
-                                            <p className="border-t border-white/10 pt-2.5 text-zinc-400 text-[12.8px] xl:text-[13.8px]">
-                                                本次运营 <strong className="text-white font-semibold">30 条核心词条</strong>（覆盖300种以上延展问法）。因 AI 平台升级及回答随机性等不可控因素，达标不少于 10 条即视为有效交付；低于 10 条的，按未达标比例退款。
+                                            <p className="border-t border-white/10 pt-2.5 text-zinc-400 text-[13px] xl:text-[13.5px]">
+                                                本次运营 <strong className="text-white font-bold">30 条核心词条</strong>（覆盖300种以上延展问法）。因 AI 平台升级及回答随机性等不可控因素，达标不少于 10 条即视为有效交付；低于 10 条的，按未达标比例退款。
                                             </p>
                                         </div>
                                     </td>
@@ -186,55 +186,55 @@ function Page_GeoKpiAcceptance() {
 
                                 {/* Row 2: Sintered Slabs */}
                                 <tr className="hover:bg-white/[0.01] transition-colors duration-200">
-                                    <td className="py-1.5 xl:py-2 pl-3.5 font-semibold text-zinc-100 align-top border-b border-white/[0.22]">
+                                    <td className="py-2 xl:py-3 pl-4 font-semibold text-zinc-100 align-top border-b border-white/[0.22]">
                                         <div className="flex flex-col gap-1">
-                                            <span className="text-[16px] xl:text-[17.5px] text-white font-bold">新品词</span>
-                                            <span className="text-[13px] xl:text-[13.8px] text-zinc-400 font-medium">（岩板）</span>
+                                            <span className="text-[17px] xl:text-[18.5px] text-white font-extrabold">新品词</span>
+                                            <span className="text-[13.5px] xl:text-[14px] text-zinc-400 font-bold">（岩板）</span>
                                         </div>
                                     </td>
-                                    <td className="py-1.5 xl:py-2 text-zinc-300 align-top pr-4 border-b border-white/[0.22]">
-                                        <div className="flex flex-col gap-2.5">
+                                    <td className="py-2 xl:py-3 text-zinc-300 align-top pr-4 border-b border-white/[0.22]">
+                                        <div className="flex flex-col gap-2 xl:gap-3">
                                             <div className="flex items-start gap-2">
-                                                <span className="text-[12px] xl:text-[12.8px] font-bold bg-white/10 text-zinc-200 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段一</span>
-                                                <div className="text-[14.8px] xl:text-[15.8px] leading-relaxed">
-                                                    <span className="text-white font-semibold">打地基｜3个月</span>
-                                                    <span className="text-zinc-400 ml-2">打破 AI 对该品牌 0 推荐的现状</span>
+                                                <span className="text-[12.5px] xl:text-[13.5px] font-black bg-white/10 text-zinc-200 px-2 py-[1.5px] rounded shrink-0 mt-0.5">阶段一</span>
+                                                <div className="text-[15.5px] xl:text-[16.5px] leading-relaxed">
+                                                    <span className="text-white font-black">打地基｜3个月</span>
+                                                    <span className="text-zinc-400 ml-2.5">打破 AI 对该品牌 0 推荐的现状</span>
                                                 </div>
                                             </div>
                                             <div className="flex items-start gap-2">
-                                                <span className="text-[12px] xl:text-[12.8px] font-bold bg-white/10 text-zinc-200 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段二</span>
-                                                <div className="text-[14.8px] xl:text-[15.8px] leading-relaxed">
-                                                    <span className="text-white font-semibold">稳提升｜6个月</span>
-                                                    <span className="text-zinc-400 ml-2">拉升核心业务词提及，稳步入榜</span>
+                                                <span className="text-[12.5px] xl:text-[13.5px] font-black bg-white/10 text-zinc-200 px-2 py-[1.5px] rounded shrink-0 mt-0.5">阶段二</span>
+                                                <div className="text-[15.5px] xl:text-[16.5px] leading-relaxed">
+                                                    <span className="text-white font-black">稳提升｜6个月</span>
+                                                    <span className="text-zinc-400 ml-2.5">拉升核心业务词提及，稳步入榜</span>
                                                 </div>
                                             </div>
                                             <div className="flex items-start gap-2">
-                                                <span className="text-[12px] xl:text-[12.8px] font-bold bg-white/10 text-zinc-200 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段三</span>
-                                                <div className="text-[14.8px] xl:text-[15.8px] leading-relaxed">
-                                                    <span className="text-white font-semibold">占高位｜3个月</span>
-                                                    <span className="text-zinc-400 ml-2">稳定核心词条位次，持续压制竞品</span>
+                                                <span className="text-[12.5px] xl:text-[13.5px] font-black bg-white/10 text-zinc-200 px-2 py-[1.5px] rounded shrink-0 mt-0.5">阶段三</span>
+                                                <div className="text-[15.5px] xl:text-[16.5px] leading-relaxed">
+                                                    <span className="text-white font-black">占高位｜3个月</span>
+                                                    <span className="text-zinc-400 ml-2.5">稳定核心词条位次，持续压制竞品</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </td>
-                                    <td className="py-1.5 xl:py-2 text-zinc-300 align-top pr-4 border-b border-white/[0.22]">
-                                        <div className="flex flex-col gap-2.5">
+                                    <td className="py-2 xl:py-3 text-zinc-300 align-top pr-4 border-b border-white/[0.22]">
+                                        <div className="flex flex-col gap-2 xl:gap-3">
                                             <div className="flex items-start gap-2">
-                                                <span className="text-[12px] xl:text-[12.8px] font-bold bg-[#004CE5]/15 text-[#7ca2ff] border border-[#004CE5]/30 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段一考核</span>
-                                                <div className="text-[14.8px] xl:text-[15.8px] leading-relaxed text-zinc-300">
-                                                    提及率提升至 <strong className="text-white font-bold">20%</strong>，位次提升至 <strong className="text-white font-semibold">8</strong>
+                                                <span className="text-[12.5px] xl:text-[13.5px] font-black bg-[#004CE5]/20 text-[#8cb1ff] border-2 border-[#004CE5]/40 px-2 py-[1.5px] rounded shrink-0 mt-0.5">阶段一考核</span>
+                                                <div className="text-[15.5px] xl:text-[16.5px] leading-relaxed text-zinc-200">
+                                                    提及率提升至 <strong className="text-white font-black">20%</strong>，位次提升至 <strong className="text-white font-bold">8</strong>
                                                 </div>
                                             </div>
                                             <div className="flex items-start gap-2">
-                                                <span className="text-[12px] xl:text-[12.8px] font-bold bg-[#004CE5]/15 text-[#7ca2ff] border border-[#004CE5]/30 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段二考核</span>
-                                                <div className="text-[14.8px] xl:text-[15.8px] leading-relaxed text-zinc-300">
-                                                    提及率提升至 <strong className="text-white font-bold">70%</strong>，位次提升至 <strong className="text-white font-semibold">3</strong>
+                                                <span className="text-[12.5px] xl:text-[13.5px] font-black bg-[#004CE5]/20 text-[#8cb1ff] border-2 border-[#004CE5]/40 px-2 py-[1.5px] rounded shrink-0 mt-0.5">阶段二考核</span>
+                                                <div className="text-[15.5px] xl:text-[16.5px] leading-relaxed text-zinc-200">
+                                                    提及率提升至 <strong className="text-white font-black">70%</strong>，位次提升至 <strong className="text-white font-bold">3</strong>
                                                 </div>
                                             </div>
                                             <div className="flex items-start gap-2">
-                                                <span className="text-[12px] xl:text-[12.8px] font-bold bg-[#004CE5]/15 text-[#7ca2ff] border border-[#004CE5]/30 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段三考核</span>
-                                                <div className="text-[14.8px] xl:text-[15.8px] leading-relaxed text-zinc-300">
-                                                    提及率提升至 <strong className="text-white font-bold">85%</strong>，位次提升至 <strong className="text-white font-semibold">1.5</strong>
+                                                <span className="text-[12.5px] xl:text-[13.5px] font-black bg-[#004CE5]/20 text-[#8cb1ff] border-2 border-[#004CE5]/40 px-2 py-[1.5px] rounded shrink-0 mt-0.5">阶段三考核</span>
+                                                <div className="text-[15.5px] xl:text-[16.5px] leading-relaxed text-zinc-200">
+                                                    提及率提升至 <strong className="text-white font-black">85%</strong>，位次提升至 <strong className="text-white font-bold">1.5</strong>
                                                 </div>
                                             </div>
                                         </div>
@@ -243,44 +243,44 @@ function Page_GeoKpiAcceptance() {
 
                                 {/* Row 3: Negatives & Errors */}
                                 <tr className="hover:bg-white/[0.01] transition-colors duration-200">
-                                    <td className="py-1.5 xl:py-2 pl-3.5 font-semibold text-zinc-100 align-top">
+                                    <td className="py-2 xl:py-3 pl-4 font-semibold text-zinc-100 align-middle">
                                         <div className="flex flex-col gap-1">
-                                            <span className="text-[16px] xl:text-[17.5px] text-white font-bold">品牌词</span>
-                                            <span className="text-[13px] xl:text-[13.8px] text-zinc-400 font-medium">（负面及错误）</span>
+                                            <span className="text-[17px] xl:text-[18.5px] text-white font-extrabold">品牌词</span>
+                                            <span className="text-[13.5px] xl:text-[14px] text-zinc-400 font-bold">（负面及错误）</span>
                                         </div>
                                     </td>
-                                    <td className="py-1.5 xl:py-2 text-zinc-300 align-top pr-4">
-                                        <div className="flex flex-col gap-2.5">
+                                    <td className="py-2 xl:py-3 text-zinc-300 align-middle pr-4">
+                                        <div className="flex flex-col gap-2 xl:gap-3">
                                             <div className="flex items-start gap-2">
-                                                <span className="text-[12px] xl:text-[12.8px] font-bold bg-white/10 text-zinc-200 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段一</span>
-                                                <div className="text-[14.8px] xl:text-[15.8px] leading-relaxed">
-                                                    <span className="text-white font-semibold">查问题｜1个月</span>
-                                                    <span className="text-zinc-400 ml-2">建立错误信息监测，定制针对性策略</span>
+                                                <span className="text-[12.5px] xl:text-[13.5px] font-black bg-white/10 text-zinc-200 px-2 py-[1.5px] rounded shrink-0 mt-0.5">阶段一</span>
+                                                <div className="text-[15.5px] xl:text-[16.5px] leading-relaxed">
+                                                    <span className="text-white font-black">查问题｜1个月</span>
+                                                    <span className="text-zinc-400 ml-2.5">建立错误信息监测，定制针对性策略</span>
                                                 </div>
                                             </div>
                                             <div className="flex items-start gap-2">
-                                                <span className="text-[12px] xl:text-[12.8px] font-bold bg-white/10 text-zinc-200 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段二</span>
-                                                <div className="text-[14.8px] xl:text-[15.8px] leading-relaxed">
-                                                    <span className="text-white font-semibold">解问题｜11个月</span>
-                                                    <span className="text-zinc-400 ml-2">分类处理错误信源，逐步修正异常信息</span>
+                                                <span className="text-[12.5px] xl:text-[13.5px] font-black bg-white/10 text-zinc-200 px-2 py-[1.5px] rounded shrink-0 mt-0.5">阶段二</span>
+                                                <div className="text-[15.5px] xl:text-[16.5px] leading-relaxed">
+                                                    <span className="text-white font-black">解问题｜11个月</span>
+                                                    <span className="text-zinc-400 ml-2.5">分类处理错误信源，逐步修正异常信息</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </td>
-                                    <td className="py-1.5 xl:py-2 text-zinc-300 align-top pr-4">
-                                        <div className="flex flex-col gap-2 font-medium bg-[#004CE5]/5 border border-[#004CE5]/15 p-3 xl:p-3.5 rounded-xl mt-0.5 text-[14.5px] xl:text-[15.5px]">
+                                    <td className="py-2 xl:py-3 text-zinc-300 align-middle pr-4">
+                                        <div className="flex flex-col gap-2 font-medium bg-[#004CE5]/5 border border-[#004CE5]/15 p-3.5 xl:p-4 rounded-xl text-[14.5px] xl:text-[15.5px]">
                                             <p className="text-zinc-200 leading-relaxed">
-                                                针对品牌询问，AI 生成内容的<strong className="text-white font-semibold">核心事实准确率</strong>达到约定标准，<strong className="text-[#7ca2ff] font-semibold">负面信息占比控制在 5% 以内</strong>，正向/中性情绪导向占比稳定在 <strong className="text-white font-semibold">95% 以上</strong>。
+                                                针对品牌询问，AI 生成内容的<strong className="text-white font-bold">核心事实准确率</strong>达到约定标准，<strong className="text-[#8cb1ff] font-bold">负面信息占比控制在 5% 以内</strong>，正向/中性情绪导向占比稳定在 <strong className="text-white font-bold">95% 以上</strong>。
                                             </p>
                                         </div>
                                     </td>
-                                    <td className="py-1.5 xl:py-2 text-zinc-400 align-top pr-3 leading-relaxed border-l border-white/[0.22] pl-5">
-                                        <div className="flex flex-col gap-1.5 xl:gap-2 bg-white/[0.015] border border-white/[0.04] p-3 xl:p-3.5 rounded-xl">
+                                    <td className="py-2 xl:py-3 text-zinc-400 align-middle pr-4 leading-relaxed border-l border-white/[0.22] pl-6">
+                                        <div className="flex flex-col gap-2 bg-white/[0.015] border border-white/[0.04] p-3.5 xl:p-4 rounded-xl">
                                             <p className="text-zinc-200 text-[14.5px] xl:text-[15.5px]">
-                                                服务期内，围绕约定 AI 平台、产品及核心词条，持续监测并纠偏价格错乱、型号混淆、历史价格引用等问题，通过信源定位、官方口径强化和内容覆盖，降低 AI 引用错误价格的概率。
+                                                围绕约定 AI 平台、产品及核心词条，持续监测并纠偏价格错乱、型号混淆、历史价格引用等问题，通过信源定位、官方内容覆盖，降低 AI 引用错误价格的概率。
                                             </p>
-                                            <p className="border-t border-white/10 pt-2.5 text-zinc-400 text-[12.8px] xl:text-[13.8px]">
-                                                因 AI 平台升级、信源变化及回答随机性等不可控因素，项目以<strong className="text-white font-semibold">核心错误压制</strong>、<strong className="text-white font-semibold">正确信息占比提升</strong>作为交付标准。
+                                            <p className="border-t border-white/10 pt-2.5 text-zinc-400 text-[13px] xl:text-[13.5px]">
+                                                因 AI 平台升级、信源变化及回答随机性等不可控因素，项目以<strong className="text-white font-bold">核心错误压制</strong>、<strong className="text-white font-bold">正确信息占比提升</strong>作为交付标准。
                                             </p>
                                         </div>
                                     </td>

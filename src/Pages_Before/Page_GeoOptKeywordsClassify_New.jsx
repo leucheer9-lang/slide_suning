@@ -26,7 +26,7 @@ export default function Page_GeoOptKeywordsClassify_New() {
                         <img
                             src="/charts/geo-opt-keywords-exhaust-clean-new.png"
                             alt="词条穷举及清洗 新增截图"
-                            className="w-full h-full object-contain z-10 relative block mix-blend-screen"
+                            className="w-full h-full object-fill z-10 relative block mix-blend-screen"
                             onError={(e) => {
                                 e.currentTarget.style.display = 'none';
                                 e.currentTarget.nextElementSibling.style.display = 'flex';

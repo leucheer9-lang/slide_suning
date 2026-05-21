@@ -13,7 +13,7 @@ function Page_GeoReportDashboard2() {
 
                 {/* Main Content Area: Side-by-Side aligned Columns */}
                 <div className="flex-grow grid grid-cols-12 gap-6 min-h-0">
-                    
+
                     {/* Left Column: Quantitative Metrics Table */}
                     <div className="col-span-6 flex flex-col min-h-0">
                         <div className="bg-white/[0.03] backdrop-blur-xl border border-[#004CE5]/20 rounded-2xl p-6 shadow-[-10px_0_30px_rgba(0,76,229,0.1)] flex flex-col h-full justify-between">
@@ -50,12 +50,12 @@ function Page_GeoReportDashboard2() {
                                             </td>
                                         </tr>
                                         <tr className="hover:bg-white/[0.02] transition-colors">
-                                            <td className="py-3 px-4 text-[18px] lg:text-[20px] font-bold text-white whitespace-nowrap">行业影响力</td>
+                                            <td className="py-3 px-4 text-[18px] lg:text-[20px] font-bold text-white whitespace-nowrap">行业影响力排名</td>
                                             <td className="py-3 px-4 text-[16px] lg:text-[17px] xl:text-[18px] text-zinc-300 leading-relaxed">
                                                 在AI生态中，各品牌的综合排名。影响力排名越高，说明AI认可度越高。
                                             </td>
                                             <td className="py-3 px-4 text-[16px] lg:text-[17px] xl:text-[18px] text-zinc-100 leading-relaxed">
-                                                <span className="text-blue-400 font-bold">2.3%</span>（几乎从未作为首选品牌被AI推荐给用户）
+                                                <span className="text-blue-400 font-bold">NO.20</span>（几乎从未作为首选品牌被AI推荐给用户）
                                             </td>
                                         </tr>
                                         <tr className="hover:bg-white/[0.02] transition-colors">
@@ -80,7 +80,7 @@ function Page_GeoReportDashboard2() {
                                 <span className="w-1.5 h-4 bg-[#004CE5] rounded-full shadow-[0_0_8px_rgba(0,76,229,0.8)]" />
                                 结合本次数据，萨米特在AI问答里的表现呈现以下特征：
                             </h3>
-                            
+
                             <div className="flex-grow flex flex-col justify-start gap-6 min-h-0 pt-4 lg:pt-6">
                                 {/* Bullet 1 */}
                                 <div className="bg-white/[0.01] hover:bg-white/[0.02] border border-white/5 rounded-xl p-3.5 flex gap-3.5 transition-colors duration-300">
@@ -147,7 +147,7 @@ function Page_GeoReportDashboard2() {
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     );

@@ -25,7 +25,7 @@ export default function Page_GeoOptKeywordsClassify4() {
                         <img
                             src="/charts/geo-opt-keywords-classify-expand-2.png"
                             alt="词条分类及拓展 新增截图"
-                            className="w-full h-full object-contain z-10 relative block mix-blend-screen"
+                            className="w-full h-full object-fill z-10 relative block mix-blend-screen"
                             onError={(e) => {
                                 e.currentTarget.style.display = 'none';
                                 e.currentTarget.nextElementSibling.style.display = 'flex';

@@ -25,7 +25,7 @@ export default function Page_GeoOptKeywordsClassify() {
                         <div className="absolute inset-0 bg-gradient-to-b from-blue-500/5 to-transparent opacity-50 z-0 pointer-events-none transition-opacity group-hover:opacity-100" />
                         <img
                             src="/charts/geo-opt-keywords-exhaust-clean-1.png"          alt="词条穷举及清洗 1"
-                            className="w-full h-full object-contain z-10 relative block mix-blend-screen"
+                            className="w-full h-full object-fill z-10 relative block mix-blend-screen"
                             onError={(e) => {
                                 e.currentTarget.style.display = 'none';
                                 e.currentTarget.nextElementSibling.style.display = 'flex';
