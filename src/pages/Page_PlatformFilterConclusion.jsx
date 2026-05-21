@@ -23,18 +23,18 @@ export default function Page_PlatformFilterConclusion() {
                             A组：共性高频网站 <span className="text-zinc-400 text-[1.05rem]">（5个）</span>
                         </h2>
                         <div className="w-full h-px bg-white/5 my-0 shrink-0"></div>
-                        
+
                         <div className="flex flex-col gap-3 pb-2 pt-1">
                             {[
-                                { name: "新京报", num: "1204", cover: "DeepSeek、文心、腾讯元宝、通义千问" },
-                                { name: "博禾医生", num: "1623", cover: "文心、腾讯元宝、豆包" },
-                                { name: "QQ News", num: "963", cover: "DeepSeek、文心、腾讯元宝" },
-                                { name: "百度知道", num: "2912", cover: "文心、通义千问" },
-                                { name: "今日头条", num: "1422", cover: "豆包、通义千问" }
+                                { name: "太平洋家居", num: "103", cover: "DeepSeek、豆包、通义千问" },
+                                { name: "网易", num: "90", cover: "DeepSeek、豆包、通义千问" },
+                                { name: "今日头条", num: "77", cover: "豆包、通义千问" },
+                                { name: "界面新闻", num: "47", cover: "DeepSeek、通义千问" },
+                                { name: "千龙网", num: "40", cover: "豆包、通义千问" }
                             ].map((item, idx) => (
                                 <div key={idx} className="flex flex-col bg-white/[0.03] px-4 py-3 rounded-xl border border-white/5 transition-colors hover:bg-white/5">
                                     <div className="flex items-center justify-between mb-2">
-                                        <span className="text-white/90 font-bold text-[1.25rem]"><span className="text-zinc-500 mr-2">{idx+1}.</span>{item.name}</span>
+                                        <span className="text-white/90 font-bold text-[1.25rem]"><span className="text-zinc-500 mr-2">{idx + 1}.</span>{item.name}</span>
                                         <span className="text-[#004CE5] font-mono text-[1.15rem] bg-[#004CE5]/10 px-2 py-0.5 rounded font-bold border border-[#004CE5]/20">引用 {item.num} 次</span>
                                     </div>
                                     <div className="text-zinc-400 text-[1.05rem] flex gap-2"><span className="text-zinc-500 shrink-0">模型覆盖:</span> <span className="truncate">{item.cover}</span></div>
@@ -49,17 +49,15 @@ export default function Page_PlatformFilterConclusion() {
                     <div className="relative w-full rounded-2xl bg-white/[0.02] border border-white/10 p-6 flex flex-col gap-4 shadow-2xl h-full">
                         <div className="absolute top-0 left-0 w-1.5 h-full rounded-l-2xl bg-white/20"></div>
                         <h2 className="text-[1.35rem] font-bold text-blue-100 tracking-widest flex items-center justify-between">
-                            B组：差异化特异台 <span className="text-zinc-400 text-[1.05rem]">（5个）</span>
+                            B组：差异化特异平台 <span className="text-zinc-400 text-[1.05rem]">（3个）</span>
                         </h2>
                         <div className="w-full h-px bg-white/5 my-0 shrink-0"></div>
-                        
+
                         <div className="flex flex-col gap-3 pb-2 pt-1">
                             {[
-                                { group: "DeepSeek", items: [ {n:"淘宝网", c:"30"} ] },
-                                { group: "文心", items: [ {n:"哔哩哔哩", c:"46"} ] },
-                                { group: "腾讯元宝", items: [ {n:"京东", c:"69"} ] },
-                                { group: "豆包", items: [ {n:"抖音", c:"129"} ] },
-                                { group: "通义千问", items: [ {n:"夸克", c:"94"} ] }
+                                { group: "DeepSeek", items: [{ n: "中国陶瓷网", c: "26" }] },
+                                { group: "豆包", items: [{ n: "抖音", c: "103" }] },
+                                { group: "通义千问", items: [{ n: "大众网", c: "14" }] }
                             ].map((g, i) => (
                                 <div key={i} className="flex flex-col gap-1.5 bg-white/[0.03] px-4 py-2.5 rounded-xl border border-white/5 transition-colors hover:bg-white/5">
                                     <span className="text-zinc-300 font-bold text-[1.2rem] tracking-wider mb-0.5 px-1">{g.group} 对应极高权重池：</span>
@@ -84,22 +82,22 @@ export default function Page_PlatformFilterConclusion() {
                             <span className="text-zinc-400 text-[1.05rem]">（5个）</span>
                         </div>
                         <div className="w-full h-px bg-white/5 my-0 shrink-0"></div>
-                        
+
                         <div className="flex flex-col gap-2 pb-2 pt-1 relative">
                             {/* Table Header */}
                             <div className="grid grid-cols-[1fr_50px_50px_80px] xl:grid-cols-[1fr_60px_60px_90px] gap-3 xl:gap-4 px-2 py-1 text-zinc-500 font-bold text-[1rem]">
-                                <span>金钙尔奇高优平台</span>
+                                <span>东鹏瓷砖高优平台</span>
                                 <span className="text-right">引用</span>
                                 <span className="text-right">命中</span>
                                 <span className="text-right">胜率</span>
                             </div>
 
                             {[
-                                { n: "中国报告大厅", ref: 16, hit: 16, rate: "100.00%" },
-                                { n: "有来医生", ref: 13, hit: 13, rate: "100.00%" },
-                                { n: "妈妈网", ref: 10, hit: 10, rate: "100.00%" },
-                                { n: "妙手医生", ref: 8, hit: 8, rate: "100.00%" },
-                                { n: "唯品会", ref: 7, hit: 7, rate: "100.00%" }
+                                { n: "淘宝网", ref: 88, hit: 88, rate: "100.00%" },
+                                { n: "房天下", ref: 77, hit: 77, rate: "100.00%" },
+                                { n: "陶城网", ref: 55, hit: 55, rate: "100.00%" },
+                                { n: "sqxww.com", ref: 44, hit: 44, rate: "100.00%" },
+                                { n: "邢台广播电视台", ref: 44, hit: 44, rate: "100.00%" }
                             ].map((item, idx) => (
                                 <div key={idx} className="grid grid-cols-[1fr_50px_50px_80px] xl:grid-cols-[1fr_60px_60px_90px] gap-3 xl:gap-4 items-center bg-white/[0.03] px-3 py-2 rounded-lg border border-white/5 transition-colors hover:bg-white/5">
                                     <span className="text-white/90 font-bold text-[1.1rem] truncate" title={item.n}>{item.n}</span>
@@ -121,7 +119,7 @@ export default function Page_PlatformFilterConclusion() {
                             <div className="flex flex-col gap-2 border-l-2 border-white/20 pl-4 bg-white/[0.02] py-2.5 rounded-r-lg">
                                 <p className="flex items-start text-zinc-300 text-[1.05rem] leading-snug">
                                     <span className="w-1.5 h-1.5 rounded-full bg-white/50 inline-block mt-2 mr-2 shrink-0"></span>
-                                    <span className="flex-1">C组平台是核心竞品（金钙尔奇）在AI引用中命中率最高的媒体/内容平台</span>
+                                    <span className="flex-1">C组平台是核心竞品（东鹏瓷砖）在AI引用中命中率最高的媒体/内容平台</span>
                                 </p>
                                 <p className="flex items-start text-zinc-300 text-[1.05rem] leading-snug">
                                     <span className="w-1.5 h-1.5 rounded-full bg-white/50 inline-block mt-2 mr-2 shrink-0"></span>
@@ -129,7 +127,7 @@ export default function Page_PlatformFilterConclusion() {
                                 </p>
                                 <p className="flex items-start text-zinc-300 text-[1.05rem] leading-snug">
                                     <span className="w-1.5 h-1.5 rounded-full bg-white/50 inline-block mt-2 mr-2 shrink-0"></span>
-                                    <span className="flex-1">高命中率意味着该平台在保健品及补钙领域具备极高的AI信任权重，竞争拦截价值巨大</span>
+                                    <span className="flex-1">高命中率意味着该平台在瓷砖及家居建材领域具备极高的AI信任权重，竞争拦截价值巨大</span>
                                 </p>
                                 <p className="flex items-start text-zinc-500 text-[0.95rem] leading-snug mt-1 border-t border-white/5 pt-3">
                                     <span className="w-1.5 h-1.5 rounded-full bg-zinc-600 inline-block mt-1.5 mr-2 shrink-0"></span>

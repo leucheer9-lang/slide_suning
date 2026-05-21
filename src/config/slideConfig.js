@@ -58,6 +58,7 @@ import PB_GeoReportSources2 from '../Pages_Before/Page_GeoReportSources2';
 import PB_GeoReportSentiment_Pre from '../Pages_Before/Page_GeoReportSentiment_Pre';
 import PB_GeoReportSentiment from '../Pages_Before/Page_GeoReportSentiment';
 import PB_GeoKpiAcceptance from '../Pages_Before/Page_GeoKpiAcceptance';
+import PB_GeoWorkAcceptance from '../Pages_Before/Page_GeoWorkAcceptance';
 
 // ——— 篇章3: GEO优化 (Pages_Before) ———
 import PB_GeoOptKeywords from '../Pages_Before/Page_GeoOptKeywords';
@@ -118,7 +119,13 @@ import Page_IndustryPainPoints from '../pages/Page_IndustryPainPoints';
 import Page_PainPoint1_WordCloud from '../pages/Page_PainPoint1_WordCloud';
 import Page_PainPoint2_Industry from '../pages/Page_PainPoint2_Industry';
 import Page_PainPoint3_Service from '../pages/Page_PainPoint3_Service';
+import Page_PainPoint3_Service_Solution from '../pages/Page_PainPoint3_Service_Solution';
 import Page_PainPoint4_SalesModel from '../pages/Page_PainPoint4_SalesModel';
+import Page_KeywordGroupingBasis from '../pages/Page_KeywordGroupingBasis';
+import Page_KeywordGroupingConclusion from '../pages/Page_KeywordGroupingConclusion';
+import Page_ContentStrategyBacktrack from '../pages/Page_ContentStrategyBacktrack';
+import Page_ContentStrategyDeconstruct from '../pages/Page_ContentStrategyDeconstruct';
+import Page_ContentStrategyDemo from '../pages/Page_ContentStrategyDemo';
 
 export const slideConfig = [
   // ——— 封面 & 目录 ———
@@ -156,13 +163,17 @@ export const slideConfig = [
   { type: 'page', title: '建陶行业GEO难点解析', component: Page_IndustryPainPoints },
   { type: 'page', title: '产品线繁杂、目标词难以集中', component: Page_PainPoint1_WordCloud },
   { type: 'page', title: '行业认知度极低、竞争非常激烈', component: Page_PainPoint2_Industry },
-  { type: 'page', title: '极度依赖安装水平和售后服务', component: Page_PainPoint3_Service },
+  { type: 'page', title: '极度依赖安装水平和售后服务', components: [Page_PainPoint3_Service, Page_PainPoint3_Service_Solution] },
   { type: 'page', title: '销售模式大多为经销商体系，信息错乱', component: Page_PainPoint4_SalesModel },
 
   { type: 'section', title: '词条策略' },
-  // { type: 'page', title: '词条穷举及清洗', components: [PB_GeoOptKeywordsClassify, PB_GeoOptKeywordsClassify2, PB_GeoOptKeywordsClassify_New, PB_GeoOptKeywordsClassify_New2] },
-  // { type: 'page', title: '词条分类及拓展', components: [PB_GeoOptKeywordsClassify3, PB_GeoOptKeywordsClassify4] },
-  // { type: 'page', title: '词条确定', components: [PB_GeoOptKeywordsCleaning1, PB_GeoOptKeywordsCleaning2, PB_GeoOptKeywordsCleaning3, PB_GeoOptKeywordsCleaning4] },
+  { type: 'page', title: '词条分组依据', component: Page_KeywordGroupingBasis },
+  { type: 'page', title: '词条分组结论', component: Page_KeywordGroupingConclusion },
+
+  { type: 'section', title: '词条推导及确定过程' },
+  { type: 'page', title: '词条穷举及清洗', components: [PB_GeoOptKeywordsClassify, PB_GeoOptKeywordsClassify2, PB_GeoOptKeywordsClassify_New, PB_GeoOptKeywordsClassify_New2] },
+  { type: 'page', title: '词条分类及拓展', components: [PB_GeoOptKeywordsClassify3, PB_GeoOptKeywordsClassify4] },
+  { type: 'page', title: '词条确定', components: [PB_GeoOptKeywordsCleaning1, PB_GeoOptKeywordsCleaning2, PB_GeoOptKeywordsCleaning3, PB_GeoOptKeywordsCleaning4] },
 
   // ══════════════════════════════════════════════════════════
   // ——— 篇章2: GEO体检报告 ———
@@ -184,7 +195,8 @@ export const slideConfig = [
   { type: 'chapter', title: 'KPI及验收标准', subtitle: 'KPI & ACCEPTANCE CRITERIA', backgroundImage: '/proposal-chapters/proposal-chapter-cover-04.jpg' },
 
   { type: 'section', title: 'KPI及验收标准' },
-  { type: 'page', title: '品牌现状与KPI设定', component: PB_GeoKpiAcceptance },
+  { type: 'page', title: '品牌现状与KPI', component: PB_GeoKpiAcceptance },
+  { type: 'page', title: '工作内容与预期效果', component: PB_GeoWorkAcceptance },
 
 
   // ══════════════════════════════════════════════════════════
@@ -192,23 +204,29 @@ export const slideConfig = [
   // ══════════════════════════════════════════════════════════
   { type: 'chapter', title: '执行方案细节阐述', subtitle: 'EXECUTION PLAN DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
 
-  { type: 'section', title: '投放平台量化分析' },
+  { type: 'section', title: '品牌数据库建立' },
+
+  { type: 'section', title: '内容策略' },
+  { type: 'page', title: '内容策略', components: [Page_ContentStrategyBacktrack, Page_ContentStrategyDeconstruct, Page_ContentStrategyDemo] },
+
+  { type: 'section', title: '投放策略' },
   { type: 'page', title: '筛选逻辑总览', component: Page_PlatformFilterIntro },
   { type: 'page', title: '筛选过程', components: [Page_PlatformFilterLogic, Page_PlatformFilterLogicB, Page_PlatformFilterLogicC] },
   { type: 'page', title: '筛选结论', component: Page_PlatformFilterConclusion },
+  { type: 'page', title: '按权分发', component: Page_DeliveryStrategy_Combo },
 
-  { type: 'section', title: '投放文章量化分析' },
-  { type: 'page', title: '投放文章类型', components: [Page_ArticleTypeAnalysis, Page_ArticleTypeDetails] },
-  { type: 'page', title: '投放文章数量', component: Page_ArticleQuantityAnalysis },
+  // { type: 'section', title: '投放文章量化分析' },
+  // { type: 'page', title: '投放文章类型', components: [Page_ArticleTypeAnalysis, Page_ArticleTypeDetails] },
+  // { type: 'page', title: '投放文章数量', component: Page_ArticleQuantityAnalysis },
 
-  { type: 'section', title: 'GEO战略规划' },
-  { type: 'page', title: '三个板块介绍', components: [Page_SectionCore, Page_SectionBroad, Page_SectionExclusive] },
-  { type: 'page', title: '总结', component: Page_SectionSummary },
+  // { type: 'section', title: 'GEO战略规划' },
+  // { type: 'page', title: '三个板块介绍', components: [Page_SectionCore, Page_SectionBroad, Page_SectionExclusive] },
+  // { type: 'page', title: '总结', component: Page_SectionSummary },
 
-  { type: 'section', title: '综合大词如何执行' },
-  { type: 'page', title: '金钙尔奇和迪巧 SWOT 分析', components: [Page_SWOTAnalysis, Page_SWOTAnalysisFotile, Page_SWOTStrategy] },
-  { type: 'page', title: '两个内容策略', components: [Page_ArticleDataAnalysisHisense, Page_ArticleGenerationDemo, Page_ArticleDataAnalysisStrategy2, Page_ArticleGenerationDemo2, Page_ArticleGenerationDemo3] },
-  { type: 'page', title: '两个投放策略', components: [Page_DeliveryStrategy_Combo, Page_DeliveryStrategy_Platform] },
+  // { type: 'section', title: '综合大词如何执行' },
+  // { type: 'page', title: '金钙尔奇和迪巧 SWOT 分析', components: [Page_SWOTAnalysis, Page_SWOTAnalysisFotile, Page_SWOTStrategy] },
+  // { type: 'page', title: '两个内容策略', components: [Page_ArticleDataAnalysisHisense, Page_ArticleGenerationDemo, Page_ArticleDataAnalysisStrategy2, Page_ArticleGenerationDemo2, Page_ArticleGenerationDemo3] },
+  // { type: 'page', title: '两个投放策略', components: [Page_DeliveryStrategy_Combo, Page_DeliveryStrategy_Platform] },
 
 
 ];

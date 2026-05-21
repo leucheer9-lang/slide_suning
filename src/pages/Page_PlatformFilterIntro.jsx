@@ -11,37 +11,16 @@ export default function Page_PlatformFilterIntro() {
             textColor: 'text-blue-100',
             numColor: 'text-white/30',
             data: [
-                { rank: 1, site: '淘宝网', count: 30 },
-                { rank: 2, site: '中国发展网', count: 23 },
-                { rank: 3, site: '中国医药信息查询平台', count: 21 },
-                { rank: 4, site: 'QQ News', count: 16 },
-                { rank: 5, site: 'www.baheal.cn', count: 15 },
-                { rank: 6, site: '新京报', count: 15 },
-                { rank: 7, site: '家庭医生在线', count: 14 },
-                { rank: 8, site: '新华网', count: 13 },
-                { rank: 9, site: 'www.foodaily.com', count: 9 },
-                { rank: 10, site: 'peopledailyhealth.com', count: 9 }
-            ]
-        },
-        {
-            id: 'yuanbao',
-            name: '腾讯元宝',
-            file: 'platform-yuanbao.png',
-            color: 'from-[#004CE5]/10',
-            borderColor: 'border-[#004CE5]/20',
-            textColor: 'text-blue-100',
-            numColor: 'text-white/30',
-            data: [
-                { rank: 1, site: 'QQ News', count: 75 },
-                { rank: 2, site: '京东', count: 69 },
-                { rank: 3, site: '新京报', count: 32 },
-                { rank: 4, site: '博禾医生', count: 30 },
-                { rank: 5, site: '中国医药信息查询平台', count: 29 },
-                { rank: 6, site: '复禾健康', count: 26 },
-                { rank: 7, site: '买购网', count: 24 },
-                { rank: 8, site: '淘宝网', count: 23 },
-                { rank: 9, site: '99健康网', count: 22 },
-                { rank: 10, site: '民福康', count: 22 }
+                { rank: 1, site: '太平洋家居', count: 63 },
+                { rank: 2, site: '中国陶瓷网', count: 26 },
+                { rank: 3, site: '网易', count: 14 },
+                { rank: 4, site: '名雕装饰', count: 9 },
+                { rank: 5, site: '百度知道', count: 9 },
+                { rank: 6, site: '界面新闻', count: 6 },
+                { rank: 7, site: '淘宝网', count: 6 },
+                { rank: 8, site: '津云', count: 6 },
+                { rank: 9, site: '房天下', count: 5 },
+                { rank: 10, site: 'sqxww.com', count: 4 }
             ]
         },
         {
@@ -53,16 +32,16 @@ export default function Page_PlatformFilterIntro() {
             textColor: 'text-blue-100',
             numColor: 'text-white/30',
             data: [
-                { rank: 1, site: '今日头条', count: 131 },
-                { rank: 2, site: '抖音', count: 129 },
-                { rank: 3, site: '什么值得买社区频道', count: 70 },
-                { rank: 4, site: '搜狐网', count: 45 },
-                { rank: 5, site: '博禾医生', count: 33 },
-                { rank: 6, site: '买购网', count: 23 },
-                { rank: 7, site: '网易', count: 17 },
-                { rank: 8, site: '太原新闻网', count: 16 },
-                { rank: 9, site: '廊坊新闻网', count: 14 },
-                { rank: 10, site: '排行榜123网', count: 14 }
+                { rank: 1, site: '抖音', count: 103 },
+                { rank: 2, site: '今日头条', count: 67 },
+                { rank: 3, site: '搜狐网', count: 15 },
+                { rank: 4, site: '买购网', count: 15 },
+                { rank: 5, site: '太平洋家居', count: 15 },
+                { rank: 6, site: '网易', count: 14 },
+                { rank: 7, site: '土巴兔装修网', count: 13 },
+                { rank: 8, site: '新浪新闻', count: 10 },
+                { rank: 9, site: '千龙网', count: 8 },
+                { rank: 10, site: '佛山市禅城区陶瓷行业协会', count: 6 }
             ]
         },
         {
@@ -74,16 +53,16 @@ export default function Page_PlatformFilterIntro() {
             textColor: 'text-blue-100',
             numColor: 'text-white/30',
             data: [
-                { rank: 1, site: '夸克', count: 94 },
-                { rank: 2, site: '新京报', count: 69 },
-                { rank: 3, site: '哔哩哔哩', count: 40 },
-                { rank: 4, site: '什么值得买社区频道', count: 28 },
-                { rank: 5, site: '39健康网', count: 21 },
-                { rank: 6, site: '十大品牌网CNPP', count: 13 },
-                { rank: 7, site: '今日头条', count: 11 },
-                { rank: 8, site: '舜网', count: 10 },
-                { rank: 9, site: '百度知道', count: 8 },
-                { rank: 10, site: '搜狐网', count: 8 }
+                { rank: 1, site: '网易', count: 62 },
+                { rank: 2, site: '界面新闻', count: 41 },
+                { rank: 3, site: '千龙网', count: 32 },
+                { rank: 4, site: '太平洋家居', count: 25 },
+                { rank: 5, site: '大众网', count: 14 },
+                { rank: 6, site: '新京报', count: 12 },
+                { rank: 7, site: '中国陶瓷网', count: 10 },
+                { rank: 8, site: '今日头条', count: 10 },
+                { rank: 9, site: '搜狐网', count: 9 },
+                { rank: 10, site: '咸宁新闻网', count: 8 }
             ]
         }
     ];
@@ -95,7 +74,7 @@ export default function Page_PlatformFilterIntro() {
             <div className="w-full flex-col items-center justify-center text-center pt-2 pb-6 shrink-0">
                 <h1 className="text-4xl font-bold text-white tracking-widest mb-3">投放平台筛选</h1>
                 <p className="text-zinc-400 text-[1.1rem] font-medium tracking-wide">
-                    通过解构四大主流 AI 平台的信源特征与竞品数据，量化推导三大核心阵地
+                    通过解构三大主流 AI 平台的信源特征与竞品数据，量化推导三大核心阵地
                 </p>
             </div>
 
@@ -121,31 +100,31 @@ export default function Page_PlatformFilterIntro() {
                     </div>
                 </div>
 
-                {/* Bottom: 4 Tables Horizontal */}
-                <div className="w-full flex-1 grid grid-cols-4 gap-4 min-h-0">
+                {/* Bottom: 3 Tables Horizontal */}
+                <div className="w-full flex-1 grid grid-cols-3 gap-4 min-h-0">
                     {platformData.map((platform, idx) => (
                         <div key={idx} className={`flex flex-col bg-white/[0.02] backdrop-blur-md border ${platform.borderColor} rounded-xl overflow-hidden shadow-lg h-full`}>
                             
                             {/* Header */}
-                            <div className={`px-4 py-2.5 bg-gradient-to-r ${platform.color} to-transparent border-b ${platform.borderColor} flex items-center gap-2 shrink-0`}>
-                                <img src={`/proposal-platforms/${platform.file}`} alt={platform.name} className="w-5 h-5 object-contain rounded" onError={(e) => { e.target.style.display = 'none'; }} />
-                                <h2 className={`text-[1.05rem] font-bold ${platform.textColor} tracking-widest`}>{platform.name}</h2>
+                            <div className={`px-4 py-2.5 bg-gradient-to-r ${platform.color} to-transparent border-b ${platform.borderColor} flex items-center gap-2.5 shrink-0`}>
+                                <img src={`/proposal-platforms/${platform.file}`} alt={platform.name} className="w-6 h-6 object-contain rounded" onError={(e) => { e.target.style.display = 'none'; }} />
+                                <h2 className={`text-[1.2rem] xl:text-[1.3rem] font-bold ${platform.textColor} tracking-widest`}>{platform.name}</h2>
                             </div>
                             
                             {/* Column Headers */}
                             <div className="flex items-center px-4 py-2 border-b border-white/5 bg-white/[0.01] shrink-0">
-                                <span className="w-10 text-center text-[0.9rem] text-zinc-500 font-bold shrink-0">排名</span>
-                                <span className="flex-1 ml-2 text-[0.9rem] text-zinc-500 font-bold">网站名称</span>
-                                <span className="text-[0.9rem] text-zinc-500 font-bold text-right w-16 shrink-0">引用次数</span>
+                                <span className="w-10 text-center text-[1rem] xl:text-[1.1rem] text-zinc-500 font-bold shrink-0">排名</span>
+                                <span className="flex-1 ml-2 text-[1rem] xl:text-[1.1rem] text-zinc-500 font-bold">网站名称</span>
+                                <span className="text-[1rem] xl:text-[1.1rem] text-zinc-500 font-bold text-right w-24 shrink-0">引用次数</span>
                             </div>
 
                             {/* List */}
                             <div className="flex flex-col flex-1 justify-around px-3 pt-2 pb-3 gap-0 overflow-hidden" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
                                 {platform.data.map((item, i) => (
                                     <div key={i} className="flex items-center py-1 px-1 rounded hover:bg-white/5 transition-colors group">
-                                        <span className={`font-mono text-[0.95rem] w-10 text-center shrink-0 ${platform.numColor} font-bold group-hover:text-white transition-colors`}>{item.rank}</span>
-                                        <span className="text-white/85 text-[0.95rem] flex-1 ml-2 truncate leading-tight group-hover:text-white transition-colors">{item.site}</span>
-                                        <span className="text-white/60 font-mono text-[0.95rem] text-right w-16 shrink-0 leading-tight group-hover:text-white/90">{item.count}</span>
+                                        <span className={`font-mono text-[1.05rem] xl:text-[1.15rem] w-10 text-center shrink-0 ${platform.numColor} font-bold group-hover:text-white transition-colors`}>{item.rank}</span>
+                                        <span className="text-white/85 text-[1.05rem] xl:text-[1.15rem] flex-1 ml-2 truncate leading-tight group-hover:text-white transition-colors">{item.site}</span>
+                                        <span className="text-white/60 font-mono text-[1.05rem] xl:text-[1.15rem] text-right w-24 shrink-0 leading-tight group-hover:text-white/90">{item.count}</span>
                                     </div>
                                 ))}
                             </div>

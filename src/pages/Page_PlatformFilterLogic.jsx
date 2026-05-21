@@ -23,7 +23,7 @@ export default function Page_PlatformFilterLogic() {
                         <div className="flex flex-col gap-2 border-l border-white/10 pl-8">
                             <span className="text-zinc-500 font-bold text-[1.05rem] uppercase tracking-wider">筛选逻辑动作</span>
                             <p className="text-zinc-300 text-[1.15rem] leading-relaxed mt-1">
-                                查询四个 AI 平台引用来源中出现得最多的前 10 个网站，对其进行交叉合并统计，筛选出前 5 个共性高频引用网站（即所有平台赋予权重均较高的核心阵地）。
+                                查询三个 AI 平台引用来源中出现得最多的前 10 个网站，对其进行交叉合并统计，筛选出前 5 个共性高频引用网站（即所有平台赋予权重均较高的核心阵地）。
                             </p>
                         </div>
                     </div>

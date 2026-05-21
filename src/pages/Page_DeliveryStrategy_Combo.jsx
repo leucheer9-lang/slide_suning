@@ -8,9 +8,9 @@ export default function Page_DeliveryStrategy_Combo() {
             </div>
 
             <div className="relative z-20 w-full flex flex-col items-center mt-6 lg:mt-8 flex-shrink-0">
-                <h1 className="text-3xl lg:text-4xl font-bold tracking-tight text-white mb-3">媒体矩阵分配</h1>
-                <p className="text-[1.1rem] lg:text-[1.2rem] text-rose-400 font-medium tracking-wide">
-                    根据营销链路与内容属性精细化分配矩阵资源
+                <h1 className="text-3xl lg:text-4xl font-bold tracking-tight text-white mb-3">按权分发</h1>
+                <p className="text-[1.1rem] lg:text-[1.2rem] text-rose-400 font-medium tracking-wide max-w-[1200px] text-center px-4 leading-relaxed">
+                    杜绝单一平台依赖风险，我们将基于大模型引用分布的健康度要求，按照黄金比例进行全网矩阵式投放。根据前期锁定的平台引用率，按比例分配投放资源。
                 </p>
             </div>
 
@@ -27,7 +27,7 @@ export default function Page_DeliveryStrategy_Combo() {
                             <span className="text-3xl lg:text-4xl font-bold text-zinc-500 ml-2 mb-3">%</span>
                         </div>
                         <h3 className="text-xl lg:text-2.5xl font-bold text-white mb-4 pt-5 border-t border-white/10 group-hover:border-orange-500/50 transition-colors leading-snug">小众专业垂直媒体</h3>
-                        <p className="text-[1.05rem] lg:text-[1.15rem] font-medium text-orange-300 mb-6 tracking-wide leading-relaxed">博禾医生、妙手医生、妈妈网、有来医生、买购网</p>
+                        <p className="text-[1.05rem] lg:text-[1.15rem] font-medium text-orange-300 mb-6 tracking-wide leading-relaxed">太平洋家居、中国陶瓷网、陶城网、土巴兔装修网、买购网</p>
                         <p className="text-[1.12rem] lg:text-[1.25rem] xl:text-[1.3rem] text-zinc-400 leading-relaxed font-light text-justify">
                             <strong className="text-zinc-300 font-medium tracking-wide">深度种草与口碑渗透。</strong>通过专业视角的长图文或深度测评，建立品牌技术壁垒与专业形象，精准触达高意向核心用户，以高信度、高密度的干货内容强力影响最终决策。
                         </p>
@@ -43,7 +43,7 @@ export default function Page_DeliveryStrategy_Combo() {
                             <span className="text-3xl lg:text-4xl font-bold text-zinc-500 ml-2 mb-3">%</span>
                         </div>
                         <h3 className="text-xl lg:text-2.5xl font-bold text-white mb-4 pt-5 border-t border-white/10 group-hover:border-blue-500/50 transition-colors leading-snug">主流媒体平台</h3>
-                        <p className="text-[1.05rem] lg:text-[1.15rem] font-medium text-blue-300 mb-6 tracking-wide leading-relaxed">百度知道、今日头条、QQ News、淘宝网</p>
+                        <p className="text-[1.05rem] lg:text-[1.15rem] font-medium text-blue-300 mb-6 tracking-wide leading-relaxed">今日头条、百度知道、淘宝网</p>
                         <p className="text-[1.12rem] lg:text-[1.25rem] xl:text-[1.3rem] text-zinc-400 leading-relaxed font-light text-justify">
                             <strong className="text-zinc-300 font-medium tracking-wide">话题势能放大与泛人群覆盖。</strong>聚焦核心卖点，利用可视化短视频与场景化图文笔记，打造矩阵式爆款话题，提升品牌全域声量，实现目标圈层的高效破圈与认知普及。
                         </p>

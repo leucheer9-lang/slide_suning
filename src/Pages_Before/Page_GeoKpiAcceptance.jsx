@@ -2,27 +2,35 @@ import React from 'react';
 
 function Page_GeoKpiAcceptance() {
     return (
-        <div className="w-full h-full flex flex-col relative text-white font-sans px-12 sm:px-16 pt-2 pb-2 overflow-hidden animate-fade-in">
-            <div className="w-full max-w-[1700px] mx-auto flex flex-col flex-1 min-h-0 relative z-10 pt-0 gap-2">
+        <div className="w-full h-full flex flex-col relative text-white font-sans px-12 sm:px-16 pt-1.5 pb-4 sm:pb-5 overflow-hidden animate-fade-in">
+            <div className="w-full max-w-[1700px] mx-auto flex flex-col flex-1 min-h-0 relative z-10 pt-0 gap-1 xl:gap-1.5">
 
                 {/* Header Section */}
-                <div className="text-center shrink-0 mb-1 mt-1">
+                <div className="text-center shrink-0 mb-0 mt-0">
                     <h1 className="text-[32px] font-extrabold text-white tracking-widest leading-tight">
                         KPI 及验收标准
                     </h1>
                 </div>
 
+                {/* H3 for Brand Current Status */}
+                <div className="flex items-center justify-between shrink-0 pl-1 mt-1.5 xl:mt-2.5">
+                    <h3 className="text-[17.5px] xl:text-[19px] font-bold text-white flex items-center gap-2.5">
+                        <span className="w-2 h-5 bg-[#004CE5] rounded-full shadow-[0_0_8px_rgba(0,76,229,0.8)]" />
+                        品牌当前现状
+                    </h3>
+                </div>
+
                 {/* Top Section: Current Status Panels */}
-                <div className="grid grid-cols-12 gap-3 shrink-0">
+                <div className="grid grid-cols-12 gap-2.5 shrink-0 mt-1 xl:mt-2">
                     {/* Panel 1: Tiles */}
-                    <div className="col-span-4 bg-white/[0.02] backdrop-blur-xl border border-white/[0.06] border-t-2 border-t-[#004CE5] rounded-2xl p-[16px] xl:p-[20px] flex flex-col gap-2.5 shadow-xl hover:bg-white/[0.03] transition-all duration-300">
+                    <div className="col-span-4 bg-white/[0.02] backdrop-blur-xl border border-white/[0.06] border-t-2 border-t-[#004CE5] rounded-2xl py-2.5 px-4 xl:py-[14px] xl:px-[20px] flex flex-col gap-1.5 xl:gap-2 shadow-xl hover:bg-white/[0.03] transition-all duration-300">
                         <div className="flex items-center justify-between">
                             <span className="text-[16.5px] xl:text-[18px] font-bold text-zinc-100 flex items-center gap-2">
                                 <span className="w-2 h-4 bg-[#004CE5] rounded-full" />
                                 主要产品（瓷砖）现状：
                             </span>
                         </div>
-                        <div className="flex items-center gap-6 my-0.5">
+                        <div className="flex items-center gap-6 my-0">
                             <div className="flex flex-col">
                                 <span className="text-zinc-400 text-[12.5px] xl:text-[13.5px] font-medium">提及率</span>
                                 <span className="text-[26px] xl:text-[30px] font-extrabold text-[#004CE5] leading-none mt-0.5">5.8%</span>
@@ -39,14 +47,14 @@ function Page_GeoKpiAcceptance() {
                     </div>
 
                     {/* Panel 2: Sintered Slabs */}
-                    <div className="col-span-4 bg-white/[0.02] backdrop-blur-xl border border-white/[0.06] border-t-2 border-t-[#004CE5] rounded-2xl p-[16px] xl:p-[20px] flex flex-col gap-2.5 shadow-xl hover:bg-white/[0.03] transition-all duration-300">
+                    <div className="col-span-4 bg-white/[0.02] backdrop-blur-xl border border-white/[0.06] border-t-2 border-t-[#004CE5] rounded-2xl py-2.5 px-4 xl:py-[14px] xl:px-[20px] flex flex-col gap-1.5 xl:gap-2 shadow-xl hover:bg-white/[0.03] transition-all duration-300">
                         <div className="flex items-center justify-between">
                             <span className="text-[16.5px] xl:text-[18px] font-bold text-zinc-100 flex items-center gap-2">
                                 <span className="w-2 h-4 bg-[#004CE5] rounded-full" />
                                 新品（岩板）现状：
                             </span>
                         </div>
-                        <div className="flex items-center gap-6 my-0.5">
+                        <div className="flex items-center gap-6 my-0">
                             <div className="flex flex-col">
                                 <span className="text-zinc-400 text-[12.5px] xl:text-[13.5px] font-medium">提及率</span>
                                 <span className="text-[26px] xl:text-[30px] font-extrabold text-[#004CE5] leading-none mt-0.5">0.0%</span>
@@ -63,56 +71,61 @@ function Page_GeoKpiAcceptance() {
                     </div>
 
                     {/* Panel 3: Negative Reviews */}
-                    <div className="col-span-4 bg-white/[0.02] backdrop-blur-xl border border-white/[0.06] border-t-2 border-t-[#004CE5] rounded-2xl p-[16px] xl:p-[20px] flex flex-col gap-2.5 shadow-xl hover:bg-white/[0.03] transition-all duration-300">
+                    <div className="col-span-4 bg-white/[0.02] backdrop-blur-xl border border-white/[0.06] border-t-2 border-t-[#004CE5] rounded-2xl py-2.5 px-4 xl:py-[14px] xl:px-[20px] flex flex-col gap-1.5 xl:gap-2 shadow-xl hover:bg-white/[0.03] transition-all duration-300">
                         <div className="flex items-center justify-between">
                             <span className="text-[16.5px] xl:text-[18px] font-bold text-zinc-100 flex items-center gap-2">
                                 <span className="w-2 h-4 bg-[#004CE5] rounded-full" />
                                 负面信息现状：
                             </span>
                         </div>
-                        <div className="flex items-center gap-6 my-0.5">
+                        <div className="flex items-center gap-6 my-0">
                             <div className="flex flex-col">
                                 <span className="text-zinc-400 text-[12.5px] xl:text-[13.5px] font-medium">负面信息比例</span>
                                 <span className="text-[26px] xl:text-[30px] font-extrabold text-[#004CE5] leading-none mt-0.5">11.7%</span>
                             </div>
                         </div>
                         <p className="text-[13.8px] xl:text-[14.8px] text-zinc-300 leading-relaxed">
-                            负面信息比例为 <strong className="text-white font-semibold">11.7%</strong>，集中在“<strong className="text-white font-semibold">执行存在差异</strong>”以及“<strong className="text-white font-semibold">质量投诉等问题上</strong>”，并且存在部分的品牌信息 and 产品价格错误。
+                            负面信息比例为 <strong className="text-white font-semibold">11.7%</strong>，集中在“<strong className="text-white font-semibold">执行存在差异</strong>”以及“<strong className="text-white font-semibold">质量投诉等问题上</strong>”，并且存在部分的品牌信息和产品价格错误。
                         </p>
                     </div>
                 </div>
 
+                {/* Premium Horizontal Divider Line */}
+                <div className="w-full h-px bg-white/[0.08] mt-3 xl:mt-4.5 mb-1.5 xl:mb-2.5" />
+
+                {/* H3 placed outside the table card, position remains the same in flow */}
+                <div className="flex items-center justify-between shrink-0 pl-1 mt-0">
+                    <h3 className="text-[17.5px] xl:text-[19px] font-bold text-white flex items-center gap-2.5">
+                        <span className="w-2 h-5 bg-[#004CE5] rounded-full shadow-[0_0_8px_rgba(0,76,229,0.8)]" />
+                        KPI与交付标准
+                    </h3>
+                </div>
+
                 {/* Bottom Section: KPI & Acceptance Table */}
-                <div className="w-full bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] rounded-2xl py-[16px] px-[22px] xl:py-[20px] xl:px-[28px] shadow-2xl flex flex-col gap-2.5">
-                    <div className="flex items-center justify-between shrink-0 mb-1 pl-1">
-                        <h3 className="text-[19px] xl:text-[21px] font-bold text-white flex items-center gap-2.5">
-                            <span className="w-2 h-5 bg-[#004CE5] rounded-full shadow-[0_0_8px_rgba(0,76,229,0.8)]" />
-                            运营目标与交付标准制定 (KPI & ACCEPTANCE STANDARDS)
-                        </h3>
-                    </div>
+                <div className="w-full mt-1.5 xl:mt-2 bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] rounded-2xl py-[8px] px-[16px] xl:py-[10px] xl:px-[20px] shadow-2xl flex flex-col gap-1.5 xl:gap-2">
 
                     {/* Table wrapper showing the full layout without vertical scrollbar */}
                     <div className="w-full overflow-x-auto">
                         <table className="w-full text-left border-collapse min-w-[1000px]">
                             <thead>
-                                <tr className="border-b border-white/10 text-zinc-300 text-[15px] xl:text-[16px] font-bold">
-                                    <th className="pb-3 pl-3.5 w-[14%]">词组分类</th>
-                                    <th className="pb-3 w-[34%]">运营目标与三阶段演进策略</th>
-                                    <th className="pb-3 w-[24%]">阶段性交付标准与 KPI 考核</th>
-                                    <th className="pb-3 pr-3.5 w-[28%] pl-5">最终展现权益及交付标准</th>
+                                <tr className="border-b border-white/[0.22] text-zinc-300 text-[14.5px] xl:text-[15px] font-bold">
+                                    <th className="pb-1.5 pl-3.5 w-[14%]">词组分类</th>
+                                    <th className="pb-1.5 w-[34%]">运营目标与三阶段演进策略</th>
+                                    <th className="pb-1.5 w-[24%]">阶段性交付标准与 KPI 考核</th>
+                                    <th className="pb-1.5 pr-3.5 w-[28%] pl-5">最终展现权益及交付标准</th>
                                 </tr>
                             </thead>
-                            <tbody className="divide-y divide-white/5 text-[14.8px] xl:text-[15.8px] leading-relaxed">
+                            <tbody className="text-[14.8px] xl:text-[15.8px] leading-relaxed">
 
                                 {/* Row 1: Tiles */}
                                 <tr className="hover:bg-white/[0.01] transition-colors duration-200">
-                                    <td className="py-4 pl-3.5 font-semibold text-zinc-100 align-top">
+                                    <td className="py-1.5 xl:py-2 pl-3.5 font-semibold text-zinc-100 align-top border-b border-white/[0.22]">
                                         <div className="flex flex-col gap-1">
                                             <span className="text-[16px] xl:text-[17.5px] text-white font-bold">主要产品词</span>
                                             <span className="text-[13px] xl:text-[13.8px] text-zinc-400 font-medium">（瓷砖）</span>
                                         </div>
                                     </td>
-                                    <td className="py-4 text-zinc-300 align-top pr-4">
+                                    <td className="py-1.5 xl:py-2 text-zinc-300 align-top pr-4 border-b border-white/[0.22]">
                                         <div className="flex flex-col gap-2.5">
                                             <div className="flex items-start gap-2">
                                                 <span className="text-[12px] xl:text-[12.8px] font-bold bg-white/10 text-zinc-200 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段一</span>
@@ -137,7 +150,7 @@ function Page_GeoKpiAcceptance() {
                                             </div>
                                         </div>
                                     </td>
-                                    <td className="py-4 text-zinc-300 align-top pr-4">
+                                    <td className="py-1.5 xl:py-2 text-zinc-300 align-top pr-4 border-b border-white/[0.22]">
                                         <div className="flex flex-col gap-2.5">
                                             <div className="flex items-start gap-2">
                                                 <span className="text-[12px] xl:text-[12.8px] font-bold bg-[#004CE5]/15 text-[#7ca2ff] border border-[#004CE5]/30 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段一考核</span>
@@ -159,8 +172,8 @@ function Page_GeoKpiAcceptance() {
                                             </div>
                                         </div>
                                     </td>
-                                    <td rowSpan={2} className="py-4 text-zinc-300 align-middle pr-3 leading-relaxed border-l border-white/5 pl-5">
-                                        <div className="flex flex-col gap-3 bg-[#004CE5]/5 border border-[#004CE5]/15 p-4.5 xl:p-5 rounded-xl">
+                                    <td rowSpan={2} className="py-1.5 xl:py-2 text-zinc-300 align-middle pr-3 leading-relaxed border-l border-white/[0.22] pl-5 border-b border-white/[0.22]">
+                                        <div className="flex flex-col gap-1.5 xl:gap-2 bg-[#004CE5]/5 border border-[#004CE5]/15 p-3 xl:p-3.5 rounded-xl">
                                             <p className="text-zinc-200 text-[14.5px] xl:text-[15.5px]">
                                                 在 <strong className="text-white font-semibold">DeepSeek、豆包、通义千问</strong> 等 AI 平台搜索约定词条时，AI 回答中应出现品牌/产品推荐、推荐理由及基于官方信息的产品表述。
                                             </p>
@@ -173,13 +186,13 @@ function Page_GeoKpiAcceptance() {
 
                                 {/* Row 2: Sintered Slabs */}
                                 <tr className="hover:bg-white/[0.01] transition-colors duration-200">
-                                    <td className="py-4 pl-3.5 font-semibold text-zinc-100 align-top">
+                                    <td className="py-1.5 xl:py-2 pl-3.5 font-semibold text-zinc-100 align-top border-b border-white/[0.22]">
                                         <div className="flex flex-col gap-1">
                                             <span className="text-[16px] xl:text-[17.5px] text-white font-bold">新品词</span>
                                             <span className="text-[13px] xl:text-[13.8px] text-zinc-400 font-medium">（岩板）</span>
                                         </div>
                                     </td>
-                                    <td className="py-4 text-zinc-300 align-top pr-4">
+                                    <td className="py-1.5 xl:py-2 text-zinc-300 align-top pr-4 border-b border-white/[0.22]">
                                         <div className="flex flex-col gap-2.5">
                                             <div className="flex items-start gap-2">
                                                 <span className="text-[12px] xl:text-[12.8px] font-bold bg-white/10 text-zinc-200 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段一</span>
@@ -204,7 +217,7 @@ function Page_GeoKpiAcceptance() {
                                             </div>
                                         </div>
                                     </td>
-                                    <td className="py-4 text-zinc-300 align-top pr-4">
+                                    <td className="py-1.5 xl:py-2 text-zinc-300 align-top pr-4 border-b border-white/[0.22]">
                                         <div className="flex flex-col gap-2.5">
                                             <div className="flex items-start gap-2">
                                                 <span className="text-[12px] xl:text-[12.8px] font-bold bg-[#004CE5]/15 text-[#7ca2ff] border border-[#004CE5]/30 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段一考核</span>
@@ -230,13 +243,13 @@ function Page_GeoKpiAcceptance() {
 
                                 {/* Row 3: Negatives & Errors */}
                                 <tr className="hover:bg-white/[0.01] transition-colors duration-200">
-                                    <td className="py-4 pl-3.5 font-semibold text-zinc-100 align-top">
+                                    <td className="py-1.5 xl:py-2 pl-3.5 font-semibold text-zinc-100 align-top">
                                         <div className="flex flex-col gap-1">
                                             <span className="text-[16px] xl:text-[17.5px] text-white font-bold">品牌词</span>
                                             <span className="text-[13px] xl:text-[13.8px] text-zinc-400 font-medium">（负面及错误）</span>
                                         </div>
                                     </td>
-                                    <td className="py-4 text-zinc-300 align-top pr-4">
+                                    <td className="py-1.5 xl:py-2 text-zinc-300 align-top pr-4">
                                         <div className="flex flex-col gap-2.5">
                                             <div className="flex items-start gap-2">
                                                 <span className="text-[12px] xl:text-[12.8px] font-bold bg-white/10 text-zinc-200 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段一</span>
@@ -254,17 +267,17 @@ function Page_GeoKpiAcceptance() {
                                             </div>
                                         </div>
                                     </td>
-                                    <td className="py-4 text-zinc-300 align-top pr-4">
-                                        <div className="flex flex-col gap-2 font-medium bg-[#004CE5]/5 border border-[#004CE5]/15 p-4 rounded-xl mt-0.5 text-[14.5px] xl:text-[15.5px]">
+                                    <td className="py-1.5 xl:py-2 text-zinc-300 align-top pr-4">
+                                        <div className="flex flex-col gap-2 font-medium bg-[#004CE5]/5 border border-[#004CE5]/15 p-3 xl:p-3.5 rounded-xl mt-0.5 text-[14.5px] xl:text-[15.5px]">
                                             <p className="text-zinc-200 leading-relaxed">
                                                 针对品牌询问，AI 生成内容的<strong className="text-white font-semibold">核心事实准确率</strong>达到约定标准，<strong className="text-[#7ca2ff] font-semibold">负面信息占比控制在 5% 以内</strong>，正向/中性情绪导向占比稳定在 <strong className="text-white font-semibold">95% 以上</strong>。
                                             </p>
                                         </div>
                                     </td>
-                                    <td className="py-4 text-zinc-400 align-top pr-3 leading-relaxed border-l border-white/5 pl-5">
-                                        <div className="flex flex-col gap-2.5 bg-white/[0.015] border border-white/[0.04] p-4 rounded-xl">
+                                    <td className="py-1.5 xl:py-2 text-zinc-400 align-top pr-3 leading-relaxed border-l border-white/[0.22] pl-5">
+                                        <div className="flex flex-col gap-1.5 xl:gap-2 bg-white/[0.015] border border-white/[0.04] p-3 xl:p-3.5 rounded-xl">
                                             <p className="text-zinc-200 text-[14.5px] xl:text-[15.5px]">
-                                                服务期内，围绕约定 AI 平台、产品及核心词条，持续监测并纠偏价格错乱、型号混淆、历史价格引用等问题，通过信源定位、官方口径强化 and 内容覆盖，降低 AI 引用错误价格的概率。
+                                                服务期内，围绕约定 AI 平台、产品及核心词条，持续监测并纠偏价格错乱、型号混淆、历史价格引用等问题，通过信源定位、官方口径强化和内容覆盖，降低 AI 引用错误价格的概率。
                                             </p>
                                             <p className="border-t border-white/10 pt-2.5 text-zinc-400 text-[12.8px] xl:text-[13.8px]">
                                                 因 AI 平台升级、信源变化及回答随机性等不可控因素，项目以<strong className="text-white font-semibold">核心错误压制</strong>、<strong className="text-white font-semibold">正确信息占比提升</strong>作为交付标准。
