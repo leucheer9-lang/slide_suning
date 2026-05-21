@@ -104,10 +104,12 @@ export default function Page_NegativeInfoSearch() {
                             <div className="absolute w-[360px] h-[360px] border-2 border-[#004CE5]/20 rounded-full z-0 pointer-events-none"></div>
                             <div className="absolute w-[520px] h-[520px] border-2 border-white/5 rounded-full z-0 pointer-events-none"></div>
 
-                            {/* Solid Connective Ring (Static visual bridge connecting the 4 nodes) */}
+                            {/* Solid Connective Ring (Static visual bridge connecting the 4 nodes) - Reverted to Perfect Circle */}
                             <svg className="absolute inset-0 w-full h-full pointer-events-none z-10" viewBox="0 0 600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path 
-                                    d="M 80,80 Q 300,10 520,80 Q 560,250 520,420 Q 300,490 80,420 Q 40,250 80,80 Z" 
+                                <circle 
+                                    cx="300" 
+                                    cy="250" 
+                                    r="220" 
                                     fill="none" 
                                     stroke="#004CE5" 
                                     strokeWidth="3.5" 
@@ -116,7 +118,7 @@ export default function Page_NegativeInfoSearch() {
                             </svg>
 
                             {/* ════════════ NODE 1: Dealer Pricing Risk (Top-Left) ════════════ */}
-                            <div className="absolute top-[8%] left-[2%] z-20 flex items-center gap-4.5 bg-zinc-900 border-2 border-red-500 rounded-3xl p-4.5 pr-6 shadow-[0_8px_32px_rgba(0,0,0,0.7)] whitespace-nowrap">
+                            <div className="absolute top-[8%] left-[2%] z-20 flex items-center gap-6 lg:gap-7 xl:gap-8 bg-zinc-900 border-2 border-red-500 rounded-3xl p-4.5 pr-6 shadow-[0_8px_32px_rgba(0,0,0,0.7)] whitespace-nowrap">
                                 <div className="w-14 h-14 rounded-full bg-red-950 flex items-center justify-center shrink-0 border-2 border-red-500">
                                     <AlertTriangle className="w-7 h-7 text-red-500" />
                                 </div>
@@ -131,7 +133,7 @@ export default function Page_NegativeInfoSearch() {
                             </div>
 
                             {/* ════════════ NODE 2: Construction Quality Reviews (Top-Right) ════════════ */}
-                            <div className="absolute top-[8%] right-[2%] z-20 flex items-center gap-4.5 bg-zinc-900 border-2 border-red-500 rounded-3xl p-4.5 pr-6 shadow-[0_8px_32px_rgba(0,0,0,0.7)] whitespace-nowrap">
+                            <div className="absolute top-[8%] right-[2%] z-20 flex items-center gap-6 lg:gap-7 xl:gap-8 bg-zinc-900 border-2 border-red-500 rounded-3xl p-4.5 pr-6 shadow-[0_8px_32px_rgba(0,0,0,0.7)] whitespace-nowrap">
                                 <div className="w-14 h-14 rounded-full bg-red-950 flex items-center justify-center shrink-0 border-2 border-red-500">
                                     <AlertTriangle className="w-7 h-7 text-red-500" />
                                 </div>
@@ -146,7 +148,7 @@ export default function Page_NegativeInfoSearch() {
                             </div>
 
                             {/* ════════════ NODE 3: Active AI Crawler Crawling (Bottom-Right) ════════════ */}
-                            <div className="absolute bottom-[8%] right-[2%] z-20 flex items-center gap-4.5 bg-zinc-900 border-2 border-blue-500 rounded-3xl p-4.5 pr-6 shadow-[0_8px_32px_rgba(0,0,0,0.7)] whitespace-nowrap">
+                            <div className="absolute bottom-[8%] right-[2%] z-20 flex items-center gap-6 lg:gap-7 xl:gap-8 bg-zinc-900 border-2 border-blue-500 rounded-3xl p-4.5 pr-6 shadow-[0_8px_32px_rgba(0,0,0,0.7)] whitespace-nowrap">
                                 <div className="w-14 h-14 rounded-full bg-blue-950 flex items-center justify-center shrink-0 border-2 border-blue-500">
                                     <Search className="w-7 h-7 text-blue-400" />
                                 </div>
@@ -161,7 +163,7 @@ export default function Page_NegativeInfoSearch() {
                             </div>
 
                             {/* ════════════ NODE 4: All-Web Knowledge Fragments (Bottom-Left) ════════════ */}
-                            <div className="absolute bottom-[8%] left-[2%] z-20 flex items-center gap-4.5 bg-zinc-900 border-2 border-blue-500 rounded-3xl p-4.5 pr-6 shadow-[0_8px_32px_rgba(0,0,0,0.7)] whitespace-nowrap">
+                            <div className="absolute bottom-[8%] left-[2%] z-20 flex items-center gap-6 lg:gap-7 xl:gap-8 bg-zinc-900 border-2 border-blue-500 rounded-3xl p-4.5 pr-6 shadow-[0_8px_32px_rgba(0,0,0,0.7)] whitespace-nowrap">
                                 <div className="w-14 h-14 rounded-full bg-blue-950 flex items-center justify-center shrink-0 border-2 border-blue-500">
                                     <Activity className="w-7 h-7 text-blue-400" />
                                 </div>
