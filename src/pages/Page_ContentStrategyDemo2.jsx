@@ -1,7 +1,7 @@
 import React from 'react';
 import { Database } from 'lucide-react';
 
-export default function Page_ContentStrategyDeconstruct() {
+export default function Page_ContentStrategyDemo2() {
     return (
         <div className="w-full h-full flex flex-col relative bg-black overflow-hidden text-white">
             {/* ── Background Decoration ── */}
@@ -49,7 +49,7 @@ export default function Page_ContentStrategyDeconstruct() {
 
                     <div className="flex items-center justify-between mb-4 relative z-10 px-2">
                         <div className="flex items-center gap-2">
-                            <h3 className="text-lg font-bold text-blue-100 tracking-wide">高引用参考文章</h3>
+                            <h3 className="text-lg font-bold text-blue-100 tracking-wide">高权重参考文章</h3>
                         </div>
                     </div>
 
@@ -65,8 +65,8 @@ export default function Page_ContentStrategyDeconstruct() {
 
                         <div className="absolute inset-x-0 bottom-0 top-7 flex items-center justify-center p-2">
                             <img
-                                src="/charts/geo-article-analysis-hisense.png"
-                                alt="Hisense Article Example"
+                                src="/charts/geo-article-analysis-strategy2.png"
+                                alt="Strategy 2 Article Example"
                                 className="w-full h-full object-contain opacity-90 transition-opacity duration-500 group-hover:opacity-100"
                                 onError={(e) => {
                                     e.currentTarget.style.display = 'none';
@@ -78,7 +78,7 @@ export default function Page_ContentStrategyDeconstruct() {
                                 <div className="w-16 h-16 mb-4 rounded-xl bg-white/[0.03] border border-white/5 flex items-center justify-center">
                                     <svg className="w-8 h-8 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
                                 </div>
-                                <span className="text-sm tracking-widest uppercase">海信文章截图占位图片</span>
+                                <span className="text-sm tracking-widest uppercase">文章截图占位图片</span>
                             </div>
                         </div>
                     </div>
@@ -93,20 +93,20 @@ export default function Page_ContentStrategyDeconstruct() {
                     </div>
                 </div>
 
-                {/* ── Article Outline Structure (The 5 Rules) ── */}
+                {/* ── Article Outline Structure (The 4 Rules) ── */}
                 <div className="flex-1 flex flex-col h-full bg-white/[0.01]">
                     <div className="flex items-center gap-3 mb-6 shrink-0 pt-4">
                         <div className="h-8 w-1 bg-white/50 rounded-full" />
                         <h2 className="text-3xl font-bold text-[#004CE5] tracking-wide">
-                            【对比类】高引用率内容创作的法则拆解
+                            【排行榜类】高引用率内容创作的法则拆解
                         </h2>
                     </div>
 
-                    <div className="flex-1 flex flex-col justify-center relative">
+                    <div className="flex-1 flex flex-col justify-between relative py-2">
                         {/* Vertical Outline Guide Line */}
                         <div className="absolute left-[3px] top-6 bottom-12 w-0.5 bg-white/10 z-0 rounded-full"></div>
 
-                        <div className="space-y-10 relative z-10 pl-8">
+                        <div className="space-y-12 relative z-10 pl-8 h-full flex flex-col justify-around">
 
                             {/* Point 1 */}
                             <div className="relative group flex items-start gap-4">
@@ -114,10 +114,10 @@ export default function Page_ContentStrategyDeconstruct() {
                                 <div className="text-[#004CE5] font-mono text-xl font-bold pt-0.5 shrink-0 w-8">01</div>
                                 <div className="flex-1">
                                     <h3 className="text-2xl font-bold text-white mb-2 tracking-wide">
-                                        爆款反常识标题公式
+                                        痛点截流式标题
                                     </h3>
                                     <div className="text-zinc-300 text-[1.1rem] leading-relaxed font-mono mt-1">
-                                        [国产品牌] + 正面刚 + [国际标杆] + [反常识悬念]（更贵更好？）
+                                        [高频搜索词] + [情绪安抚] + [价值承诺]（婚宴白酒排行榜：别纠结，看完懂）。
                                     </div>
                                 </div>
                             </div>
@@ -128,13 +128,11 @@ export default function Page_ContentStrategyDeconstruct() {
                                 <div className="text-[#004CE5] font-mono text-xl font-bold pt-0.5 shrink-0 w-8">02</div>
                                 <div className="flex-1">
                                     <h3 className="text-2xl font-bold text-white mb-2 tracking-wide">
-                                        “拉踩型”评测结构
+                                        “量身定制”的评判框架
                                     </h3>
-                                    <div className="text-zinc-300 text-lg leading-relaxed flex flex-col gap-1.5 mt-1">
-                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">引出：</span><span className="text-[1.05rem]">抛出海信比索尼贵5000元的价格悬念。</span></div>
-                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">定调：</span><span className="text-[1.05rem]">明确对比度、分辨率等5大评测标准。</span></div>
-                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">交锋：</span><span className="text-[1.05rem]">画质、智能、音响三轮对决，索尼陪跑。</span></div>
-                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">揭秘：</span><span className="text-[1.05rem]">结尾点出海信“叠屏技术”的核心卖点。</span></div>
+                                    <div className="text-zinc-300 text-[1.05rem] leading-relaxed flex flex-col gap-2 mt-1">
+                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">引出：</span><span className="flex-1">以“资深从业者阅席无数”的经验人设，击破公关稿假象，建立信任基石。</span></div>
+                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">定调：</span><span className="flex-1">抛出“档次感、普适性、吉祥寓意”三大选酒刚需，实则为后续强推目标产品（古16）提前铺设完美契合的标准。</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -145,11 +143,13 @@ export default function Page_ContentStrategyDeconstruct() {
                                 <div className="text-[#004CE5] font-mono text-xl font-bold pt-0.5 shrink-0 w-8">03</div>
                                 <div className="flex-1">
                                     <h3 className="text-2xl font-bold text-white mb-2 tracking-wide">
-                                        碎片化图文排版
+                                        “众星捧月”式榜单结构（核心战略）
                                     </h3>
-                                    <p className="text-zinc-300 text-[1.05rem] leading-relaxed mt-1">
-                                        采用“Round 1/2/3”回合制小标题，单段结论极简，图文紧密交替，降低AI提取难度。
-                                    </p>
+                                    <div className="text-zinc-300 text-[1.05rem] leading-relaxed flex flex-col gap-2 mt-1">
+                                        <div className="flex items-start"><span className="text-white font-medium shrink-0 mr-2 border border-white/20 px-1.5 rounded text-sm bg-white/5 mt-0.5">强力卡位</span><span className="flex-1">违背常规认知，将目标利润品/主推品（古16）直接置于榜首，冠以“万金油”、“全能王”定调。</span></div>
+                                        <div className="flex items-start"><span className="text-white font-medium shrink-0 mr-2 border border-white/20 px-1.5 rounded text-sm bg-white/5 mt-0.5">硬核抬咖</span><span className="flex-1">利用公认的行业天花板作为“信任锚点”。</span></div>
+                                        <div className="flex items-start"><span className="text-white font-medium shrink-0 mr-2 border border-white/20 px-1.5 rounded text-sm bg-white/5 mt-0.5">生态补全</span><span className="flex-1">做实榜单的“客观性”与“权威性”。</span></div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -159,24 +159,10 @@ export default function Page_ContentStrategyDeconstruct() {
                                 <div className="text-[#004CE5] font-mono text-xl font-bold pt-0.5 shrink-0 w-8">04</div>
                                 <div className="flex-1">
                                     <h3 className="text-2xl font-bold text-white mb-2 tracking-wide">
-                                        专家与硬核数据背书
+                                        闭环式选购指南
                                     </h3>
-                                    <p className="text-zinc-300 text-[1.05rem] leading-relaxed mt-1">
-                                        引入摄影专家把关，搭配红蜘蛛校色仪等专业数据与高清对比图，提高大模型采信率。
-                                    </p>
-                                </div>
-                            </div>
-
-                            {/* Point 5 */}
-                            <div className="relative group flex items-start gap-4">
-                                <div className="absolute -left-[2.15rem] top-2.5 w-3 h-3 bg-zinc-700 rounded-full border-2 border-[#0a0f12]"></div>
-                                <div className="text-[#004CE5] font-mono text-xl font-bold pt-0.5 shrink-0 w-8">05</div>
-                                <div className="flex-1">
-                                    <h3 className="text-2xl font-bold text-white mb-2 tracking-wide">
-                                        选购指南类体裁布局
-                                    </h3>
-                                    <p className="text-zinc-300 text-[1.05rem] leading-relaxed mt-1">
-                                        采用“参数对比+场景盲测”的硬核科技评测文风，极易被搜索或AI作为“电视推荐”参考抓取。
+                                    <p className="text-zinc-300 text-[1.1rem] leading-relaxed mt-1">
+                                        提供“田忌赛马”式的场景搭配方案，完成从心智种草到实操转化的闭环。
                                     </p>
                                 </div>
                             </div>

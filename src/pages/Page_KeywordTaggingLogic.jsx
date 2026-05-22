@@ -11,7 +11,7 @@ export default function Page_KeywordTaggingLogic() {
         {
             num: "②",
             title: "跟目标产品不符",
-            desc: "与品牌定位 and 客户定位不符",
+            desc: "与品牌定位、客户定位不符",
             badgeClass: "bg-[#4F2EAF]/90 border-[#744BE3]/50 text-white"
         },
         {
@@ -52,18 +52,18 @@ export default function Page_KeywordTaggingLogic() {
                     <h1 className="text-[32px] font-extrabold text-white tracking-widest leading-tight">
                         词条打标逻辑
                     </h1>
-                    
+
                     {/* 6 Criteria Glassmorphic Grid */}
                     <div className="bg-white/[0.02] border border-white/[0.08] rounded-xl p-4 lg:p-5 mt-1">
                         {/* Larger Section Title */}
                         <div className="text-[18px] lg:text-[20px] xl:text-[22px] text-zinc-100 font-extrabold mb-4 tracking-wider border-b border-white/10 pb-3 flex items-center gap-2.5">
                             <span className="w-2.5 h-5 bg-[#004CE5] rounded shadow-[0_0_12px_rgba(0,76,229,0.6)]"></span>
-                            词条打标依据：
+                            打标依据：
                         </div>
-                        
+
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5 lg:gap-4">
                             {criteria.map((item, index) => (
-                                <div 
+                                <div
                                     key={index}
                                     className="bg-white/[0.02] hover:bg-white/[0.04] border border-white/[0.06] hover:border-white/[0.15] rounded-xl p-4 lg:p-5 transition-all duration-300 flex flex-col gap-3 group hover:-translate-y-0.5 shadow-lg"
                                 >
@@ -92,7 +92,7 @@ export default function Page_KeywordTaggingLogic() {
                             src="/Add_Charts/keyword-tagging-logic.png"
                             alt="词条打标逻辑图"
                             className="h-full w-auto object-contain"
-                            onError={(e) => { 
+                            onError={(e) => {
                                 e.target.style.display = 'none';
                                 e.target.parentNode.className = "w-full h-full relative bg-white/[0.01] border border-white/10 rounded-2xl overflow-hidden flex flex-col items-center justify-center p-4";
                                 const fallback = e.target.parentNode.querySelector('.fallback-ui');

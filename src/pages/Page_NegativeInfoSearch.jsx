@@ -118,7 +118,7 @@ export default function Page_NegativeInfoSearch() {
                             </svg>
 
                             {/* ════════════ NODE 1: Dealer Pricing Risk (Top-Left) ════════════ */}
-                            <div className="absolute top-[8%] left-[2%] z-20 flex items-center gap-6 lg:gap-7 xl:gap-8 bg-zinc-900 border-2 border-red-500 rounded-3xl p-4.5 pr-6 shadow-[0_8px_32px_rgba(0,0,0,0.7)] whitespace-nowrap">
+                            <div className="absolute top-[8%] left-[2%] z-20 flex items-center gap-4 lg:gap-5 xl:gap-6 bg-zinc-900 border-2 border-red-500 rounded-3xl pt-4 pb-4 pl-12 pr-6 lg:pt-5 lg:pb-5 lg:pl-14 lg:pr-7 xl:pt-5.5 xl:pb-5.5 xl:pl-16 xl:pr-8 shadow-[0_8px_32px_rgba(0,0,0,0.7)] whitespace-nowrap">
                                 <div className="w-14 h-14 rounded-full bg-red-950 flex items-center justify-center shrink-0 border-2 border-red-500">
                                     <AlertTriangle className="w-7 h-7 text-red-500" />
                                 </div>
@@ -133,7 +133,7 @@ export default function Page_NegativeInfoSearch() {
                             </div>
 
                             {/* ════════════ NODE 2: Construction Quality Reviews (Top-Right) ════════════ */}
-                            <div className="absolute top-[8%] right-[2%] z-20 flex items-center gap-6 lg:gap-7 xl:gap-8 bg-zinc-900 border-2 border-red-500 rounded-3xl p-4.5 pr-6 shadow-[0_8px_32px_rgba(0,0,0,0.7)] whitespace-nowrap">
+                            <div className="absolute top-[8%] right-[2%] z-20 flex items-center gap-4 lg:gap-5 xl:gap-6 bg-zinc-900 border-2 border-red-500 rounded-3xl pt-4 pb-4 pl-12 pr-6 lg:pt-5 lg:pb-5 lg:pl-14 lg:pr-7 xl:pt-5.5 xl:pb-5.5 xl:pl-16 xl:pr-8 shadow-[0_8px_32px_rgba(0,0,0,0.7)] whitespace-nowrap">
                                 <div className="w-14 h-14 rounded-full bg-red-950 flex items-center justify-center shrink-0 border-2 border-red-500">
                                     <AlertTriangle className="w-7 h-7 text-red-500" />
                                 </div>
@@ -148,7 +148,7 @@ export default function Page_NegativeInfoSearch() {
                             </div>
 
                             {/* ════════════ NODE 3: Active AI Crawler Crawling (Bottom-Right) ════════════ */}
-                            <div className="absolute bottom-[8%] right-[2%] z-20 flex items-center gap-6 lg:gap-7 xl:gap-8 bg-zinc-900 border-2 border-blue-500 rounded-3xl p-4.5 pr-6 shadow-[0_8px_32px_rgba(0,0,0,0.7)] whitespace-nowrap">
+                            <div className="absolute bottom-[8%] right-[2%] z-20 flex items-center gap-4 lg:gap-5 xl:gap-6 bg-zinc-900 border-2 border-blue-500 rounded-3xl pt-4 pb-4 pl-12 pr-6 lg:pt-5 lg:pb-5 lg:pl-14 lg:pr-7 xl:pt-5.5 xl:pb-5.5 xl:pl-16 xl:pr-8 shadow-[0_8px_32px_rgba(0,0,0,0.7)] whitespace-nowrap">
                                 <div className="w-14 h-14 rounded-full bg-blue-950 flex items-center justify-center shrink-0 border-2 border-blue-500">
                                     <Search className="w-7 h-7 text-blue-400" />
                                 </div>
@@ -163,7 +163,7 @@ export default function Page_NegativeInfoSearch() {
                             </div>
 
                             {/* ════════════ NODE 4: All-Web Knowledge Fragments (Bottom-Left) ════════════ */}
-                            <div className="absolute bottom-[8%] left-[2%] z-20 flex items-center gap-6 lg:gap-7 xl:gap-8 bg-zinc-900 border-2 border-blue-500 rounded-3xl p-4.5 pr-6 shadow-[0_8px_32px_rgba(0,0,0,0.7)] whitespace-nowrap">
+                            <div className="absolute bottom-[8%] left-[2%] z-20 flex items-center gap-4 lg:gap-5 xl:gap-6 bg-zinc-900 border-2 border-blue-500 rounded-3xl pt-4 pb-4 pl-12 pr-6 lg:pt-5 lg:pb-5 lg:pl-14 lg:pr-7 xl:pt-5.5 xl:pb-5.5 xl:pl-16 xl:pr-8 shadow-[0_8px_32px_rgba(0,0,0,0.7)] whitespace-nowrap">
                                 <div className="w-14 h-14 rounded-full bg-blue-950 flex items-center justify-center shrink-0 border-2 border-blue-500">
                                     <Activity className="w-7 h-7 text-blue-400" />
                                 </div>

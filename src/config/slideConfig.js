@@ -35,6 +35,7 @@ import Page_KeywordTaggingLogic from '../pages/Page_KeywordTaggingLogic';
 import Page_KeywordExpansionLogic from '../pages/Page_KeywordExpansionLogic';
 import Page_GeoOptImplementation from '../pages/Page_GeoOptImplementation';
 import Page_NegativeInfoSearch from '../pages/Page_NegativeInfoSearch';
+import Page_NegativeInfoHandling from '../pages/Page_NegativeInfoHandling';
 
 
 
@@ -133,9 +134,15 @@ import Page_PainPoint4_SalesModel from '../pages/Page_PainPoint4_SalesModel';
 import Page_KeywordGroupingBasis from '../pages/Page_KeywordGroupingBasis';
 import Page_KeywordGroupingConclusion from '../pages/Page_KeywordGroupingConclusion';
 import Page_ContentStrategyBacktrack from '../pages/Page_ContentStrategyBacktrack';
+import Page_ContentStrategyDetails from '../pages/Page_ContentStrategyDetails';
 import Page_ContentStrategyDeconstruct from '../pages/Page_ContentStrategyDeconstruct';
 import Page_ContentStrategyDemo from '../pages/Page_ContentStrategyDemo';
+import Page_ContentStrategyDemo2 from '../pages/Page_ContentStrategyDemo2';
+import Page_ContentStrategyDemo3 from '../pages/Page_ContentStrategyDemo3';
+import Page_ContentStrategyDemo4 from '../pages/Page_ContentStrategyDemo4';
 import Page_BrandDatabaseBuild from '../pages/Page_BrandDatabaseBuild';
+import Page_BrandDatabaseBuildDetails from '../pages/Page_BrandDatabaseBuildDetails';
+
 
 export const slideConfig = [
   // ——— 封面 & 目录 ———
@@ -219,10 +226,10 @@ export const slideConfig = [
   { type: 'chapter', title: '执行方案细节', subtitle: 'EXECUTION PLAN DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
 
   { type: 'section', title: '品牌数据库建立' },
-  { type: 'page', title: '品牌数据库建立', component: Page_BrandDatabaseBuild },
+  { type: 'page', title: '品牌数据库建立', components: [Page_BrandDatabaseBuild, Page_BrandDatabaseBuildDetails] },
 
   { type: 'section', title: '内容策略' },
-  { type: 'page', title: '内容策略', components: [Page_ContentStrategyBacktrack, Page_ContentStrategyDeconstruct, Page_ContentStrategyDemo] },
+  { type: 'page', title: '内容策略', components: [Page_ContentStrategyBacktrack, Page_ContentStrategyDetails, Page_ContentStrategyDeconstruct, Page_ContentStrategyDemo, Page_ContentStrategyDemo2, Page_ContentStrategyDemo3, Page_ContentStrategyDemo4] },
 
   { type: 'section', title: '投放策略' },
   { type: 'page', title: '筛选逻辑总览', component: Page_PlatformFilterIntro },
@@ -235,6 +242,7 @@ export const slideConfig = [
 
   { type: 'section', title: '错误价格、负面信息怎么处理' },
   { type: 'page', title: '如何查找负面信息', component: Page_NegativeInfoSearch },
+  { type: 'page', title: '处理负面及错误信息', component: Page_NegativeInfoHandling },
 
 
   // { type: 'section', title: '投放文章量化分析' },

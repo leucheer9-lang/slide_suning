@@ -44,7 +44,7 @@ export default function Page_ProposalChapterCover({
                         fontSize: '182px',
                         lineHeight: '1.1',
                         letterSpacing: '0.02em',
-                        top: '350px',
+                        top: '280px',
                         left: '66px',
                         maxWidth: '1400px',
                     }}

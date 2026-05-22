@@ -33,8 +33,8 @@ export default function Page_GeoOptImplementation() {
                         </div>
 
                         {/* AI Mechanism block details */}
-                        <div className="flex-1 flex flex-col gap-2 bg-white/[0.02] border border-white/5 rounded-xl p-3.5 lg:p-4 hover:bg-white/[0.04] transition-colors duration-300 justify-center">
-                            <h4 className="text-white font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0">
+                        <div className="flex-1 flex flex-col gap-2 bg-white/[0.02] border border-white/5 rounded-xl p-3.5 lg:p-4 hover:bg-white/[0.04] transition-colors duration-300 justify-start">
+                            <h4 className="text-white font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0 h-[48px] lg:h-[56px] xl:h-[64px] flex items-start">
                                 把“单个关键词”当成“复杂问题场景”
                             </h4>
                             <p className="text-zinc-400 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed">
@@ -50,7 +50,7 @@ export default function Page_GeoOptImplementation() {
                         </div>
 
                         {/* White-Hat Strategy block */}
-                        <div className="flex-1 flex flex-col gap-2 bg-[#004CE5]/5 border border-[#004CE5]/25 rounded-xl p-3.5 lg:p-4 hover:bg-[#004CE5]/10 transition-colors duration-300 relative overflow-hidden group-hover:border-[#004CE5]/40 justify-center">
+                        <div className="flex-1 flex flex-col gap-2 bg-[#004CE5]/5 border border-[#004CE5]/25 rounded-xl p-3.5 lg:p-4 hover:bg-[#004CE5]/10 transition-colors duration-300 relative overflow-hidden group-hover:border-[#004CE5]/40 justify-start">
                             <div className="absolute top-0 right-0 w-20 h-20 bg-[#004CE5]/10 rounded-full blur-xl pointer-events-none"></div>
                             
                             {/* Simplified Strategy subhead */}
@@ -59,7 +59,7 @@ export default function Page_GeoOptImplementation() {
                                 我们的应对策略
                             </div>
 
-                            <h4 className="text-[#004CE5] font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0 z-10">
+                            <h4 className="text-[#004CE5] font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0 z-10 h-[48px] lg:h-[56px] xl:h-[64px] flex items-start">
                                 全场景覆盖，不做关键词堆砌
                             </h4>
                             <p className="text-zinc-200 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed z-10">
@@ -88,8 +88,8 @@ export default function Page_GeoOptImplementation() {
                         </div>
 
                         {/* AI Mechanism block details */}
-                        <div className="flex-1 flex flex-col gap-2 bg-white/[0.02] border border-white/5 rounded-xl p-3.5 lg:p-4 hover:bg-white/[0.04] transition-colors duration-300 justify-center">
-                            <h4 className="text-white font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0">
+                        <div className="flex-1 flex flex-col gap-2 bg-white/[0.02] border border-white/5 rounded-xl p-3.5 lg:p-4 hover:bg-white/[0.04] transition-colors duration-300 justify-start">
+                            <h4 className="text-white font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0 h-[48px] lg:h-[56px] xl:h-[64px] flex items-start">
                                 自动把问题拆解成多个“搜索方向”
                             </h4>
                             <div className="text-zinc-400 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed">
@@ -116,7 +116,7 @@ export default function Page_GeoOptImplementation() {
                         </div>
 
                         {/* White-Hat Strategy block */}
-                        <div className="flex-1 flex flex-col gap-2 bg-[#004CE5]/5 border border-[#004CE5]/25 rounded-xl p-3.5 lg:p-4 hover:bg-[#004CE5]/10 transition-colors duration-300 relative overflow-hidden group-hover:border-[#004CE5]/40 justify-center">
+                        <div className="flex-1 flex flex-col gap-2 bg-[#004CE5]/5 border border-[#004CE5]/25 rounded-xl p-3.5 lg:p-4 hover:bg-[#004CE5]/10 transition-colors duration-300 relative overflow-hidden group-hover:border-[#004CE5]/40 justify-start">
                             <div className="absolute top-0 right-0 w-20 h-20 bg-[#004CE5]/10 rounded-full blur-xl pointer-events-none"></div>
                             
                             {/* Simplified Strategy subhead */}
@@ -125,7 +125,7 @@ export default function Page_GeoOptImplementation() {
                                 我们的应对策略
                             </div>
 
-                            <h4 className="text-[#004CE5] font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0 z-10">
+                            <h4 className="text-[#004CE5] font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0 z-10 h-[48px] lg:h-[56px] xl:h-[64px] flex items-start">
                                 根据 AI 的拆解路径，提前铺设“内容路标”
                             </h4>
                             <p className="text-zinc-200 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed z-10">
@@ -154,8 +154,8 @@ export default function Page_GeoOptImplementation() {
                         </div>
 
                         {/* AI Mechanism block details */}
-                        <div className="flex-1 flex flex-col gap-2 bg-white/[0.02] border border-white/5 rounded-xl p-3.5 lg:p-4 hover:bg-white/[0.04] transition-colors duration-300 justify-center">
-                            <h4 className="text-white font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0">
+                        <div className="flex-1 flex flex-col gap-2 bg-white/[0.02] border border-white/5 rounded-xl p-3.5 lg:p-4 hover:bg-white/[0.04] transition-colors duration-300 justify-start">
+                            <h4 className="text-white font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0 h-[48px] lg:h-[56px] xl:h-[64px] flex items-start">
                                 像学者一样去各大平台“抓取并拼凑”答案
                             </h4>
                             <p className="text-zinc-400 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed">
@@ -171,7 +171,7 @@ export default function Page_GeoOptImplementation() {
                         </div>
 
                         {/* White-Hat Strategy block */}
-                        <div className="flex-1 flex flex-col gap-2 bg-[#004CE5]/5 border border-[#004CE5]/25 rounded-xl p-3.5 lg:p-4 hover:bg-[#004CE5]/10 transition-colors duration-300 relative overflow-hidden group-hover:border-[#004CE5]/40 justify-center">
+                        <div className="flex-1 flex flex-col gap-2 bg-[#004CE5]/5 border border-[#004CE5]/25 rounded-xl p-3.5 lg:p-4 hover:bg-[#004CE5]/10 transition-colors duration-300 relative overflow-hidden group-hover:border-[#004CE5]/40 justify-start">
                             <div className="absolute top-0 right-0 w-20 h-20 bg-[#004CE5]/10 rounded-full blur-xl pointer-events-none"></div>
                             
                             {/* Simplified Strategy subhead */}
@@ -180,7 +180,7 @@ export default function Page_GeoOptImplementation() {
                                 我们的应对策略
                             </div>
 
-                            <h4 className="text-[#004CE5] font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0 z-10">
+                            <h4 className="text-[#004CE5] font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0 z-10 h-[48px] lg:h-[56px] xl:h-[64px] flex items-start">
                                 投其所好，在 AI 信任的阵地上“喂”好内容
                             </h4>
                             <p className="text-zinc-200 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed z-10">
@@ -209,8 +209,8 @@ export default function Page_GeoOptImplementation() {
                         </div>
 
                         {/* AI Mechanism block details */}
-                        <div className="flex-1 flex flex-col gap-2 bg-white/[0.02] border border-white/5 rounded-xl p-3.5 lg:p-4 hover:bg-white/[0.04] transition-colors duration-300 justify-center">
-                            <h4 className="text-white font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0">
+                        <div className="flex-1 flex flex-col gap-2 bg-white/[0.02] border border-white/5 rounded-xl p-3.5 lg:p-4 hover:bg-white/[0.04] transition-colors duration-300 justify-start">
+                            <h4 className="text-white font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0 h-[48px] lg:h-[56px] xl:h-[64px] flex items-start">
                                 算法不断学习，答案是动态变化的
                             </h4>
                             <p className="text-zinc-400 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed">
@@ -226,7 +226,7 @@ export default function Page_GeoOptImplementation() {
                         </div>
 
                         {/* White-Hat Strategy block */}
-                        <div className="flex-1 flex flex-col gap-2 bg-[#004CE5]/5 border border-[#004CE5]/25 rounded-xl p-3.5 lg:p-4 hover:bg-[#004CE5]/10 transition-colors duration-300 relative overflow-hidden group-hover:border-[#004CE5]/40 justify-center">
+                        <div className="flex-1 flex flex-col gap-2 bg-[#004CE5]/5 border border-[#004CE5]/25 rounded-xl p-3.5 lg:p-4 hover:bg-[#004CE5]/10 transition-colors duration-300 relative overflow-hidden group-hover:border-[#004CE5]/40 justify-start">
                             <div className="absolute top-0 right-0 w-20 h-20 bg-[#004CE5]/10 rounded-full blur-xl pointer-events-none"></div>
                             
                             {/* Simplified Strategy subhead */}
@@ -235,7 +235,7 @@ export default function Page_GeoOptImplementation() {
                                 我们的应对策略
                             </div>
 
-                            <h4 className="text-[#004CE5] font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0 z-10">
+                            <h4 className="text-[#004CE5] font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0 z-10 h-[48px] lg:h-[56px] xl:h-[64px] flex items-start">
                                 通过持续的数据监测，进行闭环验证与调整
                             </h4>
                             <p className="text-zinc-200 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed z-10">

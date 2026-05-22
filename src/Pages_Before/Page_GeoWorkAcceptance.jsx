@@ -45,7 +45,7 @@ function Page_GeoWorkAcceptance() {
                                                 </div>
                                                 <ul className="list-none pl-4 text-zinc-300 flex flex-col gap-1.5 leading-relaxed text-[16.5px] xl:text-[18px]">
                                                     <li>1、<span className="text-white font-semibold">品牌现状诊断：</span>监测品牌提及、推荐排名、竞品对比、负面信息和引用来源。</li>
-                                                    <li>2、<span className="text-white font-semibold">词条策略规划：</span>规划品牌词、产品词 and 高转化问题词，并做优先级分层。</li>
+                                                    <li>2、<span className="text-white font-semibold">词条策略规划：</span>规划品牌词、产品词、高转化问题词，并做优先级分层。</li>
                                                     <li>3、<span className="text-white font-semibold">覆盖平台策略：</span>针对不同 AI 平台制定优化策略，统一品牌表达口径。</li>
                                                 </ul>
                                             </div>
@@ -55,7 +55,7 @@ function Page_GeoWorkAcceptance() {
                                                     二、GEO 优化执行
                                                 </div>
                                                 <ul className="list-none pl-4 text-zinc-300 flex flex-col gap-1.5 leading-relaxed text-[16.5px] xl:text-[18px]">
-                                                    <li>1、<span className="text-white font-semibold">结构化内容工程：</span>优化内容结构 and 引用信号，提升 AI 采信概率。</li>
+                                                    <li>1、<span className="text-white font-semibold">结构化内容工程：</span>优化内容结构以及引用信号，提升 AI 采信概率。</li>
                                                     <li>2、<span className="text-white font-semibold">内容生成与分发：</span>生成品牌、评测、对比、问答及负面优化类内容。</li>
                                                     <li>3、<span className="text-white font-semibold">外部平台筛选与发布：</span>筛选发布平台，完成合作沟通和内容发布。</li>
                                                     <li>4、<span className="text-white font-semibold">媒体与信号构建：</span>建设可信信息源和多来源引用信号，提升内容权威性。</li>
