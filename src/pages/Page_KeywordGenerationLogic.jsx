@@ -13,20 +13,23 @@ export default function Page_KeywordGenerationLogic() {
                     <h1 className="text-[32px] font-extrabold text-white tracking-widest leading-tight">
                         词条生成逻辑
                     </h1>
-                    <div className="bg-white/[0.02] border border-white/[0.08] rounded-xl p-4 lg:p-5 mt-1">
+                </div>
+
+                {/* Content Wrapper - Shrink to match the image's dynamic width */}
+                <div className="w-fit flex flex-col items-stretch gap-3 lg:gap-4 flex-1 min-h-0">
+                    {/* Description Card */}
+                    <div className="bg-white/[0.02] border border-white/[0.08] rounded-xl p-4 lg:p-5">
                         <p className="text-zinc-300 text-[16px] lg:text-[17.5px] xl:text-[19px] leading-relaxed">
                             将产品的<strong className="text-white font-bold">购买动机、场景画像、核心卖点、核心痛点、搜索引擎数据及社媒数据</strong>所有核心信息收集提炼后，对照生成相应的专业词条。
                         </p>
                     </div>
-                </div>
 
-                {/* Bottom Image Container (stretched to fit remaining height with self-adaptive border) */}
-                <div className="w-full flex-1 flex items-start justify-start min-h-[300px] lg:min-h-[400px]">
-                    <div className="relative h-full w-fit border border-white/10 rounded-2xl overflow-hidden bg-white/[0.01] shadow-2xl flex items-center justify-center">
+                    {/* Bottom Image Container */}
+                    <div className="relative flex-1 min-h-0 border border-white/10 rounded-2xl overflow-hidden bg-white/[0.01] shadow-2xl flex items-center justify-center">
                         <img
                             src="/Add_Charts/keyword-generation-logic.png"
                             alt="词条生成逻辑图"
-                            className="h-full w-auto object-contain"
+                            className="h-full w-auto object-contain block"
                             onError={(e) => { 
                                 e.target.style.display = 'none';
                                 e.target.parentNode.className = "w-full h-full relative bg-white/[0.01] border border-white/10 rounded-2xl overflow-hidden flex flex-col items-center justify-center p-4";
