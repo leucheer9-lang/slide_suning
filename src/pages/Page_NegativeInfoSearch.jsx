@@ -37,7 +37,7 @@ export default function Page_NegativeInfoSearch() {
                                 <div className="flex flex-col gap-1">
                                     <h4 className="text-white font-black text-[18px] lg:text-[20px] xl:text-[23px] leading-snug flex items-center gap-2 shrink-0">
                                         <span className="w-2.5 h-2.5 rounded-full bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.9)]"></span>
-                                        负面随时在产生
+                                        产生速度极快
                                     </h4>
                                     <p className="text-zinc-300 text-[15px] lg:text-[16.5px] xl:text-[18.5px] leading-relaxed pl-4 font-bold">
                                         互联网上的信息每分每秒都在更新。今天清理干净了，明天可能又会冒出一条经销商乱报价的帖子，或者一条对泥瓦工的吐槽。

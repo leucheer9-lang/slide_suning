@@ -7,7 +7,7 @@ function Page_GeoReportCompetitors_Analysis() {
     return (
         <div className="w-full h-full flex flex-col relative text-white font-sans px-12 sm:px-16 pt-4 pb-4 overflow-hidden animate-fade-in">
             <div className="w-full max-w-[1700px] mx-auto flex flex-col flex-1 min-h-0 relative z-10 pt-0 gap-3">
-                
+
                 {/* Header Section (Moved further up with reduced margin) */}
                 <div className="text-center shrink-0 mb-1">
                     <h1 className="text-[32px] font-bold text-white tracking-widest leading-tight">
@@ -20,9 +20,9 @@ function Page_GeoReportCompetitors_Analysis() {
                     {imgLoaded && !imgError ? (
                         /* Adaptive Border Wrapper: Tightly wraps the image based on its natural dimensions, scaling to maximum allowed space without overflow */
                         <div className="relative max-h-full max-w-full bg-[#0a0a0a] border border-white/10 rounded-xl p-2.5 shadow-2xl hover:border-white/20 transition-all duration-300 group flex items-center justify-center">
-                            <img 
-                                src="/geo-report/page-57-competitors-compare.jpg" 
-                                alt="竞品横向对比大图" 
+                            <img
+                                src="/geo-report/page-57-competitors-compare.jpg"
+                                alt="竞品横向对比大图"
                                 className="max-w-full max-h-full w-auto h-auto rounded-lg object-contain"
                                 onLoad={() => setImgLoaded(true)}
                                 onError={() => setImgError(true)}
@@ -32,14 +32,14 @@ function Page_GeoReportCompetitors_Analysis() {
                         /* Fallback Placeholder matching the exact width of the 3-column grid below */
                         <div className="w-full max-w-[1550px] aspect-[2.4/1] max-h-full bg-[#0a0a0a]/80 border border-white/10 rounded-xl p-2 flex flex-col justify-center items-center relative overflow-hidden group hover:border-white/20 transition-all duration-300 shadow-2xl">
                             {/* Hidden Image for loading detection */}
-                            <img 
-                                src="/geo-report/page-57-competitors-compare.jpg" 
-                                alt="竞品横向对比大图" 
+                            <img
+                                src="/geo-report/page-57-competitors-compare.jpg"
+                                alt="竞品横向对比大图"
                                 className="hidden"
                                 onLoad={() => setImgLoaded(true)}
                                 onError={() => setImgError(true)}
                             />
-                            
+
                             {/* Fallback Placeholder UI */}
                             <div className="absolute inset-1.5 flex flex-col items-center justify-center p-3 text-center bg-white/[0.01] rounded-lg border border-dashed border-white/10">
                                 <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mb-2">
@@ -58,7 +58,7 @@ function Page_GeoReportCompetitors_Analysis() {
 
                 {/* Bottom Section: Balanced, Slightly Taller 3-Column Content Grid */}
                 <div className="h-[35%] min-h-[240px] max-h-[320px] shrink-0 grid grid-cols-12 gap-5">
-                    
+
                     {/* Column 1: Core Discoveries */}
                     <div className="col-span-4 flex flex-col min-h-0">
                         <div className="bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] rounded-2xl pt-5 pb-4 px-5 sm:pt-5 sm:pb-4.5 sm:px-6 flex flex-col h-full justify-start gap-2.5">
@@ -66,13 +66,13 @@ function Page_GeoReportCompetitors_Analysis() {
                                 <span className="w-1.5 h-4 bg-[#004CE5] rounded-full shadow-[0_0_8px_rgba(0,76,229,0.8)]" />
                                 核心发现
                             </h3>
-                            
-                            <div className="flex-grow flex flex-col gap-3.5 text-[16px] lg:text-[17px] xl:text-[18px] text-zinc-300 leading-relaxed font-normal">
+
+                            <div className="flex-grow flex flex-col gap-3 text-[15px] lg:text-[16px] xl:text-[18px] text-zinc-300 leading-relaxed font-normal text-justify">
                                 <p>
-                                    <strong className="text-white font-bold">绝对声量被吞噬：</strong>东鹏（76.7%）、马可波罗（74.4%）、冠珠（70.9%）提及率均超 70%。它们几乎在所有泛搜索中必定出现，牢牢占据 AI 问答池绝大多数自然流量。
+                                    <strong className="text-white font-bold">竞品仍明显领先：</strong>马可波罗（69%）、东鹏瓷砖（54.3%）、蒙娜丽莎（50.9%）三大品牌提及率均高于 50%。在瓷砖泛搜索场景中，这三家几乎必定出现，仍占据 AI 问答池的大部分自然流量。
                                 </p>
-                                <p className="border-t border-white/5 pt-3">
-                                    <strong className="text-white font-bold">首位推荐权的丧失：</strong>在决定第一印象的“Top 1 提及率”上，简一以 26.7% 居首，马可波罗以 23.3% 紧随其后，而萨米特仅为 2.3%，目前不具备作为“首选答案”喂给用户的能力。
+                                <p className="border-t border-white/5 pt-2.5">
+                                    <strong className="text-white font-bold">首位推荐权严重缺失：</strong>在决定用户第一印象的“Top 1 提及率”上，马可波罗以 25.9% 的概率占据首位，欧神诺以 12.1% 紧随其后。而冠珠仅为 0.9%，尚不具备作为“首选答案”稳定输出的能力。
                                 </p>
                             </div>
                         </div>
@@ -85,13 +85,13 @@ function Page_GeoReportCompetitors_Analysis() {
                                 <span className="w-1.5 h-4 bg-[#004CE5] rounded-full shadow-[0_0_8px_rgba(0,76,229,0.8)]" />
                                 竞争格局总结
                             </h3>
-                            
-                            <div className="flex-grow flex flex-col gap-3.5 text-[16px] lg:text-[17px] xl:text-[18px] text-zinc-300 leading-relaxed font-normal">
+
+                            <div className="flex-grow flex flex-col gap-3 text-[15px] lg:text-[16px] xl:text-[18px] text-zinc-300 leading-relaxed font-normal text-justify">
                                 <p>
-                                    在 AI 的认知图谱中，马可波罗和东鹏并非仅仅被贴上了“大众、传统”的标签，而是被 AI 认定为<strong className="text-white font-semibold">“绝对正确的基础共识答案”</strong>。
+                                    在 AI 的认知图谱中，马可波罗和东鹏瓷砖已被默认为<strong className="text-white font-semibold">“绝对正确的基础共识答案”</strong>，牢牢把控泛需求推荐位。
                                 </p>
-                                <p className="border-t border-white/5 pt-3">
-                                    而萨米特在“质量、口碑、性价比”这些主战场上<strong className="text-red-400 font-semibold">彻底失声</strong>，“年轻、密缝”标签成为了当前唯一的救命稻草。
+                                <p className="border-t border-white/5 pt-2.5">
+                                    而冠珠虽在“瓷砖品牌推荐”、“新中式”等词条已有提及，但在“防渗污好打理的瓷砖推荐”、“超平整无波纹的瓷砖推荐”、“同批次无色差瓷砖推荐”等功能性主战场仍<strong className="text-red-400 font-semibold">明显失声</strong>，“新中式”与“国民设计”是目前最值得放大的细分标签。
                                 </p>
                             </div>
                         </div>
@@ -104,13 +104,13 @@ function Page_GeoReportCompetitors_Analysis() {
                                 <span className="w-1.5 h-4 bg-[#004CE5] rounded-full shadow-[0_0_8px_rgba(0,76,229,0.8)]" />
                                 行动建议
                             </h3>
-                            
-                            <div className="flex-grow flex flex-col gap-3.5 text-[16px] lg:text-[17px] xl:text-[18px] text-zinc-300 leading-relaxed font-normal">
+
+                            <div className="flex-grow flex flex-col gap-3 text-[15px] lg:text-[16px] xl:text-[18px] text-zinc-300 leading-relaxed font-normal text-justify">
                                 <p>
-                                    萨米特的 GEO 优化不能采取常规的防守策略。当前首要任务不是去与马可波罗抢夺“老牌/质量好”等传统词条（壁垒太高，短期无法穿透）。
+                                    冠珠不宜与马可波罗、东鹏瓷砖在通用品类大词上硬碰硬。
                                 </p>
-                                <p className="border-t border-white/5 pt-3">
-                                    而是<strong className="text-white font-semibold">必须集中兵力</strong>，将“符合年轻人审美”、“密缝铺贴”等已有 33.3% 基础提及率的词条，通过大量高质量内容投喂快速增加提及率与位次，在 AI 生态中先获取细分流量。
+                                <p className="border-t border-white/5 pt-2.5">
+                                    而应<strong className="text-white font-semibold">集中资源巩固</strong>“新中式瓷砖品牌排行榜”、“瓷砖品牌排行榜”、“质量好的新中式瓷砖推荐”等已有提及基础的词条，同步补齐功能性零提及词条的语料关联，<strong className="text-blue-300 font-semibold">先稳细分、再抢首推</strong>。
                                 </p>
                             </div>
                         </div>

@@ -15,10 +15,10 @@ export default function Page_BrandInfo() {
                 {/* 核心数据 Metrics */}
                 <div className="grid grid-cols-4 gap-5 lg:gap-6 w-full">
                     {[
-                        { label: '成立时间', value: '26年', sub: '' },
+                        { label: '成立时间', value: '30+年', sub: '' },
                         { label: '自动化生产线', value: '50+', sub: '条' },
-                        { label: '终端体验店', value: '2000+', sub: '家' },
-                        { label: '现代工业园', value: '7000+', sub: '亩' },
+                        { label: '全国体验店', value: '3000+', sub: '家' },
+                        { label: '集约化工业园', value: '7000+', sub: '亩' },
                     ].map((item, idx) => (
                         <div key={idx} className="bg-[#111] border border-white/10 rounded-2xl p-5 lg:p-6 shadow-2xl flex flex-col items-center justify-center relative group hover:border-white/30 transition-colors text-center">
                             <div className="absolute top-0 left-0 w-full h-1.5 rounded-t-2xl bg-zinc-600 group-hover:bg-[#004CE5] transition-colors"></div>
@@ -40,7 +40,7 @@ export default function Page_BrandInfo() {
                             品牌基础简介
                         </h3>
                         <p className="text-zinc-300 text-[1.15rem] lg:text-[1.25rem] leading-relaxed text-justify tracking-wide flex-1">
-                            萨米特瓷砖始创于2000年，是佛山知名的陶瓷大品牌。品牌主打<strong className="text-white">“设计+生活”</strong>理念，在全国拥有超6000家门店，主营岩板、大理石瓷砖等全品类高质量产品，致力于为用户打造个性化的美好家居空间。
+                            冠珠瓷砖始创于1993年，是新明珠集团旗下的民族陶瓷标杆品牌。品牌主打<strong className="text-white">“大美筑家，中国冠珠”</strong>品牌理念，在全国拥有数千家线下门店及体验店，主营岩板、大理石瓷砖等全品类优质墙地砖产品，致力于用东方美学与高定设计为用户打造美好人居空间。
                         </p>
                     </div>
 
@@ -52,8 +52,8 @@ export default function Page_BrandInfo() {
                             品牌核心定位
                         </h3>
                         <p className="text-zinc-300 text-[1.15rem] lg:text-[1.25rem] leading-relaxed text-justify tracking-wide flex-1">
-                            <strong className="text-white text-[1.2rem] lg:text-[1.3rem]">“设计+生活”的国际化潮流品牌。</strong><br /><br />
-                            不同于传统老牌陶企强调“经久耐用”的单一属性，萨米特将自己定位为<strong className="text-[#004ce5]">“懂年轻人的设计瓷砖品牌”</strong>。
+                            <strong className="text-white text-[1.2rem] lg:text-[1.3rem]">“国民瓷砖品牌” 叠加 “东方美学与高定空间” 的双轨定位。</strong><br /><br />
+                            作为民族陶瓷标杆品牌，冠珠更突出设计审美、国风花色、密缝大板与整装交付体验，近年通过设计师联名、顶流代言等方式强化<strong className="text-[#004ce5]">“品质生活”与“东方美”</strong>的品牌心智。（摘自官网）
                         </p>
                     </div>
                 </div>
@@ -68,22 +68,29 @@ export default function Page_BrandInfo() {
                         目标客群
                     </h3>
 
-                    <div className="grid grid-cols-2 gap-5 lg:gap-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-6">
                         {/* 客群一 */}
                         <div className="bg-black/40 border border-white/5 p-5 lg:p-6 rounded-xl relative flex flex-col justify-start">
                             <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-zinc-500 rounded-l-xl"></div>
-                            <h4 className="text-xl lg:text-2xl font-bold text-white mb-3 tracking-widest">第一类：年轻装修人群</h4>
-                            <p className="text-[1.1rem] lg:text-[1.2rem] text-zinc-400 leading-relaxed text-justify tracking-wide">
-                                聚焦<strong className="text-zinc-200">80后、90后及00后</strong>等新消费主力军，以及对<strong className="text-zinc-200">“高颜值、高质感、高环保”</strong>有强烈需求的高净值人群和改善型住房群体。
+                            <h4 className="text-xl lg:text-2xl font-bold text-white mb-3 tracking-widest">第一类：大众家装消费人群</h4>
+                            <p className="text-[1.05rem] lg:text-[1.1rem] text-zinc-400 leading-relaxed text-justify tracking-wide">
+                                聚焦追求<strong className="text-zinc-200">高品质、大空间及高文化认同</strong>的改善型住房群体、中产家庭以及对“新国潮、大美空间”有强烈精神共鸣的主流城市消费主力军。
                             </p>
                         </div>
                         {/* 客群二 */}
                         <div className="bg-black/40 border border-white/5 p-5 lg:p-6 rounded-xl relative flex flex-col justify-start">
                             <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-zinc-500 rounded-l-xl"></div>
-                            <h4 className="text-xl lg:text-2xl font-bold text-white mb-3 tracking-widest">第二类：设计师渠道</h4>
-                            <p className="text-[1.1rem] lg:text-[1.2rem] text-zinc-400 leading-relaxed text-justify tracking-wide">
-                                萨米特近几年明显在做设计师圈层（例如：广州设计周合作；红棉设计奖；联名设计师产品）。<br />
-                                <span className="text-zinc-500 mt-2 inline-block">核心动机：让设计师成为品牌传播节点。在当前瓷砖行业中，设计师的推荐权越来越大。</span>
+                            <h4 className="text-xl lg:text-2xl font-bold text-white mb-3 tracking-widest">第二类：设计师与整装渠道</h4>
+                            <p className="text-[1.05rem] lg:text-[1.1rem] text-zinc-400 leading-relaxed text-justify tracking-wide">
+                                冠珠持续布局设计师圈层与整装合作，通过五大空间方案，让设计师成为品牌审美与方案能力的传播节点。在瓷砖行业里，设计师对中高端项目的选材话语权越来越大。
+                            </p>
+                        </div>
+                        {/* 客群三 */}
+                        <div className="bg-black/40 border border-white/5 p-5 lg:p-6 rounded-xl relative flex flex-col justify-start">
+                            <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-zinc-500 rounded-l-xl"></div>
+                            <h4 className="text-xl lg:text-2xl font-bold text-white mb-3 tracking-widest">第三类：工程与工装客户</h4>
+                            <p className="text-[1.05rem] lg:text-[1.1rem] text-zinc-400 leading-relaxed text-justify tracking-wide">
+                                面向房地产精装、商业空间、市政及公共建筑等 B 端场景。提供<strong className="text-zinc-200">定制规格、花色与案例参考</strong>，并与数十家知名房企建立战略合作，代表项目涵盖机场、高校、写字楼等公建场景。
                             </p>
                         </div>
                     </div>

@@ -2,11 +2,11 @@ import React from 'react';
 
 function Page_GeoReportSources2() {
     const rankings = [
-        { name: '太平洋家居', value: '11.2%', widthClass: 'w-[90%]' },
-        { name: '抖音', value: '11.2%', widthClass: 'w-[90%]' },
-        { name: '网易', value: '9.8%', widthClass: 'w-[78%]' },
-        { name: '今日头条', value: '8.3%', widthClass: 'w-[66%]' },
-        { name: '界面新闻', value: '5.2%', widthClass: 'w-[42%]' },
+        { name: '百度知道', value: '16.5%', widthClass: 'w-[95%]' },
+        { name: '今日头条', value: '7.4%', widthClass: 'w-[45%]' },
+        { name: '网易', value: '6.5%', widthClass: 'w-[40%]' },
+        { name: 'QQ News', value: '5.5%', widthClass: 'w-[34%]' },
+        { name: '太平洋家居', value: '4.9%', widthClass: 'w-[30%]' },
     ];
 
     return (
@@ -38,21 +38,21 @@ function Page_GeoReportSources2() {
 
                                 {/* Card Content & Data Visualization */}
                                 <div className="flex-1 flex flex-col justify-center gap-5 min-h-0">
-                                    {/* Verbatim Text with Increased Font Size */}
-                                    <div className="text-[19px] lg:text-[20px] xl:text-[21px] text-zinc-300 leading-relaxed font-normal">
+                                    {/* Verbatim Text with Responsive 18px Font Size */}
+                                    <div className="text-[15px] lg:text-[16px] xl:text-[18px] text-zinc-300 leading-relaxed font-normal text-justify">
                                         <p>
-                                            监测数据显示，决定萨米特在 AI 问答中表现的最底层数据抓取来源，高度集中在传统的<strong className="text-white font-semibold">泛资讯与家居门户</strong>。
+                                            监测数据显示，决定<strong className="text-white font-semibold">冠珠</strong>在 AI 问答中表现的最底层数据抓取来源，高度集中在<strong className="text-white font-semibold">百度系（知道/百科）、门户资讯及第三方加盟排行站</strong>，行业垂直深度语料与官方信源占比极低。
                                         </p>
                                         <p className="mt-2.5">
                                             排名前五的引用平台分别为：
-                                            <strong className="text-white font-bold">太平洋家居（11.2%）</strong>、
-                                            <strong className="text-white font-bold">抖音（11.2%）</strong>、
-                                            <strong className="text-white font-bold">网易（9.8%）</strong>、
-                                            <strong className="text-white font-bold">今日头条（8.3%）</strong>和
-                                            <strong className="text-white font-bold">界面新闻（5.2%）</strong>。
+                                            <strong className="text-white font-bold">百度知道（16.5%）</strong>、
+                                            <strong className="text-white font-bold">今日头条（7.4%）</strong>、
+                                            <strong className="text-white font-bold">网易（6.5%）</strong>、
+                                            <strong className="text-white font-bold">QQ News（5.5%）</strong>和
+                                            <strong className="text-white font-bold">太平洋家居（4.9%）</strong>。
                                         </p>
                                         <p className="mt-2.5 border-t border-white/5 pt-2.5">
-                                            在文章引用率排名榜单中，充斥着如“千龙网·中国首都网”、“界面新闻”等新闻媒体的稿件。
+                                            在文章引用率排名榜单中，排在首位的是“岩板”、“瓷砖十大品牌”、“2026年瓷砖十大品牌推荐|靠谱之选,定义健康人居新美学”等词条化或榜单类内容，且多为泛行业通稿，未见本品牌官方域名（如官网、官方公众号）被有效引用。
                                         </p>
                                     </div>
 
@@ -63,7 +63,7 @@ function Page_GeoReportSources2() {
                                         </div>
                                         {rankings.map((item, idx) => (
                                             <div key={idx} className="flex items-center justify-between gap-4">
-                                                <div className="w-28 text-[16px] lg:text-[17px] text-zinc-400 truncate font-medium">
+                                                <div className="w-28 text-[15px] lg:text-[16px] text-zinc-400 truncate font-medium">
                                                     {item.name}
                                                 </div>
                                                 <div className="flex-1 bg-white/5 h-2 rounded-full overflow-hidden">
@@ -72,7 +72,7 @@ function Page_GeoReportSources2() {
                                                         style={{ transformOrigin: 'left' }}
                                                     />
                                                 </div>
-                                                <div className="w-12 text-right text-[16px] lg:text-[17px] text-white font-bold">
+                                                <div className="w-12 text-right text-[15px] lg:text-[16px] text-white font-bold">
                                                     {item.value}
                                                 </div>
                                             </div>
@@ -97,29 +97,29 @@ function Page_GeoReportSources2() {
                                 {/* Bullet Point Cards with Increased Font Size and Balanced Padding */}
                                 <div className="flex-1 flex flex-col justify-center gap-4 min-h-0">
 
-                                    {/* Bullet 1: 深度语料极度匮乏 */}
-                                    <div className="bg-white/[0.03] border border-white/5 border-l-4 border-l-[#004CE5] p-6 lg:p-7 rounded-r-xl transition-all duration-300 hover:bg-white/[0.05]">
-                                        <div className="flex items-center gap-2 mb-3">
+                                    {/* Bullet 1: 信源结构单一，缺乏垂直专业背书 */}
+                                    <div className="bg-white/[0.03] border border-white/5 border-l-4 border-l-[#004CE5] p-5 lg:p-6 rounded-r-xl transition-all duration-300 hover:bg-white/[0.05]">
+                                        <div className="flex items-center gap-2 mb-2">
                                             <div className="w-1.5 h-1.5 rounded-full bg-[#004CE5]" />
-                                            <h4 className="text-[20px] lg:text-[21px] xl:text-[22px] font-bold text-white leading-tight">
-                                                深度语料匮乏
+                                            <h4 className="text-[18px] lg:text-[20px] font-bold text-white leading-tight">
+                                                信源结构单一，缺乏垂直专业背书
                                             </h4>
                                         </div>
-                                        <p className="text-[18px] lg:text-[19px] text-zinc-300 leading-relaxed font-normal">
-                                            虽然有抖音（11.2%）这类泛娱乐流媒体提供支撑，但严重缺乏如知乎、垂类家装问答等高权重专业平台的深度语料背书。AI 在生成长文本分析、硬核技术科普或横向测评时，往往会因为缺乏足够专业的抓取源而直接放弃推荐萨米特。
+                                        <p className="text-[15px] lg:text-[16px] xl:text-[18px] text-zinc-300 leading-relaxed font-normal text-justify">
+                                            引用源高度依赖“百度知道”（16.5%）等问答平台，虽然有“太平洋家居”（4.9%）等垂媒进入前五，但知乎等高权重、深度的专业测评语料严重匮乏。这导致 AI 在生成品牌深度解析或工艺对比时，缺乏高质量抓取源，容易导致品牌在硬核推荐场景中被边缘化。
                                         </p>
                                     </div>
 
-                                    {/* Bullet 2: 抗风险能力差 */}
-                                    <div className="bg-white/[0.03] border border-white/5 border-l-4 border-l-amber-500 p-6 lg:p-7 rounded-r-xl transition-all duration-300 hover:bg-white/[0.05]">
-                                        <div className="flex items-center gap-2 mb-3">
+                                    {/* Bullet 2: 官方话语权缺失，存在认知偏移风险 */}
+                                    <div className="bg-white/[0.03] border border-white/5 border-l-4 border-l-amber-500 p-5 lg:p-6 rounded-r-xl transition-all duration-300 hover:bg-white/[0.05]">
+                                        <div className="flex items-center gap-2 mb-2">
                                             <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
-                                            <h4 className="text-[20px] lg:text-[21px] xl:text-[22px] font-bold text-white leading-tight">
-                                                抗风险能力差
+                                            <h4 className="text-[18px] lg:text-[20px] font-bold text-white leading-tight">
+                                                官方话语权缺失，存在认知偏移风险
                                             </h4>
                                         </div>
-                                        <p className="text-[18px] lg:text-[19px] text-zinc-300 leading-relaxed font-normal">
-                                            引用源过于依赖某几家公关媒体通稿，一旦特定平台权重下降或出现对立观点，品牌被影响的风险非常大。
+                                        <p className="text-[15px] lg:text-[16px] xl:text-[18px] text-zinc-300 leading-relaxed font-normal text-justify">
+                                            引用库中排名前列的多为“2026年瓷砖十大品牌推荐|靠谱之选,定义健康人居新美学”（被引 14 次）等第三方内容，本品牌官方信源（官网、官微）在 AI 抓取池中几乎处于隐形状态。这意味着品牌在 AI 生态中的形象完全由第三方定义，一旦出现竞品公关稿或不实榜单，品牌缺乏有效的信源对冲与心智锚点。
                                         </p>
                                     </div>
 

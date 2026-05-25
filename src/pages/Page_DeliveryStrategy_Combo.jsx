@@ -27,7 +27,7 @@ export default function Page_DeliveryStrategy_Combo() {
                             <span className="text-3xl lg:text-4xl font-bold text-zinc-500 ml-2 mb-3">%</span>
                         </div>
                         <h3 className="text-xl lg:text-2.5xl font-bold text-white mb-4 pt-5 border-t border-white/10 group-hover:border-orange-500/50 transition-colors leading-snug">小众专业垂直媒体</h3>
-                        <p className="text-[1.05rem] lg:text-[1.15rem] font-medium text-orange-300 mb-6 tracking-wide leading-relaxed">太平洋家居、中国陶瓷网、陶城网、土巴兔装修网、买购网</p>
+                        <p className="text-[1.05rem] lg:text-[1.15rem] font-medium text-orange-300 mb-6 tracking-wide leading-relaxed">中国陶瓷网、陶城网、中淘家居网、中华陶瓷网</p>
                         <p className="text-[1.12rem] lg:text-[1.25rem] xl:text-[1.3rem] text-zinc-400 leading-relaxed font-light text-justify">
                             <strong className="text-zinc-300 font-medium tracking-wide">深度种草与口碑渗透。</strong>通过专业视角的长图文或深度测评，建立品牌技术壁垒与专业形象，精准触达高意向核心用户，以高信度、高密度的干货内容强力影响最终决策。
                         </p>

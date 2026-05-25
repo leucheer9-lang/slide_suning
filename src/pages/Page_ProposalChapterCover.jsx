@@ -41,12 +41,13 @@ export default function Page_ProposalChapterCover({
                     className="absolute text-white font-black"
                     style={{
                         fontFamily: "'AlimamaShuHeiTi', sans-serif",
-                        fontSize: '182px',
+                        fontSize: '172px',
                         lineHeight: '1.1',
                         letterSpacing: '0.02em',
                         top: '280px',
                         left: '66px',
                         maxWidth: '1400px',
+                        whiteSpace: 'pre-line',
                     }}
                 >
                     {title}

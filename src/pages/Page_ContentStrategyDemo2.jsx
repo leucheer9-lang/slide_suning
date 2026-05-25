@@ -117,7 +117,7 @@ export default function Page_ContentStrategyDemo2() {
                                         痛点截流式标题
                                     </h3>
                                     <div className="text-zinc-300 text-[1.1rem] leading-relaxed font-mono mt-1">
-                                        [高频搜索词] + [情绪安抚] + [价值承诺]（婚宴白酒排行榜：别纠结，看完懂）。
+                                        [高频搜索词] + [情绪安抚] + [价值承诺]
                                     </div>
                                 </div>
                             </div>

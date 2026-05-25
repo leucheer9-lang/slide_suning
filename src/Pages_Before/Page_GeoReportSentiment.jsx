@@ -65,34 +65,34 @@ function Page_GeoReportSentiment() {
                             {/* Section Title */}
                             <h3 className="text-[20px] lg:text-[21px] xl:text-[22.5px] font-bold text-white flex items-center gap-2 shrink-0 pl-0.5">
                                 <span className="w-1.5 h-4.5 bg-rose-500 rounded-full shadow-[0_0_8px_rgba(239,68,68,0.8)]" />
-                                负面回答类型解析：
+                                负面回答类型解析
                             </h3>
 
                             {/* Two-Column Grid Content */}
                             <div className="flex-1 grid grid-cols-12 gap-4 min-h-0">
 
-                                {/* Point 1: Terminal Channels & Services */}
+                                {/* Point 1: Primary Negative Types */}
                                 <div className="col-span-6 flex flex-col min-h-0 h-full">
                                     <div className="bg-white/[0.015] border border-white/[0.06] border-l-4 border-l-rose-500 rounded-r-xl px-4 py-2.5 lg:px-4.5 lg:py-3 flex flex-col h-full justify-start gap-1 transition-all duration-300 hover:bg-white/[0.03]">
                                         <h4 className="text-[19.5px] lg:text-[20.5px] xl:text-[21.5px] font-bold text-white flex items-center gap-2 shrink-0">
                                             <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
-                                            1. 终端渠道与服务折损
+                                            主要负面类型
                                         </h4>
                                         <p className="text-[16.5px] lg:text-[17.5px] xl:text-[18.5px] text-zinc-300 leading-relaxed font-normal overflow-y-auto">
-                                            数据抓取到的核心负面标签之一是“<strong className="text-white font-semibold">执行存在差异</strong>”。当询问“萨米特瓷砖售后服务怎么样”或“好不好”时，AI 明确指出萨米特的售后服务呈现出明显的“<strong className="text-rose-300 font-semibold">两面性</strong>”。
+                                            主要负面类型集中在：“<strong className="text-white font-semibold">品控稳定性（平整度/色差）</strong>”、“<strong className="text-white font-semibold">售后执行差异</strong>”以及“<strong className="text-white font-semibold">经销商服务争议</strong>”。
                                         </p>
                                     </div>
                                 </div>
 
-                                {/* Point 2: Brand Information & Price Errors */}
+                                {/* Point 2: Handling Recommendations */}
                                 <div className="col-span-6 flex flex-col min-h-0 h-full">
                                     <div className="bg-rose-500/[0.015] border border-rose-500/15 border-l-4 border-l-rose-500 rounded-r-xl px-4 py-2.5 lg:px-4.5 lg:py-3 flex flex-col h-full justify-start gap-1 transition-all duration-300 hover:bg-white/[0.03] shadow-[0_0_15px_rgba(239,68,68,0.02)]">
                                         <h4 className="text-[19.5px] lg:text-[20.5px] xl:text-[21.5px] font-bold text-white flex items-center gap-2 shrink-0">
                                             <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
-                                            2. 品牌信息错误及价格错误
+                                            处理建议
                                         </h4>
                                         <p className="text-[16.5px] lg:text-[17.5px] xl:text-[18.5px] text-zinc-300 leading-relaxed font-normal overflow-y-auto">
-                                            在部分回答中，因为AI抓取到了一篇具有错误信息的文章，导致在回答中出现了明显的<strong className="text-rose-300 font-semibold">价格错误</strong>以及<strong className="text-rose-300 font-semibold">产品规格错误</strong>，容易给用户造成误解。
+                                            在拉升认知度的同时，定位负面引用信源（如<strong className="text-white font-semibold">黑猫投诉、问政类站点</strong>）并做权威内容覆盖，通过官方工艺标准与交付体系的深度语料，将负面占比控制在 <strong className="text-emerald-400 font-bold">5%</strong> 以内。
                                         </p>
                                     </div>
                                 </div>

@@ -23,8 +23,8 @@ export default function Page_BrandCompetitors() {
                         </div>
                         <div className="p-2 lg:p-3 flex flex-col items-center justify-center border-r border-white/10 bg-[#004CE5]/10 relative overflow-hidden">
                             <div className="absolute top-0 left-0 w-full h-1 bg-[#004CE5]"></div>
-                            <span className="font-bold text-white text-lg tracking-wider">萨米特</span>
-                            <span className="text-[#004CE5] text-xs uppercase tracking-widest mt-1 font-bold">SUMMIT</span>
+                            <span className="font-bold text-white text-lg tracking-wider">冠珠</span>
+                            <span className="text-[#004CE5] text-xs uppercase tracking-widest mt-1 font-bold">GUANZHU</span>
                         </div>
                         <div className="p-2 lg:p-3 flex flex-col items-center justify-center border-r border-white/10">
                             <span className="font-bold text-white text-lg tracking-wider">马可波罗</span>
@@ -75,8 +75,8 @@ export default function Page_BrandCompetitors() {
                                 <span className="font-bold text-zinc-300 text-center text-sm lg:text-[0.95rem]">渠道特征</span>
                             </div>
                             <div className="p-2.5 lg:p-3 border-r border-white/5 bg-[#004CE5]/5 flex flex-col justify-center">
-                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5">重 To C 与设计师渠道</strong>
-                                <p className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed">C端(零售/家装)占比约70%，B端(工程)30%。极度依赖设计师圈层推荐与年轻客群的“颜值买单”。</p>
+                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5">重 To C 与设计师/整装渠道</strong>
+                                <p className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed">C 端（零售/家装）占比约 73%（经销为主），B 端（工程）约 27%。3000+ 经销商、6000+ 终端，极度依赖线下看样与设计师圈层推荐。</p>
                             </div>
                             <div className="p-2.5 lg:p-3 border-r border-white/5 flex flex-col justify-center">
                                 <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5">B端C端双线霸主</strong>
@@ -98,11 +98,11 @@ export default function Page_BrandCompetitors() {
                                 <span className="font-bold text-zinc-300 text-center text-sm lg:text-[0.95rem]">瓷砖产品线</span>
                             </div>
                             <div className="p-2.5 lg:p-3 border-r border-white/5 bg-[#004CE5]/5 flex flex-col justify-center">
-                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5">主打触感与微缝</strong>
+                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5">主打国风审美与柔光护眼</strong>
                                 <ul className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed space-y-1 list-decimal pl-4">
-                                    <li>肤感砖（羊绒/玉质触感）</li>
-                                    <li>&lt;0.5mm 密缝砖</li>
-                                    <li>年轻化的高颜值复古小花砖</li>
+                                    <li>微光石/柔光砖（香云纱釉面）</li>
+                                    <li>悦木木纹砖（设计师款）</li>
+                                    <li>新中式/现代简约全品类墙地砖</li>
                                 </ul>
                             </div>
                             <div className="p-2.5 lg:p-3 border-r border-white/5 flex flex-col justify-center">
@@ -137,11 +137,11 @@ export default function Page_BrandCompetitors() {
                                 <span className="font-bold text-zinc-300 text-center text-sm lg:text-[0.95rem]">岩板产品线</span>
                             </div>
                             <div className="p-2.5 lg:p-3 border-r border-white/5 bg-[#004CE5]/5 flex flex-col justify-center">
-                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5">主打跨界材质复刻</strong>
+                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5">主打国潮大板与通体复刻</strong>
                                 <ul className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed space-y-1 list-decimal pl-4">
-                                    <li>奢石/皮纹复刻岩板</li>
-                                    <li>哆啦A梦涂鸦夜光岩板</li>
-                                    <li>2700mm超大平层星钻石岩板</li>
+                                    <li>华珍/华脉国潮岩板（&lt;0.5mm 密缝）</li>
+                                    <li>魔术师系列（MAGIC·STAR 通体）</li>
+                                    <li>华韵高端岩板（3200×1600mm）</li>
                                 </ul>
                             </div>
                             <div className="p-2.5 lg:p-3 border-r border-white/5 flex flex-col justify-center">
@@ -173,8 +173,8 @@ export default function Page_BrandCompetitors() {
                                 <span className="font-bold text-zinc-300 text-center text-sm lg:text-[0.95rem]">核心品牌<br />定调</span>
                             </div>
                             <div className="p-2.5 lg:p-3 border-r border-white/5 bg-[#004CE5]/5 flex flex-col justify-center">
-                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5 text-center">“设计+生活”的国际潮牌</strong>
-                                <p className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed text-center">年轻、时尚、极简风。</p>
+                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5 text-center">“国风+设计”的国民大牌</strong>
+                                <p className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed text-center">有质感、讲设计、偏新中式与大宅审美。</p>
                             </div>
                             <div className="p-2.5 lg:p-3 border-r border-white/5 flex flex-col justify-center">
                                 <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5 text-center">“稳重+底蕴”的老大哥</strong>
@@ -196,8 +196,8 @@ export default function Page_BrandCompetitors() {
                                 <span className="font-bold text-zinc-300 text-center text-sm lg:text-[0.95rem]">相对竞争<br />态势</span>
                             </div>
                             <div className="p-2.5 lg:p-3 border-r border-white/5 bg-[#004CE5]/10 flex flex-col justify-center border-b-2 border-b-[#004CE5]">
-                                <strong className="text-[#004CE5] text-[0.95rem] lg:text-[1rem] mb-1">差异化破局者</strong>
-                                <p className="text-zinc-300 text-[0.85rem] lg:text-[0.9rem] leading-relaxed text-justify">在体量上无法硬刚马、东，因此选择做<strong className="text-white">“最懂年轻人的品牌”</strong>，在肤感与无缝铺贴等细分审美赛道上建立极高壁垒。</p>
+                                <strong className="text-[#004CE5] text-[0.95rem] lg:text-[1rem] mb-1">稳健第二梯队</strong>
+                                <p className="text-zinc-300 text-[0.85rem] lg:text-[0.9rem] leading-relaxed text-justify">体量弱于马、东一线龙头，但凭借国潮岩板、密缝连纹在大宅市场建立鲜明认知，新中式场景表现突出。</p>
                             </div>
                             <div className="p-2.5 lg:p-3 border-r border-white/5 flex flex-col justify-center">
                                 <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5">规模防御者</strong>

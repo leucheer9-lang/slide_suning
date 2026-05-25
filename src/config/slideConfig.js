@@ -151,7 +151,7 @@ export const slideConfig = [
     title: '封面',
     backgroundImage: '/proposal-cover/proposal-cover-new.png',
     brand: 'GEO索引未来',
-    subtitle: '萨米特瓷砖\nGEO规划方案',
+    subtitle: '冠珠瓷砖\nGEO规划方案',
     date: 'March 2026',
   },
 
@@ -221,9 +221,9 @@ export const slideConfig = [
 
 
   // ══════════════════════════════════════════════════════════
-  // ——— 篇章4: 执行方案细节 ———
+  // ——— 篇章4: GEO实操要点解析 ———
   // ══════════════════════════════════════════════════════════
-  { type: 'chapter', title: '执行方案细节', subtitle: 'EXECUTION PLAN DETAILS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
+  { type: 'chapter', title: 'GEO\n实操要点解析', subtitle: 'GEO EXECUTION ESSENTIALS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
 
   { type: 'section', title: '品牌数据库建立' },
   { type: 'page', title: '品牌数据库建立', components: [Page_BrandDatabaseBuild, Page_BrandDatabaseBuildDetails] },

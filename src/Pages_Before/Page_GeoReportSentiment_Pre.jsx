@@ -68,10 +68,10 @@ function Page_GeoReportSentiment_Pre() {
                             </h3>
                             <div className="text-[18px] lg:text-[19.5px] xl:text-[21px] text-zinc-300 leading-normal font-normal flex flex-col gap-1.5">
                                 <p>
-                                    目标产品的正面回答率达 <strong className="text-emerald-400 font-bold">88.3%</strong>，主要的正面评价高度集中在“<strong className="text-white font-semibold">性价比高、品牌实力强、品质可靠</strong>”等通用褒义词汇上。
+                                    针对品牌词专项监测，AI 在全部 <strong className="text-[#004CE5] font-bold">67</strong> 次对话中均精准识别并讨论了冠珠品牌。其中正面回答率为 <strong className="text-emerald-400 font-bold">82.5%</strong>，负面回答率为 <strong className="text-rose-400 font-bold">17.5%</strong>，正面评价主要围绕“<strong className="text-white font-semibold">性价比高</strong>”、“<strong className="text-white font-semibold">品质可靠</strong>”、“<strong className="text-white font-semibold">品牌实力强</strong>”展开。
                                 </p>
                                 <p className="border-t border-white/5 pt-1.5">
-                                    负面声音占比为 <strong className="text-rose-400 font-bold">11.7%</strong>，集中在“<strong className="text-white font-semibold">执行存在差异</strong>”、“<strong className="text-white font-semibold">品牌归属错误</strong>”以及“<strong className="text-white font-semibold">质量投诉等问题上</strong>”。
+                                    由于是定向品牌词搜索，100% 的提及率是预期内的，重点在于 AI 输出的评价质量。目前 <strong className="text-rose-400 font-bold">17.5%</strong> 的负面率说明在深度问答场景下，品牌已暴露出一定的口碑风险点。
                                 </p>
                             </div>
                         </div>

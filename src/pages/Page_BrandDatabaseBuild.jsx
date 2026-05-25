@@ -6,28 +6,28 @@ export default function Page_BrandDatabaseBuild() {
             {/* Background Pattern */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] opacity-20 pointer-events-none"></div>
 
-            <div className="w-full max-w-[1650px] mx-auto flex flex-col h-full relative z-10 pt-0 gap-3.5 xl:gap-4.5">
+            <div className="w-full max-w-[1650px] mx-auto flex flex-col h-full relative z-10 pt-0 gap-5 lg:gap-6 xl:gap-7.5">
 
                 {/* Header Section */}
-                <div className="shrink-0 flex flex-col gap-2">
+                <div className="shrink-0 flex flex-col gap-3 lg:gap-4">
                     <h1 className="text-[34px] lg:text-[38px] xl:text-[44px] font-black text-white tracking-widest leading-tight">
                         品牌数据库建立
                     </h1>
                     
                     {/* Highly Prominent Core Goal Banner - No Generic Icons */}
-                    <div className="bg-gradient-to-r from-[#004CE5]/20 via-[#004CE5]/5 to-black border border-[#004CE5]/40 rounded-2xl py-3 px-5 lg:py-3.5 lg:px-6 shadow-[0_0_35px_rgba(0,76,229,0.3)] relative overflow-hidden flex flex-col md:flex-row md:items-center gap-4 lg:gap-5 mt-1">
+                    <div className="bg-gradient-to-r from-[#004CE5]/20 via-[#004CE5]/5 to-black border border-[#004CE5]/40 rounded-2xl py-3 px-5 lg:py-3.5 lg:px-6 shadow-[0_0_35px_rgba(0,76,229,0.3)] relative overflow-hidden flex flex-col md:flex-row md:items-center gap-4 lg:gap-5">
                         <div className="absolute top-0 left-0 w-2.5 h-full bg-[#004CE5] shadow-[0_0_20px_rgba(0,76,229,0.9)]"></div>
                         <span className="shrink-0 bg-[#004CE5] text-white px-5 py-2 rounded-xl text-base lg:text-[17px] xl:text-[19px] font-extrabold tracking-widest uppercase shadow-[0_0_20px_rgba(0,76,229,0.5)]">
                             核心目的
                         </span>
                         <p className="text-zinc-100 text-[17px] lg:text-[19.5px] xl:text-[22px] font-bold flex-1 leading-relaxed">
-                            将萨米特的所有碎片化信息，转化为大模型能够高效抓取、理解并调用的<strong className="text-white font-black border-b-2 border-[#004CE5] pb-0.5 ml-1.5">“专属知识数据库”</strong>。
+                            将冠珠的所有碎片化信息，转化为大模型能够高效抓取、理解并调用的<strong className="text-white font-black border-b-2 border-[#004CE5] pb-0.5 ml-1.5">“专属知识数据库”</strong>。
                         </p>
                     </div>
                 </div>
 
                 {/* Two Stacked Rows Content Layout */}
-                <div className="flex-1 flex flex-col gap-3.5 lg:gap-4.5 min-h-0">
+                <div className="flex-1 flex flex-col gap-5 lg:gap-6 xl:gap-7.5 min-h-0">
                     
                     {/* Row 1: 存量输入 (Full Width, 2-column content inside) */}
                     <div className="bg-[#080809] border border-white/10 rounded-[1.5rem] py-3.5 px-5 lg:py-4 lg:px-6 flex flex-col gap-3.5 shadow-2xl relative overflow-hidden">
@@ -86,7 +86,7 @@ export default function Page_BrandDatabaseBuild() {
                                                 服务与售后政策
                                             </td>
                                             <td className="py-2 px-4 text-zinc-300">
-                                                “3624管家式服务”细则、售后响应标准、退换货与质保条款、一线销售高频收集的客户 Q&A 标准答案。
+                                                “金冠服务”细则、售后响应标准、退换货与质保条款、一线销售高频收集的客户 Q&A 标准答案。
                                             </td>
                                         </tr>
                                     </tbody>
@@ -126,7 +126,7 @@ export default function Page_BrandDatabaseBuild() {
                                 <div className="flex-1">
                                     <h3 className="text-zinc-100 font-black text-[18px] lg:text-[20px] xl:text-[22px] mb-2">业务迭代或更新</h3>
                                     <p className="text-zinc-300 text-[14.5px] lg:text-[16px] xl:text-[17.5px] leading-relaxed">
-                                        当萨米特发布新产品线、举办重大品牌营销活动，或有千万级达人发布种草/带货内容时，第一时间将这些增量物料同步存入专属存储桶与数据库，转化为 AI 的最新训练语料。
+                                        当冠珠发布新产品线、举办重大品牌营销活动，或有千万级达人发布种草/带货内容时，第一时间将这些增量物料同步存入专属存储桶与数据库，转化为 AI 的最新训练语料。
                                     </p>
                                 </div>
                             </div>

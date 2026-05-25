@@ -5,16 +5,7 @@ const basesList = [
         desc: 'SKU太多，找到真正的有效词条'
     },
     {
-        desc: '匹配真实营收数据，避免平均用力'
-    },
-    {
         desc: '隔离行业雷区与负面信息'
-    },
-    {
-        desc: '针对不同目标客群进行分层转化'
-    },
-    {
-        desc: '扬长避短，先在细分优势上取胜'
     }
 ];
 
@@ -33,8 +24,8 @@ export default function Page_KeywordGroupingBasis() {
                     </h1>
                 </div>
 
-                {/* 5-Column Cards Layout */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 lg:gap-4 shrink-0">
+                {/* 2-Column Cards Layout */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 shrink-0">
                     {basesList.map((item, idx) => (
                         <div
                             key={idx}

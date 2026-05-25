@@ -90,7 +90,7 @@ export default function Page_GeoOptImplementation() {
                         {/* AI Mechanism block details */}
                         <div className="flex-1 flex flex-col gap-2 bg-white/[0.02] border border-white/5 rounded-xl p-3.5 lg:p-4 hover:bg-white/[0.04] transition-colors duration-300 justify-start">
                             <h4 className="text-white font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0 h-[48px] lg:h-[56px] xl:h-[64px] flex items-start">
-                                自动把问题拆解成多个“搜索方向”
+                                一个问题 → 多个“搜索方向”
                             </h4>
                             <div className="text-zinc-400 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed">
                                 面对同一个问题，AI 会兵分几路去查：
@@ -99,7 +99,7 @@ export default function Page_GeoOptImplementation() {
                                         ① 查榜单（如：瓷砖十大品牌排行）
                                     </span>
                                     <span className="block text-zinc-300 font-semibold">
-                                        ② 查对比（如：萨米特和东鹏哪个好）
+                                        ② 查对比（如：冠珠和东鹏哪个好）
                                     </span>
                                     <span className="block text-zinc-300 font-semibold">
                                         ③ 查避坑（如：某品牌有什么质量负面）
@@ -126,7 +126,7 @@ export default function Page_GeoOptImplementation() {
                             </div>
 
                             <h4 className="text-[#004CE5] font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0 z-10 h-[48px] lg:h-[56px] xl:h-[64px] flex items-start">
-                                根据 AI 的拆解路径，提前铺设“内容路标”
+                                根据AI的拆解路径，提前铺设对应内容
                             </h4>
                             <p className="text-zinc-200 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed z-10">
                                 AI 搜榜单，我们就准备权威推荐稿；AI 搜对比，我们就发详实的实景测评；AI 搜避坑，我们就铺设官方澄清和优质好评。让 AI 无论走哪条路，都能看到我们的正面信息。
@@ -156,7 +156,7 @@ export default function Page_GeoOptImplementation() {
                         {/* AI Mechanism block details */}
                         <div className="flex-1 flex flex-col gap-2 bg-white/[0.02] border border-white/5 rounded-xl p-3.5 lg:p-4 hover:bg-white/[0.04] transition-colors duration-300 justify-start">
                             <h4 className="text-white font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0 h-[48px] lg:h-[56px] xl:h-[64px] flex items-start">
-                                像学者一样去各大平台“抓取并拼凑”答案
+                                在各大平台“抓取并拼凑”答案
                             </h4>
                             <p className="text-zinc-400 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed">
                                 AI 带着拆解好的方向，去全网各个它信任的平台寻找知识碎片，最后重组为一个完整的回答。
@@ -181,7 +181,7 @@ export default function Page_GeoOptImplementation() {
                             </div>
 
                             <h4 className="text-[#004CE5] font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0 z-10 h-[48px] lg:h-[56px] xl:h-[64px] flex items-start">
-                                投其所好，在 AI 信任的阵地上“喂”好内容
+                                投其所好，在AI信任的阵地上布局好内容
                             </h4>
                             <p className="text-zinc-200 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed z-10">
                                 我们不瞎发通稿，而是根据数据监测，把专门定制的高质量语料，发到 AI 当前最喜欢引用的平台（如家居门户、资讯端）上，让 AI 顺理成章地抓取采纳。
@@ -211,7 +211,7 @@ export default function Page_GeoOptImplementation() {
                         {/* AI Mechanism block details */}
                         <div className="flex-1 flex flex-col gap-2 bg-white/[0.02] border border-white/5 rounded-xl p-3.5 lg:p-4 hover:bg-white/[0.04] transition-colors duration-300 justify-start">
                             <h4 className="text-white font-black text-[16px] lg:text-[18.5px] xl:text-[21px] leading-snug shrink-0 h-[48px] lg:h-[56px] xl:h-[64px] flex items-start">
-                                算法不断学习，答案是动态变化的
+                                算法更迭，答案是动态变化的
                             </h4>
                             <p className="text-zinc-400 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed">
                                 AI 的回答不是一成不变的，随着新数据的加入，它推荐的品牌和引用的内容随时可能发生变化。
@@ -239,7 +239,7 @@ export default function Page_GeoOptImplementation() {
                                 通过持续的数据监测，进行闭环验证与调整
                             </h4>
                             <p className="text-zinc-200 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed z-10">
-                                文章发出去只是开始。我们会每天监测 AI 到底引用了哪些文章、萨米特排在第几名。根据这些真实反馈，不断调整我们要发什么内容、去哪个平台发。
+                                文章发出去只是开始。我们会每天监测 AI 到底引用了哪些文章、冠珠排在第几名。根据这些真实反馈，不断调整我们要发什么内容、去哪个平台发。
                             </p>
                         </div>
                     </div>

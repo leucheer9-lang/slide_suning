@@ -12,7 +12,7 @@ export default function Page_IndustryPainPoints() {
                 <div className="w-full flex flex-col items-center justify-center text-center pt-2 pb-12 relative z-10 shrink-0">
                     <h1 className="text-[36px] font-black text-white tracking-widest mb-6 -translate-y-[4px]">建陶行业GEO难点解析</h1>
                     <p className="text-zinc-400 text-[1.15rem] lg:text-[1.25rem] leading-relaxed max-w-[1400px] tracking-wide whitespace-nowrap">
-                        从整个建陶行业的特性，以及我们过去服务过的同类型客户经验中，总结出<strong className="text-white">萨米特瓷砖在 GEO 中可能会遇到的核心困境：</strong>
+                        从整个建陶行业的特性，以及我们过去服务过的同类型客户经验中，总结出<strong className="text-white">冠珠瓷砖在 GEO 中可能会遇到的核心困境：</strong>
                     </p>
                 </div>
 

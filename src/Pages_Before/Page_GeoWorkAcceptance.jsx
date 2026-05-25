@@ -30,13 +30,13 @@ function Page_GeoWorkAcceptance() {
 
                                 {/* Row 1: Tiles (主要产品词) */}
                                 <tr className="hover:bg-white/[0.01] transition-colors duration-200">
-                                    <td className="py-3 xl:py-4 pl-3.5 font-semibold text-zinc-100 align-top border-b border-white/[0.22]">
+                                    <td className="py-3 xl:py-4 pl-3.5 font-semibold text-zinc-100 align-middle border-b border-white/[0.22]">
                                         <div className="flex flex-col gap-1 mt-1">
                                             <span className="text-[18.5px] xl:text-[20.5px] text-white font-black">主要产品词</span>
                                             <span className="text-[15px] xl:text-[16px] text-zinc-400 font-bold">（瓷砖）</span>
                                         </div>
                                     </td>
-                                    <td rowSpan={2} className="py-3 xl:py-4 text-zinc-300 align-top pr-4 border-b border-white/[0.22] border-l border-white/[0.22] pl-5">
+                                    <td className="py-3 xl:py-4 text-zinc-300 align-middle pr-4 border-b border-white/[0.22] border-l border-white/[0.22] pl-5">
                                         <div className="flex flex-col gap-3 xl:gap-3.5">
                                             <div className="flex flex-col gap-1">
                                                 <div className="flex items-center gap-2 text-[17.5px] xl:text-[19px] font-black text-white mb-1">
@@ -72,14 +72,14 @@ function Page_GeoWorkAcceptance() {
                                             </div>
                                         </div>
                                     </td>
-                                    <td className="py-3 xl:py-4 text-zinc-300 align-top pr-4 border-b border-white/[0.22] border-l border-white/[0.22] pl-5">
+                                    <td className="py-3 xl:py-4 text-zinc-300 align-middle pr-4 border-b border-white/[0.22] border-l border-white/[0.22] pl-5">
                                         <div className="flex flex-col gap-2 bg-[#004CE5]/6 border border-[#004CE5]/20 p-3.5 xl:p-4.5 rounded-xl mt-1 shadow-inner">
                                             <p className="text-zinc-100 text-[18px] xl:text-[19.5px] leading-relaxed">
                                                 提升核心产品词下的 <strong className="text-white font-bold">AI 推荐曝光和品牌位次</strong>，增加 AI 销售额 <strong className="text-[#6494ff] font-extrabold">5%</strong>，辅助线上线下渠道转化提升约 <strong className="text-white font-bold">5% - 10%</strong>。
                                             </p>
                                         </div>
                                     </td>
-                                    <td rowSpan={2} className="py-3 xl:py-4 text-zinc-300 align-middle pr-3 leading-relaxed border-l border-white/[0.22] pl-6 border-b border-white/[0.22]">
+                                    <td className="py-3 xl:py-4 text-zinc-300 align-middle pr-3 leading-relaxed border-l border-white/[0.22] pl-6 border-b border-white/[0.22]">
                                         <div className="flex flex-col gap-2 bg-white/[0.025] border border-white/[0.06] p-3.5 xl:p-4.5 rounded-xl text-center shadow-lg">
                                             <span className="text-[17.5px] xl:text-[19px] text-white font-extrabold tracking-widest">共建品牌资料库</span>
                                             <p className="text-[16px] xl:text-[17px] text-zinc-300 leading-relaxed text-left mt-2 border-t border-white/10 pt-2">
@@ -87,25 +87,6 @@ function Page_GeoWorkAcceptance() {
                                             </p>
                                         </div>
                                     </td>
-                                </tr>
-
-                                {/* Row 2: Slabs (新品词) */}
-                                <tr className="hover:bg-white/[0.01] transition-colors duration-200">
-                                    <td className="py-3 xl:py-4 pl-3.5 font-semibold text-zinc-100 align-top border-b border-white/[0.22]">
-                                        <div className="flex flex-col gap-1 mt-1">
-                                            <span className="text-[18.5px] xl:text-[20.5px] text-white font-black">新品词</span>
-                                            <span className="text-[15px] xl:text-[16px] text-zinc-400 font-bold">（岩板）</span>
-                                        </div>
-                                    </td>
-                                    {/* (工作内容 merged with Row 1) */}
-                                    <td className="py-3 xl:py-4 text-zinc-300 align-top pr-4 border-b border-white/[0.22] border-l border-white/[0.22] pl-5">
-                                        <div className="flex flex-col gap-2 bg-[#004CE5]/6 border border-[#004CE5]/20 p-3.5 xl:p-4.5 rounded-xl mt-1 shadow-inner">
-                                            <p className="text-zinc-100 text-[18px] xl:text-[19.5px] leading-relaxed">
-                                                提升新品在 AI 问答中的 <strong className="text-white font-bold">可见度和产品认知</strong>，降低用户前置教育成本，增加 AI 销售额 <strong className="text-[#6494ff] font-extrabold">5%</strong>，辅助线上线下渠道转化提升约 <strong className="text-white font-bold">5% - 10%</strong>。
-                                            </p>
-                                        </div>
-                                    </td>
-                                    {/* (需要协助 merged with Row 1) */}
                                 </tr>
 
                                 {/* Row 3: Brand (品牌词) */}

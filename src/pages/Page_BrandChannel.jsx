@@ -50,20 +50,14 @@ export default function Page_BrandChannel() {
                             </div>
 
                             {/* Legend Labels */}
-                            <div className="flex flex-col gap-4">
+                            <div className="flex flex-col gap-3">
                                 <div className="flex items-center gap-3">
                                     <span className="w-4 h-4 rounded-full bg-[#004CE5] shadow-[0_0_8px_rgba(0,76,229,0.6)] shrink-0"></span>
-                                    <div className="flex flex-col">
-                                        <span className="text-lg font-black text-white">To C 零售 (70%)</span>
-                                        <span className="text-xs font-bold text-zinc-400 mt-0.5">强力吸纳现金流，最稳底座</span>
-                                    </div>
+                                    <span className="text-lg font-black text-white">To C 零售 (70%)</span>
                                 </div>
                                 <div className="flex items-center gap-3">
                                     <span className="w-4 h-4 rounded-full bg-[#64748b] shrink-0"></span>
-                                    <div className="flex flex-col">
-                                        <span className="text-lg font-black text-zinc-300">To B 工程 (30%)</span>
-                                        <span className="text-xs font-bold text-zinc-500 mt-0.5">战略对接集采，拉动规模生产</span>
-                                    </div>
+                                    <span className="text-lg font-black text-zinc-300">To B 工程 (30%)</span>
                                 </div>
                             </div>
                         </div>
@@ -121,12 +115,12 @@ export default function Page_BrandChannel() {
                 </div>
 
                 {/* Right Column: Three Premium visual channel cards with embedded flow topologies */}
-                <div className="lg:col-span-7 flex flex-col gap-5 h-full min-h-0 justify-between">
+                <div className="lg:col-span-7 flex flex-col gap-4 h-full min-h-0 justify-between">
                     
                     {/* Card 1: To C Retail */}
-                    <div className="bg-gradient-to-br from-[#121212] to-black border border-white/10 rounded-[2rem] p-6 xl:p-7 shadow-2xl flex flex-col xl:flex-row gap-6 justify-between items-stretch flex-1">
+                    <div className="bg-gradient-to-br from-[#121212] to-black border border-white/10 rounded-[2rem] p-5 xl:p-6 shadow-2xl flex flex-col xl:flex-row gap-5 justify-between items-stretch flex-1">
                         {/* Left Info & Topology */}
-                        <div className="xl:w-[45%] flex flex-col justify-between gap-4 border-r-0 xl:border-r border-white/5 xl:pr-6 shrink-0">
+                        <div className="xl:w-[38%] flex flex-col justify-between gap-3 border-r-0 xl:border-r border-white/5 xl:pr-6 shrink-0">
                             {/* Card Header */}
                             <div className="flex items-center gap-4">
                                 <div className="w-11 h-11 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shadow-[0_0_10px_rgba(0,76,229,0.3)] shrink-0">
@@ -161,16 +155,16 @@ export default function Page_BrandChannel() {
                         </div>
 
                         {/* Right Bullet Items */}
-                        <div className="flex-1 flex flex-col justify-center gap-4 xl:pl-4 border-t xl:border-t-0 xl:border-l border-white/5 pt-4 xl:pt-0">
+                        <div className="flex-1 flex flex-col justify-center gap-3 xl:pl-6 border-t xl:border-t-0 xl:border-l border-white/5 pt-4 xl:pt-0">
                             <div className="flex items-start gap-3">
                                 <span className="text-blue-400 mt-1.5 shrink-0 text-lg">●</span>
-                                <p className="text-zinc-200 text-base lg:text-[17px] xl:text-[18px] font-extrabold leading-relaxed text-justify">
+                                <p className="text-zinc-200 text-sm lg:text-[15px] xl:text-[16px] font-bold leading-relaxed text-justify">
                                     <strong className="text-white">经销商加盟制：</strong>全国超2000家专卖店，总部提供标准化展示与政策赋能，经销商在本地市场深耕细作。
                                 </p>
                             </div>
                             <div className="flex items-start gap-3">
                                 <span className="text-blue-400 mt-1.5 shrink-0 text-lg">●</span>
-                                <p className="text-zinc-200 text-base lg:text-[17px] xl:text-[18px] font-extrabold leading-relaxed text-justify">
+                                <p className="text-zinc-200 text-sm lg:text-[15px] xl:text-[16px] font-bold leading-relaxed text-justify">
                                     <strong className="text-white">潮牌体验与密缝交付：</strong>针对年轻客群设计实景样板间，主打密缝铺贴精工交付，建立差异化美学壁垒。
                                 </p>
                             </div>
@@ -178,9 +172,9 @@ export default function Page_BrandChannel() {
                     </div>
 
                     {/* Card 2: To B Engineering */}
-                    <div className="bg-gradient-to-br from-[#121212] to-black border border-white/10 rounded-[2rem] p-6 xl:p-7 shadow-2xl flex flex-col xl:flex-row gap-6 justify-between items-stretch flex-1">
+                    <div className="bg-gradient-to-br from-[#121212] to-black border border-white/10 rounded-[2rem] p-5 xl:p-6 shadow-2xl flex flex-col xl:flex-row gap-5 justify-between items-stretch flex-1">
                         {/* Left Info & Topology */}
-                        <div className="xl:w-[45%] flex flex-col justify-between gap-4 border-r-0 xl:border-r border-white/5 xl:pr-6 shrink-0">
+                        <div className="xl:w-[38%] flex flex-col justify-between gap-3 border-r-0 xl:border-r border-white/5 xl:pr-6 shrink-0">
                             {/* Card Header */}
                             <div className="flex items-center gap-4">
                                 <div className="w-11 h-11 rounded-xl bg-zinc-600/20 border border-white/10 flex items-center justify-center text-zinc-400 shrink-0">
@@ -215,16 +209,16 @@ export default function Page_BrandChannel() {
                         </div>
 
                         {/* Right Bullet Items */}
-                        <div className="flex-1 flex flex-col justify-center gap-4 xl:pl-4 border-t xl:border-t-0 xl:border-l border-white/5 pt-4 xl:pt-0">
+                        <div className="flex-1 flex flex-col justify-center gap-3 xl:pl-6 border-t xl:border-t-0 xl:border-l border-white/5 pt-4 xl:pt-0">
                             <div className="flex items-start gap-3">
                                 <span className="text-zinc-400 mt-1.5 shrink-0 text-lg">●</span>
-                                <p className="text-zinc-200 text-base lg:text-[17px] xl:text-[18px] font-extrabold leading-relaxed text-justify">
+                                <p className="text-zinc-200 text-sm lg:text-[15px] xl:text-[16px] font-bold leading-relaxed text-justify">
                                     <strong className="text-white">总部集采与属地服务：</strong>总部负责与百强房企、大型公建签约集采框架，本地经销商落地提供配货、安装和售后保障。
                                 </p>
                             </div>
                             <div className="flex items-start gap-3">
                                 <span className="text-zinc-400 mt-1.5 shrink-0 text-lg">●</span>
-                                <p className="text-zinc-200 text-base lg:text-[17px] xl:text-[18px] font-extrabold leading-relaxed text-justify">
+                                <p className="text-zinc-200 text-sm lg:text-[15px] xl:text-[16px] font-bold leading-relaxed text-justify">
                                     <strong className="text-white">安全稳定大批量交付：</strong>背靠母公司新明珠集团强大的量产排产能力与优质健康的资金流，让开发商完全免除断链断供之忧。
                                 </p>
                             </div>
@@ -232,9 +226,9 @@ export default function Page_BrandChannel() {
                     </div>
 
                     {/* Card 3: Designer Channel */}
-                    <div className="bg-gradient-to-br from-[#121212] to-black border border-white/10 rounded-[2rem] p-6 xl:p-7 shadow-2xl flex flex-col xl:flex-row gap-6 justify-between items-stretch flex-1">
+                    <div className="bg-gradient-to-br from-[#121212] to-black border border-white/10 rounded-[2rem] p-5 xl:p-6 shadow-2xl flex flex-col xl:flex-row gap-5 justify-between items-stretch flex-1">
                         {/* Left Info & Topology */}
-                        <div className="xl:w-[45%] flex flex-col justify-between gap-4 border-r-0 xl:border-r border-white/5 xl:pr-6 shrink-0">
+                        <div className="xl:w-[38%] flex flex-col justify-between gap-3 border-r-0 xl:border-r border-white/5 xl:pr-6 shrink-0">
                             {/* Card Header */}
                             <div className="flex items-center gap-4">
                                 <div className="w-11 h-11 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shadow-[0_0_10px_rgba(167,139,250,0.3)] shrink-0">
@@ -269,16 +263,16 @@ export default function Page_BrandChannel() {
                         </div>
 
                         {/* Right Bullet Items */}
-                        <div className="flex-1 flex flex-col justify-center gap-4 xl:pl-4 border-t xl:border-t-0 xl:border-l border-white/5 pt-4 xl:pt-0">
+                        <div className="flex-1 flex flex-col justify-center gap-3 xl:pl-6 border-t xl:border-t-0 xl:border-l border-white/5 pt-4 xl:pt-0">
                             <div className="flex items-start gap-3">
                                 <span className="text-purple-400 mt-1.5 shrink-0 text-lg">●</span>
-                                <p className="text-zinc-200 text-base lg:text-[17px] xl:text-[18px] font-extrabold leading-relaxed text-justify">
+                                <p className="text-zinc-200 text-sm lg:text-[15px] xl:text-[16px] font-bold leading-relaxed text-justify">
                                     <strong className="text-white">圈层裂变与设计师库：</strong>签约邵唯晏等明星设计大师，跨界联合广州设计周、红棉设计奖等深度运营，建立核心的高端流量入口。
                                 </p>
                             </div>
                             <div className="flex items-start gap-3">
                                 <span className="text-purple-400 mt-1.5 shrink-0 text-lg">●</span>
-                                <p className="text-zinc-200 text-base lg:text-[17px] xl:text-[18px] font-extrabold leading-relaxed text-justify">
+                                <p className="text-zinc-200 text-sm lg:text-[15px] xl:text-[16px] font-bold leading-relaxed text-justify">
                                     <strong className="text-white">原创设计共鸣与溢价：</strong>依托“超级玩家”与“巴里漫石”等前卫高规格套系产品满足艺术审美，以设计原创驱动高单价高溢价成交。
                                 </p>
                             </div>
