@@ -116,7 +116,7 @@ export default function Page_BrandChannel() {
                     {/* Card 1: To KA */}
                     <div className="bg-zinc-900/60 border border-white/10 rounded-2xl p-6 shadow-2xl flex flex-col xl:flex-row gap-6 justify-between items-stretch flex-1 hover:border-white/20 transition-all duration-300">
                         {/* Left Info & Topology */}
-                        <div className="xl:w-[45%] flex flex-col justify-between gap-3 border-r-0 xl:border-r border-white/10 xl:pr-6 shrink-0">
+                        <div className="xl:w-[340px] 2xl:w-[380px] flex flex-col justify-between gap-3 border-r-0 xl:border-r border-white/10 xl:pr-6 shrink-0">
                             {/* Card Header */}
                             <div className="flex items-center gap-4">
                                 <div className="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shadow-[0_0_10px_rgba(0,76,229,0.3)] shrink-0">
@@ -131,20 +131,20 @@ export default function Page_BrandChannel() {
                             </div>
                             
                             {/* Embedded Horizontal Flow Topology */}
-                            <div className="flex items-center justify-between gap-1 bg-black/40 border border-white/5 p-1.5 rounded-xl">
-                                <div className="bg-zinc-900 border border-white/10 px-1.5 py-1 xl:px-2 rounded text-zinc-300 text-[11px] lg:text-xs xl:text-xs 2xl:text-[13px] font-bold text-center shrink-0">
+                            <div className="flex items-center justify-between gap-1 bg-black/40 border border-white/5 p-2 rounded-xl">
+                                <div className="bg-zinc-900 border border-white/10 px-2 py-1.5 rounded text-zinc-300 text-[15px] lg:text-[17px] xl:text-[18px] 2xl:text-[20px] font-bold text-center shrink-0">
                                     商超直营
                                 </div>
-                                <svg className="w-3 h-3 text-blue-500/50 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg className="w-4 h-4 text-blue-500/50 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
                                 </svg>
-                                <div className="bg-blue-600/10 border border-blue-500/30 px-1.5 py-1 xl:px-2 rounded text-white text-[11px] lg:text-xs xl:text-xs 2xl:text-[13px] font-bold text-center shrink-0 shadow-[0_0_6px_rgba(59,130,246,0.2)]">
+                                <div className="bg-blue-600/10 border border-blue-500/30 px-2 py-1.5 rounded text-white text-[15px] lg:text-[17px] xl:text-[18px] 2xl:text-[20px] font-bold text-center shrink-0 shadow-[0_0_6px_rgba(59,130,246,0.2)]">
                                     货架陈列
                                 </div>
-                                <svg className="w-3 h-3 text-blue-500/50 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg className="w-4 h-4 text-blue-500/50 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
                                 </svg>
-                                <div className="bg-zinc-900 border border-white/10 px-1.5 py-1 xl:px-2 rounded text-zinc-300 text-[11px] lg:text-xs xl:text-xs 2xl:text-[13px] font-bold text-center shrink-0">
+                                <div className="bg-zinc-900 border border-white/10 px-2 py-1.5 rounded text-zinc-300 text-[15px] lg:text-[17px] xl:text-[18px] 2xl:text-[20px] font-bold text-center shrink-0">
                                     账期结算
                                 </div>
                             </div>
@@ -170,7 +170,7 @@ export default function Page_BrandChannel() {
                     {/* Card 2: To CVS */}
                     <div className="bg-zinc-900/60 border border-white/10 rounded-2xl p-6 shadow-2xl flex flex-col xl:flex-row gap-6 justify-between items-stretch flex-1 hover:border-white/20 transition-all duration-300">
                         {/* Left Info & Topology */}
-                        <div className="xl:w-[45%] flex flex-col justify-between gap-3 border-r-0 xl:border-r border-white/10 xl:pr-6 shrink-0">
+                        <div className="xl:w-[340px] 2xl:w-[380px] flex flex-col justify-between gap-3 border-r-0 xl:border-r border-white/10 xl:pr-6 shrink-0">
                             {/* Card Header */}
                             <div className="flex items-center gap-4">
                                 <div className="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shadow-[0_0_10px_rgba(168,85,247,0.3)] shrink-0">
@@ -185,20 +185,20 @@ export default function Page_BrandChannel() {
                             </div>
                             
                             {/* Embedded Horizontal Flow Topology */}
-                            <div className="flex items-center justify-between gap-1 bg-black/40 border border-white/5 p-1.5 rounded-xl">
-                                <div className="bg-zinc-900 border border-white/10 px-1.5 py-1 xl:px-2 rounded text-zinc-300 text-[11px] lg:text-xs xl:text-xs 2xl:text-[13px] font-bold text-center shrink-0">
+                            <div className="flex items-center justify-between gap-1 bg-black/40 border border-white/5 p-2 rounded-xl">
+                                <div className="bg-zinc-900 border border-white/10 px-2 py-1.5 rounded text-zinc-300 text-[15px] lg:text-[17px] xl:text-[18px] 2xl:text-[20px] font-bold text-center shrink-0">
                                     便利入驻
                                 </div>
-                                <svg className="w-3 h-3 text-purple-500/50 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg className="w-4 h-4 text-purple-500/50 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
                                 </svg>
-                                <div className="bg-purple-600/10 border border-purple-500/30 px-1.5 py-1 xl:px-2 rounded text-white text-[11px] lg:text-xs xl:text-xs 2xl:text-[13px] font-bold text-center shrink-0 shadow-[0_0_6px_rgba(167,139,250,0.2)]">
+                                <div className="bg-purple-600/10 border border-purple-500/30 px-2 py-1.5 rounded text-white text-[15px] lg:text-[17px] xl:text-[18px] 2xl:text-[20px] font-bold text-center shrink-0 shadow-[0_0_6px_rgba(167,139,250,0.2)]">
                                     青年货架
                                 </div>
-                                <svg className="w-3 h-3 text-purple-500/50 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg className="w-4 h-4 text-purple-500/50 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
                                 </svg>
-                                <div className="bg-zinc-900 border border-white/10 px-1.5 py-1 xl:px-2 rounded text-zinc-300 text-[11px] lg:text-xs xl:text-xs 2xl:text-[13px] font-bold text-center shrink-0">
+                                <div className="bg-zinc-900 border border-white/10 px-2 py-1.5 rounded text-zinc-300 text-[15px] lg:text-[17px] xl:text-[18px] 2xl:text-[20px] font-bold text-center shrink-0">
                                     代餐场景
                                 </div>
                             </div>
@@ -224,7 +224,7 @@ export default function Page_BrandChannel() {
                     {/* Card 3: To Dealer */}
                     <div className="bg-zinc-900/60 border border-white/10 rounded-2xl p-6 shadow-2xl flex flex-col xl:flex-row gap-6 justify-between items-stretch flex-1 hover:border-white/20 transition-all duration-300">
                         {/* Left Info & Topology */}
-                        <div className="xl:w-[45%] flex flex-col justify-between gap-3 border-r-0 xl:border-r border-white/10 xl:pr-6 shrink-0">
+                        <div className="xl:w-[340px] 2xl:w-[380px] flex flex-col justify-between gap-3 border-r-0 xl:border-r border-white/10 xl:pr-6 shrink-0">
                             {/* Card Header */}
                             <div className="flex items-center gap-4">
                                 <div className="w-12 h-12 rounded-xl bg-zinc-600/20 border border-white/10 flex items-center justify-center text-zinc-400 shrink-0">
@@ -239,20 +239,20 @@ export default function Page_BrandChannel() {
                             </div>
                             
                             {/* Embedded Horizontal Flow Topology */}
-                            <div className="flex items-center justify-between gap-1 bg-black/40 border border-white/5 p-1.5 rounded-xl">
-                                <div className="bg-zinc-900 border border-white/10 px-1.5 py-1 xl:px-2 rounded text-zinc-300 text-[11px] lg:text-xs xl:text-xs 2xl:text-[13px] font-bold text-center shrink-0">
+                            <div className="flex items-center justify-between gap-1 bg-black/40 border border-white/5 p-2 rounded-xl">
+                                <div className="bg-zinc-900 border border-white/10 px-2 py-1.5 rounded text-zinc-300 text-[15px] lg:text-[17px] xl:text-[18px] 2xl:text-[20px] font-bold text-center shrink-0">
                                     分销网络
                                 </div>
-                                <svg className="w-3 h-3 text-zinc-500/50 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg className="w-4 h-4 text-zinc-500/50 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
                                 </svg>
-                                <div className="bg-zinc-800 border border-white/10 px-1.5 py-1 xl:px-2 rounded text-white text-[11px] lg:text-xs xl:text-xs 2xl:text-[13px] font-bold text-center shrink-0">
+                                <div className="bg-zinc-800 border border-white/10 px-2 py-1.5 rounded text-white text-[15px] lg:text-[17px] xl:text-[18px] 2xl:text-[20px] font-bold text-center shrink-0">
                                     社会小店
                                 </div>
-                                <svg className="w-3 h-3 text-zinc-500/50 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg className="w-4 h-4 text-zinc-500/50 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
                                 </svg>
-                                <div className="bg-zinc-900 border border-white/10 px-1.5 py-1 xl:px-2 rounded text-zinc-300 text-[11px] lg:text-xs xl:text-xs 2xl:text-[13px] font-bold text-center shrink-0">
+                                <div className="bg-zinc-900 border border-white/10 px-2 py-1.5 rounded text-zinc-300 text-[15px] lg:text-[17px] xl:text-[18px] 2xl:text-[20px] font-bold text-center shrink-0">
                                     终端铺货
                                 </div>
                             </div>
