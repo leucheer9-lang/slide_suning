@@ -4,212 +4,183 @@ export default function Page_BrandCompetitors() {
     return (
         <div className="w-full h-full flex flex-col relative bg-black overflow-hidden text-white font-sans">
             {/* Background Pattern */}
-            <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] opacity-20 pointer-events-none"></div>
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:40px_40px] opacity-20 pointer-events-none"></div>
 
             {/* Header */}
-            <div className="w-full flex-col items-center justify-center text-center pt-3 lg:pt-4 pb-2 relative z-10 shrink-0">
-                <h1 className="text-[36px] font-black text-white tracking-widest mb-1 -translate-y-[4px]">核心竞品对比分析</h1>
+            <div className="w-full px-12 sm:px-16 pt-4 pb-2 relative z-10 shrink-0 text-left">
+                <h1 className="text-[32px] xl:text-[36px] font-bold text-zinc-100 tracking-wider">行业核心竞品对比分析</h1>
             </div>
 
-            <div className="flex-1 w-full max-w-[1700px] mx-auto px-6 lg:px-8 pb-4 relative z-10 flex flex-col justify-start min-h-0 -translate-y-[6px]">
+            <div className="flex-1 w-full px-12 sm:px-16 pb-6 relative z-10 flex flex-col justify-start min-h-0">
 
                 {/* Table Container */}
-                <div className="w-full flex flex-col border border-white/10 rounded-xl overflow-hidden bg-[#111]/80 shadow-2xl relative">
+                <div className="w-full flex flex-col border border-white/10 rounded-xl overflow-hidden bg-zinc-900/60 backdrop-blur-md shadow-2xl relative flex-1 min-h-0">
 
                     {/* Header Row */}
-                    <div className="grid grid-cols-[120px_1fr_1fr_1fr_1fr] bg-black/60 border-b border-white/10 shrink-0">
-                        <div className="p-2 lg:p-3 flex items-center justify-center border-r border-white/10">
-                            <span className="font-bold text-zinc-400 tracking-widest">比较维度</span>
+                    <div className="grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] bg-black/60 border-b border-white/10 shrink-0 text-center font-bold">
+                        <div className="py-3 px-2 flex items-center justify-center border-r border-white/10">
+                            <span className="font-bold text-zinc-400 tracking-widest text-sm lg:text-base xl:text-lg">比较维度</span>
                         </div>
-                        <div className="p-2 lg:p-3 flex flex-col items-center justify-center border-r border-white/10 bg-[#004CE5]/10 relative overflow-hidden">
+                        <div className="py-3 px-2 flex flex-col items-center justify-center border-r border-white/10 bg-[#004CE5]/10 relative overflow-hidden">
                             <div className="absolute top-0 left-0 w-full h-1 bg-[#004CE5]"></div>
-                            <span className="font-bold text-white text-lg tracking-wider">冠珠</span>
-                            <span className="text-[#004CE5] text-xs uppercase tracking-widest mt-1 font-bold">GUANZHU</span>
+                            <span className="text-white text-base lg:text-lg xl:text-[20px] tracking-wider font-extrabold">桃李面包</span>
+                            <span className="text-[#004CE5] text-xs font-bold tracking-widest mt-0.5">TOLY BREAD</span>
                         </div>
-                        <div className="p-2 lg:p-3 flex flex-col items-center justify-center border-r border-white/10">
-                            <span className="font-bold text-white text-lg tracking-wider">马可波罗</span>
-                            <span className="text-zinc-500 text-xs uppercase tracking-widest mt-1">Marco Polo</span>
+                        <div className="py-3 px-2 flex flex-col items-center justify-center border-r border-white/10">
+                            <span className="text-white text-base lg:text-lg xl:text-[20px] tracking-wider font-bold">达利美焙辰</span>
+                            <span className="text-zinc-500 text-xs font-bold tracking-widest mt-0.5">MEIBEICHEN</span>
                         </div>
-                        <div className="p-2 lg:p-3 flex flex-col items-center justify-center border-r border-white/10">
-                            <span className="font-bold text-white text-lg tracking-wider">东鹏控股</span>
-                            <span className="text-zinc-500 text-xs uppercase tracking-widest mt-1">Dongpeng</span>
+                        <div className="py-3 px-2 flex flex-col items-center justify-center border-r border-white/10">
+                            <span className="text-white text-base lg:text-lg xl:text-[20px] tracking-wider font-bold">宾堡/曼可顿/嘉顿</span>
+                            <span className="text-zinc-500 text-xs font-bold tracking-widest mt-0.5">MULTINATIONALS</span>
                         </div>
-                        <div className="p-2 lg:p-3 flex flex-col items-center justify-center">
-                            <span className="font-bold text-white text-lg tracking-wider">蒙娜丽莎</span>
-                            <span className="text-zinc-500 text-xs uppercase tracking-widest mt-1">Monalisa</span>
+                        <div className="py-3 px-2 flex flex-col items-center justify-center border-r border-white/10">
+                            <span className="text-white text-base lg:text-lg xl:text-[20px] tracking-wider font-bold">便利店自营 (罗森/711/全家)</span>
+                            <span className="text-zinc-500 text-xs font-bold tracking-widest mt-0.5">CVS PRIVATE BRAND</span>
+                        </div>
+                        <div className="py-3 px-2 flex flex-col items-center justify-center">
+                            <span className="text-white text-base lg:text-lg xl:text-[20px] tracking-wider font-bold">山姆/盒马自有品牌</span>
+                            <span className="text-zinc-500 text-xs font-bold tracking-widest mt-0.5">RETAIL PB</span>
                         </div>
                     </div>
 
-                    {/* Body Rows */}
-                    <div className="flex flex-col">
+                    {/* Body Rows Container */}
+                    <div className="flex-1 overflow-y-auto divide-y divide-white/5 text-base lg:text-[17px] xl:text-[18px] leading-relaxed">
 
-                        {/* Row 1: 财务 */}
-                        <div className="grid grid-cols-[120px_1fr_1fr_1fr_1fr] border-b border-white/5 group hover:bg-white/[0.02] transition-colors">
-                            <div className="p-2.5 lg:p-3 flex items-center justify-center border-r border-white/5 bg-black/40">
-                                <span className="font-bold text-zinc-300 text-center text-sm lg:text-[0.95rem]">2025年<br />财务表现</span>
+                        {/* Row 1: 品牌背景 */}
+                        <div className="grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] group hover:bg-white/[0.01] transition-colors">
+                            <div className="py-3 px-3 flex items-center justify-center border-r border-white/5 bg-black/40 text-center font-bold text-zinc-300">
+                                品牌背景与地位
                             </div>
-                            <div className="p-2.5 lg:p-3 border-r border-white/5 bg-[#004CE5]/5 flex flex-col justify-center">
-                                <p className="text-zinc-300 text-[0.85rem] lg:text-[0.9rem] leading-relaxed">具体财报未公开。</p>
-                                <p className="text-zinc-500 text-[0.85rem] lg:text-[0.9rem] mt-2">注：母公司新明珠集团总产能居行业前二，底盘稳固。</p>
+                            <div className="py-3 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200">
+                                <p className="font-semibold text-white">全国化布局领先</p>
+                                <p className="text-zinc-400 mt-1">全国部署24个大型中央工厂，占短保市场约35%份额，为国内最大规模的短保面包企业。</p>
                             </div>
-                            <div className="p-2.5 lg:p-3 border-r border-white/5 flex flex-col justify-center gap-1">
-                                <p className="text-zinc-300 text-[0.85rem] lg:text-[0.9rem]">营收：64.58亿 <span className="text-red-400">(降11.83%)</span></p>
-                                <p className="text-zinc-300 text-[0.85rem] lg:text-[0.9rem]">净利：12.10亿 <span className="text-red-400">(降8.80%)</span></p>
-                                <p className="text-orange-400/80 text-[0.85rem] lg:text-[0.9rem] mt-1 font-bold">现金流极好(21亿)，建陶利润王</p>
+                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
+                                <p className="font-semibold text-white">强势新秀品牌</p>
+                                <p className="text-zinc-400 mt-1">达利食品于2018年推出的短保子品牌，资金与渠道实力雄厚，国内渠道下沉极深。</p>
                             </div>
-                            <div className="p-2.5 lg:p-3 border-r border-white/5 flex flex-col justify-center gap-1">
-                                <p className="text-zinc-300 text-[0.85rem] lg:text-[0.9rem]">营收：60.62亿 <span className="text-red-400">(降6.30%)</span></p>
-                                <p className="text-zinc-300 text-[0.85rem] lg:text-[0.9rem]">净利：3.52亿 <span className="text-emerald-400">(增7.15%)</span></p>
-                                <p className="text-emerald-400/80 text-[0.85rem] lg:text-[0.9rem] mt-1 font-bold">行业唯一利润逆势增长巨头</p>
+                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
+                                <p className="font-semibold text-white">区域跨国巨头</p>
+                                <p className="text-zinc-400 mt-1">跨国烘焙巨头，研发实力雄厚。曼可顿深耕华东与华北，嘉顿独占华南，区域壁垒稳固。</p>
                             </div>
-                            <div className="p-2.5 lg:p-3 flex flex-col justify-center gap-1">
-                                <p className="text-zinc-300 text-[0.85rem] lg:text-[0.9rem]">营收：39.23亿 <span className="text-red-400">(降15.28%)</span></p>
-                                <p className="text-zinc-300 text-[0.85rem] lg:text-[0.9rem]">净利：0.52亿 <span className="text-red-400">(降58.05%)</span></p>
-                                <p className="text-red-400/80 text-[0.85rem] lg:text-[0.9rem] mt-1 font-bold">受房地产下行拖累最严重</p>
+                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
+                                <p className="font-semibold text-white">便利零售自有品牌</p>
+                                <p className="text-zinc-400 mt-1">罗森、7-11、全家等自营短保面包，依托庞大终端网络与自有高频客流快速崛起。</p>
+                            </div>
+                            <div className="py-3 px-4 text-zinc-300">
+                                <p className="font-semibold text-white">会员新零售自有品牌</p>
+                                <p className="text-zinc-400 mt-1">山姆会员店、盒马鲜生等仓储新零售巨头，凭借私域流量和整合供应链迅速扩展占有率。</p>
                             </div>
                         </div>
 
-                        {/* Row 2: 渠道 */}
-                        <div className="grid grid-cols-[120px_1fr_1fr_1fr_1fr] border-b border-white/5 group hover:bg-white/[0.02] transition-colors">
-                            <div className="p-2.5 lg:p-3 flex items-center justify-center border-r border-white/5 bg-black/40">
-                                <span className="font-bold text-zinc-300 text-center text-sm lg:text-[0.95rem]">渠道特征</span>
+                        {/* Row 2: 经营特征 */}
+                        <div className="grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] group hover:bg-white/[0.01] transition-colors">
+                            <div className="py-3 px-3 flex items-center justify-center border-r border-white/5 bg-black/40 text-center font-bold text-zinc-300">
+                                财务及经营特征
                             </div>
-                            <div className="p-2.5 lg:p-3 border-r border-white/5 bg-[#004CE5]/5 flex flex-col justify-center">
-                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5">重 To C 与设计师/整装渠道</strong>
-                                <p className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed">C 端（零售/家装）占比约 73%（经销为主），B 端（工程）约 27%。3000+ 经销商、6000+ 终端，极度依赖线下看样与设计师圈层推荐。</p>
+                            <div className="py-3 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200">
+                                2025年营收54.48亿元，净利润2.84亿元。产能扩张导致固定资产折旧增加，对利润水平产生阶段性波动影响。
                             </div>
-                            <div className="p-2.5 lg:p-3 border-r border-white/5 flex flex-col justify-center">
-                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5">B端C端双线霸主</strong>
-                                <p className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed">线下门店超4000家，下沉县级市场极深；早期工程端(B端)基建打得非常牢固。</p>
+                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
+                                依托达利集团全国化的庞大成熟分销网络与地推资源，在国内高频进行地推渗透，资金周转良好。
                             </div>
-                            <div className="p-2.5 lg:p-3 border-r border-white/5 flex flex-col justify-center">
-                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5">强 To C 大零售</strong>
-                                <p className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed">零售、整装渠道是其核心。2025年C端大零售渠道收入逆势增长3.98%。</p>
+                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
+                                维持相对稳定的一二线中高端商超及品牌便利店市场，主打高溢价与中高毛利，经营表现稳健。
                             </div>
-                            <div className="p-2.5 lg:p-3 flex flex-col justify-center">
-                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5">B端艰难向C端转型</strong>
-                                <p className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed">过去高度绑定百强房企战略集采(强B端)。现因地产暴雷正加速建立C端经销网络体系。</p>
+                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
+                                毛利空间和运营效益极佳。凭借终端主场优势截留高频客流，免去传统厂商品牌的渠道铺货扣点。
                             </div>
-                        </div>
-
-                        {/* Row 3: 瓷砖 */}
-                        <div className="grid grid-cols-[120px_1fr_1fr_1fr_1fr] border-b border-white/5 group hover:bg-white/[0.02] transition-colors">
-                            <div className="p-2.5 lg:p-3 flex items-center justify-center border-r border-white/5 bg-black/40">
-                                <span className="font-bold text-zinc-300 text-center text-sm lg:text-[0.95rem]">瓷砖产品线</span>
-                            </div>
-                            <div className="p-2.5 lg:p-3 border-r border-white/5 bg-[#004CE5]/5 flex flex-col justify-center">
-                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5">主打国风审美与柔光护眼</strong>
-                                <ul className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed space-y-1 list-decimal pl-4">
-                                    <li>微光石/柔光砖（香云纱釉面）</li>
-                                    <li>悦木木纹砖（设计师款）</li>
-                                    <li>新中式/现代简约全品类墙地砖</li>
-                                </ul>
-                            </div>
-                            <div className="p-2.5 lg:p-3 border-r border-white/5 flex flex-col justify-center">
-                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5">主打经典耐用与文化</strong>
-                                <ul className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed space-y-1 list-decimal pl-4">
-                                    <li>有釉砖是绝对主力（贡97%营收）</li>
-                                    <li>仿古砖（起家王牌）</li>
-                                    <li>中国印象文化砖</li>
-                                </ul>
-                            </div>
-                            <div className="p-2.5 lg:p-3 border-r border-white/5 flex flex-col justify-center">
-                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5">主打功能性与标准化</strong>
-                                <ul className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed space-y-1 list-decimal pl-4">
-                                    <li>防滑/抗菌功能性瓷砖</li>
-                                    <li>经典原石系列瓷砖</li>
-                                    <li>5A级高标砖</li>
-                                </ul>
-                            </div>
-                            <div className="p-2.5 lg:p-3 flex flex-col justify-center">
-                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5">主打釉面质感与高端</strong>
-                                <ul className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed space-y-1 list-decimal pl-4">
-                                    <li>罗马超石代系列</li>
-                                    <li>经典大理石瓷砖</li>
-                                    <li>高密度防滑耐磨砖</li>
-                                </ul>
+                            <div className="py-3 px-4 text-zinc-300">
+                                整合大宗全球供应链，依靠会员店大规格包装高周转去化，零营销费用投入，产品毛利可控。
                             </div>
                         </div>
 
-                        {/* Row 4: 岩板 */}
-                        <div className="grid grid-cols-[120px_1fr_1fr_1fr_1fr] border-b border-white/5 group hover:bg-white/[0.02] transition-colors">
-                            <div className="p-2.5 lg:p-3 flex items-center justify-center border-r border-white/5 bg-black/40">
-                                <span className="font-bold text-zinc-300 text-center text-sm lg:text-[0.95rem]">岩板产品线</span>
+                        {/* Row 3: 产品与研发 */}
+                        <div className="grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] group hover:bg-white/[0.01] transition-colors">
+                            <div className="py-3 px-3 flex items-center justify-center border-r border-white/5 bg-black/40 text-center font-bold text-zinc-300">
+                                产品与研发
                             </div>
-                            <div className="p-2.5 lg:p-3 border-r border-white/5 bg-[#004CE5]/5 flex flex-col justify-center">
-                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5">主打国潮大板与通体复刻</strong>
-                                <ul className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed space-y-1 list-decimal pl-4">
-                                    <li>华珍/华脉国潮岩板（&lt;0.5mm 密缝）</li>
-                                    <li>魔术师系列（MAGIC·STAR 通体）</li>
-                                    <li>华韵高端岩板（3200×1600mm）</li>
-                                </ul>
+                            <div className="py-3 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200">
+                                2025年研发费用为2625万元，产品线以醇熟切片、老式面包等成熟经典品类为主，目前正积极进行健康轻食系列开发。
                             </div>
-                            <div className="p-2.5 lg:p-3 border-r border-white/5 flex flex-col justify-center">
-                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5">主打工艺突破</strong>
-                                <ul className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed space-y-1 list-decimal pl-4">
-                                    <li>曲面岩板（可弯曲）</li>
-                                    <li>3mm 超薄智能抛光亮面岩板</li>
-                                </ul>
+                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
+                                产品开发及市场反馈敏捷度极高，推出汤熟、纯豆浆等多项细分工艺产品，实现差异化竞争。
                             </div>
-                            <div className="p-2.5 lg:p-3 border-r border-white/5 flex flex-col justify-center">
-                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5">主打空间全案(1+N)</strong>
-                                <ul className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed space-y-1 list-decimal pl-4">
-                                    <li>尊石岩板</li>
-                                    <li>打通全屋交付生态(卫浴/家居)</li>
-                                </ul>
+                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
+                                西式配方高度成熟，拥有国际化研发经验支持，在原料品质标准与跨国采购供应链方面具备优势。
                             </div>
-                            <div className="p-2.5 lg:p-3 flex flex-col justify-center">
-                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5">主打大规格与艺术性</strong>
-                                <ul className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed space-y-1 list-decimal pl-4">
-                                    <li>国内最早研发超大陶瓷板</li>
-                                    <li>陶瓷艺术画/岩板背景墙</li>
-                                </ul>
+                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
+                                采用成熟的代工厂（OEM）模式生产，主打新潮口味与精美单片包装，贴合年轻白领群体的日常代餐偏好。
+                            </div>
+                            <div className="py-3 px-4 text-zinc-300">
+                                突出极具杀伤力的量贩装性价比，以麻薯、瑞士卷等爆款单品切入，产品迭代和淘汰速度极快。
+                            </div>
+                        </div>
+
+                        {/* Row 4: 渠道特征 */}
+                        <div className="grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] group hover:bg-white/[0.01] transition-colors">
+                            <div className="py-3 px-3 flex items-center justify-center border-r border-white/5 bg-black/40 text-center font-bold text-zinc-300">
+                                渠道特征
+                            </div>
+                            <div className="py-3 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200">
+                                核心渠道为大型商超和卖场，便利店及散店覆盖深度正逐步优化，并积极探索线上直播带货。
+                            </div>
+                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
+                                依托母公司达利集团的分销和地推实力，对社区便利店及杂货散店进行高密度铺货。
+                            </div>
+                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
+                                牢牢占据一二线核心商圈的大型主流商超，以及罗森、7-11等高端品牌连锁便利店渠道。
+                            </div>
+                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
+                                独占自有便利店系统的黄金陈列区及收银台货架，实现极高周转的冷链一日一配，渠道流通完全闭环。
+                            </div>
+                            <div className="py-3 px-4 text-zinc-300">
+                                闭环式付费会员制私域渠道，依托线下仓储门店烘焙区展示，结合线上APP即时配送送货上门。
                             </div>
                         </div>
 
                         {/* Row 5: 品牌定调 */}
-                        <div className="grid grid-cols-[120px_1fr_1fr_1fr_1fr] border-b border-white/5 group hover:bg-white/[0.02] transition-colors">
-                            <div className="p-2.5 lg:p-3 flex items-center justify-center border-r border-white/5 bg-black/40">
-                                <span className="font-bold text-zinc-300 text-center text-sm lg:text-[0.95rem]">核心品牌<br />定调</span>
+                        <div className="grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] group hover:bg-white/[0.01] transition-colors">
+                            <div className="py-3 px-3 flex items-center justify-center border-r border-white/5 bg-black/40 text-center font-bold text-zinc-300">
+                                品牌定调
                             </div>
-                            <div className="p-2.5 lg:p-3 border-r border-white/5 bg-[#004CE5]/5 flex flex-col justify-center">
-                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5 text-center">“国风+设计”的国民大牌</strong>
-                                <p className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed text-center">有质感、讲设计、偏新中式与大宅审美。</p>
+                            <div className="py-3 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200 font-medium">
+                                “大众化、高性价比的全国性经典短保面包”
                             </div>
-                            <div className="p-2.5 lg:p-3 border-r border-white/5 flex flex-col justify-center">
-                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5 text-center">“稳重+底蕴”的老大哥</strong>
-                                <p className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed text-center">国民度高、质量可靠、中式底蕴。</p>
+                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300 font-medium">
+                                “多样、新颖、高性价比的日常烘焙代餐”
                             </div>
-                            <div className="p-2.5 lg:p-3 border-r border-white/5 flex flex-col justify-center">
-                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5 text-center">“实用+全能”方案商</strong>
-                                <p className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed text-center">一站式购齐、重功能属性。</p>
+                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300 font-medium">
+                                “主打西式、品质与一二线都市商超的代表”
                             </div>
-                            <div className="p-2.5 lg:p-3 flex flex-col justify-center">
-                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5 text-center">“高端+艺术”技术先驱</strong>
-                                <p className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed text-center">研发强、带有浓厚艺术标签。</p>
+                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300 font-medium">
+                                “年轻、便携、贴合白领快节奏的高效早餐”
+                            </div>
+                            <div className="py-3 px-4 text-zinc-300 font-medium">
+                                “中产阶层、家庭化、极致量贩性价比的储备烘焙”
                             </div>
                         </div>
 
-                        {/* Row 6: 竞争态势 */}
-                        <div className="grid grid-cols-[120px_1fr_1fr_1fr_1fr] group hover:bg-white/[0.02] transition-colors bg-[#111]">
-                            <div className="p-2.5 lg:p-3 flex items-center justify-center border-r border-white/5 bg-black/40">
-                                <span className="font-bold text-zinc-300 text-center text-sm lg:text-[0.95rem]">相对竞争<br />态势</span>
+                        {/* Row 6: 相对态势 */}
+                        <div className="grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] group hover:bg-white/[0.01] transition-colors">
+                            <div className="py-3 px-3 flex items-center justify-center border-r border-white/5 bg-black/40 text-center font-bold text-zinc-300">
+                                相对竞争态势
                             </div>
-                            <div className="p-2.5 lg:p-3 border-r border-white/5 bg-[#004CE5]/10 flex flex-col justify-center border-b-2 border-b-[#004CE5]">
-                                <strong className="text-[#004CE5] text-[0.95rem] lg:text-[1rem] mb-1">稳健第二梯队</strong>
-                                <p className="text-zinc-300 text-[0.85rem] lg:text-[0.9rem] leading-relaxed text-justify">体量弱于马、东一线龙头，但凭借国潮岩板、密缝连纹在大宅市场建立鲜明认知，新中式场景表现突出。</p>
+                            <div className="py-3 px-4 border-r border-white/5 bg-[#004CE5]/10 text-zinc-200 border-b-2 border-b-[#004CE5] font-semibold flex items-center">
+                                大盘防守者：核心基本盘最大，但面临产能折旧与渠道变革压力，正在进行防线巩固与策略调整。
                             </div>
-                            <div className="p-2.5 lg:p-3 border-r border-white/5 flex flex-col justify-center">
-                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5">规模防御者</strong>
-                                <p className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed text-justify">虽然营收略降，但12.1亿的净利润让其在价格战中拥有绝对底气，品牌下沉优势极大。</p>
+                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300 flex items-center">
+                                凶悍抢食者：依托庞大的渠道网络和地推优势，不断侵蚀传统品牌的北方和南方重合市场。
                             </div>
-                            <div className="p-2.5 lg:p-3 border-r border-white/5 flex flex-col justify-center">
-                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5">生态整合者</strong>
-                                <p className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed text-justify">凭借“瓷砖+卫浴+辅材”的闭环，在存量房翻新（C端局改）中抢占了大量份额，财报韧性最强。</p>
+                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300 flex items-center">
+                                稳健守成者：深固外资大型商超与高端连锁便利店的传统领地，业务表现稳固。
                             </div>
-                            <div className="p-2.5 lg:p-3 flex flex-col justify-center">
-                                <strong className="text-white text-[0.9rem] lg:text-[0.95rem] mb-1.5">阵痛调整者</strong>
-                                <p className="text-zinc-400 text-[0.85rem] lg:text-[0.9rem] leading-relaxed text-justify">2025年因地产坏账计提了1.32亿减值准备，利润大幅缩水，目前重点是清历史包袱和发力C端。</p>
+                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300 flex items-center">
+                                终端截流者：直接在距离年轻消费者最近的便利零售终端，完成对传统工业短保品牌的拦截和替代。
+                            </div>
+                            <div className="py-3 px-4 text-zinc-300 flex items-center">
+                                跨界竞争者：通过极致性价比和大容量包装，分流大量都市中产家庭及周末采购性早餐份额。
                             </div>
                         </div>
 
@@ -217,10 +188,9 @@ export default function Page_BrandCompetitors() {
                 </div>
 
                 {/* Footer Note */}
-                <div className="w-full flex justify-end mt-1 px-2 shrink-0">
-                    <div className="text-zinc-500 text-[0.75rem] lg:text-[0.8rem] text-right space-y-0.5 leading-tight">
-                        <p>信息来源：各公司2025年度报告</p>
-                        <p>蒙娜丽莎(002918)_公司公告_蒙娜丽莎：2025年年度报告 | 马可波罗(001386)_公司公告_马可波罗：2025年年度报告 | 东鹏控股(003012)_公司公告_东鹏控股：2025年年度报告</p>
+                <div className="w-full flex justify-end mt-2 px-0 shrink-0">
+                    <div className="text-zinc-500 text-[11px] lg:text-[12px] xl:text-[13px] text-right space-y-0.5 leading-tight">
+                        <p>数据来源：公开披露财报（2025/2026Q1）、行业公开统计研报、GEO消费心智数据库</p>
                     </div>
                 </div>
 
