@@ -45,137 +45,142 @@ export default function Page_BrandCompetitors() {
                     </div>
 
                     {/* Body Rows Container */}
-                    <div className="flex-1 overflow-y-auto divide-y divide-white/5 text-base lg:text-[17px] xl:text-[18px] leading-relaxed">
+                    <div className="flex-1 flex flex-col divide-y divide-white/5 text-base lg:text-[17px] xl:text-[18px] leading-relaxed min-h-0">
 
                         {/* Row 1: 品牌背景 */}
-                        <div className="grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] group hover:bg-white/[0.01] transition-colors">
-                            <div className="py-3 px-3 flex items-center justify-center border-r border-white/5 bg-black/40 text-center font-bold text-zinc-300">
+                        <div className="flex-1 grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] group hover:bg-white/[0.01] transition-colors">
+                            <div className="py-2 px-3 flex items-center justify-center border-r border-white/5 bg-black/40 text-center font-bold text-zinc-300">
                                 品牌背景与地位
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200">
-                                <p className="text-zinc-300">● 24个中央工厂，占短保市场约35%份额，定位于全国性龙头。</p>
+                            <div className="py-2 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200 flex flex-col justify-center">
+                                <p className="font-semibold text-white">全国化布局领先</p>
+                                <p className="text-zinc-400 mt-1">● 24个中央工厂，占短保市场约35%份额，行业领头羊。</p>
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                <p className="text-zinc-400">● 达利旗下短保品牌，资金实力雄厚，渠道下沉极深。</p>
+                            <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex flex-col justify-center">
+                                <p className="font-semibold text-white">强势新秀品牌</p>
+                                <p className="text-zinc-400 mt-1">● 达利旗下短保品牌，资金实力雄厚，渠道下沉极深。</p>
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                <p className="text-zinc-400">● 跨国巨头，曼可顿深耕华东/华北，嘉顿占据华南。</p>
+                            <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex flex-col justify-center">
+                                <p className="font-semibold text-white">区域跨国巨头</p>
+                                <p className="text-zinc-400 mt-1">● 跨国巨头，曼可顿深耕北方/华东，嘉顿深耕南方。</p>
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                <p className="text-zinc-400">● 便利店自营短保，依托庞大终端网点及高频客流迅速崛起。</p>
+                            <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex flex-col justify-center">
+                                <p className="font-semibold text-white">便利零售自有品牌</p>
+                                <p className="text-zinc-400 mt-1">● 便利店自营短保，依托庞大终端网点及高频客流迅速崛起。</p>
                             </div>
-                            <div className="py-3 px-4 text-zinc-300">
-                                <p className="text-zinc-400">● 仓储新零售巨头自营，整合全球大宗供应链，占比上升。</p>
+                            <div className="py-2 px-4 text-zinc-300 flex flex-col justify-center">
+                                <p className="font-semibold text-white">会员新零售自有品牌</p>
+                                <p className="text-zinc-400 mt-1">● 仓储新零售巨头自营，整合全球大宗供应链，市占率上升。</p>
                             </div>
                         </div>
 
                         {/* Row 2: 经营特征 */}
-                        <div className="grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] group hover:bg-white/[0.01] transition-colors">
-                            <div className="py-3 px-3 flex items-center justify-center border-r border-white/5 bg-black/40 text-center font-bold text-zinc-300">
+                        <div className="flex-1 grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] group hover:bg-white/[0.01] transition-colors">
+                            <div className="py-2 px-3 flex items-center justify-center border-r border-white/5 bg-black/40 text-center font-bold text-zinc-300">
                                 财务及经营特征
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200">
-                                ● 2025年营收54.48亿，净利润2.84亿，折旧增加导致利润波动。
+                            <div className="py-2 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200 flex items-center">
+                                <p>● 2025年营收54.48亿，净利润2.84亿，折旧增加导致利润波动。</p>
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                ● 共享达利集团物流配送红利，地推渗透力强，资金周转快。
+                            <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
+                                <p>● 共享达利集团分销网络与地推资源，地推渗透强，周转率高。</p>
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                ● 占据一二线中高端渠道，高溢价与中高毛利，稳健运行。
+                            <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
+                                <p>● 占据一二线中高端渠道，高溢价与中高毛利，稳健运行。</p>
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                ● 扣点费用极低，独占终端主场高转化，毛利空间大。
+                            <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
+                                <p>● 扣点费用极低，独占终端主场高转化，毛利空间大。</p>
                             </div>
-                            <div className="py-3 px-4 text-zinc-300">
-                                ● 零营销推广费用，依靠量贩大规格高周转，整体成本极低。
+                            <div className="py-2 px-4 text-zinc-300 flex items-center">
+                                <p>● 零营销推广费用，依靠量贩大规格高周转，整体成本极低。</p>
                             </div>
                         </div>
 
                         {/* Row 3: 产品与研发 */}
-                        <div className="grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] group hover:bg-white/[0.01] transition-colors">
-                            <div className="py-3 px-3 flex items-center justify-center border-r border-white/5 bg-black/40 text-center font-bold text-zinc-300">
+                        <div className="flex-1 grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] group hover:bg-white/[0.01] transition-colors">
+                            <div className="py-2 px-3 flex items-center justify-center border-r border-white/5 bg-black/40 text-center font-bold text-zinc-300">
                                 产品与研发
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200">
-                                ● 研发费用2625万，主打经典大众面包，正开发健康低糖系列。
+                            <div className="py-2 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200 flex items-center">
+                                <p>● 研发投入2625万，主打经典大众面包，正开发健康低糖系列。</p>
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                ● 新品开发与推广敏捷，主打“汤熟”、“纯豆浆”等细分新工艺。
+                            <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
+                                <p>● 新品开发与推广敏捷，主打“汤熟”、“纯豆浆”等细分新工艺。</p>
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                ● 西式配方成熟度极高，品控标准与全球采购供应链领先。
+                            <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
+                                <p>● 西式配方成熟度极高，品控标准与全球采购供应链领先。</p>
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                ● 灵活代工(OEM)模式，新品迭代极快，口味包装贴合白领。
+                            <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
+                                <p>● 灵活代工(OEM)模式，新品迭代极快，口味包装贴合白领。</p>
                             </div>
-                            <div className="py-3 px-4 text-zinc-300">
-                                ● 打造麻薯、瑞士卷等现象级爆款，性价比高，去化速度快。
+                            <div className="py-2 px-4 text-zinc-300 flex items-center">
+                                <p>● 打造麻薯、瑞士卷等现象级爆款，性价比高，去化速度快。</p>
                             </div>
                         </div>
 
                         {/* Row 4: 渠道特征 */}
-                        <div className="grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] group hover:bg-white/[0.01] transition-colors">
-                            <div className="py-3 px-3 flex items-center justify-center border-r border-white/5 bg-black/40 text-center font-bold text-zinc-300">
+                        <div className="flex-1 grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] group hover:bg-white/[0.01] transition-colors">
+                            <div className="py-2 px-3 flex items-center justify-center border-r border-white/5 bg-black/40 text-center font-bold text-zinc-300">
                                 渠道特征
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200">
-                                ● 高度依赖大型KA商超，正发力下沉散店与线上渠道。
+                            <div className="py-2 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200 flex items-center">
+                                <p>● 高度依赖大型KA商超，正发力下沉散店与线上渠道。</p>
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                ● 依托达利地推铁军，饱和式渗透散店及传统夫妻老婆店。
+                            <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
+                                <p>● 依托达利地推铁军，饱和式渗透散店及传统夫妻老婆店。</p>
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                ● 牢牢占据一二线核心商圈大型商超，及罗森、全家等高端便利。
+                            <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
+                                <p>● 牢牢占据一二线核心商圈大型商超，及罗森、全家等高端便利。</p>
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                ● 占据门店收银黄金货架陈列，冷链一日一配，渠道链路闭环。
+                            <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
+                                <p>● 占据门店收银黄金货架陈列，冷链一日一配，渠道链路闭环。</p>
                             </div>
-                            <div className="py-3 px-4 text-zinc-300">
-                                ● 闭环的付费会员店现场烘焙展示，结合自有APP闪送极速到家。
+                            <div className="py-2 px-4 text-zinc-300 flex items-center">
+                                <p>● 闭环的付费会员店现场烘焙展示，结合自有APP闪送极速到家。</p>
                             </div>
                         </div>
 
                         {/* Row 5: 品牌定调 */}
-                        <div className="grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] group hover:bg-white/[0.01] transition-colors">
-                            <div className="py-3 px-3 flex items-center justify-center border-r border-white/5 bg-black/40 text-center font-bold text-zinc-300">
+                        <div className="flex-1 grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] group hover:bg-white/[0.01] transition-colors">
+                            <div className="py-2 px-3 flex items-center justify-center border-r border-white/5 bg-black/40 text-center font-bold text-zinc-300">
                                 品牌定调
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200 font-medium">
-                                “大众化、高性价比的全国性经典短保面包”
+                            <div className="py-2 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200 font-medium flex items-center">
+                                <p>“大众化、高性价比的全国性经典短保面包”</p>
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300 font-medium">
-                                “多样、新颖、高性价比的日常烘焙代餐”
+                            <div className="py-2 px-4 border-r border-white/5 text-zinc-300 font-medium flex items-center">
+                                <p>“多样、新颖、高性价比的日常烘焙代餐”</p>
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300 font-medium">
-                                “主打西式、品质与一二线都市商超的代表”
+                            <div className="py-2 px-4 border-r border-white/5 text-zinc-300 font-medium flex items-center">
+                                <p>“主打西式、品质与一二线都市商超的代表”</p>
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300 font-medium">
-                                “年轻、便携、贴合白领快节奏的高效早餐”
+                            <div className="py-2 px-4 border-r border-white/5 text-zinc-300 font-medium flex items-center">
+                                <p>“年轻、便携、贴合白领快节奏的高效早餐”</p>
                             </div>
-                            <div className="py-3 px-4 text-zinc-300 font-medium">
-                                “中产阶层、家庭化、极致量贩性价比的储备烘焙”
+                            <div className="py-2 px-4 text-zinc-300 font-medium flex items-center">
+                                <p>“中产阶层、家庭化、极致量贩性价比的储备烘焙”</p>
                             </div>
                         </div>
 
                         {/* Row 6: 相对态势 */}
-                        <div className="grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] group hover:bg-white/[0.01] transition-colors">
-                            <div className="py-3 px-3 flex items-center justify-center border-r border-white/5 bg-black/40 text-center font-bold text-zinc-300">
+                        <div className="flex-1 grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] group hover:bg-white/[0.01] transition-colors">
+                            <div className="py-2 px-3 flex items-center justify-center border-r border-white/5 bg-black/40 text-center font-bold text-zinc-300">
                                 相对竞争态势
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 bg-[#004CE5]/10 text-zinc-200 border-b-2 border-b-[#004CE5] font-semibold flex items-center">
-                                ● 大盘防守者：基本盘巨大，正稳固防线并积极进行策略调整。
+                            <div className="py-2 px-4 border-r border-white/5 bg-[#004CE5]/10 text-zinc-200 border-b-2 border-b-[#004CE5] font-semibold flex items-center">
+                                <p>● 大盘防守者：基本盘巨大，正稳固防线并积极进行策略调整。</p>
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300 flex items-center">
-                                ● 强力抢食者：依托庞大成熟网络，侵蚀北方和南方重合市场。
+                            <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
+                                <p>● 强力抢食者：依托庞大成熟网络，侵蚀北方和南方重合市场。</p>
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300 flex items-center">
-                                ● 稳健防御者：牢守外资商超与连锁便利传统领地，防线稳固。
+                            <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
+                                <p>● 稳健防御者：牢守外资商超与连锁便利传统领地，防线稳固。</p>
                             </div>
-                            <div className="py-3 px-4 border-r border-white/5 text-zinc-300 flex items-center">
-                                ● 终端截流者：直接在离年轻客群最近的零售终端进行拦截和替代。
+                            <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
+                                <p>● 终端截流者：直接在离年轻客群最近的零售终端进行拦截与替代。</p>
                             </div>
-                            <div className="py-3 px-4 text-zinc-300 flex items-center">
-                                ● 跨界竞争者：通过大容量极致性价比，分流家庭采购性早餐。
+                            <div className="py-2 px-4 text-zinc-300 flex items-center">
+                                <p>● 跨界竞争者：通过大容量极致性价比，分流家庭采购性早餐。</p>
                             </div>
                         </div>
 

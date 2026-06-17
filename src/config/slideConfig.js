@@ -67,6 +67,8 @@ import PB_GeoReportSentiment_Pre from '../Pages_Before/Page_GeoReportSentiment_P
 import PB_GeoReportSentiment from '../Pages_Before/Page_GeoReportSentiment';
 import PB_GeoKpiAcceptance from '../Pages_Before/Page_GeoKpiAcceptance';
 import PB_GeoWorkAcceptance from '../Pages_Before/Page_GeoWorkAcceptance';
+import PB_GeoValueAddedServices from '../Pages_Before/Page_GeoValueAddedServices';
+
 
 // ——— 篇章3: GEO优化 (Pages_Before) ———
 import PB_GeoOptKeywords from '../Pages_Before/Page_GeoOptKeywords';
@@ -151,7 +153,7 @@ export const slideConfig = [
     title: '封面',
     backgroundImage: '/proposal-cover/proposal-cover-new.png',
     brand: 'GEO索引未来',
-    subtitle: '冠珠瓷砖\nGEO规划方案',
+    subtitle: '桃李面包\nGEO规划方案',
     date: 'March 2026',
   },
 
@@ -165,23 +167,23 @@ export const slideConfig = [
   },
 
   // ══════════════════════════════════════════════════════════
-  // ——— 篇章1: 品牌信息调研及词条策略 ———
+  // ——— 篇章1: 品牌与行业信息调研及词条策略 ———
   // ══════════════════════════════════════════════════════════
-  { type: 'chapter', title: '品牌信息调研及词条策略', subtitle: 'BRAND DISCOVERY', backgroundImage: '/' },
+  { type: 'chapter', title: '项目信息调研及词条策略', subtitle: 'BRAND DISCOVERY', backgroundImage: '/' },
 
-  { type: 'section', title: '品牌信息' },
+  { type: 'section', title: '项目品牌与行业信息' },
   { type: 'page', title: '品牌基础信息', component: Page_BrandInfo },
   { type: 'page', title: '品牌主要产品线', component: Page_BrandProducts },
-  { type: 'page', title: '产品核心技术壁垒', component: Page_BrandTech },
-  { type: 'page', title: '品牌商业模式与渠道体系', component: Page_BrandChannel },
-  { type: 'page', title: '核心竞品对比分析', component: Page_BrandCompetitors },
+  { type: 'page', title: '品牌核心竞争优势', component: Page_BrandTech },
+  { type: 'page', title: '商业模式与渠道体系分析', component: Page_BrandChannel },
+  { type: 'page', title: '行业核心竞品对比分析', component: Page_BrandCompetitors },
 
   { type: 'section', title: '行业特点' },
-  { type: 'page', title: '建陶行业GEO难点解析', component: Page_IndustryPainPoints },
-  { type: 'page', title: '产品线繁杂、目标词难以集中', component: Page_PainPoint1_WordCloud },
-  { type: 'page', title: '行业认知度极低、竞争非常激烈', component: Page_PainPoint2_Industry },
-  { type: 'page', title: '极度依赖安装水平和售后服务', components: [Page_PainPoint3_Service, Page_PainPoint3_Service_Solution] },
-  { type: 'page', title: '销售模式大多为经销商体系，信息错乱', component: Page_PainPoint4_SalesModel },
+  { type: 'page', title: '短保烘焙行业及GEO难点解析', component: Page_IndustryPainPoints },
+  { type: 'page', title: '重资产闲置与折旧攀升“双向绞杀”', component: Page_PainPoint1_WordCloud },
+  { type: 'page', title: '健康风潮与低研发投入导致心智边缘化', component: Page_PainPoint2_Industry },
+  { type: 'page', title: '渠道大洗牌与大卖场退潮导致低端化', components: [Page_PainPoint3_Service, Page_PainPoint3_Service_Solution] },
+  { type: 'page', title: '食品安全频发与营销公关失控风险', component: Page_PainPoint4_SalesModel },
 
   { type: 'section', title: '词条策略' },
   { type: 'page', title: '词条分组依据', component: Page_KeywordGroupingBasis },
@@ -218,6 +220,8 @@ export const slideConfig = [
   { type: 'section', title: 'KPI及验收标准' },
   { type: 'page', title: '品牌现状与KPI', component: PB_GeoKpiAcceptance },
   { type: 'page', title: '工作内容与预期效果', component: PB_GeoWorkAcceptance },
+  { type: 'page', title: '增值服务', component: PB_GeoValueAddedServices },
+
 
 
   // ══════════════════════════════════════════════════════════
