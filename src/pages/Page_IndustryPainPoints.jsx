@@ -11,7 +11,7 @@ export default function Page_IndustryPainPoints() {
                 <h1 className="text-4xl lg:text-[40px] font-black text-white tracking-widest mb-4">短保烘焙行业GEO难点解析</h1>
                 <p className="text-zinc-400 text-lg lg:text-[22px] xl:text-[26px] leading-relaxed max-w-[1200px] tracking-wide">
                     从短保烘焙行业的特性，以及我们过去服务过的同类型客户经验中，<br />
-                    总结出<strong className="text-white font-bold">桃李面包在 GEO 中可能会遇到的核心困境：</strong>
+                    总结出<strong className="text-[#004CE5] font-bold">桃李面包在 GEO 中可能会遇到的核心困境：</strong>
                 </p>
             </div>
 
