@@ -1,38 +1,69 @@
 import React from 'react';
 
 const officialWords = [
-    { text: '醇熟切片', size: 'text-[1.8rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
-    { text: '老式豆沙卷', size: 'text-[1.7rem]', weight: 'font-black', color: 'text-zinc-200', opacity: 'opacity-100' },
-    { text: '全麦熟切片', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-95' },
+    { text: '醇熟切片', size: 'text-[2.0rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
+    { text: '老式豆沙卷', size: 'text-[1.8rem]', weight: 'font-black', color: 'text-zinc-100', opacity: 'opacity-100' },
+    { text: '全麦熟切片', size: 'text-[1.7rem]', weight: 'font-bold', color: 'text-[#004CE5]', opacity: 'opacity-95' },
     { text: '中种发酵工艺', size: 'text-[1.6rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-100' },
-    { text: '603866.SH', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
-    { text: '乳酸菌酵母面包', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-85' },
-    { text: '手撕面包', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
-    { text: '起酥面包', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-400', opacity: 'opacity-80' },
+    { text: '603866.SH', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-90' },
+    { text: '乳酸菌酵母面包', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-zinc-200', opacity: 'opacity-90' },
+    { text: '手撕面包', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-[#004CE5]/80', opacity: 'opacity-90' },
+    { text: '起酥面包', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-80' },
     { text: '天然酵母', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
     { text: '面团发酵工艺', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-85' },
-    { text: '全自动生产线', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-95' },
-    { text: '主食面包', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-80' },
+    { text: '全自动生产线', size: 'text-[1.6rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-95' },
+    { text: '主食面包', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-85' },
     { text: '包装烘焙快消', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
     { text: '牛奶吐司', size: 'text-[1.3rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-85' },
-    { text: '哈里斯风味', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-400', opacity: 'opacity-80' },
+    { text: '哈里斯风味', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-80' },
     { text: '椰丝椰蓉', size: 'text-[1.1rem]', weight: 'font-light', color: 'text-zinc-500', opacity: 'opacity-70' },
+    { text: '鸡蛋槽子糕', size: 'text-[1.3rem]', weight: 'font-semibold', color: 'text-zinc-300', opacity: 'opacity-85' },
+    { text: '切片面包', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-90' },
+    { text: '软式甜面包', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-zinc-300', opacity: 'opacity-85' },
+    { text: '岩烧乳酪', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-[#004CE5]/70', opacity: 'opacity-80' },
+    { text: '南瓜吐司', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-400', opacity: 'opacity-80' },
+    { text: '红豆吐司', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-85' },
+    { text: '岩烧蛋糕', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-400', opacity: 'opacity-80' },
+    { text: '吐司切片', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-zinc-200', opacity: 'opacity-90' },
+    { text: '纯熟切片面包', size: 'text-[1.6rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-95' },
+    { text: '桃李月饼', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-75' },
+    { text: '桃李面包', size: 'text-[1.8rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
+    { text: '工厂直供', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-[#004CE5]/90', opacity: 'opacity-90' },
+    { text: '凌晨配履', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-85' },
+    { text: '清晨上架', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-85' },
+    { text: '短保新鲜', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-95' },
 ];
 
 const userWords = [
-    { text: '减脂期快手早餐推荐', size: 'text-[1.8rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
-    { text: '打工人无负担下午茶', size: 'text-[1.6rem]', weight: 'font-black', color: 'text-zinc-200', opacity: 'opacity-100' },
-    { text: '配料表干净的儿童零食', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-90' },
-    { text: '低卡零糖面包推荐', size: 'text-[1.5rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
-    { text: '快手营养早餐', size: 'text-[1.7rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
-    { text: '健康吐司推荐', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
-    { text: '饱腹低脂代餐', size: 'text-[1.6rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
-    { text: '高纤维全麦包', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-85' },
-    { text: '办公室解馋小点', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-80' },
-    { text: '低脂健康代餐推荐', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-400', opacity: 'opacity-80' },
-    { text: '儿童营养早餐怎么做', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
-    { text: '减脂主食首选', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-95' },
-    { text: '办公室饱腹零食', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
+    { text: '减脂期快手早餐推荐', size: 'text-[2.0rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
+    { text: '打工人无负担下午茶', size: 'text-[1.7rem]', weight: 'font-black', color: 'text-zinc-100', opacity: 'opacity-100' },
+    { text: '配料表干净的儿童零食', size: 'text-[1.6rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-95' },
+    { text: '低卡零糖面包推荐', size: 'text-[1.6rem]', weight: 'font-black', color: 'text-[#004CE5]', opacity: 'opacity-100' },
+    { text: '快手营养早餐', size: 'text-[1.8rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
+    { text: '健康吐司推荐', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-90' },
+    { text: '饱腹低脂代餐', size: 'text-[1.7rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
+    { text: '高纤维全麦包', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-zinc-200', opacity: 'opacity-90' },
+    { text: '办公室解馋小点', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-85' },
+    { text: '低脂健康代餐推荐', size: 'text-[1.3rem]', weight: 'font-normal', color: 'text-zinc-400', opacity: 'opacity-80' },
+    { text: '儿童营养早餐怎么做', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
+    { text: '减脂主食首选', size: 'text-[1.6rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-95' },
+    { text: '办公室饱腹零食', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-90' },
+    { text: '减脂期早餐推荐', size: 'text-[1.5rem]', weight: 'font-semibold', color: 'text-zinc-200', opacity: 'opacity-90' },
+    { text: '儿童无糖零食', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-[#004CE5]/80', opacity: 'opacity-85' },
+    { text: '低糖杂粮面包', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-zinc-300', opacity: 'opacity-85' },
+    { text: '饱腹代餐主食', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-95' },
+    { text: '办公室低热量零食', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-85' },
+    { text: '营养早餐怎么搭配', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-zinc-300', opacity: 'opacity-90' },
+    { text: '减脂全麦切片', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-90' },
+    { text: '低卡健康代餐', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-[#004CE5]/70', opacity: 'opacity-85' },
+    { text: '儿童早餐面包', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-85' },
+    { text: '粗粮早餐面包', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-85' },
+    { text: '无蔗糖食品推荐', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
+    { text: '控糖代餐', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-80' },
+    { text: '轻食切片', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-80' },
+    { text: '减脂吐司', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-85' },
+    { text: '快手打工人早餐', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-90' },
+    { text: '健康低卡零食', size: 'text-[1.3rem]', weight: 'font-semibold', color: 'text-zinc-300', opacity: 'opacity-85' },
 ];
 
 export default function Page_PainPoint1_WordCloud() {
@@ -64,7 +95,7 @@ export default function Page_PainPoint1_WordCloud() {
 
             {/* Content Container */}
             <div className="flex-1 w-full px-12 sm:px-16 pb-8 relative z-10 flex flex-col justify-between min-h-0">
-                <p className="text-zinc-400 text-sm lg:text-base leading-relaxed tracking-wide mb-4 shrink-0">
+                <p className="text-zinc-400 text-lg lg:text-[20px] xl:text-[22px] leading-relaxed tracking-wide mb-4 shrink-0 text-justify">
                     短保烘焙是典型的快消品。消费者日常购买往往是“所见即所得”的冲动消费或习惯性复购，绝大多数人不会去搜索引擎或AI引擎里主动搜索“某品牌某具体型号的全麦吐司”。如果去优化具体的产品 SKU，会发现根本没有搜索量；而如果盲目优化“面包”等大词，预算又犹如泥牛入海。
                 </p>
 
@@ -138,12 +169,12 @@ export default function Page_PainPoint1_WordCloud() {
                 </div>
 
                 {/* Solution Section */}
-                <div className="shrink-0 bg-gradient-to-r from-[#004CE5]/10 via-black to-[#0a0a0a] border border-[#004CE5]/30 rounded-2xl p-4 shadow-[0_0_20px_rgba(0,76,229,0.15)] relative overflow-hidden flex items-center gap-4">
+                <div className="shrink-0 bg-gradient-to-r from-[#004CE5]/10 via-black to-[#0a0a0a] border border-[#004CE5]/30 rounded-2xl p-5 shadow-[0_0_20px_rgba(0,76,229,0.15)] relative overflow-hidden flex items-center gap-4">
                     <div className="absolute top-0 left-0 w-2 h-full bg-[#004CE5] shadow-[0_0_10px_rgba(0,76,229,0.5)]"></div>
-                    <div className="bg-[#004CE5]/10 border border-[#004CE5]/30 px-3 py-1 rounded-lg text-[#004CE5] text-sm font-black tracking-widest shrink-0 uppercase">
+                    <div className="bg-[#004CE5]/10 border border-[#004CE5]/30 px-4 py-1.5 rounded-lg text-[#004CE5] text-base xl:text-lg font-black tracking-widest shrink-0 uppercase">
                         解法
                     </div>
-                    <p className="text-zinc-200 text-sm lg:text-[16px] xl:text-[17px] font-bold leading-relaxed text-justify flex-1">
+                    <p className="text-zinc-200 text-base lg:text-[19px] xl:text-[21px] font-bold leading-relaxed text-justify flex-1">
                         摒弃“以产品名为主”的优化逻辑，转向<strong className="text-white">“场景与痛点拦截”</strong>。我们会通过AI意图分析，将短保产品打包植入到目标人群的高频生活场景中。例如，不优化“醇熟吐司”，而是优化“减脂期快手早餐推荐”、“打工人无负担下午茶”、“配料表干净的儿童零食”，使AI在回答此类场景提问时自然输出品牌产品。
                     </p>
                 </div>
