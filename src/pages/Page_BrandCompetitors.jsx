@@ -53,24 +53,19 @@ export default function Page_BrandCompetitors() {
                                 品牌背景与地位
                             </div>
                             <div className="py-3 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200">
-                                <p className="font-semibold text-white">全国化布局领先</p>
-                                <p className="text-zinc-400 mt-1">全国部署24个大型中央工厂，占短保市场约35%份额，为国内最大规模的短保面包企业。</p>
+                                <p className="text-zinc-300">● 24个中央工厂，占短保市场约35%份额，定位于全国性龙头。</p>
                             </div>
                             <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                <p className="font-semibold text-white">强势新秀品牌</p>
-                                <p className="text-zinc-400 mt-1">达利食品于2018年推出的短保子品牌，资金与渠道实力雄厚，国内渠道下沉极深。</p>
+                                <p className="text-zinc-400">● 达利旗下短保品牌，资金实力雄厚，渠道下沉极深。</p>
                             </div>
                             <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                <p className="font-semibold text-white">区域跨国巨头</p>
-                                <p className="text-zinc-400 mt-1">跨国烘焙巨头，研发实力雄厚。曼可顿深耕华东与华北，嘉顿独占华南，区域壁垒稳固。</p>
+                                <p className="text-zinc-400">● 跨国巨头，曼可顿深耕华东/华北，嘉顿占据华南。</p>
                             </div>
                             <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                <p className="font-semibold text-white">便利零售自有品牌</p>
-                                <p className="text-zinc-400 mt-1">罗森、7-11、全家等自营短保面包，依托庞大终端网络与自有高频客流快速崛起。</p>
+                                <p className="text-zinc-400">● 便利店自营短保，依托庞大终端网点及高频客流迅速崛起。</p>
                             </div>
                             <div className="py-3 px-4 text-zinc-300">
-                                <p className="font-semibold text-white">会员新零售自有品牌</p>
-                                <p className="text-zinc-400 mt-1">山姆会员店、盒马鲜生等仓储新零售巨头，凭借私域流量和整合供应链迅速扩展占有率。</p>
+                                <p className="text-zinc-400">● 仓储新零售巨头自营，整合全球大宗供应链，占比上升。</p>
                             </div>
                         </div>
 
@@ -80,19 +75,19 @@ export default function Page_BrandCompetitors() {
                                 财务及经营特征
                             </div>
                             <div className="py-3 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200">
-                                2025年营收54.48亿元，净利润2.84亿元。产能扩张导致固定资产折旧增加，对利润水平产生阶段性波动影响。
+                                ● 2025年营收54.48亿，净利润2.84亿，折旧增加导致利润波动。
                             </div>
                             <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                依托达利集团全国化的庞大成熟分销网络与地推资源，在国内高频进行地推渗透，资金周转良好。
+                                ● 共享达利集团物流配送红利，地推渗透力强，资金周转快。
                             </div>
                             <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                维持相对稳定的一二线中高端商超及品牌便利店市场，主打高溢价与中高毛利，经营表现稳健。
+                                ● 占据一二线中高端渠道，高溢价与中高毛利，稳健运行。
                             </div>
                             <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                毛利空间和运营效益极佳。凭借终端主场优势截留高频客流，免去传统厂商品牌的渠道铺货扣点。
+                                ● 扣点费用极低，独占终端主场高转化，毛利空间大。
                             </div>
                             <div className="py-3 px-4 text-zinc-300">
-                                整合大宗全球供应链，依靠会员店大规格包装高周转去化，零营销费用投入，产品毛利可控。
+                                ● 零营销推广费用，依靠量贩大规格高周转，整体成本极低。
                             </div>
                         </div>
 
@@ -102,19 +97,19 @@ export default function Page_BrandCompetitors() {
                                 产品与研发
                             </div>
                             <div className="py-3 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200">
-                                2025年研发费用为2625万元，产品线以醇熟切片、老式面包等成熟经典品类为主，目前正积极进行健康轻食系列开发。
+                                ● 研发费用2625万，主打经典大众面包，正开发健康低糖系列。
                             </div>
                             <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                产品开发及市场反馈敏捷度极高，推出汤熟、纯豆浆等多项细分工艺产品，实现差异化竞争。
+                                ● 新品开发与推广敏捷，主打“汤熟”、“纯豆浆”等细分新工艺。
                             </div>
                             <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                西式配方高度成熟，拥有国际化研发经验支持，在原料品质标准与跨国采购供应链方面具备优势。
+                                ● 西式配方成熟度极高，品控标准与全球采购供应链领先。
                             </div>
                             <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                采用成熟的代工厂（OEM）模式生产，主打新潮口味与精美单片包装，贴合年轻白领群体的日常代餐偏好。
+                                ● 灵活代工(OEM)模式，新品迭代极快，口味包装贴合白领。
                             </div>
                             <div className="py-3 px-4 text-zinc-300">
-                                突出极具杀伤力的量贩装性价比，以麻薯、瑞士卷等爆款单品切入，产品迭代和淘汰速度极快。
+                                ● 打造麻薯、瑞士卷等现象级爆款，性价比高，去化速度快。
                             </div>
                         </div>
 
@@ -124,19 +119,19 @@ export default function Page_BrandCompetitors() {
                                 渠道特征
                             </div>
                             <div className="py-3 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200">
-                                核心渠道为大型商超和卖场，便利店及散店覆盖深度正逐步优化，并积极探索线上直播带货。
+                                ● 高度依赖大型KA商超，正发力下沉散店与线上渠道。
                             </div>
                             <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                依托母公司达利集团的分销和地推实力，对社区便利店及杂货散店进行高密度铺货。
+                                ● 依托达利地推铁军，饱和式渗透散店及传统夫妻老婆店。
                             </div>
                             <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                牢牢占据一二线核心商圈的大型主流商超，以及罗森、7-11等高端品牌连锁便利店渠道。
+                                ● 牢牢占据一二线核心商圈大型商超，及罗森、全家等高端便利。
                             </div>
                             <div className="py-3 px-4 border-r border-white/5 text-zinc-300">
-                                独占自有便利店系统的黄金陈列区及收银台货架，实现极高周转的冷链一日一配，渠道流通完全闭环。
+                                ● 占据门店收银黄金货架陈列，冷链一日一配，渠道链路闭环。
                             </div>
                             <div className="py-3 px-4 text-zinc-300">
-                                闭环式付费会员制私域渠道，依托线下仓储门店烘焙区展示，结合线上APP即时配送送货上门。
+                                ● 闭环的付费会员店现场烘焙展示，结合自有APP闪送极速到家。
                             </div>
                         </div>
 
@@ -168,19 +163,19 @@ export default function Page_BrandCompetitors() {
                                 相对竞争态势
                             </div>
                             <div className="py-3 px-4 border-r border-white/5 bg-[#004CE5]/10 text-zinc-200 border-b-2 border-b-[#004CE5] font-semibold flex items-center">
-                                大盘防守者：核心基本盘最大，但面临产能折旧与渠道变革压力，正在进行防线巩固与策略调整。
+                                ● 大盘防守者：基本盘巨大，正稳固防线并积极进行策略调整。
                             </div>
                             <div className="py-3 px-4 border-r border-white/5 text-zinc-300 flex items-center">
-                                凶悍抢食者：依托庞大的渠道网络和地推优势，不断侵蚀传统品牌的北方和南方重合市场。
+                                ● 强力抢食者：依托庞大成熟网络，侵蚀北方和南方重合市场。
                             </div>
                             <div className="py-3 px-4 border-r border-white/5 text-zinc-300 flex items-center">
-                                稳健守成者：深固外资大型商超与高端连锁便利店的传统领地，业务表现稳固。
+                                ● 稳健防御者：牢守外资商超与连锁便利传统领地，防线稳固。
                             </div>
                             <div className="py-3 px-4 border-r border-white/5 text-zinc-300 flex items-center">
-                                终端截流者：直接在距离年轻消费者最近的便利零售终端，完成对传统工业短保品牌的拦截和替代。
+                                ● 终端截流者：直接在离年轻客群最近的零售终端进行拦截和替代。
                             </div>
                             <div className="py-3 px-4 text-zinc-300 flex items-center">
-                                跨界竞争者：通过极致性价比和大容量包装，分流大量都市中产家庭及周末采购性早餐份额。
+                                ● 跨界竞争者：通过大容量极致性价比，分流家庭采购性早餐。
                             </div>
                         </div>
 
