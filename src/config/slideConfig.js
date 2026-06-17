@@ -180,10 +180,10 @@ export const slideConfig = [
 
   { type: 'section', title: '行业特点' },
   { type: 'page', title: '短保烘焙行业及GEO难点解析', component: Page_IndustryPainPoints },
-  { type: 'page', title: '重资产闲置与折旧攀升“双向绞杀”', component: Page_PainPoint1_WordCloud },
-  { type: 'page', title: '健康风潮与低研发投入导致心智边缘化', component: Page_PainPoint2_Industry },
-  { type: 'page', title: '渠道大洗牌与大卖场退潮导致低端化', components: [Page_PainPoint3_Service, Page_PainPoint3_Service_Solution] },
-  { type: 'page', title: '食品安全频发与营销公关失控风险', component: Page_PainPoint4_SalesModel },
+  { type: 'page', title: '消费决策极短与搜索意图高度泛化', component: Page_PainPoint1_WordCloud },
+  { type: 'page', title: '供应链物理半径限制与流量倒挂', component: Page_PainPoint2_Industry },
+  { type: 'page', title: '多渠道碎片化与折价价格体系混乱', components: [Page_PainPoint3_Service, Page_PainPoint3_Service_Solution] },
+  { type: 'page', title: '0防腐食安双刃剑与AI公关危机', component: Page_PainPoint4_SalesModel },
 
   { type: 'section', title: '词条策略' },
   { type: 'page', title: '词条分组依据', component: Page_KeywordGroupingBasis },

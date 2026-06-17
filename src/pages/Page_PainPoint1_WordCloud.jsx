@@ -1,85 +1,38 @@
 import React from 'react';
 
 const officialWords = [
-    { text: '冠珠华脉', size: 'text-[1.6rem]', weight: 'font-black', color: 'text-zinc-200', opacity: 'opacity-100' },
-    { text: '冠珠华珍', size: 'text-[1.8rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
-    { text: '冠珠韶华', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-95' },
-    { text: '金丝', size: 'text-[1.1rem]', weight: 'font-normal', color: 'text-zinc-400', opacity: 'opacity-80' },
-    { text: '丝绒系列', size: 'text-[1.3rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-90' },
-    { text: '风物纪系列', size: 'text-[1.4rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-90' },
-    { text: '观斓系列', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-300', opacity: 'opacity-80' },
-    { text: '臻石', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-95' },
-    { text: '琉光', size: 'text-[1rem]', weight: 'font-light', color: 'text-zinc-500', opacity: 'opacity-70' },
-    { text: '臻石密境', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-80' },
-    { text: '万象系列', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
-    { text: '原石秘境', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-400', opacity: 'opacity-80' },
-    { text: '漫天石系列', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-90' },
-    { text: '明镜石系列', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-400', opacity: 'opacity-80' },
-    { text: '美拉德系列', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
-    { text: '魔术星', size: 'text-[1.1rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-85' },
-    { text: '抛釉系列', size: 'text-[1rem]', weight: 'font-light', color: 'text-zinc-500', opacity: 'opacity-70' },
-    { text: '魔术师岩板', size: 'text-[1.6rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-100' },
-    { text: '冠珠岩板', size: 'text-[1.9rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
-    { text: '柔光系列', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-85' },
-    { text: '肌肤釉', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
-    { text: '西慕水泥', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-400', opacity: 'opacity-80' },
-    { text: '克拉系列', size: 'text-[1.1rem]', weight: 'font-light', color: 'text-zinc-500', opacity: 'opacity-70' },
-    { text: '境界石', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-90' },
-    { text: '微光石', size: 'text-[1.7rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
-    { text: '时光印记', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-400', opacity: 'opacity-80' },
-    { text: '静岚石', size: 'text-[1.1rem]', weight: 'font-light', color: 'text-zinc-500', opacity: 'opacity-70' },
-    { text: '素色水泥', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-85' },
-    { text: '悦木系列', size: 'text-[1.7rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
-    { text: '科技布纹', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-400', opacity: 'opacity-80' },
-    { text: '臻石3.0', size: 'text-[1.3rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-95' },
-    { text: '防滑砖', size: 'text-[1.1rem]', weight: 'font-light', color: 'text-zinc-500', opacity: 'opacity-70' },
-    { text: '现代仿古', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-400', opacity: 'opacity-80' },
-    { text: '大理石瓷砖', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-95' },
-    { text: '斑点通体大理石', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-80' },
-    { text: '天玑臻', size: 'text-[1.1rem]', weight: 'font-light', color: 'text-zinc-500', opacity: 'opacity-70' },
-    { text: '明珠源石', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-85' },
-    { text: '冠珠艺术砖', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-95' },
-    { text: '艺术花砖', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-300', opacity: 'opacity-80' },
-    { text: '综合产品', size: 'text-[1rem]', weight: 'font-light', color: 'text-zinc-500', opacity: 'opacity-65' },
-    { text: '配套产品', size: 'text-[1.1rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-75' },
-    { text: '岩板(定制)', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
-    { text: '仿古砖(定制)', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-300', opacity: 'opacity-80' },
-    { text: '哑光砖(定制)', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-80' },
-    { text: '全抛釉(定制)', size: 'text-[1.3rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
-    { text: '景观砖(定制)', size: 'text-[1.1rem]', weight: 'font-light', color: 'text-zinc-500', opacity: 'opacity-70' },
-    { text: '抛光石', size: 'text-[1.1rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-75' },
-    { text: '专(定制)', size: 'text-[1rem]', weight: 'font-light', color: 'text-zinc-500', opacity: 'opacity-65' },
-    { text: '内墙砖(定制)', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-300', opacity: 'opacity-80' },
+    { text: '醇熟切片', size: 'text-[1.8rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
+    { text: '老式豆沙卷', size: 'text-[1.7rem]', weight: 'font-black', color: 'text-zinc-200', opacity: 'opacity-100' },
+    { text: '全麦熟切片', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-95' },
+    { text: '中种发酵工艺', size: 'text-[1.6rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-100' },
+    { text: '603866.SH', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
+    { text: '乳酸菌酵母面包', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-85' },
+    { text: '手撕面包', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
+    { text: '起酥面包', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-400', opacity: 'opacity-80' },
+    { text: '天然酵母', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
+    { text: '面团发酵工艺', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-85' },
+    { text: '全自动生产线', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-95' },
+    { text: '主食面包', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-80' },
+    { text: '包装烘焙快消', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
+    { text: '牛奶吐司', size: 'text-[1.3rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-85' },
+    { text: '哈里斯风味', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-400', opacity: 'opacity-80' },
+    { text: '椰丝椰蓉', size: 'text-[1.1rem]', weight: 'font-light', color: 'text-zinc-500', opacity: 'opacity-70' },
 ];
 
 const userWords = [
-    { text: '防滑地砖', size: 'text-[2rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
-    { text: '客厅铺什么砖好看', size: 'text-[1.3rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
-    { text: '哑光瓷砖', size: 'text-[1.6rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
-    { text: '灰色大理石瓷砖', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-80' },
-    { text: '看起来无缝的砖', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-400', opacity: 'opacity-90' },
-    { text: '好打理的瓷砖', size: 'text-[1.1rem]', weight: 'font-normal', color: 'text-zinc-400', opacity: 'opacity-70' },
-    { text: '耐脏地砖', size: 'text-[1.3rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-80' },
-    { text: '高级灰地砖', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
-    { text: '木纹砖好不好', size: 'text-[1rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-70' },
-    { text: '卫生间防滑砖', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-90' },
-    { text: '厨房贴什么墙砖', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-80' },
-    { text: '岩板背景墙', size: 'text-[1.5rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
-    { text: '便宜耐用的瓷砖', size: 'text-[1.1rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-70' },
-    { text: '奶油风瓷砖', size: 'text-[1.8rem]', weight: 'font-black', color: 'text-zinc-200', opacity: 'opacity-100' },
-    { text: '不反光地砖', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-80' },
-    { text: '素色瓷砖', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-400', opacity: 'opacity-90' },
-    { text: '大规格瓷砖', size: 'text-[1.3rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-80' },
-    { text: '750x1500瓷砖', size: 'text-[1.5rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
-    { text: '婴儿肌肤触感砖', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-90' },
-    { text: '仿石材砖', size: 'text-[1.1rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-70' },
-    { text: '网红小花砖', size: 'text-[1.3rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-80' },
-    { text: '阳台防滑砖', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-80' },
-    { text: '卧室木纹砖', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-90' },
-    { text: '客餐厅通铺瓷砖', size: 'text-[1.1rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-70' },
-    { text: '免美缝的砖', size: 'text-[1.5rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
-    { text: '亮面好还是哑光好', size: 'text-[1rem]', weight: 'font-normal', color: 'text-zinc-400', opacity: 'opacity-70' },
-    { text: '极简风装修选什么砖', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-80' },
+    { text: '减脂期快手早餐推荐', size: 'text-[1.8rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
+    { text: '打工人无负担下午茶', size: 'text-[1.6rem]', weight: 'font-black', color: 'text-zinc-200', opacity: 'opacity-100' },
+    { text: '配料表干净的儿童零食', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-90' },
+    { text: '低卡零糖面包推荐', size: 'text-[1.5rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
+    { text: '快手营养早餐', size: 'text-[1.7rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
+    { text: '健康吐司推荐', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
+    { text: '饱腹低脂代餐', size: 'text-[1.6rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
+    { text: '高纤维全麦包', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-85' },
+    { text: '办公室解馋小点', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-80' },
+    { text: '低脂健康代餐推荐', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-400', opacity: 'opacity-80' },
+    { text: '儿童营养早餐怎么做', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
+    { text: '减脂主食首选', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-95' },
+    { text: '办公室饱腹零食', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
 ];
 
 export default function Page_PainPoint1_WordCloud() {
@@ -87,7 +40,6 @@ export default function Page_PainPoint1_WordCloud() {
         const match = sizeStr.match(/text-\[(\d+(\.\d+)?)rem\]/);
         if (match) {
             const val = parseFloat(match[1]);
-            // Scale down by 8% (multiplier 0.92), floor at 0.90rem to ensure excellent readability
             const scaledVal = Math.max(val * 0.92, 0.90);
             return `${scaledVal.toFixed(2)}rem`;
         }
@@ -95,46 +47,46 @@ export default function Page_PainPoint1_WordCloud() {
     };
 
     return (
-        <div className="w-full h-full flex flex-col relative bg-black overflow-hidden text-white font-sans p-4 lg:p-6 xl:p-8">
+        <div className="w-full h-full flex flex-col relative bg-black overflow-hidden text-white font-sans">
             {/* Background Pattern */}
-            <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] opacity-20 pointer-events-none"></div>
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:40px_40px] opacity-20 pointer-events-none"></div>
 
-            <div className="w-full max-w-[1600px] mx-auto flex flex-col h-full relative z-10 pt-0">
-
-                {/* Header Section */}
-                <div className="mb-4 lg:mb-6">
-                    <div className="inline-block border border-white/20 bg-white/5 rounded-full px-5 py-2 mb-3 lg:mb-4">
-                        <span className="text-zinc-200 text-lg tracking-widest font-bold mr-2">困境</span>
-                        <span className="text-[#004CE5] font-black text-xl lg:text-2xl">01</span>
-                    </div>
-                    <h1 className="text-4xl lg:text-[44px] font-black text-white tracking-widest mb-3 lg:mb-4 leading-tight">
-                        产品线繁杂，目标词难以集中
-                    </h1>
-
-                    <p className="text-zinc-400 text-[1.05rem] lg:text-[1.15rem] leading-relaxed max-w-[1400px] tracking-wide">
-                        整个行业从大类到小类可能有几百个SKU，如果逐一撒网优化每个具体型号或行业术语，预算会被严重稀释。品牌方往往觉得无从下手，找不到发力点，导致整个 GEO 项目极难落地。
-                    </p>
+            {/* Header Section */}
+            <div className="w-full px-12 sm:px-16 pt-4 pb-2 relative z-10 shrink-0 text-left">
+                <div className="inline-block border border-white/20 bg-white/5 rounded-full px-4 py-1 mb-2">
+                    <span className="text-zinc-300 text-sm tracking-widest font-bold mr-2">困境</span>
+                    <span className="text-[#004CE5] font-black text-base">01</span>
                 </div>
+                <h1 className="text-[32px] xl:text-[36px] font-bold text-zinc-100 tracking-wider">
+                    消费决策极短与搜索意图高度泛化，产品词无流量
+                </h1>
+            </div>
+
+            {/* Content Container */}
+            <div className="flex-1 w-full px-12 sm:px-16 pb-8 relative z-10 flex flex-col justify-between min-h-0">
+                <p className="text-zinc-400 text-sm lg:text-base leading-relaxed tracking-wide mb-4 shrink-0">
+                    短保烘焙是典型的快消品。消费者日常购买往往是“所见即所得”的冲动消费或习惯性复购，绝大多数人不会去搜索引擎或AI引擎里主动搜索“某品牌某具体型号的全麦吐司”。如果去优化具体的产品 SKU，会发现根本没有搜索量；而如果盲目优化“面包”等大词，预算又犹如泥牛入海。
+                </p>
 
                 {/* Main Content: Word Clouds */}
-                <div className="flex-1 flex flex-col lg:flex-row gap-4 lg:gap-6 xl:gap-8 min-h-0 pb-4 items-stretch">
+                <div className="flex-1 flex flex-col lg:flex-row gap-6 min-h-0 pb-4 items-stretch">
 
-                    {/* Left Cloud: Brand Official */}
-                    <div className="flex-1 bg-[#0a0a0a] border border-white/10 rounded-[2rem] p-4 lg:p-6 xl:p-8 flex flex-col relative overflow-hidden shadow-2xl">
+                    {/* Left Cloud: Brand Official SKU/Process */}
+                    <div className="flex-1 bg-zinc-900/60 border border-white/10 rounded-2xl p-6 flex flex-col relative overflow-hidden shadow-2xl">
                         <div className="absolute top-0 left-0 w-full h-1 bg-[#004CE5]/40"></div>
 
                         {/* Title */}
-                        <div className="flex items-center gap-4 mb-6 shrink-0">
-                            <div className="w-12 h-12 rounded-full bg-[#004CE5]/10 flex items-center justify-center border border-[#004CE5]/30">
-                                <span className="text-[#004CE5] font-black text-xl">B</span>
+                        <div className="flex items-center gap-4 mb-4 shrink-0">
+                            <div className="w-10 h-10 rounded-full bg-[#004CE5]/10 flex items-center justify-center border border-[#004CE5]/30">
+                                <span className="text-[#004CE5] font-black text-lg">SKU</span>
                             </div>
                             <div>
-                                <h3 className="text-2xl font-bold text-white tracking-widest">品牌专业命名</h3>
+                                <h3 className="text-lg xl:text-xl font-bold text-white tracking-wider">品牌侧重词（内部SKU/工艺）</h3>
                             </div>
                         </div>
 
                         {/* Word Cloud Container */}
-                        <div className="flex-1 flex flex-wrap justify-center content-center items-center gap-x-4 gap-y-2.5 lg:gap-x-5 lg:gap-y-3.5">
+                        <div className="flex-1 flex flex-wrap justify-center content-center items-center gap-x-4 gap-y-3">
                             {officialWords.map((word, idx) => (
                                 <span
                                     key={idx}
@@ -148,29 +100,29 @@ export default function Page_PainPoint1_WordCloud() {
                     </div>
 
                     {/* VS Divider */}
-                    <div className="hidden lg:flex flex-col items-center justify-center shrink-0 w-16 relative">
-                        <div className="w-[1px] h-full bg-gradient-to-b from-transparent via-white/20 to-transparent absolute"></div>
-                        <div className="w-16 h-16 rounded-full bg-[#111] border border-white/20 flex items-center justify-center z-10 shadow-[0_0_30px_rgba(255,255,255,0.1)]">
-                            <span className="font-['AlimamaShuHeiTi'] text-2xl text-white/60 italic">VS</span>
+                    <div className="hidden lg:flex flex-col items-center justify-center shrink-0 w-12 relative">
+                        <div className="w-[1px] h-full bg-gradient-to-b from-transparent via-white/10 to-transparent absolute"></div>
+                        <div className="w-12 h-12 rounded-full bg-zinc-900 border border-white/15 flex items-center justify-center z-10 shadow-2xl">
+                            <span className="text-lg text-zinc-400 italic font-bold">VS</span>
                         </div>
                     </div>
 
-                    {/* Right Cloud: User Search */}
-                    <div className="flex-1 bg-[#0a0a0a] border border-white/10 rounded-[2rem] p-4 lg:p-6 xl:p-8 flex flex-col relative overflow-hidden shadow-2xl">
+                    {/* Right Cloud: Consumer Scene/Pain-Point */}
+                    <div className="flex-1 bg-zinc-900/60 border border-white/10 rounded-2xl p-6 flex flex-col relative overflow-hidden shadow-2xl">
                         <div className="absolute top-0 left-0 w-full h-1 bg-white/20"></div>
 
                         {/* Title */}
-                        <div className="flex items-center gap-4 mb-6 shrink-0">
-                            <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center border border-white/20">
-                                <span className="text-white font-black text-xl">C</span>
+                        <div className="flex items-center gap-4 mb-4 shrink-0">
+                            <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center border border-white/20">
+                                <span className="text-white font-black text-lg">GEO</span>
                             </div>
                             <div>
-                                <h3 className="text-2xl font-bold text-white tracking-widest">用户口语化需求</h3>
+                                <h3 className="text-lg xl:text-xl font-bold text-white tracking-wider">真实搜索词（场景化/痛点化）</h3>
                             </div>
                         </div>
 
                         {/* Word Cloud Container */}
-                        <div className="flex-1 flex flex-wrap justify-center content-center items-center gap-x-4 gap-y-2.5 lg:gap-x-5 lg:gap-y-3.5">
+                        <div className="flex-1 flex flex-wrap justify-center content-center items-center gap-x-4 gap-y-3">
                             {userWords.map((word, idx) => (
                                 <span
                                     key={idx}
@@ -186,13 +138,13 @@ export default function Page_PainPoint1_WordCloud() {
                 </div>
 
                 {/* Solution Section */}
-                <div className="mt-3 lg:mt-4 shrink-0 bg-gradient-to-r from-[#004CE5]/10 via-black to-[#0a0a0a] border border-[#004CE5]/30 rounded-2xl p-4 lg:p-5 shadow-[0_0_20px_rgba(0,76,229,0.15)] relative overflow-hidden flex items-center gap-4">
+                <div className="shrink-0 bg-gradient-to-r from-[#004CE5]/10 via-black to-[#0a0a0a] border border-[#004CE5]/30 rounded-2xl p-4 shadow-[0_0_20px_rgba(0,76,229,0.15)] relative overflow-hidden flex items-center gap-4">
                     <div className="absolute top-0 left-0 w-2 h-full bg-[#004CE5] shadow-[0_0_10px_rgba(0,76,229,0.5)]"></div>
-                    <div className="bg-[#004CE5]/10 border border-[#004CE5]/30 px-3 py-1 rounded-lg text-[#004CE5] text-sm lg:text-base font-black tracking-widest shrink-0 uppercase shadow-[0_0_8px_rgba(0,76,229,0.2)]">
+                    <div className="bg-[#004CE5]/10 border border-[#004CE5]/30 px-3 py-1 rounded-lg text-[#004CE5] text-sm font-black tracking-widest shrink-0 uppercase">
                         解法
                     </div>
-                    <p className="text-zinc-200 text-sm lg:text-[1.1rem] font-bold leading-relaxed text-justify flex-1">
-                        我们会通过数据系统，摸清用户的真实搜索习惯，把几百个繁杂的产品词，打包提炼成几十个真正带流量、能覆盖绝大多数装修场景的核心词，把预算集中打在真正能带来转化的词上。
+                    <p className="text-zinc-200 text-sm lg:text-[16px] xl:text-[17px] font-bold leading-relaxed text-justify flex-1">
+                        摒弃“以产品名为主”的优化逻辑，转向<strong className="text-white">“场景与痛点拦截”</strong>。我们会通过AI意图分析，将短保产品打包植入到目标人群的高频生活场景中。例如，不优化“醇熟吐司”，而是优化“减脂期快手早餐推荐”、“打工人无负担下午茶”、“配料表干净的儿童零食”，使AI在回答此类场景提问时自然输出品牌产品。
                     </p>
                 </div>
             </div>
