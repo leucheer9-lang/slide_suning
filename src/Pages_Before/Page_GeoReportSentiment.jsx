@@ -5,19 +5,21 @@ function Page_GeoReportSentiment() {
     const [imgError, setImgError] = useState(false);
 
     return (
-        <div className="w-full h-full flex flex-col relative text-white font-sans px-12 sm:px-16 pt-4 pb-4 overflow-hidden animate-fade-in">
-            <div className="w-full max-w-[1700px] mx-auto flex flex-col flex-1 min-h-0 relative z-10 pt-0 gap-2">
+        <div className="w-full h-full flex flex-col relative text-white font-sans px-12 sm:px-16 pt-5 pb-10 overflow-hidden animate-fade-in">
+            {/* Background pattern */}
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:40px_40px] opacity-20 pointer-events-none"></div>
 
-                {/* Header Section */}
-                <div className="text-center shrink-0 mb-0.5">
-                    <h1 className="text-[36px] font-bold text-white tracking-widest leading-tight">
+            <div className="w-full flex flex-col h-full relative z-10 gap-2">
+                {/* Header Section - Centered and shifted up by 20px using mt-[-20px] */}
+                <div className="text-center mb-4 mt-[-20px] shrink-0 relative z-10">
+                    <h1 className="text-[28px] lg:text-[32px] font-bold text-white tracking-widest leading-none">
                         正负面分析
                     </h1>
                 </div>
 
                 {/* Main Content Sub-container: Dynamically fits to the image's width and stretches the bottom card to match it exactly */}
-                <div className="flex-1 flex flex-col justify-between items-stretch min-h-0 w-fit max-w-[1580px] mx-auto gap-3.5">
-
+                <div className="flex-1 flex flex-col justify-between items-stretch min-h-0 w-fit max-w-[1580px] mx-auto gap-3.5 pt-[20px]">
+                    
                     {/* Top Section: Larger, Self-Adaptive Image Slot */}
                     <div className="flex-1 flex flex-col justify-center items-center min-h-0 relative">
                         {imgLoaded && !imgError ? (
@@ -60,10 +62,10 @@ function Page_GeoReportSentiment() {
                     </div>
 
                     {/* Bottom Section: Single Glassmorphic Container wrapping Title and Two-Column Negative Breakdown */}
-                    <div className="h-[27%] min-h-[175px] max-h-[225px] shrink-0 w-full">
-                        <div className="bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] rounded-2xl p-4 lg:p-5 flex flex-col h-full justify-between gap-3 shadow-2xl">
+                    <div className="h-[32%] min-h-[210px] max-h-[280px] shrink-0 w-full">
+                        <div className="bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] rounded-2xl p-3.5 lg:p-4 flex flex-col h-full justify-between gap-2.5 shadow-2xl">
                             {/* Section Title */}
-                            <h3 className="text-[20px] lg:text-[21px] xl:text-[22.5px] font-bold text-white flex items-center gap-2 shrink-0 pl-0.5">
+                            <h3 className="text-[21px] lg:text-[22.5px] xl:text-[24px] font-bold text-white flex items-center gap-2 shrink-0 pl-0.5">
                                 <span className="w-1.5 h-4.5 bg-rose-500 rounded-full shadow-[0_0_8px_rgba(239,68,68,0.8)]" />
                                 负面回答类型解析
                             </h3>
@@ -71,28 +73,30 @@ function Page_GeoReportSentiment() {
                             {/* Two-Column Grid Content */}
                             <div className="flex-1 grid grid-cols-12 gap-4 min-h-0">
 
-                                {/* Point 1: Primary Negative Types */}
+                                {/* Point 1: 期房交付引发的安全感危机 */}
                                 <div className="col-span-6 flex flex-col min-h-0 h-full">
-                                    <div className="bg-white/[0.015] border border-white/[0.06] border-l-4 border-l-rose-500 rounded-r-xl px-4 py-2.5 lg:px-4.5 lg:py-3 flex flex-col h-full justify-start gap-1 transition-all duration-300 hover:bg-white/[0.03]">
-                                        <h4 className="text-[19.5px] lg:text-[20.5px] xl:text-[21.5px] font-bold text-white flex items-center gap-2 shrink-0">
+                                    <div className="bg-white/[0.015] border border-white/[0.06] border-l-4 border-l-rose-500 rounded-r-xl px-3.5 py-2 flex flex-col h-full justify-start gap-1 transition-all duration-300 hover:bg-white/[0.03]">
+                                        <h4 className="text-[17px] lg:text-[18.5px] xl:text-[20px] font-bold text-white flex items-center gap-2 shrink-0">
                                             <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
-                                            主要负面类型
+                                            “期房焦虑”安全感危机
                                         </h4>
-                                        <p className="text-[16.5px] lg:text-[17.5px] xl:text-[18.5px] text-zinc-300 leading-relaxed font-normal overflow-y-auto">
-                                            主要负面类型集中在：“<strong className="text-white font-semibold">品控稳定性（平整度/色差）</strong>”、“<strong className="text-white font-semibold">售后执行差异</strong>”以及“<strong className="text-white font-semibold">经销商服务争议</strong>”。
+                                        <p className="text-[15px] lg:text-[16.5px] xl:text-[18px] text-zinc-300 leading-relaxed font-normal">
+                                            AI在“值得买吗”等词条下预警“需等待交房”，易导致客户决策犹豫。<br />
+                                            <strong className="text-emerald-400">对冲方案：</strong>投放“深业与龙华建设双国企开发、保障准时交付”语料，化解疑虑。
                                         </p>
                                     </div>
                                 </div>
 
-                                {/* Point 2: Handling Recommendations */}
+                                {/* Point 2: 交通便利带来的“噪音反噬” */}
                                 <div className="col-span-6 flex flex-col min-h-0 h-full">
-                                    <div className="bg-rose-500/[0.015] border border-rose-500/15 border-l-4 border-l-rose-500 rounded-r-xl px-4 py-2.5 lg:px-4.5 lg:py-3 flex flex-col h-full justify-start gap-1 transition-all duration-300 hover:bg-white/[0.03] shadow-[0_0_15px_rgba(239,68,68,0.02)]">
-                                        <h4 className="text-[19.5px] lg:text-[20.5px] xl:text-[21.5px] font-bold text-white flex items-center gap-2 shrink-0">
+                                    <div className="bg-rose-500/[0.015] border border-rose-500/15 border-l-4 border-l-rose-500 rounded-r-xl px-3.5 py-2 flex flex-col h-full justify-start gap-1 transition-all duration-300 hover:bg-white/[0.03] shadow-[0_0_15px_rgba(239,68,68,0.02)]">
+                                        <h4 className="text-[17px] lg:text-[18.5px] xl:text-[20px] font-bold text-white flex items-center gap-2 shrink-0">
                                             <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
-                                            处理建议
+                                            临街地铁的“噪音反噬”
                                         </h4>
-                                        <p className="text-[16.5px] lg:text-[17.5px] xl:text-[18.5px] text-zinc-300 leading-relaxed font-normal overflow-y-auto">
-                                            在拉升认知度的同时，定位负面引用信源（如<strong className="text-white font-semibold">黑猫投诉、问政类站点</strong>）并做权威内容覆盖，通过官方工艺标准与交付体系的深度语料，将负面占比控制在 <strong className="text-emerald-400 font-bold">5%</strong> 以内。
+                                        <p className="text-[15px] lg:text-[16.5px] xl:text-[18px] text-zinc-300 leading-relaxed font-normal">
+                                            AI频繁提及临街及地铁“噪音”细节，在客户下定临门一脚时造成阻碍。<br />
+                                            <strong className="text-emerald-400">对冲方案：</strong>主打“高配双层中空隔音玻璃、科学楼栋排布规避噪音”以体现品质。
                                         </p>
                                     </div>
                                 </div>

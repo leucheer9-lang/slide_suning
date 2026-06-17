@@ -5,17 +5,20 @@ function Page_GeoReportSources() {
     const [imgError, setImgError] = useState(false);
 
     return (
-        <div className="w-full h-full flex flex-col relative text-white font-sans px-12 sm:px-16 pt-6 lg:pt-8 pb-4 overflow-hidden animate-fade-in">
-            <div className="w-full max-w-[1700px] mx-auto flex flex-col flex-1 min-h-0 relative z-10 pt-0">
-                {/* Header Section */}
-                <div className="text-center mb-5 shrink-0">
-                    <h1 className="text-[32px] font-bold text-white tracking-widest leading-tight">
+        <div className="w-full h-full flex flex-col relative text-white font-sans px-12 sm:px-16 pt-5 pb-10 overflow-hidden animate-fade-in">
+            {/* Background pattern */}
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:40px_40px] opacity-20 pointer-events-none"></div>
+
+            <div className="w-full flex flex-col h-full relative z-10">
+                {/* Header Section - Centered and shifted up by 20px using mt-[-20px] */}
+                <div className="text-center mb-4 mt-[-20px] shrink-0 relative z-10">
+                    <h1 className="text-[28px] lg:text-[32px] font-bold text-white tracking-widest leading-none">
                         引用源分析
                     </h1>
                 </div>
 
                 {/* Main Content Layout: Single Centered Image Container */}
-                <div className="flex-1 flex flex-col justify-center items-center min-h-0 pb-1">
+                <div className="flex-1 flex flex-col justify-center items-center min-h-0 pb-1 pt-[20px]">
                     
                     {imgLoaded && !imgError ? (
                         /* Adaptive Border Wrapper: Tightly wraps the image based on its natural dimensions, scaling to maximum allowed space without overflow */

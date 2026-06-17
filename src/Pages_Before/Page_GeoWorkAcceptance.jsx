@@ -33,7 +33,7 @@ function Page_GeoWorkAcceptance() {
                                     <td className="py-3 xl:py-4 pl-3.5 font-semibold text-zinc-100 align-middle border-b border-white/[0.22]">
                                         <div className="flex flex-col gap-1 mt-1">
                                             <span className="text-[18.5px] xl:text-[20.5px] text-white font-black">主要产品词</span>
-                                            <span className="text-[15px] xl:text-[16px] text-zinc-400 font-bold">（瓷砖）</span>
+                                            <span className="text-[15px] xl:text-[16px] text-zinc-400 font-bold">（儿童护肤品）</span>
                                         </div>
                                     </td>
                                     <td className="py-3 xl:py-4 text-zinc-300 align-middle pr-4 border-b border-white/[0.22] border-l border-white/[0.22] pl-5">

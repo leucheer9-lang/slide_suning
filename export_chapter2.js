@@ -7,7 +7,7 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUTPUT_DIR = path.join(__dirname, 'export-screenshots-chapter2');
 const OUTPUT_PPT = path.join(__dirname, 'Chapter_2_GEO_Report.pptx');
-const SLIDE_URL = 'http://localhost:5176';
+const SLIDE_URL = 'http://localhost:6562';
 
 async function main() {
   console.log('🚀 开始导出 篇章2: GEO体检报告...');
@@ -34,7 +34,7 @@ async function main() {
   try {
     await page.goto(SLIDE_URL, { waitUntil: 'networkidle2', timeout: 30000 });
   } catch (e) {
-    console.error(`❌ 无法打开页面 ${SLIDE_URL}。请确保 Vite 开发服务器已在端口 5176 上运行！`);
+    console.error(`❌ 无法打开页面 ${SLIDE_URL}。请确保 Vite 开发服务器已在端口 6562 上运行！`);
     await browser.close();
     process.exit(1);
   }

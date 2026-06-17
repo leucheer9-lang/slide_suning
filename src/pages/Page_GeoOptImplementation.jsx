@@ -19,7 +19,7 @@ export default function Page_GeoOptImplementation() {
 
                 {/* Horizontal Flow Container with 4 Steps */}
                 <div className="flex-1 flex items-stretch justify-between gap-1 xl:gap-2 min-h-0 py-2">
-                    
+
                     {/* Step 1 */}
                     <div className="flex-1 flex flex-col bg-zinc-950/45 backdrop-blur border border-white/5 hover:border-[#004CE5]/20 hover:shadow-[0_0_30px_rgba(0,76,229,0.12)] rounded-2xl p-4 lg:p-5 xl:p-6 transition-all duration-300 relative group">
                         {/* Unified Card Header: AI mechanism label + lighter Step number placed after it */}
@@ -38,7 +38,7 @@ export default function Page_GeoOptImplementation() {
                                 把“单个关键词”当成“复杂问题场景”
                             </h4>
                             <p className="text-zinc-400 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed">
-                                用户搜“瓷砖品牌推荐”，AI 不是去傻傻匹配这六个字，而是去猜用户是想直接买、想看排名、想做对比，还是怕踩坑。
+                                用户搜“短保面包品牌推荐”，AI 不是去傻傻匹配这八个字，而是去猜用户是想直接买、想看排名、想做对比，还是怕踩坑。
                             </p>
                         </div>
 
@@ -52,7 +52,7 @@ export default function Page_GeoOptImplementation() {
                         {/* White-Hat Strategy block */}
                         <div className="flex-1 flex flex-col gap-2 bg-[#004CE5]/5 border border-[#004CE5]/25 rounded-xl p-3.5 lg:p-4 hover:bg-[#004CE5]/10 transition-colors duration-300 relative overflow-hidden group-hover:border-[#004CE5]/40 justify-start">
                             <div className="absolute top-0 right-0 w-20 h-20 bg-[#004CE5]/10 rounded-full blur-xl pointer-events-none"></div>
-                            
+
                             {/* Simplified Strategy subhead */}
                             <div className="flex items-center gap-2 text-[#004CE5] font-extrabold text-[12.5px] lg:text-[14px] xl:text-[15.5px] tracking-wider border-b border-[#004CE5]/10 pb-1.5 shrink-0 z-10">
                                 <span className="w-1.5 h-1.5 bg-[#004CE5] rounded-full shadow-[0_0_6px_rgba(0,76,229,0.8)]"></span>
@@ -96,13 +96,13 @@ export default function Page_GeoOptImplementation() {
                                 面对同一个问题，AI 会兵分几路去查：
                                 <div className="mt-1.5 space-y-1 pl-2">
                                     <span className="block text-zinc-300 font-semibold">
-                                        ① 查榜单（如：瓷砖十大品牌排行）
+                                        ① 查榜单（国内短保面包排行榜）
                                     </span>
                                     <span className="block text-zinc-300 font-semibold">
-                                        ② 查对比（如：冠珠和东鹏哪个好）
+                                        ② 查对比（桃李面包和曼可顿哪个好吃）
                                     </span>
                                     <span className="block text-zinc-300 font-semibold">
-                                        ③ 查避坑（如：某品牌有什么质量负面）
+                                        ③ 查避坑（桃李面包含防腐剂吗）
                                     </span>
                                 </div>
                             </div>
@@ -118,7 +118,7 @@ export default function Page_GeoOptImplementation() {
                         {/* White-Hat Strategy block */}
                         <div className="flex-1 flex flex-col gap-2 bg-[#004CE5]/5 border border-[#004CE5]/25 rounded-xl p-3.5 lg:p-4 hover:bg-[#004CE5]/10 transition-colors duration-300 relative overflow-hidden group-hover:border-[#004CE5]/40 justify-start">
                             <div className="absolute top-0 right-0 w-20 h-20 bg-[#004CE5]/10 rounded-full blur-xl pointer-events-none"></div>
-                            
+
                             {/* Simplified Strategy subhead */}
                             <div className="flex items-center gap-2 text-[#004CE5] font-extrabold text-[12.5px] lg:text-[14px] xl:text-[15.5px] tracking-wider border-b border-[#004CE5]/10 pb-1.5 shrink-0 z-10">
                                 <span className="w-1.5 h-1.5 bg-[#004CE5] rounded-full shadow-[0_0_6px_rgba(0,76,229,0.8)]"></span>
@@ -173,7 +173,7 @@ export default function Page_GeoOptImplementation() {
                         {/* White-Hat Strategy block */}
                         <div className="flex-1 flex flex-col gap-2 bg-[#004CE5]/5 border border-[#004CE5]/25 rounded-xl p-3.5 lg:p-4 hover:bg-[#004CE5]/10 transition-colors duration-300 relative overflow-hidden group-hover:border-[#004CE5]/40 justify-start">
                             <div className="absolute top-0 right-0 w-20 h-20 bg-[#004CE5]/10 rounded-full blur-xl pointer-events-none"></div>
-                            
+
                             {/* Simplified Strategy subhead */}
                             <div className="flex items-center gap-2 text-[#004CE5] font-extrabold text-[12.5px] lg:text-[14px] xl:text-[15.5px] tracking-wider border-b border-[#004CE5]/10 pb-1.5 shrink-0 z-10">
                                 <span className="w-1.5 h-1.5 bg-[#004CE5] rounded-full shadow-[0_0_6px_rgba(0,76,229,0.8)]"></span>
@@ -184,7 +184,7 @@ export default function Page_GeoOptImplementation() {
                                 投其所好，在AI信任的阵地上布局好内容
                             </h4>
                             <p className="text-zinc-200 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed z-10">
-                                我们不瞎发通稿，而是根据数据监测，把专门定制的高质量语料，发到 AI 当前最喜欢引用的平台（如家居门户、资讯端）上，让 AI 顺理成章地抓取采纳。
+                                我们不瞎发通稿，而是根据数据监测，把专门定制的高质量语料，发到 AI 当前最喜欢引用的平台（如行业垂直媒体与社区、综合门户网站）上，让 AI 顺理成章地抓取采纳。
                             </p>
                         </div>
                     </div>
@@ -228,7 +228,7 @@ export default function Page_GeoOptImplementation() {
                         {/* White-Hat Strategy block */}
                         <div className="flex-1 flex flex-col gap-2 bg-[#004CE5]/5 border border-[#004CE5]/25 rounded-xl p-3.5 lg:p-4 hover:bg-[#004CE5]/10 transition-colors duration-300 relative overflow-hidden group-hover:border-[#004CE5]/40 justify-start">
                             <div className="absolute top-0 right-0 w-20 h-20 bg-[#004CE5]/10 rounded-full blur-xl pointer-events-none"></div>
-                            
+
                             {/* Simplified Strategy subhead */}
                             <div className="flex items-center gap-2 text-[#004CE5] font-extrabold text-[12.5px] lg:text-[14px] xl:text-[15.5px] tracking-wider border-b border-[#004CE5]/10 pb-1.5 shrink-0 z-10">
                                 <span className="w-1.5 h-1.5 bg-[#004CE5] rounded-full shadow-[0_0_6px_rgba(0,76,229,0.8)]"></span>
@@ -239,7 +239,7 @@ export default function Page_GeoOptImplementation() {
                                 通过持续的数据监测，进行闭环验证与调整
                             </h4>
                             <p className="text-zinc-200 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed z-10">
-                                文章发出去只是开始。我们会每天监测 AI 到底引用了哪些文章、冠珠排在第几名。根据这些真实反馈，不断调整我们要发什么内容、去哪个平台发。
+                                文章发出去只是开始。我们会每天监测 AI 到底引用了哪些文章、桃李面包排在第几名。根据这些真实反馈，不断调整我们要发什么内容、去哪个平台发。
                             </p>
                         </div>
                     </div>

@@ -23,8 +23,8 @@ export default function Page_IndustryPainPoints() {
                     <div className="bg-zinc-900/60 border border-white/5 rounded-[2rem] p-10 lg:p-12 flex flex-col justify-between relative overflow-hidden shadow-2xl hover:border-white/10 transition-all duration-300">
                         <div className="w-12 h-1 bg-white/60 mb-6 shrink-0"></div>
                         <h3 className="text-[26px] lg:text-[32px] xl:text-[38px] font-bold text-white leading-snug tracking-wider mb-auto z-10">
-                            消费决策极短<br />
-                            常规产品词无流量
+                            C端与B端<br />
+                            搜索词条割裂
                         </h3>
                         <div className="text-[120px] lg:text-[140px] font-black text-white/5 absolute bottom-4 right-8 pointer-events-none select-none leading-none">01</div>
                     </div>

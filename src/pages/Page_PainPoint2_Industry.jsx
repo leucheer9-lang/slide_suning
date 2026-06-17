@@ -71,7 +71,7 @@ export default function Page_PainPoint2_Industry() {
                         解法
                     </div>
                     <p className="text-zinc-200 text-base lg:text-[19px] xl:text-[21px] font-bold leading-relaxed text-justify flex-1">
-                        实施<strong className="text-white">“LBS（基于位置服务）+ O2O渠道强绑定”</strong>的GEO策略。投喂AI语料时高频绑定地域标签和即时零售渠道，强化如“上海地区高口碑短保面包”、“盒马/美团买菜极速送达体验”。引导AI生成具备“区域可用性”的答案，精准引流同城需求。
+                        实施<strong className="text-white">“LBS（基于位置服务）+ O2O渠道强绑定”</strong>的GEO策略。投喂AI语料时高频绑定地域标签和即时零售渠道。
                     </p>
                 </div>
 

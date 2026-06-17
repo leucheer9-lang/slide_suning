@@ -7,7 +7,7 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUTPUT_DIR = path.join(__dirname, 'export-screenshots-all');
 const OUTPUT_PPT = path.join(__dirname, 'All_GEO_Report.pptx');
-const SLIDE_URL = 'http://localhost:5176';
+const SLIDE_URL = 'http://localhost:6562';
 
 async function main() {
   console.log('🚀 开始从演示系统导出 所有PPT (全套幻灯片)...');
@@ -34,7 +34,7 @@ async function main() {
   try {
     await page.goto(SLIDE_URL, { waitUntil: 'networkidle2', timeout: 30000 });
   } catch (e) {
-    console.error(`❌ 无法打开页面 ${SLIDE_URL}。请确保 Vite 开发服务器已在端口 5176 上运行！`);
+    console.error(`❌ 无法打开页面 ${SLIDE_URL}。请确保 Vite 开发服务器已在端口 6562 上运行！`);
     await browser.close();
     process.exit(1);
   }
@@ -124,14 +124,14 @@ async function main() {
     let screenshotBuffer;
     
     if (slideEl) {
-      screenshotBuffer = await slideEl.screenshot({ type: 'png' });
+      screenshotBuffer = await slideEl.screenshot({ type: 'jpeg', quality: 90 });
     } else {
       console.warn('⚠️ 未找到 .bg-white.overflow-hidden 元素，改用全屏截图');
-      screenshotBuffer = await page.screenshot({ type: 'png' });
+      screenshotBuffer = await page.screenshot({ type: 'jpeg', quality: 90 });
     }
 
     // 保存临时截图文件以备后用/调试
-    const imgName = `slide_${String(i + 1).padStart(3, '0')}.png`;
+    const imgName = `slide_${String(i + 1).padStart(3, '0')}.jpg`;
     const imgPath = path.join(OUTPUT_DIR, imgName);
     fs.writeFileSync(imgPath, screenshotBuffer);
 
@@ -139,7 +139,7 @@ async function main() {
     const slide = pptx.addSlide();
     slide.background = { fill: 'FFFFFF' }; // 保证无白边背景
     slide.addImage({
-      data: `image/png;base64,${screenshotBuffer.toString('base64')}`,
+      data: `image/jpeg;base64,${screenshotBuffer.toString('base64')}`,
       x: 0,
       y: 0,
       w: '100%',

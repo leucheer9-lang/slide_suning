@@ -11,16 +11,16 @@ export default function Page_PlatformFilterIntro() {
             textColor: 'text-blue-100',
             numColor: 'text-white/30',
             data: [
-                { rank: 1, site: '太平洋家居', count: 62 },
-                { rank: 2, site: '中国陶瓷网', count: 20 },
-                { rank: 3, site: '网易', count: 11 },
-                { rank: 4, site: '淘宝网', count: 10 },
-                { rank: 5, site: '百度知道', count: 6 },
-                { rank: 6, site: '格莱斯瓷砖', count: 6 },
-                { rank: 7, site: '中陶家居网', count: 5 },
-                { rank: 8, site: '陶城网', count: 5 },
-                { rank: 9, site: '大众网', count: 4 },
-                { rank: 10, site: 'ijia.city', count: 4 }
+                { rank: 1, site: '手机新浪网', count: 81 },
+                { rank: 2, site: '每日食品', count: 79 },
+                { rank: 3, site: '东方财富网', count: 63 },
+                { rank: 4, site: '桃李面包股份有限公司', count: 55 },
+                { rank: 5, site: 'BOSS直聘', count: 50 },
+                { rank: 6, site: '百度知道', count: 44 },
+                { rank: 7, site: '网易', count: 41 },
+                { rank: 8, site: '搜狐网', count: 40 },
+                { rank: 9, site: 'www.tanzhi.cn', count: 31 },
+                { rank: 10, site: '澎湃新闻', count: 29 }
             ]
         },
         {
@@ -32,58 +32,37 @@ export default function Page_PlatformFilterIntro() {
             textColor: 'text-blue-100',
             numColor: 'text-white/30',
             data: [
-                { rank: 1, site: '今日头条', count: 90 },
-                { rank: 2, site: '抖音', count: 66 },
-                { rank: 3, site: '搜狐网', count: 27 },
-                { rank: 4, site: '网易', count: 19 },
-                { rank: 5, site: '新浪新闻', count: 17 },
-                { rank: 6, site: '邢台日报', count: 12 },
-                { rank: 7, site: '买购网', count: 9 },
-                { rank: 8, site: '太平洋家居', count: 8 },
-                { rank: 9, site: '陶城网', count: 7 },
-                { rank: 10, site: '什么值得买社区频道', count: 7 }
+                { rank: 1, site: '中国商报网', count: 285 },
+                { rank: 2, site: '搜狐网', count: 220 },
+                { rank: 3, site: '抖音', count: 206 },
+                { rank: 4, site: '买购网', count: 140 },
+                { rank: 5, site: '什么值得买社区频道', count: 118 },
+                { rank: 6, site: '今日头条', count: 102 },
+                { rank: 7, site: '食品招商网', count: 101 },
+                { rank: 8, site: '淘宝网', count: 95 },
+                { rank: 9, site: '网易', count: 90 },
+                { rank: 10, site: '火爆餐饮网', count: 84 }
             ]
         },
         {
-            id: 'yuanbao',
-            name: '腾讯元宝',
-            file: 'platform-yuanbao.png',
+            id: 'tongyi',
+            name: '通义千问',
+            file: 'platform-tongyi.png',
             color: 'from-[#004CE5]/10',
             borderColor: 'border-[#004CE5]/20',
             textColor: 'text-blue-100',
             numColor: 'text-white/30',
             data: [
-                { rank: 1, site: 'QQ News', count: 77 },
-                { rank: 2, site: '中国陶瓷网', count: 29 },
-                { rank: 3, site: '今日头条', count: 24 },
-                { rank: 4, site: 'actytwo.com', count: 19 },
-                { rank: 5, site: '蒙娜丽莎瓷砖', count: 19 },
-                { rank: 6, site: '百度知道', count: 18 },
-                { rank: 7, site: '淘宝网', count: 14 },
-                { rank: 8, site: '搜狐网', count: 11 },
-                { rank: 9, site: '中华陶瓷网', count: 8 },
-                { rank: 10, site: '咸宁新闻网', count: 7 }
-            ]
-        },
-        {
-            id: 'yiyan',
-            name: '文心一言',
-            file: 'platform-yiyan.png',
-            color: 'from-[#004CE5]/10',
-            borderColor: 'border-[#004CE5]/20',
-            textColor: 'text-blue-100',
-            numColor: 'text-white/30',
-            data: [
-                { rank: 1, site: '百度知道', count: 231 },
-                { rank: 2, site: '网易', count: 65 },
-                { rank: 3, site: '品牌加盟网', count: 53 },
-                { rank: 4, site: '京东', count: 25 },
-                { rank: 5, site: '中国陶瓷网', count: 23 },
-                { rank: 6, site: '哔哩哔哩', count: 19 },
-                { rank: 7, site: '搜狐网', count: 18 },
-                { rank: 8, site: '蚌埠新闻网', count: 13 },
-                { rank: 9, site: '知乎', count: 5 },
-                { rank: 10, site: '旅行密探李大头', count: 5 }
+                { rank: 1, site: '百度知道', count: 89 },
+                { rank: 2, site: '哔哩哔哩', count: 74 },
+                { rank: 3, site: '每日食品', count: 71 },
+                { rank: 4, site: '大众点评', count: 59 },
+                { rank: 5, site: '十大品牌网CNPP', count: 56 },
+                { rank: 6, site: '中国商报网', count: 53 },
+                { rank: 7, site: '今日头条', count: 46 },
+                { rank: 8, site: '36氪', count: 43 },
+                { rank: 9, site: '搜狐网', count: 38 },
+                { rank: 10, site: '中国报告大厅', count: 33 }
             ]
         }
     ];
@@ -95,7 +74,7 @@ export default function Page_PlatformFilterIntro() {
             <div className="w-full flex-col items-center justify-center text-center pt-2 pb-6 shrink-0">
                 <h1 className="text-4xl font-bold text-white tracking-widest mb-3">投放平台筛选</h1>
                 <p className="text-zinc-400 text-[1.1rem] font-medium tracking-wide">
-                    通过解构四大主流 AI 平台的信源特征与竞品数据，量化推导四大核心阵地
+                    通过解构三大主流 AI 平台的信源特征与竞品数据，量化推导三大核心阵地
                 </p>
             </div>
 
@@ -121,8 +100,8 @@ export default function Page_PlatformFilterIntro() {
                     </div>
                 </div>
 
-                {/* Bottom: 4 Tables Horizontal */}
-                <div className="w-full flex-1 grid grid-cols-4 gap-4 min-h-0">
+                {/* Bottom: 3 Tables Horizontal */}
+                <div className="w-full flex-1 grid grid-cols-3 gap-6 min-h-0">
                     {platformData.map((platform, idx) => (
                         <div key={idx} className={`flex flex-col bg-white/[0.02] backdrop-blur-md border ${platform.borderColor} rounded-xl overflow-hidden shadow-lg h-full`}>
                             

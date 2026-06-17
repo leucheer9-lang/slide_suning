@@ -14,26 +14,26 @@ export default function Page_ContentStrategyDetails() {
 
             {/* ── Main Content Area ── */}
             <div className="flex-1 w-full mx-auto px-4 pb-4 z-10 flex items-center justify-center min-h-0">
-                
+
                 {/* Scale wrapper for the Two placeholders */}
                 <div className="w-full grid grid-cols-2 gap-6 items-start justify-center max-h-full">
-                    
+
                     {/* Left Column */}
                     <div className="flex flex-col gap-3 w-full">
                         <div className="flex items-center gap-2 px-2">
                             <div className="w-1.5 h-6 bg-[#004CE5] rounded-full shrink-0 shadow-[0_0_10px_rgba(0,76,229,0.5)]"></div>
                             <h3 className="text-xl font-black text-white tracking-wide">综合 Top 100 引用文章明细</h3>
                         </div>
-                        
+
                         {/* Left Placeholder Card */}
                         <div className="w-full aspect-[16/10] relative bg-white/[0.02] border border-white/10 rounded-2xl overflow-hidden shadow-2xl group flex flex-col items-center justify-center">
-                            <img 
-                                src="/Add_Charts/content-strategy-details-1.png" 
-                                alt="综合 Top 100 引用文章明细" 
+                            <img
+                                src="/Add_Charts/content-strategy-details-1.png"
+                                alt="综合 Top 100 引用文章明细"
                                 className="absolute inset-0 w-full h-full object-contain p-2 z-20"
                                 onError={(e) => { e.target.style.display = 'none'; }}
                             />
-                            
+
                             {/* Placeholder UI */}
                             <div className="absolute inset-0 z-10 flex flex-col items-center justify-center pointer-events-none">
                                 <div className="w-20 h-20 mb-5 rounded-full bg-white/[0.03] flex items-center justify-center border border-white/5 text-white/20 transition-all group-hover:bg-[#004CE5]/10 group-hover:text-[#004CE5]/50 group-hover:border-[#004CE5]/30">
@@ -55,18 +55,18 @@ export default function Page_ContentStrategyDetails() {
                     <div className="flex flex-col gap-3 w-full">
                         <div className="flex items-center gap-2 px-2">
                             <div className="w-1.5 h-6 bg-[#004CE5] rounded-full shrink-0 shadow-[0_0_10px_rgba(0,76,229,0.5)]"></div>
-                            <h3 className="text-xl font-black text-white tracking-wide">提到萨米特的引用文章 Top 45 明细</h3>
+                            <h3 className="text-xl font-black text-white tracking-wide">提到桃李面包的引用文章 Top 45 明细</h3>
                         </div>
 
                         {/* Right Placeholder Card */}
                         <div className="w-full aspect-[16/10] relative bg-white/[0.02] border border-white/10 rounded-2xl overflow-hidden shadow-2xl group flex flex-col items-center justify-center">
-                            <img 
-                                src="/Add_Charts/content-strategy-details-2.png" 
-                                alt="提到萨米特的引用文章 Top 45 明细" 
+                            <img
+                                src="/Add_Charts/content-strategy-details-2.png"
+                                alt="提到萨米特的引用文章 Top 45 明细"
                                 className="absolute inset-0 w-full h-full object-contain p-2 z-20"
                                 onError={(e) => { e.target.style.display = 'none'; }}
                             />
-                            
+
                             {/* Placeholder UI */}
                             <div className="absolute inset-0 z-10 flex flex-col items-center justify-center pointer-events-none">
                                 <div className="w-20 h-20 mb-5 rounded-full bg-white/[0.03] flex items-center justify-center border border-white/5 text-white/20 transition-all group-hover:bg-[#004CE5]/10 group-hover:text-[#004CE5]/50 group-hover:border-[#004CE5]/30">

@@ -2,17 +2,20 @@ import React from 'react';
 
 function Page_GeoReportDashboard2() {
     return (
-        <div className="w-full h-full flex flex-col relative text-white font-sans px-12 sm:px-16 pt-2 lg:pt-4 pb-4 overflow-hidden animate-fade-in">
-            <div className="w-full max-w-[1600px] mx-auto flex flex-col h-full relative z-10 pt-0">
-                {/* Header Section */}
-                <div className="text-center mb-4 shrink-0">
-                    <h1 className="text-[32px] font-bold text-white tracking-widest leading-tight">
+        <div className="w-full h-full flex flex-col relative text-white font-sans px-12 sm:px-16 pt-5 pb-10 overflow-hidden animate-fade-in">
+            {/* Background pattern */}
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:40px_40px] opacity-20 pointer-events-none"></div>
+
+            <div className="w-full flex flex-col h-full relative z-10">
+                {/* Header Section - Centered and shifted up by 20px using mt-[-20px] */}
+                <div className="text-center mb-4 mt-[-20px] shrink-0 relative z-10">
+                    <h1 className="text-[28px] lg:text-[32px] font-bold text-white tracking-widest leading-none">
                         核心指标定义与表现概览
                     </h1>
                 </div>
 
                 {/* Main Content Area: Side-by-Side aligned Columns */}
-                <div className="flex-grow grid grid-cols-12 gap-6 min-h-0">
+                <div className="flex-grow grid grid-cols-12 gap-6 min-h-0 pt-[20px]">
 
                     {/* Left Column: Quantitative Metrics Table */}
                     <div className="col-span-6 flex flex-col min-h-0">
@@ -34,28 +37,28 @@ function Page_GeoReportDashboard2() {
                                         <tr className="hover:bg-white/[0.02] transition-colors">
                                             <td className="py-3 px-4 text-[18px] lg:text-[20px] font-bold text-white whitespace-nowrap">提及率</td>
                                             <td className="py-3 px-4 text-[16px] lg:text-[17px] xl:text-[18px] text-zinc-300 leading-relaxed">
-                                                在测试的词条中，AI回复中包含“冠珠”的概率。
+                                                在测试的词条中，AI回复中包含“上宸瑞府”的概率。
                                             </td>
                                             <td className="py-3 px-4 text-[16px] lg:text-[17px] xl:text-[18px] text-zinc-100 leading-relaxed">
-                                                <span className="text-blue-400 font-bold">34.5%</span>（在众多家装提问中，AI较少主动推荐冠珠，曝光度严重不足）
+                                                <span className="text-blue-400 font-bold">42.9%</span>（注：曝光度表现良好，具备极强的区域基础声量，已形成较好的品牌认知）
                                             </td>
                                         </tr>
                                         <tr className="hover:bg-white/[0.02] transition-colors">
                                             <td className="py-3 px-4 text-[18px] lg:text-[20px] font-bold text-white whitespace-nowrap">平均提及位次</td>
                                             <td className="py-3 px-4 text-[16px] lg:text-[17px] xl:text-[18px] text-zinc-300 leading-relaxed">
-                                                当品牌被普及时，在AI生成文本中出现的排位，越靠前权重越高。
+                                                当楼盘被普及时，在AI生成文本中出现的排位，越靠前权重越高。
                                             </td>
                                             <td className="py-3 px-4 text-[16px] lg:text-[17px] xl:text-[18px] text-zinc-100 leading-relaxed">
-                                                <span className="text-blue-400 font-bold">NO. 6.4</span>（位次靠后，通常排在马可波罗、东鹏之后，处于末尾位）
+                                                <span className="text-blue-400 font-bold">NO. 5.4</span>（平均提及位次处于中游水平，说明虽被提及概率提高，但排位仍有较大优化提升空间）
                                             </td>
                                         </tr>
                                         <tr className="hover:bg-white/[0.02] transition-colors">
                                             <td className="py-3 px-4 text-[18px] lg:text-[20px] font-bold text-white whitespace-nowrap">行业影响力排名</td>
                                             <td className="py-3 px-4 text-[16px] lg:text-[17px] xl:text-[18px] text-zinc-300 leading-relaxed">
-                                                在AI生态中，各品牌的综合排名。影响力排名越高，说明AI认可度越高。
+                                                在AI生态中，各楼盘/板块的综合排名。影响力排名越高，说明AI认可度越高。
                                             </td>
                                             <td className="py-3 px-4 text-[16px] lg:text-[17px] xl:text-[18px] text-zinc-100 leading-relaxed">
-                                                <span className="text-blue-400 font-bold">NO.14</span>（几乎从未作为首选品牌被AI推荐给用户）
+                                                <span className="text-blue-400 font-bold">NO. 2</span>（在龙华/上塘片区的同类竞品监测中，处于绝对的头部统治地位）
                                             </td>
                                         </tr>
                                         <tr className="hover:bg-white/[0.02] transition-colors">
@@ -64,7 +67,7 @@ function Page_GeoReportDashboard2() {
                                                 AI 生成当前结果时，最底层的数据抓取来源平台。
                                             </td>
                                             <td className="py-3 px-4 text-[16px] lg:text-[17px] xl:text-[18px] text-zinc-100 leading-relaxed">
-                                                前三：百度知道（16.5%）、今日头条（7.4%）、网易（6.5%）。
+                                                网易 (16.9%)、房天下 (11.9%)、QQ News (10.4%)
                                             </td>
                                         </tr>
                                     </tbody>
@@ -78,51 +81,51 @@ function Page_GeoReportDashboard2() {
                         <div className="border border-[#004CE5]/20 bg-white/[0.03] backdrop-blur-xl rounded-2xl p-6 shadow-[-10px_0_30px_rgba(0,76,229,0.1)] flex flex-col h-full justify-start min-h-0 gap-3">
                             <h3 className="text-xl lg:text-2xl font-bold text-white mb-1 shrink-0 flex items-center gap-2">
                                 <span className="w-1.5 h-4 bg-[#004CE5] rounded-full shadow-[0_0_8px_rgba(0,76,229,0.8)]" />
-                                结合本次数据，冠珠在 AI 问答里的表现呈现以下特征：
+                                结合本次数据，深业上宸瑞府在 AI 问答生态里的表现呈现以下特征：
                             </h3>
 
-                            <div className="flex-grow flex flex-col justify-start gap-4 min-h-0 pt-2 lg:pt-3">
+                            <div className="flex-grow flex flex-col justify-start gap-3 min-h-0 pt-2 lg:pt-2">
                                 {/* Bullet 1 */}
-                                <div className="bg-white/[0.01] hover:bg-white/[0.02] border border-white/5 rounded-xl p-3 flex gap-3 transition-colors duration-300">
-                                    <div className="text-[#004CE5] text-2xl lg:text-3xl font-mono font-bold select-none pt-0.5 shrink-0">
+                                <div className="bg-white/[0.01] hover:bg-white/[0.02] border border-white/5 rounded-xl p-2.5 flex gap-3 transition-colors duration-300">
+                                    <div className="text-[#004CE5] text-xl lg:text-2xl font-mono font-bold select-none pt-0.5 shrink-0">
                                         01
                                     </div>
                                     <div className="min-h-0">
-                                        <h4 className="text-[17px] lg:text-[18px] xl:text-[20px] font-bold text-white mb-0.5 leading-snug">
-                                            整体提及率处于中位水平，与现实商业地位仍有显著差距。
+                                        <h4 className="text-[15px] lg:text-[16.5px] xl:text-[18px] font-bold text-white mb-0.5 leading-snug">
+                                            “地段与硬核指标”极度强势，首推权具有垄断性。
                                         </h4>
-                                        <p className="text-[15px] lg:text-[16px] xl:text-[18px] text-zinc-300 leading-relaxed text-justify">
-                                            冠珠整体提及率 34.5%，虽然在通用词条有覆盖，但在“防渗污”、“超平整”等功能性核心词条下提及率均为 0.0%。在极致品质搜索场景下，AI 极少主动推介冠珠，且平台间认知不均衡。
+                                        <p className="text-[13px] lg:text-[14px] xl:text-[15px] text-zinc-300 leading-relaxed text-justify">
+                                            项目在“地铁盘/深圳北买房/高得房率”三大词下提及率达 100%，排位霸榜 NO. 1.0 - 2.7。一旦搜索意图明确指向硬核交通地段，AI 几乎必然首推。
                                         </p>
                                     </div>
                                 </div>
 
                                 {/* Bullet 2 */}
-                                <div className="bg-white/[0.01] hover:bg-white/[0.02] border border-white/5 rounded-xl p-3 flex gap-3 transition-colors duration-300">
-                                    <div className="text-[#004CE5] text-2xl lg:text-3xl font-mono font-bold select-none pt-0.5 shrink-0">
+                                <div className="bg-white/[0.01] hover:bg-white/[0.02] border border-white/5 rounded-xl p-2.5 flex gap-3 transition-colors duration-300">
+                                    <div className="text-[#004CE5] text-xl lg:text-2xl font-mono font-bold select-none pt-0.5 shrink-0">
                                         02
                                     </div>
                                     <div className="min-h-0">
-                                        <h4 className="text-[17px] lg:text-[18px] xl:text-[20px] font-bold text-white mb-0.5 leading-snug">
-                                            特定风格标签初步建立。
+                                        <h4 className="text-[15px] lg:text-[16.5px] xl:text-[18px] font-bold text-white mb-0.5 leading-snug">
+                                            跨区通勤场景与产品细节严重“踏空”，存在流量死角。
                                         </h4>
-                                        <p className="text-[15px] lg:text-[16px] xl:text-[18px] text-zinc-300 leading-relaxed text-justify">
-                                            品牌在新中式等风格赛道表现亮眼，如“新中式背景墙”提及率达 50.0%（NO.2.3）。但在功能性及特定空间词条下提及率仍为 0.0%，AI 尚未建立其“硬核品质与全场景应用”的强关联。
+                                        <p className="text-[13px] lg:text-[14px] xl:text-[15px] text-zinc-300 leading-relaxed text-justify">
+                                            在“福田上班龙华买房”、“低容积率新盘”等居住场景词下提及率均为 0.0%，导致福田外溢通勤等具购房痛点的客户无法通过 AI 检索到项目。
                                         </p>
                                     </div>
                                 </div>
 
                                 {/* Bullet 3 */}
-                                <div className="bg-white/[0.01] hover:bg-white/[0.02] border border-white/5 rounded-xl p-3 flex gap-3 transition-colors duration-300">
-                                    <div className="text-[#004CE5] text-2xl lg:text-3xl font-mono font-bold select-none pt-0.5 shrink-0">
+                                <div className="bg-white/[0.01] hover:bg-white/[0.02] border border-white/5 rounded-xl p-2.5 flex gap-3 transition-colors duration-300">
+                                    <div className="text-[#004CE5] text-xl lg:text-2xl font-mono font-bold select-none pt-0.5 shrink-0">
                                         03
                                     </div>
                                     <div className="min-h-0">
-                                        <h4 className="text-[17px] lg:text-[18px] xl:text-[20px] font-bold text-white mb-0.5 leading-snug">
-                                            与竞品在“首推权”上存在较大差距。
+                                        <h4 className="text-[15px] lg:text-[16.5px] xl:text-[18px] font-bold text-white mb-0.5 leading-snug">
+                                            高意向决策词陷入“口碑盲区”，案名认知存在割裂。
                                         </h4>
-                                        <p className="text-[15px] lg:text-[16px] xl:text-[18px] text-zinc-300 leading-relaxed text-justify">
-                                            竞品马可波罗（69%）与东鹏（54.3%）大幅领先并主导首推权。而冠珠平均位次仅 NO.6.4，Top1 首推率仅 0.9%，在绝大多数对话中仅作为陪跑选项出现，差距悬殊。
+                                        <p className="text-[13px] lg:text-[14px] xl:text-[15px] text-zinc-300 leading-relaxed text-justify">
+                                            “值得买吗/89平三房怎么样”等决策词提及率为 0.0%。且 AI 对简称“上宸瑞府”与全称“深业上宸瑞府”认知割裂，内耗并分散了流量。
                                         </p>
                                     </div>
                                 </div>
@@ -132,17 +135,17 @@ function Page_GeoReportDashboard2() {
                 </div>
 
                 {/* Bottom Row: Full-width Action Callout Card */}
-                <div className="border border-[#004CE5]/20 border-l-4 border-l-[#004CE5] bg-white/[0.03] backdrop-blur-xl rounded-2xl p-5 shadow-[-10px_0_30px_rgba(0,76,229,0.1)] shrink-0 mt-5">
-                    <h3 className="text-2xl lg:text-3xl font-bold text-white mb-2">
+                <div className="border border-[#004CE5]/20 border-l-4 border-l-[#004CE5] bg-white/[0.03] backdrop-blur-xl rounded-2xl p-4 shadow-[-10px_0_30px_rgba(0,76,229,0.1)] shrink-0 mt-3">
+                    <h3 className="text-xl lg:text-2xl font-bold text-white mb-1">
                         核心行动建议
                     </h3>
-                    <div className="text-[16px] lg:text-[17px] xl:text-[18px] text-zinc-300 leading-relaxed flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div className="text-[13px] lg:text-[14px] xl:text-[15px] text-zinc-300 leading-relaxed flex flex-col md:flex-row md:items-center justify-between gap-4">
                         <div className="flex-1">
-                            <p className="font-bold text-white mb-1 text-[18px] lg:text-[20px]">
-                                急需进行系统化的 GEO 优化。
+                            <p className="font-bold text-white mb-0.5 text-[15px] lg:text-[17px]">
+                                拓宽触发场景 + 案名归一 + 补齐口碑短板
                             </p>
                             <p className="text-zinc-400 leading-relaxed text-justify">
-                                当前 AI 对冠珠在新中式等风格赛道已有初步认知，但在功能工艺词条与首推场景中权重明显不足，必须立即干预并喂养高质量的品牌语料，重塑冠珠“国民设计瓷砖”、“新中式审美”、“高平整工艺”的权重，从而在 AI 搜索 & 问答截流中建立正确的品牌认知。
+                                优化任务包括提升提及位次（当前均位仅 NO. 5.4，存在较大提升空间），同时利用“地铁/深圳北”的垄断优势强行绑定“福田通勤”、“刚改深度测评”等长尾场景，补齐 0% 空白词条，让 AI 能够针对客户具体需求输出高转化率的置业理由。
                             </p>
                         </div>
                     </div>

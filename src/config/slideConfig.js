@@ -48,23 +48,25 @@ import PB_TargetProduct from '../Pages_Before/Page_TargetProduct';
 import PB_TargetUser from '../Pages_Before/Page_TargetUser';
 import PB_CoreSellingPainPoints from '../Pages_Before/Page_CoreSellingPainPoints';
 
-// ——— 篇章2: GEO体检报告 (Pages_Before) ———
-import PB_GeoReportOverview from '../Pages_Before/Page_GeoReportOverview';
-import PB_GeoReportOverview2 from '../Pages_Before/Page_GeoReportOverview2';
-import PB_GeoReportDashboard from '../Pages_Before/Page_GeoReportDashboard';
-import PB_GeoReportDashboard2 from '../Pages_Before/Page_GeoReportDashboard2';
-import PB_GeoReportEntries from '../Pages_Before/Page_GeoReportEntries';
-import PB_GeoReportEntries_Analysis from '../Pages_Before/Page_GeoReportEntries_Analysis';
-import PB_GeoReportEntries2 from '../Pages_Before/Page_GeoReportEntries2';
-import PB_GeoReportEntries3 from '../Pages_Before/Page_GeoReportEntries3';
-import PB_GeoReportCompetitors_Analysis from '../Pages_Before/Page_GeoReportCompetitors_Analysis';
-import PB_GeoReportCompetitors from '../Pages_Before/Page_GeoReportCompetitors';
-import PB_GeoReportCompetitors2 from '../Pages_Before/Page_GeoReportCompetitors2';
-import PB_GeoReportCompetitors3 from '../Pages_Before/Page_GeoReportCompetitors3';
-import PB_GeoReportSources from '../Pages_Before/Page_GeoReportSources';
-import PB_GeoReportSources2 from '../Pages_Before/Page_GeoReportSources2';
-import PB_GeoReportSentiment_Pre from '../Pages_Before/Page_GeoReportSentiment_Pre';
-import PB_GeoReportSentiment from '../Pages_Before/Page_GeoReportSentiment';
+// ——— 篇章2: GEO体检报告 (桃李面包 2B & 2C & 品牌舆情) ———
+import Page_GeoReport_Dashboard_2B from '../pages/Page_GeoReport_Dashboard_2B';
+import Page_GeoReport_Dashboard2_2B from '../pages/Page_GeoReport_Dashboard2_2B';
+import Page_GeoReport_Entries_2B from '../pages/Page_GeoReport_Entries_2B';
+import Page_GeoReport_Entries_Analysis_2B from '../pages/Page_GeoReport_Entries_Analysis_2B';
+import Page_GeoReport_Competitors_Analysis_2B from '../pages/Page_GeoReport_Competitors_Analysis_2B';
+import Page_GeoReport_Sources_2B from '../pages/Page_GeoReport_Sources_2B';
+import Page_GeoReport_Sources2_2B from '../pages/Page_GeoReport_Sources2_2B';
+
+import Page_GeoReport_Dashboard_2C from '../pages/Page_GeoReport_Dashboard_2C';
+import Page_GeoReport_Dashboard2_2C from '../pages/Page_GeoReport_Dashboard2_2C';
+import Page_GeoReport_Entries_2C from '../pages/Page_GeoReport_Entries_2C';
+import Page_GeoReport_Entries_Analysis_2C from '../pages/Page_GeoReport_Entries_Analysis_2C';
+import Page_GeoReport_Competitors_Analysis_2C from '../pages/Page_GeoReport_Competitors_Analysis_2C';
+import Page_GeoReport_Sources_2C from '../pages/Page_GeoReport_Sources_2C';
+import Page_GeoReport_Sources2_2C from '../pages/Page_GeoReport_Sources2_2C';
+
+import Page_GeoReport_Sentiment_Pre from '../pages/Page_GeoReport_Sentiment_Pre';
+import Page_GeoReport_Sentiment from '../pages/Page_GeoReport_Sentiment';
 import PB_GeoKpiAcceptance from '../Pages_Before/Page_GeoKpiAcceptance';
 import PB_GeoWorkAcceptance from '../Pages_Before/Page_GeoWorkAcceptance';
 import PB_GeoValueAddedServices from '../Pages_Before/Page_GeoValueAddedServices';
@@ -131,8 +133,8 @@ import Page_IndustryPainPoints from '../pages/Page_IndustryPainPoints';
 import Page_PainPoint1_WordCloud from '../pages/Page_PainPoint1_WordCloud';
 import Page_PainPoint2_Industry from '../pages/Page_PainPoint2_Industry';
 import Page_PainPoint3_Service from '../pages/Page_PainPoint3_Service';
-import Page_PainPoint3_Service_Solution from '../pages/Page_PainPoint3_Service_Solution';
 import Page_PainPoint4_SalesModel from '../pages/Page_PainPoint4_SalesModel';
+import Page_PainPoint4_SalesModel_Solution from '../pages/Page_PainPoint4_SalesModel_Solution';
 import Page_KeywordGroupingBasis from '../pages/Page_KeywordGroupingBasis';
 import Page_KeywordGroupingConclusion from '../pages/Page_KeywordGroupingConclusion';
 import Page_ContentStrategyBacktrack from '../pages/Page_ContentStrategyBacktrack';
@@ -180,10 +182,10 @@ export const slideConfig = [
 
   { type: 'section', title: '行业特点' },
   { type: 'page', title: '短保烘焙行业及GEO难点解析', component: Page_IndustryPainPoints },
-  { type: 'page', title: '消费决策极短与搜索意图高度泛化', component: Page_PainPoint1_WordCloud },
+  { type: 'page', title: 'C端与B端决策逻辑割裂', component: Page_PainPoint1_WordCloud },
   { type: 'page', title: '供应链物理半径限制与流量倒挂', component: Page_PainPoint2_Industry },
-  { type: 'page', title: '多渠道碎片化与折价价格体系混乱', components: [Page_PainPoint3_Service, Page_PainPoint3_Service_Solution] },
-  { type: 'page', title: '0防腐食安双刃剑与AI公关危机', component: Page_PainPoint4_SalesModel },
+  { type: 'page', title: '0防腐食安双刃剑与AI公关危机', components: [Page_PainPoint4_SalesModel, Page_PainPoint4_SalesModel_Solution] },
+  { type: 'page', title: '多渠道碎片化与折价价格体系混乱', component: Page_PainPoint3_Service },
 
   { type: 'section', title: '词条策略' },
   { type: 'page', title: '词条分组依据', component: Page_KeywordGroupingBasis },
@@ -194,23 +196,32 @@ export const slideConfig = [
   { type: 'page', title: '词条生成逻辑', component: Page_KeywordGenerationLogic },
   { type: 'page', title: '词条打标逻辑', component: Page_KeywordTaggingLogic },
   { type: 'page', title: '词条拓展逻辑', component: Page_KeywordExpansionLogic },
-  { type: 'page', title: '词条穷举及清洗', components: [PB_GeoOptKeywordsClassify, PB_GeoOptKeywordsClassify2, PB_GeoOptKeywordsClassify_New, PB_GeoOptKeywordsClassify_New2] },
-  { type: 'page', title: '词条分类及拓展', components: [PB_GeoOptKeywordsClassify3, PB_GeoOptKeywordsClassify4] },
-  { type: 'page', title: '词条确定', components: [PB_GeoOptKeywordsCleaning1, PB_GeoOptKeywordsCleaning2, PB_GeoOptKeywordsCleaning3] },
+  { type: 'page', title: '词条穷举及清洗', components: [PB_GeoOptKeywordsClassify, PB_GeoOptKeywordsClassify2] },
+  { type: 'page', title: '词条分类及拓展', components: [PB_GeoOptKeywordsClassify3] },
+  { type: 'page', title: '词条确定', components: [PB_GeoOptKeywordsCleaning1, PB_GeoOptKeywordsCleaning2] },
 
   // ══════════════════════════════════════════════════════════
   // ——— 篇章2: GEO体检报告 ———
   // ══════════════════════════════════════════════════════════
   { type: 'chapter', title: 'GEO体检报告', subtitle: 'GEO HEALTH CHECK', backgroundImage: '/proposal-chapters/proposal-chapter-cover-02.jpg' },
 
-  { type: 'section', title: '数据分析报告' },
+  { type: 'section', title: '数据分析报告说明' },
   { type: 'page', title: '报告说明', components: [Page_GeoReport_BasicInfo1, Page_GeoReport_BasicInfo2] },
-  { type: 'page', title: '总览', components: [PB_GeoReportDashboard, PB_GeoReportDashboard2] },
-  { type: 'page', title: '词条', components: [PB_GeoReportEntries, PB_GeoReportEntries_Analysis] },
-  { type: 'page', title: '竞品', component: PB_GeoReportCompetitors_Analysis },
-  { type: 'page', title: '引用源', components: [PB_GeoReportSources, PB_GeoReportSources2] },
-  { type: 'page', title: '正负面', components: [PB_GeoReportSentiment_Pre, PB_GeoReportSentiment] },
 
+  { type: 'section', title: '2B词条数据' },
+  { type: 'page', title: '2B数据总览', components: [Page_GeoReport_Dashboard_2B, Page_GeoReport_Dashboard2_2B] },
+  { type: 'page', title: '2B词条表现', components: [Page_GeoReport_Entries_2B, Page_GeoReport_Entries_Analysis_2B] },
+  { type: 'page', title: '2B竞品对比', component: Page_GeoReport_Competitors_Analysis_2B },
+  { type: 'page', title: '2B引用源分析', components: [Page_GeoReport_Sources_2B, Page_GeoReport_Sources2_2B] },
+
+  { type: 'section', title: '2C词条数据' },
+  { type: 'page', title: '2C数据总览', components: [Page_GeoReport_Dashboard_2C, Page_GeoReport_Dashboard2_2C] },
+  { type: 'page', title: '2C词条表现', components: [Page_GeoReport_Entries_2C, Page_GeoReport_Entries_Analysis_2C] },
+  { type: 'page', title: '2C竞品对比', component: Page_GeoReport_Competitors_Analysis_2C },
+  { type: 'page', title: '2C引用源分析', components: [Page_GeoReport_Sources_2C, Page_GeoReport_Sources2_2C] },
+
+  { type: 'section', title: '品牌词舆情分析' },
+  { type: 'page', title: '品牌正负面', components: [Page_GeoReport_Sentiment_Pre, Page_GeoReport_Sentiment] },
 
   // ══════════════════════════════════════════════════════════
   // ——— 篇章3: KPI及验收标准 ———
@@ -221,8 +232,6 @@ export const slideConfig = [
   { type: 'page', title: '品牌现状与KPI', component: PB_GeoKpiAcceptance },
   { type: 'page', title: '工作内容与预期效果', component: PB_GeoWorkAcceptance },
   { type: 'page', title: '增值服务', component: PB_GeoValueAddedServices },
-
-
 
   // ══════════════════════════════════════════════════════════
   // ——— 篇章4: GEO实操要点解析 ———

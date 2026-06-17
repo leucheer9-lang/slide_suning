@@ -5,18 +5,20 @@ function Page_GeoReportSentiment_Pre() {
     const [imgError, setImgError] = useState(false);
 
     return (
-        <div className="w-full h-full flex flex-col relative text-white font-sans px-12 sm:px-16 pt-4 pb-4 overflow-hidden animate-fade-in">
-            <div className="w-full max-w-[1700px] mx-auto flex flex-col flex-1 min-h-0 relative z-10 pt-0 gap-2">
-                
-                {/* Header Section */}
-                <div className="text-center shrink-0 mb-0.5">
-                    <h1 className="text-[36px] font-bold text-white tracking-widest leading-tight">
+        <div className="w-full h-full flex flex-col relative text-white font-sans px-12 sm:px-16 pt-5 pb-10 overflow-hidden animate-fade-in">
+            {/* Background pattern */}
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:40px_40px] opacity-20 pointer-events-none"></div>
+
+            <div className="w-full flex flex-col h-full relative z-10 gap-2">
+                {/* Header Section - Centered and shifted up by 20px using mt-[-20px] */}
+                <div className="text-center mb-4 mt-[-20px] shrink-0 relative z-10">
+                    <h1 className="text-[28px] lg:text-[32px] font-bold text-white tracking-widest leading-none">
                         正负面分析
                     </h1>
                 </div>
 
                 {/* Main Content Sub-container: Dynamically fits to the image's width and stretches the bottom card to match it exactly */}
-                <div className="flex-1 flex flex-col justify-between items-stretch min-h-0 w-fit max-w-[1580px] mx-auto gap-3.5">
+                <div className="flex-1 flex flex-col justify-between items-stretch min-h-0 w-fit max-w-[1580px] mx-auto gap-3.5 pt-[20px]">
                     
                     {/* Top Section: Larger, Self-Adaptive Image Slot */}
                     <div className="flex-1 flex flex-col justify-center items-center min-h-0 relative">
@@ -68,10 +70,10 @@ function Page_GeoReportSentiment_Pre() {
                             </h3>
                             <div className="text-[18px] lg:text-[19.5px] xl:text-[21px] text-zinc-300 leading-normal font-normal flex flex-col gap-1.5">
                                 <p>
-                                    针对品牌词专项监测，AI 在全部 <strong className="text-[#004CE5] font-bold">67</strong> 次对话中均精准识别并讨论了冠珠品牌。其中正面回答率为 <strong className="text-emerald-400 font-bold">82.5%</strong>，负面回答率为 <strong className="text-rose-400 font-bold">17.5%</strong>，正面评价主要围绕“<strong className="text-white font-semibold">性价比高</strong>”、“<strong className="text-white font-semibold">品质可靠</strong>”、“<strong className="text-white font-semibold">品牌实力强</strong>”展开。
+                                    在包含品牌提及的有效问答中，深业上宸瑞府的正面回答率达 <strong className="text-emerald-400 font-bold">82.4%</strong>，主要的正面评价高度集中在“<strong className="text-white font-semibold">交通便利</strong>”、“<strong className="text-white font-semibold">配套成熟</strong>”、“<strong className="text-white font-semibold">配套完善</strong>”等维度上，这与项目主打的地铁盘定位高度一致。负面回答占比为 <strong className="text-rose-400 font-bold">17.6%</strong>，在房地产大宗消费中已触及“销售红线”的危险水位，集中在“噪音问题、交付周期长、交房周期长”上。
                                 </p>
                                 <p className="border-t border-white/5 pt-1.5">
-                                    由于是定向品牌词搜索，100% 的提及率是预期内的，重点在于 AI 输出的评价质量。目前 <strong className="text-rose-400 font-bold">17.5%</strong> 的负面率说明在深度问答场景下，品牌已暴露出一定的口碑风险点。
+                                    虽然正面评价占主导，但 <strong className="text-rose-400 font-bold">17.6%</strong> 的负面在决策链极长的购房行为中杀伤力极大。由于 AI 抓取了网络上关于项目临街可能存在噪音的质疑，以及对期房约 2 年交付期的预警，这在客户做临门一脚的 AI 搜索决策时，极易造成客户流失。
                                 </p>
                             </div>
                         </div>

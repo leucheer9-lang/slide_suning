@@ -2,26 +2,28 @@ import React from 'react';
 
 function Page_GeoReportSources2() {
     const rankings = [
-        { name: '百度知道', value: '16.5%', widthClass: 'w-[95%]' },
-        { name: '今日头条', value: '7.4%', widthClass: 'w-[45%]' },
-        { name: '网易', value: '6.5%', widthClass: 'w-[40%]' },
-        { name: 'QQ News', value: '5.5%', widthClass: 'w-[34%]' },
-        { name: '太平洋家居', value: '4.9%', widthClass: 'w-[30%]' },
+        { name: '网易', value: '16.9%', widthClass: 'w-[95%]' },
+        { name: '房天下', value: '11.9%', widthClass: 'w-[67%]' },
+        { name: 'QQ News', value: '10.4%', widthClass: 'w-[58%]' },
+        { name: '搜狐网', value: '8.2%', widthClass: 'w-[46%]' },
+        { name: '焦点网', value: '6.8%', widthClass: 'w-[38%]' },
     ];
 
     return (
-        <div className="w-full h-full flex flex-col relative text-white font-sans px-12 sm:px-16 pt-6 lg:pt-8 pb-8 overflow-hidden animate-fade-in">
-            <div className="w-full max-w-[1700px] mx-auto flex flex-col flex-1 min-h-0 relative z-10 gap-4">
+        <div className="w-full h-full flex flex-col relative text-white font-sans px-12 sm:px-16 pt-5 pb-10 overflow-hidden animate-fade-in">
+            {/* Background pattern */}
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:40px_40px] opacity-20 pointer-events-none"></div>
 
-                {/* Header Section */}
-                <div className="text-center shrink-0 mb-2">
-                    <h1 className="text-[36px] font-bold text-white tracking-widest leading-tight">
+            <div className="w-full flex flex-col h-full relative z-10 gap-4">
+                {/* Header Section - Centered and shifted up by 20px using mt-[-20px] */}
+                <div className="text-center mb-4 mt-[-20px] shrink-0 relative z-10">
+                    <h1 className="text-[28px] lg:text-[32px] font-bold text-white tracking-widest leading-none">
                         引用源分析
                     </h1>
                 </div>
 
                 {/* Main Content Layout: Vertically Centered 2-Column Grid with Shrunk Height */}
-                <div className="flex-1 flex flex-col justify-center min-h-0">
+                <div className="flex-1 flex flex-col justify-center min-h-0 pt-[20px]">
                     <div className="w-full h-[85%] max-h-[660px] min-h-[540px] grid grid-cols-12 gap-6 self-center">
 
                         {/* Left Column: Health Assessment */}
@@ -41,18 +43,18 @@ function Page_GeoReportSources2() {
                                     {/* Verbatim Text with Responsive 18px Font Size */}
                                     <div className="text-[15px] lg:text-[16px] xl:text-[18px] text-zinc-300 leading-relaxed font-normal text-justify">
                                         <p>
-                                            监测数据显示，决定<strong className="text-white font-semibold">冠珠</strong>在 AI 问答中表现的最底层数据抓取来源，高度集中在<strong className="text-white font-semibold">百度系（知道/百科）、门户资讯及第三方加盟排行站</strong>，行业垂直深度语料与官方信源占比极低。
+                                            监测数据显示，决定<strong className="text-white font-semibold">深业上宸瑞府</strong>在 AI 问答中表现的最底层数据抓取来源，呈现出极度浓厚的<strong className="text-white font-semibold">“房产门户与官方通稿依赖症”</strong>，行业垂直深度语料与社交平台信源占比极低。
                                         </p>
                                         <p className="mt-2.5">
                                             排名前五的引用平台分别为：
-                                            <strong className="text-white font-bold">百度知道（16.5%）</strong>、
-                                            <strong className="text-white font-bold">今日头条（7.4%）</strong>、
-                                            <strong className="text-white font-bold">网易（6.5%）</strong>、
-                                            <strong className="text-white font-bold">QQ News（5.5%）</strong>和
-                                            <strong className="text-white font-bold">太平洋家居（4.9%）</strong>。
+                                            <strong className="text-white font-bold">网易 (16.9%)</strong>、
+                                            <strong className="text-white font-bold">房天下 (11.9%)</strong>、
+                                            <strong className="text-white font-bold">QQ News (10.4%)</strong>、
+                                            <strong className="text-white font-bold">搜狐网 (8.2%)</strong>和
+                                            <strong className="text-white font-bold">焦点网 (6.8%)</strong>。
                                         </p>
                                         <p className="mt-2.5 border-t border-white/5 pt-2.5">
-                                            在文章引用率排名榜单中，排在首位的是“岩板”、“瓷砖十大品牌”、“2026年瓷砖十大品牌推荐|靠谱之选,定义健康人居新美学”等词条化或榜单类内容，且多为泛行业通稿，未见本品牌官方域名（如官网、官方公众号）被有效引用。
+                                            在文章引用率排名榜单中，被 AI 高频采纳的素材主要由传统的中心化媒体和官方硬广及楼盘库信息构成。这帮品牌在 AI 底层夯实了地铁距离、得房率等“楼盘物理参数”的心智底座，但也导致 AI 抓取到的语料风格过于严肃和官方。
                                         </p>
                                     </div>
 
@@ -97,29 +99,29 @@ function Page_GeoReportSources2() {
                                 {/* Bullet Point Cards with Increased Font Size and Balanced Padding */}
                                 <div className="flex-1 flex flex-col justify-center gap-4 min-h-0">
 
-                                    {/* Bullet 1: 信源结构单一，缺乏垂直专业背书 */}
+                                    {/* Bullet 1: 信源权重极高，但“说明书”感太重 */}
                                     <div className="bg-white/[0.03] border border-white/5 border-l-4 border-l-[#004CE5] p-5 lg:p-6 rounded-r-xl transition-all duration-300 hover:bg-white/[0.05]">
                                         <div className="flex items-center gap-2 mb-2">
                                             <div className="w-1.5 h-1.5 rounded-full bg-[#004CE5]" />
                                             <h4 className="text-[18px] lg:text-[20px] font-bold text-white leading-tight">
-                                                信源结构单一，缺乏垂直专业背书
+                                                信源权重极高，但“说明书”感太重
                                             </h4>
                                         </div>
                                         <p className="text-[15px] lg:text-[16px] xl:text-[18px] text-zinc-300 leading-relaxed font-normal text-justify">
-                                            引用源高度依赖“百度知道”（16.5%）等问答平台，虽然有“太平洋家居”（4.9%）等垂媒进入前五，但知乎等高权重、深度的专业测评语料严重匮乏。这导致 AI 在生成品牌深度解析或工艺对比时，缺乏高质量抓取源，容易导致品牌在硬核推荐场景中被边缘化。
+                                            依靠房天下、网易等老牌房产门户的好处是，AI 把楼盘的基础物理参数（地铁距离、得房率、四房户型）背得滚瓜烂熟。但这导致 AI 的语料储备像一份冰冷的“电子楼书”，很难用具有感染力的大白话向购房者种草。
                                         </p>
                                     </div>
 
-                                    {/* Bullet 2: 官方话语权缺失，存在认知偏移风险 */}
+                                    {/* Bullet 2: “真实购房者视角（UGC）”严重缺位 */}
                                     <div className="bg-white/[0.03] border border-white/5 border-l-4 border-l-amber-500 p-5 lg:p-6 rounded-r-xl transition-all duration-300 hover:bg-white/[0.05]">
                                         <div className="flex items-center gap-2 mb-2">
                                             <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
                                             <h4 className="text-[18px] lg:text-[20px] font-bold text-white leading-tight">
-                                                官方话语权缺失，存在认知偏移风险
+                                                “真实购房者视角（UGC）”严重缺位
                                             </h4>
                                         </div>
                                         <p className="text-[15px] lg:text-[16px] xl:text-[18px] text-zinc-300 leading-relaxed font-normal text-justify">
-                                            引用库中排名前列的多为“2026年瓷砖十大品牌推荐|靠谱之选,定义健康人居新美学”（被引 14 次）等第三方内容，本品牌官方信源（官网、官微）在 AI 抓取池中几乎处于隐形状态。这意味着品牌在 AI 生态中的形象完全由第三方定义，一旦出现竞品公关稿或不实榜单，品牌缺乏有效的信源对冲与心智锚点。
+                                            买房是极重决策的行为，但整个核心引用池中，完全看不到知乎、小红书、本地买房论坛（如家在深圳）等真实种草社区的身影。当购房者询问“适不适合居家/89平怎么样”等主观问题时，AI 因为搜不到真实的民间讨论，只能闭口不言（提及率为 0%）。项目亟需补充大量的“素人看房日记”、“业主视角户型分析”等活人语料来平衡当前的生态。
                                         </p>
                                     </div>
 

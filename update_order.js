@@ -3,7 +3,7 @@ import puppeteer from 'puppeteer';
 async function run() {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
-    await page.goto('http://localhost:5176', { waitUntil: 'networkidle0' });
+    await page.goto('http://localhost:6562', { waitUntil: 'networkidle0' });
     
     // Open menu
     await page.click('button[title="打开目录"]');
