@@ -10,9 +10,9 @@ export default function Page_IndustryPainPoints() {
 
                 {/* Header */}
                 <div className="w-full flex flex-col items-center justify-center text-center pt-2 pb-12 relative z-10 shrink-0">
-                    <h1 className="text-[36px] font-black text-white tracking-widest mb-6 -translate-y-[4px]">建陶行业GEO难点解析</h1>
+                    <h1 className="text-[36px] font-black text-white tracking-widest mb-6 -translate-y-[4px]">短保烘焙行业GEO难点解析</h1>
                     <p className="text-zinc-400 text-[1.15rem] lg:text-[1.25rem] leading-relaxed max-w-[1400px] tracking-wide whitespace-nowrap">
-                        从整个建陶行业的特性，以及我们过去服务过的同类型客户经验中，总结出<strong className="text-white">冠珠瓷砖在 GEO 中可能会遇到的核心困境：</strong>
+                        结合包装短保烘焙快消行业的客观规律与桃李面包当前的现实，总结出其在<strong className="text-white">智能搜索引擎 (GEO) 中面临的核心痛点与难点：</strong>
                     </p>
                 </div>
 
@@ -24,7 +24,7 @@ export default function Page_IndustryPainPoints() {
                         <div className="text-[100px] lg:text-[140px] font-['AlimamaShuHeiTi'] text-white/10 absolute -top-2 lg:-top-6 right-6 lg:right-8 pointer-events-none">01</div>
                         <div className="w-12 h-1 bg-white mb-auto"></div>
                         <h3 className="text-2xl lg:text-[1.8rem] font-bold text-white leading-[1.5] tracking-widest z-10 mt-10">
-                            产品线繁杂<br />目标词难以集中
+                            传统重资产扩张受阻，闲置产能与折旧攀升<br />“双向绞杀”利润，产能过剩成为研报搜索重灾区
                         </h3>
                     </div>
 
@@ -33,7 +33,7 @@ export default function Page_IndustryPainPoints() {
                         <div className="text-[100px] lg:text-[140px] font-['AlimamaShuHeiTi'] text-white/10 absolute -top-2 lg:-top-6 right-6 lg:right-8 pointer-events-none">02</div>
                         <div className="w-12 h-1 bg-white mb-auto"></div>
                         <h3 className="text-2xl lg:text-[1.8rem] font-bold text-white leading-[1.5] tracking-widest z-10 mt-10">
-                            在消费者端认知度极低<br />竞争非常激烈
+                            “健康、清洁、减糖”烘焙风潮席卷<br />研发投入吝啬（0.48%）导致产品形象在健康心智端边缘化
                         </h3>
                     </div>
 
@@ -41,7 +41,7 @@ export default function Page_IndustryPainPoints() {
                     <div className="bg-[#0a0a0a] border border-white/30 rounded-[2rem] p-10 lg:p-12 flex flex-col relative overflow-hidden -translate-y-2 transition-all duration-500 shadow-2xl">
                         <div className="text-[100px] lg:text-[140px] font-['AlimamaShuHeiTi'] text-white/10 absolute -bottom-6 lg:-bottom-10 right-6 lg:right-8 pointer-events-none">03</div>
                         <h3 className="text-2xl lg:text-[1.8rem] font-bold text-white leading-[1.5] tracking-widest z-10 mb-auto">
-                            极度依赖安装水平<br />和售后服务
+                            大卖场衰退而品牌便利店被自有贴牌围堵<br />销售渠道大洗牌，品牌信息在低端小超市打转
                         </h3>
                         <div className="w-12 h-1 bg-white mt-10"></div>
                     </div>
@@ -50,7 +50,7 @@ export default function Page_IndustryPainPoints() {
                     <div className="bg-[#0a0a0a] border border-white/30 rounded-[2rem] p-10 lg:p-12 flex flex-col relative overflow-hidden -translate-y-2 transition-all duration-500 shadow-2xl">
                         <div className="text-[100px] lg:text-[140px] font-['AlimamaShuHeiTi'] text-white/10 absolute -bottom-6 lg:-bottom-10 right-6 lg:right-8 pointer-events-none">04</div>
                         <h3 className="text-2xl lg:text-[1.8rem] font-bold text-white leading-[1.5] tracking-widest z-10 mb-auto">
-                            销售模式多为经销商体系<br />易造成价格不一与信息错乱
+                            食品安全事件频发与中秋月饼说教广告“翻车”<br />负面舆料全网发酵，对品牌资产造成灾难性流失
                         </h3>
                         <div className="w-12 h-1 bg-white mt-10"></div>
                     </div>

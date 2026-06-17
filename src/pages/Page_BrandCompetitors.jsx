@@ -165,7 +165,7 @@ export default function Page_BrandCompetitors() {
                         {/* Row 6: 相对态势 */}
                         <div className="flex-1 grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] group hover:bg-white/[0.01] transition-colors">
                             <div className="py-2 px-3 flex items-center justify-center border-r border-white/5 bg-black/40 text-center font-bold text-zinc-300">
-                                相对竞争态势
+                                竞争态势
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 bg-[#004CE5]/10 text-zinc-200 border-b-2 border-b-[#004CE5] font-semibold flex items-center">
                                 <p>● 大盘防守者：基本盘巨大，正稳固防线并积极进行策略调整。</p>

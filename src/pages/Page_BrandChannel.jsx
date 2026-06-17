@@ -125,7 +125,7 @@ export default function Page_BrandChannel() {
                                     </svg>
                                 </div>
                                 <div className="flex flex-col">
-                                    <h3 className="text-2xl xl:text-3xl font-bold text-white">直营KA渠道 (To KA)</h3>
+                                    <h3 className="text-[24px] font-bold text-white">直营KA渠道 (To KA)</h3>
                                     <span className="text-sm font-black text-blue-400 tracking-wider mt-0.5 inline-block">占比 58% // 核心销量支柱</span>
                                 </div>
                             </div>
@@ -179,7 +179,7 @@ export default function Page_BrandChannel() {
                                     </svg>
                                 </div>
                                 <div className="flex flex-col">
-                                    <h3 className="text-2xl xl:text-3xl font-bold text-white">品牌便利店渠道 (To CVS)</h3>
+                                    <h3 className="text-[24px] font-bold text-white">品牌便利店渠道 (To CVS)</h3>
                                     <span className="text-sm font-black text-purple-400 tracking-wider mt-0.5 inline-block">年轻核心阵地 // 青年代餐网络</span>
                                 </div>
                             </div>
@@ -233,7 +233,7 @@ export default function Page_BrandChannel() {
                                     </svg>
                                 </div>
                                 <div className="flex flex-col">
-                                    <h3 className="text-2xl xl:text-3xl font-bold text-white">经销商分销渠道 (To Dealer)</h3>
+                                    <h3 className="text-[24px] font-bold text-white">经销商分销渠道 (To Dealer)</h3>
                                     <span className="text-sm font-black text-zinc-400 tracking-wider mt-0.5 inline-block">占比 42% // 广泛下沉辐射网</span>
                                 </div>
                             </div>
