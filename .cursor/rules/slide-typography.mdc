@@ -1,0 +1,33 @@
+---
+description: Slide pages must use large type and fill card space — never leave big empty frames with tiny text
+globs: src/pages/**/*.jsx
+alwaysApply: true
+---
+
+# Slide Typography — Fill the Frame
+
+User has repeatedly complained: text too small, cards leave huge empty black padding. **Always prioritize large type that fills the row/card.**
+
+## Hard rules
+
+1. **Body / description text ≥ 20px** on content slides. Never ship 13–15px body copy in flex-stretched cards.
+2. **Punch / headline lines inside cards ≥ 26–30px**. Card titles ≥ 28–32px.
+3. **Section labels** (核心打法、维度名等) ≥ 16px, not 12–13px.
+4. **If a card stretches with `flex-1`**, content must visually fill it: bump font size first; only then trim vertical padding (`py-2`–`py-3`, not `py-6`+). Do not leave a thin text band floating in a tall empty box.
+5. **Prefer bigger type over more padding.** Empty space inside bordered cards is a bug, not “breathing room.”
+6. Presentation canvas is roughly 16:9 full-bleed — design for distance reading, not dense dashboard UI.
+
+## Anti-patterns
+
+```jsx
+// ❌ BAD — tiny copy in a tall flex row
+<p className="text-[15px] text-zinc-400">{detail}</p>
+<div className="text-[13px] text-zinc-500">核心打法</div>
+
+// ✅ GOOD — type fills the card
+<p className="text-[20px] text-zinc-300">{detail}</p>
+<div className="text-[16px] text-zinc-500">核心打法</div>
+<div className="text-[28px] font-black">{punch}</div>
+```
+
+When unsure, go **one step larger**, not smaller.

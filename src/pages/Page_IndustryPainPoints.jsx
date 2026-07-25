@@ -1,0 +1,63 @@
+import React from 'react';
+
+export default function Page_IndustryPainPoints() {
+    return (
+        <div className="w-full h-full flex flex-col relative bg-black overflow-hidden text-white font-sans p-8 lg:p-12 xl:p-16">
+            {/* Background Pattern */}
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] opacity-20 pointer-events-none"></div>
+
+            <div className="w-full max-w-[1500px] mx-auto flex flex-col h-full relative z-10">
+
+                {/* Header */}
+                <div className="w-full flex flex-col items-center justify-center text-center pt-2 pb-12 relative z-10 shrink-0">
+                    <h1 className="text-[36px] font-black text-white tracking-widest mb-6 -translate-y-[4px]">平台型零售行业GEO难点解析</h1>
+                    <p className="text-zinc-400 text-[1.15rem] lg:text-[1.25rem] leading-relaxed max-w-[1400px] tracking-wide">
+                        苏宁易购是家电 3C 全渠道零售平台，<strong className="text-[#004CE5]">GEO 战场不在「产品参数」，而在「购买决策与渠道推荐」</strong>。<br />
+                        从平台型零售的行业特性出发，总结出<strong className="text-white">苏宁在 GEO 中可能会遇到的核心困境：</strong>
+                    </p>
+                </div>
+
+                {/* 2x2 Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 flex-1 min-h-0 pb-6 px-4">
+
+                    {/* Card 1 */}
+                    <div className="bg-[#0a0a0a] border border-white/30 rounded-[2rem] p-10 lg:p-12 flex flex-col relative overflow-hidden -translate-y-2 transition-all duration-500 shadow-2xl">
+                        <div className="text-[100px] lg:text-[140px] font-['AlimamaShuHeiTi'] text-white/10 absolute -top-2 lg:-top-6 right-6 lg:right-8 pointer-events-none">01</div>
+                        <div className="w-12 h-1 bg-white mb-auto"></div>
+                        <h3 className="text-2xl lg:text-[1.8rem] font-bold text-white leading-[1.5] tracking-widest z-10 mt-10">
+                            「渠道隐身」<br />平台在 AI 答案中被商品品牌淹没
+                        </h3>
+                    </div>
+
+                    {/* Card 2 */}
+                    <div className="bg-[#0a0a0a] border border-white/30 rounded-[2rem] p-10 lg:p-12 flex flex-col relative overflow-hidden -translate-y-2 transition-all duration-500 shadow-2xl">
+                        <div className="text-[100px] lg:text-[140px] font-['AlimamaShuHeiTi'] text-white/10 absolute -top-2 lg:-top-6 right-6 lg:right-8 pointer-events-none">02</div>
+                        <div className="w-12 h-1 bg-white mb-auto"></div>
+                        <h3 className="text-2xl lg:text-[1.8rem] font-bold text-white leading-[1.5] tracking-widest z-10 mt-10">
+                            极强比价属性<br />价格/促销高频变动，AI 报价滞后且混乱
+                        </h3>
+                    </div>
+
+                    {/* Card 3 */}
+                    <div className="bg-[#0a0a0a] border border-white/30 rounded-[2rem] p-10 lg:p-12 flex flex-col relative overflow-hidden -translate-y-2 transition-all duration-500 shadow-2xl">
+                        <div className="text-[100px] lg:text-[140px] font-['AlimamaShuHeiTi'] text-white/10 absolute -bottom-6 lg:-bottom-10 right-6 lg:right-8 pointer-events-none">03</div>
+                        <h3 className="text-2xl lg:text-[1.8rem] font-bold text-white leading-[1.5] tracking-widest z-10 mb-auto">
+                            双巨头声量垄断<br />苏宁在 AI 引用源中被稀释
+                        </h3>
+                        <div className="w-12 h-1 bg-white mt-10"></div>
+                    </div>
+
+                    {/* Card 4 */}
+                    <div className="bg-[#0a0a0a] border border-white/30 rounded-[2rem] p-10 lg:p-12 flex flex-col relative overflow-hidden -translate-y-2 transition-all duration-500 shadow-2xl">
+                        <div className="text-[100px] lg:text-[140px] font-['AlimamaShuHeiTi'] text-white/10 absolute -bottom-6 lg:-bottom-10 right-6 lg:right-8 pointer-events-none">04</div>
+                        <h3 className="text-2xl lg:text-[1.8rem] font-bold text-white leading-[1.5] tracking-widest z-10 mb-auto">
+                            服务履约口碑依赖第三方<br />负面易被 AI 放大
+                        </h3>
+                        <div className="w-12 h-1 bg-white mt-10"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    );
+}
