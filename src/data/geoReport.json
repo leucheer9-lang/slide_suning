@@ -1,0 +1,1275 @@
+{
+  "meta": {
+    "fetched_at": "2026-07-25T11:03:40.489Z",
+    "api_base": "https://api.geotopone.com",
+    "project_id": 377,
+    "project_name": "苏宁易购①",
+    "target_product": "苏宁易购",
+    "target_brand_name": null,
+    "start_date": "2026-07-25",
+    "end_date": "2026-07-25"
+  },
+  "platforms": [
+    {
+      "id": 1,
+      "name": "DeepSeek",
+      "url": "https://app.geoindexfuture.com/logo/deepseek.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 15,
+      "crawl_rate_config": {
+        "requests_per_hour": 20,
+        "request_interval_sec": 120,
+        "batch_duration_sec": 24400,
+        "batch_max_requests": 60,
+        "batch_interval_sec": 24400
+      },
+      "crawl_rate_effective": {
+        "requests_per_hour": 20,
+        "request_interval_sec": 120,
+        "batch_duration_sec": 24400,
+        "batch_max_requests": 60,
+        "batch_interval_sec": 24400
+      },
+      "crawl_rate_source": "platform"
+    },
+    {
+      "id": 2,
+      "name": "豆包",
+      "url": "https://app.geoindexfuture.com/logo/doubao.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 10,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    },
+    {
+      "id": 3,
+      "name": "元宝",
+      "url": "https://app.geoindexfuture.com/logo/yuanbao.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 10,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    },
+    {
+      "id": 5,
+      "name": "通义千问",
+      "url": "https://app.geoindexfuture.com/logo/qwen.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 10,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    }
+  ],
+  "stats": {
+    "brand_mention_rate": 47,
+    "top1_mention_rate": null,
+    "top3_mention_rate": null,
+    "avg_position": 5.1,
+    "daily_stats": [
+      {
+        "date": "2026-07-25",
+        "mention_rate": 47,
+        "avg_position": 5.1
+      }
+    ],
+    "platform_stats": [
+      {
+        "platform_id": 1,
+        "platform_name": "DeepSeek",
+        "platform_logo": "https://app.geoindexfuture.com/logo/deepseek.png",
+        "brand_mention_rate": 30,
+        "avg_position": 4.5
+      },
+      {
+        "platform_id": 2,
+        "platform_name": "豆包",
+        "platform_logo": "https://app.geoindexfuture.com/logo/doubao.png",
+        "brand_mention_rate": 52,
+        "avg_position": 6.2
+      },
+      {
+        "platform_id": 3,
+        "platform_name": "元宝",
+        "platform_logo": "https://app.geoindexfuture.com/logo/yuanbao.png",
+        "brand_mention_rate": 80,
+        "avg_position": 4.8
+      },
+      {
+        "platform_id": 5,
+        "platform_name": "通义千问",
+        "platform_logo": "https://app.geoindexfuture.com/logo/qwen.png",
+        "brand_mention_rate": 26,
+        "avg_position": 4.7
+      }
+    ]
+  },
+  "influence": {
+    "total_conversations": 200,
+    "list": [
+      {
+        "rank": 1,
+        "brand_name": "京东",
+        "favicon_url": null,
+        "influence_score": 94.9,
+        "mention_rate": 93.5,
+        "avg_position": 1.3,
+        "is_target": false
+      },
+      {
+        "rank": 2,
+        "brand_name": "天猫",
+        "favicon_url": null,
+        "influence_score": 77.8,
+        "mention_rate": 77,
+        "avg_position": 3.1,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "brand_name": "苏宁易购",
+        "favicon_url": null,
+        "influence_score": 51.8,
+        "mention_rate": 47,
+        "avg_position": 5.1,
+        "is_target": true
+      },
+      {
+        "rank": 4,
+        "brand_name": "拼多多",
+        "favicon_url": null,
+        "influence_score": 51.7,
+        "mention_rate": 45.5,
+        "avg_position": 4.9,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "brand_name": "淘宝",
+        "favicon_url": null,
+        "influence_score": 48.2,
+        "mention_rate": 39,
+        "avg_position": 4.8,
+        "is_target": false
+      }
+    ]
+  },
+  "entries": {
+    "total": 50,
+    "list": [
+      {
+        "entry_id": 9497,
+        "entry_name": "口碑好的家电购买平台推荐",
+        "mention_rate": 100,
+        "position": 5.3,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/7cea98874fd9427ebb4b309076f1d2d5.png"
+      },
+      {
+        "entry_id": 9505,
+        "entry_name": "买大家电哪个平台配送快",
+        "mention_rate": 100,
+        "position": 4,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/1aad873e8af049109fbc6730369f04c8.png"
+      },
+      {
+        "entry_id": 9527,
+        "entry_name": "买大家电想线下看实物用哪个平台",
+        "mention_rate": 100,
+        "position": 3,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/893d1ff801b14620a65b2ea0151402cb.png"
+      },
+      {
+        "entry_id": 9530,
+        "entry_name": "买大家电可以线上买线下提货的平台推荐",
+        "mention_rate": 100,
+        "position": 2,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/efe33219dda9414bac0b4d8e3615b9cf.png"
+      },
+      {
+        "entry_id": 9495,
+        "entry_name": "家电购买平台排行榜",
+        "mention_rate": 75,
+        "position": 4.3,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/18eefb2fc91c4a198b95ed4685e41f6a.png"
+      },
+      {
+        "entry_id": 9501,
+        "entry_name": "线上购买大家电的平台推荐",
+        "mention_rate": 75,
+        "position": 5,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/59580d4c3d6f4637a43ec5156dd3362f.png"
+      },
+      {
+        "entry_id": 9502,
+        "entry_name": "搬新家买大家电选哪个平台",
+        "mention_rate": 75,
+        "position": 5,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/b73bd8c2cc09449b97337ed5ba43b6a6.png"
+      },
+      {
+        "entry_id": 9503,
+        "entry_name": "帮父母买大家电用什么平台",
+        "mention_rate": 75,
+        "position": 3.8,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/05a188d06d7c4aa7a81ed47387bc7425.png"
+      },
+      {
+        "entry_id": 9504,
+        "entry_name": "一次性买齐大家电用什么平台",
+        "mention_rate": 75,
+        "position": 4,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/80e09bf15fb04d9d9998de604efb36e2.png"
+      },
+      {
+        "entry_id": 9509,
+        "entry_name": "三四线城市买家电用什么平台好",
+        "mention_rate": 75,
+        "position": 6.3,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/10bb25a555124138803b023c8da6ec5e.png"
+      },
+      {
+        "entry_id": 9524,
+        "entry_name": "买电视哪个平台包安装",
+        "mention_rate": 75,
+        "position": 5,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/5a121d9ba377419f9c505a31d9973f1b.png"
+      },
+      {
+        "entry_id": 9526,
+        "entry_name": "有实体店买家电的平台推荐",
+        "mention_rate": 75,
+        "position": 3.3,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/b0962554338c4767a1624e123b7d6e61.png"
+      },
+      {
+        "entry_id": 9528,
+        "entry_name": "线上线下都能买大家电选哪个平台",
+        "mention_rate": 75,
+        "position": 4.8,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/3eb47d5e989a4796a790b1bd7246e8b9.png"
+      },
+      {
+        "entry_id": 9537,
+        "entry_name": "618买大家电用什么平台",
+        "mention_rate": 75,
+        "position": 4,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/f39b4a47646444d7b8c2f8fb2362ad19.png"
+      },
+      {
+        "entry_id": 9544,
+        "entry_name": "双十二买家电用什么平台",
+        "mention_rate": 75,
+        "position": 4.8,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/f22c7d198e984cb19965fcdf3563460f.png"
+      },
+      {
+        "entry_id": 9496,
+        "entry_name": "靠谱的家电购买平台推荐",
+        "mention_rate": 50,
+        "position": 5,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/885258c5ae86432f8c9d204329654e9e.png"
+      },
+      {
+        "entry_id": 9498,
+        "entry_name": "质量有保障的家电购买平台推荐",
+        "mention_rate": 50,
+        "position": 5,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/f95b271a597e412cacfaeb792e960101.png"
+      },
+      {
+        "entry_id": 9499,
+        "entry_name": "不想跑门店买家电用什么平台",
+        "mention_rate": 50,
+        "position": 5.8,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/e6bcd71c5ae84b7e82e7badd5cb4f8b8.png"
+      },
+      {
+        "entry_id": 9508,
+        "entry_name": "小城市买大家电用什么平台好",
+        "mention_rate": 50,
+        "position": 4.5,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/f424c49d5c1f415f8d5818e88e8faace.png"
+      },
+      {
+        "entry_id": 9510,
+        "entry_name": "县城买大家电用什么平台好",
+        "mention_rate": 50,
+        "position": 4.8,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/db536d7216e94483bb47abfff7cba6ad.png"
+      },
+      {
+        "entry_id": 9512,
+        "entry_name": "空调以旧换新上什么平台方便",
+        "mention_rate": 50,
+        "position": 5.5,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/499e44abcfa84bd28f81427b14be3306.png"
+      },
+      {
+        "entry_id": 9514,
+        "entry_name": "电视以旧换新上什么平台方便",
+        "mention_rate": 50,
+        "position": 4.5,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/88fcadad42ed409cbcb290a07af3ddce.png"
+      },
+      {
+        "entry_id": 9515,
+        "entry_name": "以旧换新免费上门拆旧用什么平台",
+        "mention_rate": 50,
+        "position": 4.5,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/07bae45e12824afeb31270747a5a6dff.png"
+      },
+      {
+        "entry_id": 9516,
+        "entry_name": "大家电以旧换新流程省心的平台推荐",
+        "mention_rate": 50,
+        "position": 3.8,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/b6898d534b1a4f3ea2f6891c653de63f.png"
+      },
+      {
+        "entry_id": 9517,
+        "entry_name": "国补买大家电哪个平台靠谱",
+        "mention_rate": 50,
+        "position": 3.8,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/d180f0d4260f4cd682fa3734e3effc13.png"
+      },
+      {
+        "entry_id": 9519,
+        "entry_name": "国补买空调的平台推荐",
+        "mention_rate": 50,
+        "position": 4.3,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/cbfd2151e54246179e243894adbb9057.png"
+      },
+      {
+        "entry_id": 9520,
+        "entry_name": "国补买电视的平台推荐",
+        "mention_rate": 50,
+        "position": 6.3,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/4558039843b94d0c983290c4934b6b05.png"
+      },
+      {
+        "entry_id": 9523,
+        "entry_name": "买冰箱配送加安装用哪个平台",
+        "mention_rate": 50,
+        "position": 3.5,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/8cb208ee02374080adee0d733124be2c.png"
+      },
+      {
+        "entry_id": 9525,
+        "entry_name": "急用买空调当天送装选哪个平台",
+        "mention_rate": 50,
+        "position": 4,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/7e540308ff7448efb64a2bd18016481e.png"
+      },
+      {
+        "entry_id": 9529,
+        "entry_name": "买大家电想听现场讲解用哪个平台",
+        "mention_rate": 50,
+        "position": 4.5,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/9903a7d3d4d74739892e811989e03160.png"
+      },
+      {
+        "entry_id": 9538,
+        "entry_name": "618以旧换新用什么平台",
+        "mention_rate": 50,
+        "position": 6.3,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/19fc482765e94520a85911dcfdc2d6a9.png"
+      },
+      {
+        "entry_id": 9542,
+        "entry_name": "双11以旧换新用什么平台",
+        "mention_rate": 50,
+        "position": 6.5,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/d1daadd5f38741d8af1ed36942c17682.png"
+      },
+      {
+        "entry_id": 9543,
+        "entry_name": "年货节买家电用什么平台",
+        "mention_rate": 50,
+        "position": 5.3,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/378ec4cd44164cd98fe14283a8a86151.png"
+      },
+      {
+        "entry_id": 9500,
+        "entry_name": "线上买家电哪个平台退换方便",
+        "mention_rate": 25,
+        "position": 5,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/bfd219226be84be69f5e6affb102e746.png"
+      },
+      {
+        "entry_id": 9506,
+        "entry_name": "买大家电哪个平台售后方便",
+        "mention_rate": 25,
+        "position": 4.5,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/0ef79e86bd234878845cd7eba73862dc.png"
+      },
+      {
+        "entry_id": 9507,
+        "entry_name": "附近能送大家电的平台推荐",
+        "mention_rate": 25,
+        "position": 5.3,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/0302c11f43434ac09352ce0882d85b90.png"
+      },
+      {
+        "entry_id": 9511,
+        "entry_name": "家电以旧换新线上平台推荐",
+        "mention_rate": 25,
+        "position": 5.8,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/98fa012470bd4ba2b1fab69e841e69b8.png"
+      },
+      {
+        "entry_id": 9513,
+        "entry_name": "冰箱以旧换新上门回收用哪个平台",
+        "mention_rate": 25,
+        "position": 5.5,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/5cc39ad90c57444b858f662184ca02db.png"
+      },
+      {
+        "entry_id": 9518,
+        "entry_name": "国补买冰箱的平台推荐",
+        "mention_rate": 25,
+        "position": 3.3,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/1f66335e083d4b7381b3ef846fda7173.png"
+      },
+      {
+        "entry_id": 9522,
+        "entry_name": "网上买空调哪个平台送装一体",
+        "mention_rate": 25,
+        "position": 4,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/94268b318e484ba585e5372583d9806d.png"
+      },
+      {
+        "entry_id": 9532,
+        "entry_name": "国补买手机上什么平台好",
+        "mention_rate": 25,
+        "position": 4.8,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/20cac5d8e2464de6aa7fdfbcdaf04ca2.png"
+      },
+      {
+        "entry_id": 9541,
+        "entry_name": "双11买大家电用什么平台",
+        "mention_rate": 25,
+        "position": 4.8,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/704f626875ea4e3cadbd7389bdbeec9a.png"
+      },
+      {
+        "entry_id": 9521,
+        "entry_name": "大家电送装一体用什么平台好",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/d1b8602cc64f4c38870e05736f60df0c.png"
+      },
+      {
+        "entry_id": 9531,
+        "entry_name": "线上买手机上什么平台好",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/31916586397948c2a2127927b34c7e7b.png"
+      },
+      {
+        "entry_id": 9533,
+        "entry_name": "手机以旧换新选什么平台",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/8500c62d3c4e47928d9e6bcc8e7838bc.png"
+      },
+      {
+        "entry_id": 9534,
+        "entry_name": "网上买电脑哪个平台靠谱",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/ef260780d7604f4c97280b00250e0a53.png"
+      },
+      {
+        "entry_id": 9535,
+        "entry_name": "国补买电脑选什么平台",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260724/6748fcd704714d879c10392fe37dbb24.png"
+      },
+      {
+        "entry_id": 9536,
+        "entry_name": "电脑以旧换新选哪个平台",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/8d895c8cc58c4b33b99f9956fa59a385.png"
+      },
+      {
+        "entry_id": 9539,
+        "entry_name": "618买手机选什么平台",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/d4d3eb2d2de04258b3b37426dc428830.png"
+      },
+      {
+        "entry_id": 9540,
+        "entry_name": "618买电脑选什么平台",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-07-24T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260723/ddc664389a2c4b5396e262638d23436b.png"
+      }
+    ]
+  },
+  "compare": {
+    "target_product": "苏宁易购",
+    "mention_rate_ranking": [
+      {
+        "brand_id": 73321,
+        "brand_name": "京东",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "京东",
+        "mention_count": 187,
+        "mention_rate": 93.5,
+        "is_target": false
+      },
+      {
+        "brand_id": 73322,
+        "brand_name": "天猫",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "天猫",
+        "mention_count": 154,
+        "mention_rate": 77,
+        "is_target": false
+      },
+      {
+        "brand_id": 73320,
+        "brand_name": "苏宁易购",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "苏宁易购",
+        "mention_count": 94,
+        "mention_rate": 47,
+        "is_target": true
+      },
+      {
+        "brand_id": 73324,
+        "brand_name": "拼多多",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "拼多多",
+        "mention_count": 91,
+        "mention_rate": 45.5,
+        "is_target": false
+      },
+      {
+        "brand_id": 73326,
+        "brand_name": "淘宝",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "淘宝",
+        "mention_count": 78,
+        "mention_rate": 39,
+        "is_target": false
+      }
+    ],
+    "position_ranking": [
+      {
+        "brand_id": 73321,
+        "brand_name": "京东",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "京东",
+        "avg_position": 1.3,
+        "mention_count": 187,
+        "is_target": false
+      },
+      {
+        "brand_id": 73322,
+        "brand_name": "天猫",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "天猫",
+        "avg_position": 3.1,
+        "mention_count": 154,
+        "is_target": false
+      },
+      {
+        "brand_id": 73326,
+        "brand_name": "淘宝",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "淘宝",
+        "avg_position": 4.8,
+        "mention_count": 78,
+        "is_target": false
+      },
+      {
+        "brand_id": 73324,
+        "brand_name": "拼多多",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "拼多多",
+        "avg_position": 4.9,
+        "mention_count": 91,
+        "is_target": false
+      },
+      {
+        "brand_id": 73320,
+        "brand_name": "苏宁易购",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "苏宁易购",
+        "avg_position": 5.1,
+        "mention_count": 94,
+        "is_target": true
+      }
+    ],
+    "rate_daily": [
+      {
+        "date": "2026-07-25",
+        "京东": 93.5,
+        "天猫": 77,
+        "苏宁易购": 47,
+        "拼多多": 45.5,
+        "淘宝": 39
+      }
+    ],
+    "position_daily": [
+      {
+        "date": "2026-07-25",
+        "京东": 1.3,
+        "天猫": 3.1,
+        "淘宝": 4.8,
+        "拼多多": 4.9,
+        "苏宁易购": 5.1
+      }
+    ],
+    "top1_ranking": [
+      {
+        "rank": 1,
+        "brand_name": "京东",
+        "top1_mention_rate": 81.5,
+        "is_target": false
+      },
+      {
+        "rank": 2,
+        "brand_name": "海尔",
+        "top1_mention_rate": 6.5,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "brand_name": "抖音",
+        "top1_mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "brand_name": "天猫优品",
+        "top1_mention_rate": 1,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "brand_name": "拼多多",
+        "top1_mention_rate": 1,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "brand_name": "云闪付",
+        "top1_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "brand_name": "京东物流",
+        "top1_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "brand_name": "北国电器",
+        "top1_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "brand_name": "安得智联",
+        "top1_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "brand_name": "美团",
+        "top1_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "brand_name": "苏宁易购",
+        "top1_mention_rate": 0.5,
+        "is_target": true
+      },
+      {
+        "rank": 12,
+        "brand_name": "苹果",
+        "top1_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "brand_name": "58同城",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "brand_name": "COLMO",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "brand_name": "OPPO",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "brand_name": "TCL",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "brand_name": "vivo",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "brand_name": "万师傅",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "brand_name": "三峰家电",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "brand_name": "三翼鸟",
+        "top1_mention_rate": 0,
+        "is_target": false
+      }
+    ]
+  },
+  "citations": {
+    "total_conversations": 200,
+    "citation_rate": 92,
+    "total_citations": 2501,
+    "platform_stats": [
+      {
+        "platform_name": "今日头条",
+        "domain": "toutiao.com",
+        "logo_url": "https://p26-spider-image-sign.byteimg.com/isp-i18n-media/image/118f7a3625ad8ebbbc11d04f118d2e10~tplv-e9ol9do63j-thumbnail.jpeg?rk3s=feb11e32&x-expires=1775816929&x-signature=0BCf7I6pCkxfK9gutZJAh6L1BLA%3D",
+        "citation_count": 322,
+        "share": 12.9
+      },
+      {
+        "platform_name": "新浪新闻",
+        "domain": "sina.cn",
+        "logo_url": "https://cdn.deepseek.com/site-icons/sina.cn",
+        "citation_count": 207,
+        "share": 8.3
+      },
+      {
+        "platform_name": "抖音",
+        "domain": "iesdouyin.com",
+        "logo_url": "https://p3-spider-image-sign.byteimg.com/isp-i18n-media/img/27422dd3ce8d2f41b45309e5aeca806b~tplv-e9ol9do63j-thumbnail.jpeg?rk3s=feb11e32&x-expires=1775816928&x-signature=W8ZL8IDW1iYKUjhoHgBVhf82%2BBM%3D",
+        "citation_count": 173,
+        "share": 6.9
+      },
+      {
+        "platform_name": "QQ News",
+        "domain": "qq.com",
+        "logo_url": "https://cdn.deepseek.com/site-icons/qq.com",
+        "citation_count": 149,
+        "share": 6
+      },
+      {
+        "platform_name": "百度知道",
+        "domain": "baidu.com",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/zhidao_baidu_com.ico",
+        "citation_count": 118,
+        "share": 4.7
+      }
+    ],
+    "articles": [
+      {
+        "title": "全套家电选购渠道分析！到底哪个平台更合适，看完不纠结 - IT之家",
+        "link_url": "https://www.ithome.com/0/980/657.htm",
+        "domain": "ithome.com",
+        "platform_name": "IT之家",
+        "logo_url": "https://cdn.deepseek.com/site-icons/ithome.com",
+        "total_citations": 21,
+        "avg_citations": 21,
+        "has_target_product": false
+      },
+      {
+        "title": "全屋家电不用东拼西凑！多渠道购置攻略对比少走弯路 - IT之家",
+        "link_url": "https://www.ithome.com/0/980/774.htm",
+        "domain": "ithome.com",
+        "platform_name": "IT之家",
+        "logo_url": "https://cdn.deepseek.com/site-icons/ithome.com",
+        "total_citations": 19,
+        "avg_citations": 19,
+        "has_target_product": false
+      },
+      {
+        "title": "一站式配齐全屋家电的渠道推荐：2026年618全平台选购指南 - 中国商报网",
+        "link_url": "https://www.zgswcn.com/news.html?aid=348802",
+        "domain": "zgswcn.com",
+        "platform_name": "中国商报网",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/www_zgswcn_com.ico",
+        "total_citations": 18,
+        "avg_citations": 18,
+        "has_target_product": false
+      },
+      {
+        "title": "2026年选购家电六大平台口碑解析 - 今日头条",
+        "link_url": "https://www.toutiao.com/article/7661932972655837702",
+        "domain": "toutiao.com",
+        "platform_name": "今日头条",
+        "logo_url": "https://p26-spider-image-sign.byteimg.com/isp-i18n-media/image/118f7a3625ad8ebbbc11d04f118d2e10~tplv-e9ol9do63j-thumbnail.jpeg?rk3s=feb11e32&x-expires=1775816929&x-signature=0BCf7I6pCkxfK9gutZJAh6L1BLA%3D",
+        "total_citations": 17,
+        "avg_citations": 17,
+        "has_target_product": true
+      },
+      {
+        "title": "买电器最靠谱三个平台",
+        "link_url": "https://aiqicha.baidu.com/details/rankList?query=616709bb2ff2efba39b89f18cf14ac38&type=20",
+        "domain": "baidu.com",
+        "platform_name": "百度知道",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/zhidao_baidu_com.ico",
+        "total_citations": 14,
+        "avg_citations": 14,
+        "has_target_product": true
+      },
+      {
+        "title": "靠谱家电购买渠道推荐:对比五大门店，谁更值得选? - 咸宁新闻网",
+        "link_url": "http://news.xnnews.com.cn/hangy/202607/t20260716_5059050.shtml",
+        "domain": "xnnews.com.cn",
+        "platform_name": "咸宁新闻网",
+        "logo_url": "https://cdn.deepseek.com/site-icons/xnnews.com.cn",
+        "total_citations": 14,
+        "avg_citations": 14,
+        "has_target_product": false
+      },
+      {
+        "title": "不懂家电,线上购买可以找谁?",
+        "link_url": "https://www.hshan.com/life/bm/2026-07-14/1016608.html",
+        "domain": "hshan.com",
+        "platform_name": "华山网",
+        "logo_url": "",
+        "total_citations": 13,
+        "avg_citations": 13,
+        "has_target_product": true
+      },
+      {
+        "title": "家电购买售后一站式服务的渠道推荐：2026年五大靠谱平台速览 - 咸宁新闻网",
+        "link_url": "http://news.xnnews.com.cn/hangy/202607/t20260716_5057000.shtml",
+        "domain": "xnnews.com.cn",
+        "platform_name": "咸宁新闻网",
+        "logo_url": "https://cdn.deepseek.com/site-icons/xnnews.com.cn",
+        "total_citations": 12,
+        "avg_citations": 12,
+        "has_target_product": true
+      },
+      {
+        "title": "京东电器",
+        "link_url": "https://baike.baidu.com/item/%E4%BA%AC%E4%B8%9C%E7%94%B5%E5%99%A8/67376119",
+        "domain": "baidu.com",
+        "platform_name": "百度知道",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/zhidao_baidu_com.ico",
+        "total_citations": 11,
+        "avg_citations": 11,
+        "has_target_product": true
+      },
+      {
+        "title": "小户型家电选购攻略：主流平台差异化对比指南",
+        "link_url": "https://www.hshan.com/life/bm/2026-07-22/1017821.html",
+        "domain": "hshan.com",
+        "platform_name": "华山网",
+        "logo_url": "",
+        "total_citations": 11,
+        "avg_citations": 11,
+        "has_target_product": true
+      }
+    ]
+  }
+}
