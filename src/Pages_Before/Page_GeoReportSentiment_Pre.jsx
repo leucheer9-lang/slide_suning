@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
+// 苏宁易购①（project_id 377）· 2026-07-25～2026-07-25 · src/data/geoReport.json → sentiments
 function Page_GeoReportSentiment_Pre() {
-    const [imgLoaded, setImgLoaded] = useState(false);
     const [imgError, setImgError] = useState(false);
 
     return (
@@ -15,42 +15,24 @@ function Page_GeoReportSentiment_Pre() {
                     </h1>
                 </div>
 
-                {/* Main Content Sub-container: Dynamically fits to the image's width and stretches the bottom card to match it exactly */}
-                <div className="flex-1 flex flex-col justify-between items-stretch min-h-0 w-fit max-w-[1580px] mx-auto gap-3.5">
+                {/* Main: wide strip image on top + overview card below (same width) */}
+                <div className="flex-1 flex flex-col justify-between min-h-0 w-full max-w-[1580px] mx-auto gap-3.5">
                     
-                    {/* Top Section: Larger, Self-Adaptive Image Slot */}
-                    <div className="flex-1 flex flex-col justify-center items-center min-h-0 relative">
-                        {imgLoaded && !imgError ? (
-                            /* Adaptive Border Wrapper: Tightly wraps the image based on its natural dimensions */
-                            <div className="relative max-h-full max-w-full bg-[#0a0a0a] border border-white/10 rounded-xl p-2.5 shadow-2xl hover:border-white/20 transition-all duration-300 group flex items-center justify-center">
+                    {/* Top Section: Long horizontal strip */}
+                    <div className="flex-1 flex flex-col justify-center items-stretch min-h-0 relative">
+                        {!imgError ? (
+                            <div className="relative w-full max-h-full bg-[#0a0a0a] border border-white/10 rounded-xl p-2.5 shadow-2xl hover:border-white/20 transition-all duration-300 flex items-center justify-center overflow-hidden">
                                 <img 
-                                    src="/geo-report/page-63-sentiment-pre.jpg" 
+                                    src="/geo-report/page-63-sentiment-pre.jpg?v=20260725b" 
                                     alt="正负面分析基本情况大图" 
-                                    className="max-w-full max-h-full w-auto h-auto rounded-lg object-contain"
-                                    onLoad={() => setImgLoaded(true)}
+                                    className="w-full h-auto max-h-full object-contain rounded-lg"
                                     onError={() => setImgError(true)}
                                 />
                             </div>
                         ) : (
-                            /* Fallback Placeholder matching the layout height with wider aspect ratio */
-                            <div className="w-full aspect-[2.7/1] max-h-full bg-[#0a0a0a]/80 border border-white/10 rounded-xl p-2 flex flex-col justify-center items-center relative overflow-hidden group hover:border-white/20 transition-all duration-300 shadow-2xl">
-                                {/* Hidden Image for loading detection */}
-                                <img 
-                                    src="/geo-report/page-63-sentiment-pre.jpg" 
-                                    alt="正负面分析基本情况大图" 
-                                    className="hidden"
-                                    onLoad={() => setImgLoaded(true)}
-                                    onError={() => setImgError(true)}
-                                />
-                                
-                                {/* Fallback Placeholder UI */}
+                            <div className="w-full aspect-[3.1/1] max-h-full bg-[#0a0a0a]/80 border border-white/10 rounded-xl p-2 flex flex-col justify-center items-center relative overflow-hidden shadow-2xl">
                                 <div className="absolute inset-1.5 flex flex-col items-center justify-center p-3 text-center bg-white/[0.01] rounded-lg border border-dashed border-white/10">
-                                    <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mb-2">
-                                        <svg className="w-6 h-6 text-zinc-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 022 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2z" />
-                                        </svg>
-                                    </div>
-                                    <p className="text-zinc-300 font-bold text-base mb-1">此处为正负面分析大图展示位</p>
+                                    <p className="text-zinc-300 font-bold text-base mb-1">图片加载失败</p>
                                     <div className="bg-black/40 border border-white/10 px-3 py-1 rounded text-xs font-mono text-[#004CE5]">
                                         存放路径: /public/geo-report/page-63-sentiment-pre.jpg
                                     </div>
@@ -59,7 +41,7 @@ function Page_GeoReportSentiment_Pre() {
                         )}
                     </div>
 
-                    {/* Bottom Section: Single Full-width Banner Card (More compact vertically, matching image width exactly) */}
+                    {/* Bottom Section: Overview — matches image width */}
                     <div className="h-[23%] min-h-[135px] max-h-[180px] shrink-0 w-full">
                         <div className="bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] rounded-2xl px-5 py-3.5 lg:px-6 lg:py-4 flex flex-col h-full justify-center gap-1.5">
                             <h3 className="text-[21px] lg:text-[23px] xl:text-[24.5px] font-bold text-white flex items-center gap-2 shrink-0">
@@ -68,10 +50,10 @@ function Page_GeoReportSentiment_Pre() {
                             </h3>
                             <div className="text-[18px] lg:text-[19.5px] xl:text-[21px] text-zinc-300 leading-normal font-normal flex flex-col gap-1.5">
                                 <p>
-                                    针对品牌词专项监测，AI 在全部 <strong className="text-[#004CE5] font-bold">67</strong> 次对话中均精准识别并讨论了冠珠品牌。其中正面回答率为 <strong className="text-emerald-400 font-bold">82.5%</strong>，负面回答率为 <strong className="text-rose-400 font-bold">17.5%</strong>，正面评价主要围绕“<strong className="text-white font-semibold">性价比高</strong>”、“<strong className="text-white font-semibold">品质可靠</strong>”、“<strong className="text-white font-semibold">品牌实力强</strong>”展开。
+                                    针对<strong className="text-white font-semibold">苏宁易购</strong>监测，本周期合计 <strong className="text-[#004CE5] font-bold">200</strong> 次对话，品牌提及率 <strong className="text-[#004CE5] font-bold">47%</strong>。在 AI 已识别并讨论苏宁易购的回答中，正面回答率为 <strong className="text-emerald-400 font-bold">98%</strong>，负面回答率为 <strong className="text-rose-400 font-bold">2%</strong>，正面评价主要围绕“<strong className="text-white font-semibold">渠道优势</strong>”、“<strong className="text-white font-semibold">线上线下融合</strong>”、“<strong className="text-white font-semibold">线下体验优势</strong>”展开。
                                 </p>
                                 <p className="border-t border-white/5 pt-1.5">
-                                    由于是定向品牌词搜索，100% 的提及率是预期内的，重点在于 AI 输出的评价质量。目前 <strong className="text-rose-400 font-bold">17.5%</strong> 的负面率说明在深度问答场景下，品牌已暴露出一定的口碑风险点。
+                                    正面率整体偏高，说明 AI 对苏宁的渠道与体验认知基调积极；但剩余 <strong className="text-rose-400 font-bold">2%</strong> 负面仍指向“<strong className="text-white font-semibold">负面口碑</strong>”、“<strong className="text-white font-semibold">谨慎建议</strong>”、“<strong className="text-white font-semibold">维权困难</strong>”等标签——占比虽小，一旦在购买决策问答中被放大，仍可能削弱信任。
                                 </p>
                             </div>
                         </div>

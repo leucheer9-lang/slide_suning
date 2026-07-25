@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-07-25T11:03:40.489Z",
+    "fetched_at": "2026-07-25T13:21:22.860Z",
     "api_base": "https://api.geotopone.com",
     "project_id": 377,
     "project_name": "苏宁易购①",
@@ -1128,6 +1128,9 @@
       }
     ]
   },
+  "competitors": {
+    "total": 84
+  },
   "citations": {
     "total_conversations": 200,
     "citation_rate": 92,
@@ -1269,6 +1272,31 @@
         "total_citations": 11,
         "avg_citations": 11,
         "has_target_product": true
+      }
+    ]
+  },
+  "sentiments": {
+    "positive_rate": 98,
+    "positive_percentage": 98,
+    "negative_percentage": 2,
+    "positive_keywords": [
+      "渠道优势",
+      "线上线下融合",
+      "线下体验优势"
+    ],
+    "negative_keywords": [
+      "负面口碑",
+      "谨慎建议",
+      "维权困难",
+      "售后推诿",
+      "品控不佳",
+      "价格错误",
+      "产品信息错误"
+    ],
+    "daily_stats": [
+      {
+        "date": "2026-07-25",
+        "positive_rate": 98
       }
     ]
   }

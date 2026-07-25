@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Page_GeoReportEntries_Analysis() {
+    // 苏宁易购①（project_id 377）· 2026-07-25～2026-07-25 · src/data/geoReport.json
     return (
         <div className="w-full h-full flex flex-col relative text-white font-sans px-12 sm:px-16 pt-6 lg:pt-8 pb-4 overflow-hidden animate-fade-in">
             <div className="w-full max-w-[1700px] mx-auto flex flex-col flex-1 min-h-0 relative z-10 pt-0">
@@ -16,66 +17,66 @@ function Page_GeoReportEntries_Analysis() {
 
                     {/* Left Column: Core Discoveries (4 Items Grid) */}
                     <div className="col-span-6 flex flex-col min-h-0">
-                        <div className="bg-white/[0.03] backdrop-blur-xl border border-[#004CE5]/20 rounded-2xl p-6 shadow-[-10px_0_30px_rgba(0,76,229,0.05)] flex flex-col h-full justify-start gap-4">
-                            <h3 className="text-2xl lg:text-[25px] font-bold text-white shrink-0 flex items-center gap-2.5 mb-1">
+                        <div className="bg-white/[0.03] backdrop-blur-xl border border-[#004CE5]/20 rounded-2xl p-5 shadow-[-10px_0_30px_rgba(0,76,229,0.05)] flex flex-col h-full justify-start gap-3">
+                            <h3 className="text-2xl lg:text-[26px] font-bold text-white shrink-0 flex items-center gap-2.5">
                                 <span className="w-1.5 h-5 bg-[#004CE5] rounded-full shadow-[0_0_8px_rgba(0,76,229,0.8)]" />
                                 监测词条核心发现
                             </h3>
 
-                            <div className="flex-1 grid grid-cols-1 gap-4 min-h-0">
+                            <div className="flex-1 grid grid-cols-1 gap-3 min-h-0">
                                 {/* Finding 1 */}
-                                <div className="bg-gradient-to-br from-white/[0.03] to-white/[0.01] border border-white/[0.06] rounded-xl p-4 flex flex-col justify-start gap-2">
+                                <div className="bg-gradient-to-br from-white/[0.03] to-white/[0.01] border border-white/[0.06] rounded-xl px-4 py-3 flex flex-col justify-center gap-1.5">
                                     <div className="flex items-center justify-between shrink-0">
-                                        <h4 className="text-[17px] lg:text-[18px] xl:text-[20px] font-bold text-white flex items-center gap-2.5">
+                                        <h4 className="text-[20px] lg:text-[22px] font-bold text-white flex items-center gap-2.5">
                                             <span className="w-1.5 h-1.5 rounded-full bg-[#004CE5] shadow-[0_0_6px_rgba(0,76,229,0.6)]" />
-                                            核心功能性词条表现不佳
+                                            3C 与送装词条完全失语
                                         </h4>
-                                        <span className="bg-[#004CE5]/10 border border-[#004CE5]/30 text-blue-300 text-[14px] lg:text-[15px] px-3 py-0.5 rounded font-bold shrink-0">提及率 0.0%</span>
+                                        <span className="bg-[#004CE5]/10 border border-[#004CE5]/30 text-blue-300 text-[16px] px-3 py-0.5 rounded font-bold shrink-0">提及率 0.0%</span>
                                     </div>
-                                    <p className="text-[15px] lg:text-[16px] xl:text-[18px] text-zinc-200 leading-relaxed font-normal text-justify">
-                                        在消费者高度关注的硬核品质词条中（如“防渗污好打理的瓷砖推荐”、“超平整无波纹的瓷砖推荐”、“同批次无色差瓷砖推荐”等），冠珠的提及率全部为 0.0%。这说明品牌在 AI 的底层推荐逻辑中，尚未建立起与“高平整度”、“强耐磨抗污”等核心工艺标签的强关联。
+                                    <p className="text-[18px] lg:text-[20px] text-zinc-200 leading-snug font-normal text-justify">
+                                        在「线上买手机上什么平台好」、「网上买电脑哪个平台靠谱」、「大家电送装一体用什么平台好」、「国补买电脑选什么平台」等 8 个高频决策词条中，苏宁易购提及率全部为 0%。AI 尚未把苏宁与手机/电脑选购及送装一体强绑定。
                                     </p>
                                 </div>
 
                                 {/* Finding 2 */}
-                                <div className="bg-gradient-to-br from-white/[0.03] to-white/[0.01] border border-white/[0.06] rounded-xl p-4 flex flex-col justify-start gap-2">
+                                <div className="bg-gradient-to-br from-white/[0.03] to-white/[0.01] border border-white/[0.06] rounded-xl px-4 py-3 flex flex-col justify-center gap-1.5">
                                     <div className="flex items-center justify-between shrink-0">
-                                        <h4 className="text-[17px] lg:text-[18px] xl:text-[20px] font-bold text-white flex items-center gap-2.5">
+                                        <h4 className="text-[20px] lg:text-[22px] font-bold text-white flex items-center gap-2.5">
                                             <span className="w-1.5 h-1.5 rounded-full bg-[#004CE5] shadow-[0_0_6px_rgba(0,76,229,0.6)]" />
-                                            特定“风格/排行榜”词条表现稳健
+                                            全渠道履约词条表现强劲
                                         </h4>
-                                        <span className="bg-[#004CE5]/10 border border-[#004CE5]/30 text-blue-300 text-[14px] lg:text-[15px] px-3 py-0.5 rounded font-bold shrink-0">提及率 63.3%</span>
+                                        <span className="bg-[#004CE5]/10 border border-[#004CE5]/30 text-blue-300 text-[16px] px-3 py-0.5 rounded font-bold shrink-0">提及率 100%</span>
                                     </div>
-                                    <p className="text-[15px] lg:text-[16px] xl:text-[18px] text-zinc-200 leading-relaxed font-normal text-justify">
-                                        在测试的 30 个词条中，冠珠在“新中式瓷砖品牌排行榜”、“瓷砖品牌排行榜”、“瓷砖品牌推荐”、“性价比高的瓷砖推荐”、“质量好的新中式瓷砖推荐”等 19 个词条中录得了有效提及。这表明品牌的“国民设计”与“新中式”标签已在部分 AI 模型中留下深刻痕迹，形成了初步的品牌护城河。
+                                    <p className="text-[18px] lg:text-[20px] text-zinc-200 leading-snug font-normal text-justify">
+                                        50 个词条中有 42 个录得有效提及。其中「线上买线下提货」、「线下看实物」、「配送快」、「口碑好的家电购买平台」4 个词条提及率达 100%；实体店、帮父母买、搬新家等场景也稳定在 75%。全渠道与履约标签已形成初步护城河。
                                     </p>
                                 </div>
 
                                 {/* Finding 3 */}
-                                <div className="bg-gradient-to-br from-white/[0.03] to-white/[0.01] border border-white/[0.06] rounded-xl p-4 flex flex-col justify-start gap-2">
+                                <div className="bg-gradient-to-br from-white/[0.03] to-white/[0.01] border border-white/[0.06] rounded-xl px-4 py-3 flex flex-col justify-center gap-1.5">
                                     <div className="flex items-center justify-between shrink-0">
-                                        <h4 className="text-[17px] lg:text-[18px] xl:text-[20px] font-bold text-white flex items-center gap-2.5">
+                                        <h4 className="text-[20px] lg:text-[22px] font-bold text-white flex items-center gap-2.5">
                                             <span className="w-1.5 h-1.5 rounded-full bg-[#004CE5] shadow-[0_0_6px_rgba(0,76,229,0.6)]" />
-                                            表现相对最好的“高位词”
+                                            表现相对最好的「高位词」
                                         </h4>
-                                        <span className="bg-[#004CE5]/10 border border-[#004CE5]/30 text-blue-300 text-[14px] lg:text-[15px] px-3 py-0.5 rounded font-bold shrink-0">最高均位 NO. 2.3</span>
+                                        <span className="bg-[#004CE5]/10 border border-[#004CE5]/30 text-blue-300 text-[16px] px-3 py-0.5 rounded font-bold shrink-0">最高均位 NO. 2</span>
                                     </div>
-                                    <p className="text-[15px] lg:text-[16px] xl:text-[18px] text-zinc-200 leading-relaxed font-normal text-justify">
-                                        在“新中式背景墙瓷砖推荐”这一词条中，平均排位最高，达到 NO.2.3。这是品牌目前最具竞争力的细分赛道，距离第一梯队仅一步之遥。
+                                    <p className="text-[18px] lg:text-[20px] text-zinc-200 leading-snug font-normal text-justify">
+                                        「买大家电可以线上买线下提货的平台推荐」平均排位最高，达 NO.2，且提及率 100%。这是苏宁目前最具竞争力的细分赛道，距离第一梯队仅一步之遥。
                                     </p>
                                 </div>
 
                                 {/* Finding 4 */}
-                                <div className="bg-gradient-to-br from-white/[0.03] to-white/[0.01] border border-white/[0.06] rounded-xl p-4 flex flex-col justify-start gap-2">
+                                <div className="bg-gradient-to-br from-white/[0.03] to-white/[0.01] border border-white/[0.06] rounded-xl px-4 py-3 flex flex-col justify-center gap-1.5">
                                     <div className="flex items-center justify-between shrink-0">
-                                        <h4 className="text-[17px] lg:text-[18px] xl:text-[20px] font-bold text-white flex items-center gap-2.5">
+                                        <h4 className="text-[20px] lg:text-[22px] font-bold text-white flex items-center gap-2.5">
                                             <span className="w-1.5 h-1.5 rounded-full bg-[#004CE5] shadow-[0_0_6px_rgba(0,76,229,0.6)]" />
-                                            表现垫底的“陪跑词”
+                                            表现垫底的「陪跑词」
                                         </h4>
-                                        <span className="bg-[#004CE5]/10 border border-[#004CE5]/30 text-blue-300 text-[14px] lg:text-[15px] px-3 py-0.5 rounded font-bold shrink-0">均位 NO. 8.8</span>
+                                        <span className="bg-[#004CE5]/10 border border-[#004CE5]/30 text-blue-300 text-[16px] px-3 py-0.5 rounded font-bold shrink-0">均位 NO. 6.5</span>
                                     </div>
-                                    <p className="text-[15px] lg:text-[16px] xl:text-[18px] text-zinc-200 leading-relaxed font-normal text-justify">
-                                        在“适合现代家装审美的瓷砖推荐”词条下，虽然被 AI 提及，但平均排位为 NO.8.8。这意味着在部分宽泛推荐中，品牌仍处于列表后段，用户点击转化的概率较低。
+                                    <p className="text-[18px] lg:text-[20px] text-zinc-200 leading-snug font-normal text-justify">
+                                        在「双11以旧换新用什么平台」词条下，虽有 50% 提及，但平均排位仅 NO.6.5；「三四线城市买家电」「国补买电视」等也落在 6 位之后。大促与下沉场景中仍多处于列表后段，点击转化概率偏低。
                                     </p>
                                 </div>
                             </div>
@@ -84,45 +85,45 @@ function Page_GeoReportEntries_Analysis() {
 
                     {/* Right Column: Keyword Strategy (Long & Short Boards) */}
                     <div className="col-span-6 flex flex-col min-h-0">
-                        <div className="bg-white/[0.03] backdrop-blur-xl border border-[#004CE5]/20 rounded-2xl p-6 shadow-[10px_0_30px_rgba(0,76,229,0.05)] flex flex-col h-full justify-start gap-4">
-                            <h3 className="text-2xl lg:text-[25px] font-bold text-white shrink-0 flex items-center gap-2.5 mb-1">
+                        <div className="bg-white/[0.03] backdrop-blur-xl border border-[#004CE5]/20 rounded-2xl p-5 shadow-[10px_0_30px_rgba(0,76,229,0.05)] flex flex-col h-full justify-start gap-3">
+                            <h3 className="text-2xl lg:text-[26px] font-bold text-white shrink-0 flex items-center gap-2.5">
                                 <span className="w-1.5 h-5 bg-[#004CE5] rounded-full shadow-[0_0_8px_rgba(0,76,229,0.8)]" />
                                 长短板诊断与词条策略
                             </h3>
 
-                            <div className="flex-grow grid grid-cols-1 gap-4 min-h-0">
+                            <div className="flex-grow grid grid-cols-1 gap-3 min-h-0">
                                 {/* Long Board Strategy */}
-                                <div className="bg-gradient-to-br from-white/[0.03] to-white/[0.01] border border-white/[0.06] border-l-4 border-l-[#004CE5] rounded-xl p-5 flex flex-col justify-start gap-2.5">
+                                <div className="bg-gradient-to-br from-white/[0.03] to-white/[0.01] border border-white/[0.06] border-l-4 border-l-[#004CE5] rounded-xl p-5 flex flex-col justify-center gap-2.5">
                                     <div>
                                         <div className="flex items-center justify-between mb-1.5">
-                                            <span className="text-[20px] lg:text-[22px] xl:text-[24px] font-bold text-white">长板词（风格与设计）</span>
-                                            <span className="text-[13px] lg:text-[14px] bg-[#004CE5]/20 text-blue-300 border border-[#004CE5]/30 px-3 py-0.5 rounded font-bold shrink-0">主要攻坚口</span>
+                                            <span className="text-[24px] lg:text-[28px] font-bold text-white">长板词（全渠道履约）</span>
+                                            <span className="text-[16px] bg-[#004CE5]/20 text-blue-300 border border-[#004CE5]/30 px-3 py-0.5 rounded font-bold shrink-0">主要攻坚口</span>
                                         </div>
                                     </div>
-                                    <div className="text-[15px] lg:text-[16px] xl:text-[18px] leading-relaxed text-zinc-200 flex flex-col gap-2">
+                                    <div className="text-[18px] lg:text-[20px] leading-snug text-zinc-200 flex flex-col gap-2">
                                         <div className="text-justify border-b border-white/5 pb-2">
-                                            <strong className="text-blue-300 font-bold">表现：</strong>“新中式瓷砖品牌排行榜”、“瓷砖品牌排行榜”、“质量好的新中式瓷砖推荐”、“知名品牌品控好的新中式瓷砖推荐”等。 共 19 个词条录得提及，位次 2.3～8.8 位。
+                                            <strong className="text-blue-300 font-bold">表现：</strong>「线上买线下提货」、「线下看实物」、「配送快」、「有实体店买家电」、「帮父母买大家电」、「线上线下都能买」等。履约类词条提及率最高达 100%，位次集中在 NO.2～5。
                                         </div>
                                         <div className="text-justify pt-1">
-                                            <strong className="text-emerald-400 font-bold">诊断与建议：</strong>冠珠在这类词条下已有较好的提及基础，且部分排位靠前。建议将其作为第一突破口，集中资源在此类词条下进行专业内容投喂，力争将其全部推举进前三，打造成品牌的绝对优势词。
+                                            <strong className="text-emerald-400 font-bold">诊断与建议：</strong>苏宁在全渠道与履约场景已有较好提及基础，且部分排位靠前。建议作为第一突破口，集中资源投喂「线上买线下提货 / 实体店体验 / 配送安装」专业内容，力争相关高位词全部推入前三，打造成绝对优势词。
                                         </div>
                                     </div>
                                 </div>
 
                                 {/* Short Board Strategy */}
-                                <div className="bg-gradient-to-br from-white/[0.03] to-white/[0.01] border border-white/[0.06] border-l-4 border-l-red-500/50 rounded-xl p-5 flex flex-col justify-start gap-2.5">
+                                <div className="bg-gradient-to-br from-white/[0.03] to-white/[0.01] border border-white/[0.06] border-l-4 border-l-red-500/50 rounded-xl p-5 flex flex-col justify-center gap-2.5">
                                     <div>
                                         <div className="flex items-center justify-between mb-1.5">
-                                            <span className="text-[20px] lg:text-[22px] xl:text-[24px] font-bold text-white">短板词（功能与空间）</span>
-                                            <span className="text-[13px] lg:text-[14px] bg-red-950/40 text-red-400 border border-red-950/60 px-3 py-0.5 rounded font-bold shrink-0">盲区消除口</span>
+                                            <span className="text-[24px] lg:text-[28px] font-bold text-white">短板词（3C 与送装）</span>
+                                            <span className="text-[16px] bg-red-950/40 text-red-400 border border-red-950/60 px-3 py-0.5 rounded font-bold shrink-0">盲区消除口</span>
                                         </div>
                                     </div>
-                                    <div className="text-[15px] lg:text-[16px] xl:text-[18px] leading-relaxed text-zinc-200 flex flex-col gap-2">
+                                    <div className="text-[18px] lg:text-[20px] leading-snug text-zinc-200 flex flex-col gap-2">
                                         <div className="text-justify border-b border-white/5 pb-2">
-                                            <strong className="text-red-300 font-bold">表现：</strong>“防渗污好打理的瓷砖推荐”、“超平整无波纹的瓷砖推荐”、“厨房专用瓷砖推荐”、“建筑外墙专用岩板推荐”、“安全不脱落的超薄岩板推荐”等 11 个高频刚需词条提及率均为 0.0%。
+                                            <strong className="text-red-300 font-bold">表现：</strong>「线上买手机」、「网上买电脑」、「国补买电脑」、「手机/电脑以旧换新」、「618 买手机/电脑」、「大家电送装一体」等 8 个高频刚需词条提及率均为 0%。
                                         </div>
                                         <div className="text-justify pt-1">
-                                            <strong className="text-amber-400 font-bold">诊断与建议：</strong>这些功能性词汇代表了消费者的硬核采购标准，但品牌目前在这些领域的 AI 关联度极低。急需通过专业测评、行业媒体以及高权重内容平台建立关联矩阵，将“冠珠”与“防渗污”、“超平整”、“不断供”等核心消费决策属性进行强制绑定，消除 AI 认知盲区。
+                                            <strong className="text-amber-400 font-bold">诊断与建议：</strong>这些词代表 3C 选购与送装决策的核心入口，但品牌在 AI 中关联度极低。急需通过测评、行业媒体及高权重内容，将「苏宁易购」与「手机/电脑靠谱购买」、「送装一体」、「国补与以旧换新」强制绑定，消除认知盲区。
                                         </div>
                                     </div>
                                 </div>

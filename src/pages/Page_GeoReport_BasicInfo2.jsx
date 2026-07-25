@@ -1,13 +1,14 @@
 import React from 'react';
 
 export default function Page_GeoReport_BasicInfo2() {
+    // 苏宁易购①（project_id 377）· 2026-07-25～2026-07-25 · src/data/geoReport.json
     const metrics = [
         { title: "执行天数", value: "1", unit: "天", color: "from-zinc-500 to-zinc-800", icon: "M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z", stroke: "text-zinc-400" },
-        { title: "监测词条", value: "30", unit: "个", color: "from-zinc-500 to-zinc-800", icon: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z", stroke: "text-zinc-400" },
+        { title: "监测词条", value: "50", unit: "个", color: "from-zinc-500 to-zinc-800", icon: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z", stroke: "text-zinc-400" },
         { title: "覆盖平台", value: "4", unit: "个", color: "from-zinc-500 to-zinc-800", icon: "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10", stroke: "text-zinc-400" },
-        { title: "总查询", value: "120", unit: "次", color: "from-zinc-500 to-zinc-800", icon: "M13 10V3L4 14h7v7l9-11h-7z", stroke: "text-zinc-400" },
-        { title: "引用文章", value: "1,547", unit: "篇", color: "from-zinc-500 to-zinc-800", icon: "M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l6 6v10a2 2 0 01-2 2z", stroke: "text-zinc-400" },
-        { title: "识别竞品", value: "156", unit: "家", color: "from-zinc-500 to-zinc-800", icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z", stroke: "text-zinc-400" },
+        { title: "总查询", value: "200", unit: "次", color: "from-zinc-500 to-zinc-800", icon: "M13 10V3L4 14h7v7l9-11h-7z", stroke: "text-zinc-400" },
+        { title: "引用文章", value: "2,501", unit: "篇", color: "from-zinc-500 to-zinc-800", icon: "M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l6 6v10a2 2 0 01-2 2z", stroke: "text-zinc-400" },
+        { title: "识别竞品", value: "84", unit: "家", color: "from-zinc-500 to-zinc-800", icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z", stroke: "text-zinc-400" },
     ];
 
     return (

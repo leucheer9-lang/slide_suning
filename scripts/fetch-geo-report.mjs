@@ -89,7 +89,7 @@ async function main() {
   console.log(`项目: ${project.project_name} / 目标产品: ${project.target_product}`);
   console.log(`数据区间: ${startDate} ~ ${endDate}`);
 
-  const [platforms, stats, influence, entries, compare, citationStats, citationArticles] = await Promise.all([
+  const [platforms, stats, influence, entries, compare, citationStats, citationArticles, sentiments] = await Promise.all([
     api('/api/platforms', { project_id: projectId }),
     api('/api/conversations/stats', range),
     api('/api/competitors/influence', range),
@@ -97,6 +97,7 @@ async function main() {
     api('/api/competitors/compare', range),
     api('/api/citations/stats', range),
     api('/api/citations/articles', { ...range, page: 1, page_size: 10, sort_by: 'total_citations', sort_order: 'desc' }),
+    api('/api/sentiments/stats', range),
   ]);
 
   // Top1 提及率排名（测试服暂无此接口，失败时置空）
@@ -176,6 +177,10 @@ async function main() {
         is_target: !!(b.is_self ?? b.is_target),
       })),
     },
+    // 与后台「识别竞品」摘要对齐：Top1 提及品牌全量，不是 influence.list 采样长度
+    competitors: {
+      total: top1?.data?.total ?? top1?.total ?? null,
+    },
     citations: {
       total_conversations: citationStats.data.total_conversations,
       citation_rate: num(citationStats.data.citation_rate),
@@ -198,12 +203,24 @@ async function main() {
         has_target_product: !!a.has_target_product,
       })),
     },
+    sentiments: {
+      positive_rate: num(sentiments.data.positive_rate),
+      positive_percentage: num(sentiments.data.positive_percentage),
+      negative_percentage: num(sentiments.data.negative_percentage),
+      positive_keywords: sentiments.data.positive_keywords || [],
+      negative_keywords: sentiments.data.negative_keywords || [],
+      daily_stats: (sentiments.data.daily_stats || []).map((d) => ({
+        date: d.date,
+        positive_rate: num(d.positive_rate),
+      })),
+    },
   };
 
   const outPath = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../src/data/geoReport.json');
   writeFileSync(outPath, JSON.stringify(report, null, 2), 'utf-8');
   console.log(`已写入 ${outPath}`);
   console.log(`词条 ${report.entries.list.length} 条 / 竞品 ${report.influence.list.length} 个 / 引用文章 ${report.citations.articles.length} 篇`);
+  console.log(`正负面 ${report.sentiments.positive_percentage}% / ${report.sentiments.negative_percentage}%`);
 }
 
 main().catch((err) => {

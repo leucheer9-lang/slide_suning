@@ -57,8 +57,17 @@ flatSlides.forEach((slide) => {
 
 const defaultOrder = flatSlides.map((s) => s.id);
 
+function readSlideFromUrl() {
+  try {
+    const n = Number(new URLSearchParams(window.location.search).get('s'));
+    return Number.isFinite(n) && n >= 0 ? Math.floor(n) : 0;
+  } catch {
+    return 0;
+  }
+}
+
 export default function App() {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(readSlideFromUrl);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const getInitialOrder = () => {
@@ -138,6 +147,21 @@ export default function App() {
     if (isMenuOpen) return;
     setCurrentSlide((prev) => Math.max(prev - 1, 0));
   };
+
+  // Keep ?s= in URL so refresh lands on the same slide
+  useEffect(() => {
+    if (slideData.length === 0) return;
+    const clamped = Math.min(Math.max(currentSlide, 0), slideData.length - 1);
+    if (clamped !== currentSlide) {
+      setCurrentSlide(clamped);
+      return;
+    }
+    const url = new URL(window.location.href);
+    if (url.searchParams.get('s') !== String(clamped)) {
+      url.searchParams.set('s', String(clamped));
+      window.history.replaceState(null, '', url);
+    }
+  }, [currentSlide, slideData.length]);
 
   useEffect(() => {
     const handleKeyDown = (e) => {
