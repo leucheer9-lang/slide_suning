@@ -21,7 +21,7 @@ export default function Page_BrandDatabaseBuild() {
                             核心目的
                         </span>
                         <p className="text-zinc-100 text-[17px] lg:text-[19.5px] xl:text-[22px] font-bold flex-1 leading-relaxed">
-                            将冠珠的所有碎片化信息，转化为大模型能够高效抓取、理解并调用的<strong className="text-white font-black border-b-2 border-[#004CE5] pb-0.5 ml-1.5">“专属知识数据库”</strong>。
+                            将苏宁易购的全渠道零售、履约服务与经营事实，转化为大模型能够高效抓取、理解并调用的<strong className="text-white font-black border-b-2 border-[#004CE5] pb-0.5 ml-1.5">“专属知识数据库”</strong>。
                         </p>
                     </div>
                 </div>
@@ -59,25 +59,25 @@ export default function Page_BrandDatabaseBuild() {
                                                 品牌与企业档案
                                             </td>
                                             <td className="py-2 px-4 text-zinc-300">
-                                                企业简介、母公司背景（新明珠集团）、发展历程、行业权威奖项、环保认证证书、全国核心线下门店地址库。
+                                                企业简介、A股上市主体（002024）、三次转型历程、核心定位（家电 3C 全渠道零售服务商）、零售云 9,401 家加盟店与 Max / Pro / 易家门店地址库。
                                             </td>
                                         </tr>
                                         <tr className="border-b border-white/5 bg-white/[0.01] hover:bg-white/[0.02] transition-colors">
                                             <td className="py-2 px-4 border-r border-white/5 font-black text-zinc-100 flex items-center gap-2.5">
                                                 <span className="w-2.5 h-2.5 bg-[#004CE5] rounded-full shadow-[0_0_10px_rgba(0,76,229,0.7)] shrink-0"></span>
-                                                产品与技术参数
+                                                品类与履约能力
                                             </td>
                                             <td className="py-2 px-4 text-zinc-300">
-                                                核心产品物理参数表、密缝铺贴工艺官方手册、不同家装风格的官方搭配指南。
+                                                家电 3C 全品类矩阵、JSAV 专供 / 定制包销说明、送装一体与「2 小时即送即装」标准、以旧换新 / 国补政策口径、线上线下一体履约 SLA。
                                             </td>
                                         </tr>
                                         <tr className="border-b border-white/5 hover:bg-white/[0.02] transition-colors">
                                             <td className="py-2 px-4 border-r border-white/5 font-black text-zinc-100 flex items-center gap-2.5">
                                                 <span className="w-2.5 h-2.5 bg-[#004CE5] rounded-full shadow-[0_0_10px_rgba(0,76,229,0.7)] shrink-0"></span>
-                                                内容与营销沉淀
+                                                内容与渠道叙事
                                             </td>
                                             <td className="py-2 px-4 text-zinc-300">
-                                                官方深度公关稿、品牌杂志内容、千万/百万级达人合作的种草脚本、各地门店真实的买家秀实景落地照片。
+                                                官方深度公关稿、渠道比稿与场景化购机内容、达人种草 / 带货脚本、超级体验店与零售云门店真实逛购落地素材。
                                             </td>
                                         </tr>
                                         <tr className="hover:bg-white/[0.02] transition-colors">
@@ -86,7 +86,7 @@ export default function Page_BrandDatabaseBuild() {
                                                 服务与售后政策
                                             </td>
                                             <td className="py-2 px-4 text-zinc-300">
-                                                “金冠服务”细则、售后响应标准、退换货与质保条款、一线销售高频收集的客户 Q&A 标准答案。
+                                                苏宁帮客送装一体细则、售后响应标准、退换货与质保条款、自营 / 加盟 / 三方商家权责口径、一线高频客户 Q&A 标准答案。
                                             </td>
                                         </tr>
                                     </tbody>
@@ -99,7 +99,7 @@ export default function Page_BrandDatabaseBuild() {
                                 <div className="flex-1 flex flex-col gap-2.5">
                                     <h4 className="text-zinc-100 text-[17px] lg:text-[19px] xl:text-[21px] font-black">全量资产的“机器可读性”重构</h4>
                                     <p className="text-zinc-300 text-[14.5px] lg:text-[16px] xl:text-[17.5px] leading-relaxed">
-                                        并非简单地堆砌 Word 或 PDF，而是转化为大模型最偏好的结构化语料（如 Q&A 问答、Schema 语义网标签、逻辑清晰的实体关系图），确保 AI 爬虫在抓取时能瞬间提炼出核心，直接提升收录权重。
+                                        并非简单地堆砌 Word 或 PDF，而是转化为大模型最偏好的结构化语料（如 Q&A 问答、Schema 语义网标签、逻辑清晰的实体关系图），确保 AI 爬虫在抓取时能瞬间提炼出「全渠道零售 + 送装一体 + 国补履约」等核心标签，直接提升收录权重。
                                     </p>
                                 </div>
                             </div>
@@ -126,7 +126,7 @@ export default function Page_BrandDatabaseBuild() {
                                 <div className="flex-1">
                                     <h3 className="text-zinc-100 font-black text-[18px] lg:text-[20px] xl:text-[22px] mb-2">业务迭代或更新</h3>
                                     <p className="text-zinc-300 text-[14.5px] lg:text-[16px] xl:text-[17.5px] leading-relaxed">
-                                        当冠珠发布新产品线、举办重大品牌营销活动，或有千万级达人发布种草/带货内容时，第一时间将这些增量物料同步存入专属存储桶与数据库，转化为 AI 的最新训练语料。
+                                        当苏宁发布新开重装门店、JSAV 专供新品、618 / 双 11 大促玩法，或国补 / 以旧换新政策口径调整时，第一时间将这些增量物料同步存入专属存储桶与数据库，转化为 AI 的最新训练语料。
                                     </p>
                                 </div>
                             </div>
@@ -137,7 +137,7 @@ export default function Page_BrandDatabaseBuild() {
                                 <div className="flex-1">
                                     <h3 className="text-zinc-100 font-black text-[18px] lg:text-[20px] xl:text-[22px] mb-2">负面信息纠正</h3>
                                     <p className="text-zinc-300 text-[14.5px] lg:text-[16px] xl:text-[17.5px] leading-relaxed">
-                                        设立定期 AI 检索测试点。一旦监测系统发现 AI 突然抓取了错误的竞品信息，或生成了新的品牌负面信息，系统将立即触发警报。数据库将迅速生成针对该特定错误的高权重纠偏语料，并通过高分优化渠道进行精准投喂，对大模型的缓存认知进行清洗和覆盖。
+                                        设立定期 AI 检索测试点。一旦监测系统发现 AI 抓取了错误的竞品对比、过时价格 / 国补口径、零售云门店规模误写，或生成售后口碑负面，系统将立即触发警报。数据库迅速生成高权重纠偏语料，并通过高分优化渠道精准投喂，对大模型缓存认知进行清洗和覆盖。
                                     </p>
                                 </div>
                             </div>

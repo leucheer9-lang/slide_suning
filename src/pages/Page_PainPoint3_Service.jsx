@@ -5,21 +5,25 @@ const channels = [
         tag: '送装一体',
         title: '履约质量参差',
         points: ['安装预约爽约、师傅水平不一', '送装进度信息不透明引发客诉', '单次事故被泛化为平台服务差'],
+        example: '黑猫 / 小红书常见：「约好安装师傅没来，冰箱放门口两天没人管」「打孔装坏了还推诿」',
     },
     {
         tag: '售后维修',
         title: '第三方服务背锅',
         points: ['品牌厂家售后与平台售后边界模糊', '维修时效与配件问题被记在苏宁头上', '负面语料持续进入 AI 训练池'],
+        example: '黑猫 / 问政常见：「买了三个月坏了，厂家和苏宁互相推」「配件等半个月，客服一直说在处理」',
     },
     {
         tag: '零售云加盟',
         title: '门店体验不一致',
         points: ['万店体系下服务标准执行参差', '县镇门店投诉被上升为品牌印象', '线下口碑反向污染线上 AI 答案'],
+        example: '社媒 / 本地贴吧常见：「县城苏宁店态度差、不给退换」「同是苏宁店，体验差太多」',
     },
     {
         tag: '三方 POP',
         title: '价格与信息错乱',
         points: ['非自营商家报价与口径不统一', '假货/劣质服务投诉牵连平台', '类似经销商乱价，传导至平台认知'],
+        example: '黑猫 / 知乎常见：「苏宁非自营买到假货，平台不处理」「同款比价差几百，投诉石沉大海」',
     },
 ];
 
@@ -44,18 +48,15 @@ export default function Page_PainPoint3_Service() {
                     </p>
                 </div>
 
-                {/* Amplification chain */}
+                {/* Amplification chain — mirrors the two content columns below */}
                 <div className="shrink-0 mb-3 lg:mb-4 flex items-center gap-2 lg:gap-3 border border-[#004CE5]/35 bg-[#004CE5]/[0.08] rounded-2xl px-5 lg:px-6 py-3 lg:py-3.5">
-                    {['第三方履约事故', '黑猫 / 社媒吐槽'].map((step, i) => (
-                        <React.Fragment key={step}>
-                            {i > 0 && (
-                                <span className="text-[#004CE5] text-xl lg:text-2xl font-black shrink-0 leading-none">→</span>
-                            )}
-                            <div className="flex-1 min-w-0 text-center text-white text-[17px] lg:text-[20px] xl:text-[22px] font-bold tracking-wide leading-snug">
-                                {step}
-                            </div>
-                        </React.Fragment>
-                    ))}
+                    <div className="flex-[1.15] min-w-0 text-center text-white text-[17px] lg:text-[20px] xl:text-[22px] font-bold tracking-wide leading-snug">
+                        第三方履约事故
+                    </div>
+                    <span className="text-[#004CE5] text-xl lg:text-2xl font-black shrink-0 leading-none">→</span>
+                    <div className="flex-1 min-w-0 text-center text-white text-[17px] lg:text-[20px] xl:text-[22px] font-bold tracking-wide leading-snug">
+                        黑猫 / 社媒吐槽
+                    </div>
                 </div>
 
                 {/* 4 risk strips */}
@@ -65,33 +66,46 @@ export default function Page_PainPoint3_Service() {
                             key={card.tag}
                             className="flex-1 min-h-0 bg-[#0a0a0a] border border-white/10 rounded-2xl flex items-stretch overflow-hidden"
                         >
-                            <div className="w-[72px] lg:w-[88px] xl:w-[100px] shrink-0 bg-[#004CE5]/10 border-r border-white/10 flex items-center justify-center">
-                                <span className="text-[#004CE5] font-black text-[28px] lg:text-[34px] xl:text-[40px] tracking-wider leading-none">
-                                    {String(idx + 1).padStart(2, '0')}
-                                </span>
+                            {/* Col 1: 第三方履约事故 */}
+                            <div className="flex-[1.15] min-w-0 flex items-stretch">
+                                <div className="w-[72px] lg:w-[88px] xl:w-[100px] shrink-0 bg-[#004CE5]/10 border-r border-white/10 flex items-center justify-center">
+                                    <span className="text-[#004CE5] font-black text-[28px] lg:text-[34px] xl:text-[40px] tracking-wider leading-none">
+                                        {String(idx + 1).padStart(2, '0')}
+                                    </span>
+                                </div>
+
+                                <div className="w-[200px] lg:w-[240px] xl:w-[280px] shrink-0 px-4 lg:px-5 xl:px-6 flex flex-col justify-center border-r border-white/10">
+                                    <div className="text-[#4B8BFF] text-[16px] lg:text-[17px] font-bold tracking-widest mb-1.5 lg:mb-2">
+                                        {card.tag}
+                                    </div>
+                                    <div className="text-white text-[24px] lg:text-[28px] xl:text-[32px] font-black tracking-wider leading-tight">
+                                        {card.title}
+                                    </div>
+                                </div>
+
+                                <div className="flex-1 min-w-0 px-4 lg:px-5 xl:px-6 py-2.5 lg:py-3 flex items-center">
+                                    <ul className="w-full grid grid-cols-1 gap-1.5 lg:gap-2">
+                                        {card.points.map((point) => (
+                                            <li
+                                                key={point}
+                                                className="flex items-center gap-3 text-zinc-200 text-[17px] lg:text-[19px] xl:text-[21px] leading-snug tracking-wide"
+                                            >
+                                                <span className="w-2 h-2 rounded-full bg-[#004CE5] shrink-0" />
+                                                <span>{point}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </div>
 
-                            <div className="w-[240px] lg:w-[280px] xl:w-[320px] shrink-0 px-5 lg:px-6 xl:px-7 flex flex-col justify-center border-r border-white/10">
-                                <div className="text-[#4B8BFF] text-[16px] lg:text-[17px] font-bold tracking-widest mb-1.5 lg:mb-2">
-                                    {card.tag}
+                            {/* Col 2: 黑猫 / 社媒吐槽 示例 */}
+                            <div className="flex-1 min-w-0 border-l border-[#004CE5]/30 bg-[#004CE5]/[0.06] px-5 lg:px-6 xl:px-7 py-2.5 lg:py-3 flex flex-col justify-center gap-1.5 lg:gap-2">
+                                <div className="text-[#4B8BFF] text-[16px] lg:text-[17px] font-bold tracking-widest">
+                                    示例
                                 </div>
-                                <div className="text-white text-[26px] lg:text-[30px] xl:text-[34px] font-black tracking-wider leading-tight">
-                                    {card.title}
-                                </div>
-                            </div>
-
-                            <div className="flex-1 min-w-0 px-5 lg:px-7 xl:px-8 py-2.5 lg:py-3 flex items-center">
-                                <ul className="w-full grid grid-cols-1 gap-1.5 lg:gap-2">
-                                    {card.points.map((point) => (
-                                        <li
-                                            key={point}
-                                            className="flex items-center gap-3 text-zinc-200 text-[18px] lg:text-[20px] xl:text-[22px] leading-snug tracking-wide"
-                                        >
-                                            <span className="w-2 h-2 rounded-full bg-[#004CE5] shrink-0" />
-                                            <span>{point}</span>
-                                        </li>
-                                    ))}
-                                </ul>
+                                <p className="text-zinc-100 text-[18px] lg:text-[20px] xl:text-[22px] font-medium leading-snug tracking-wide">
+                                    {card.example}
+                                </p>
                             </div>
                         </div>
                     ))}

@@ -65,6 +65,7 @@ import PB_GeoReportSources from '../Pages_Before/Page_GeoReportSources';
 import PB_GeoReportSources2 from '../Pages_Before/Page_GeoReportSources2';
 import PB_GeoReportSentiment_Pre from '../Pages_Before/Page_GeoReportSentiment_Pre';
 import PB_GeoReportSentiment from '../Pages_Before/Page_GeoReportSentiment';
+import PB_GeoReportSentiment_Crawl from '../Pages_Before/Page_GeoReportSentiment_Crawl';
 import PB_GeoKpiAcceptance from '../Pages_Before/Page_GeoKpiAcceptance';
 import PB_GeoWorkAcceptance from '../Pages_Before/Page_GeoWorkAcceptance';
 
@@ -79,8 +80,6 @@ import PB_GeoOptKeywordsClassify3 from '../Pages_Before/Page_GeoOptKeywordsClass
 import PB_GeoOptKeywordsClassify4 from '../Pages_Before/Page_GeoOptKeywordsClassify4';
 import PB_GeoOptKeywordsCleaning1 from '../Pages_Before/Page_GeoOptKeywordsCleaning1';
 import PB_GeoOptKeywordsCleaning2 from '../Pages_Before/Page_GeoOptKeywordsCleaning2';
-import PB_GeoOptKeywordsCleaning3 from '../Pages_Before/Page_GeoOptKeywordsCleaning3';
-import PB_GeoOptKeywordsCleaning4 from '../Pages_Before/Page_GeoOptKeywordsCleaning4';
 import PB_AgentDataFlow from '../Pages_Before/Page_AgentDataFlow';
 import PB_BrandKnowledgeBase from '../Pages_Before/Page_BrandKnowledgeBase';
 import PB_UserReviewAnalysis from '../Pages_Before/Page_UserReviewAnalysis';
@@ -125,7 +124,7 @@ import Page_BrandProducts from '../pages/Page_BrandProducts';
 import Page_BrandTech from '../pages/Page_BrandTech';
 import Page_BrandChannel from '../pages/Page_BrandChannel';
 import Page_BrandCompetitors from '../pages/Page_BrandCompetitors';
-import Page_BrandPlatformStrategy from '../pages/Page_BrandPlatformStrategy';
+import Page_BrandAdMatrix from '../pages/Page_BrandAdMatrix';
 import Page_BrandWhySuning from '../pages/Page_BrandWhySuning';
 import Page_BrandVerticalCompetitors from '../pages/Page_BrandVerticalCompetitors';
 import Page_IndustryPainPoints from '../pages/Page_IndustryPainPoints';
@@ -177,7 +176,7 @@ export const slideConfig = [
   { type: 'page', title: '平台核心能力壁垒', component: Page_BrandTech },
   { type: 'page', title: '商业模式与全场景渠道体系', component: Page_BrandChannel },
   { type: 'page', title: '核心竞品对比分析', component: Page_BrandCompetitors },
-  { type: 'page', title: '五大平台全景策略心智与一句话总结', component: Page_BrandPlatformStrategy },
+  { type: 'page', title: '主流电商站内外广告投放对比矩阵', component: Page_BrandAdMatrix },
   { type: 'page', title: '为何选择苏宁而非京东', component: Page_BrandWhySuning },
   { type: 'page', title: '家电领域垂直竞品', component: Page_BrandVerticalCompetitors },
 
@@ -198,7 +197,7 @@ export const slideConfig = [
   { type: 'page', title: '词条拓展逻辑', component: Page_KeywordExpansionLogic },
   { type: 'page', title: '词条穷举及清洗', components: [PB_GeoOptKeywordsClassify, PB_GeoOptKeywordsClassify2, PB_GeoOptKeywordsClassify_New, PB_GeoOptKeywordsClassify_New2] },
   { type: 'page', title: '词条分类及拓展', components: [PB_GeoOptKeywordsClassify3, PB_GeoOptKeywordsClassify4] },
-  { type: 'page', title: '词条确定', components: [PB_GeoOptKeywordsCleaning1, PB_GeoOptKeywordsCleaning2, PB_GeoOptKeywordsCleaning3] },
+  { type: 'page', title: '词条确定', components: [PB_GeoOptKeywordsCleaning1, PB_GeoOptKeywordsCleaning2] },
 
   // ══════════════════════════════════════════════════════════
   // ——— 篇章2: GEO体检报告 ———
@@ -211,7 +210,7 @@ export const slideConfig = [
   { type: 'page', title: '词条', components: [PB_GeoReportEntries, PB_GeoReportEntries_Analysis] },
   { type: 'page', title: '竞品', component: PB_GeoReportCompetitors_Analysis },
   { type: 'page', title: '引用源', components: [PB_GeoReportSources, PB_GeoReportSources2] },
-  { type: 'page', title: '正负面', components: [PB_GeoReportSentiment_Pre, PB_GeoReportSentiment] },
+  { type: 'page', title: '正负面', components: [PB_GeoReportSentiment_Pre, PB_GeoReportSentiment, PB_GeoReportSentiment_Crawl] },
 
 
   // ══════════════════════════════════════════════════════════

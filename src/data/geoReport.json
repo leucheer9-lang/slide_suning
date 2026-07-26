@@ -1,6 +1,6 @@
 {
   "meta": {
-    "fetched_at": "2026-07-25T13:21:22.860Z",
+    "fetched_at": "2026-07-26T10:22:27.759Z",
     "api_base": "https://api.geotopone.com",
     "project_id": 377,
     "project_name": "苏宁易购①",
@@ -83,8 +83,8 @@
   ],
   "stats": {
     "brand_mention_rate": 47,
-    "top1_mention_rate": null,
-    "top3_mention_rate": null,
+    "top1_mention_rate": 0.5,
+    "top3_mention_rate": 12,
     "avg_position": 5.1,
     "daily_stats": [
       {
@@ -1124,6 +1124,896 @@
         "rank": 20,
         "brand_name": "三翼鸟",
         "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 21,
+        "brand_name": "中国电信",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 22,
+        "brand_name": "中国移动",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 23,
+        "brand_name": "中国联通",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 24,
+        "brand_name": "九机网",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 25,
+        "brand_name": "五星电器",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 26,
+        "brand_name": "列表网",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 27,
+        "brand_name": "北国商城",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 28,
+        "brand_name": "华为",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 29,
+        "brand_name": "卡萨帝",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 30,
+        "brand_name": "品牌官网",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 31,
+        "brand_name": "唯品会",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 32,
+        "brand_name": "嗨回收",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 33,
+        "brand_name": "四平电器",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 34,
+        "brand_name": "回收宝",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 35,
+        "brand_name": "国网商城",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 36,
+        "brand_name": "国美",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 37,
+        "brand_name": "大众点评",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 38,
+        "brand_name": "天猫",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 39,
+        "brand_name": "天猫菜鸟",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 40,
+        "brand_name": "奇兵到家",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 41,
+        "brand_name": "安万家",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 42,
+        "brand_name": "安得到家",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 43,
+        "brand_name": "小智回收",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 44,
+        "brand_name": "小米",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 45,
+        "brand_name": "居然之家",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 46,
+        "brand_name": "工贸家电",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 47,
+        "brand_name": "开封万宝",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 48,
+        "brand_name": "微信",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 49,
+        "brand_name": "德邦快递",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 50,
+        "brand_name": "快手",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 51,
+        "brand_name": "快狗打车",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 52,
+        "brand_name": "惠普",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 53,
+        "brand_name": "慧买卖",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 54,
+        "brand_name": "戴尔",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 55,
+        "brand_name": "找靓机",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 56,
+        "brand_name": "支付宝",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 57,
+        "brand_name": "方太",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 58,
+        "brand_name": "日日顺",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 59,
+        "brand_name": "格力",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 60,
+        "brand_name": "海信",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 61,
+        "brand_name": "淘宝",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 62,
+        "brand_name": "爱回收",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 63,
+        "brand_name": "石家庄破烂王",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 64,
+        "brand_name": "红星美凯龙",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 65,
+        "brand_name": "索尼",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 66,
+        "brand_name": "绿蜜蜂回收",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 67,
+        "brand_name": "美的",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 68,
+        "brand_name": "老板",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 69,
+        "brand_name": "联想",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 70,
+        "brand_name": "胖东来",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 71,
+        "brand_name": "苏宁帮客",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 72,
+        "brand_name": "苏宁物流",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 73,
+        "brand_name": "荣耀",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 74,
+        "brand_name": "菜鸟",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 75,
+        "brand_name": "西门子",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 76,
+        "brand_name": "货拉拉",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 77,
+        "brand_name": "转转",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 78,
+        "brand_name": "通程电器",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 79,
+        "brand_name": "闲鱼",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 80,
+        "brand_name": "顺丰",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 81,
+        "brand_name": "顺电",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 82,
+        "brand_name": "顾家家居",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 83,
+        "brand_name": "饿了么",
+        "top1_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 84,
+        "brand_name": "鲁班到家",
+        "top1_mention_rate": 0,
+        "is_target": false
+      }
+    ],
+    "top3_ranking": [
+      {
+        "rank": 1,
+        "brand_name": "京东",
+        "top3_mention_rate": 91.5,
+        "is_target": false
+      },
+      {
+        "rank": 2,
+        "brand_name": "天猫",
+        "top3_mention_rate": 65,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "brand_name": "淘宝",
+        "top3_mention_rate": 33.5,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "brand_name": "海尔",
+        "top3_mention_rate": 17.5,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "brand_name": "拼多多",
+        "top3_mention_rate": 15.5,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "brand_name": "苏宁易购",
+        "top3_mention_rate": 12,
+        "is_target": true
+      },
+      {
+        "rank": 7,
+        "brand_name": "天猫优品",
+        "top3_mention_rate": 6,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "brand_name": "美团",
+        "top3_mention_rate": 5,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "brand_name": "抖音",
+        "top3_mention_rate": 3,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "brand_name": "美的",
+        "top3_mention_rate": 3,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "brand_name": "华为",
+        "top3_mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "brand_name": "小米",
+        "top3_mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "brand_name": "爱回收",
+        "top3_mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "brand_name": "苹果",
+        "top3_mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "brand_name": "闲鱼",
+        "top3_mention_rate": 1.5,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "brand_name": "日日顺",
+        "top3_mention_rate": 1,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "brand_name": "格力",
+        "top3_mention_rate": 1,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "brand_name": "转转",
+        "top3_mention_rate": 1,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "brand_name": "云闪付",
+        "top3_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "brand_name": "京东物流",
+        "top3_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 21,
+        "brand_name": "北国电器",
+        "top3_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 22,
+        "brand_name": "品牌官网",
+        "top3_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 23,
+        "brand_name": "唯品会",
+        "top3_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 24,
+        "brand_name": "国美",
+        "top3_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 25,
+        "brand_name": "奇兵到家",
+        "top3_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 26,
+        "brand_name": "安万家",
+        "top3_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 27,
+        "brand_name": "安得到家",
+        "top3_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 28,
+        "brand_name": "安得智联",
+        "top3_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 29,
+        "brand_name": "微信",
+        "top3_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 30,
+        "brand_name": "德邦快递",
+        "top3_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 31,
+        "brand_name": "快手",
+        "top3_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 32,
+        "brand_name": "绿蜜蜂回收",
+        "top3_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 33,
+        "brand_name": "联想",
+        "top3_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 34,
+        "brand_name": "苏宁物流",
+        "top3_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 35,
+        "brand_name": "菜鸟",
+        "top3_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 36,
+        "brand_name": "顺丰",
+        "top3_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 37,
+        "brand_name": "顾家家居",
+        "top3_mention_rate": 0.5,
+        "is_target": false
+      },
+      {
+        "rank": 38,
+        "brand_name": "58同城",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 39,
+        "brand_name": "COLMO",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 40,
+        "brand_name": "OPPO",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 41,
+        "brand_name": "TCL",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 42,
+        "brand_name": "vivo",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 43,
+        "brand_name": "万师傅",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 44,
+        "brand_name": "三峰家电",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 45,
+        "brand_name": "三翼鸟",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 46,
+        "brand_name": "中国电信",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 47,
+        "brand_name": "中国移动",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 48,
+        "brand_name": "中国联通",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 49,
+        "brand_name": "九机网",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 50,
+        "brand_name": "五星电器",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 51,
+        "brand_name": "列表网",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 52,
+        "brand_name": "北国商城",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 53,
+        "brand_name": "卡萨帝",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 54,
+        "brand_name": "嗨回收",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 55,
+        "brand_name": "四平电器",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 56,
+        "brand_name": "回收宝",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 57,
+        "brand_name": "国网商城",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 58,
+        "brand_name": "大众点评",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 59,
+        "brand_name": "天猫菜鸟",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 60,
+        "brand_name": "小智回收",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 61,
+        "brand_name": "居然之家",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 62,
+        "brand_name": "工贸家电",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 63,
+        "brand_name": "开封万宝",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 64,
+        "brand_name": "快狗打车",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 65,
+        "brand_name": "惠普",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 66,
+        "brand_name": "慧买卖",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 67,
+        "brand_name": "戴尔",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 68,
+        "brand_name": "找靓机",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 69,
+        "brand_name": "支付宝",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 70,
+        "brand_name": "方太",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 71,
+        "brand_name": "海信",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 72,
+        "brand_name": "石家庄破烂王",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 73,
+        "brand_name": "红星美凯龙",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 74,
+        "brand_name": "索尼",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 75,
+        "brand_name": "老板",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 76,
+        "brand_name": "胖东来",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 77,
+        "brand_name": "苏宁帮客",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 78,
+        "brand_name": "荣耀",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 79,
+        "brand_name": "西门子",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 80,
+        "brand_name": "货拉拉",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 81,
+        "brand_name": "通程电器",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 82,
+        "brand_name": "顺电",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 83,
+        "brand_name": "饿了么",
+        "top3_mention_rate": 0,
+        "is_target": false
+      },
+      {
+        "rank": 84,
+        "brand_name": "鲁班到家",
+        "top3_mention_rate": 0,
         "is_target": false
       }
     ]

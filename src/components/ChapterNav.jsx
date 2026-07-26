@@ -55,18 +55,18 @@ export default function ChapterNav({ chapterIndex, sectionIndex, pageIndex }) {
         </div>
 
         {hasPages && (
-          <div className="flex items-center gap-6 pl-4 mt-2">
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2 pl-4 mt-2">
             {activeSection.pages.map((page, j) => {
               const isChildActive = j === pageIndex;
               return (
                 <div
                   key={j}
-                  className={`flex items-center pb-1 border-b-2 transition-colors duration-300 ${
+                  className={`flex items-center shrink-0 pb-1 border-b-2 transition-colors duration-300 ${
                     isChildActive ? 'border-[#004CE5]' : 'border-transparent'
                   }`}
                 >
                   <span
-                    className={`text-[0.95rem] sm:text-base tracking-wide ${
+                    className={`whitespace-nowrap text-[0.95rem] sm:text-base tracking-wide ${
                       isChildActive
                         ? 'text-white font-medium'
                         : 'text-zinc-500'

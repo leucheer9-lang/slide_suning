@@ -80,6 +80,7 @@ npm run fetch:geo-overview
 | 总查询 | 会话/查询总数 | `citations.total_conversations` 或 `influence.total_conversations`（200） |
 | 引用文章 | 引用次数合计 | `citations.total_citations`（2501）——**不是** `citations.articles` 数组长度 |
 | 识别竞品 | Top1 提及品牌全量 | `/api/competitors/top-mention-rate` 的 `total`（84）——**不是** `influence.list` 长度（榜单采样常为 Top5） |
+| TOP1 / TOP3 提及率 | 本品在 TopN 榜单中的 `selected_top_mention_rate` | `stats.top1_mention_rate` / `stats.top3_mention_rate`（来自 `/api/competitors/top-mention-rate?top_type=top1\|top3` 的 `is_self` 行；当前苏宁为 0.5% / 12%） |
 
 脚本写入时会额外保存**幻灯用采样列表**（如影响力 Top、文章 Top10）。原先控制台打印的「竞品 5 / 引用文章 10」指的是这些列表长度，不是摘要总数。
 

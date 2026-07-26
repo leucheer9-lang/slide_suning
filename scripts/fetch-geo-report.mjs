@@ -12,16 +12,30 @@
  *   GEO_PASS      密码
  */
 
-import { writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+
+// 本地 .env（已 gitignore）可选加载；shell 已导出的变量优先生效
+const envPath = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../.env');
+if (existsSync(envPath)) {
+  for (const line of readFileSync(envPath, 'utf8').split('\n')) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) continue;
+    const i = trimmed.indexOf('=');
+    if (i === -1) continue;
+    const key = trimmed.slice(0, i).trim();
+    const val = trimmed.slice(i + 1).trim();
+    if (key && process.env[key] === undefined) process.env[key] = val;
+  }
+}
 
 const API_BASE = process.env.GEO_API_BASE;
 const USERNAME = process.env.GEO_USER;
 const PASSWORD = process.env.GEO_PASS;
 if (!API_BASE || !USERNAME || !PASSWORD) {
   console.error('缺少环境变量：GEO_API_BASE / GEO_USER / GEO_PASS 都必须提供。');
-  console.error('示例: GEO_API_BASE=https://api.geotopone.com GEO_USER=xxx GEO_PASS=xxx node scripts/fetch-geo-report.mjs <project_id>');
+  console.error('可在项目根目录建 .env，或: GEO_API_BASE=... GEO_USER=... GEO_PASS=... npm run fetch:geo-report -- <project_id>');
   process.exit(1);
 }
 
@@ -100,13 +114,35 @@ async function main() {
     api('/api/sentiments/stats', range),
   ]);
 
-  // Top1 提及率排名（测试服暂无此接口，失败时置空）
+  // Top1 / Top3 提及率排名（conversations/stats 通常不带这两项，以本品 is_self 为准）
+  const pickSelfTopRate = (payload) => {
+    const list = payload?.data?.list || [];
+    const self = list.find((b) => b.is_self ?? b.is_target);
+    return self ? num(self.selected_top_mention_rate) : null;
+  };
+  const mapTopRanking = (payload, rateKey) =>
+    (payload?.data?.list || []).map((b) => ({
+      rank: b.rank,
+      brand_name: b.display_name || b.brand_name,
+      [rateKey]: num(b.selected_top_mention_rate),
+      is_target: !!(b.is_self ?? b.is_target),
+    }));
+
   let top1 = null;
+  let top3 = null;
   try {
-    top1 = await api('/api/competitors/top-mention-rate', { ...range, top_type: 'top1' });
+    top1 = await api('/api/competitors/top-mention-rate', { ...range, top_type: 'top1', page_size: 100 });
   } catch (e) {
-    console.warn(`top-mention-rate 接口不可用（${e.message}），Top1 排名置空`);
+    console.warn(`top-mention-rate(top1) 不可用（${e.message}），Top1 排名置空`);
   }
+  try {
+    top3 = await api('/api/competitors/top-mention-rate', { ...range, top_type: 'top3', page_size: 100 });
+  } catch (e) {
+    console.warn(`top-mention-rate(top3) 不可用（${e.message}），Top3 排名置空`);
+  }
+
+  const top1SelfRate = pickSelfTopRate(top1);
+  const top3SelfRate = pickSelfTopRate(top3);
 
   const platformMap = Object.fromEntries(platforms.data.map((p) => [p.id, p]));
 
@@ -124,8 +160,9 @@ async function main() {
     platforms: platforms.data,
     stats: {
       brand_mention_rate: num(stats.data.brand_mention_rate),
-      top1_mention_rate: num(stats.data.top1_mention_rate),
-      top3_mention_rate: num(stats.data.top3_mention_rate),
+      // stats 接口常无 top1/top3；优先本品榜单值，再回退 stats 字段
+      top1_mention_rate: top1SelfRate ?? num(stats.data.top1_mention_rate),
+      top3_mention_rate: top3SelfRate ?? num(stats.data.top3_mention_rate),
       avg_position: num(stats.data.avg_position),
       daily_stats: (stats.data.daily_stats || []).map((d) => ({
         date: d.date,
@@ -170,16 +207,12 @@ async function main() {
       position_ranking: compare.data.position_ranking || [],
       rate_daily: compare.data.rate_daily || compare.data.mention_rate_daily || [],
       position_daily: compare.data.position_daily || [],
-      top1_ranking: (top1?.data?.list || []).map((b) => ({
-        rank: b.rank,
-        brand_name: b.display_name || b.brand_name,
-        top1_mention_rate: num(b.selected_top_mention_rate),
-        is_target: !!(b.is_self ?? b.is_target),
-      })),
+      top1_ranking: mapTopRanking(top1, 'top1_mention_rate'),
+      top3_ranking: mapTopRanking(top3, 'top3_mention_rate'),
     },
     // 与后台「识别竞品」摘要对齐：Top1 提及品牌全量，不是 influence.list 采样长度
     competitors: {
-      total: top1?.data?.total ?? top1?.total ?? null,
+      total: top1?.data?.total ?? top1?.total ?? top3?.data?.total ?? top3?.total ?? null,
     },
     citations: {
       total_conversations: citationStats.data.total_conversations,
@@ -220,6 +253,9 @@ async function main() {
   writeFileSync(outPath, JSON.stringify(report, null, 2), 'utf-8');
   console.log(`已写入 ${outPath}`);
   console.log(`词条 ${report.entries.list.length} 条 / 竞品 ${report.influence.list.length} 个 / 引用文章 ${report.citations.articles.length} 篇`);
+  console.log(
+    `提及率 ${report.stats.brand_mention_rate}% / TOP1 ${report.stats.top1_mention_rate}% / TOP3 ${report.stats.top3_mention_rate}% / 平均位次 ${report.stats.avg_position}`,
+  );
   console.log(`正负面 ${report.sentiments.positive_percentage}% / ${report.sentiments.negative_percentage}%`);
 }
 

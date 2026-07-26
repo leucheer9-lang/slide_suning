@@ -94,7 +94,7 @@ function Page_GeoReportSources2() {
                                     </h3>
                                 </div>
 
-                                <div className="flex-1 flex flex-col justify-center gap-4 min-h-0">
+                                <div className="flex-1 flex flex-col justify-center gap-8 min-h-0">
 
                                     {/* Bullet 1 */}
                                     <div className="bg-white/[0.03] border border-white/5 border-l-4 border-l-[#004CE5] p-5 lg:p-6 rounded-r-xl transition-all duration-300 hover:bg-white/[0.05]">
