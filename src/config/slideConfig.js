@@ -127,6 +127,7 @@ import Page_BrandCompetitors from '../pages/Page_BrandCompetitors';
 import Page_BrandAdMatrix from '../pages/Page_BrandAdMatrix';
 import Page_BrandWhySuning from '../pages/Page_BrandWhySuning';
 import Page_BrandVerticalCompetitors from '../pages/Page_BrandVerticalCompetitors';
+import Page_BrandVerticalTraffic_A from '../pages/Page_BrandVerticalTraffic_A';
 import Page_IndustryPainPoints from '../pages/Page_IndustryPainPoints';
 import Page_PainPoint1_WordCloud from '../pages/Page_PainPoint1_WordCloud';
 import Page_PainPoint2_Industry from '../pages/Page_PainPoint2_Industry';
@@ -179,6 +180,7 @@ export const slideConfig = [
   { type: 'page', title: '主流电商站内外广告投放对比矩阵', component: Page_BrandAdMatrix },
   { type: 'page', title: '为何选择苏宁而非京东', component: Page_BrandWhySuning },
   { type: 'page', title: '家电领域垂直竞品', component: Page_BrandVerticalCompetitors },
+  { type: 'page', title: '竞品流量链路与苏宁应对', component: Page_BrandVerticalTraffic_A },
 
   { type: 'section', title: '行业特点' },
   { type: 'page', title: '平台型零售行业GEO难点解析', component: Page_IndustryPainPoints },

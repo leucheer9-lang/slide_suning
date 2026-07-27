@@ -100,31 +100,29 @@ export default function Page_GeoReport_BasicInfo1() {
                         <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-[#004CE5]/80"></div>
 
                         {/* Console Log-style Summary Paragraph */}
-                        <div className="bg-white/[0.01] border border-white/5 rounded-xl px-7 py-6 lg:px-8 lg:py-7 relative flex flex-col justify-center gap-8 lg:gap-10 flex-1 min-h-0">
-                            <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#004CE5]"></div>
+                        <div className="bg-white/[0.01] border border-white/5 rounded-xl px-6 py-7 lg:px-7 lg:py-8 relative flex flex-col justify-center gap-5 lg:gap-6 flex-1 min-h-0 overflow-hidden">
+                            <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#004CE5] rounded-l-xl"></div>
                             
                             {/* Date Summary */}
-                            <div className="flex flex-col gap-3.5">
+                            <div className="flex flex-col gap-2.5">
                                 <div className="flex items-center gap-2.5">
-                                    <span className="w-2.5 h-2.5 rounded-full bg-[#004CE5]"></span>
-                                    <span className="text-[16px] lg:text-[18px] text-zinc-400 font-black tracking-widest">周期范围</span>
+                                    <span className="w-2 h-2 rounded-full bg-[#004CE5] shrink-0"></span>
+                                    <span className="text-[15px] lg:text-[16px] text-zinc-400 font-black tracking-wider">周期范围</span>
                                 </div>
-                                <p className="text-[20px] lg:text-[22px] xl:text-[24px] text-zinc-200 leading-[1.85] tracking-wide">
-                                    从 <span className="text-white font-black underline decoration-[#004CE5] decoration-2 underline-offset-4">7月25日～7月25日</span>，围绕 <strong className="text-white font-black px-2.5 py-1 bg-[#004CE5]/20 rounded border border-[#004CE5]/40">苏宁易购-品牌词</strong> 数据监测工作按计划持续推进。<br />
+                                <p className="text-[18px] lg:text-[19px] xl:text-[20px] text-zinc-200 leading-[1.7] tracking-normal">
+                                    从 <span className="text-white font-black underline decoration-[#004CE5] decoration-2 underline-offset-4">7月25日～7月25日</span>，围绕 <strong className="text-white font-black px-2 py-0.5 bg-[#004CE5]/20 rounded border border-[#004CE5]/40">苏宁易购-品牌词</strong> 数据监测工作按计划持续推进。<br />
                                     累计执行周期 <span className="text-white font-black">1 天</span>，覆盖 4 个主流 AI 平台（DeepSeek、豆包、元宝、通义千问）。
                                 </p>
                             </div>
 
                             {/* Detailed stats in sentences */}
-                            <div className="pt-8 border-t border-white/5 flex flex-col gap-3.5">
+                            <div className="pt-5 border-t border-white/5 flex flex-col gap-2.5">
                                 <div className="flex items-center gap-2.5">
-                                    <span className="w-2.5 h-2.5 rounded-full bg-[#004CE5]"></span>
-                                    <span className="text-[16px] lg:text-[18px] text-zinc-400 font-black tracking-widest">指标详情</span>
+                                    <span className="w-2 h-2 rounded-full bg-[#004CE5] shrink-0"></span>
+                                    <span className="text-[15px] lg:text-[16px] text-zinc-400 font-black tracking-wider">指标详情</span>
                                 </div>
-                                <p className="text-[20px] lg:text-[22px] xl:text-[24px] text-zinc-300 leading-[1.85] tracking-wide">
-                                    本周期共监测 <span className="text-white font-black">50</span> 个关键词条，在 <span className="text-white font-black">4</span> 个平台完成 <span className="text-white font-black">1</span> 天连续查询，合计执行查询 <strong className="text-[#004CE5] font-black font-mono text-[22px] lg:text-[26px] xl:text-[28px]">200</strong> 次，
-                                    抓取并识别引用文章 <strong className="text-[#004CE5] font-black font-mono text-[22px] lg:text-[26px] xl:text-[28px]">2,501</strong> 篇，同期识别竞品品牌 <strong className="text-[#004CE5] font-black font-mono text-[22px] lg:text-[26px] xl:text-[28px]">84</strong> 家，
-                                    截图覆盖率达 <strong className="text-[#004CE5] font-black font-mono text-[26px] lg:text-[30px] xl:text-[32px]">100%</strong>。各项数据指标均在预期执行范围内，整体运行稳定。
+                                <p className="text-[18px] lg:text-[19px] xl:text-[20px] text-zinc-300 leading-[1.7] tracking-normal">
+                                    本周期共监测 <span className="text-white font-black">50</span> 个关键词条，在 <span className="text-white font-black">4</span> 个平台完成 <span className="text-white font-black">1</span> 天连续查询，合计执行查询 <strong className="text-[#004CE5] font-black font-mono text-[20px] lg:text-[21px] xl:text-[22px]">200</strong> 次，抓取并识别引用文章 <strong className="text-[#004CE5] font-black font-mono text-[20px] lg:text-[21px] xl:text-[22px]">2,501</strong> 篇，同期识别竞品品牌 <strong className="text-[#004CE5] font-black font-mono text-[20px] lg:text-[21px] xl:text-[22px]">84</strong> 家，截图覆盖率达 <strong className="text-[#004CE5] font-black font-mono text-[20px] lg:text-[22px] xl:text-[24px]">100%</strong>。<span className="whitespace-nowrap">各项数据指标均在预期执行范围内，整体运行稳定。</span>
                                 </p>
                             </div>
                         </div>
