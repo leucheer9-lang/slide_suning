@@ -20,10 +20,10 @@ export default function Page_BrandTech() {
                 <div className="bg-[#111] border border-white/10 rounded-[2rem] p-8 lg:p-10 flex flex-col relative group hover:-translate-y-2 transition-all duration-500 shadow-2xl overflow-hidden">
                     <div className="text-6xl lg:text-7xl text-white/50 tracking-tighter mb-6 lg:mb-8 font-['AlimamaShuHeiTi']">01</div>
                     <h3 className="text-3xl lg:text-4xl font-bold text-white mb-4 lg:mb-5 tracking-wide leading-snug">
-                        “中央工厂 + 批发”<br />重资产规模制造模式
+                        “货先入仓”<br />重资产自营仓储网络
                     </h3>
                     <p className="text-zinc-400 text-[1.15rem] lg:text-[1.2rem] leading-relaxed flex-1 text-justify">
-                        通过在全国各核心城市密集布局标准化现代生产基地（目前已投产24个基地），在生产端建立起巨大的规模与折旧成本优势，拉高短保烘焙行业竞争壁垒，阻断新玩家低成本切入。
+                        自营1600多个仓库，云仓平台另有2000多个第三方云仓，管理面积超3400万平方米，几乎覆盖全国所有县区，含45座“亚洲一号”。货提前放到离消费者最近的仓，下单后就近发出。
                     </p>
                     {/* Decorative Star */}
                     <div className="absolute bottom-8 right-8 text-white/20 group-hover:text-white/60 transition-colors">
@@ -35,10 +35,10 @@ export default function Page_BrandTech() {
                 <div className="bg-gradient-to-br from-[#0033aa] to-[#001144] border border-blue-400/20 rounded-[2rem] p-8 lg:p-10 flex flex-col relative group hover:-translate-y-2 transition-all duration-500 shadow-[0_20px_50px_rgba(0,50,200,0.15)] overflow-hidden">
                     <div className="text-6xl lg:text-7xl text-white/60 tracking-tighter mb-6 lg:mb-8 font-['AlimamaShuHeiTi']">02</div>
                     <h3 className="text-3xl lg:text-4xl font-bold text-white mb-4 lg:mb-5 tracking-wide leading-snug">
-                        “每日新鲜送达”<br />高频配送物流履约网络
+                        六大网络协同<br />末端交付高度自营
                     </h3>
                     <p className="text-blue-100/70 text-[1.15rem] lg:text-[1.2rem] leading-relaxed flex-1 text-justify">
-                        配套自主研发的PDA物流配送数据采集系统，建立起一套高频清晨8点前精准配送的物流毛细网络。通过极高效率的配送，控制整体退货损耗率在10%以内，保证新鲜度。
+                        仓储、运输、末端、大件、冷链、跨境六网协同：自营车6万余辆、全货机12架，1.9万个站点覆盖300多个地级市，自有配送人员54万名。站点绝大多数自营，送货上门、送装一体由自己人兑现。
                     </p>
                     {/* Decorative Star */}
                     <div className="absolute bottom-8 right-8 text-white/20 group-hover:text-white/60 transition-colors">
@@ -50,10 +50,10 @@ export default function Page_BrandTech() {
                 <div className="bg-gradient-to-br from-[#004CE5] to-[#002288] border border-blue-400/30 rounded-[2rem] p-8 lg:p-10 flex flex-col relative group hover:-translate-y-2 transition-all duration-500 shadow-[0_20px_50px_rgba(0,76,229,0.2)] overflow-hidden">
                     <div className="text-6xl lg:text-7xl text-white/80 tracking-tighter mb-6 lg:mb-8 font-['AlimamaShuHeiTi']">03</div>
                     <h3 className="text-3xl lg:text-4xl font-bold text-white mb-4 lg:mb-5 tracking-wide leading-snug">
-                        “F2B2C”中介快消<br />极其深厚的渠道分销壁垒
+                        技术自研落地<br />自动化规模化复制
                     </h3>
                     <p className="text-blue-100/80 text-[1.15rem] lg:text-[1.2rem] leading-relaxed flex-1 text-justify">
-                        向大型连锁商超（To KA）、连锁便利店及成千上万的中小社会夫妻店（To B）进行饱和式密集铺货，构建了深厚的终端零售触达壁垒，实现离消费者最近的日常性价比面包定位。
+                        已获授权专利与软件超5500项，其中自动化与无人技术超3000项。自研“智狼”货到人方案已在20多个仓落地，上千台无人车在20余省常态化运营，首个海外智狼仓也已在英国投用。
                     </p>
                     {/* Decorative Star */}
                     <div className="absolute bottom-8 right-8 text-white/30 group-hover:text-white/80 transition-colors">

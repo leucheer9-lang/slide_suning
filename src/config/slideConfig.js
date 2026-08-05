@@ -48,23 +48,14 @@ import PB_TargetProduct from '../Pages_Before/Page_TargetProduct';
 import PB_TargetUser from '../Pages_Before/Page_TargetUser';
 import PB_CoreSellingPainPoints from '../Pages_Before/Page_CoreSellingPainPoints';
 
-// ——— 篇章2: GEO体检报告 (桃李面包 2B & 2C & 品牌舆情) ———
-import Page_GeoReport_Dashboard_2B from '../pages/Page_GeoReport_Dashboard_2B';
-import Page_GeoReport_Dashboard2_2B from '../pages/Page_GeoReport_Dashboard2_2B';
-import Page_GeoReport_Entries_2B from '../pages/Page_GeoReport_Entries_2B';
-import Page_GeoReport_Entries_Analysis_2B from '../pages/Page_GeoReport_Entries_Analysis_2B';
-import Page_GeoReport_Competitors_Analysis_2B from '../pages/Page_GeoReport_Competitors_Analysis_2B';
-import Page_GeoReport_Sources_2B from '../pages/Page_GeoReport_Sources_2B';
-import Page_GeoReport_Sources2_2B from '../pages/Page_GeoReport_Sources2_2B';
-
-import Page_GeoReport_Dashboard_2C from '../pages/Page_GeoReport_Dashboard_2C';
-import Page_GeoReport_Dashboard2_2C from '../pages/Page_GeoReport_Dashboard2_2C';
-import Page_GeoReport_Entries_2C from '../pages/Page_GeoReport_Entries_2C';
-import Page_GeoReport_Entries_Analysis_2C from '../pages/Page_GeoReport_Entries_Analysis_2C';
-import Page_GeoReport_Competitors_Analysis_2C from '../pages/Page_GeoReport_Competitors_Analysis_2C';
-import Page_GeoReport_Sources_2C from '../pages/Page_GeoReport_Sources_2C';
-import Page_GeoReport_Sources2_2C from '../pages/Page_GeoReport_Sources2_2C';
-
+// ——— 篇章2: GEO体检报告 (词条数据 & 品牌舆情) ———
+import Page_GeoReport_Dashboard from '../pages/Page_GeoReport_Dashboard';
+import Page_GeoReport_Dashboard2 from '../pages/Page_GeoReport_Dashboard2';
+import Page_GeoReport_Entries from '../pages/Page_GeoReport_Entries';
+import Page_GeoReport_Entries_Analysis from '../pages/Page_GeoReport_Entries_Analysis';
+import Page_GeoReport_Competitors_Analysis from '../pages/Page_GeoReport_Competitors_Analysis';
+import Page_GeoReport_Sources from '../pages/Page_GeoReport_Sources';
+import Page_GeoReport_Sources2 from '../pages/Page_GeoReport_Sources2';
 import Page_GeoReport_Sentiment_Pre from '../pages/Page_GeoReport_Sentiment_Pre';
 import Page_GeoReport_Sentiment from '../pages/Page_GeoReport_Sentiment';
 import PB_GeoKpiAcceptance from '../Pages_Before/Page_GeoKpiAcceptance';
@@ -85,6 +76,9 @@ import PB_GeoOptKeywordsCleaning1 from '../Pages_Before/Page_GeoOptKeywordsClean
 import PB_GeoOptKeywordsCleaning2 from '../Pages_Before/Page_GeoOptKeywordsCleaning2';
 import PB_GeoOptKeywordsCleaning3 from '../Pages_Before/Page_GeoOptKeywordsCleaning3';
 import PB_GeoOptKeywordsCleaning4 from '../Pages_Before/Page_GeoOptKeywordsCleaning4';
+import Page_KeywordExhaustClean from '../pages/Page_KeywordExhaustClean';
+import Page_KeywordClassifyExpand from '../pages/Page_KeywordClassifyExpand';
+import Page_KeywordConfirmPrompt from '../pages/Page_KeywordConfirmPrompt';
 import PB_AgentDataFlow from '../Pages_Before/Page_AgentDataFlow';
 import PB_BrandKnowledgeBase from '../Pages_Before/Page_BrandKnowledgeBase';
 import PB_UserReviewAnalysis from '../Pages_Before/Page_UserReviewAnalysis';
@@ -155,7 +149,7 @@ export const slideConfig = [
     title: '封面',
     backgroundImage: '/proposal-cover/proposal-cover-new.png',
     brand: 'GEO索引未来',
-    subtitle: '桃李面包\nGEO规划方案',
+    subtitle: '京东物流\nGEO规划方案',
     date: 'March 2026',
   },
 
@@ -175,17 +169,16 @@ export const slideConfig = [
 
   { type: 'section', title: '项目品牌与行业信息' },
   { type: 'page', title: '品牌基础信息', component: Page_BrandInfo },
-  { type: 'page', title: '品牌主要产品线', component: Page_BrandProducts },
+  { type: 'page', title: '主要业务线', component: Page_BrandProducts },
   { type: 'page', title: '品牌核心竞争优势', component: Page_BrandTech },
-  { type: 'page', title: '商业模式与渠道体系分析', component: Page_BrandChannel },
+  { type: 'page', title: '商业模式与客户结构分析', component: Page_BrandChannel },
   { type: 'page', title: '行业核心竞品对比分析', component: Page_BrandCompetitors },
 
   { type: 'section', title: '行业特点' },
-  { type: 'page', title: '短保烘焙行业及GEO难点解析', component: Page_IndustryPainPoints },
-  { type: 'page', title: 'C端与B端决策逻辑割裂', component: Page_PainPoint1_WordCloud },
-  { type: 'page', title: '供应链物理半径限制与流量倒挂', component: Page_PainPoint2_Industry },
-  { type: 'page', title: '0防腐食安双刃剑与AI公关危机', components: [Page_PainPoint4_SalesModel, Page_PainPoint4_SalesModel_Solution] },
-  { type: 'page', title: '多渠道碎片化与折价价格体系混乱', component: Page_PainPoint3_Service },
+  { type: 'page', title: '供应链物流行业及GEO难点解析', component: Page_IndustryPainPoints },
+  { type: 'page', title: 'B端选型与C端寄件搜索诉求分层', component: Page_PainPoint1_WordCloud },
+  { type: 'page', title: '偶发性服务事故极易被AI抓取放大', components: [Page_PainPoint4_SalesModel, Page_PainPoint4_SalesModel_Solution] },
+  { type: 'page', title: '寄件渠道碎片化，报价口径难对齐', component: Page_PainPoint3_Service },
 
   { type: 'section', title: '词条策略' },
   { type: 'page', title: '词条分组依据', component: Page_KeywordGroupingBasis },
@@ -196,9 +189,9 @@ export const slideConfig = [
   { type: 'page', title: '词条生成逻辑', component: Page_KeywordGenerationLogic },
   { type: 'page', title: '词条打标逻辑', component: Page_KeywordTaggingLogic },
   { type: 'page', title: '词条拓展逻辑', component: Page_KeywordExpansionLogic },
-  { type: 'page', title: '词条穷举及清洗', components: [PB_GeoOptKeywordsClassify, PB_GeoOptKeywordsClassify2] },
-  { type: 'page', title: '词条分类及拓展', components: [PB_GeoOptKeywordsClassify3] },
-  { type: 'page', title: '词条确定', components: [PB_GeoOptKeywordsCleaning1, PB_GeoOptKeywordsCleaning2] },
+  { type: 'page', title: '词条穷举及清洗', component: Page_KeywordExhaustClean },
+  { type: 'page', title: '词条分类及拓展', component: Page_KeywordClassifyExpand },
+  { type: 'page', title: '词条确定', component: Page_KeywordConfirmPrompt },
 
   // ══════════════════════════════════════════════════════════
   // ——— 篇章2: GEO体检报告 ———
@@ -208,17 +201,11 @@ export const slideConfig = [
   { type: 'section', title: '数据分析报告说明' },
   { type: 'page', title: '报告说明', components: [Page_GeoReport_BasicInfo1, Page_GeoReport_BasicInfo2] },
 
-  { type: 'section', title: '2B词条数据' },
-  { type: 'page', title: '2B数据总览', components: [Page_GeoReport_Dashboard_2B, Page_GeoReport_Dashboard2_2B] },
-  { type: 'page', title: '2B词条表现', components: [Page_GeoReport_Entries_2B, Page_GeoReport_Entries_Analysis_2B] },
-  { type: 'page', title: '2B竞品对比', component: Page_GeoReport_Competitors_Analysis_2B },
-  { type: 'page', title: '2B引用源分析', components: [Page_GeoReport_Sources_2B, Page_GeoReport_Sources2_2B] },
-
-  { type: 'section', title: '2C词条数据' },
-  { type: 'page', title: '2C数据总览', components: [Page_GeoReport_Dashboard_2C, Page_GeoReport_Dashboard2_2C] },
-  { type: 'page', title: '2C词条表现', components: [Page_GeoReport_Entries_2C, Page_GeoReport_Entries_Analysis_2C] },
-  { type: 'page', title: '2C竞品对比', component: Page_GeoReport_Competitors_Analysis_2C },
-  { type: 'page', title: '2C引用源分析', components: [Page_GeoReport_Sources_2C, Page_GeoReport_Sources2_2C] },
+  { type: 'section', title: '词条数据' },
+  { type: 'page', title: '数据总览', components: [Page_GeoReport_Dashboard, Page_GeoReport_Dashboard2] },
+  { type: 'page', title: '词条表现', components: [Page_GeoReport_Entries, Page_GeoReport_Entries_Analysis] },
+  { type: 'page', title: '竞品对比', component: Page_GeoReport_Competitors_Analysis },
+  { type: 'page', title: '引用源分析', components: [Page_GeoReport_Sources, Page_GeoReport_Sources2] },
 
   { type: 'section', title: '品牌词舆情分析' },
   { type: 'page', title: '品牌正负面', components: [Page_GeoReport_Sentiment_Pre, Page_GeoReport_Sentiment] },
@@ -271,9 +258,5 @@ export const slideConfig = [
   // { type: 'page', title: '两个内容策略', components: [Page_ArticleDataAnalysisHisense, Page_ArticleGenerationDemo, Page_ArticleDataAnalysisStrategy2, Page_ArticleGenerationDemo2, Page_ArticleGenerationDemo3] },
   // { type: 'page', title: '两个投放策略', components: [Page_DeliveryStrategy_Combo, Page_DeliveryStrategy_Platform] },
 
-  // ══════════════════════════════════════════════════════════
-  // ——— 篇章5: 关于我们 ———
-  // ══════════════════════════════════════════════════════════
-  { type: 'chapter', title: '关于我们', subtitle: 'ABOUT US', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
 
 ];

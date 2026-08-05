@@ -2,9 +2,13 @@ import React from 'react';
 
 function Page_DataImportAnalysis() {
     return (
-        <div className="w-full h-full flex items-center justify-center text-zinc-500 bg-black font-sans text-xl">
-            {/* 空白数据导入分析页面 */}
-            暂无数据导入分析内容
+        <div className="w-full h-full bg-black font-sans overflow-hidden">
+            <img
+                src="/Add_Charts/data-import-analysis.png"
+                alt="导入数据分析"
+                className="w-full h-full object-contain select-none"
+                draggable={false}
+            />
         </div>
     );
 }

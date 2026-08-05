@@ -55,13 +55,13 @@ export default function Page_GeoReport_BasicInfo1() {
                                 <div className="flex-1 flex flex-col gap-1">
                                     <div className="flex items-baseline gap-2">
                                         <span className="text-xl lg:text-2xl xl:text-3xl font-black text-white">共计 72 项核心词条</span>
-                                        <span className="text-zinc-400 text-sm lg:text-base font-bold">/ 覆盖B端渠道、C端消费与品牌词</span>
+                                        <span className="text-zinc-400 text-sm lg:text-base font-bold">/ 覆盖业务需求词与品牌词</span>
                                     </div>
                                 </div>
                             </div>
                             <div className="ml-28 mt-2.5">
                                 <div className="text-zinc-300 text-sm lg:text-base leading-relaxed bg-white/[0.03] border border-white/5 rounded-xl p-4">
-                                    包括：2B词条 30 个、2C词条 22 个、品牌词条 20 个。
+                                    包括：业务词条 52 个、品牌词条 20 个。
                                 </div>
                             </div>
                         </div>
@@ -109,7 +109,7 @@ export default function Page_GeoReport_BasicInfo1() {
                                     <span className="text-base lg:text-[17.5px] xl:text-[19px] text-zinc-400 font-black tracking-widest">监测执行概况</span>
                                 </div>
                                 <p className="text-[17px] lg:text-[19.5px] xl:text-[22px] text-zinc-200 leading-relaxed tracking-wide">
-                                    本周期针对桃李面包的 GEO 数据雷达排查，全面覆盖了从 <span className="text-white font-black underline decoration-[#004CE5] decoration-2 underline-offset-4">B 端渠道招商</span>、<span className="text-white font-black underline decoration-[#004CE5] decoration-2 underline-offset-4">C 端大众消费</span> 到 <span className="text-white font-black underline decoration-[#004CE5] decoration-2 underline-offset-4">品牌底层口碑</span> 的三大生态，各项数据指标均在预期执行范围内，整体运行稳定。
+                                    本周期针对桃李面包的 GEO 数据雷达排查，全面覆盖了从 <span className="text-white font-black underline decoration-[#004CE5] decoration-2 underline-offset-4">业务需求搜索</span> 到 <span className="text-white font-black underline decoration-[#004CE5] decoration-2 underline-offset-4">品牌底层口碑</span> 的两大生态，各项数据指标均在预期执行范围内，整体运行稳定。
                                 </p>
                             </div>
 

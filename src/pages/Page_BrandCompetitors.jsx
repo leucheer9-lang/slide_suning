@@ -23,24 +23,24 @@ export default function Page_BrandCompetitors() {
                         </div>
                         <div className="py-3 px-2 flex flex-col items-center justify-center border-r border-white/10 bg-[#004CE5]/10 relative overflow-hidden">
                             <div className="absolute top-0 left-0 w-full h-1 bg-[#004CE5]"></div>
-                            <span className="text-white text-base lg:text-lg xl:text-[20px] tracking-wider font-extrabold">桃李面包</span>
-                            <span className="text-[#004CE5] text-xs font-bold tracking-widest mt-0.5">TOLY BREAD</span>
+                            <span className="text-white text-base lg:text-lg xl:text-[20px] tracking-wider font-extrabold">京东物流</span>
+                            <span className="text-[#004CE5] text-xs font-bold tracking-widest mt-0.5">JD LOGISTICS</span>
                         </div>
                         <div className="py-3 px-2 flex flex-col items-center justify-center border-r border-white/10">
-                            <span className="text-white text-base lg:text-lg xl:text-[20px] tracking-wider font-bold">达利美焙辰</span>
-                            <span className="text-zinc-500 text-xs font-bold tracking-widest mt-0.5">MEIBEICHEN</span>
+                            <span className="text-white text-base lg:text-lg xl:text-[20px] tracking-wider font-bold">顺丰控股</span>
+                            <span className="text-zinc-500 text-xs font-bold tracking-widest mt-0.5">SF EXPRESS</span>
                         </div>
                         <div className="py-3 px-2 flex flex-col items-center justify-center border-r border-white/10">
-                            <span className="text-white text-base lg:text-lg xl:text-[20px] tracking-wider font-bold">宾堡/曼可顿/嘉顿</span>
-                            <span className="text-zinc-500 text-xs font-bold tracking-widest mt-0.5">MULTINATIONALS</span>
+                            <span className="text-white text-base lg:text-lg xl:text-[20px] tracking-wider font-bold">菜鸟</span>
+                            <span className="text-zinc-500 text-xs font-bold tracking-widest mt-0.5">CAINIAO</span>
                         </div>
                         <div className="py-3 px-2 flex flex-col items-center justify-center border-r border-white/10">
-                            <span className="text-white text-base lg:text-lg xl:text-[20px] tracking-wider font-bold">便利店自营 (罗森/711/全家)</span>
-                            <span className="text-zinc-500 text-xs font-bold tracking-widest mt-0.5">CVS PRIVATE BRAND</span>
+                            <span className="text-white text-base lg:text-lg xl:text-[20px] tracking-wider font-bold">通达系与极兔</span>
+                            <span className="text-zinc-500 text-xs font-bold tracking-widest mt-0.5">FRANCHISE EXPRESS</span>
                         </div>
                         <div className="py-3 px-2 flex flex-col items-center justify-center">
-                            <span className="text-white text-base lg:text-lg xl:text-[20px] tracking-wider font-bold">山姆/盒马自有品牌</span>
-                            <span className="text-zinc-500 text-xs font-bold tracking-widest mt-0.5">RETAIL PB</span>
+                            <span className="text-white text-base lg:text-lg xl:text-[20px] tracking-wider font-bold">制造业系物流</span>
+                            <span className="text-zinc-500 text-xs font-bold tracking-widest mt-0.5">MANUFACTURER 3PL</span>
                         </div>
                     </div>
 
@@ -53,90 +53,90 @@ export default function Page_BrandCompetitors() {
                                 品牌背景与地位
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200 flex flex-col justify-center">
-                                <p className="font-semibold text-white">全国化布局领先</p>
-                                <p className="text-zinc-400 mt-1">● 24个中央工厂，占短保市场约35%份额，行业领头羊。</p>
+                                <p className="font-semibold text-white">电商自建物流独立而来</p>
+                                <p className="text-zinc-400 mt-1">● 2007年起自建仓配，2017年独立开放，2021年港股上市，自营仓储规模国内领先。</p>
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex flex-col justify-center">
-                                <p className="font-semibold text-white">强势新秀品牌</p>
-                                <p className="text-zinc-400 mt-1">● 达利旗下短保品牌，资金实力雄厚，渠道下沉极深。</p>
+                                <p className="font-semibold text-white">综合物流龙头</p>
+                                <p className="text-zinc-400 mt-1">● 1993年创立，自称亚洲最大、全球第四大综合物流服务商，时效快递长期领先。</p>
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex flex-col justify-center">
-                                <p className="font-semibold text-white">区域跨国巨头</p>
-                                <p className="text-zinc-400 mt-1">● 跨国巨头，曼可顿深耕北方/华东，嘉顿深耕南方。</p>
+                                <p className="font-semibold text-white">平台型物流网络</p>
+                                <p className="text-zinc-400 mt-1">● 阿里旗下，2013年成立，以搭平台、整合社会运力为主，跨境处于全球第一梯队。</p>
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex flex-col justify-center">
-                                <p className="font-semibold text-white">便利零售自有品牌</p>
-                                <p className="text-zinc-400 mt-1">● 便利店自营短保，依托庞大终端网点及高频客流迅速崛起。</p>
+                                <p className="font-semibold text-white">加盟制电商快递</p>
+                                <p className="text-zinc-400 mt-1">● 中通、圆通、韵达、申通与极兔靠加盟网络承接电商包裹，中通业务量连续十年第一。</p>
                             </div>
                             <div className="py-2 px-4 text-zinc-300 flex flex-col justify-center">
-                                <p className="font-semibold text-white">会员新零售自有品牌</p>
-                                <p className="text-zinc-400 mt-1">● 仓储新零售巨头自营，整合全球大宗供应链，市占率上升。</p>
+                                <p className="font-semibold text-white">产业背景第三方物流</p>
+                                <p className="text-zinc-400 mt-1">● 日日顺（海尔系）、安得智联（美的系）由制造企业内部物流转型对外服务。</p>
                             </div>
                         </div>
 
-                        {/* Row 2: 经营特征 */}
+                        {/* Row 2: 财务及经营特征 */}
                         <div className="flex-1 grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] group hover:bg-white/[0.01] transition-colors">
                             <div className="py-2 px-3 flex items-center justify-center border-r border-white/5 bg-black/40 text-center font-bold text-zinc-300">
                                 财务及经营特征
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200 flex items-center">
-                                <p>● 2025年营收54.48亿，净利润2.84亿，折旧增加导致利润波动。</p>
+                                <p>● 2025年收入2171亿（+18.8%），归母净利66.5亿，经调整净利77.1亿，毛利率9.1%。</p>
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
-                                <p>● 共享达利集团分销网络与地推资源，地推渗透强，周转率高。</p>
+                                <p>● 2025年收入3082亿（+8.4%），归母净利111.2亿，毛利率13.3%，规模与盈利均更厚。</p>
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
-                                <p>● 占据一二线中高端渠道，高溢价与中高毛利，稳健运行。</p>
+                                <p>● 2025财年收入1013亿（+2%），经调整EBITA仅3.0亿，2026财年起不再单独披露。</p>
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
-                                <p>● 扣点费用极低，独占终端主场高转化，毛利空间大。</p>
+                                <p>● 中通2025年收入491亿（+10.9%），业务量385.2亿件，调整后净利95.1亿（-6.3%）。</p>
                             </div>
                             <div className="py-2 px-4 text-zinc-300 flex items-center">
-                                <p>● 零营销推广费用，依靠量贩大规格高周转，整体成本极低。</p>
+                                <p>● 安得智联2025年收入214.5亿、净利4.5亿；日日顺列合同物流百强第5。</p>
                             </div>
                         </div>
 
-                        {/* Row 3: 产品与研发 */}
+                        {/* Row 3: 网络与能力 */}
                         <div className="flex-1 grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] group hover:bg-white/[0.01] transition-colors">
                             <div className="py-2 px-3 flex items-center justify-center border-r border-white/5 bg-black/40 text-center font-bold text-zinc-300">
-                                产品与研发
+                                网络与能力
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200 flex items-center">
-                                <p>● 研发投入2625万，主打经典大众面包，正开发健康低糖系列。</p>
+                                <p>● 1600+自营仓与2000+云仓、3400万㎡，54万自有配送人员，仓配一体是核心壁垒。</p>
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
-                                <p>● 新品开发与推广敏捷，主打“汤熟”、“纯豆浆”等细分新工艺。</p>
+                                <p>● 自有航空机队与鄂州枢纽支撑高时效，国际业务覆盖95个国家和地区。</p>
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
-                                <p>● 西式配方成熟度极高，品控标准与全球采购供应链领先。</p>
+                                <p>● 轻资产为主，靠平台调度与技术输出，海外自建本地快递与机器人仓。</p>
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
-                                <p>● 灵活代工(OEM)模式，新品迭代极快，口味包装贴合白领。</p>
+                                <p>● 转运中心自营、末端加盟，网点密度极高、单票成本极低，服务由加盟商决定。</p>
                             </div>
                             <div className="py-2 px-4 text-zinc-300 flex items-center">
-                                <p>● 打造麻薯、瑞士卷等现象级爆款，性价比高，去化速度快。</p>
+                                <p>● 长于生产物流、统仓统配与送装一体，仓网围绕制造基地和家电渠道布局。</p>
                             </div>
                         </div>
 
-                        {/* Row 4: 渠道特征 */}
+                        {/* Row 4: 客户与业务结构 */}
                         <div className="flex-1 grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] group hover:bg-white/[0.01] transition-colors">
                             <div className="py-2 px-3 flex items-center justify-center border-r border-white/5 bg-black/40 text-center font-bold text-zinc-300">
-                                渠道特征
+                                客户与业务结构
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200 flex items-center">
-                                <p>● 高度依赖大型KA商超，正发力下沉散店与线上渠道。</p>
+                                <p>● 一体化供应链占53.5%、外部客户占63%，B端合约与C端寄递并重。</p>
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
-                                <p>● 依托达利地推铁军，饱和式渗透散店及传统夫妻老婆店。</p>
+                                <p>● 235万企业客户、8亿个人用户，时效件、快运、冷运、同城、国际多线并行。</p>
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
-                                <p>● 牢牢占据一二线核心商圈大型商超，及罗森、全家等高端便利。</p>
+                                <p>● 主要服务淘天与跨境商家，国内物流职能部分回归电商侧，重心转向跨境。</p>
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
-                                <p>● 占据门店收银黄金货架陈列，冷链一日一配，渠道链路闭环。</p>
+                                <p>● 高度依赖电商平台件，客户是商家与平台，近年个人散件占比在快速提升。</p>
                             </div>
                             <div className="py-2 px-4 text-zinc-300 flex items-center">
-                                <p>● 闭环的付费会员店现场烘焙展示，结合自有APP闪送极速到家。</p>
+                                <p>● 关联方占比仍高（安得智联来自美的的收入占39.6%），正加速拓展第三方客户。</p>
                             </div>
                         </div>
 
@@ -146,41 +146,41 @@ export default function Page_BrandCompetitors() {
                                 品牌定调
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 bg-[#004CE5]/5 text-zinc-200 font-medium flex items-center">
-                                <p>“大众化、高性价比的全国性经典短保面包”</p>
+                                <p>“自营仓配一体、送货上门的一体化供应链服务商”</p>
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 text-zinc-300 font-medium flex items-center">
-                                <p>“多样、新颖、高性价比的日常烘焙代餐”</p>
+                                <p>“时效最稳、覆盖最全的综合物流服务商”</p>
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 text-zinc-300 font-medium flex items-center">
-                                <p>“主打西式、品质与一二线都市商超的代表”</p>
+                                <p>“整合社会运力的全球化智慧物流平台”</p>
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 text-zinc-300 font-medium flex items-center">
-                                <p>“年轻、便携、贴合白领快节奏的高效早餐”</p>
+                                <p>“性价比优先、规模驱动的电商包裹网络”</p>
                             </div>
                             <div className="py-2 px-4 text-zinc-300 font-medium flex items-center">
-                                <p>“中产阶层、家庭化、极致量贩性价比的储备烘焙”</p>
+                                <p>“懂产业、能做生产物流与送装一体的行业专家”</p>
                             </div>
                         </div>
 
-                        {/* Row 6: 相对态势 */}
+                        {/* Row 6: 竞争态势 */}
                         <div className="flex-1 grid grid-cols-[130px_1.2fr_1fr_1fr_1.1fr_1fr] group hover:bg-white/[0.01] transition-colors">
                             <div className="py-2 px-3 flex items-center justify-center border-r border-white/5 bg-black/40 text-center font-bold text-zinc-300">
                                 竞争态势
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 bg-[#004CE5]/10 text-zinc-200 border-b-2 border-b-[#004CE5] font-semibold flex items-center">
-                                <p>● 大盘防守者：基本盘巨大，正稳固防线并积极进行策略调整。</p>
+                                <p>● 主场卫冕者：仓配一体壁垒稳固，需同时把外部客户占比与利润率做上去。</p>
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
-                                <p>● 强力抢食者：依托庞大成熟网络，侵蚀北方和南方重合市场。</p>
+                                <p>● 全面对位者：在时效、快运、冷链、国际多个赛道正面交锋，大众认知更强。</p>
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
-                                <p>● 稳健防御者：牢守外资商超与连锁便利传统领地，防线稳固。</p>
+                                <p>● 侧翼牵制者：以平台调度与跨境能力争夺商家的履约入口。</p>
                             </div>
                             <div className="py-2 px-4 border-r border-white/5 text-zinc-300 flex items-center">
-                                <p>● 终端截流者：直接在离年轻客群最近的零售终端进行拦截与替代。</p>
+                                <p>● 价格分流者：用极低单价持续分流对时效不敏感的电商包裹。</p>
                             </div>
                             <div className="py-2 px-4 text-zinc-300 flex items-center">
-                                <p>● 跨界竞争者：通过大容量极致性价比，分流家庭采购性早餐。</p>
+                                <p>● 垂直蚕食者：在家电、家居等特定行业以产业理解争抢一体化供应链订单。</p>
                             </div>
                         </div>
 
@@ -190,7 +190,7 @@ export default function Page_BrandCompetitors() {
                 {/* Footer Note */}
                 <div className="w-full flex justify-end mt-2 px-0 shrink-0">
                     <div className="text-zinc-500 text-[11px] lg:text-[12px] xl:text-[13px] text-right space-y-0.5 leading-tight">
-                        <p>数据来源：公开披露财报（2025/2026Q1）、行业公开统计研报、GEO消费心智数据库</p>
+                        <p>数据来源：各公司2025年年报及业绩公告、阿里巴巴集团财报、安得智联港交所招股书、中国合同物流百强榜、国家邮政局2025年行业运行数据</p>
                     </div>
                 </div>
 

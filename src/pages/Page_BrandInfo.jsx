@@ -15,10 +15,10 @@ export default function Page_BrandInfo() {
                 {/* 核心数据 Metrics (4 Columns) */}
                 <div className="grid grid-cols-4 gap-6 w-full shrink-0">
                     {[
-                        { label: '创立时间', value: '1997年' },
-                        { label: '现代化工厂', value: '24个' },
-                        { label: '核心大盘营收', value: '53.24亿' },
-                        { label: '终端经销商', value: '950+个' },
+                        { label: '独立运营', value: '2017年' },
+                        { label: '自营仓库', value: '1600+个' },
+                        { label: '2025年总收入', value: '2171亿' },
+                        { label: '员工总数', value: '68.3万人' },
                     ].map((item, idx) => (
                         <div key={idx} className="bg-zinc-900/60 border border-white/10 rounded-xl py-7 flex flex-col items-center justify-center shadow-lg hover:border-white/20 transition-all duration-300">
                             <span className="text-zinc-400 text-base xl:text-lg tracking-widest mb-2 font-medium">{item.label}</span>
@@ -36,7 +36,7 @@ export default function Page_BrandInfo() {
                             品牌基础简介
                         </h3>
                         <p className="text-zinc-300 text-lg lg:text-[20px] xl:text-[22px] leading-relaxed text-justify tracking-wide">
-                            桃李面包股份有限公司由退休教师吴志刚于1997年在沈阳创立。作为中国本土传统的烘焙食品制造巨头，公司主营保质期在4~15天左右的“短保”包装面包、糕点，以及月饼、粽子等季节性节日食品。
+                            京东物流是京东集团旗下的供应链解决方案及物流服务商。2007年起自建仓配体系，2017年独立运营并对外开放，2021年在港交所上市（2618.HK），运营仓储、运输、末端配送、大件、冷链与跨境六大网络。
                         </p>
                     </div>
 
@@ -48,9 +48,9 @@ export default function Page_BrandInfo() {
                         </h3>
                         <div className="text-zinc-300 text-lg lg:text-[20px] xl:text-[22px] leading-relaxed text-justify tracking-wide flex flex-col gap-4">
                             <strong className="text-white text-xl lg:text-[22px] xl:text-[24px] border-l-4 border-[#004CE5] pl-3.5">
-                                “专注大众化、高性价比的‘短保’包装面包全国性领导品牌。”
+                                “以一体化供应链为核心赛道的技术驱动型物流服务商。”
                             </strong>
-                            不同于现烤烘焙与长保工业面包，公司主打“新鲜、高性价比的日常早餐”，通过“中央工厂+批发”规模效应和清晨高频配送占领大众餐桌。
+                            不同于以“收件—中转—派件”为主的网络型快递公司，京东物流把货提前放进离消费者最近的仓库，并为客户托管从入库、库存分布到末端交付与退换货的全链路。
                         </div>
                     </div>
                 </div>
@@ -68,19 +68,19 @@ export default function Page_BrandInfo() {
                         {/* Column 1 */}
                         <div className="border-l border-white/20 pl-6 flex flex-col justify-start">
                             <h4 className="text-xl lg:text-2xl font-bold text-white mb-3 tracking-wider">
-                                第一类：都市刚需早餐人群
+                                第一类：需要供应链托管的企业客户（B端）
                             </h4>
                             <p className="text-base lg:text-[19px] xl:text-[21px] text-zinc-400 leading-relaxed text-justify tracking-wide">
-                                聚焦学生、白领、蓝领等高节奏群体。主要满足他们清晨即拿即走、高效率且营养基础的早餐代餐诉求。
+                                覆盖快消、家电家居、3C、服装、汽车、生鲜医药等行业的品牌方与制造企业，2025年达9.1万家，核心诉求是降库存、降成本、保交付。
                             </p>
                         </div>
                         {/* Column 2 */}
                         <div className="border-l border-white/20 pl-6 flex flex-col justify-start">
                             <h4 className="text-xl lg:text-2xl font-bold text-white mb-3 tracking-wider">
-                                第二类：传统家庭消费与囤货客群
+                                第二类：寄递与到家服务的个人及中小商家（C端）
                             </h4>
                             <p className="text-base lg:text-[19px] xl:text-[21px] text-zinc-400 leading-relaxed text-justify tracking-wide">
-                                通过大包装切片、手撕面包等经典大单品，覆盖社区、大众商超及下沉市场的日常家庭日常消费。
+                                通过京东快递、大件送装、冷链寄递与即时配送触达，关心时效准不准、上不上门、丢损能不能赔。
                             </p>
                         </div>
                     </div>

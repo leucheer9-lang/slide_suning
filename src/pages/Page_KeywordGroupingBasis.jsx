@@ -12,16 +12,16 @@ const basesList = [
     },
     {
         num: '02',
-        title: '2. 顺应快消品“意图泛化”特性，拦截To C流量',
+        title: '2. 植入快消品高频场景词，拦截To C流量',
         content: [
             { type: 'paragraph', text: '消费者极少主动搜索面包具体型号，绝大部分搜索来源于生活痛点与高频场景。GEO的核心在于将桃李面包“植入”这些高频场景词，从而在AI端拦截海量的To C泛流量。' }
         ]
     },
     {
         num: '03',
-        title: '3. 隔离食安雷区与负面信息',
+        title: '3. 单独分组品牌词，隔离负面信息',
         content: [
-            { type: 'paragraph', text: '短保“0防腐”在运输与储存中易产生偶发霉变，易被AI抓取误导并放大为食安危机。因此必须单独分组舆情词，建立“食安防波堤”，向AI投喂科普与优质语料以防守净化。' }
+            { type: 'paragraph', text: '短保“0防腐”在运输与储存中易产生偶发霉变，易被AI抓取误导并放大为食安危机。因此必须单独分组品牌词，建立“食安防波堤”，向AI投喂科普与优质语料以防守净化。' }
         ]
     },
     {
@@ -60,7 +60,7 @@ export default function Page_KeywordGroupingBasis() {
                         >
                             {/* Luminous indicator bar using brand accent blue #004CE5 */}
                             <div className="absolute top-0 left-0 w-full h-[3px] bg-[#004CE5] opacity-60 group-hover:opacity-100 transition-opacity"></div>
-                            
+
                             <div className="flex items-center justify-between mb-2 shrink-0">
                                 <h3 className="text-[17px] lg:text-[19px] xl:text-[22px] font-extrabold text-white tracking-wider flex items-center gap-2">
                                     <span className="w-1.5 h-4 bg-[#004CE5] rounded-full"></span>

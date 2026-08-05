@@ -10,10 +10,10 @@ export default function Page_PainPoint4_SalesModel_Solution() {
             <div className="w-full px-12 sm:px-16 pt-4 pb-2 relative z-10 shrink-0 text-left">
                 <div className="inline-block border border-white/20 bg-white/5 rounded-full px-4 py-1 mb-2">
                     <span className="text-zinc-300 text-sm tracking-widest font-bold mr-2">困境</span>
-                    <span className="text-[#004CE5] font-black text-base">03</span>
+                    <span className="text-[#004CE5] font-black text-base">02</span>
                 </div>
                 <h1 className="text-[32px] xl:text-[36px] font-bold text-zinc-100 tracking-wider">
-                    “0防腐”带来的食安双刃剑，偶发性变质极易被AI抓取放大
+                    偶发性服务事故极易被AI抓取放大
                 </h1>
             </div>
 
@@ -26,7 +26,7 @@ export default function Page_PainPoint4_SalesModel_Solution() {
                     <div className="w-full h-full bg-[#0a0a0a] border border-white/10 rounded-2xl p-6 shadow-2xl flex items-center justify-center relative overflow-hidden">
                         <img 
                             src="/Summit/painpoint-img-3-solution.png" 
-                            alt="“0防腐”带来的食安双刃剑，偶发性变质极易被AI抓取放大 解法" 
+                            alt="偶发性服务事故极易被AI抓取放大 解法（图片位待替换）" 
                             className="max-h-full max-w-full object-contain rounded-lg"
                         />
                     </div>
@@ -39,7 +39,7 @@ export default function Page_PainPoint4_SalesModel_Solution() {
                         解法
                     </div>
                     <p className="text-zinc-200 text-lg lg:text-[20px] font-bold leading-relaxed text-justify flex-1">
-                        建立品牌数据库 + 主动纠偏 + 正向语料干预 (详见方案第四部分)
+                        建立品牌服务事实数据库 + 个案主动纠偏 + 正向履约语料持续供给 (详见方案第四部分)
                     </p>
                 </div>
             </div>

@@ -43,32 +43,32 @@ export default function Page_NegativeInfoHandling() {
                             {/* Source */}
                             <div className="col-span-2 flex flex-col items-center justify-center border-r border-white/10 h-full shrink-0">
                                 <span className="text-[17px] lg:text-[19px] xl:text-[22px] font-black text-blue-500 tracking-wide text-center">
-                                    渠道价格混乱
+                                    报价口径混乱
                                 </span>
                             </div>
 
                             {/* Situation */}
                             <div className="col-span-3 pl-4 pr-2 border-r border-white/5 h-full flex items-center">
                                 <p className="text-zinc-200 text-[14px] lg:text-[15.5px] xl:text-[18px] leading-relaxed font-bold">
-                                    部分经销商或分销自媒体发布不实的促销政策、临期打折价格或违规串货低价，导致价格体系混乱，AI抓取后乱报出厂价或零售价。
+                                    第三方寄件平台、代下单商家流传的折扣价与优惠券截图，和官方价目表、企业协议价并存，AI抓取后常报出一个谁都对不上的运费。
                                 </p>
                             </div>
 
                             {/* Difficulty */}
                             <div className="col-span-3 pl-4 pr-2 border-r border-white/5 h-full flex items-center">
                                 <p className="text-zinc-200 text-[14px] lg:text-[15.5px] xl:text-[18px] leading-relaxed font-bold">
-                                    快消渠道极其碎片化，临期特卖与散装折价信息满天飞，很难逐一通过常规途径申诉撤稿。
+                                    这些低价本身真实存在，只是隐去了渠道和条件前提，无法按虚假信息去申诉撤稿。
                                 </p>
                             </div>
 
                             {/* Response */}
                             <div className="col-span-4 pl-4 h-full flex flex-col justify-center gap-1.5">
                                 <div className="text-[16px] lg:text-[18px] xl:text-[20px] font-black text-blue-400 tracking-wide border-b border-blue-500/20 pb-1 w-fit shrink-0">
-                                    价格规范 + 渠道管束 + 信息重置
+                                    口径统一 + 前提锚定 + 信息重置
                                 </div>
                                 <div className="flex flex-col gap-1 text-[13px] lg:text-[14.5px] xl:text-[17px] text-zinc-300 font-bold leading-relaxed">
-                                    <div>1. 在官方平台及大型分销体系发布标准零售价与招商政策指南。</div>
-                                    <div>2. 纠治严重破价的线上商户，建立警告与纠偏机制。</div>
+                                    <div>1. 在官方渠道公布完整计价规则，明确渠道、重量体积、时效产品与结算方式。</div>
+                                    <div>2. 用带前提条件的标准答案，持续覆盖流传在外的孤立数字。</div>
                                 </div>
                             </div>
                         </div>
@@ -78,31 +78,31 @@ export default function Page_NegativeInfoHandling() {
                             {/* Source */}
                             <div className="col-span-2 flex flex-col items-center justify-center border-r border-white/10 h-full shrink-0">
                                 <span className="text-[17px] lg:text-[19px] xl:text-[22px] font-black text-blue-400 tracking-wide text-center">
-                                    产品抗性吐槽
+                                    服务体验吐槽
                                 </span>
                             </div>
 
                             {/* Situation */}
                             <div className="col-span-3 pl-4 pr-2 border-r border-white/5 h-full flex items-center">
                                 <p className="text-zinc-200 text-[14px] lg:text-[15.5px] xl:text-[18px] leading-relaxed font-bold">
-                                    网民对短保面包“添加防腐剂（丙酸钙等）”的配料表争议，以及对于保质期短易霉变、风味粗糙等真实关切的吐槽。
+                                    用户对派送不上门、放代收点、时效延误、破损丢件后理赔慢等真实体验的吐槽，通常还带着图片和聊天记录。
                                 </p>
                             </div>
 
                             {/* Difficulty */}
                             <div className="col-span-3 pl-4 pr-2 border-r border-white/5 h-full flex items-center">
                                 <p className="text-zinc-200 text-[14px] lg:text-[15.5px] xl:text-[18px] leading-relaxed font-bold">
-                                    食品安全与健康是大众的核心痛点，强行堵嘴或否认极易引发网络对立，甚至引发二次公关风险。
+                                    这些多是真实发生的个案，硬删或否认极易激起对立，反而把传播量推得更高。
                                 </p>
                             </div>
 
                             {/* Response */}
                             <div className="col-span-4 pl-4 h-full flex flex-col justify-center gap-1.5">
                                 <div className="text-[16px] lg:text-[18px] xl:text-[20px] font-black text-blue-400 tracking-wide border-b border-blue-500/20 pb-1 w-fit shrink-0">
-                                    配料表科普与安全标准释疑
+                                    标准公开 + 个案闭环 + 履约实证
                                 </div>
                                 <p className="text-[13px] lg:text-[14.5px] xl:text-[17px] text-zinc-300 font-bold leading-relaxed">
-                                    铺设短保发酵工艺科普、严格的烘焙灭菌流程以及防腐剂符合国家食品安全标准的科学说明，稀释消费者疑虑，引导 AI 输出正面健康评价。
+                                    公开送货上门、送装一体与理赔时效的服务标准和投诉入口，把个案的处理结果沉淀成可检索内容，并持续输出真实履约案例稀释情绪化样本。
                                 </p>
                             </div>
                         </div>
@@ -119,7 +119,7 @@ export default function Page_NegativeInfoHandling() {
                             {/* Situation */}
                             <div className="col-span-3 pl-4 pr-2 border-r border-white/5 h-full flex items-center">
                                 <p className="text-zinc-200 text-[14px] lg:text-[15.5px] xl:text-[18px] leading-relaxed font-bold">
-                                    竞品雇佣水军发布的拉踩贴、伪造“面包吃出异物”、“包装破损霉变”等食安偶发事件的片面抹黑言论与视频。
+                                    竞品或利益相关方发布的拉踩贴，把偶发的丢件、暴力分拣、旺季爆仓剪辑成“这家不行”的片面结论。
                                 </p>
                             </div>
 
@@ -133,11 +133,11 @@ export default function Page_NegativeInfoHandling() {
                             {/* Response */}
                             <div className="col-span-4 pl-4 h-full flex flex-col justify-center gap-1.5">
                                 <div className="text-[16px] lg:text-[18px] xl:text-[20px] font-black text-blue-400 tracking-wide border-b border-blue-500/20 pb-1 w-fit shrink-0">
-                                    质检公示 + 法务维权 + 权威评测
+                                    数据公示 + 法务维权 + 第三方背书
                                 </div>
                                 <div className="flex flex-col gap-1 text-[13px] lg:text-[14.5px] xl:text-[17px] text-zinc-300 font-bold leading-relaxed">
-                                    <div>1. 法务协助平台进行侵权申诉撤稿。</div>
-                                    <div>2. 联合第三方权威烘焙评测与消协，树立行业标杆。</div>
+                                    <div>1. 法务协助平台进行不实信息申诉与撤稿。</div>
+                                    <div>2. 引用国家邮政局满意度调查等第三方数据，建立可核验的对照。</div>
                                 </div>
                             </div>
                         </div>
@@ -154,24 +154,24 @@ export default function Page_NegativeInfoHandling() {
                             {/* Situation */}
                             <div className="col-span-3 pl-4 pr-2 border-r border-white/5 h-full flex items-center">
                                 <p className="text-zinc-200 text-[14px] lg:text-[15.5px] xl:text-[18px] leading-relaxed font-bold">
-                                    互联网上残留的桃李历史食安抽检风波、已被澄清的陈旧事故旧闻，或已经停产失效的产品促销政策。
+                                    网上残留的历史投诉事件、已经调整的旧版收费标准，以及德邦、跨越速运并入之前的陈旧报道。
                                 </p>
                             </div>
 
                             {/* Difficulty */}
                             <div className="col-span-3 pl-4 pr-2 border-r border-white/5 h-full flex items-center">
                                 <p className="text-zinc-200 text-[14px] lg:text-[15.5px] xl:text-[18px] leading-relaxed font-bold">
-                                    AI 对官方权威媒体信源权重极高，抓取旧数据后会与当前在售阶段混淆，容易被大模型作为“近期食安热点”误导输出。
+                                    AI 对官方权威媒体信源权重极高，抓到旧数据后会与当前的服务标准和价目混淆，当成近期情况直接输出。
                                 </p>
                             </div>
 
                             {/* Response */}
                             <div className="col-span-4 pl-4 h-full flex flex-col justify-center gap-1.5">
                                 <div className="text-[16px] lg:text-[18px] xl:text-[20px] font-black text-blue-400 tracking-wide border-b border-blue-500/20 pb-1 w-fit shrink-0">
-                                    源头更替与官方澄清覆盖
+                                    源头更替与官方口径覆盖
                                 </div>
                                 <p className="text-[13px] lg:text-[14.5px] xl:text-[17px] text-zinc-300 font-bold leading-relaxed">
-                                    清理或申诉已解决的陈旧负面历史链接，发布官方近期最新质量标准与企业社会责任报告，快速更新 AI 检索缓存记忆。
+                                    清理或申诉已解决的陈旧负面链接，持续发布最新服务标准、时效承诺与可持续发展报告，尽快刷新 AI 的检索记忆。
                                 </p>
                             </div>
                         </div>

@@ -1,68 +1,68 @@
 import React from 'react';
 
 const cEndWords = [
-    { text: '性价比高的面包', size: 'text-[1.9rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
-    { text: '适合上班族早餐的面包', size: 'text-[1.7rem]', weight: 'font-black', color: 'text-zinc-100', opacity: 'opacity-100' },
-    { text: '好不好吃', size: 'text-[1.7rem]', weight: 'font-bold', color: 'text-[#004CE5]', opacity: 'opacity-95' },
-    { text: '便不便宜', size: 'text-[1.6rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-100' },
-    { text: '方不方便', size: 'text-[1.6rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
-    { text: '减脂期快手早餐推荐', size: 'text-[1.5rem]', weight: 'font-semibold', color: 'text-zinc-300', opacity: 'opacity-90' },
-    { text: '配料表干净的儿童零食', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-[#004CE5]/80', opacity: 'opacity-90' },
-    { text: '打工人无负担下午茶', size: 'text-[1.4rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-85' },
-    { text: '快手营养早餐', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
-    { text: '低脂健康代餐推荐', size: 'text-[1.3rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-80' },
-    { text: '饱腹低脂代餐', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-zinc-300', opacity: 'opacity-85' },
-    { text: '牛奶吐司推荐', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-85' },
-    { text: '儿童营养早餐怎么做', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-95' },
-    { text: '减脂主食首选', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-zinc-300', opacity: 'opacity-85' },
-    { text: '低糖杂粮面包', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-[#004CE5]/70', opacity: 'opacity-80' },
-    { text: '全麦面包推荐', size: 'text-[1.6rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-95' },
-    { text: '无蔗糖健康食品', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-zinc-200', opacity: 'opacity-90' },
-    { text: '好吃不贵的吐司', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-95' },
-    { text: '平价学生党早餐', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-85' },
-    { text: '打工人饱腹夜宵', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-80' },
-    { text: '手撕面包保质期', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-[#004CE5]/60', opacity: 'opacity-75' },
-    { text: '低糖吐司热量', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-85' },
-    { text: '控糖早餐搭配', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-white', opacity: 'opacity-90' },
-    { text: '办公室解馋小零食', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-80' },
-    { text: '新鲜即食面包', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-[#004CE5]/90', opacity: 'opacity-95' },
-    { text: '高钙儿童早餐', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-400', opacity: 'opacity-80' },
-    { text: '全麦面包热量表', size: 'text-[1.3rem]', weight: 'font-semibold', color: 'text-zinc-200', opacity: 'opacity-85' },
-    { text: '快手代餐吐司', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-90' },
-    { text: '低卡吐司片品牌', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-80' },
-    { text: '网红吐司配方', size: 'text-[1.1rem]', weight: 'font-light', color: 'text-zinc-600', opacity: 'opacity-70' }
+    { text: '寄快递哪家便宜', size: 'text-[1.9rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
+    { text: '京东快递多久能到', size: 'text-[1.7rem]', weight: 'font-black', color: 'text-zinc-100', opacity: 'opacity-100' },
+    { text: '多少钱', size: 'text-[1.7rem]', weight: 'font-bold', color: 'text-[#004CE5]', opacity: 'opacity-95' },
+    { text: '几天到', size: 'text-[1.6rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-100' },
+    { text: '上不上门', size: 'text-[1.6rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
+    { text: '快递丢件怎么赔', size: 'text-[1.5rem]', weight: 'font-semibold', color: 'text-zinc-300', opacity: 'opacity-90' },
+    { text: '大件家具怎么寄比较划算', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-[#004CE5]/80', opacity: 'opacity-90' },
+    { text: '搬家寄行李哪家好', size: 'text-[1.4rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-85' },
+    { text: '上门取件怎么约', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
+    { text: '快递代收点能拒收吗', size: 'text-[1.3rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-80' },
+    { text: '哪些快递送货上门', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-zinc-300', opacity: 'opacity-85' },
+    { text: '首重续重怎么算', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-85' },
+    { text: '家电送装一体要加钱吗', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-95' },
+    { text: '生鲜寄递会不会坏', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-zinc-300', opacity: 'opacity-85' },
+    { text: '寄电脑要不要保价', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-[#004CE5]/70', opacity: 'opacity-80' },
+    { text: '同城当天送达', size: 'text-[1.6rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-95' },
+    { text: '寄快递到国外多少钱', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-zinc-200', opacity: 'opacity-90' },
+    { text: '快递不上门怎么投诉', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-95' },
+    { text: '学生党寄行李回家', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-85' },
+    { text: '寄电动车怎么寄', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-80' },
+    { text: '保价划算吗', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-[#004CE5]/60', opacity: 'opacity-75' },
+    { text: '次日达和隔日达区别', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-85' },
+    { text: '哪家快递最不容易破损', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-white', opacity: 'opacity-90' },
+    { text: '上门退换货流程', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-80' },
+    { text: '大件物流哪家便宜', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-[#004CE5]/90', opacity: 'opacity-95' },
+    { text: '药品冷链能寄吗', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-400', opacity: 'opacity-80' },
+    { text: '快递时效对比', size: 'text-[1.3rem]', weight: 'font-semibold', color: 'text-zinc-200', opacity: 'opacity-85' },
+    { text: '春节期间还送吗', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-90' },
+    { text: '偏远地区加收多少', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-80' },
+    { text: '快递单号查询', size: 'text-[1.1rem]', weight: 'font-light', color: 'text-zinc-600', opacity: 'opacity-70' }
 ];
 
 const bEndWords = [
-    { text: '毛利高的面包批发', size: 'text-[1.9rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
-    { text: '好卖不容易滞销的面包', size: 'text-[1.7rem]', weight: 'font-black', color: 'text-zinc-100', opacity: 'opacity-100' },
-    { text: '赚不赚钱', size: 'text-[1.7rem]', weight: 'font-bold', color: 'text-[#004CE5]', opacity: 'opacity-95' },
-    { text: '好不好卖', size: 'text-[1.6rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-100' },
-    { text: '会不会烂在手里', size: 'text-[1.6rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
-    { text: '短保面包批发政策', size: 'text-[1.5rem]', weight: 'font-semibold', color: 'text-zinc-300', opacity: 'opacity-90' },
-    { text: '临期退货保障', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-95' },
-    { text: '面包起批量与物流配送', size: 'text-[1.4rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-85' },
-    { text: '每日新鲜配送厂家', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-[#004CE5]/80', opacity: 'opacity-90' },
-    { text: '便利店进货渠道', size: 'text-[1.3rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-80' },
-    { text: '爆款面包稳定货源', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-zinc-300', opacity: 'opacity-85' },
-    { text: '高动销产品推荐', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-85' },
-    { text: '高溢价短保代理', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-85' },
-    { text: '利润率空间', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-[#004CE5]/70', opacity: 'opacity-80' },
-    { text: '商超面包进场费', size: 'text-[1.3rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-80' },
-    { text: '高周转短保面包品牌', size: 'text-[1.6rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-95' },
-    { text: '面包代理招商加盟', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-zinc-200', opacity: 'opacity-90' },
-    { text: '零食量贩店起批额', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-95' },
-    { text: '学校超市面包批发', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-85' },
-    { text: '面包冷链配履时效', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-[#004CE5]/90', opacity: 'opacity-90' },
-    { text: '短保滞销报废机制', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-350', opacity: 'opacity-80' },
-    { text: '面包中央工厂供货', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-95' },
-    { text: '终端渠道返点分成', size: 'text-[1.3rem]', weight: 'font-semibold', color: 'text-zinc-200', opacity: 'opacity-85' },
-    { text: '临期折扣店进货', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-80' },
-    { text: '面包起送标准', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-[#004CE5]/60', opacity: 'opacity-75' },
-    { text: '全国工厂物流网点', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-85' },
-    { text: '连锁商超供货协议', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-90' },
-    { text: '短保烘焙毛利空间', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-80' },
-    { text: '面包铺货陈列费', size: 'text-[1.1rem]', weight: 'font-light', color: 'text-zinc-600', opacity: 'opacity-70' }
+    { text: '一体化供应链服务商推荐', size: 'text-[1.9rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
+    { text: '电商仓配一体怎么收费', size: 'text-[1.7rem]', weight: 'font-black', color: 'text-zinc-100', opacity: 'opacity-100' },
+    { text: '能省多少成本', size: 'text-[1.7rem]', weight: 'font-bold', color: 'text-[#004CE5]', opacity: 'opacity-95' },
+    { text: '库存能不能压下来', size: 'text-[1.6rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-100' },
+    { text: '大促扛不扛得住', size: 'text-[1.6rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
+    { text: '仓储外包报价方案', size: 'text-[1.5rem]', weight: 'font-semibold', color: 'text-zinc-300', opacity: 'opacity-90' },
+    { text: '全渠道一盘货怎么做', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-95' },
+    { text: '云仓收费标准与起量门槛', size: 'text-[1.4rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-85' },
+    { text: '履约时效SLA怎么定', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-[#004CE5]/80', opacity: 'opacity-90' },
+    { text: '三方物流招标流程', size: 'text-[1.3rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-80' },
+    { text: '家电送装一体服务商', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-zinc-300', opacity: 'opacity-85' },
+    { text: '逆向物流退货处理', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-85' },
+    { text: '分仓策略怎么定', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-85' },
+    { text: '库存周转天数优化', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-[#004CE5]/70', opacity: 'opacity-80' },
+    { text: 'WMS系统对接难不难', size: 'text-[1.3rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-80' },
+    { text: '快消品供应链外包', size: 'text-[1.6rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-95' },
+    { text: '零担快运整车报价', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-zinc-200', opacity: 'opacity-90' },
+    { text: '海外仓服务商对比', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-95' },
+    { text: '保税仓一件代发', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-85' },
+    { text: '医药GSP仓储资质', size: 'text-[1.4rem]', weight: 'font-semibold', color: 'text-[#004CE5]/90', opacity: 'opacity-90' },
+    { text: '冷链仓温控标准', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-80' },
+    { text: '前置仓布局怎么规划', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-95' },
+    { text: '月结账期与结算政策', size: 'text-[1.3rem]', weight: 'font-semibold', color: 'text-zinc-200', opacity: 'opacity-85' },
+    { text: '旺季弹性产能保障', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-80' },
+    { text: '发货成本怎么测算', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-[#004CE5]/60', opacity: 'opacity-75' },
+    { text: '生产物流线边配送', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-85' },
+    { text: '供应链数字化改造', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-white', opacity: 'opacity-90' },
+    { text: '物流服务商比价', size: 'text-[1.2rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-80' },
+    { text: '仓库选址规划', size: 'text-[1.1rem]', weight: 'font-light', color: 'text-zinc-600', opacity: 'opacity-70' }
 ];
 
 export default function Page_PainPoint1_WordCloud() {
@@ -88,14 +88,14 @@ export default function Page_PainPoint1_WordCloud() {
                     <span className="text-[#004CE5] font-black text-base">01</span>
                 </div>
                 <h1 className="text-[32px] xl:text-[36px] font-bold text-zinc-100 tracking-wider">
-                    F2B2C模式下C端与B端决策逻辑割裂
+                    B端选型与C端寄件，搜索诉求分层
                 </h1>
             </div>
 
             {/* Content Container */}
             <div className="flex-1 w-full px-12 sm:px-16 pb-3 relative z-10 flex flex-col justify-between min-h-0">
                 <p className="text-zinc-400 text-lg lg:text-[20px] xl:text-[22px] leading-relaxed tracking-wide mb-4 shrink-0 text-justify">
-                    面包是典型的F2B2C（工厂-渠道终端-消费者）快消品。买面包的消费者（C端）与卖面包的经销商便利店老板（B端），在AI搜索时的意图决策逻辑有着天壤之别：C端更关心“好不好吃、便不便宜、方不方便”；B端更关心“赚不赚钱、好不好卖、会不会烂在手里”。
+                    物流是典型的“两端分离”生意：付钱的人和体验服务的人常常不是同一批。C端寄件人和收件人只关心“多少钱、几天到、上不上门、坏了赔不赔”；B端的供应链负责人、电商运营与采购则关心“库存能不能压下来、发货成本能省多少、大促扛不扛得住、系统能不能对接”。同一个“京东物流”，在这两类人的AI提问里几乎是两家不同的公司。
                 </p>
 
                 {/* Main Content: Word Clouds */}
@@ -111,7 +111,7 @@ export default function Page_PainPoint1_WordCloud() {
                                 <span className="text-[#004CE5] font-black text-lg">C端</span>
                             </div>
                             <div>
-                                <h3 className="text-lg xl:text-xl font-bold text-white tracking-wider">C端消费者关心：“好不好吃、便不便宜、方不方便”</h3>
+                                <h3 className="text-lg xl:text-xl font-bold text-white tracking-wider">C端寄件人关心：“多少钱、几天到、上不上门、坏了赔不赔”</h3>
                             </div>
                         </div>
 
@@ -147,7 +147,7 @@ export default function Page_PainPoint1_WordCloud() {
                                 <span className="text-white font-black text-lg">B端</span>
                             </div>
                             <div>
-                                <h3 className="text-lg xl:text-xl font-bold text-white tracking-wider">B端便利店/超市老板关心：“赚不赚钱、好不好卖、会不会烂在手里”</h3>
+                                <h3 className="text-lg xl:text-xl font-bold text-white tracking-wider">B端供应链负责人关心：“降本多少、库存多久、旺季稳不稳、系统通不通”</h3>
                             </div>
                         </div>
 
@@ -174,7 +174,7 @@ export default function Page_PainPoint1_WordCloud() {
                         解法
                     </div>
                     <p className="text-zinc-200 text-sm lg:text-[16px] xl:text-[17px] font-bold leading-relaxed text-justify flex-1">
-                        实施“C端场景拦截 + B端招商引流”的双轨投喂策略。针对C端高频注入“场景词”（如减脂早餐、健康代餐）提升消费心智推荐；针对B端则重点覆盖“痛点词”（如批发利润、控货履约、稳定货源），全方位打消商超老板的压货及流转顾虑。
+                        建立“C端场景答案 + B端选型依据”的双轨语料。C端围绕寄什么、寄到哪、多久到、出问题怎么办这类具体场景，沉淀能被AI直接引用的确定性答案；B端围绕行业方案、成本测算口径、服务标准与可核验的真实案例，输出能被AI当作“选型依据”的结构化内容。
                     </p>
                 </div>
             </div>

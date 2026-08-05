@@ -38,7 +38,7 @@ export default function Page_GeoOptImplementation() {
                                 把“单个关键词”当成“复杂问题场景”
                             </h4>
                             <p className="text-zinc-400 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed">
-                                用户搜“短保面包品牌推荐”，AI 不是去傻傻匹配这八个字，而是去猜用户是想直接买、想看排名、想做对比，还是怕踩坑。
+                                用户搜“一体化供应链服务商推荐”，AI 不是去傻傻匹配这几个字，而是去猜用户是想直接找服务商、想看排名、想做对比，还是怕选错。
                             </p>
                         </div>
 
@@ -63,7 +63,7 @@ export default function Page_GeoOptImplementation() {
                                 全场景覆盖，不做关键词堆砌
                             </h4>
                             <p className="text-zinc-200 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed z-10">
-                                我们的目的不是像传统作弊那样在一篇文章里狂塞关键词（不投毒），而是围绕用户“买、比、防雷”等真实诉求，提供高质量的标准答案。
+                                我们的目的不是像传统作弊那样在一篇文章里狂塞关键词（不投毒），而是围绕用户“选、比、防雷”等真实诉求，提供高质量的标准答案。
                             </p>
                         </div>
                     </div>
@@ -96,13 +96,13 @@ export default function Page_GeoOptImplementation() {
                                 面对同一个问题，AI 会兵分几路去查：
                                 <div className="mt-1.5 space-y-1 pl-2">
                                     <span className="block text-zinc-300 font-semibold">
-                                        ① 查榜单（国内短保面包排行榜）
+                                        ① 查榜单（一体化供应链服务商排行）
                                     </span>
                                     <span className="block text-zinc-300 font-semibold">
-                                        ② 查对比（桃李面包和曼可顿哪个好吃）
+                                        ② 查对比（京东物流和顺丰哪个更合适）
                                     </span>
                                     <span className="block text-zinc-300 font-semibold">
-                                        ③ 查避坑（桃李面包含防腐剂吗）
+                                        ③ 查避坑（京东物流是不是更贵）
                                     </span>
                                 </div>
                             </div>
@@ -239,7 +239,7 @@ export default function Page_GeoOptImplementation() {
                                 通过持续的数据监测，进行闭环验证与调整
                             </h4>
                             <p className="text-zinc-200 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed z-10">
-                                文章发出去只是开始。我们会每天监测 AI 到底引用了哪些文章、桃李面包排在第几名。根据这些真实反馈，不断调整我们要发什么内容、去哪个平台发。
+                                文章发出去只是开始。我们会每天监测 AI 到底引用了哪些文章、京东物流排在第几名。根据这些真实反馈，不断调整我们要发什么内容、去哪个平台发。
                             </p>
                         </div>
                     </div>

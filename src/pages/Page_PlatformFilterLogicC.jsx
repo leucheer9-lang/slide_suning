@@ -1,59 +1,215 @@
 import React from 'react';
+import { ExcelShell, TitleBar, Cell } from '../components/PlatformFilterExcelTable';
+
+/* ══════════════ 数据：换 C 组明细时只改这一段 ══════════════ */
+
+const BRAND = '薇诺娜';
+
+const ROWS = [
+    {
+        rank: 1,
+        site: 'Stuck at Home Mom',
+        cites: 5,
+        hits: 5,
+        rate: '100.00%',
+        deepseek: [0, 0],
+        doubao: [5, 5],
+        yuanbao: [0, 0],
+        tongyi: [0, 0],
+        note: `极高命中率，${BRAND}在此平台强势覆盖`,
+    },
+    {
+        rank: 2,
+        site: '廊坊新闻网',
+        cites: 5,
+        hits: 5,
+        rate: '100.00%',
+        deepseek: [0, 0],
+        doubao: [1, 1],
+        yuanbao: [4, 4],
+        tongyi: [0, 0],
+        note: `极高命中率，${BRAND}在此平台强势覆盖`,
+    },
+    {
+        rank: 3,
+        site: 'mombaby.com.tw',
+        cites: 5,
+        hits: 5,
+        rate: '100.00%',
+        deepseek: [0, 0],
+        doubao: [0, 0],
+        yuanbao: [5, 5],
+        tongyi: [0, 0],
+        note: `极高命中率，${BRAND}在此平台强势覆盖`,
+    },
+    {
+        rank: 4,
+        site: '中国搜索',
+        cites: 3,
+        hits: 3,
+        rate: '100.00%',
+        deepseek: [0, 0],
+        doubao: [0, 0],
+        yuanbao: [3, 3],
+        tongyi: [0, 0],
+        note: `极高命中率，${BRAND}在此平台强势覆盖`,
+    },
+    {
+        rank: 5,
+        site: 'ulta.com',
+        cites: 3,
+        hits: 3,
+        rate: '100.00%',
+        deepseek: [0, 0],
+        doubao: [0, 0],
+        yuanbao: [3, 3],
+        tongyi: [0, 0],
+        note: `极高命中率，${BRAND}在此平台强势覆盖`,
+    },
+];
+
+const C = {
+    title: '#7B2C2C',
+    head: '#7B2C2C',
+    zebra: '#FFF5F2',
+    border: '#E8C8C4',
+    headBorder: 'rgba(255,255,255,0.22)',
+};
+
+const COLS =
+    '0.5fr 1.35fr 0.7fr 0.95fr 0.7fr 0.75fr 0.75fr 0.7fr 0.7fr 0.7fr 0.7fr 0.85fr 0.85fr 1.7fr';
+
+const HEADERS = [
+    '排名',
+    '网站名称',
+    '引用次数',
+    `${BRAND}出现次数`,
+    '命中率',
+    'DeepSeek 引用',
+    'DeepSeek 命中',
+    '豆包 引用',
+    '豆包 命中',
+    '元宝 引用',
+    '元宝 命中',
+    '通义千问 引用',
+    '通义千问 命中',
+    '分析说明',
+];
+
+function TableC() {
+    return (
+        <ExcelShell>
+            <TitleBar bg={C.title}>C组 — {BRAND} 品牌命中率最高的前5个平台</TitleBar>
+
+            <div
+                style={{
+                    display: 'grid',
+                    gridTemplateColumns: COLS,
+                    background: C.head,
+                    color: '#fff',
+                    fontSize: 12,
+                    fontWeight: 700,
+                    height: 44,
+                    flexShrink: 0,
+                }}
+            >
+                {HEADERS.map((h, i) => (
+                    <Cell
+                        key={h}
+                        border={i < HEADERS.length - 1 ? C.headBorder : undefined}
+                        style={{
+                            fontSize: 12,
+                            whiteSpace: 'normal',
+                            textAlign: 'center',
+                            lineHeight: 1.25,
+                            padding: '4px 4px',
+                            justifyContent: 'center',
+                        }}
+                    >
+                        {h}
+                    </Cell>
+                ))}
+            </div>
+
+            <div style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: 'column' }}>
+                {ROWS.map((r, i) => (
+                    <div
+                        key={r.rank}
+                        style={{
+                            flex: 1,
+                            minHeight: 0,
+                            display: 'grid',
+                            gridTemplateColumns: COLS,
+                            background: i % 2 === 0 ? C.zebra : '#fff',
+                            borderBottom: `1px solid ${C.border}`,
+                            fontSize: 13,
+                        }}
+                    >
+                        <Cell border={C.border}>{r.rank}</Cell>
+                        <Cell align="left" bold border={C.border} title={r.site}>
+                            {r.site}
+                        </Cell>
+                        <Cell border={C.border}>{r.cites}</Cell>
+                        <Cell border={C.border} bold>
+                            {r.hits}
+                        </Cell>
+                        <Cell border={C.border} bold style={{ color: '#7B2C2C' }}>
+                            {r.rate}
+                        </Cell>
+                        <Cell border={C.border}>{r.deepseek[0]}</Cell>
+                        <Cell border={C.border}>{r.deepseek[1]}</Cell>
+                        <Cell border={C.border}>{r.doubao[0]}</Cell>
+                        <Cell border={C.border}>{r.doubao[1]}</Cell>
+                        <Cell border={C.border}>{r.yuanbao[0]}</Cell>
+                        <Cell border={C.border}>{r.yuanbao[1]}</Cell>
+                        <Cell border={C.border}>{r.tongyi[0]}</Cell>
+                        <Cell border={C.border}>{r.tongyi[1]}</Cell>
+                        <Cell align="left" title={r.note} style={{ fontSize: 12.5 }}>
+                            {r.note}
+                        </Cell>
+                    </div>
+                ))}
+            </div>
+        </ExcelShell>
+    );
+}
 
 export default function Page_PlatformFilterLogicC() {
     return (
         <div className="w-full h-full flex flex-col relative bg-black overflow-hidden text-white">
-            <div className="h-[10px] shrink-0 pointer-events-none"></div>
+            <div className="h-[10px] shrink-0 pointer-events-none" />
 
-            {/* ── Main Content Area ── */}
             <div className="flex-1 w-full max-w-[1700px] mx-auto flex flex-col items-center px-8 lg:px-16 pt-4 pb-4 z-10 min-h-0 gap-5">
-
-                {/* ── 纯净信息卡片：展示分组、维度、逻辑 ── */}
                 <div className="w-full bg-white/[0.02] border border-[#004CE5]/20 backdrop-blur-md rounded-2xl px-8 py-5 flex flex-col gap-4 shadow-lg shrink-0">
                     <div className="flex items-center gap-3">
-                        <div className="w-2.5 h-2.5 rounded-full bg-[#004CE5] shadow-[0_0_10px_#004CE5]"></div>
+                        <div className="w-2.5 h-2.5 rounded-full bg-[#004CE5] shadow-[0_0_10px_#004CE5]" />
                         <h2 className="text-2xl font-bold text-blue-100 tracking-widest">C组：高命中高频阵地</h2>
                     </div>
 
                     <div className="grid grid-cols-[1.5fr_3fr] gap-8">
                         <div className="flex flex-col gap-2">
-                            <span className="text-zinc-500 font-bold text-[1.05rem] uppercase tracking-wider">筛选维度</span>
-                            <p className="text-white/90 text-[1.2rem] font-bold tracking-wide mt-1">行业头部竞品收录偏好分析</p>
+                            <span className="text-zinc-500 font-bold text-[1.05rem] uppercase tracking-wider">
+                                筛选维度
+                            </span>
+                            <p className="text-white/90 text-[1.2rem] font-bold tracking-wide mt-1">
+                                行业头部竞品收录偏好分析
+                            </p>
                         </div>
                         <div className="flex flex-col gap-2 border-l border-white/10 pl-8">
-                            <span className="text-zinc-500 font-bold text-[1.05rem] uppercase tracking-wider">筛选逻辑动作</span>
+                            <span className="text-zinc-500 font-bold text-[1.05rem] uppercase tracking-wider">
+                                筛选逻辑动作
+                            </span>
                             <p className="text-zinc-300 text-[1.15rem] leading-relaxed mt-1">
-                                把行业头部竞品曼可顿单独进行深挖分析，将命中率（出现品牌 / 总引用次数）作为一个重要验证数值。在关联紧密的垂直和综合矩阵中选出最高命中的 5 个平台。
+                                把行业头部竞品曼可顿单独进行深挖分析，将命中率（出现品牌 / 总引用次数）作为一个重要验证数值。在关联紧密的垂直和综合矩阵中选出最高命中的
+                                5 个平台。
                             </p>
                         </div>
                     </div>
                 </div>
 
-                {/* ── 空白图片位：占据剩余几乎所有高度 ── */}
-                <div className="w-full flex-1 relative bg-white/[0.02] border border-white/10 rounded-2xl overflow-hidden flex flex-col items-center justify-center group shadow-2xl">
-                    <img
-                        src="/Add_Charts/platform-filter-logic-c.png"
-                        alt="C组筛选逻辑图"
-                        className="absolute inset-0 w-full h-full object-contain p-1 z-20"
-                        onError={(e) => { e.target.style.display = 'none'; }}
-                    />
-
-                    {/* Placeholder UI */}
-                    <div className="absolute inset-0 z-10 flex flex-col items-center justify-center pointer-events-none">
-                        <div className="w-20 h-20 mb-5 rounded-full bg-white/[0.03] flex items-center justify-center border border-white/5 text-white/20 transition-all group-hover:bg-[#004CE5]/10 group-hover:text-[#004CE5]/50 group-hover:border-[#004CE5]/30">
-                            <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                            </svg>
-                        </div>
-                        <span className="text-zinc-300 text-[1.3rem] font-bold tracking-widest text-center">
-                            C组 逻辑推导图 / 平台矩阵图占位
-                        </span>
-                        <span className="text-zinc-500/80 text-[1rem] mt-3 font-mono">
-                            文件路径: /Add_Charts/platform-filter-logic-c.png
-                        </span>
-                    </div>
+                <div className="w-full flex-1 relative bg-white border border-white/10 rounded-2xl overflow-hidden shadow-2xl min-h-0">
+                    <TableC />
                 </div>
-
             </div>
         </div>
     );
