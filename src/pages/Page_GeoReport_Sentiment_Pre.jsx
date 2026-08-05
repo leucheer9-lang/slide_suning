@@ -5,13 +5,17 @@ import { C, Card } from '../components/geoone/ui';
 import { LineChart, SentimentBar } from '../components/geoone/charts';
 
 /* ══════════════ 数据：换正负面基本情况时只改这一段 ══════════════ */
+/* 来源：GEO ONE /api/sentiments/stats · 项目 419 ToC · 2026-08-04 */
 
 const WIDTH = 1608;
 const HEIGHT = 574.5;
-const POSITIVE = 80;
-const POS_KEYWORDS = '性价比高、口感好、品质稳定';
-const NEG_KEYWORDS = '食品安全问题、偏油偏甜、风味粗糙';
+const POSITIVE = 97.5;
+const POS_KEYWORDS = '时效快、服务规范、服务体验好';
+const NEG_KEYWORDS = '不推荐、适用场景有限、价格偏高、性价比低、价格偏贵';
 const LINE_TICKS = ['100%', '80%', '60%', '40%', '20%'];
+/** tick：0=100%，每格 20%；97.5% → (100-97.5)/20 = 0.125 */
+const LINE_POINTS = [{ x: 0.5, tick: 0.125 }];
+const LINE_LABELS = ['8月4日'];
 
 export default function Page_GeoReport_Sentiment_Pre() {
     return (
@@ -25,15 +29,14 @@ export default function Page_GeoReport_Sentiment_Pre() {
                             <span className="w-1.5 h-4.5 bg-[#004CE5] rounded-full shadow-[0_0_8px_rgba(0,76,229,0.8)] shrink-0" />
                             基本情况概述
                         </h3>
-                        {/* pl-[14px] = 竖条 6px + gap 8px，与标题文字左端对齐 */}
                         <div className="pl-[14px] text-[15px] lg:text-[16px] xl:text-[17.5px] text-zinc-300 leading-relaxed font-normal flex flex-col gap-2.5">
                             <p>
-                                在针对桃李面包品牌词的定向监测中，正面回答率维持在 80%，主流正向标签高度统一：“性价比高、口感好、品质稳定”，被 AI
-                                视为管饱充饥的性价比优选。
+                                在针对京东物流的定向监测中，C 端正面回答率达 {POSITIVE}%（B 端 98.3%），主流正向标签高度统一：“{POS_KEYWORDS}”，被 AI
+                                视为时效与服务体验兼备的优选快递。
                             </p>
                             <p>
-                                然而，高达 20%
-                                的负面声量对于高频复购的快消食品而言，是一个极其危险的“红色警报”，且负面焦点全部直击消费者生命线：“食品安全问题、配料表争议、风味粗糙”，正在严重磨损品牌公信力并阻断购买行为。
+                                负面声量仅 {100 - POSITIVE}
+                                %，但焦点集中在“{NEG_KEYWORDS}”——多出现在轻泡件计费、退货散客价、当日达适用半径等场景。声量虽低，仍需在比价与场景边界类问答中持续纠偏，避免被固化为“贵 / 不划算”的默认印象。
                             </p>
                         </div>
                     </div>
@@ -72,8 +75,8 @@ export default function Page_GeoReport_Sentiment_Pre() {
                         width={700}
                         height={300}
                         ticks={LINE_TICKS}
-                        points={[{ x: 0.5, tick: 1 }]}
-                        xLabels={['6月17日']}
+                        points={LINE_POINTS}
+                        xLabels={LINE_LABELS}
                     />
                 </Card>
 
@@ -104,7 +107,7 @@ export default function Page_GeoReport_Sentiment_Pre() {
 
                     <div style={{ marginBottom: 28 }}>
                         <div style={{ fontSize: 22, fontWeight: 800, color: C.red, marginBottom: 8 }}>
-                            {100 - POSITIVE}% 负面
+                            {(100 - POSITIVE).toFixed(1)}% 负面
                         </div>
                         <div style={{ fontSize: 17, color: C.text }}>{NEG_KEYWORDS}</div>
                     </div>

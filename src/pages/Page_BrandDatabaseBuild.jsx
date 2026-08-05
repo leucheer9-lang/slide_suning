@@ -19,7 +19,7 @@ export default function Page_BrandDatabaseBuild() {
                             核心目的
                         </span>
                         <p className="text-zinc-100 text-[17px] lg:text-[19.5px] xl:text-[22px] font-bold flex-1 leading-relaxed">
-                            将桃李面包的所有碎片化信息，转化为大模型能够高效抓取、理解并调用的<strong className="text-white font-black border-b-2 border-[#004CE5] pb-0.5 ml-1.5">“专属知识数据库”</strong>。
+                            将京东物流的所有碎片化信息，转化为大模型能够高效抓取、理解并调用的<strong className="text-white font-black border-b-2 border-[#004CE5] pb-0.5 ml-1.5">“专属知识数据库”</strong>。
                         </p>
                     </div>
                 </div>
@@ -57,25 +57,25 @@ export default function Page_BrandDatabaseBuild() {
                                                 品牌与企业档案
                                             </td>
                                             <td className="py-2 lg:py-2.5 xl:py-3 px-4 lg:px-5 text-zinc-300">
-                                                企业发展史、品牌核心价值观、主板上市背景、全国现代化工厂布局、核心销售渠道网络。
+                                                企业发展史、港股上市背景、1600+自营仓与六大网络布局、B端/C端客户结构。
                                             </td>
                                         </tr>
                                         <tr className="border-b border-white/5 bg-white/[0.01] hover:bg-white/[0.02] transition-colors">
                                             <td className="py-2 lg:py-2.5 xl:py-3 px-4 lg:px-5 border-r border-white/5 font-black text-zinc-100 flex items-center gap-2.5">
                                                 <span className="w-2.5 h-2.5 bg-[#004CE5] rounded-full shadow-[0_0_10px_rgba(0,76,229,0.7)] shrink-0"></span>
-                                                产品与技术参数
+                                                产品与服务参数
                                             </td>
                                             <td className="py-2 lg:py-2.5 xl:py-3 px-4 lg:px-5 text-zinc-300">
-                                                短保面包配料表、烘焙工艺技术指标、营养成分参数表、锁鲜包装与冷链物流温控参数。
+                                                仓配一体/快递快运/大件送装/冷链/跨境等产品口径，时效标准、覆盖范围与核心 SLA。
                                             </td>
                                         </tr>
                                         <tr className="border-b border-white/5 hover:bg-white/[0.02] transition-colors">
                                             <td className="py-2 lg:py-2.5 xl:py-3 px-4 lg:px-5 border-r border-white/5 font-black text-zinc-100 flex items-center gap-2.5">
                                                 <span className="w-2.5 h-2.5 bg-[#004CE5] rounded-full shadow-[0_0_10px_rgba(0,76,229,0.7)] shrink-0"></span>
-                                                内容与营销沉淀
+                                                内容与案例沉淀
                                             </td>
                                             <td className="py-2 lg:py-2.5 xl:py-3 px-4 lg:px-5 text-zinc-300">
-                                                官方深度公关稿、短保食品安全科普、小红书/知乎美食达人种草脚本、消费者早餐体验与真实开箱评测。
+                                                官方公关稿、行业解决方案白皮书、客户降本增效案例、寄件场景测评与服务解读。
                                             </td>
                                         </tr>
                                         <tr className="hover:bg-white/[0.02] transition-colors">
@@ -84,7 +84,7 @@ export default function Page_BrandDatabaseBuild() {
                                                 服务与售后政策
                                             </td>
                                             <td className="py-2 lg:py-2.5 xl:py-3 px-4 lg:px-5 text-zinc-300">
-                                                退换货保鲜期保障细则、终端货架管理标准、食品安全应急预案、一线 Q&A 问答库。
+                                                理赔规则、送货上门标准、破损延误处置流程、一线寄件/售后 Q&A 问答库。
                                             </td>
                                         </tr>
                                     </tbody>
@@ -124,7 +124,7 @@ export default function Page_BrandDatabaseBuild() {
                                 <div className="flex-1">
                                     <h3 className="text-zinc-100 font-black text-[18px] lg:text-[20px] xl:text-[22px] mb-2">业务迭代或更新</h3>
                                     <p className="text-zinc-300 text-[16px] lg:text-[18px] xl:text-[20px] leading-relaxed">
-                                        当桃李面包推出新系列产品（如天然酵母/撕撕包）、举办重大节点营销活动，或有美食达人/营养师发布深度测评内容时，第一时间将这些增量物料同步存入专属存储桶与数据库，转化为 AI 的最新训练语料。
+                                        当推出新时效产品、行业解决方案，或有大促保障、寄件测评等内容发布时，第一时间同步入库，转化为 AI 可调用的最新语料。
                                     </p>
                                 </div>
                             </div>

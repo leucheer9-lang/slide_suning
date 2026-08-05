@@ -175,44 +175,110 @@ export const Icon = {
 
 /* ───────────────────────── 平台 / 站点小图标 ───────────────────────── */
 
-/** DeepSeek：蓝色鲸鱼轮廓 */
+/** GEO ONE 官方平台 logo（本地缓存自 app.geoindexfuture.com/logo） */
+const PLATFORM_LOGO = {
+    deepseek: '/geo-platforms/deepseek.png',
+    doubao: '/geo-platforms/doubao.png',
+    yuanbao: '/geo-platforms/yuanbao.png',
+    qwen: '/geo-platforms/qwen.png',
+};
+
+export function PlatformLogo({ name, size = 22 }) {
+    const src = PLATFORM_LOGO[name];
+    if (!src) return null;
+    return (
+        <img
+            src={src}
+            alt={name}
+            width={size}
+            height={size}
+            draggable={false}
+            style={{
+                width: size,
+                height: size,
+                borderRadius: '50%',
+                objectFit: 'cover',
+                display: 'block',
+                flexShrink: 0,
+                background: '#fff',
+            }}
+        />
+    );
+}
+
+/** DeepSeek：官方 logo */
 export function IconDeepSeek({ size = 22 }) {
-    return (
-        <svg width={size} height={size} viewBox="0 0 32 32" style={{ display: 'block' }}>
-            <path
-                d="M27.4 8.2c-.7-.4-1 .3-1.4.6-.15.1-.27.25-.4.37-1.05 1.14-2.28 1.89-3.9 1.8-2.36-.14-4.38.61-6.16 2.44-.38-2.26-1.64-3.6-3.55-4.47-1-.45-2.02-.9-2.71-1.88-.49-.7-.62-1.48-.87-2.25-.16-.47-.31-.95-.84-1.03-.58-.09-.81.4-1.04.82-.92 1.71-1.28 3.6-1.24 5.51.09 4.3 1.89 7.72 5.44 10.15.4.28.51.56.38.97-.24.84-.53 1.66-.79 2.5-.16.53-.41.65-.97.42a10.9 10.9 0 0 1-3.42-2.34c-1.02-.99-1.94-2.08-3.09-2.93-.27-.2-.53-.42-.81-.02-.18.26-.05.5.08.75.36.68.83 1.29 1.29 1.9.99 1.31 2.28 2.26 3.75 3 .78.39 1.6.62 2.44.79.52.1.66.4.53.85-.12.4-.24.8-.3 1.22-.09.62.1.85.72.9.66.05 1.32.05 1.98.02 1.5-.07 2.9-.5 4.2-1.28.72-.43 1.42-.28 2.13.06 1.6.77 3.3 1.1 5.07 1.05 2.6-.07 4.83-1.02 6.55-3.02 1.32-1.54 1.98-3.35 2.06-5.36.1-2.5-.55-4.79-1.94-6.86-.35-.52-.4-.94-.05-1.47.42-.65.83-1.32 1.1-2.05.35-.94.03-1.5-.93-1.5z"
-                fill="#4D6BFE"
-            />
-            <circle cx="19.6" cy="15.2" r="1.15" fill="#fff" />
-        </svg>
-    );
+    return <PlatformLogo name="deepseek" size={size} />;
 }
 
-/** 豆包：圆形头像 */
+/** 豆包：官方 logo */
 export function IconDoubao({ size = 22 }) {
+    return <PlatformLogo name="doubao" size={size} />;
+}
+
+/** 通义千问：官方 logo */
+export function IconQwen({ size = 22 }) {
+    return <PlatformLogo name="qwen" size={size} />;
+}
+
+/** 元宝：官方 logo */
+export function IconYuanbao({ size = 22 }) {
+    return <PlatformLogo name="yuanbao" size={size} />;
+}
+
+/** 监测平台叠放圆标（词条表用） */
+export function PlatformDots({ size = 22, overlap = 6 }) {
+    const names = ['deepseek', 'doubao', 'yuanbao', 'qwen'];
     return (
-        <svg width={size} height={size} viewBox="0 0 32 32" style={{ display: 'block' }}>
-            <circle cx="16" cy="16" r="16" fill="#D8E4FF" />
-            <path d="M6 26c1.6-4.4 5.3-6.8 10-6.8S24.4 21.6 26 26z" fill="#1F3A6E" />
-            <circle cx="16" cy="12.6" r="6.4" fill="#F7C9A8" />
-            <path d="M9.2 12.4c0-4.1 3-6.9 6.8-6.9s6.8 2.8 6.8 6.9c0 .9-.2 1.7-.4 2.4-.5-2.3-1.3-3.6-2.5-4.3-1.6 1.4-4.4 2.1-8 2.1-1.5 0-2.3.9-2.5 2.6-.13-.9-.2-1.8-.2-2.8z" fill="#22252B" />
-            <circle cx="13.4" cy="13" r="0.95" fill="#22252B" />
-            <circle cx="18.6" cy="13" r="0.95" fill="#22252B" />
-        </svg>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+            {names.map((name, i) => (
+                <div
+                    key={name}
+                    style={{
+                        marginLeft: i === 0 ? 0 : -overlap,
+                        borderRadius: '50%',
+                        boxShadow: '0 0 0 1.5px #fff',
+                        zIndex: names.length - i,
+                    }}
+                >
+                    <PlatformLogo name={name} size={size} />
+                </div>
+            ))}
+        </div>
     );
 }
 
-/** 通义千问：紫色六角标 */
-export function IconQwen({ size = 22 }) {
-    return (
-        <svg width={size} height={size} viewBox="0 0 32 32" style={{ display: 'block' }}>
-            <path d="M16 2.5 27.3 9v14L16 29.5 4.7 23V9z" fill="#615CED" />
-            <path
-                d="M15.9 8.2 21.6 18h-3.4l-3.9-6.8-1.7 3h3.4l1.7 3H8.6z"
-                fill="#fff"
+/** 会话截图缩略图 */
+export function ShotThumb({ src, width = 28, height = 38 }) {
+    if (!src) {
+        return (
+            <div
+                style={{
+                    width,
+                    height,
+                    borderRadius: 4,
+                    border: `1px solid ${C.border}`,
+                    background: 'linear-gradient(180deg,#f8fafc 0%,#e2e8f0 100%)',
+                }}
             />
-            <path d="M18.2 21.4h-7l1.7-3h7z" fill="#fff" opacity=".85" />
-        </svg>
+        );
+    }
+    return (
+        <img
+            src={src}
+            alt="会话截图"
+            draggable={false}
+            style={{
+                width,
+                height,
+                borderRadius: 4,
+                border: `1px solid ${C.border}`,
+                objectFit: 'cover',
+                objectPosition: 'top center',
+                display: 'block',
+                background: '#f8fafc',
+            }}
+        />
     );
 }
 

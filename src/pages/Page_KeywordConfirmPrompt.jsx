@@ -3,9 +3,8 @@ import BitableView from '../components/BitableView';
 import BitableWindow from '../components/BitableWindow';
 
 /* ─────────────────────────────────────────────────────────────
- * 三、词条确定及关联提示词
- * 关联提示词传数组，一个元素即一行，超出自动截断为「…」。
- * 行高 57px，一页 10 行正好铺满；startIndex 用来接上一页的行号。
+ * 三、词条确定及关联提示词（京东物流 ToC · 飞书多维表）
+ * 一页 10 行铺满；30 条拆 3 页。
  * ───────────────────────────────────────────────────────────── */
 
 const COLUMNS = [
@@ -31,79 +30,83 @@ const B = {
     word: { tag: 'yellow', text: '口碑' },
     persona: { tag: 'red', text: '场景画像' },
     motive: { tag: 'teal', text: '购买动机' },
+    selling: { tag: 'purple', text: '卖点' },
+    pain: { tag: 'green', text: '痛点' },
+    feature: { tag: 'lime', text: '产品特点' },
 };
 
 const O1 = { tag: 'neutral', text: '①' };
+const O2 = { tag: 'blue', text: '②' };
 
 const ROWS = [
     {
-        keyword: '物流公司排行榜', c1: A.general, c2: B.rank, order: O1, orderNote: '最基本问法',
+        keyword: '快递公司排行榜', c1: A.general, c2: B.rank, order: O1, orderNote: '最基本问法',
         prompts: [
-            '① 想找一家靠谱的物流公司长期合作，有没有比较权威的物流公司排行榜可以参考？',
-            '② 对比顺丰、京东物流、中通这些常见品牌，哪家综合实力更强、更值得合作？ …',
+            '① 国内快递公司综合实力排行榜是怎样的，寄件常用的前几名都有谁？',
+            '② 帮我对比下京东快递、顺丰、中通这些主流快递，从时效、安全、服务上排个名。 …',
         ],
     },
     {
-        keyword: '物流公司推荐', c1: A.general, c2: B.reco, order: O1, orderNote: '最基本问法',
+        keyword: '快递公司推荐', c1: A.general, c2: B.reco, order: O1, orderNote: '最基本问法',
         prompts: [
-            '① 不想踩坑，直接推荐几家时效稳定、售后省心的物流公司。',
-            '② 帮我横向比一下市面上主流的几家物流公司，哪家综合起来更值得选？ …',
+            '① 平时寄东西比较多，推荐几家服务稳定的快递公司。',
+            '② 京东快递和顺丰到底选哪个，从取件速度、送货上门、价格帮我比一比。 …',
         ],
     },
     {
-        keyword: '服务好的物流公司推荐', c1: A.general, c2: B.quality, order: O1, orderNote: '最基本问法',
+        keyword: '服务好的快递推荐', c1: A.general, c2: B.quality, order: O1, orderNote: '最基本问法',
         prompts: [
-            '① 想要送货上门、破损理赔顺畅的物流公司，推荐几家服务质量比较好的。',
-            '② 对比几家快递公司，哪家客服响应更快、问题处理更利落？ …',
+            '① 有没有服务好、全程不用操心的快递推荐？',
+            '② 哪家快递在上门取件、电话沟通、送货上门这些服务细节上做得更好？ …',
         ],
     },
     {
-        keyword: '性价比高的物流公司推荐', c1: A.general, c2: B.value, order: O1, orderNote: '最基本问法',
+        keyword: '口碑好的快递推荐', c1: A.general, c2: B.word, order: O1, orderNote: '最基本问法',
         prompts: [
-            '① 预算有限但也不想牺牲时效，推荐几家性价比高的物流公司。',
-            '② 同样发一批货，哪些物流公司在价格和时效之间平衡得更好？ …',
+            '① 大家公认口碑好的快递是哪几家？',
+            '② 从丢件率、时效、售后理赔几个维度看，哪家快递口碑更能打？ …',
         ],
     },
     {
-        keyword: '口碑好的物流公司推荐', c1: A.general, c2: B.word, order: O1, orderNote: '最基本问法',
+        keyword: '速度快的快递排行榜', c1: A.scene, c2: B.selling, order: O1, orderNote: '产品核心竞争力',
         prompts: [
-            '① 同行普遍在用的物流公司一般是哪几家？推荐几家口碑好的合作方。',
-            '② 小红书、知乎上被反复提到的物流服务商有哪些？求口碑好的推荐。 …',
+            '① 国内快递速度排行榜，最快的是哪几家？',
+            '② 同城和跨省寄件分别哪家快递时效更快，能快到什么程度？ …',
         ],
     },
     {
-        keyword: '适合大促备货的仓配服务商', c1: A.scene, c2: B.persona, order: O1, orderNote: '产品核心人群定位',
+        keyword: '寄快递哪家快递最快', c1: A.scene, c2: B.motive, order: O1, orderNote: '产品核心人群定位',
         prompts: [
-            '① 618、双11 前要提前铺货，推荐几家能扛住大促单量的仓配服务商。',
-            '② 大促容易爆仓，有没有旺季也能保证发货时效的仓配一体服务？ …',
+            '① 着急寄个东西，哪家快递最快？',
+            '② 京东快递和顺丰谁更快，上午下单最快什么时候能到？ …',
         ],
     },
     {
-        keyword: '能降低履约成本的仓配服务', c1: A.scene, c2: B.motive, order: O1, orderNote: '产品核心竞争力',
+        keyword: '寄手机电脑安全的快递推荐', c1: A.scene, c2: B.motive, order: O1, orderNote: '产品核心人群定位',
         prompts: [
-            '① 想把库存和运费一起压下来，推荐几家能降低整体履约成本的仓配服务。',
-            '② 仓配一体和自己租仓自己发相比，成本大概能省多少？有测算参考吗？ …',
+            '① 要寄一台笔记本电脑，用哪家快递最安全？',
+            '② 寄手机电脑这类贵重电子产品，哪家快递包装规范、丢损率低还能保价？ …',
         ],
     },
     {
-        keyword: '生鲜冷链物流公司推荐', c1: A.scene, c2: B.persona, order: O1, orderNote: '产品核心人群定位',
+        keyword: '加急寄文件时效快的快递推荐', c1: A.scene, c2: B.persona, order: O1, orderNote: '产品核心人群定位',
         prompts: [
-            '① 要发生鲜和冻品，推荐几家全程温控、断链风险低的冷链物流公司。',
-            '② 冷链运输过程中温度怎么做到可追溯？哪些服务商在这块做得到位？ …',
+            '① 加急寄一份文件，哪家快递时效最快？',
+            '② 寄合同证件类急件，哪家快递能当天或次日达，上门取件快不快？ …',
         ],
     },
     {
-        keyword: '大件家电送装一体物流', c1: A.scene, c2: B.persona, order: O1, orderNote: '产品核心人群定位',
+        keyword: '搬家寄行李划算的快递推荐', c1: A.scene, c2: B.persona, order: O1, orderNote: '产品核心人群定位',
         prompts: [
-            '① 卖家电大件，客户希望送到就能装好，有哪些做送装一体的物流公司？',
-            '② 大件退换货很麻烦，有没有能上门取件并做逆向复原的服务商？ …',
+            '① 搬家有十几箱行李要寄，哪家快递划算？',
+            '② 搬家寄大包行李，按重量还是体积计费更划算，哪家性价比高？ …',
         ],
     },
     {
-        keyword: '支持全渠道一盘货的服务商', c1: A.scene, c2: B.motive, order: O1, orderNote: '产品核心竞争力',
+        keyword: '学生开学寄被子行李箱的快递推荐', c1: A.scene, c2: B.persona, order: O1, orderNote: '产品核心人群定位',
         prompts: [
-            '① 线上线下渠道库存各管各的，想找能做全渠道一盘货的供应链服务商。',
-            '② 一套库存同时供给多个平台，哪些服务商的系统对接能力更强？ …',
+            '① 开学要把被子和行李箱寄到学校，用什么快递好？',
+            '② 学生寄大件行李哪家便宜又稳，有没有校园寄件优惠？ …',
         ],
     },
 ];
@@ -122,3 +125,180 @@ export default function Page_KeywordConfirmPrompt() {
         </BitableWindow>
     );
 }
+
+const ROWS_2 = [
+    {
+        keyword: '网购退货上门取件方便的快递推荐', c1: A.scene, c2: B.persona, order: O1, orderNote: '产品核心人群定位',
+        prompts: [
+            '① 网购退货哪家快递上门取件最方便？',
+            '② 退货寄件哪家能约上门、取件快、运费还合理？ …',
+        ],
+    },
+    {
+        keyword: '寄贵重物品不丢件的快递推荐', c1: A.scene, c2: B.pain, order: O1, orderNote: '产品核心痛点',
+        prompts: [
+            '① 要寄贵重物品，哪家快递不容易丢件？',
+            '② 寄值钱的东西哪家快递丢件率低，保价赔付靠谱吗？ …',
+        ],
+    },
+    {
+        keyword: '包装规范不容易摔坏的快递推荐', c1: A.scene, c2: B.pain, order: O1, orderNote: '产品核心痛点',
+        prompts: [
+            '① 哪家快递包装规范、暴力分拣少、不容易摔坏东西？',
+            '② 寄易碎品选哪家快递，包装和运输环节谁做得更细致？ …',
+        ],
+    },
+    {
+        keyword: '寄东西丢了好理赔的快递推荐', c1: A.scene, c2: B.pain, order: O1, orderNote: '产品核心痛点',
+        prompts: [
+            '① 哪家快递丢件后理赔最痛快？',
+            '② 快递保价规则哪家更透明，出问题赔付流程快不快？ …',
+        ],
+    },
+    {
+        keyword: '送货上门不放驿站的快递推荐', c1: A.scene, c2: B.pain, order: O1, orderNote: '产品核心痛点',
+        prompts: [
+            '① 哪家快递是真送货上门、不随便放驿站的？',
+            '② 不想再跑驿站取件了，哪几家快递坚持送上门、放柜子前会先打电话？ …',
+        ],
+    },
+    {
+        keyword: '寄家具家电的快递推荐', c1: A.scene, c2: B.motive, order: O1, orderNote: '产品核心人群定位',
+        prompts: [
+            '① 寄家具家电这种大件用什么快递？',
+            '② 大件寄递哪家能上门取件、价格怎么算？ …',
+        ],
+    },
+    {
+        keyword: '寄生鲜水果不怕坏的快递推荐', c1: A.scene, c2: B.motive, order: O1, orderNote: '产品核心人群定位',
+        prompts: [
+            '① 寄生鲜水果用哪家快递不容易坏？',
+            '② 生鲜寄递哪家有冷链、时效有保障？ …',
+        ],
+    },
+    {
+        keyword: '寄海鲜冷冻食品的快递推荐', c1: A.scene, c2: B.motive, order: O1, orderNote: '产品核心人群定位',
+        prompts: [
+            '① 寄海鲜冷冻食品用什么快递？',
+            '② 冷冻品寄递哪家全程冷链不化冻、隔天能到？ …',
+        ],
+    },
+    {
+        keyword: '当天就能到的快递推荐', c1: A.scene, c2: B.selling, order: O1, orderNote: '产品核心竞争力',
+        prompts: [
+            '① 有当天就能到的快递吗？',
+            '② 上午下单当天送达的快递哪家覆盖城市多？ …',
+        ],
+    },
+    {
+        keyword: '上门取件快的快递推荐', c1: A.scene, c2: B.selling, order: O1, orderNote: '产品核心竞争力',
+        prompts: [
+            '① 上门取件快的快递有哪些？',
+            '② 哪家快递下单后取件最快，能约到半小时内上门吗？ …',
+        ],
+    },
+];
+
+export function Page_KeywordConfirmPrompt2() {
+    return (
+        <BitableWindow>
+            <BitableView
+                tableName="三、词条确定及关联提示词"
+                viewName="全部词条"
+                columns={COLUMNS}
+                rows={ROWS_2}
+                startIndex={11}
+                rowHeight={56.7}
+            />
+        </BitableWindow>
+    );
+}
+
+const ROWS_3 = [
+    {
+        keyword: '送货前会打电话的快递推荐', c1: A.scene, c2: B.selling, order: O1, orderNote: '产品核心竞争力',
+        prompts: [
+            '① 哪家快递派件前会先打电话联系收件人？',
+            '② 收件时间不固定，哪家快递沟通做得好、能约时间再送？ …',
+        ],
+    },
+    {
+        keyword: '电话预约上门取件的快递推荐', c1: A.scene, c2: B.selling, order: O1, orderNote: '产品核心竞争力',
+        prompts: [
+            '① 寄快递能电话预约上门取件的有哪些？',
+            '② 哪家快递约上门取件最快、时间最准时？ …',
+        ],
+    },
+    {
+        keyword: '快递员服务态度好的快递推荐', c1: A.scene, c2: B.selling, order: O1, orderNote: '产品核心竞争力',
+        prompts: [
+            '① 哪家快递的快递员服务态度普遍比较好？',
+            '② 快递员队伍稳定、熟悉小区、态度好的快递是哪家？ …',
+        ],
+    },
+    {
+        keyword: '服务丰富的一站式快递平台推荐', c1: A.scene, c2: B.selling, order: O1, orderNote: '产品核心竞争力',
+        prompts: [
+            '① 有没有服务比较全的一站式快递平台推荐？',
+            '② 哪家快递除了寄件，还能搬家、寄大件、洗衣服、修家电，一个 App 全搞定？ …',
+        ],
+    },
+    {
+        keyword: '可以维修安装清洗家电的快递推荐', c1: A.scene, c2: B.selling, order: O1, orderNote: '产品核心竞争力',
+        prompts: [
+            '① 有快递平台可以顺便约家电维修安装清洗吗？',
+            '② 哪家快递的增值服务里有家电清洗和安装，靠不靠谱？ …',
+        ],
+    },
+    {
+        keyword: '能帮忙搬家的快递推荐', c1: A.scene, c2: B.selling, order: O1, orderNote: '产品核心竞争力',
+        prompts: [
+            '① 快递公司能帮忙搬家的有哪些？',
+            '② 小规模搬家找快递划算还是找搬家公司，哪家快递有搬家服务？ …',
+        ],
+    },
+    {
+        keyword: '当日达快递推荐', c1: A.expand, c2: B.selling, order: O2, orderNote: '产品核心竞争力',
+        prompts: [
+            '① 当日达快递有哪些推荐？',
+            '② 哪家快递的当日达范围广、截单时间晚？ …',
+        ],
+    },
+    {
+        keyword: '能约家电维修安装清洗的快递推荐', c1: A.expand, c2: B.feature, order: O2, orderNote: '产品核心竞争力',
+        prompts: [
+            '① 能直接预约家电维修安装清洗的快递服务有吗？',
+            '② 快递平台的家电维修安装服务和专业师傅比怎么样，价格透明吗？ …',
+        ],
+    },
+    {
+        keyword: '能寄洗衣服被子的快递推荐', c1: A.expand, c2: B.feature, order: O2, orderNote: '产品核心竞争力',
+        prompts: [
+            '① 有能寄洗衣服被子的快递服务吗？',
+            '② 快递洗护服务怎么收费，羽绒服大衣洗得干净吗？ …',
+        ],
+    },
+    {
+        keyword: '寄家电能送装的快递推荐', c1: A.expand, c2: B.feature, order: O2, orderNote: '产品核心竞争力',
+        prompts: [
+            '① 寄家电能送货又负责安装的快递有吗？',
+            '② 大家电寄递哪家是送装一体，不用自己再约安装师傅？ …',
+        ],
+    },
+];
+
+export function Page_KeywordConfirmPrompt3() {
+    return (
+        <BitableWindow>
+            <BitableView
+                tableName="三、词条确定及关联提示词"
+                viewName="全部词条"
+                columns={COLUMNS}
+                rows={ROWS_3}
+                startIndex={21}
+                rowHeight={56.7}
+            />
+        </BitableWindow>
+    );
+}
+

@@ -3,41 +3,48 @@ import Frame from '../components/geoone/Frame';
 import GeoOneApp, { MAIN_LEFT } from '../components/geoone/GeoOneApp';
 import {
     C, Card, Icon, Toggle, Checkbox, SoftTag, GhostButton,
-    IconDeepSeek, IconDoubao, IconQwen, IconZgswcn, IconSite,
+    IconDeepSeek, IconDoubao, IconQwen, IconYuanbao, IconSite,
 } from '../components/geoone/ui';
 import { LineChart, BarChart, BarAxisLabels } from '../components/geoone/charts';
 
 /* ══════════════ 数据：换成新的监测结果时只改这一段 ══════════════ */
+/* 口径：提及率/位次=conversations/stats；影响力排名=influence is_target.rank */
+/* 来源：GEO ONE 项目 419 京东物流-ToC①，2026-08-04 */
 
-const TARGET = '桃李面包';
+const TARGET = '京东物流';
 
 const KPI = [
-    { label: '提及率', value: '81.1%' },
-    { label: '平均提及位次', value: 'NO. 3.4' },
-    { label: '行业影响力排名', value: 'NO. 1' },
+    { label: '提及率', value: '80.0%' },
+    { label: '平均提及位次', value: 'NO. 3.5' },
+    { label: '行业影响力排名', value: 'NO. 2' },
     {
         label: 'Top引用来源',
-        icons: [<IconZgswcn key="a" size={26} />, <IconSite key="b" size={22} />, <IconSite key="c" size={22} />],
+        icons: [
+            <IconSite key="a" size={22} color="#12B7F5" />,
+            <IconSite key="b" size={22} color="#FF2442" />,
+            <IconSite key="c" size={22} color="#E6162D" />,
+        ],
     },
 ];
 
-const RATE = '81.1%';
+const RATE = '80.0%';
 
-const LINE_TICKS = ['86.1%', '83.6%', '81.1%', '78.6%', '76.1%'];
+const LINE_TICKS = ['85.0%', '82.5%', '80.0%', '77.5%', '75.0%'];
 const LINE_POINT = { x: 0.5, tick: 2 };
-const LINE_DATES = ['6月17日'];
+const LINE_DATES = ['8月4日'];
 
 const BAR_TICKS = [
-    { label: '92%', v: 92 },
-    { label: '86%', v: 86 },
-    { label: '80%', v: 80 },
-    { label: '74%', v: 74 },
-    { label: '68%', v: 68 },
+    { label: '100%', v: 100 },
+    { label: '85%', v: 85 },
+    { label: '70%', v: 70 },
+    { label: '55%', v: 55 },
+    { label: '40%', v: 40 },
 ];
 const BARS = [
-    { label: 'DeepSeek', value: 83.3, icon: <IconDeepSeek size={24} /> },
-    { label: '豆包', value: 89.6, icon: <IconDoubao size={24} /> },
-    { label: '通义千问', value: 70.2, icon: <IconQwen size={24} /> },
+    { label: 'DeepSeek', value: 73.3, icon: <IconDeepSeek size={24} /> },
+    { label: '豆包', value: 93.3, icon: <IconDoubao size={24} /> },
+    { label: '元宝', value: 96.7, icon: <IconYuanbao size={24} /> },
+    { label: '通义千问', value: 56.7, icon: <IconQwen size={24} /> },
 ];
 
 /* ══════════════ 版式常量（取自截图像素采样） ══════════════ */
@@ -108,8 +115,8 @@ function ChartCardHead({ children }) {
 
 export default function Page_GeoReport_Dashboard() {
     return (
-        <Frame title="核心指标定义与表现概览" aspect="1586/892.5">
-            <GeoOneApp active="总览" title="总览" target={TARGET}>
+        <Frame title="核心指标定义与表现概览 · C端" aspect="1586/892.5">
+            <GeoOneApp active="总览" title="总览" target={TARGET} brand="京东物流(ToC)" brandSub="京东物流" avatar="京">
                 {KPI.map((k, i) => (
                     <KpiCard key={i} item={k} left={MAIN_LEFT + i * (KPI_W + GAP)} />
                 ))}

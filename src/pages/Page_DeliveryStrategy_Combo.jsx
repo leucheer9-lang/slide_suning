@@ -27,7 +27,7 @@ export default function Page_DeliveryStrategy_Combo() {
                             <span className="text-3xl lg:text-4xl font-bold text-zinc-500 ml-2 mb-3">%</span>
                         </div>
                         <h3 className="text-xl lg:text-2.5xl font-bold text-white mb-4 pt-5 border-t border-white/10 group-hover:border-orange-500/50 transition-colors leading-snug">共性高频与行业权威门户</h3>
-                        <p className="text-[1.05rem] lg:text-[1.15rem] font-medium text-orange-300 mb-6 tracking-wide leading-relaxed">搜狐网、中国商报网、每日食品、今日头条、百度知道</p>
+                        <p className="text-[1.05rem] lg:text-[1.15rem] font-medium text-orange-300 mb-6 tracking-wide leading-relaxed">今日头条、新浪新闻、百度知道、快递鸟、咸宁新闻网</p>
                         <p className="text-[1.12rem] lg:text-[1.25rem] xl:text-[1.3rem] text-zinc-400 leading-relaxed font-light text-justify">
                             <strong className="text-zinc-300 font-medium tracking-wide">多平台共性收录与基本盘构建。</strong>通过共性高频网站和行业权威媒体进行全方位覆盖，对齐各大模型底层的基本信息，为品牌在 AI 检索中构建高可信度的基础语料，构筑 AI 抓取的基本盘。
                         </p>
@@ -43,9 +43,9 @@ export default function Page_DeliveryStrategy_Combo() {
                             <span className="text-3xl lg:text-4xl font-bold text-zinc-500 ml-2 mb-3">%</span>
                         </div>
                         <h3 className="text-xl lg:text-2.5xl font-bold text-white mb-4 pt-5 border-t border-white/10 group-hover:border-blue-500/50 transition-colors leading-snug">差异化场景与特异偏好引导</h3>
-                        <p className="text-[1.05rem] lg:text-[1.15rem] font-medium text-blue-300 mb-6 tracking-wide leading-relaxed">手机新浪网、抖音、哔哩哔哩</p>
+                        <p className="text-[1.05rem] lg:text-[1.15rem] font-medium text-blue-300 mb-6 tracking-wide leading-relaxed">列表网、QQ News、抖音、哔哩哔哩</p>
                         <p className="text-[1.12rem] lg:text-[1.25rem] xl:text-[1.3rem] text-zinc-400 leading-relaxed font-light text-justify">
-                            <strong className="text-zinc-300 font-medium tracking-wide">差异化破圈与特异平台深耕。</strong>针对不同 AI 平台的特异性收录偏好，在手机新浪网、抖音、B站等进行差异化内容布局，破除流量死角，引导各大模型输出针对性强、转化率高的推荐理由。
+                            <strong className="text-zinc-300 font-medium tracking-wide">差异化破圈与特异平台深耕。</strong>针对不同 AI 平台的特异性收录偏好，在列表网（DeepSeek）、QQ News（元宝）、抖音、B站等进行差异化内容布局，破除流量死角。
                         </p>
                     </div>
 
@@ -59,9 +59,9 @@ export default function Page_DeliveryStrategy_Combo() {
                             <span className="text-3xl lg:text-4xl font-bold text-zinc-500 ml-2 mb-3">%</span>
                         </div>
                         <h3 className="text-xl lg:text-2.5xl font-bold text-white mb-4 pt-5 border-t border-white/10 group-hover:border-emerald-500/50 transition-colors leading-snug">行业高频高命中竞争拦截</h3>
-                        <p className="text-[1.05rem] lg:text-[1.15rem] font-medium text-emerald-300 mb-6 tracking-wide leading-relaxed">Natfam、携程旅行网、wmcloud 等</p>
+                        <p className="text-[1.05rem] lg:text-[1.15rem] font-medium text-emerald-300 mb-6 tracking-wide leading-relaxed">山东省邮政管理局、凤凰网、物流指闻、快递查询网、网经社</p>
                         <p className="text-[1.12rem] lg:text-[1.25rem] xl:text-[1.3rem] text-zinc-400 leading-relaxed font-light text-justify">
-                            <strong className="text-zinc-300 font-medium tracking-wide">核心竞品高命中拦截与公信力构建。</strong>聚焦行业头部竞品（曼可顿）在 AI 引用中命中率极高的高频平台，进行高公信力内容的定点覆盖，实现精准拦截与心智渗透，稳固推荐大盘。
+                            <strong className="text-zinc-300 font-medium tracking-wide">核心竞品高命中拦截与公信力构建。</strong>聚焦行业头部竞品（顺丰）命中率 100% 的高频平台，进行高公信力内容定点覆盖，实现精准拦截与心智渗透。
                         </p>
                     </div>
 

@@ -2,6 +2,7 @@
 import RankPanel from '../components/geoone/RankPanel';
 
 /* ══════════════ 数据：换竞品排名时只改这一段 ══════════════ */
+/* 来源：GEO ONE 419 ToC · mention-rate / top1 / position 全量榜 */
 
 const COLUMNS = [
     {
@@ -9,11 +10,11 @@ const COLUMNS = [
         subtitle: '产品或品牌在AI生态中提及率排名',
         valueLabel: '提及率',
         rows: [
-            { name: '桃李', value: '81.1%', target: true },
-            { name: '曼可顿', value: '42.2%' },
-            { name: '豪士', value: '42.2%' },
-            { name: '宾堡', value: '37.8%' },
-            { name: '卡尔顿', value: '33.3%' },
+            { name: '顺丰', value: '85.8%' },
+            { name: '京东物流', value: '72.5%', target: true },
+            { name: '中通快递', value: '45.0%' },
+            { name: '圆通快递', value: '38.3%' },
+            { name: '申通快递', value: '37.5%' },
         ],
     },
     {
@@ -21,11 +22,11 @@ const COLUMNS = [
         subtitle: '产品或品牌在AI生态中Top1提及率排名',
         valueLabel: 'Top1提及率',
         rows: [
-            { name: '桃李', value: '63.3%', target: true },
-            { name: '达利园', value: '4.4%' },
-            { name: '北京贝儿食品', value: '2.2%' },
-            { name: '宾堡', value: '2.2%' },
-            { name: '小白心里软', value: '2.2%' },
+            { name: '顺丰', value: '47.5%' },
+            { name: '京东物流', value: '7.5%', target: true },
+            { name: '德邦快递', value: '5.0%' },
+            { name: '申通快递', value: '5.0%' },
+            { name: '闪送', value: '5.0%' },
         ],
     },
     {
@@ -33,11 +34,11 @@ const COLUMNS = [
         subtitle: '产品或品牌在AI生态中平均提及位次排名',
         valueLabel: '平均提及位次',
         rows: [
-            { name: '桃李', value: 'NO. 3.4', target: true },
-            { name: '曼可顿', value: 'NO. 6.9' },
-            { name: '达利园', value: 'NO. 7.3' },
-            { name: '美焙辰', value: 'NO. 7.4' },
-            { name: '盼盼', value: 'NO. 7.8' },
+            { name: '顺丰', value: 'NO. 3.0' },
+            { name: '京东物流', value: 'NO. 4.2', target: true },
+            { name: '中通快递', value: 'NO. 4.7' },
+            { name: '圆通快递', value: 'NO. 5.3' },
+            { name: '申通快递', value: 'NO. 5.5' },
         ],
     },
 ];
@@ -50,7 +51,7 @@ export default function Page_GeoReport_Competitors_Analysis() {
             <div className="w-full flex flex-col h-full relative z-10 pt-0 gap-3">
                 <div className="text-center mb-4 mt-[-20px] shrink-0 relative z-10">
                     <h1 className="text-[28px] lg:text-[32px] font-bold text-white tracking-widest leading-none">
-                        竞品横向对比
+                        竞品横向对比 · C端
                     </h1>
                 </div>
 
@@ -66,7 +67,7 @@ export default function Page_GeoReport_Competitors_Analysis() {
                                 核心发现
                             </h3>
                             <div className="flex-grow text-[16px] lg:text-[18px] xl:text-[20px] text-zinc-200 leading-relaxed text-justify">
-                                桃李的整体提及率达 81.1%，对曼可顿（42.2%）、豪士（42.2%）和宾堡（37.8%）形成了近乎翻倍的声量压制。
+                                京东物流品牌提及率 72.5%，稳居第二，但落后顺丰（85.8%）约 13 个点；对中通、圆通、申通已形成明显断层优势。
                             </div>
                         </div>
                     </div>
@@ -78,7 +79,7 @@ export default function Page_GeoReport_Competitors_Analysis() {
                                 竞争格局总结
                             </h3>
                             <div className="flex-grow text-[16px] lg:text-[18px] xl:text-[20px] text-zinc-200 leading-relaxed text-justify">
-                                桃李的 Top 1 首推率高达 63.3%，而达利园仅为 4.4%。这意味着当商户咨询供货源时，竞品几乎无法成为“首选答案”。
+                                Top 1 首推率仅 7.5%，顺丰高达 47.5%。C 端问答里“进清单容易、占首位很难”，首位红利几乎被顺丰锁定。
                             </div>
                         </div>
                     </div>
@@ -90,7 +91,7 @@ export default function Page_GeoReport_Competitors_Analysis() {
                                 行动建议
                             </h3>
                             <div className="flex-grow text-[16px] lg:text-[18px] xl:text-[20px] text-zinc-200 leading-relaxed text-justify">
-                                供应链基本盘稳固。策略应是守住核心大词，利用高周转优势强行绑定“高回报/高收益利润词”，对冲单件毛利偏低的痛点。
+                                守住大件送装与服务口碑长板，同时用可引用的时效实测与对比测评内容攻坚 Top 1，缩小对顺丰的首位差距。
                             </div>
                         </div>
                     </div>

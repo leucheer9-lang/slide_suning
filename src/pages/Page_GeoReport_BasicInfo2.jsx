@@ -9,52 +9,52 @@ export default function Page_GeoReport_BasicInfo2() {
             color: "from-blue-500 to-blue-800",
             icon: "M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z",
             stroke: "text-blue-400",
-            sub: "各词库多平台并行连续排查"
+            sub: "C端 / B端双项目并行排查"
         },
         {
             title: "监测词条",
-            value: "72",
+            value: "60",
             unit: "个",
             color: "from-indigo-500 to-indigo-800",
             icon: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z",
             stroke: "text-indigo-400",
-            sub: "业务词: 52 | 品牌词: 20"
+            sub: "C端寄件: 30 | B端选型: 30"
         },
         {
             title: "覆盖平台",
-            value: "3",
+            value: "4",
             unit: "个",
             color: "from-purple-500 to-purple-800",
             icon: "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
             stroke: "text-purple-400",
-            sub: "豆包 / DeepSeek / 通义千问"
+            sub: "DeepSeek / 豆包 / 元宝 / 通义千问"
         },
         {
             title: "总查询",
-            value: "216",
+            value: "240",
             unit: "次",
             color: "from-cyan-500 to-cyan-800",
             icon: "M13 10V3L4 14h7v7l9-11h-7z",
             stroke: "text-cyan-400",
-            sub: "业务词: 156 | 品牌词: 60"
+            sub: "C端: 120 | B端: 120"
         },
         {
             title: "引用文章",
-            value: "8,582",
+            value: "2,158",
             unit: "篇",
             color: "from-teal-500 to-teal-800",
             icon: "M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l6 6v10a2 2 0 01-2 2z",
             stroke: "text-teal-400",
-            sub: "业务词: 7,914 | 品牌词: 668"
+            sub: "C端: 1,025 | B端: 1,133"
         },
         {
             title: "识别竞品",
-            value: "416",
-            unit: "家次",
+            value: "~100",
+            unit: "家",
             color: "from-rose-500 to-rose-800",
             icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z",
             stroke: "text-rose-400",
-            sub: "业务词: 370 | 品牌词: 46"
+            sub: "全量提及榜口径 · 主力对标顺丰"
         },
     ];
 
@@ -67,7 +67,7 @@ export default function Page_GeoReport_BasicInfo2() {
             <div className="text-center mb-4 mt-[-20px] shrink-0 relative z-10">
                 <h1 className="text-[28px] lg:text-[32px] font-bold text-white tracking-widest leading-none mb-3">监测范围</h1>
                 <p className="inline-block text-[#004CE5] text-[1.1rem] font-bold tracking-widest bg-[#004CE5]/10 px-6 py-2 rounded-full border border-[#004CE5]/30 shadow-[0_0_20px_rgba(0,76,229,0.15)]">
-                    全面覆盖业务需求与品牌口碑生态，海量样本保障极高数据置信度
+                    全面覆盖 C 端寄件与 B 端选型生态，海量样本保障极高数据置信度
                 </p>
             </div>
 

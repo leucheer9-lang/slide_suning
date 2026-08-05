@@ -1,23 +1,23 @@
 ﻿import React from 'react';
 
 const RANKINGS = [
-    { name: '中国商报网', value: '7.1%', pct: 95 },
-    { name: '搜狐网', value: '6.3%', pct: 84 },
-    { name: 'Foodaily每日食品', value: '4.3%', pct: 58 },
-    { name: '新浪财经', value: '3.5%', pct: 47 },
-    { name: '网易商业', value: '2.8%', pct: 37 },
+    { name: '腾讯新闻', value: '8.8%', pct: 100 },
+    { name: '今日头条', value: '7.7%', pct: 88 },
+    { name: '新浪新闻', value: '4.3%', pct: 49 },
+    { name: '百度知道', value: '3.9%', pct: 44 },
+    { name: '快递鸟', value: '3.9%', pct: 44 },
 ];
 
 const INSIGHTS = [
     {
-        title: '信源权威度极高，物理硬指标稳固',
+        title: '信源偏资讯与问答，权威产业内容不足',
         accent: '#004CE5',
-        body: '由于高权重官方快消分析信源极其充分，AI 把桃李的“全国中央工厂分销”、“冷链配送链条”等产业特征背得非常熟。这为桃李在批发供货赛道里奠定了强大的心智底座。',
+        body: 'C 端引用池高度集中在腾讯新闻、今日头条、新浪新闻与百度知道。大模型更容易抓取大众测评与问答内容，京东物流需要在这些高权重渠道持续出现“可核验的场景证据”。',
     },
     {
-        title: '渠道收益与赋能文章严重稀缺',
+        title: '高引用文章里本品露出偏弱',
         accent: '#F59E0B',
-        body: '目前核心引用池缺乏面向经销商、超市老板等算账痛点的商业故事。由于大模型抓取不到“经销桃李高周转实现高回报”等民间商业实操软文，导致商户在询问高利润批发时，AI 没有现成语料可推荐。',
+        body: 'Top 引用文章多为通用快递测评与顺丰官网，多篇并未稳定提及京东物流。若不对测评榜单与横向对比内容做主动布局，AI 会继续把“首选”写给顺丰。',
     },
 ];
 
@@ -29,7 +29,7 @@ export default function Page_GeoReport_Sources2() {
             <div className="w-full flex flex-col h-full relative z-10 min-h-0">
                 <div className="text-center mb-4 mt-[-20px] shrink-0">
                     <h1 className="text-[28px] lg:text-[32px] font-bold text-white tracking-widest leading-none">
-                        引用源健康度与诊断
+                        引用源健康度与诊断 · C端
                     </h1>
                 </div>
 
@@ -45,19 +45,18 @@ export default function Page_GeoReport_Sources2() {
                             {/* 上半：文案铺满 */}
                             <div className="flex-[1.05] min-h-0 flex flex-col justify-between text-[15px] lg:text-[16px] xl:text-[18px] text-zinc-300 leading-relaxed">
                                 <p className="text-justify">
-                                    监测数据显示，决定<strong className="text-white font-semibold">桃李面包</strong>在 AI
-                                    问答中表现的最底层数据抓取来源，呈现出极强的
-                                    <strong className="text-white font-semibold">“商业与产业垂直度”</strong>特点。
+                                    监测数据显示，决定<strong className="text-white font-semibold">京东物流</strong>在 C 端 AI
+                                    问答中表现的最底层数据抓取来源，呈现出
+                                    <strong className="text-white font-semibold">“资讯媒体 + UGC 问答”</strong>特点。
                                 </p>
                                 <p className="text-justify">
                                     排名前三的引用平台分别为：
-                                    <strong className="text-white font-bold">中国商报网 (7.1%)</strong>、
-                                    <strong className="text-white font-bold">搜狐网 (6.3%)</strong>和
-                                    <strong className="text-white font-bold">Foodaily每日食品 (4.3%)</strong>。
+                                    <strong className="text-white font-bold">腾讯新闻 (8.8%)</strong>、
+                                    <strong className="text-white font-bold">今日头条 (7.7%)</strong>和
+                                    <strong className="text-white font-bold">新浪新闻 (4.3%)</strong>。
                                 </p>
                                 <p className="text-justify border-t border-white/10 pt-3">
-                                    这表明桃李在主流财经和食品行业垂直媒体的公关铺设较为成功。大模型对这类具备权威质感的行业深度分析和企业动态白皮书有着极强的抓取信任度，帮助品牌形成了稳固的
-                                    AI 推荐壁垒。
+                                    这说明 C 端寄件决策高度依赖大众媒体测评与问答站点。若不能在这些渠道稳定输出对京东物流有利的横向对比内容，AI 推荐仍会偏向顺丰等既有强势品牌。
                                 </p>
                             </div>
 

@@ -56,6 +56,13 @@ import Page_GeoReport_Entries_Analysis from '../pages/Page_GeoReport_Entries_Ana
 import Page_GeoReport_Competitors_Analysis from '../pages/Page_GeoReport_Competitors_Analysis';
 import Page_GeoReport_Sources from '../pages/Page_GeoReport_Sources';
 import Page_GeoReport_Sources2 from '../pages/Page_GeoReport_Sources2';
+import Page_GeoReport_Dashboard_ToB from '../pages/Page_GeoReport_Dashboard_ToB';
+import Page_GeoReport_Dashboard2_ToB from '../pages/Page_GeoReport_Dashboard2_ToB';
+import Page_GeoReport_Entries_ToB from '../pages/Page_GeoReport_Entries_ToB';
+import Page_GeoReport_Entries_Analysis_ToB from '../pages/Page_GeoReport_Entries_Analysis_ToB';
+import Page_GeoReport_Competitors_Analysis_ToB from '../pages/Page_GeoReport_Competitors_Analysis_ToB';
+import Page_GeoReport_Sources_ToB from '../pages/Page_GeoReport_Sources_ToB';
+import Page_GeoReport_Sources2_ToB from '../pages/Page_GeoReport_Sources2_ToB';
 import Page_GeoReport_Sentiment_Pre from '../pages/Page_GeoReport_Sentiment_Pre';
 import Page_GeoReport_Sentiment from '../pages/Page_GeoReport_Sentiment';
 import PB_GeoKpiAcceptance from '../Pages_Before/Page_GeoKpiAcceptance';
@@ -76,9 +83,17 @@ import PB_GeoOptKeywordsCleaning1 from '../Pages_Before/Page_GeoOptKeywordsClean
 import PB_GeoOptKeywordsCleaning2 from '../Pages_Before/Page_GeoOptKeywordsCleaning2';
 import PB_GeoOptKeywordsCleaning3 from '../Pages_Before/Page_GeoOptKeywordsCleaning3';
 import PB_GeoOptKeywordsCleaning4 from '../Pages_Before/Page_GeoOptKeywordsCleaning4';
-import Page_KeywordExhaustClean from '../pages/Page_KeywordExhaustClean';
-import Page_KeywordClassifyExpand from '../pages/Page_KeywordClassifyExpand';
-import Page_KeywordConfirmPrompt from '../pages/Page_KeywordConfirmPrompt';
+import Page_KeywordExhaustClean, {
+  Page_KeywordExhaustClean2,
+  Page_KeywordExhaustClean3,
+} from '../pages/Page_KeywordExhaustClean';
+import Page_KeywordClassifyExpand, {
+  Page_KeywordClassifyExpand2,
+} from '../pages/Page_KeywordClassifyExpand';
+import Page_KeywordConfirmPrompt, {
+  Page_KeywordConfirmPrompt2,
+  Page_KeywordConfirmPrompt3,
+} from '../pages/Page_KeywordConfirmPrompt';
 import PB_AgentDataFlow from '../Pages_Before/Page_AgentDataFlow';
 import PB_BrandKnowledgeBase from '../Pages_Before/Page_BrandKnowledgeBase';
 import PB_UserReviewAnalysis from '../Pages_Before/Page_UserReviewAnalysis';
@@ -189,9 +204,9 @@ export const slideConfig = [
   { type: 'page', title: '词条生成逻辑', component: Page_KeywordGenerationLogic },
   { type: 'page', title: '词条打标逻辑', component: Page_KeywordTaggingLogic },
   { type: 'page', title: '词条拓展逻辑', component: Page_KeywordExpansionLogic },
-  { type: 'page', title: '词条穷举及清洗', component: Page_KeywordExhaustClean },
-  { type: 'page', title: '词条分类及拓展', component: Page_KeywordClassifyExpand },
-  { type: 'page', title: '词条确定', component: Page_KeywordConfirmPrompt },
+  { type: 'page', title: '词条穷举及清洗', components: [Page_KeywordExhaustClean, Page_KeywordExhaustClean2, Page_KeywordExhaustClean3] },
+  { type: 'page', title: '词条分类及拓展', components: [Page_KeywordClassifyExpand, Page_KeywordClassifyExpand2] },
+  { type: 'page', title: '词条确定', components: [Page_KeywordConfirmPrompt, Page_KeywordConfirmPrompt2, Page_KeywordConfirmPrompt3] },
 
   // ══════════════════════════════════════════════════════════
   // ——— 篇章2: GEO体检报告 ———
@@ -201,11 +216,17 @@ export const slideConfig = [
   { type: 'section', title: '数据分析报告说明' },
   { type: 'page', title: '报告说明', components: [Page_GeoReport_BasicInfo1, Page_GeoReport_BasicInfo2] },
 
-  { type: 'section', title: '词条数据' },
+  { type: 'section', title: '词条数据 · C端' },
   { type: 'page', title: '数据总览', components: [Page_GeoReport_Dashboard, Page_GeoReport_Dashboard2] },
   { type: 'page', title: '词条表现', components: [Page_GeoReport_Entries, Page_GeoReport_Entries_Analysis] },
   { type: 'page', title: '竞品对比', component: Page_GeoReport_Competitors_Analysis },
   { type: 'page', title: '引用源分析', components: [Page_GeoReport_Sources, Page_GeoReport_Sources2] },
+
+  { type: 'section', title: '词条数据 · B端' },
+  { type: 'page', title: '数据总览', components: [Page_GeoReport_Dashboard_ToB, Page_GeoReport_Dashboard2_ToB] },
+  { type: 'page', title: '词条表现', components: [Page_GeoReport_Entries_ToB, Page_GeoReport_Entries_Analysis_ToB] },
+  { type: 'page', title: '竞品对比', component: Page_GeoReport_Competitors_Analysis_ToB },
+  { type: 'page', title: '引用源分析', components: [Page_GeoReport_Sources_ToB, Page_GeoReport_Sources2_ToB] },
 
   { type: 'section', title: '品牌词舆情分析' },
   { type: 'page', title: '品牌正负面', components: [Page_GeoReport_Sentiment_Pre, Page_GeoReport_Sentiment] },

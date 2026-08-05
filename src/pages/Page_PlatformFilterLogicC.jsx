@@ -3,66 +3,67 @@ import { ExcelShell, TitleBar, Cell } from '../components/PlatformFilterExcelTab
 
 /* ══════════════ 数据：换 C 组明细时只改这一段 ══════════════ */
 
-const BRAND = '薇诺娜';
+/* C组参考品牌 = 行业头部竞品「顺丰」（竞品命中数 TOP1），非自家品牌 */
+const BRAND = '顺丰';
 
 const ROWS = [
     {
         rank: 1,
-        site: 'Stuck at Home Mom',
-        cites: 5,
-        hits: 5,
+        site: '山东省邮政管理局',
+        cites: 19,
+        hits: 19,
         rate: '100.00%',
-        deepseek: [0, 0],
-        doubao: [5, 5],
+        deepseek: [7, 7],
+        doubao: [0, 0],
+        yuanbao: [3, 3],
+        tongyi: [9, 9],
+        note: `极高命中率，${BRAND}在此平台强势覆盖`,
+    },
+    {
+        rank: 2,
+        site: '凤凰网',
+        cites: 17,
+        hits: 17,
+        rate: '100.00%',
+        deepseek: [4, 4],
+        doubao: [1, 1],
+        yuanbao: [3, 3],
+        tongyi: [9, 9],
+        note: `极高命中率，${BRAND}在此平台强势覆盖`,
+    },
+    {
+        rank: 3,
+        site: '物流指闻',
+        cites: 16,
+        hits: 16,
+        rate: '100.00%',
+        deepseek: [16, 16],
+        doubao: [0, 0],
         yuanbao: [0, 0],
         tongyi: [0, 0],
         note: `极高命中率，${BRAND}在此平台强势覆盖`,
     },
     {
-        rank: 2,
-        site: '廊坊新闻网',
-        cites: 5,
-        hits: 5,
-        rate: '100.00%',
-        deepseek: [0, 0],
-        doubao: [1, 1],
-        yuanbao: [4, 4],
-        tongyi: [0, 0],
-        note: `极高命中率，${BRAND}在此平台强势覆盖`,
-    },
-    {
-        rank: 3,
-        site: 'mombaby.com.tw',
-        cites: 5,
-        hits: 5,
-        rate: '100.00%',
-        deepseek: [0, 0],
-        doubao: [0, 0],
-        yuanbao: [5, 5],
-        tongyi: [0, 0],
-        note: `极高命中率，${BRAND}在此平台强势覆盖`,
-    },
-    {
         rank: 4,
-        site: '中国搜索',
-        cites: 3,
-        hits: 3,
+        site: '快递查询网',
+        cites: 14,
+        hits: 14,
         rate: '100.00%',
         deepseek: [0, 0],
         doubao: [0, 0],
-        yuanbao: [3, 3],
-        tongyi: [0, 0],
+        yuanbao: [13, 13],
+        tongyi: [1, 1],
         note: `极高命中率，${BRAND}在此平台强势覆盖`,
     },
     {
         rank: 5,
-        site: 'ulta.com',
-        cites: 3,
-        hits: 3,
+        site: '网经社',
+        cites: 11,
+        hits: 11,
         rate: '100.00%',
-        deepseek: [0, 0],
-        doubao: [0, 0],
-        yuanbao: [3, 3],
+        deepseek: [9, 9],
+        doubao: [1, 1],
+        yuanbao: [1, 1],
         tongyi: [0, 0],
         note: `极高命中率，${BRAND}在此平台强势覆盖`,
     },
@@ -200,8 +201,7 @@ export default function Page_PlatformFilterLogicC() {
                                 筛选逻辑动作
                             </span>
                             <p className="text-zinc-300 text-[1.15rem] leading-relaxed mt-1">
-                                把行业头部竞品曼可顿单独进行深挖分析，将命中率（出现品牌 / 总引用次数）作为一个重要验证数值。在关联紧密的垂直和综合矩阵中选出最高命中的
-                                5 个平台。
+                                把行业头部竞品「顺丰」单独深挖（竞品命中数 TOP1），将命中率（出现品牌 / 总引用次数）作为验证数值，选出最高命中的 5 个平台。
                             </p>
                         </div>
                     </div>

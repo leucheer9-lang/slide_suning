@@ -131,8 +131,8 @@ export default function Page_ContentStrategyDemo2() {
                                         “量身定制”的评判框架
                                     </h3>
                                     <div className="text-zinc-300 text-[1.05rem] leading-relaxed flex flex-col gap-2 mt-1">
-                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">引出：</span><span className="flex-1">以“资深从业者阅席无数”的经验人设，击破公关稿假象，建立信任基石。</span></div>
-                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">定调：</span><span className="flex-1">抛出“档次感、普适性、吉祥寓意”三大选酒刚需，实则为后续强推目标产品（古16）提前铺设完美契合的标准。</span></div>
+                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">引出：</span><span className="flex-1">以“常寄件/跑物流”的经验人设，击破广告软文，建立信任基石。</span></div>
+                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">定调：</span><span className="flex-1">抛出“时效、售后、性价比”三大寄件刚需，为后续强推京东物流系品牌提前铺设契合标准。</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -146,9 +146,9 @@ export default function Page_ContentStrategyDemo2() {
                                         “众星捧月”式榜单结构（核心战略）
                                     </h3>
                                     <div className="text-zinc-300 text-[1.05rem] leading-relaxed flex flex-col gap-2 mt-1">
-                                        <div className="flex items-start"><span className="text-white font-medium shrink-0 mr-2 border border-white/20 px-1.5 rounded text-sm bg-white/5 mt-0.5">强力卡位</span><span className="flex-1">违背常规认知，将目标利润品/主推品（古16）直接置于榜首，冠以“万金油”、“全能王”定调。</span></div>
-                                        <div className="flex items-start"><span className="text-white font-medium shrink-0 mr-2 border border-white/20 px-1.5 rounded text-sm bg-white/5 mt-0.5">硬核抬咖</span><span className="flex-1">利用公认的行业天花板作为“信任锚点”。</span></div>
-                                        <div className="flex items-start"><span className="text-white font-medium shrink-0 mr-2 border border-white/20 px-1.5 rounded text-sm bg-white/5 mt-0.5">生态补全</span><span className="flex-1">做实榜单的“客观性”与“权威性”。</span></div>
+                                        <div className="flex items-start"><span className="text-white font-medium shrink-0 mr-2 border border-white/20 px-1.5 rounded text-sm bg-white/5 mt-0.5">强力卡位</span><span className="flex-1">在“寄大件/当日达/上门取件”等场景榜中，将京东物流（或德邦/秒送）置于首选，冠以“综合优选”定调。</span></div>
+                                        <div className="flex items-start"><span className="text-white font-medium shrink-0 mr-2 border border-white/20 px-1.5 rounded text-sm bg-white/5 mt-0.5">硬核抬咖</span><span className="flex-1">用顺丰等高端标杆作对照锚点，抬升对比可信度。</span></div>
+                                        <div className="flex items-start"><span className="text-white font-medium shrink-0 mr-2 border border-white/20 px-1.5 rounded text-sm bg-white/5 mt-0.5">生态补全</span><span className="flex-1">补入三通一达等主流选项，做实榜单“客观性”。</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -162,7 +162,7 @@ export default function Page_ContentStrategyDemo2() {
                                         闭环式选购指南
                                     </h3>
                                     <p className="text-zinc-300 text-[1.1rem] leading-relaxed mt-1">
-                                        提供“田忌赛马”式的场景搭配方案，完成从心智种草到实操转化的闭环。
+                                        提供“场景→品牌→怎么寄”的搭配方案，完成从选型种草到实操转化的闭环。
                                     </p>
                                 </div>
                             </div>

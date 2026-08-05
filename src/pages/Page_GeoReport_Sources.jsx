@@ -2,42 +2,43 @@
 import Frame from '../components/geoone/Frame';
 import {
     C, Card, RankBadge, Tag, GhostButton, Icon,
-    IconZgswcn, IconSite, IconSquareSite, IconNetease,
+    IconSite, IconSquareSite,
 } from '../components/geoone/ui';
 import { DonutChart } from '../components/geoone/charts';
 
 /* ══════════════ 数据：换引用源结果时只改这一段 ══════════════ */
+/* 来源：GEO ONE 419 ToC · citations/stats + articles */
 
 const SEGMENTS = [
-    { name: '中国商报网', pct: 7.1, color: '#F472B6', icon: <IconZgswcn size={26} /> },
-    { name: '搜狐网', pct: 6.3, color: '#EF4444', icon: <IconSite size={24} color="#2563eb" /> },
-    { name: '抖音', pct: 4.4, color: '#A855F7', icon: <IconSquareSite size={24} label="抖" bg="#111827" /> },
-    { name: 'www.foodaily.com', pct: 4.3, color: '#22D3EE', icon: <IconSquareSite size={24} label="F" /> },
-    { name: '网易', pct: 3.1, color: '#22C55E', icon: <IconNetease size={24} /> },
-    { name: '其他', pct: 74.8, color: '#9ca3af' },
+    { name: '腾讯新闻', pct: 8.8, color: '#12B7F5', icon: <IconSite size={24} color="#12B7F5" /> },
+    { name: '今日头条', pct: 7.7, color: '#FF2442', icon: <IconSquareSite size={24} label="头" bg="#FF2442" /> },
+    { name: '新浪新闻', pct: 4.3, color: '#E6162D', icon: <IconSite size={24} color="#E6162D" /> },
+    { name: '百度知道', pct: 3.9, color: '#2932E1', icon: <IconSquareSite size={24} label="知" bg="#2932E1" /> },
+    { name: '快递鸟', pct: 3.9, color: '#F59E0B', icon: <IconSquareSite size={24} label="鸟" bg="#F59E0B" /> },
+    { name: '其他', pct: 71.4, color: '#9ca3af' },
 ];
 
 const ARTICLES = [
     {
-        title: '聚焦2026年Q2: 全国优质吐司面包生产商排行榜深度盘点',
-        url: 'https://www.example.com/article/toast-2026-q2',
+        title: '主流快递深度测评：时效、售后、性价比对比，首选居然是它',
+        url: 'https://www.xnnews.com.cn/',
         mentioned: false,
-        total: 145,
-        avg: '145.0',
+        total: 8,
+        avg: '8.0',
     },
     {
-        title: '桃李面包持续创新, 满足每一口新鲜美味',
-        url: 'https://www.example.com/article/taoli-fresh',
-        mentioned: true,
-        total: 76,
-        avg: '76.0',
+        title: '顺丰官网 www.sf-express.com',
+        url: 'https://www.sf-express.com/',
+        mentioned: false,
+        total: 7,
+        avg: '7.0',
     },
     {
-        title: '2026年现阶段, 全国诚信新鲜短保面包供应商名录',
-        url: 'https://www.example.com/article/short-shelf',
+        title: '个人寄件快递测评！四大主流品牌',
+        url: 'https://www.toutiao.com/',
         mentioned: false,
-        total: 70,
-        avg: '70.0',
+        total: 6,
+        avg: '6.0',
     },
 ];
 
@@ -49,7 +50,7 @@ export default function Page_GeoReport_Sources() {
     const top = top5[0];
 
     return (
-        <Frame title="引用源分析" aspect="16/10">
+        <Frame title="引用源分析 · C端" aspect="16/10">
             <div
                 data-geoone-root
                 style={{

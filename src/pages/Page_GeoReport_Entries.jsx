@@ -1,25 +1,26 @@
 ﻿import React from 'react';
 import Frame from '../components/geoone/Frame';
 import GeoOneApp, { MAIN_LEFT, MAIN_W } from '../components/geoone/GeoOneApp';
-import { C, Checkbox, Toggle, GhostButton } from '../components/geoone/ui';
+import { C, Checkbox, Toggle, GhostButton, PlatformDots, ShotThumb } from '../components/geoone/ui';
 
 /* ══════════════ 数据：换监测词条时只改这一段 ══════════════ */
+/* 来源：GEO ONE 项目 419 京东物流-ToC① */
 
-const TARGET = '桃李面包';
+const TARGET = '京东物流';
 
 const ROWS = [
-    { term: '适合便利店长期铺货、口味多上新快的面包品牌推荐', rate: '66.7%', rank: 'NO. 4.3' },
-    { term: '适合连锁超市供货的面包品牌推荐', rate: '100.0%', rank: 'NO. 3.0' },
-    { term: '毛利高的面包批发品牌推荐', rate: '33.3%', rank: 'NO. 7.0' },
-    { term: '适合便利店进货的面包品牌推荐', rate: '100.0%', rank: 'NO. 1.0' },
-    { term: '适合商超长期合作的短保面包供应商推荐', rate: '66.7%', rank: 'NO. 2.5' },
-    { term: '周转快、退货少的面包供货品牌有哪些', rate: '100.0%', rank: 'NO. 1.7' },
-    { term: '适合夫妻店铺货的面包品牌怎么选', rate: '33.3%', rank: 'NO. 5.0' },
-    { term: '批发价稳定、送货及时的面包品牌推荐', rate: '66.7%', rank: 'NO. 3.3' },
-    { term: '适合便利店陈列的短保面包品类推荐', rate: '100.0%', rank: 'NO. 2.0' },
-    { term: '高复购的批发面包品牌有哪些', rate: '66.7%', rank: 'NO. 4.0' },
-    { term: '适合校园店进货的面包品牌推荐', rate: '33.3%', rank: 'NO. 6.0' },
-    { term: '适合县城商超铺货的面包品牌推荐', rate: '66.7%', rank: 'NO. 3.7' },
+    { term: '寄家具家电的快递推荐', rate: '100.0%', rank: 'NO. 1.0', shot: 'https://app.geoindexfuture.com/screenshots/20260805/fc76be65dc8a4266ac6b168eb7748fed.png', time: '2026/8/4' },
+    { term: '寄家电能送装的快递推荐', rate: '100.0%', rank: 'NO. 1.8', shot: 'https://app.geoindexfuture.com/screenshots/20260805/2ce56064a53b4725829eccdb75dbdbdb.png', time: '2026/8/4' },
+    { term: '服务好的快递推荐', rate: '100.0%', rank: 'NO. 2.0', shot: 'https://app.geoindexfuture.com/screenshots/20260805/1c982cd071204ef6a31c7604b6b42652.png', time: '2026/8/4' },
+    { term: '口碑好的快递推荐', rate: '100.0%', rank: 'NO. 2.0', shot: 'https://app.geoindexfuture.com/screenshots/20260805/4d2905eae89743dfbbab1d36993d694b.png', time: '2026/8/4' },
+    { term: '寄东西丢了好理赔的快递推荐', rate: '100.0%', rank: 'NO. 2.0', shot: 'https://app.geoindexfuture.com/screenshots/20260805/243da884b1074c2b99dc9e1531ab52c1.png', time: '2026/8/4' },
+    { term: '快递员服务态度好的快递推荐', rate: '100.0%', rank: 'NO. 2.0', shot: 'https://app.geoindexfuture.com/screenshots/20260805/eb7837e06095459aae97cf1a0f84f512.png', time: '2026/8/4' },
+    { term: '速度快的快递排行榜', rate: '100.0%', rank: 'NO. 2.3', shot: 'https://app.geoindexfuture.com/screenshots/20260805/b37e2651d7554bec9c7d0b79a4e13eaf.png', time: '2026/8/4' },
+    { term: '寄手机电脑安全的快递推荐', rate: '100.0%', rank: 'NO. 2.3', shot: 'https://app.geoindexfuture.com/screenshots/20260805/f2c4cee3f9ce4fc49d88a90a19358e72.png', time: '2026/8/4' },
+    { term: '寄生鲜水果不怕坏的快递推荐', rate: '100.0%', rank: 'NO. 2.5', shot: 'https://app.geoindexfuture.com/screenshots/20260805/2b99b21587f04aadb6594d9a0472437b.png', time: '2026/8/4' },
+    { term: '寄快递哪家快递最快', rate: '50.0%', rank: 'NO. 4.8', shot: 'https://app.geoindexfuture.com/screenshots/20260805/ffa37c7e624a4f45bc0fd0cdad0f7211.png', time: '2026/8/4' },
+    { term: '学生开学寄被子行李箱的快递推荐', rate: '25.0%', rank: 'NO. 4.3', shot: 'https://app.geoindexfuture.com/screenshots/20260805/b7f276cfa48a4028b09976838f1530c4.png', time: '2026/8/4' },
+    { term: '服务丰富的一站式快递平台推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260805/68bebdc7b98944d398a2d78fdb17717a.png', time: '2026/8/4' },
 ];
 
 const COLS = [
@@ -36,59 +37,17 @@ const COLS = [
 const ROW_H = 56;
 const HEAD_H = 44;
 
-function PlatformDots() {
-    const colors = ['#4D6BFE', '#22C55E', '#F97316'];
-    return (
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-            {colors.map((c, i) => (
-                <div
-                    key={i}
-                    style={{
-                        width: 22,
-                        height: 22,
-                        borderRadius: '50%',
-                        background: c,
-                        border: '2px solid #fff',
-                        marginLeft: i === 0 ? 0 : -6,
-                        boxShadow: '0 0 0 1px #e2e8f0',
-                    }}
-                />
-            ))}
-        </div>
-    );
-}
-
-function ShotThumb() {
-    return (
-        <div
-            style={{
-                width: 28,
-                height: 38,
-                borderRadius: 4,
-                border: `1px solid ${C.border}`,
-                background: 'linear-gradient(180deg,#f8fafc 0%,#e2e8f0 100%)',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: 2,
-            }}
-        >
-            <div style={{ width: 14, height: 2, background: '#94a3b8', borderRadius: 1 }} />
-            <div style={{ width: 14, height: 2, background: '#cbd5e1', borderRadius: 1 }} />
-            <div style={{ width: 10, height: 2, background: '#cbd5e1', borderRadius: 1 }} />
-        </div>
-    );
-}
-
 export default function Page_GeoReport_Entries() {
     return (
-        <Frame title="词条表现分析" aspect="1586/912.5">
+        <Frame title="词条表现分析 · C端" aspect="1586/912.5">
             <GeoOneApp
                 height={912.5}
                 active="词条"
                 title="词条"
                 target={TARGET}
+                brand="京东物流(ToC)"
+                brandSub="京东物流"
+                avatar="京"
                 toolbarRight={
                     <>
                         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
@@ -187,10 +146,10 @@ export default function Page_GeoReport_Entries() {
                                 <PlatformDots />
                             </div>
                             <div style={{ width: COLS[6].w, flexShrink: 0, paddingLeft: 8 }}>
-                                <ShotThumb />
+                                <ShotThumb src={r.shot} />
                             </div>
                             <div style={{ width: COLS[7].w, flexShrink: 0, paddingLeft: 8, fontSize: 14, color: C.muted }}>
-                                2026/6/17
+                                {r.time}
                             </div>
                         </div>
                     ))}

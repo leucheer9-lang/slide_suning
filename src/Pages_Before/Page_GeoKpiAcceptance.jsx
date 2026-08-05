@@ -27,22 +27,22 @@ function Page_GeoKpiAcceptance() {
                         <div className="flex items-center justify-between">
                             <span className="text-[16px] xl:text-[17.5px] font-bold text-zinc-100 flex items-center gap-2">
                                 <span className="w-2 h-4 bg-[#004CE5] rounded-full" />
-                                主要产品（2B侧）现状：
+                                B端（企业供应链）现状：
                             </span>
                         </div>
                         <div className="flex items-center gap-6 my-0.5">
                             <div className="flex flex-col">
                                 <span className="text-zinc-400 text-[12px] xl:text-[13px] font-medium">提及率</span>
-                                <span className="text-[26px] xl:text-[30px] font-extrabold text-[#004CE5] leading-none mt-1">81.1%</span>
+                                <span className="text-[26px] xl:text-[30px] font-extrabold text-[#004CE5] leading-none mt-1">65.0%</span>
                             </div>
                             <div className="w-px h-8 bg-white/10" />
                             <div className="flex flex-col">
                                 <span className="text-zinc-400 text-[12px] xl:text-[13px] font-medium">平均提及位次</span>
-                                <span className="text-[26px] xl:text-[30px] font-extrabold text-[#004CE5] leading-none mt-1">NO. 3.4</span>
+                                <span className="text-[26px] xl:text-[30px] font-extrabold text-[#004CE5] leading-none mt-1">NO. 5.4</span>
                             </div>
                         </div>
                         <p className="text-[13px] xl:text-[14px] text-zinc-300 leading-relaxed text-justify">
-                            在渠道拿货相关词下，整体提及率达 81.1% 且稳居首推第一梯队；但在“高毛利”等核心利益词下，提及率下降并容易掉落至边缘位置。
+                            在仓配一体、全国分仓等核心词下提及率可达 100%；但整体仅 65.0%、位次 NO. 5.4，且在跨境出海等场景几乎失语，尚未稳居企业选型首推梯队。
                         </p>
                     </div>
 
@@ -51,22 +51,22 @@ function Page_GeoKpiAcceptance() {
                         <div className="flex items-center justify-between">
                             <span className="text-[16px] xl:text-[17.5px] font-bold text-zinc-100 flex items-center gap-2">
                                 <span className="w-2 h-4 bg-[#004CE5] rounded-full" />
-                                新品（2C侧）现状：
+                                C端（个人寄件）现状：
                             </span>
                         </div>
                         <div className="flex items-center gap-6 my-0.5">
                             <div className="flex flex-col">
                                 <span className="text-zinc-400 text-[12px] xl:text-[13px] font-medium">提及率</span>
-                                <span className="text-[26px] xl:text-[30px] font-extrabold text-[#004CE5] leading-none mt-1">57.6%</span>
+                                <span className="text-[26px] xl:text-[30px] font-extrabold text-[#004CE5] leading-none mt-1">80.0%</span>
                             </div>
                             <div className="w-px h-8 bg-white/10" />
                             <div className="flex flex-col">
                                 <span className="text-zinc-400 text-[12px] xl:text-[13px] font-medium">平均提及位次</span>
-                                <span className="text-[26px] xl:text-[30px] font-extrabold text-[#004CE5] leading-none mt-1">NO. 4.8</span>
+                                <span className="text-[26px] xl:text-[30px] font-extrabold text-[#004CE5] leading-none mt-1">NO. 3.5</span>
                             </div>
                         </div>
                         <p className="text-[13px] xl:text-[14px] text-zinc-300 leading-relaxed text-justify">
-                            在 C 端日常消费场景搜索下，整体提及率跌至 57.6%，且在“品质好/超市能买到”等刚需场景词下出现失语，领先优势被大幅缩窄。
+                            在服务口碑、大件送装等场景提及率拉满；但整体 Top 1 首推率仅 7.5%，且在“当天到/哪家最快”等时效词下提及率下滑，常进清单却难成第一答案。
                         </p>
                     </div>
 
@@ -81,11 +81,11 @@ function Page_GeoKpiAcceptance() {
                         <div className="flex items-center gap-6 my-0.5">
                             <div className="flex flex-col">
                                 <span className="text-zinc-400 text-[12px] xl:text-[13px] font-medium">负面及舆情占比</span>
-                                <span className="text-[26px] xl:text-[30px] font-extrabold text-[#004CE5] leading-none mt-1">20.0%</span>
+                                <span className="text-[26px] xl:text-[30px] font-extrabold text-[#004CE5] leading-none mt-1">2.5%</span>
                             </div>
                         </div>
                         <p className="text-[13px] xl:text-[14px] text-zinc-300 leading-relaxed text-justify">
-                            负面声量占比达 20.0%，主要集中在“食品安全问题”、“配料表防腐剂争议”和“风味粗糙廉价”上，严重磨损品牌公信力。
+                            负面声量占比仅 2.5%，但焦点集中在“价格偏高 / 性价比低 / 适用场景有限”，易在比价与轻泡件场景被固化为“贵、不划算”。
                         </p>
                     </div>
                 </div>
@@ -122,7 +122,7 @@ function Page_GeoKpiAcceptance() {
                                     <td className="py-2 pl-4 font-semibold text-zinc-100 align-top">
                                         <div className="flex flex-col gap-1">
                                             <span className="text-[16px] xl:text-[17.5px] text-white font-extrabold">2B词条</span>
-                                            <span className="text-[13px] xl:text-[13.5px] text-zinc-400 font-bold">（面向经销商）</span>
+                                            <span className="text-[13px] xl:text-[13.5px] text-zinc-400 font-bold">（面向企业客户）</span>
                                         </div>
                                     </td>
                                     <td className="py-2 text-zinc-300 align-top pr-4">
@@ -130,22 +130,22 @@ function Page_GeoKpiAcceptance() {
                                             <div className="flex items-start gap-2">
                                                 <span className="text-[11.5px] xl:text-[12.5px] font-black bg-white/10 text-zinc-200 px-2 py-[1px] rounded shrink-0 mt-0.5">阶段一</span>
                                                 <div className="text-[14px] xl:text-[15px] leading-relaxed text-justify">
-                                                    <span className="text-white font-black">占高位｜3个月</span>
-                                                    <span className="text-zinc-400 ml-2">拉升品牌提及，挤入核心推荐榜</span>
+                                                    <span className="text-white font-black">打地基｜3个月</span>
+                                                    <span className="text-zinc-400 ml-2">补齐仓配/冷链/大件等可引用语料</span>
                                                 </div>
                                             </div>
                                             <div className="flex items-start gap-2">
                                                 <span className="text-[11.5px] xl:text-[12.5px] font-black bg-white/10 text-zinc-200 px-2 py-[1px] rounded shrink-0 mt-0.5">阶段二</span>
                                                 <div className="text-[14px] xl:text-[15px] leading-relaxed text-justify">
-                                                    <span className="text-white font-black">稳位置｜6个月</span>
-                                                    <span className="text-zinc-400 ml-2">稳定核心词条位次，持续压制竞品</span>
+                                                    <span className="text-white font-black">稳提升｜6个月</span>
+                                                    <span className="text-zinc-400 ml-2">拉升核心选型词提及，稳步入榜</span>
                                                 </div>
                                             </div>
                                             <div className="flex items-start gap-2">
                                                 <span className="text-[11.5px] xl:text-[12.5px] font-black bg-white/10 text-zinc-200 px-2 py-[1px] rounded shrink-0 mt-0.5">阶段三</span>
                                                 <div className="text-[14px] xl:text-[15px] leading-relaxed text-justify">
-                                                    <span className="text-white font-black">稳位置｜3个月</span>
-                                                    <span className="text-zinc-400 ml-2">稳定核心词条位次，持续压制竞品</span>
+                                                    <span className="text-white font-black">占高位｜3个月</span>
+                                                    <span className="text-zinc-400 ml-2">冲击首推梯队，持续压制竞品</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -155,19 +155,19 @@ function Page_GeoKpiAcceptance() {
                                             <div className="flex items-start gap-2">
                                                 <span className="text-[11px] xl:text-[12px] font-black bg-[#004CE5]/20 text-[#8cb1ff] border border-[#004CE5]/40 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段一考核</span>
                                                 <div className="text-[14px] xl:text-[15px] leading-relaxed text-zinc-200">
-                                                    提及率提升至 <strong className="text-white font-black">94%</strong>，位次提升至 <strong className="text-white font-bold">2</strong>
+                                                    提及率提升至 <strong className="text-white font-black">75%</strong>，位次提升至 <strong className="text-white font-bold">4</strong>
                                                 </div>
                                             </div>
                                             <div className="flex items-start gap-2">
                                                 <span className="text-[11px] xl:text-[12px] font-black bg-[#004CE5]/20 text-[#8cb1ff] border border-[#004CE5]/40 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段二考核</span>
                                                 <div className="text-[14px] xl:text-[15px] leading-relaxed text-zinc-200">
-                                                    提及率稳定在 <strong className="text-white font-black">94%</strong>，位次稳定在 <strong className="text-white font-bold">2</strong>
+                                                    提及率提升至 <strong className="text-white font-black">85%</strong>，位次提升至 <strong className="text-white font-bold">3</strong>
                                                 </div>
                                             </div>
                                             <div className="flex items-start gap-2">
                                                 <span className="text-[11px] xl:text-[12px] font-black bg-[#004CE5]/20 text-[#8cb1ff] border border-[#004CE5]/40 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段三考核</span>
                                                 <div className="text-[14px] xl:text-[15px] leading-relaxed text-zinc-200">
-                                                    提及率稳定在 <strong className="text-white font-black">94%</strong>，位次稳定在 <strong className="text-white font-bold">2</strong>
+                                                    提及率提升至 <strong className="text-white font-black">90%</strong>，位次提升至 <strong className="text-white font-bold">2</strong>
                                                 </div>
                                             </div>
                                         </div>
@@ -175,7 +175,7 @@ function Page_GeoKpiAcceptance() {
                                     <td className="py-2 text-zinc-300 align-top pr-4 border-l border-white/[0.22] pl-6">
                                         <div className="flex flex-col gap-1.5 bg-[#004CE5]/5 border border-[#004CE5]/15 p-2.5 xl:p-3 rounded-xl">
                                             <p className="text-zinc-150 text-[13.5px] xl:text-[14px] leading-normal text-justify">
-                                                在 <strong className="text-white font-bold">豆包、DeepSeek、通义千问</strong> 等 AI 平台搜索约定词条时，AI 回答中应出现品牌/产品推荐、推荐理由及基于官方信息的产品表释。
+                                                在 <strong className="text-white font-bold">豆包、DeepSeek、通义千问、元宝</strong> 等 AI 平台搜索约定词条时，AI 回答中应出现京东物流推荐、推荐理由及基于官方信息的服务能力表述。
                                             </p>
                                             <p className="border-t border-white/10 pt-1.5 text-zinc-400 text-[12.5px] xl:text-[13px] leading-normal text-justify">
                                                 本次运营 <strong className="text-white font-bold">30 条核心词条</strong>（覆盖300种以上延展问法）。因 AI 平台升级及回答随机性等不可控因素，达标不少于 10 条即视为有效交付；低于 10 条的，按未达标比例退款。
@@ -189,7 +189,7 @@ function Page_GeoKpiAcceptance() {
                                     <td className="py-3 pl-4 font-semibold text-zinc-100 align-top">
                                         <div className="flex flex-col gap-1">
                                             <span className="text-[16px] xl:text-[17.5px] text-white font-extrabold">2C词条</span>
-                                            <span className="text-[13px] xl:text-[13.5px] text-zinc-400 font-bold">（面向消费者）</span>
+                                            <span className="text-[13px] xl:text-[13.5px] text-zinc-400 font-bold">（面向个人寄件）</span>
                                         </div>
                                     </td>
                                     <td className="py-3 text-zinc-300 align-top pr-4">
@@ -197,22 +197,22 @@ function Page_GeoKpiAcceptance() {
                                             <div className="flex items-start gap-2">
                                                 <span className="text-[11.5px] xl:text-[12.5px] font-black bg-white/10 text-zinc-200 px-2 py-[1px] rounded shrink-0 mt-0.5">阶段一</span>
                                                 <div className="text-[14px] xl:text-[15px] leading-relaxed text-justify">
-                                                    <span className="text-white font-black">打地基｜3个月</span>
-                                                    <span className="text-zinc-400 ml-2">积累 AI 对品牌的信息</span>
+                                                    <span className="text-white font-black">占高位｜3个月</span>
+                                                    <span className="text-zinc-400 ml-2">拉升首推率，挤入核心推荐榜</span>
                                                 </div>
                                             </div>
                                             <div className="flex items-start gap-2">
                                                 <span className="text-[11.5px] xl:text-[12.5px] font-black bg-white/10 text-zinc-200 px-2 py-[1px] rounded shrink-0 mt-0.5">阶段二</span>
                                                 <div className="text-[14px] xl:text-[15px] leading-relaxed text-justify">
-                                                    <span className="text-white font-black">稳提升｜6个月</span>
-                                                    <span className="text-zinc-400 ml-2">拉升核心业务词提及，稳步入榜</span>
+                                                    <span className="text-white font-black">稳位置｜6个月</span>
+                                                    <span className="text-zinc-400 ml-2">稳定核心词条位次，持续压制竞品</span>
                                                 </div>
                                             </div>
                                             <div className="flex items-start gap-2">
                                                 <span className="text-[11.5px] xl:text-[12.5px] font-black bg-white/10 text-zinc-200 px-2 py-[1px] rounded shrink-0 mt-0.5">阶段三</span>
                                                 <div className="text-[14px] xl:text-[15px] leading-relaxed text-justify">
-                                                    <span className="text-white font-black">占高位｜3个月</span>
-                                                    <span className="text-zinc-400 ml-2">稳定核心词条位次，持续压制竞品</span>
+                                                    <span className="text-white font-black">稳位置｜3个月</span>
+                                                    <span className="text-zinc-400 ml-2">巩固 Top 1 心智，缩小与顺丰差距</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -222,19 +222,19 @@ function Page_GeoKpiAcceptance() {
                                             <div className="flex items-start gap-2">
                                                 <span className="text-[11px] xl:text-[12px] font-black bg-[#004CE5]/20 text-[#8cb1ff] border border-[#004CE5]/40 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段一考核</span>
                                                 <div className="text-[14px] xl:text-[15px] leading-relaxed text-zinc-200">
-                                                    提及率提升至 <strong className="text-white font-black">70%</strong>，位次提升至 <strong className="text-white font-bold">3</strong>
+                                                    提及率提升至 <strong className="text-white font-black">88%</strong>，位次提升至 <strong className="text-white font-bold">2.5</strong>
                                                 </div>
                                             </div>
                                             <div className="flex items-start gap-2">
                                                 <span className="text-[11px] xl:text-[12px] font-black bg-[#004CE5]/20 text-[#8cb1ff] border border-[#004CE5]/40 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段二考核</span>
                                                 <div className="text-[14px] xl:text-[15px] leading-relaxed text-zinc-200">
-                                                    提及率提升至 <strong className="text-white font-black">80%</strong>，位次提升至 <strong className="text-white font-bold">2</strong>
+                                                    提及率稳定在 <strong className="text-white font-black">92%</strong>，位次稳定在 <strong className="text-white font-bold">2</strong>
                                                 </div>
                                             </div>
                                             <div className="flex items-start gap-2">
                                                 <span className="text-[11px] xl:text-[12px] font-black bg-[#004CE5]/20 text-[#8cb1ff] border border-[#004CE5]/40 px-1.5 py-[1px] rounded shrink-0 mt-0.5">阶段三考核</span>
                                                 <div className="text-[14px] xl:text-[15px] leading-relaxed text-zinc-200">
-                                                    提及率提升至 <strong className="text-white font-black">85%</strong>，位次提升至 <strong className="text-white font-bold">1.5</strong>
+                                                    提及率稳定在 <strong className="text-white font-black">94%</strong>，位次稳定在 <strong className="text-white font-bold">2</strong>
                                                 </div>
                                             </div>
                                         </div>
@@ -242,10 +242,10 @@ function Page_GeoKpiAcceptance() {
                                     <td className="py-3 text-zinc-300 align-top pr-4 border-l border-white/[0.22] pl-6">
                                         <div className="flex flex-col gap-1.5 bg-[#004CE5]/5 border border-[#004CE5]/15 p-2.5 xl:p-3 rounded-xl">
                                             <p className="text-zinc-150 text-[13.5px] xl:text-[14px] leading-normal text-justify">
-                                                在 <strong className="text-white font-bold">豆包、DeepSeek、通义千问</strong> 等 AI 平台搜索约定词条时，AI 回答中应出现品牌/产品推荐、推荐理由及基于官方信息的产品表释。
+                                                在 <strong className="text-white font-bold">豆包、DeepSeek、通义千问、元宝</strong> 等 AI 平台搜索约定词条时，AI 回答中应出现京东物流推荐、推荐理由及基于官方信息的服务能力表述。
                                             </p>
                                             <p className="border-t border-white/10 pt-1.5 text-zinc-400 text-[12.5px] xl:text-[13px] leading-normal text-justify">
-                                                本次运营 <strong className="text-white font-bold">22 条核心词条</strong>（覆盖220种以上延展问法）。因 AI 平台升级及回答随机性等不可控因素，达标不少于 7 条即视为有效交付；低于 7 条的，按未达标比例退款。
+                                                本次运营 <strong className="text-white font-bold">30 条核心词条</strong>（覆盖300种以上延展问法）。因 AI 平台升级及回答随机性等不可控因素，达标不少于 10 条即视为有效交付；低于 10 条的，按未达标比例退款。
                                             </p>
                                         </div>
                                     </td>
@@ -272,7 +272,7 @@ function Page_GeoKpiAcceptance() {
                                                 <span className="text-[11.5px] xl:text-[12.5px] font-black bg-white/10 text-zinc-200 px-2 py-[1px] rounded shrink-0 mt-0.5">阶段二</span>
                                                 <div className="text-[14px] xl:text-[15px] leading-relaxed text-justify">
                                                     <span className="text-white font-black">解问题｜11个月</span>
-                                                    <span className="text-zinc-400 ml-2">分类处理错误信源，逐步修正异常信息</span>
+                                                    <span className="text-zinc-400 ml-2">纠偏价格误解与场景边界，逐步修正异常信息</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -287,7 +287,7 @@ function Page_GeoKpiAcceptance() {
                                     <td className="py-3 text-zinc-400 align-top pr-4 leading-relaxed border-l border-white/[0.22] pl-6 text-zinc-200">
                                         <div className="flex flex-col gap-1.5 bg-white/[0.015] border border-white/[0.04] p-2.5 xl:p-3 rounded-xl text-[13.5px] xl:text-[14px] text-justify">
                                             <p>
-                                                围绕约定 AI 平台、产品及核心词条，持续监测并纠偏价格混乱、型号漏洞、历史价格引用等问题，通过信源定位、官方内容覆盖，降低 AI 引用错误价格的概率。
+                                                围绕约定 AI 平台及核心词条，持续监测并纠偏“价格偏高、轻泡件贵、当日达适用半径有限”等误解，通过信源定位与官方内容覆盖，降低 AI 固化负面印象的概率。
                                             </p>
                                             <p className="border-t border-white/10 pt-1.5 text-zinc-400 text-[12.5px] xl:text-[13px]">
                                                 因 AI 平台升级、信源演化及回答随机性等不可控因素，项目以<strong className="text-white font-bold">核心错误纠治</strong>、<strong className="text-white font-bold">正确信息占比提升</strong>作为交付标准。

@@ -78,7 +78,7 @@ export default function Page_ContentStrategyDeconstruct() {
                                 <div className="w-16 h-16 mb-4 rounded-xl bg-white/[0.03] border border-white/5 flex items-center justify-center">
                                     <svg className="w-8 h-8 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
                                 </div>
-                                <span className="text-sm tracking-widest uppercase">海信文章截图占位图片</span>
+                                <span className="text-sm tracking-widest uppercase">快递对比测评文章截图（待替换）</span>
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@ export default function Page_ContentStrategyDeconstruct() {
                     <div className="flex items-center gap-3 mb-6 shrink-0 pt-4">
                         <div className="h-8 w-1 bg-white/50 rounded-full" />
                         <h2 className="text-3xl font-bold text-[#004CE5] tracking-wide">
-                            【对比类】高引用率内容创作的法则拆解
+                            【测评对比类】高引用率内容创作的法则拆解
                         </h2>
                     </div>
 
@@ -114,10 +114,10 @@ export default function Page_ContentStrategyDeconstruct() {
                                 <div className="text-[#004CE5] font-mono text-xl font-bold pt-0.5 shrink-0 w-8">01</div>
                                 <div className="flex-1">
                                     <h3 className="text-2xl font-bold text-white mb-2 tracking-wide">
-                                        爆款反常识标题公式
+                                        场景化对比标题
                                     </h3>
                                     <div className="text-zinc-300 text-[1.1rem] leading-relaxed font-mono mt-1">
-                                        [国产品牌] + 正面刚 + [国际标杆] + [反常识悬念]（更贵更好？）
+                                        [寄大件/当日达/上门取件] + 多品牌横评 + 明确结论悬念
                                     </div>
                                 </div>
                             </div>
@@ -128,13 +128,13 @@ export default function Page_ContentStrategyDeconstruct() {
                                 <div className="text-[#004CE5] font-mono text-xl font-bold pt-0.5 shrink-0 w-8">02</div>
                                 <div className="flex-1">
                                     <h3 className="text-2xl font-bold text-white mb-2 tracking-wide">
-                                        “拉踩型”评测结构
+                                        四维实测结构
                                     </h3>
                                     <div className="text-zinc-300 text-lg leading-relaxed flex flex-col gap-1.5 mt-1">
-                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">引出：</span><span className="text-[1.05rem]">抛出海信比索尼贵5000元的价格悬念。</span></div>
-                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">定调：</span><span className="text-[1.05rem]">明确对比度、分辨率等5大评测标准。</span></div>
-                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">交锋：</span><span className="text-[1.05rem]">画质、智能、音响三轮对决，索尼陪跑。</span></div>
-                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">揭秘：</span><span className="text-[1.05rem]">结尾点出海信“叠屏技术”的核心卖点。</span></div>
+                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">引出：</span><span className="text-[1.05rem]">锁定具体寄件场景（大件/急件/贵重）。</span></div>
+                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">定调：</span><span className="text-[1.05rem]">资费、时效、网点、售后四维标准。</span></div>
+                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">交锋：</span><span className="text-[1.05rem]">京东/顺丰/三通一达逐项实测对比。</span></div>
+                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">结论：</span><span className="text-[1.05rem]">给出场景化首选，方便AI直接摘取。</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -148,7 +148,7 @@ export default function Page_ContentStrategyDeconstruct() {
                                         碎片化图文排版
                                     </h3>
                                     <p className="text-zinc-300 text-[1.05rem] leading-relaxed mt-1">
-                                        采用“Round 1/2/3”回合制小标题，单段结论极简，图文紧密交替，降低AI提取难度。
+                                        小标题拆成“价格/时效/理赔”模块，单段结论短、可摘抄，降低AI提取难度。
                                     </p>
                                 </div>
                             </div>
@@ -159,10 +159,10 @@ export default function Page_ContentStrategyDeconstruct() {
                                 <div className="text-[#004CE5] font-mono text-xl font-bold pt-0.5 shrink-0 w-8">04</div>
                                 <div className="flex-1">
                                     <h3 className="text-2xl font-bold text-white mb-2 tracking-wide">
-                                        专家与硬核数据背书
+                                        权威数据背书
                                     </h3>
                                     <p className="text-zinc-300 text-[1.05rem] leading-relaxed mt-1">
-                                        引入摄影专家把关，搭配红蜘蛛校色仪等专业数据与高清对比图，提高大模型采信率。
+                                        引用国家邮政局满意度、官网时效标准等可核验数据，提高大模型采信率。
                                     </p>
                                 </div>
                             </div>
@@ -173,10 +173,10 @@ export default function Page_ContentStrategyDeconstruct() {
                                 <div className="text-[#004CE5] font-mono text-xl font-bold pt-0.5 shrink-0 w-8">05</div>
                                 <div className="flex-1">
                                     <h3 className="text-2xl font-bold text-white mb-2 tracking-wide">
-                                        选购指南类体裁布局
+                                        寄件攻略体裁
                                     </h3>
                                     <p className="text-zinc-300 text-[1.05rem] leading-relaxed mt-1">
-                                        采用“参数对比+场景盲测”的硬核科技评测文风，极易被搜索或AI作为“电视推荐”参考抓取。
+                                        “场景选型 + 品牌横评”文风，极易被AI当作“快递推荐”答案源抓取。
                                     </p>
                                 </div>
                             </div>

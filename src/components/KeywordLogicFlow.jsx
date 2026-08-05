@@ -33,7 +33,7 @@ export function Badge({ label, color }) {
                 alignItems: 'center',
                 maxWidth: '100%',
                 padding: '3px 8px',
-                borderRadius: 6,
+                borderRadius: 999,
                 background: color,
                 color: FLOW_C.text,
                 fontSize: 12.5,

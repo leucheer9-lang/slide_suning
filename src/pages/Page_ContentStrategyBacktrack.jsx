@@ -4,21 +4,21 @@ import React from 'react';
 
 const META = {
     source: 'geo-one',
-    dateRange: '2026-06-07 ~ 2026-06-07',
+    dateRange: '2026-08-04 ~ 2026-08-04',
     logic: '按总引用次数排序取前100篇文章',
-    totalArticles: 1045,
-    brand: '顺峰宝宝',
-    brandTopN: 91,
+    totalArticles: 869,
+    brand: '京东物流系',
+    brandTopN: 100,
 };
 
-/** 文章类别分布：左 = 综合 Top100；右 = 提到自家品牌的稿件 */
+/** 文章类别分布：左 = 综合 Top100；右 = 提到京东物流/德邦/跨越/达达/秒送的稿件 */
 const ROWS = [
-    { category: '排行榜', leftCount: 45, leftPct: 45.0, rightCount: 37, rightPct: 40.7, color: '#595959' },
-    { category: '知识科普', leftCount: 22, leftPct: 22.0, rightCount: 31, rightPct: 34.1, color: '#C65911' },
-    { category: '单品介绍', leftCount: 12, leftPct: 12.0, rightCount: 6, rightPct: 6.6, color: '#6B8F3C' },
-    { category: '测评', leftCount: 9, leftPct: 9.0, rightCount: 12, rightPct: 13.2, color: '#C9A227' },
-    { category: '行业资讯', leftCount: 8, leftPct: 8.0, rightCount: 4, rightPct: 4.4, color: '#3B7FC4' },
-    { category: '其他', leftCount: 4, leftPct: 4.0, rightCount: 1, rightPct: 1.1, color: '#7B3FA0' },
+    { category: '其他', leftCount: 53, leftPct: 53.0, rightCount: 46, rightPct: 46.0, color: '#7B3FA0' },
+    { category: '知识科普', leftCount: 21, leftPct: 21.0, rightCount: 33, rightPct: 33.0, color: '#C65911' },
+    { category: '测评', leftCount: 11, leftPct: 11.0, rightCount: 6, rightPct: 6.0, color: '#C9A227' },
+    { category: '排行榜', leftCount: 6, leftPct: 6.0, rightCount: 11, rightPct: 11.0, color: '#595959' },
+    { category: '单品介绍', leftCount: 6, leftPct: 6.0, rightCount: 3, rightPct: 3.0, color: '#6B8F3C' },
+    { category: '行业资讯', leftCount: 3, leftPct: 3.0, rightCount: 1, rightPct: 1.0, color: '#3B7FC4' },
 ];
 
 const TOTAL = {
