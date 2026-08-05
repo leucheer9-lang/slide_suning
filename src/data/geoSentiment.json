@@ -1,0 +1,154 @@
+{
+  "419": {
+    "stats": {
+      "positive_rate": 97.5,
+      "positive_percentage": 97.5,
+      "negative_percentage": 2.5,
+      "positive_keywords": [
+        "时效快",
+        "服务规范",
+        "服务体验好"
+      ],
+      "negative_keywords": [
+        "不推荐",
+        "适用场景有限",
+        "价格偏高",
+        "性价比低",
+        "价格偏贵"
+      ],
+      "daily_stats": [
+        {
+          "date": "2026-08-04",
+          "positive_rate": 97.5
+        }
+      ]
+    },
+    "negatives": {
+      "total": 3,
+      "page": 1,
+      "page_size": 50,
+      "total_pages": 1,
+      "list": [
+        {
+          "conversation_id": 280384,
+          "entry_id": 11048,
+          "entry_name": "能寄洗衣服被子的快递推荐",
+          "negative_type": "price_error",
+          "negative_type_label": "价格错误",
+          "summary": "回答点名「顺丰标快、京东标快不推荐」寄被子等轻泡货，称按小件首重续重会贵一倍；引用源确有体积重「可能贵一倍」的机制说明，答案据此贬抑京东标快价格，归为价格错误。",
+          "ai_answer": "衣服被子属于轻泡货（体积大、实重轻、不怕摔），又是要寄去洗衣店洗再寄回，核心思路就一句：先抽真空压缩，再走大件快运/比价平台，别用普通顺丰标快。下面按场景给你抄作业。\n一、自己打包寄到洗衣店（最常用）",
+          "screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/6095513937a243f88473c1bfb784fe44.png",
+          "conversation_time": "2026-08-03T16:00:00.000Z",
+          "citations": [
+            {
+              "article_id": 413101,
+              "logo_url": "https://p26-spider-image-sign.byteimg.com/isp-i18n-media/image/85a1f404488a843fec0041af8590387f~tplv-e9ol9do63j-thumbnail.jpeg?rk3s=feb11e32&x-expires=1775816929&x-signature=A3VJpRndCfC7Mvc8qe1HHyHiKXo%3D",
+              "article_title": "大件行李怎么寄便宜?自用省钱攻略比价工具实测分享",
+              "link_url": "https://cul.sohu.com/a/996238779_121801689"
+            }
+          ]
+        },
+        {
+          "conversation_id": 280383,
+          "entry_id": 11038,
+          "entry_name": "网购退货上门取件方便的快递推荐",
+          "negative_type": "price_error",
+          "negative_type_label": "价格错误",
+          "summary": "回答给出京东退货「小件8元、大件30/50、PLUS免运费」，并称非京东场景散客价14–17元起、不如顺丰与通达系；其中8/30/50与引用源一致，但同时贬低京东散客价且与同答顺丰18–23元自相矛盾，构成价格错误叙事。",
+          "ai_answer": "网购退货要\"省事\"，核心不是单看哪家快递员跑得快，而是看能不能在订单页一键下单、物流自动回传、运费有平台兜底。按场景给你排个序：\n最省事：走平台内置\"上门取件\"，别自己叫快递\n淘宝/天猫/闲鱼 → 直",
+          "screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/5f78274fd3204ae1bad17aa72481a4a0.png",
+          "conversation_time": "2026-08-03T16:00:00.000Z",
+          "citations": [
+            {
+              "article_id": 414763,
+              "logo_url": "https://kimi-web-img.moonshot.cn/prod-data/icon-cache-img/www.dangdangkuaidi.com",
+              "article_title": "京东退快递运费多少钱",
+              "link_url": "https://www.dangdangkuaidi.com/kuaidi/debang/1120289.html"
+            }
+          ]
+        },
+        {
+          "conversation_id": 280375,
+          "entry_id": 11030,
+          "entry_name": "当日达快递推荐",
+          "negative_type": "negative_answer",
+          "negative_type_label": "负面回答",
+          "summary": "回答称达达快送等仅适3–5公里短途、跨区长途急件不推荐；引用源亦写达达高度适配核心商圈短途，超出商圈配送时长显著增加，全城长途紧急急送时效竞争力较弱。",
+          "ai_answer": "当日达按「同城」和「跨省/跨城」两条线选，别混着看。直接给你场景化结论：\n同城当日达（市内/近郊）\n\n•最急+贵重/文件/证件/蛋糕：闪送​ 或顺丰同城一对一专送，不拼单，平均 7 分钟上门、26 分",
+          "screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/270b3f19866649908f7e39def7dd4b38.png",
+          "conversation_time": "2026-08-03T16:00:00.000Z",
+          "citations": [
+            {
+              "article_id": 412736,
+              "logo_url": "https://p26-spider-image-sign.byteimg.com/isp-i18n-media/image/85a1f404488a843fec0041af8590387f~tplv-e9ol9do63j-thumbnail.jpeg?rk3s=feb11e32&x-expires=1775816929&x-signature=A3VJpRndCfC7Mvc8qe1HHyHiKXo%3D",
+              "article_title": "时效专项横评:即时送达品牌哪家配送时效快?",
+              "link_url": "https://www.sohu.com/a/1034321052_122642012"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "420": {
+    "stats": {
+      "positive_rate": 98.3,
+      "positive_percentage": 98.3,
+      "negative_percentage": 1.7,
+      "positive_keywords": [
+        "网络覆盖广",
+        "时效快",
+        "覆盖广"
+      ],
+      "negative_keywords": [
+        "性价比低",
+        "价格偏贵",
+        "品牌溢价高"
+      ],
+      "daily_stats": [
+        {
+          "date": "2026-08-04",
+          "positive_rate": 98.3
+        }
+      ]
+    },
+    "negatives": {
+      "total": 2,
+      "page": 1,
+      "page_size": 50,
+      "total_pages": 1,
+      "list": [
+        {
+          "conversation_id": 280490,
+          "entry_id": 11054,
+          "entry_name": "性价比高的物流公司推荐",
+          "negative_type": "negative_answer",
+          "negative_type_label": "负面回答",
+          "summary": "回答称京东快递（非会员）偏贵、该重量段不划算；引用源亦写京东价与顺丰接近（跨省中件约40–50元），10kg以上跨省过百、不是大件首选。",
+          "ai_answer": "性价比没有\"一家通吃\"，核心是按重量段 + 时效要求 + 是否上门来切。下面按场景给你一张可以直接照抄的清单（价格以 2026 年散户走比价平台/折扣渠道的常见实付价为准，官方挂牌价普遍贵 30%–6",
+          "screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/e18d36a08a974fc29e0c484bc4820bc0.png",
+          "conversation_time": "2026-08-03T16:00:00.000Z",
+          "citations": [
+            {
+              "article_id": 417890,
+              "logo_url": "https://p26-spider-image-sign.byteimg.com/isp-i18n-media/image/85a1f404488a843fec0041af8590387f~tplv-e9ol9do63j-thumbnail.jpeg?rk3s=feb11e32&x-expires=1775816929&x-signature=A3VJpRndCfC7Mvc8qe1HHyHiKXo%3D",
+              "article_title": "怎么发快递上门取件便宜?2026年最新攻略价格表避坑指南(新手必看)",
+              "link_url": "https://www.sohu.com/a/988922751_121959853"
+            }
+          ]
+        },
+        {
+          "conversation_id": 280390,
+          "entry_id": 11056,
+          "entry_name": "一体化供应链服务商推荐",
+          "negative_type": "negative_answer",
+          "negative_type_label": "负面回答",
+          "summary": "回答将京东物流表述为「品牌溢价高」；会话引用中对应研报实为正面评价「赢得品牌溢价」，无法作为负面问题依据，故不挂问题源。",
+          "ai_answer": "一体化供应链服务商的价值，在于将商流、物流、信息流、资金流（即“四流”）整合打通，帮助企业实现从采购、生产到末端交付的全链条降本增效[1]。目前市场上的头部玩家各具特色，可以根据你的行业和核心诉求来匹",
+          "screenshot_url": "https://app.geoindexfuture.com/screenshots/20260804/a7b07d6a4f0f4a808998182bcefe727b.png",
+          "conversation_time": "2026-08-03T16:00:00.000Z",
+          "citations": []
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,2207 @@
+{
+  "meta": {
+    "fetched_at": "2026-08-05T03:37:41.725Z",
+    "api_base": "https://api.geotopone.com",
+    "project_id": 420,
+    "project_name": "京东物流-ToB①",
+    "target_product": "京东、德邦、跨越、秒送、达达",
+    "target_brand_name": null,
+    "start_date": "2026-08-04",
+    "end_date": "2026-08-04"
+  },
+  "platforms": [
+    {
+      "id": 1,
+      "name": "DeepSeek",
+      "url": "https://app.geoindexfuture.com/logo/deepseek.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 15,
+      "crawl_rate_config": {
+        "requests_per_hour": 30,
+        "request_interval_sec": 120,
+        "batch_duration_sec": 24400,
+        "batch_max_requests": 60,
+        "batch_interval_sec": 24400
+      },
+      "crawl_rate_effective": {
+        "requests_per_hour": 30,
+        "request_interval_sec": 120,
+        "batch_duration_sec": 24400,
+        "batch_max_requests": 60,
+        "batch_interval_sec": 24400
+      },
+      "crawl_rate_source": "platform"
+    },
+    {
+      "id": 2,
+      "name": "豆包",
+      "url": "https://app.geoindexfuture.com/logo/doubao.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 10,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    },
+    {
+      "id": 3,
+      "name": "元宝",
+      "url": "https://app.geoindexfuture.com/logo/yuanbao.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 10,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    },
+    {
+      "id": 5,
+      "name": "通义千问",
+      "url": "https://app.geoindexfuture.com/logo/qwen.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 10,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    }
+  ],
+  "stats": {
+    "brand_mention_rate": 65,
+    "top1_mention_rate": null,
+    "top3_mention_rate": null,
+    "avg_position": 5.4,
+    "daily_stats": [
+      {
+        "date": "2026-08-04",
+        "mention_rate": 65,
+        "avg_position": 5.4
+      }
+    ],
+    "platform_stats": [
+      {
+        "platform_id": 1,
+        "platform_name": "DeepSeek",
+        "platform_logo": "https://app.geoindexfuture.com/logo/deepseek.png",
+        "brand_mention_rate": 53.3,
+        "avg_position": 4.7
+      },
+      {
+        "platform_id": 2,
+        "platform_name": "豆包",
+        "platform_logo": "https://app.geoindexfuture.com/logo/doubao.png",
+        "brand_mention_rate": 70,
+        "avg_position": 5.8
+      },
+      {
+        "platform_id": 3,
+        "platform_name": "元宝",
+        "platform_logo": "https://app.geoindexfuture.com/logo/yuanbao.png",
+        "brand_mention_rate": 90,
+        "avg_position": 5.2
+      },
+      {
+        "platform_id": 5,
+        "platform_name": "通义千问",
+        "platform_logo": "https://app.geoindexfuture.com/logo/qwen.png",
+        "brand_mention_rate": 46.7,
+        "avg_position": 6
+      }
+    ]
+  },
+  "influence": {
+    "total_conversations": 120,
+    "list": [
+      {
+        "rank": 1,
+        "brand_name": "顺丰",
+        "favicon_url": null,
+        "influence_score": 67.1,
+        "mention_rate": 72.5,
+        "avg_position": 5.1,
+        "is_target": false
+      },
+      {
+        "rank": 2,
+        "brand_name": "京东物流",
+        "favicon_url": null,
+        "influence_score": 54.6,
+        "mention_rate": 58.3,
+        "avg_position": 6.1,
+        "is_target": true
+      },
+      {
+        "rank": 3,
+        "brand_name": "菜鸟",
+        "favicon_url": null,
+        "influence_score": 22,
+        "mention_rate": 23.3,
+        "avg_position": 9,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "brand_name": "安能物流",
+        "favicon_url": null,
+        "influence_score": 21.1,
+        "mention_rate": 22.5,
+        "avg_position": 9.1,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "brand_name": "圆通",
+        "favicon_url": null,
+        "influence_score": 20,
+        "mention_rate": 20,
+        "avg_position": 9,
+        "is_target": false
+      }
+    ]
+  },
+  "entries": {
+    "total": 30,
+    "list": [
+      {
+        "entry_id": 11051,
+        "entry_name": "物流公司排行榜",
+        "mention_rate": 100,
+        "position": 7.5,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260804/30bacb00bc434696986c79d6e18eaf5b.png"
+      },
+      {
+        "entry_id": 11057,
+        "entry_name": "帮企业物流降本增效的供应链服务商推荐",
+        "mention_rate": 100,
+        "position": 2.8,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/792d4b0fcf2a4fe0afb1939b1ae575b7.png"
+      },
+      {
+        "entry_id": 11058,
+        "entry_name": "电商仓配一体的物流公司推荐",
+        "mention_rate": 100,
+        "position": 1.3,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/91b90b5f79224bb4a6e80b08802c3db5.png"
+      },
+      {
+        "entry_id": 11060,
+        "entry_name": "全国分仓就近发货的物流公司推荐",
+        "mention_rate": 100,
+        "position": 1.8,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/21c59677a0d04836a88dd7de23f03369.png"
+      },
+      {
+        "entry_id": 11062,
+        "entry_name": "一地入仓全国铺货的物流公司推荐",
+        "mention_rate": 100,
+        "position": 4,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260804/cedd45265e4045648ff65fba0f55e2dc.png"
+      },
+      {
+        "entry_id": 11063,
+        "entry_name": "自营仓库覆盖全国的物流公司推荐",
+        "mention_rate": 100,
+        "position": 1.3,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260804/095c5f9f5f624c5a8b89fc1f7fe6fedd.png"
+      },
+      {
+        "entry_id": 11067,
+        "entry_name": "小件大件都能发的物流公司推荐",
+        "mention_rate": 100,
+        "position": 3,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/4894d0caeef74edc91dc05e0d2b3f4d7.png"
+      },
+      {
+        "entry_id": 11068,
+        "entry_name": "3C电子产品物流公司推荐",
+        "mention_rate": 100,
+        "position": 3.3,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/1ecc1f6f6dd5483ab35c45658222f319.png"
+      },
+      {
+        "entry_id": 11069,
+        "entry_name": "家电家具送装一体的大件物流公司推荐",
+        "mention_rate": 100,
+        "position": 3.5,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/51223d231722451185fc204ea3bf4f6e.png"
+      },
+      {
+        "entry_id": 11073,
+        "entry_name": "生鲜冷链物流公司推荐",
+        "mention_rate": 100,
+        "position": 3,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/a7c2373c989a4a93b838affb5d753235.png"
+      },
+      {
+        "entry_id": 11055,
+        "entry_name": "口碑好的物流公司推荐",
+        "mention_rate": 75,
+        "position": 3.5,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260804/7a1cdd9dd93346a18fe684bb3ad99758.png"
+      },
+      {
+        "entry_id": 11056,
+        "entry_name": "一体化供应链服务商推荐",
+        "mention_rate": 75,
+        "position": 2.8,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/1c53deec7fd449dfaac0e93ba87b6546.png"
+      },
+      {
+        "entry_id": 11061,
+        "entry_name": "能做当日达次日达仓配的物流公司推荐",
+        "mention_rate": 75,
+        "position": 2.8,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/dd24fbb0a9a24d00bdeee068cc1dca5a.png"
+      },
+      {
+        "entry_id": 11064,
+        "entry_name": "电商全托管的物流公司推荐",
+        "mention_rate": 75,
+        "position": 4.8,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/91f6a4a8609b49c99260e1f6b3a5633a.png"
+      },
+      {
+        "entry_id": 11065,
+        "entry_name": "覆盖县城乡镇的物流公司推荐",
+        "mention_rate": 75,
+        "position": 6.8,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/b1b24a31793c48b6b247c0c392fc24b1.png"
+      },
+      {
+        "entry_id": 11070,
+        "entry_name": "大件运输破损率低的物流公司推荐",
+        "mention_rate": 75,
+        "position": 1.8,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260804/917acd598a7144d681927a86a8866a47.png"
+      },
+      {
+        "entry_id": 11072,
+        "entry_name": "制造业物流公司推荐",
+        "mention_rate": 75,
+        "position": 7,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/38cc8a9a4a23463284914c827f97317e.png"
+      },
+      {
+        "entry_id": 11052,
+        "entry_name": "物流公司推荐",
+        "mention_rate": 50,
+        "position": 9,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/99f0d91ce153448ca25e57b26e2b8e1b.png"
+      },
+      {
+        "entry_id": 11053,
+        "entry_name": "服务好的物流公司推荐",
+        "mention_rate": 50,
+        "position": 4.3,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260804/7762249b4fe748e09c329125e2f1f9ce.png"
+      },
+      {
+        "entry_id": 11054,
+        "entry_name": "性价比高的物流公司推荐",
+        "mention_rate": 50,
+        "position": 7.3,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/e18d36a08a974fc29e0c484bc4820bc0.png"
+      },
+      {
+        "entry_id": 11059,
+        "entry_name": "云仓一件代发的物流公司推荐",
+        "mention_rate": 50,
+        "position": 7,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/363af136d4634a0ab9686327238955b0.png"
+      },
+      {
+        "entry_id": 11066,
+        "entry_name": "大票零担快运的物流公司推荐",
+        "mention_rate": 50,
+        "position": 7,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/0d66b7cd5b734cbeb3a36a380519c46e.png"
+      },
+      {
+        "entry_id": 11075,
+        "entry_name": "一站式冷链物流公司推荐",
+        "mention_rate": 50,
+        "position": 4.3,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/4cc3172cb75c4255b4f16e28d00085a3.png"
+      },
+      {
+        "entry_id": 11079,
+        "entry_name": "智能仓储自动化的物流公司推荐",
+        "mention_rate": 50,
+        "position": 8.5,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/b09b9df86f0147389477cd7c8ea83005.png"
+      },
+      {
+        "entry_id": 11071,
+        "entry_name": "可以送汽车的大件物流公司推荐",
+        "mention_rate": 25,
+        "position": 10.3,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/52102b33c1d142c3a70a972868095bed.png"
+      },
+      {
+        "entry_id": 11074,
+        "entry_name": "医药冷链物流公司推荐",
+        "mention_rate": 25,
+        "position": 9,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/0edd502e4b2941dba04c073a586dc7a7.png"
+      },
+      {
+        "entry_id": 11080,
+        "entry_name": "订单在途全程可视化的物流公司推荐",
+        "mention_rate": 25,
+        "position": 6.8,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260804/c427238ae3f04977a36677dddc3dcca6.png"
+      },
+      {
+        "entry_id": 11076,
+        "entry_name": "有海外仓的跨境物流公司推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/2d266be6f99d4f38a7a3d3831bfcaad7.png"
+      },
+      {
+        "entry_id": 11077,
+        "entry_name": "企业出海一站式的跨境物流公司推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/0f50b1882895421b815a4525c9b62c21.png"
+      },
+      {
+        "entry_id": 11078,
+        "entry_name": "有国际全货机航线的跨境物流公司推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2,
+          5,
+          3
+        ],
+        "last_conversation_time": "2026-08-03T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260804/ca308213548947a3962d7b3029233da2.png"
+      }
+    ]
+  },
+  "compare": {
+    "target_product": "京东、德邦、跨越、秒送、达达",
+    "mention_rate_ranking": [
+      {
+        "brand_id": 79901,
+        "brand_name": "顺丰",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "顺丰",
+        "mention_count": 87,
+        "mention_rate": 72.5,
+        "is_target": false
+      },
+      {
+        "brand_id": 79719,
+        "brand_name": "京东物流",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "京东物流",
+        "mention_count": 70,
+        "mention_rate": 58.3,
+        "is_target": true
+      },
+      {
+        "brand_id": 79943,
+        "brand_name": "菜鸟",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "菜鸟",
+        "mention_count": 28,
+        "mention_rate": 23.3,
+        "is_target": false
+      },
+      {
+        "brand_id": 79900,
+        "brand_name": "安能物流",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "安能物流",
+        "mention_count": 27,
+        "mention_rate": 22.5,
+        "is_target": false
+      },
+      {
+        "brand_id": 79905,
+        "brand_name": "圆通",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "圆通",
+        "mention_count": 24,
+        "mention_rate": 20,
+        "is_target": false
+      }
+    ],
+    "position_ranking": [
+      {
+        "brand_id": 79901,
+        "brand_name": "顺丰",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "顺丰",
+        "avg_position": 5.1,
+        "mention_count": 87,
+        "is_target": false
+      },
+      {
+        "brand_id": 79719,
+        "brand_name": "京东物流",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "京东物流",
+        "avg_position": 6.1,
+        "mention_count": 70,
+        "is_target": true
+      },
+      {
+        "brand_id": 79905,
+        "brand_name": "圆通",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "圆通",
+        "avg_position": 9,
+        "mention_count": 24,
+        "is_target": false
+      },
+      {
+        "brand_id": 79943,
+        "brand_name": "菜鸟",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "菜鸟",
+        "avg_position": 9,
+        "mention_count": 28,
+        "is_target": false
+      },
+      {
+        "brand_id": 79900,
+        "brand_name": "安能物流",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "安能物流",
+        "avg_position": 9.1,
+        "mention_count": 27,
+        "is_target": false
+      }
+    ],
+    "rate_daily": [
+      {
+        "date": "2026-08-04",
+        "顺丰": 72.5,
+        "京东物流": 58.3,
+        "菜鸟": 23.3,
+        "安能物流": 22.5,
+        "圆通": 20
+      }
+    ],
+    "position_daily": [
+      {
+        "date": "2026-08-04",
+        "顺丰": 5.1,
+        "京东物流": 6.1,
+        "圆通": 9,
+        "菜鸟": 9,
+        "安能物流": 9.1
+      }
+    ],
+    "mention_rate_ranking_full": [
+      {
+        "rank": 1,
+        "brand_name": "顺丰",
+        "mention_rate": 72.5,
+        "is_target": false
+      },
+      {
+        "rank": 2,
+        "brand_name": "京东物流",
+        "mention_rate": 58.3,
+        "is_target": true
+      },
+      {
+        "rank": 3,
+        "brand_name": "菜鸟",
+        "mention_rate": 23.3,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "brand_name": "安能物流",
+        "mention_rate": 22.5,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "brand_name": "圆通",
+        "mention_rate": 20,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "brand_name": "德邦快递",
+        "mention_rate": 19.2,
+        "is_target": true
+      },
+      {
+        "rank": 7,
+        "brand_name": "安得智联",
+        "mention_rate": 17.5,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "brand_name": "极兔速递",
+        "mention_rate": 16.7,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "brand_name": "纵腾",
+        "mention_rate": 16.7,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "brand_name": "中通快递",
+        "mention_rate": 15.8,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "brand_name": "申通快递",
+        "mention_rate": 15.8,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "brand_name": "日日顺物流",
+        "mention_rate": 15,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "brand_name": "韵达",
+        "mention_rate": 15,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "brand_name": "发网物流",
+        "mention_rate": 13.3,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "brand_name": "递四方",
+        "mention_rate": 13.3,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "brand_name": "壹米滴答",
+        "mention_rate": 10.8,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "brand_name": "中通云仓科技",
+        "mention_rate": 10,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "brand_name": "中外运跨境电商物流",
+        "mention_rate": 9.2,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "brand_name": "中通快运",
+        "mention_rate": 9.2,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "brand_name": "荣庆物流",
+        "mention_rate": 9.2,
+        "is_target": false
+      },
+      {
+        "rank": 21,
+        "brand_name": "DHL",
+        "mention_rate": 8.3,
+        "is_target": false
+      },
+      {
+        "rank": 22,
+        "brand_name": "万邑通",
+        "mention_rate": 8.3,
+        "is_target": false
+      },
+      {
+        "rank": 23,
+        "brand_name": "中国外运",
+        "mention_rate": 8.3,
+        "is_target": false
+      },
+      {
+        "rank": 24,
+        "brand_name": "天地华宇",
+        "mention_rate": 8.3,
+        "is_target": false
+      },
+      {
+        "rank": 25,
+        "brand_name": "百世快运",
+        "mention_rate": 8.3,
+        "is_target": false
+      },
+      {
+        "rank": 26,
+        "brand_name": "货拉拉",
+        "mention_rate": 7.5,
+        "is_target": false
+      },
+      {
+        "rank": 27,
+        "brand_name": "跨越速运",
+        "mention_rate": 7.5,
+        "is_target": true
+      },
+      {
+        "rank": 28,
+        "brand_name": "万纬冷链",
+        "mention_rate": 6.7,
+        "is_target": false
+      },
+      {
+        "rank": 29,
+        "brand_name": "中远海运物流供应链",
+        "mention_rate": 6.7,
+        "is_target": false
+      },
+      {
+        "rank": 30,
+        "brand_name": "宝供物流",
+        "mention_rate": 6.7,
+        "is_target": false
+      },
+      {
+        "rank": 31,
+        "brand_name": "心怡科技",
+        "mention_rate": 6.7,
+        "is_target": false
+      },
+      {
+        "rank": 32,
+        "brand_name": "顺心捷达",
+        "mention_rate": 6.7,
+        "is_target": false
+      },
+      {
+        "rank": 33,
+        "brand_name": "EMS邮政速递",
+        "mention_rate": 5.8,
+        "is_target": false
+      },
+      {
+        "rank": 34,
+        "brand_name": "UPS",
+        "mention_rate": 5.8,
+        "is_target": false
+      },
+      {
+        "rank": 35,
+        "brand_name": "中国邮政",
+        "mention_rate": 5.8,
+        "is_target": false
+      },
+      {
+        "rank": 36,
+        "brand_name": "嘉里物流",
+        "mention_rate": 5.8,
+        "is_target": false
+      },
+      {
+        "rank": 37,
+        "brand_name": "德迅",
+        "mention_rate": 5,
+        "is_target": false
+      },
+      {
+        "rank": 38,
+        "brand_name": "燕文物流",
+        "mention_rate": 5,
+        "is_target": false
+      },
+      {
+        "rank": 39,
+        "brand_name": "长久物流",
+        "mention_rate": 5,
+        "is_target": false
+      },
+      {
+        "rank": 40,
+        "brand_name": "FedEx",
+        "mention_rate": 4.2,
+        "is_target": false
+      },
+      {
+        "rank": 41,
+        "brand_name": "三态速递",
+        "mention_rate": 4.2,
+        "is_target": false
+      },
+      {
+        "rank": 42,
+        "brand_name": "中振运车",
+        "mention_rate": 4.2,
+        "is_target": false
+      },
+      {
+        "rank": 43,
+        "brand_name": "丹鸟速递",
+        "mention_rate": 4.2,
+        "is_target": false
+      },
+      {
+        "rank": 44,
+        "brand_name": "云途物流",
+        "mention_rate": 4.2,
+        "is_target": false
+      },
+      {
+        "rank": 45,
+        "brand_name": "安吉物流",
+        "mention_rate": 4.2,
+        "is_target": false
+      },
+      {
+        "rank": 46,
+        "brand_name": "宝时云仓",
+        "mention_rate": 4.2,
+        "is_target": false
+      },
+      {
+        "rank": 47,
+        "brand_name": "广东一八供应链",
+        "mention_rate": 4.2,
+        "is_target": false
+      },
+      {
+        "rank": 48,
+        "brand_name": "招商物流",
+        "mention_rate": 4.2,
+        "is_target": false
+      },
+      {
+        "rank": 49,
+        "brand_name": "运满满",
+        "mention_rate": 4.2,
+        "is_target": false
+      },
+      {
+        "rank": 50,
+        "brand_name": "DSV",
+        "mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 51,
+        "brand_name": "上海星力仓储",
+        "mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 52,
+        "brand_name": "中外运冷链",
+        "mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 53,
+        "brand_name": "中铁快运",
+        "mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 54,
+        "brand_name": "中铁特货",
+        "mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 55,
+        "brand_name": "南京唯道供应链",
+        "mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 56,
+        "brand_name": "密尔克卫",
+        "mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 57,
+        "brand_name": "招商美冷",
+        "mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 58,
+        "brand_name": "招商路凯",
+        "mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 59,
+        "brand_name": "河北九州通医药",
+        "mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 60,
+        "brand_name": "河北石家庄吉凤达物流",
+        "mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 61,
+        "brand_name": "百世云仓",
+        "mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 62,
+        "brand_name": "上海生生医药冷链科技",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 63,
+        "brand_name": "世盟股份",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 64,
+        "brand_name": "东风物流",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 65,
+        "brand_name": "中集世联达物流科技（集团）股份有限公司",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 66,
+        "brand_name": "中集冷云",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 67,
+        "brand_name": "九方通逊",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 68,
+        "brand_name": "佳吉快运",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 69,
+        "brand_name": "准时达",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 70,
+        "brand_name": "华润医药商业",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 71,
+        "brand_name": "厦门象屿",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 72,
+        "brand_name": "大健云仓",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 73,
+        "brand_name": "太古冷链物流",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 74,
+        "brand_name": "宝时",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 75,
+        "brand_name": "德坤物流",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 76,
+        "brand_name": "怡亚通",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 77,
+        "brand_name": "新夏晖",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 78,
+        "brand_name": "河北石家庄天宇物流货运有限公司",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 79,
+        "brand_name": "河南华鼎冷链",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 80,
+        "brand_name": "海柔创新",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 81,
+        "brand_name": "海程邦达",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 82,
+        "brand_name": "满帮",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 83,
+        "brand_name": "申通仓盟",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 84,
+        "brand_name": "福佑卡车",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 85,
+        "brand_name": "科捷物流",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 86,
+        "brand_name": "美力物流",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 87,
+        "brand_name": "远成物流",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 88,
+        "brand_name": "长安民生物流",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 89,
+        "brand_name": "飞力达",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 90,
+        "brand_name": "鲜生活冷链",
+        "mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 91,
+        "brand_name": "Amazon",
+        "mention_rate": 1.7,
+        "is_target": false
+      },
+      {
+        "rank": 92,
+        "brand_name": "CNE递一物流",
+        "mention_rate": 1.7,
+        "is_target": false
+      },
+      {
+        "rank": 93,
+        "brand_name": "一汽物流",
+        "mention_rate": 1.7,
+        "is_target": false
+      },
+      {
+        "rank": 94,
+        "brand_name": "上海郑明现代物流",
+        "mention_rate": 1.7,
+        "is_target": false
+      },
+      {
+        "rank": 95,
+        "brand_name": "上药物流",
+        "mention_rate": 1.7,
+        "is_target": false
+      },
+      {
+        "rank": 96,
+        "brand_name": "中健云康",
+        "mention_rate": 1.7,
+        "is_target": false
+      },
+      {
+        "rank": 97,
+        "brand_name": "中储发展",
+        "mention_rate": 1.7,
+        "is_target": false
+      },
+      {
+        "rank": 98,
+        "brand_name": "中储智运",
+        "mention_rate": 1.7,
+        "is_target": false
+      },
+      {
+        "rank": 99,
+        "brand_name": "中国储运",
+        "mention_rate": 1.7,
+        "is_target": false
+      },
+      {
+        "rank": 100,
+        "brand_name": "中国物流集团",
+        "mention_rate": 1.7,
+        "is_target": false
+      }
+    ],
+    "position_ranking_full": [
+      {
+        "rank": 1,
+        "brand_name": "顺丰",
+        "avg_position": 5.1,
+        "is_target": false
+      },
+      {
+        "rank": 2,
+        "brand_name": "京东物流",
+        "avg_position": 6.1,
+        "is_target": true
+      },
+      {
+        "rank": 3,
+        "brand_name": "圆通",
+        "avg_position": 9,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "brand_name": "菜鸟",
+        "avg_position": 9,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "brand_name": "安能物流",
+        "avg_position": 9.1,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "brand_name": "德邦快递",
+        "avg_position": 9.1,
+        "is_target": true
+      },
+      {
+        "rank": 7,
+        "brand_name": "中通快递",
+        "avg_position": 9.2,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "brand_name": "安得智联",
+        "avg_position": 9.2,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "brand_name": "纵腾",
+        "avg_position": 9.3,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "brand_name": "申通快递",
+        "avg_position": 9.4,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "brand_name": "中国外运",
+        "avg_position": 9.5,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "brand_name": "韵达",
+        "avg_position": 9.5,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "brand_name": "极兔速递",
+        "avg_position": 9.7,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "brand_name": "递四方",
+        "avg_position": 9.9,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "brand_name": "发网物流",
+        "avg_position": 9.9,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "brand_name": "百世快运",
+        "avg_position": 10,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "brand_name": "荣庆物流",
+        "avg_position": 10,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "brand_name": "日日顺物流",
+        "avg_position": 10,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "brand_name": "中外运跨境电商物流",
+        "avg_position": 10,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "brand_name": "壹米滴答",
+        "avg_position": 10,
+        "is_target": false
+      },
+      {
+        "rank": 21,
+        "brand_name": "中通快运",
+        "avg_position": 10,
+        "is_target": false
+      },
+      {
+        "rank": 22,
+        "brand_name": "UPS",
+        "avg_position": 10.1,
+        "is_target": false
+      },
+      {
+        "rank": 23,
+        "brand_name": "万邑通",
+        "avg_position": 10.1,
+        "is_target": false
+      },
+      {
+        "rank": 24,
+        "brand_name": "中通云仓科技",
+        "avg_position": 10.1,
+        "is_target": false
+      },
+      {
+        "rank": 25,
+        "brand_name": "长久物流",
+        "avg_position": 10.1,
+        "is_target": false
+      },
+      {
+        "rank": 26,
+        "brand_name": "宝供物流",
+        "avg_position": 10.1,
+        "is_target": false
+      },
+      {
+        "rank": 27,
+        "brand_name": "FedEx",
+        "avg_position": 10.1,
+        "is_target": false
+      },
+      {
+        "rank": 28,
+        "brand_name": "DHL",
+        "avg_position": 10.1,
+        "is_target": false
+      },
+      {
+        "rank": 29,
+        "brand_name": "天地华宇",
+        "avg_position": 10.2,
+        "is_target": false
+      },
+      {
+        "rank": 30,
+        "brand_name": "顺心捷达",
+        "avg_position": 10.2,
+        "is_target": false
+      },
+      {
+        "rank": 31,
+        "brand_name": "嘉里物流",
+        "avg_position": 10.3,
+        "is_target": false
+      },
+      {
+        "rank": 32,
+        "brand_name": "德迅",
+        "avg_position": 10.3,
+        "is_target": false
+      },
+      {
+        "rank": 33,
+        "brand_name": "货拉拉",
+        "avg_position": 10.3,
+        "is_target": false
+      },
+      {
+        "rank": 34,
+        "brand_name": "EMS邮政速递",
+        "avg_position": 10.3,
+        "is_target": false
+      },
+      {
+        "rank": 35,
+        "brand_name": "德国邮政",
+        "avg_position": 10.3,
+        "is_target": false
+      },
+      {
+        "rank": 36,
+        "brand_name": "跨越速运",
+        "avg_position": 10.3,
+        "is_target": true
+      },
+      {
+        "rank": 37,
+        "brand_name": "中国邮政",
+        "avg_position": 10.3,
+        "is_target": false
+      },
+      {
+        "rank": 38,
+        "brand_name": "厦门象屿",
+        "avg_position": 10.3,
+        "is_target": false
+      },
+      {
+        "rank": 39,
+        "brand_name": "宝时云仓",
+        "avg_position": 10.3,
+        "is_target": false
+      },
+      {
+        "rank": 40,
+        "brand_name": "招商物流",
+        "avg_position": 10.3,
+        "is_target": false
+      },
+      {
+        "rank": 41,
+        "brand_name": "河北九州通医药",
+        "avg_position": 10.3,
+        "is_target": false
+      },
+      {
+        "rank": 42,
+        "brand_name": "中振运车",
+        "avg_position": 10.3,
+        "is_target": false
+      },
+      {
+        "rank": 43,
+        "brand_name": "DSV",
+        "avg_position": 10.3,
+        "is_target": false
+      },
+      {
+        "rank": 44,
+        "brand_name": "申通仓盟",
+        "avg_position": 10.3,
+        "is_target": false
+      },
+      {
+        "rank": 45,
+        "brand_name": "安吉物流",
+        "avg_position": 10.3,
+        "is_target": false
+      },
+      {
+        "rank": 46,
+        "brand_name": "华润医药商业",
+        "avg_position": 10.3,
+        "is_target": false
+      },
+      {
+        "rank": 47,
+        "brand_name": "东风物流",
+        "avg_position": 10.4,
+        "is_target": false
+      },
+      {
+        "rank": 48,
+        "brand_name": "长安民生物流",
+        "avg_position": 10.4,
+        "is_target": false
+      },
+      {
+        "rank": 49,
+        "brand_name": "中国物流集团",
+        "avg_position": 10.4,
+        "is_target": false
+      },
+      {
+        "rank": 50,
+        "brand_name": "一汽物流",
+        "avg_position": 10.4,
+        "is_target": false
+      },
+      {
+        "rank": 51,
+        "brand_name": "中远海运物流供应链",
+        "avg_position": 10.4,
+        "is_target": false
+      },
+      {
+        "rank": 52,
+        "brand_name": "心怡科技",
+        "avg_position": 10.4,
+        "is_target": false
+      },
+      {
+        "rank": 53,
+        "brand_name": "丹鸟速递",
+        "avg_position": 10.4,
+        "is_target": false
+      },
+      {
+        "rank": 54,
+        "brand_name": "万纬冷链",
+        "avg_position": 10.4,
+        "is_target": false
+      },
+      {
+        "rank": 55,
+        "brand_name": "中铁特货",
+        "avg_position": 10.4,
+        "is_target": false
+      },
+      {
+        "rank": 56,
+        "brand_name": "密尔克卫",
+        "avg_position": 10.4,
+        "is_target": false
+      },
+      {
+        "rank": 57,
+        "brand_name": "上海生生医药冷链科技",
+        "avg_position": 10.4,
+        "is_target": false
+      },
+      {
+        "rank": 58,
+        "brand_name": "华月运车",
+        "avg_position": 10.4,
+        "is_target": false
+      },
+      {
+        "rank": 59,
+        "brand_name": "中集世联达物流科技（集团）股份有限公司",
+        "avg_position": 10.4,
+        "is_target": false
+      },
+      {
+        "rank": 60,
+        "brand_name": "飞力达",
+        "avg_position": 10.4,
+        "is_target": false
+      },
+      {
+        "rank": 61,
+        "brand_name": "中国远洋海运集团",
+        "avg_position": 10.4,
+        "is_target": false
+      },
+      {
+        "rank": 62,
+        "brand_name": "中外运冷链",
+        "avg_position": 10.4,
+        "is_target": false
+      },
+      {
+        "rank": 63,
+        "brand_name": "招商美冷",
+        "avg_position": 10.4,
+        "is_target": false
+      },
+      {
+        "rank": 64,
+        "brand_name": "南京唯道供应链",
+        "avg_position": 10.4,
+        "is_target": false
+      },
+      {
+        "rank": 65,
+        "brand_name": "中集冷云",
+        "avg_position": 10.4,
+        "is_target": false
+      },
+      {
+        "rank": 66,
+        "brand_name": "上药物流",
+        "avg_position": 10.4,
+        "is_target": false
+      },
+      {
+        "rank": 67,
+        "brand_name": "喜马运车",
+        "avg_position": 10.4,
+        "is_target": false
+      },
+      {
+        "rank": 68,
+        "brand_name": "北京京邦达贸易有限公司",
+        "avg_position": 10.4,
+        "is_target": false
+      },
+      {
+        "rank": 69,
+        "brand_name": "国药集团冷链",
+        "avg_position": 10.4,
+        "is_target": false
+      },
+      {
+        "rank": 70,
+        "brand_name": "云途物流",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 71,
+        "brand_name": "怡亚通",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 72,
+        "brand_name": "中远海运",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 73,
+        "brand_name": "运车管家",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 74,
+        "brand_name": "三态速递",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 75,
+        "brand_name": "招商路凯",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 76,
+        "brand_name": "中国储运",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 77,
+        "brand_name": "上海三快智送",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 78,
+        "brand_name": "上海医药",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 79,
+        "brand_name": "青柠运车",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 80,
+        "brand_name": "河北石家庄吉凤达物流",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 81,
+        "brand_name": "百世云仓",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 82,
+        "brand_name": "中储发展",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 83,
+        "brand_name": "吉诺运车",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 84,
+        "brand_name": "青桔运车",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 85,
+        "brand_name": "运满满",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 86,
+        "brand_name": "新夏晖",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 87,
+        "brand_name": "海程邦达",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 88,
+        "brand_name": "今天国际",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 89,
+        "brand_name": "上汽安吉",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 90,
+        "brand_name": "华远国际陆港",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 91,
+        "brand_name": "燕文物流",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 92,
+        "brand_name": "谷仓",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 93,
+        "brand_name": "江苏安吉智行",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 94,
+        "brand_name": "远成物流",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 95,
+        "brand_name": "圣鑫达物流",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 96,
+        "brand_name": "大田物流",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 97,
+        "brand_name": "九方通逊",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 98,
+        "brand_name": "德坤物流",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 99,
+        "brand_name": "鲜生活冷链",
+        "avg_position": 10.5,
+        "is_target": false
+      },
+      {
+        "rank": 100,
+        "brand_name": "昆船智能",
+        "avg_position": 10.5,
+        "is_target": false
+      }
+    ],
+    "top1_ranking": [
+      {
+        "rank": 1,
+        "brand_name": "顺丰",
+        "top1_mention_rate": 20,
+        "is_target": false
+      },
+      {
+        "rank": 2,
+        "brand_name": "京东物流",
+        "top1_mention_rate": 15.8,
+        "is_target": true
+      },
+      {
+        "rank": 3,
+        "brand_name": "德邦快递",
+        "top1_mention_rate": 5.8,
+        "is_target": true
+      },
+      {
+        "rank": 4,
+        "brand_name": "安能物流",
+        "top1_mention_rate": 5,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "brand_name": "申通快递",
+        "top1_mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "brand_name": "纵腾",
+        "top1_mention_rate": 3.3,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "brand_name": "日日顺物流",
+        "top1_mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "brand_name": "申通仓盟",
+        "top1_mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "brand_name": "菜鸟",
+        "top1_mention_rate": 2.5,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "brand_name": "UPS",
+        "top1_mention_rate": 1.7,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "brand_name": "中国物流集团",
+        "top1_mention_rate": 1.7,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "brand_name": "中外运跨境电商物流",
+        "top1_mention_rate": 1.7,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "brand_name": "中振运车",
+        "top1_mention_rate": 1.7,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "brand_name": "壹米滴答",
+        "top1_mention_rate": 1.7,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "brand_name": "安得智联",
+        "top1_mention_rate": 1.7,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "brand_name": "宝时云仓",
+        "top1_mention_rate": 1.7,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "brand_name": "招商美冷",
+        "top1_mention_rate": 1.7,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "brand_name": "EMS邮政速递",
+        "top1_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "brand_name": "万纬冷链",
+        "top1_mention_rate": 0.8,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "brand_name": "万邑通",
+        "top1_mention_rate": 0.8,
+        "is_target": false
+      }
+    ]
+  },
+  "citations": {
+    "total_conversations": 120,
+    "citation_rate": 76.7,
+    "total_citations": 1133,
+    "platform_stats": [
+      {
+        "platform_name": "QQ News",
+        "domain": "qq.com",
+        "logo_url": "https://cdn.deepseek.com/site-icons/qq.com",
+        "citation_count": 78,
+        "share": 6.9
+      },
+      {
+        "platform_name": "百度知道",
+        "domain": "baidu.com",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/zhidao_baidu_com.ico",
+        "citation_count": 59,
+        "share": 5.2
+      },
+      {
+        "platform_name": "今日头条",
+        "domain": "toutiao.com",
+        "logo_url": "https://p26-spider-image-sign.byteimg.com/isp-i18n-media/image/118f7a3625ad8ebbbc11d04f118d2e10~tplv-e9ol9do63j-thumbnail.jpeg?rk3s=feb11e32&x-expires=1775816929&x-signature=0BCf7I6pCkxfK9gutZJAh6L1BLA%3D",
+        "citation_count": 37,
+        "share": 3.3
+      },
+      {
+        "platform_name": "hangyeob.com",
+        "domain": "hangyeob.com",
+        "logo_url": "https://hy-openapi-pulbic.hunyuan.tencent.com/app/icon/search_guide/icon_link.png",
+        "citation_count": 32,
+        "share": 2.8
+      },
+      {
+        "platform_name": "新京报",
+        "domain": "bjnews.com.cn",
+        "logo_url": "https://cdn.deepseek.com/site-icons/bjnews.com.cn",
+        "citation_count": 29,
+        "share": 2.6
+      }
+    ],
+    "articles": [
+      {
+        "title": "一件代发快递公司推荐｜申通一站式仓配代发，低价稳时效|界面新闻",
+        "link_url": "https://www.jiemian.com/article/14721895.html",
+        "domain": "jiemian.com",
+        "platform_name": "界面新闻",
+        "logo_url": "https://www.doubao.com/",
+        "total_citations": 6,
+        "avg_citations": 6,
+        "has_target_product": false
+      },
+      {
+        "title": "金投网 news.cngold.org",
+        "link_url": "https://news.cngold.org/c/2026-04-23/c10461862.html",
+        "domain": "cngold.org",
+        "platform_name": "金投网",
+        "logo_url": "https://p11-spider-image-sign.byteimg.com/isp-i18n-media/image/7b3806cc27d7ad1224de16827cd28c24~tplv-e9ol9do63j-thumbnail.jpeg?rk3s=feb11e32&x-expires=1777697986&x-signature=RGxWwXB7lO0bTtzYvO7Ii86gDa0%3D",
+        "total_citations": 5,
+        "avg_citations": 5,
+        "has_target_product": true
+      },
+      {
+        "title": "2026国内跨境物流服务商深度评测：以99.5%妥投率重构出海物流标准--中国经济新闻网",
+        "link_url": "https://www.cet.com.cn/wzsy/kjzx/10412967.shtml",
+        "domain": "cet.com.cn",
+        "platform_name": "中国经济新闻网",
+        "logo_url": "https://cdn.deepseek.com/site-icons/cet.com.cn",
+        "total_citations": 5,
+        "avg_citations": 5,
+        "has_target_product": false
+      },
+      {
+        "title": "2026年5月国际物流公司排行榜推荐：十大产品专业评测跨国运输防延误|界面新闻",
+        "link_url": "https://www.jiemian.com/article/14409559.html",
+        "domain": "jiemian.com",
+        "platform_name": "界面新闻",
+        "logo_url": "https://www.doubao.com/",
+        "total_citations": 5,
+        "avg_citations": 5,
+        "has_target_product": false
+      },
+      {
+        "title": "新京报 www.bjnews.com.cn",
+        "link_url": "https://www.bjnews.com.cn/detail/1776575322129063.html",
+        "domain": "bjnews.com.cn",
+        "platform_name": "新京报",
+        "logo_url": "https://cdn.deepseek.com/site-icons/bjnews.com.cn",
+        "total_citations": 5,
+        "avg_citations": 5,
+        "has_target_product": false
+      },
+      {
+        "title": "2026大件物流口碑风云榜:谁才是真正省心之选",
+        "link_url": "http://news.xnnews.com.cn/cysx/202607/t20260716_5057506.shtml",
+        "domain": "xnnews.com.cn",
+        "platform_name": "咸宁新闻网",
+        "logo_url": "https://cdn.deepseek.com/site-icons/xnnews.com.cn",
+        "total_citations": 5,
+        "avg_citations": 5,
+        "has_target_product": true
+      },
+      {
+        "title": "2026年跨境物流服务商推荐排行榜：6家值得合作的跨境物流公司精选|界面新闻",
+        "link_url": "https://www.jiemian.com/article/14644783.html",
+        "domain": "jiemian.com",
+        "platform_name": "界面新闻",
+        "logo_url": "https://www.doubao.com/",
+        "total_citations": 4,
+        "avg_citations": 4,
+        "has_target_product": false
+      },
+      {
+        "title": "告别仓配两难!申通普惠仓配 丹鸟高端直营,解锁全域优质发货方案",
+        "link_url": "https://www.toutiao.com/article/7661917347959308842",
+        "domain": "toutiao.com",
+        "platform_name": "今日头条",
+        "logo_url": "https://p26-spider-image-sign.byteimg.com/isp-i18n-media/image/118f7a3625ad8ebbbc11d04f118d2e10~tplv-e9ol9do63j-thumbnail.jpeg?rk3s=feb11e32&x-expires=1775816929&x-signature=0BCf7I6pCkxfK9gutZJAh6L1BLA%3D",
+        "total_citations": 4,
+        "avg_citations": 4,
+        "has_target_product": false
+      },
+      {
+        "title": "2026跨境物流公司推荐：8家靠谱服务商测评，FBA、专线、海运全覆盖--中国经济新闻网",
+        "link_url": "https://www.cet.com.cn/wzsy/kjzx/10442651.shtml",
+        "domain": "cet.com.cn",
+        "platform_name": "中国经济新闻网",
+        "logo_url": "https://cdn.deepseek.com/site-icons/cet.com.cn",
+        "total_citations": 4,
+        "avg_citations": 4,
+        "has_target_product": false
+      },
+      {
+        "title": "河北石家庄吉凤达物流有限公司",
+        "link_url": "https://baike.baidu.com/item/%E6%B2%B3%E5%8C%97%E7%9F%B3%E5%AE%B6%E5%BA%84%E5%90%89%E5%87%A4%E8%BE%BE%E7%89%A9%E6%B5%81%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/8769639",
+        "domain": "baidu.com",
+        "platform_name": "百度知道",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/zhidao_baidu_com.ico",
+        "total_citations": 4,
+        "avg_citations": 4,
+        "has_target_product": false
+      }
+    ]
+  },
+  "overview_daily": [
+    {
+      "date": "2026-08-04",
+      "mention_rate": 65,
+      "avg_position": 5.4,
+      "influence_rank": 2
+    }
+  ]
+}
