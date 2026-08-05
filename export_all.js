@@ -18,6 +18,7 @@ async function main() {
   console.log('💻 启动浏览器...');
   const browser = await puppeteer.launch({
     headless: 'new',
+    executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
     defaultViewport: { width: 1984, height: 1144, deviceScaleFactor: 2 },
     args: [
       '--no-sandbox',

@@ -61,7 +61,7 @@ BasicInfo、Dashboard×2、Entries、Competitors、Sources（有多端再按需�
 | 筛选逻辑总览 | `Page_PlatformFilterIntro` | 四 AI 各 Top10 |
 | 筛选过程 A/B/C | `Logic` / `LogicB` / `LogicC` | A交叉 / B差异化 / C竞品命中 |
 | 筛选结论 | `Page_PlatformFilterConclusion` | A5 + B代表站 + C5 |
-| 按权分发 | `Page_DeliveryStrategy_Combo` | 70%←A / 20%←B代表 / 10%←C |
+| 按权分发 | `Page_DeliveryStrategy_Combo` | **70%** 小众专业垂直媒体 / **20%** 主流媒体平台 / **10%** 权威官方媒体；站点从 A/B/C 精选池按**媒体属性**重分，不是 A→70、B→20、C→10 硬套 |
 
 ### 易错点
 1. **C组 = 竞品命中 TOP1 的平台**，不是自家品牌命中。
