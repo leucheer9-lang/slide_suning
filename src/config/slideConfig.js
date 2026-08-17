@@ -78,8 +78,7 @@ import PB_GeoOptKeywordsClassify_New from '../Pages_Before/Page_GeoOptKeywordsCl
 import PB_GeoOptKeywordsClassify_New2 from '../Pages_Before/Page_GeoOptKeywordsClassify_New2';
 import PB_GeoOptKeywordsClassify3 from '../Pages_Before/Page_GeoOptKeywordsClassify3';
 import PB_GeoOptKeywordsClassify4 from '../Pages_Before/Page_GeoOptKeywordsClassify4';
-import PB_GeoOptKeywordsCleaning1 from '../Pages_Before/Page_GeoOptKeywordsCleaning1';
-import PB_GeoOptKeywordsCleaning2 from '../Pages_Before/Page_GeoOptKeywordsCleaning2';
+import { PB_GeoOptKeywordsCleaningPages } from '../Pages_Before/Page_GeoOptKeywordsCleaningPages';
 import PB_AgentDataFlow from '../Pages_Before/Page_AgentDataFlow';
 import PB_BrandKnowledgeBase from '../Pages_Before/Page_BrandKnowledgeBase';
 import PB_UserReviewAnalysis from '../Pages_Before/Page_UserReviewAnalysis';
@@ -153,8 +152,8 @@ export const slideConfig = [
     title: '封面',
     backgroundImage: '/proposal-cover/proposal-cover-new.png',
     brand: 'GEO索引未来',
-    subtitle: '苏宁易购\nGEO规划方案',
-    date: 'July 2026',
+    subtitle: '创维创新谷\nGEO规划方案',
+    date: 'August 2026',
   },
 
   {
@@ -173,21 +172,21 @@ export const slideConfig = [
 
   { type: 'section', title: '品牌信息' },
   { type: 'page', title: '品牌基础信息', component: Page_BrandInfo },
-  { type: 'page', title: '主要业务矩阵', component: Page_BrandProducts },
-  { type: 'page', title: '平台核心能力壁垒', component: Page_BrandTech },
-  { type: 'page', title: '商业模式与全场景渠道体系', component: Page_BrandChannel },
+  { type: 'page', title: '园区产品与业态矩阵', component: Page_BrandProducts },
+  { type: 'page', title: '园区核心能力壁垒', component: Page_BrandTech },
+  { type: 'page', title: '商业模式与招商触达体系', component: Page_BrandChannel },
   { type: 'page', title: '核心竞品对比分析', component: Page_BrandCompetitors },
-  { type: 'page', title: '主流电商站内外广告投放对比矩阵', component: Page_BrandAdMatrix },
-  { type: 'page', title: '为何选择苏宁而非京东', component: Page_BrandWhySuning },
-  { type: 'page', title: '家电领域垂直竞品', component: Page_BrandVerticalCompetitors },
-  { type: 'page', title: '竞品流量链路与苏宁应对', component: Page_BrandVerticalTraffic_A },
+  { type: 'page', title: '主流园区招商获客渠道对比', component: Page_BrandAdMatrix },
+  { type: 'page', title: '什么企业会选创维创新谷', component: Page_BrandWhySuning },
+  { type: 'page', title: '同一批宝安客，谁在截流', component: Page_BrandVerticalCompetitors },
+  { type: 'page', title: '竞品获客链路与创新谷应对', component: Page_BrandVerticalTraffic_A },
 
   { type: 'section', title: '行业特点' },
-  { type: 'page', title: '平台型零售行业GEO难点解析', component: Page_IndustryPainPoints },
-  { type: 'page', title: '渠道隐身：平台在AI答案中被商品品牌淹没', component: Page_PainPoint1_WordCloud },
-  { type: 'page', title: '极强比价属性：价格促销高频变动，AI报价滞后混乱', component: Page_PainPoint4_SalesModel },
-  { type: 'page', title: '双巨头声量垄断：苏宁在AI引用源中被稀释', component: Page_PainPoint2_Industry },
-  { type: 'page', title: '服务履约口碑依赖第三方，负面易被AI放大', components: [Page_PainPoint3_Service, Page_PainPoint3_Service_Solution] },
+  { type: 'page', title: '主题产业园GEO难点解析', component: Page_IndustryPainPoints },
+  { type: 'page', title: '品牌隐身：园区在AI答案中被创维家电词淹没', component: Page_PainPoint1_WordCloud },
+  { type: 'page', title: '选址强比价：同区租金同一梯度，AI只拿单价做答案', component: Page_PainPoint4_SalesModel },
+  { type: 'page', title: '头部园区占位：宝安高端产业园推荐被雪花科创城占满', component: Page_PainPoint2_Industry },
+  { type: 'page', title: '公开信息依赖第三方，错误事实与刻板印象易被AI放大', components: [Page_PainPoint3_Service, Page_PainPoint3_Service_Solution] },
 
   { type: 'section', title: '词条策略' },
   { type: 'page', title: '词条分组结论', component: Page_KeywordGroupingConclusion },
@@ -199,7 +198,7 @@ export const slideConfig = [
   { type: 'page', title: '词条拓展逻辑', component: Page_KeywordExpansionLogic },
   { type: 'page', title: '词条穷举及清洗', components: [PB_GeoOptKeywordsClassify, PB_GeoOptKeywordsClassify2, PB_GeoOptKeywordsClassify_New, PB_GeoOptKeywordsClassify_New2] },
   { type: 'page', title: '词条分类及拓展', components: [PB_GeoOptKeywordsClassify3, PB_GeoOptKeywordsClassify4] },
-  { type: 'page', title: '词条确定', components: [PB_GeoOptKeywordsCleaning1, PB_GeoOptKeywordsCleaning2] },
+  { type: 'page', title: '词条确定', components: PB_GeoOptKeywordsCleaningPages },
 
   // ══════════════════════════════════════════════════════════
   // ——— 篇章2: GEO体检报告 ———

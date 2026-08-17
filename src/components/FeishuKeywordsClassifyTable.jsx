@@ -19,12 +19,13 @@ function Tag({ text, map }) {
  * @param {{ rows: Array, startIndex?: number }} props
  */
 export default function FeishuKeywordsClassifyTable({ rows, startIndex = 1 }) {
+    const track = rows[0]?.track || '创维创新谷';
     return (
         <div className="w-full h-full flex flex-col bg-[#0a0a0a] text-white overflow-hidden">
             <div className="shrink-0 h-9 px-3 flex items-center gap-3 border-b border-white/10 bg-white/[0.03] text-[12px] text-zinc-400">
                 <span className="font-semibold text-zinc-100">全部词条</span>
                 <span className="opacity-30">|</span>
-                <span>二、词条分类及扩展 · 苏宁易购</span>
+                <span>二、词条分类及扩展 · {track}</span>
                 <span className="ml-auto text-[#7aa2ff] font-mono font-bold">{rows.length} 条</span>
             </div>
 

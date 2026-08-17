@@ -1,33 +1,52 @@
 ---
-description: Slide pages must use large type and fill card space — never leave big empty frames with tiny text
+description: Slide pages must use large type, never stick to the frame, justify copy, and never leave 1–2 character widows
 globs: src/pages/**/*.jsx
 alwaysApply: true
 ---
 
-# Slide Typography — Fill the Frame
+# Slide Typography
 
-User has repeatedly complained: text too small, cards leave huge empty black padding. **Always prioritize large type that fills the row/card.**
+User has repeatedly complained about three things. Treat all as bugs.
 
-## Hard rules
+## 1. Fill the frame with type (vertical)
 
-1. **Body / description text ≥ 20px** on content slides. Never ship 13–15px body copy in flex-stretched cards.
-2. **Punch / headline lines inside cards ≥ 26–30px**. Card titles ≥ 28–32px.
-3. **Section labels** (核心打法、维度名等) ≥ 16px, not 12–13px.
-4. **If a card stretches with `flex-1`**, content must visually fill it: bump font size first; only then trim vertical padding (`py-2`–`py-3`, not `py-6`+). Do not leave a thin text band floating in a tall empty box.
-5. **Prefer bigger type over more padding.** Empty space inside bordered cards is a bug, not “breathing room.”
-6. Presentation canvas is roughly 16:9 full-bleed — design for distance reading, not dense dashboard UI.
+Body ≥ 20px. Punch / card titles ≥ 26–32px. Section labels ≥ 16px.
+If a card stretches with `flex-1`, bump type first so copy fills the height. Do not leave a thin text band floating in a tall empty box.
 
-## Anti-patterns
+## 2. Never stick to the frame (horizontal)
+
+Text kissing a bordered card is a bug. **Left and right inner padding ≥ 40px** (`px-10` / `px-12`), equal on both sides. Do not use `px-3`–`px-4` on content cards.
+Leave room on the right if a watermark number sits there (`pr-16`+ on titles).
+Vertical fill ≠ shrinking horizontal padding.
+
+## 3. Left–right align body copy
+
+Card body / punch / intro paragraphs use `text-justify [text-justify:inter-ideograph]`.
+Do not ship ragged-right Chinese paragraphs inside cards.
+
+## 4. Never leave 1–2 characters on their own line
+
+「满」「放大」「答案」单独掉行 = 必须改。Do this **before** shipping:
+
+1. Break at a **phrase boundary** with explicit `<br />` (preferred)
+2. Wrap the last 3 characters: `keepEnd(text, 3)` → `<span className="whitespace-nowrap">`
+3. Shorten or rephrase the line so it fits
+4. `whitespace-nowrap` only if the whole line truly fits
+
+`tracking-widest` makes Chinese longer — measure wrap with that class on. Do not rely on the browser.
 
 ```jsx
-// ❌ BAD — tiny copy in a tall flex row
-<p className="text-[15px] text-zinc-400">{detail}</p>
-<div className="text-[13px] text-zinc-500">核心打法</div>
+// ❌ BAD — auto wrap, last char alone; text hugs the border
+<h3 className="tracking-widest px-4">「宝安高端产业园」推荐被雪花科创城占满</h3>
+<p className="text-left px-4">{detail}</p>
 
-// ✅ GOOD — type fills the card
-<p className="text-[20px] text-zinc-300">{detail}</p>
-<div className="text-[16px] text-zinc-500">核心打法</div>
-<div className="text-[28px] font-black">{punch}</div>
+// ✅ GOOD — phrase break, padding, justify, keepEnd
+<h3 className="px-12 pr-20">
+  「宝安高端产业园」推荐
+  <br />
+  被雪花科创城占满
+</h3>
+<p className="px-12 text-justify [text-justify:inter-ideograph]">{keepEnd(detail)}</p>
 ```
 
-When unsure, go **one step larger**, not smaller.
+When unsure on type size, go **one step larger**. When unsure on wrap, break earlier, not later.

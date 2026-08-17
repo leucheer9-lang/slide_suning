@@ -3,7 +3,6 @@ import React from 'react';
 export default function Page_BrandInfo() {
     return (
         <div className="flex-1 min-h-0 w-full flex flex-col relative bg-black overflow-hidden text-white font-sans">
-            {/* Background Pattern */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] opacity-20 pointer-events-none"></div>
 
             <div className="w-full flex-col items-center justify-center text-center pt-4 lg:pt-5 pb-2 relative z-10 shrink-0">
@@ -12,13 +11,12 @@ export default function Page_BrandInfo() {
 
             <div className="flex-1 w-full max-w-[1500px] mx-auto px-8 lg:px-12 pb-5 relative z-10 flex flex-col justify-start gap-4 min-h-0">
 
-                {/* 核心数据 Metrics */}
                 <div className="grid grid-cols-4 gap-5 lg:gap-6 w-full shrink-0">
                     {[
-                        { label: '成立时间', value: '35+', sub: '年' },
-                        { label: 'A股上市', value: '002024', sub: '2004深交所' },
-                        { label: '零售云加盟店', value: '9,401', sub: '家' },
-                        { label: '2025营收', value: '489.6', sub: '亿元' },
+                        { label: '一期投用', value: '2016', sub: '年' },
+                        { label: '对外开放体量', value: '45', sub: '万㎡' },
+                        { label: '入驻企业', value: '270', sub: '家' },
+                        { label: '园区产值', value: '500+', sub: '亿元' },
                     ].map((item, idx) => (
                         <div
                             key={idx}
@@ -32,30 +30,28 @@ export default function Page_BrandInfo() {
                     ))}
                 </div>
 
-                {/* 基础信息 & 核心定位 */}
                 <div className="grid grid-cols-2 gap-5 lg:gap-6 w-full shrink-0">
                     <div className="bg-[#111] border border-white/10 border-l-[6px] border-l-zinc-600 rounded-2xl px-6 py-5 shadow-2xl relative hover:border-white/30 transition-colors flex flex-col">
                         <h3 className="text-xl lg:text-2xl font-bold text-white tracking-widest mb-2.5 flex items-center gap-3">
                             <span className="w-2.5 h-2.5 rounded-full bg-[#004CE5]"></span>
-                            品牌基础简介
+                            园区基础简介
                         </h3>
-                        <p className="text-zinc-300 text-[1.05rem] lg:text-[1.1rem] leading-[1.7] text-justify tracking-wide">
-                            苏宁易购创立于 <strong className="text-white">1990 年</strong>，由家电专营连锁起家，历经<strong className="text-white">「线下连锁 → 线上电商 → 全场景智慧零售」</strong>三次转型，现为国内头部家电 3C 全渠道零售商。经历 2021 年流动性危机后大幅收缩，目前聚焦家电 3C 主业，2024、2025 连续两年盈利（2025 归母净利 5,814 万）。
+                        <p className="text-zinc-300 text-[20px] leading-[1.7] text-justify tracking-wide">
+                            创维创新谷位于<strong className="text-white">深圳宝安石岩</strong>（塘头一号路 8 号），由创维集团建设、创维集团科技园管理有限公司运营。石岩科技园自持约 <strong className="text-white">100 万㎡</strong>：一期约 55 万㎡以创维产业自用为主，二期<strong className="text-white">创新谷约 45 万㎡面向市场招租</strong>。它不是单纯写字楼，而是创维彩电全球总部所在地，也是对外开放的产城综合体。
                         </p>
                     </div>
 
                     <div className="bg-[#111] border border-white/10 border-l-[6px] border-l-[#004CE5] rounded-2xl px-6 py-5 shadow-2xl relative hover:border-white/30 transition-colors flex flex-col">
                         <h3 className="text-xl lg:text-2xl font-bold text-white tracking-widest mb-2.5 flex items-center gap-3">
                             <span className="w-2.5 h-2.5 rounded-full bg-[#004CE5]"></span>
-                            品牌核心定位
+                            园区核心定位
                         </h3>
-                        <p className="text-zinc-300 text-[1.05rem] lg:text-[1.1rem] leading-[1.7] text-justify tracking-wide">
-                            <strong className="text-white text-[1.1rem] lg:text-[1.15rem]">「家电 3C 全渠道零售服务商」</strong>，2026 年起升级为<strong className="text-[#004ce5]">「智慧生活服务商 / 家庭生活管家」</strong>。以家电 3C 为基本盘，AI 技术为驱动，场景体验为内核，<strong className="text-white">「供应链 + 即时服务」</strong>为两翼。
+                        <p className="text-zinc-300 text-[20px] leading-[1.7] text-justify tracking-wide">
+                            <strong className="text-white text-[22px]">「5G+8K / 新一代电子信息技术」主题产业园</strong>。官方表述为<strong className="text-[#004ce5]">「产业聚融平台、科技创智中心」</strong>。2023 年获评广东省特色产业园，当年深圳唯一上榜。招租逻辑不是「谁来都行」，而是围绕创维产业链做强链、补链。
                         </p>
                     </div>
                 </div>
 
-                {/* 目标客群 */}
                 <div className="flex-1 min-h-0 bg-[#111] border border-white/10 border-t-[3px] border-t-zinc-600 rounded-2xl px-6 py-5 lg:px-8 lg:py-6 shadow-2xl w-full relative hover:border-white/30 transition-colors flex flex-col">
                     <h3 className="text-2xl lg:text-3xl font-bold text-white tracking-widest mb-4 flex items-center gap-3 shrink-0">
                         <svg className="w-6 h-6 lg:w-7 lg:h-7 text-zinc-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -66,21 +62,21 @@ export default function Page_BrandInfo() {
 
                     <div className="flex-1 min-h-0 grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-6">
                         <div className="bg-black/40 border border-white/5 border-l-[6px] border-l-zinc-500 p-5 lg:p-6 rounded-xl flex flex-col justify-center">
-                            <h4 className="text-xl lg:text-2xl font-bold text-white mb-3 tracking-widest">第一类：C 端家庭消费者</h4>
-                            <p className="text-[1.05rem] lg:text-[1.15rem] text-zinc-400 leading-relaxed text-justify tracking-wide">
-                                家电换新 / 以旧换新主力人群，看重<strong className="text-zinc-200">一站式购买、送装一体与本地化服务</strong>。
+                            <h4 className="text-xl lg:text-2xl font-bold text-white mb-3 tracking-widest">第一类：创维产业链配套企业</h4>
+                            <p className="text-[20px] lg:text-[21px] text-zinc-400 leading-relaxed text-justify tracking-wide">
+                                显示、光学、结构件、智能硬件等上下游，看重<strong className="text-zinc-200">就近供货、缩短交付半径，以及与创维业务协同</strong>。
                             </p>
                         </div>
                         <div className="bg-black/40 border border-white/5 border-l-[6px] border-l-zinc-500 p-5 lg:p-6 rounded-xl flex flex-col justify-center">
-                            <h4 className="text-xl lg:text-2xl font-bold text-white mb-3 tracking-widest">第二类：县镇 / 社区下沉用户</h4>
-                            <p className="text-[1.05rem] lg:text-[1.15rem] text-zinc-400 leading-relaxed text-justify tracking-wide">
-                                通过零售云加盟店触达，看重<strong className="text-zinc-200">就近体验、性价比与售后</strong>。
+                            <h4 className="text-xl lg:text-2xl font-bold text-white mb-3 tracking-widest">第二类：研产一体的硬科技企业</h4>
+                            <p className="text-[20px] lg:text-[21px] text-zinc-400 leading-relaxed text-justify tracking-wide">
+                                电子信息、人工智能、机器人、医疗器械、新能源等，需要<strong className="text-zinc-200">楼上研发、楼下中试 / 轻生产</strong>，纯写字楼做不到。
                             </p>
                         </div>
                         <div className="bg-black/40 border border-white/5 border-l-[6px] border-l-zinc-500 p-5 lg:p-6 rounded-xl flex flex-col justify-center">
-                            <h4 className="text-xl lg:text-2xl font-bold text-white mb-3 tracking-widest">第三类：B 端政企客户</h4>
-                            <p className="text-[1.05rem] lg:text-[1.15rem] text-zinc-400 leading-relaxed text-justify tracking-wide">
-                                通过<strong className="text-zinc-200">「易采云」数字化采购平台</strong>服务，2025 年该业务收入同比 +23.18%。
+                            <h4 className="text-xl lg:text-2xl font-bold text-white mb-3 tracking-widest">第三类：外溢的总部与成长型企业</h4>
+                            <p className="text-[20px] lg:text-[21px] text-zinc-400 leading-relaxed text-justify tracking-wide">
+                                从南山、福田外迁或新设办公，看重<strong className="text-zinc-200">租金性价比、公寓商业配套，以及可申报的园区政策身份</strong>。
                             </p>
                         </div>
                     </div>
