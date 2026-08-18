@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { SlideContext } from './SlideContext';
 import ChapterNav from './ChapterNav';
+import { parsedConfig } from '../config/parseConfig';
 
 function DefaultPlaceholder({ title }) {
   return (
@@ -13,6 +15,9 @@ function DefaultPlaceholder({ title }) {
 }
 
 export default function ChapterPage({ chapterIndex, sectionIndex, pageIndex, component: ContentComponent, title }) {
+  const chapter = parsedConfig.chapters[chapterIndex];
+  const useNativeHeader = chapter?.group === 'company';
+  const contextValue = { chapterIndex, sectionIndex, pageIndex, nativeHeader: useNativeHeader };
   const [showGuides, setShowGuides] = useState(false);
 
   useEffect(() => {
@@ -86,52 +91,82 @@ export default function ChapterPage({ chapterIndex, sectionIndex, pageIndex, com
     );
   };
 
+  if (useNativeHeader) {
+    return (
+      <SlideContext.Provider value={contextValue}>
+        <div className="w-full h-full flex flex-col relative bg-black overflow-hidden text-white">
+          <div className="absolute inset-0 z-0">
+            <div
+              className="absolute inset-0 opacity-[0.03]"
+              style={{
+                backgroundImage:
+                  'radial-gradient(circle at 2px 2px, #ffffff 1px, transparent 0)',
+                backgroundSize: '40px 40px',
+              }}
+            />
+          </div>
+          <div className="w-full h-full relative z-10 flex items-stretch overflow-hidden">
+            {ContentComponent ? (
+              <ContentComponent />
+            ) : (
+              <DefaultPlaceholder title={title} />
+            )}
+          </div>
+        </div>
+      </SlideContext.Provider>
+    );
+  }
+
   if (ContentComponent && ContentComponent.isFullCanvasMode) {
     return (
-      <div className="w-full h-full relative bg-black overflow-hidden text-white">
-        <div className="absolute inset-0 z-0">
-          <ContentComponent />
+      <SlideContext.Provider value={contextValue}>
+        <div className="w-full h-full relative bg-black overflow-hidden text-white">
+          <div className="absolute inset-0 z-0">
+            <ContentComponent />
+          </div>
+          <div className="absolute top-0 left-0 w-full z-10 pointer-events-none [&>*]:pointer-events-auto">
+            <ChapterNav
+              chapterIndex={chapterIndex}
+              sectionIndex={sectionIndex}
+              pageIndex={pageIndex}
+            />
+          </div>
+          {renderGuides()}
         </div>
-        <div className="absolute top-0 left-0 w-full z-10 pointer-events-none [&>*]:pointer-events-auto">
-          <ChapterNav
-            chapterIndex={chapterIndex}
-            sectionIndex={sectionIndex}
-            pageIndex={pageIndex}
-          />
-        </div>
-        {renderGuides()}
-      </div>
+      </SlideContext.Provider>
     );
   }
 
   return (
-    <div className="w-full h-full flex flex-col relative bg-black overflow-hidden text-white">
-      <div className="absolute inset-0 z-0">
-        <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage:
-              'radial-gradient(circle at 2px 2px, #ffffff 1px, transparent 0)',
-            backgroundSize: '40px 40px',
-          }}
+    <SlideContext.Provider value={contextValue}>
+      <div className="w-full h-full flex flex-col relative bg-black overflow-hidden text-white">
+        <div className="absolute inset-0 z-0">
+          <div
+            className="absolute inset-0 opacity-[0.03]"
+            style={{
+              backgroundImage:
+                'radial-gradient(circle at 2px 2px, #ffffff 1px, transparent 0)',
+              backgroundSize: '40px 40px',
+            }}
+          />
+        </div>
+
+        <ChapterNav
+          chapterIndex={chapterIndex}
+          sectionIndex={sectionIndex}
+          pageIndex={pageIndex}
         />
+
+        <div className="flex-1 relative z-10 w-full flex items-stretch mt-8 pb-8 overflow-hidden">
+          {ContentComponent ? (
+            <ContentComponent />
+          ) : (
+            <DefaultPlaceholder title={title} />
+          )}
+        </div>
+
+        {renderGuides()}
       </div>
-
-      <ChapterNav
-        chapterIndex={chapterIndex}
-        sectionIndex={sectionIndex}
-        pageIndex={pageIndex}
-      />
-
-      <div className="flex-1 relative z-10 w-full flex items-stretch mt-8 pb-8 overflow-hidden">
-        {ContentComponent ? (
-          <ContentComponent />
-        ) : (
-          <DefaultPlaceholder title={title} />
-        )}
-      </div>
-
-      {renderGuides()}
-    </div>
+    </SlideContext.Provider>
   );
 }

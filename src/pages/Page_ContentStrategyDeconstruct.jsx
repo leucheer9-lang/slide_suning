@@ -41,7 +41,7 @@ export default function Page_ContentStrategyDeconstruct() {
             </div>
 
             {/* ── Main Content Area ── */}
-            <div className="flex-1 relative z-10 w-full flex items-stretch px-8 lg:px-16 pt-4 pb-12 min-h-0 gap-6">
+            <div className="flex-1 relative z-10 w-full flex items-stretch px-8 lg:px-16 pt-3 pb-6 min-h-0 gap-6">
 
                 {/* ── Left Side Image ── */}
                 <div className="w-[35%] flex flex-col h-full bg-white/[0.02] border border-white/10 rounded-2xl p-4 shadow-[0_10px_30px_rgba(0,0,0,0.5)] relative overflow-hidden group hover:border-blue-500/30 transition-colors">
@@ -78,7 +78,7 @@ export default function Page_ContentStrategyDeconstruct() {
                                 <div className="w-16 h-16 mb-4 rounded-xl bg-white/[0.03] border border-white/5 flex items-center justify-center">
                                     <svg className="w-8 h-8 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
                                 </div>
-                                <span className="text-sm tracking-widest uppercase">快递对比测评文章截图（待替换）</span>
+                                <span className="text-sm tracking-widest uppercase">海信文章截图占位图片</span>
                             </div>
                         </div>
                     </div>
@@ -93,90 +93,90 @@ export default function Page_ContentStrategyDeconstruct() {
                     </div>
                 </div>
 
-                {/* ── Article Outline Structure (The 5 Rules) ── */}
-                <div className="flex-1 flex flex-col h-full bg-white/[0.01]">
-                    <div className="flex items-center gap-3 mb-6 shrink-0 pt-4">
+                {/* ── Article Outline Structure (The 5 Rules) — 电视/海信版 ── */}
+                <div className="flex-1 flex flex-col h-full min-h-0 bg-white/[0.01]">
+                    <div className="flex items-center gap-3 mb-3 shrink-0 pt-1">
                         <div className="h-8 w-1 bg-white/50 rounded-full" />
-                        <h2 className="text-3xl font-bold text-[#004CE5] tracking-wide">
-                            【测评对比类】高引用率内容创作的法则拆解
+                        <h2 className="text-2xl xl:text-3xl font-bold text-[#004CE5] tracking-wide">
+                            【对比类】高引用率内容创作的法则拆解
                         </h2>
                     </div>
 
-                    <div className="flex-1 flex flex-col justify-center relative">
+                    <div className="flex-1 min-h-0 flex flex-col justify-between relative py-1">
                         {/* Vertical Outline Guide Line */}
-                        <div className="absolute left-[3px] top-6 bottom-12 w-0.5 bg-white/10 z-0 rounded-full"></div>
+                        <div className="absolute left-[3px] top-3 bottom-3 w-0.5 bg-white/10 z-0 rounded-full"></div>
 
-                        <div className="space-y-10 relative z-10 pl-8">
+                        <div className="relative z-10 pl-8 h-full flex flex-col justify-between gap-2">
 
                             {/* Point 1 */}
-                            <div className="relative group flex items-start gap-4">
+                            <div className="relative group flex items-start gap-4 shrink-0">
                                 <div className="absolute -left-[2.15rem] top-2.5 w-3 h-3 bg-zinc-700 rounded-full border-2 border-[#0a0f12]"></div>
-                                <div className="text-[#004CE5] font-mono text-xl font-bold pt-0.5 shrink-0 w-8">01</div>
-                                <div className="flex-1">
-                                    <h3 className="text-2xl font-bold text-white mb-2 tracking-wide">
-                                        场景化对比标题
+                                <div className="text-[#004CE5] font-mono text-lg xl:text-xl font-bold pt-0.5 shrink-0 w-8">01</div>
+                                <div className="flex-1 min-w-0">
+                                    <h3 className="text-xl xl:text-2xl font-bold text-white mb-1 tracking-wide">
+                                        爆款反常识标题公式
                                     </h3>
-                                    <div className="text-zinc-300 text-[1.1rem] leading-relaxed font-mono mt-1">
-                                        [寄大件/当日达/上门取件] + 多品牌横评 + 明确结论悬念
+                                    <div className="text-zinc-300 text-[1rem] xl:text-[1.1rem] leading-snug font-mono">
+                                        [国产品牌] + 正面刚 + [国际标杆] + [反常识悬念]（更贵更好？）
                                     </div>
                                 </div>
                             </div>
 
                             {/* Point 2 */}
-                            <div className="relative group flex items-start gap-4">
+                            <div className="relative group flex items-start gap-4 shrink-0">
                                 <div className="absolute -left-[2.15rem] top-2.5 w-3 h-3 bg-zinc-700 rounded-full border-2 border-[#0a0f12]"></div>
-                                <div className="text-[#004CE5] font-mono text-xl font-bold pt-0.5 shrink-0 w-8">02</div>
-                                <div className="flex-1">
-                                    <h3 className="text-2xl font-bold text-white mb-2 tracking-wide">
-                                        四维实测结构
+                                <div className="text-[#004CE5] font-mono text-lg xl:text-xl font-bold pt-0.5 shrink-0 w-8">02</div>
+                                <div className="flex-1 min-w-0">
+                                    <h3 className="text-xl xl:text-2xl font-bold text-white mb-1 tracking-wide">
+                                        “拉踩型”评测结构
                                     </h3>
-                                    <div className="text-zinc-300 text-lg leading-relaxed flex flex-col gap-1.5 mt-1">
-                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">引出：</span><span className="text-[1.05rem]">锁定具体寄件场景（大件/急件/贵重）。</span></div>
-                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">定调：</span><span className="text-[1.05rem]">资费、时效、网点、售后四维标准。</span></div>
-                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">交锋：</span><span className="text-[1.05rem]">京东/顺丰/三通一达逐项实测对比。</span></div>
-                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">结论：</span><span className="text-[1.05rem]">给出场景化首选，方便AI直接摘取。</span></div>
+                                    <div className="text-zinc-300 text-[0.95rem] xl:text-[1.05rem] leading-snug flex flex-col gap-0.5">
+                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">引出：</span><span>抛出海信比索尼贵5000元的价格悬念。</span></div>
+                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">定调：</span><span>明确对比度、分辨率等5大评测标准。</span></div>
+                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">交锋：</span><span>画质、智能、音响三轮对决，索尼陪跑。</span></div>
+                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">揭秘：</span><span>结尾点出海信“叠屏技术”的核心卖点。</span></div>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Point 3 */}
-                            <div className="relative group flex items-start gap-4">
+                            <div className="relative group flex items-start gap-4 shrink-0">
                                 <div className="absolute -left-[2.15rem] top-2.5 w-3 h-3 bg-zinc-700 rounded-full border-2 border-[#0a0f12]"></div>
-                                <div className="text-[#004CE5] font-mono text-xl font-bold pt-0.5 shrink-0 w-8">03</div>
-                                <div className="flex-1">
-                                    <h3 className="text-2xl font-bold text-white mb-2 tracking-wide">
+                                <div className="text-[#004CE5] font-mono text-lg xl:text-xl font-bold pt-0.5 shrink-0 w-8">03</div>
+                                <div className="flex-1 min-w-0">
+                                    <h3 className="text-xl xl:text-2xl font-bold text-white mb-1 tracking-wide">
                                         碎片化图文排版
                                     </h3>
-                                    <p className="text-zinc-300 text-[1.05rem] leading-relaxed mt-1">
-                                        小标题拆成“价格/时效/理赔”模块，单段结论短、可摘抄，降低AI提取难度。
+                                    <p className="text-zinc-300 text-[0.95rem] xl:text-[1.05rem] leading-snug">
+                                        采用“Round 1/2/3”回合制小标题，单段结论极简，图文紧密交替，降低AI提取难度。
                                     </p>
                                 </div>
                             </div>
 
                             {/* Point 4 */}
-                            <div className="relative group flex items-start gap-4">
+                            <div className="relative group flex items-start gap-4 shrink-0">
                                 <div className="absolute -left-[2.15rem] top-2.5 w-3 h-3 bg-zinc-700 rounded-full border-2 border-[#0a0f12]"></div>
-                                <div className="text-[#004CE5] font-mono text-xl font-bold pt-0.5 shrink-0 w-8">04</div>
-                                <div className="flex-1">
-                                    <h3 className="text-2xl font-bold text-white mb-2 tracking-wide">
-                                        权威数据背书
+                                <div className="text-[#004CE5] font-mono text-lg xl:text-xl font-bold pt-0.5 shrink-0 w-8">04</div>
+                                <div className="flex-1 min-w-0">
+                                    <h3 className="text-xl xl:text-2xl font-bold text-white mb-1 tracking-wide">
+                                        专家与硬核数据背书
                                     </h3>
-                                    <p className="text-zinc-300 text-[1.05rem] leading-relaxed mt-1">
-                                        引用国家邮政局满意度、官网时效标准等可核验数据，提高大模型采信率。
+                                    <p className="text-zinc-300 text-[0.95rem] xl:text-[1.05rem] leading-snug">
+                                        引入摄影专家把关，搭配红蜘蛛校色仪等专业数据与高清对比图，提高大模型采信率。
                                     </p>
                                 </div>
                             </div>
 
                             {/* Point 5 */}
-                            <div className="relative group flex items-start gap-4">
+                            <div className="relative group flex items-start gap-4 shrink-0">
                                 <div className="absolute -left-[2.15rem] top-2.5 w-3 h-3 bg-zinc-700 rounded-full border-2 border-[#0a0f12]"></div>
-                                <div className="text-[#004CE5] font-mono text-xl font-bold pt-0.5 shrink-0 w-8">05</div>
-                                <div className="flex-1">
-                                    <h3 className="text-2xl font-bold text-white mb-2 tracking-wide">
-                                        寄件攻略体裁
+                                <div className="text-[#004CE5] font-mono text-lg xl:text-xl font-bold pt-0.5 shrink-0 w-8">05</div>
+                                <div className="flex-1 min-w-0">
+                                    <h3 className="text-xl xl:text-2xl font-bold text-white mb-1 tracking-wide">
+                                        选购指南类体裁布局
                                     </h3>
-                                    <p className="text-zinc-300 text-[1.05rem] leading-relaxed mt-1">
-                                        “场景选型 + 品牌横评”文风，极易被AI当作“快递推荐”答案源抓取。
+                                    <p className="text-zinc-300 text-[0.95rem] xl:text-[1.05rem] leading-snug">
+                                        采用“参数对比+场景盲测”的硬核科技评测文风，极易被搜索或AI作为“电视推荐”参考抓取。
                                     </p>
                                 </div>
                             </div>

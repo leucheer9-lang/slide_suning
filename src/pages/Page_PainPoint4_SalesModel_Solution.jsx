@@ -14,7 +14,7 @@ export default function Page_PainPoint4_SalesModel_Solution() {
                     <span className="text-[#004CE5] font-black text-base">02</span>
                 </div>
                 <h1 className="text-[32px] xl:text-[36px] font-bold text-zinc-100 tracking-wider">
-                    偶发性服务事故极易被AI抓取放大
+                    零星质量与使用争议极易被AI抓取放大
                 </h1>
             </div>
 
@@ -35,9 +35,14 @@ export default function Page_PainPoint4_SalesModel_Solution() {
                                         <div className="text-[18px] xl:text-[20px] font-extrabold text-zinc-900 tracking-wide mb-3">
                                             {card.cardTitle}
                                         </div>
-                                        <p className="text-[15px] xl:text-[16px] font-semibold text-zinc-800 leading-relaxed text-justify line-clamp-5">
-                                            {card.summary}
+                                        <p className="text-[15px] xl:text-[16px] font-semibold text-zinc-800 leading-relaxed text-justify line-clamp-3">
+                                            <span className="text-[#004CE5]">总结：</span>{card.summary}
                                         </p>
+                                        {card.why && (
+                                            <p className="text-[15px] xl:text-[16px] font-semibold text-zinc-800 leading-relaxed text-justify line-clamp-3 mt-2">
+                                                <span className="text-[#004CE5]">原因：</span>{card.why}
+                                            </p>
+                                        )}
                                     </div>
 
                                     <div className="shrink-0 text-[14px] xl:text-[15px] font-bold text-[#e08c2e] mb-2">
@@ -75,7 +80,7 @@ export default function Page_PainPoint4_SalesModel_Solution() {
                         解法
                     </div>
                     <p className="text-zinc-200 text-lg lg:text-[20px] font-bold leading-relaxed text-justify flex-1">
-                        建立品牌服务事实数据库 + 个案主动纠偏 + 正向履约语料持续供给 (详见方案第四部分)
+                        建立园区事实数据库（交通配套 / 房源参数 / 物业与招商口径）+ 争议个案主动纠偏 + 正向入驻语料持续供给 (详见方案第四部分)
                     </p>
                 </div>
             </div>

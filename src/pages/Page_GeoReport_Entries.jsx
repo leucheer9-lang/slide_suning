@@ -4,23 +4,33 @@ import GeoOneApp, { MAIN_LEFT, MAIN_W } from '../components/geoone/GeoOneApp';
 import { C, Checkbox, Toggle, GhostButton, PlatformDots, ShotThumb } from '../components/geoone/ui';
 
 /* ══════════════ 数据：换监测词条时只改这一段 ══════════════ */
-/* 来源：GEO ONE 项目 419 京东物流-ToC① */
+/* 来源：GEO ONE 项目 481 创维创新谷-ToC①，2026-08-14 */
 
-const TARGET = '京东物流';
+const TARGET = '创维创新谷';
+
+const TOTAL_ENTRIES = 25;
 
 const ROWS = [
-    { term: '寄家具家电的快递推荐', rate: '100.0%', rank: 'NO. 1.0', shot: 'https://app.geoindexfuture.com/screenshots/20260805/fc76be65dc8a4266ac6b168eb7748fed.png', time: '2026/8/4' },
-    { term: '寄家电能送装的快递推荐', rate: '100.0%', rank: 'NO. 1.8', shot: 'https://app.geoindexfuture.com/screenshots/20260805/2ce56064a53b4725829eccdb75dbdbdb.png', time: '2026/8/4' },
-    { term: '服务好的快递推荐', rate: '100.0%', rank: 'NO. 2.0', shot: 'https://app.geoindexfuture.com/screenshots/20260805/1c982cd071204ef6a31c7604b6b42652.png', time: '2026/8/4' },
-    { term: '口碑好的快递推荐', rate: '100.0%', rank: 'NO. 2.0', shot: 'https://app.geoindexfuture.com/screenshots/20260805/4d2905eae89743dfbbab1d36993d694b.png', time: '2026/8/4' },
-    { term: '寄东西丢了好理赔的快递推荐', rate: '100.0%', rank: 'NO. 2.0', shot: 'https://app.geoindexfuture.com/screenshots/20260805/243da884b1074c2b99dc9e1531ab52c1.png', time: '2026/8/4' },
-    { term: '快递员服务态度好的快递推荐', rate: '100.0%', rank: 'NO. 2.0', shot: 'https://app.geoindexfuture.com/screenshots/20260805/eb7837e06095459aae97cf1a0f84f512.png', time: '2026/8/4' },
-    { term: '速度快的快递排行榜', rate: '100.0%', rank: 'NO. 2.3', shot: 'https://app.geoindexfuture.com/screenshots/20260805/b37e2651d7554bec9c7d0b79a4e13eaf.png', time: '2026/8/4' },
-    { term: '寄手机电脑安全的快递推荐', rate: '100.0%', rank: 'NO. 2.3', shot: 'https://app.geoindexfuture.com/screenshots/20260805/f2c4cee3f9ce4fc49d88a90a19358e72.png', time: '2026/8/4' },
-    { term: '寄生鲜水果不怕坏的快递推荐', rate: '100.0%', rank: 'NO. 2.5', shot: 'https://app.geoindexfuture.com/screenshots/20260805/2b99b21587f04aadb6594d9a0472437b.png', time: '2026/8/4' },
-    { term: '寄快递哪家快递最快', rate: '50.0%', rank: 'NO. 4.8', shot: 'https://app.geoindexfuture.com/screenshots/20260805/ffa37c7e624a4f45bc0fd0cdad0f7211.png', time: '2026/8/4' },
-    { term: '学生开学寄被子行李箱的快递推荐', rate: '25.0%', rank: 'NO. 4.3', shot: 'https://app.geoindexfuture.com/screenshots/20260805/b7f276cfa48a4028b09976838f1530c4.png', time: '2026/8/4' },
-    { term: '服务丰富的一站式快递平台推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260805/68bebdc7b98944d398a2d78fdb17717a.png', time: '2026/8/4' },
+    { term: '宝安区高端产业园排行榜', rate: '100.0%', rank: 'NO. 9.5', shot: 'https://app.geoindexfuture.com/screenshots/20260814/0a0a483742254277a3f230f9d86bb123.png', time: '2026/8/14' },
+    { term: '宝安区新型显示产业园推荐', rate: '100.0%', rank: 'NO. 3.0', shot: 'https://app.geoindexfuture.com/screenshots/20260807/4fd36aefcd914c6681ce05f06ce692fe.png', time: '2026/8/14' },
+    { term: '宝安区产业园排行榜', rate: '100.0%', rank: 'NO. 10.0', shot: 'https://app.geoindexfuture.com/screenshots/20260813/45c11e08d314417a9e45f763ed57853e.png', time: '2026/8/14' },
+    { term: '能研发又能办公的宝安区高端产业园推荐', rate: '50.0%', rank: 'NO. 6.5', shot: 'https://app.geoindexfuture.com/screenshots/20260807/0e0cb3b4212a4885b2a0cf7b503fcb9a.png', time: '2026/8/14' },
+    { term: '宝安区科技产业园推荐', rate: '50.0%', rank: 'NO. 16.0', shot: 'https://app.geoindexfuture.com/screenshots/20260814/98e300ff02154e0581755a794ab02ad4.png', time: '2026/8/14' },
+    { term: '宝安区电子信息产业园推荐', rate: '50.0%', rank: 'NO. 5.5', shot: 'https://app.geoindexfuture.com/screenshots/20260807/fd864f9b7c2f4cd2b612bfc147a5c0f2.png', time: '2026/8/14' },
+    { term: '宝安区适合电子信息企业发展的产业园有哪些', rate: '50.0%', rank: 'NO. 5.5', shot: 'https://app.geoindexfuture.com/screenshots/20260814/15cf1d626431413ebb5f1be01c10f055.png', time: '2026/8/14' },
+    { term: '宝安区研发办公一体化园区推荐', rate: '50.0%', rank: 'NO. 9.0', shot: 'https://app.geoindexfuture.com/screenshots/20260813/91640d10e5c4470aaa54bd36b8f92735.png', time: '2026/8/14' },
+    { term: '宝安区生产研发一体化园区推荐', rate: '50.0%', rank: 'NO. 5.5', shot: 'https://app.geoindexfuture.com/screenshots/20260813/31111b453a4b40d48e8de5a2ceae0101.png', time: '2026/8/14' },
+    { term: '宝安区高端产业园推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260813/ee7226d5ba0c4b2f83a6933ff4ce0c79.png', time: '2026/8/14' },
+    { term: '口碑好的宝安区高端产业园推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260814/d7c15de3c3e84c46bc019363451bd07b.png', time: '2026/8/14' },
+    { term: '现成可入驻的宝安区高端产业园推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260814/b15ff428a1374781bb9fff35724e439b.png', time: '2026/8/14' },
+    { term: '配套齐全的宝安区高端产业园推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260813/3243b8d6fca94060be2f2274947bd00a.png', time: '2026/8/14' },
+    { term: '有人才公寓的宝安区高端产业园推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260814/ae5a004ba5064f98862fa2e780dd0248.png', time: '2026/8/14' },
+    { term: '适合总部入驻的宝安区高端产业园推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260813/aecfeb9b644e4e8298ae6ac9271d2633.png', time: '2026/8/14' },
+    { term: '有大厂总部的宝安区高端产业园推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260814/e2339f56f3654c38b4a15212e31a9e68.png', time: '2026/8/14' },
+    { term: '有政策补贴的宝安区高端产业园推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260813/28b539bb8e68448687775c7214b3985c.png', time: '2026/8/14' },
+    { term: '面积能灵活分割的宝安区高端产业园推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260807/8cd1bd9d16864c389cf77d76281ead37.png', time: '2026/8/14' },
+    { term: '宝安区适合科技企业入驻的产业园有哪些', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260813/8f432ebdd39347b992bc6752074eb00b.png', time: '2026/8/14' },
+    { term: '宝安区适合智能硬件企业的产业园有哪些', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260813/4f223d3d3af34fa9ae9dac5b24bdc8fc.png', time: '2026/8/14' },
 ];
 
 const COLS = [
@@ -34,20 +44,23 @@ const COLS = [
     { key: 'time', w: 140, label: '最近更新时间' },
 ];
 
-const ROW_H = 56;
+/* 20 条词条 + 合计行要在 912.5-140-24 的表格区内不裁切：44 + 20×33 + 28 = 732 */
+const ROW_H = 33;
 const HEAD_H = 44;
+const SHOT_W = 20;
+const SHOT_H = 27;
 
 export default function Page_GeoReport_Entries() {
     return (
-        <Frame title="词条表现分析 · C端" aspect="1586/912.5">
+        <Frame title="词条表现分析 · 优化词 C 端" aspect="1586/912.5">
             <GeoOneApp
                 height={912.5}
                 active="词条"
                 title="词条"
                 target={TARGET}
-                brand="京东物流(ToC)"
-                brandSub="京东物流"
-                avatar="京"
+                brand="创维创新谷(优化词C端)"
+                brandSub="创维创新谷"
+                avatar="创"
                 toolbarRight={
                     <>
                         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
@@ -143,16 +156,30 @@ export default function Page_GeoReport_Entries() {
                                 {r.rank}
                             </div>
                             <div style={{ width: COLS[5].w, flexShrink: 0, paddingLeft: 8 }}>
-                                <PlatformDots />
+                                <PlatformDots size={20} />
                             </div>
                             <div style={{ width: COLS[6].w, flexShrink: 0, paddingLeft: 8 }}>
-                                <ShotThumb src={r.shot} />
+                                <ShotThumb src={r.shot} width={SHOT_W} height={SHOT_H} />
                             </div>
                             <div style={{ width: COLS[7].w, flexShrink: 0, paddingLeft: 8, fontSize: 14, color: C.muted }}>
                                 {r.time}
                             </div>
                         </div>
                     ))}
+
+                    <div
+                        style={{
+                            height: 28,
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'flex-end',
+                            paddingRight: 16,
+                            fontSize: 13,
+                            color: C.muted,
+                        }}
+                    >
+                        共 {TOTAL_ENTRIES} 条词条，当前展示前 {ROWS.length} 条；{TOTAL_ENTRIES} 条中 9 条有提及，其余 16 条提及率均为 0.0%
+                    </div>
                 </div>
             </GeoOneApp>
         </Frame>

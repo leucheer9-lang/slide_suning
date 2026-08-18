@@ -5,17 +5,20 @@ import { C, Card } from '../components/geoone/ui';
 import { LineChart, SentimentBar } from '../components/geoone/charts';
 
 /* ══════════════ 数据：换正负面基本情况时只改这一段 ══════════════ */
-/* 来源：GEO ONE /api/sentiments/stats · 项目 419 ToC · 2026-08-04 */
+/* 来源：GEO ONE /api/sentiments/stats · 483 创维创新谷-监测词-ToC / 484 监测词-ToB · 2026-08-15 */
 
 const WIDTH = 1608;
 const HEIGHT = 574.5;
-const POSITIVE = 97.5;
-const POS_KEYWORDS = '时效快、服务规范、服务体验好';
-const NEG_KEYWORDS = '不推荐、适用场景有限、价格偏高、性价比低、价格偏贵';
+/** 图表以 C 端监测词（项目 483）为主展示；B 端监测词见页脚概述 */
+const POSITIVE = 82.5;
+const NEGATIVE = 17.5;
+const POSITIVE_TOB = 85;
+const POS_KEYWORDS = '配套完善、性价比高、交通便利';
+const NEG_KEYWORDS = '地铁未通、物业推诿、噪音扰民、押金纠纷';
 const LINE_TICKS = ['100%', '80%', '60%', '40%', '20%'];
-/** tick：0=100%，每格 20%；97.5% → (100-97.5)/20 = 0.125 */
-const LINE_POINTS = [{ x: 0.5, tick: 0.125 }];
-const LINE_LABELS = ['8月4日'];
+/** tick：0=100%，每格 20%；82.5% → (100-82.5)/20 = 0.875 */
+const LINE_POINTS = [{ x: 0.5, tick: 0.875 }];
+const LINE_LABELS = ['8月15日'];
 
 export default function Page_GeoReport_Sentiment_Pre() {
     return (
@@ -31,12 +34,12 @@ export default function Page_GeoReport_Sentiment_Pre() {
                         </h3>
                         <div className="pl-[14px] text-[15px] lg:text-[16px] xl:text-[17.5px] text-zinc-300 leading-relaxed font-normal flex flex-col gap-2.5">
                             <p>
-                                在针对京东物流的定向监测中，C 端正面回答率达 {POSITIVE}%（B 端 98.3%），主流正向标签高度统一：“{POS_KEYWORDS}”，被 AI
-                                视为时效与服务体验兼备的优选快递。
+                                C 端监测词（20 个词条 / 40 次问答）正面回答率 {POSITIVE}%，正向标签集中在“{POS_KEYWORDS}”，与 45 万㎡产城综合体的配套定位一致；B 端监测词（20 个渠道合作词 / 40
+                                次问答）正面率 {POSITIVE_TOB}%，正向标签为“配套成熟、政策支持、性价比高”。
                             </p>
                             <p>
-                                负面声量仅 {100 - POSITIVE}
-                                %，但焦点集中在“{NEG_KEYWORDS}”——多出现在轻泡件计费、退货散客价、当日达适用半径等场景。声量虽低，仍需在比价与场景边界类问答中持续纠偏，避免被固化为“贵 / 不划算”的默认印象。
+                                负面共 13 条（C 端 7 条 {NEGATIVE}%、B 端 6 条 15%），关键词是“{NEG_KEYWORDS}”。其中 9 条属于产品信息错误——模型仍在说“园区无地铁直达”“应人石站仍在建”，没读到 13 号线已开通上盖的事实；另外 4 条来自公寓投诉帖。只有用户明确问“创维创新谷怎么样 /
+                                物业怎么样”时模型才会去翻这些内容，这正是单独设 40 条监测词的用途——只看优化词，这部分风险根本不会暴露。
                             </p>
                         </div>
                     </div>
@@ -107,7 +110,7 @@ export default function Page_GeoReport_Sentiment_Pre() {
 
                     <div style={{ marginBottom: 28 }}>
                         <div style={{ fontSize: 22, fontWeight: 800, color: C.red, marginBottom: 8 }}>
-                            {(100 - POSITIVE).toFixed(1)}% 负面
+                            {NEGATIVE}% 负面
                         </div>
                         <div style={{ fontSize: 17, color: C.text }}>{NEG_KEYWORDS}</div>
                     </div>

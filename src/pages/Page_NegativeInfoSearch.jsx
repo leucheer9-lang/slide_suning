@@ -40,7 +40,7 @@ export default function Page_NegativeInfoSearch() {
                                         产生速度极快
                                     </h4>
                                     <p className="text-zinc-300 text-[15px] lg:text-[16.5px] xl:text-[18.5px] leading-relaxed pl-4 font-bold">
-                                        互联网上的信息每分每秒都在更新。今天清理干净了，明天可能又会冒出一条第三方平台的低价截图，或者一条派送不上门的吐槽。
+                                        互联网上的信息每分每秒都在更新。今天清理干净了，明天可能又会冒出一条过期的“无地铁直达”转载，或者一条公寓投诉帖。
                                     </p>
                                 </div>
                                 
@@ -51,7 +51,7 @@ export default function Page_NegativeInfoSearch() {
                                         AI 抓取速度极快
                                     </h4>
                                     <p className="text-zinc-300 text-[15px] lg:text-[16.5px] xl:text-[18.5px] leading-relaxed pl-4 font-bold">
-                                        大模型随时可能把这些新冒出来的“毒点”抓取进答案里。一旦 AI 输出了错误运费或负面评价，个人用户会当场换一家寄，正在选型的企业客户也可能直接划掉候选名单。
+                                        大模型随时可能把这些新冒出来的“毒点”抓取进答案里。一旦 AI 输出了错误交通信息或物业负面，企业会当场转向竞品园区，正在带客的中介也可能直接划掉候选名单。
                                     </p>
                                 </div>
                             </div>
@@ -84,7 +84,7 @@ export default function Page_NegativeInfoSearch() {
                                         发现即溯源
                                     </h4>
                                     <p className="text-zinc-300 text-[15px] lg:text-[16.5px] xl:text-[18.5px] leading-relaxed pl-4 font-bold">
-                                        只要在当天的搜索中发现 AI 开始乱报价或出现负面，第一时间存档留存。
+                                        只要在当天的搜索中发现 AI 开始写错交通配套或出现负面，第一时间存档留存。
                                     </p>
                                 </div>
                             </div>
@@ -124,10 +124,10 @@ export default function Page_NegativeInfoSearch() {
                                 </div>
                                 <div className="flex flex-col gap-0.5">
                                     <span className="text-[20px] lg:text-[23px] xl:text-[26px] font-black text-white">
-                                        运费报价失真
+                                        交通信息滞后
                                     </span>
                                     <span className="text-[14px] lg:text-[16px] xl:text-[18px] font-black text-red-500">
-                                        ● 触发价格预警
+                                        ● 触发事实预警
                                     </span>
                                 </div>
                             </div>
@@ -139,7 +139,7 @@ export default function Page_NegativeInfoSearch() {
                                 </div>
                                 <div className="flex flex-col gap-0.5">
                                     <span className="text-[20px] lg:text-[23px] xl:text-[26px] font-black text-white">
-                                        派送服务吐槽
+                                        物业体验吐槽
                                     </span>
                                     <span className="text-[14px] lg:text-[16px] xl:text-[18px] font-black text-red-500">
                                         ● 触发负面警告

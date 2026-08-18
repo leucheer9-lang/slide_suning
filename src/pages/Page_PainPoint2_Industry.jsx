@@ -1,84 +1,120 @@
 import React from 'react';
 
+const scenes = [
+    {
+        scene: '宝安高端产业园推荐哪个？',
+        ai: '雪花科创城',
+        status: '华润品牌和总部南迁报道更密，石岩被写成工厂区',
+    },
+    {
+        scene: '宝安工业上楼去哪？',
+        ai: '雪花科创城',
+        status: '新供给招商稿先占住这个词，已投用的研发上楼缺席',
+    },
+    {
+        scene: '宝安哪里适合硬科技总部？',
+        ai: '新安 / 尖岗山',
+        status: '雪花更近南山；石岩通勤差的旧印象还在',
+    },
+    {
+        scene: '宝安电子信息 / 超高清园区',
+        ai: '尚有空位',
+        status: '省级特色产业园身份在，但可引用的选址内容仍薄',
+    },
+];
+
+const gaps = [
+    { title: '创维链主在场', desc: '彩电全球总部、同链近 90 家在园。AI 很少把「挨着创维做生意」写成选高端园的理由' },
+    { title: '现在就能入驻', desc: '一期 2016 年已投用。雪花电子信息集聚还在形成，甲岸预计 2026 年中才交' },
+    { title: '省级园 + 科技桃花源', desc: '2023 年深圳唯一省级特色产业园。高端园推荐和中介页几乎不提这层身份' },
+    { title: '办住商酒闭环', desc: '商场 + 1,500 套公寓 + 亚朵，是石岩少有的高端配套；AI 仍按工业区来写' },
+];
+
 export default function Page_PainPoint2_Industry() {
     return (
-        <div className="w-full h-full flex flex-col relative bg-black overflow-hidden text-white font-sans">
-            {/* Background Pattern */}
-            <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:40px_40px] opacity-20 pointer-events-none"></div>
+        <div className="w-full h-full flex flex-col relative bg-black overflow-hidden text-white font-sans p-4 lg:p-5">
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] opacity-20 pointer-events-none"></div>
 
-            {/* Header Section */}
-            <div className="w-full px-12 sm:px-16 pt-4 pb-2 relative z-10 shrink-0 text-left">
-                <div className="inline-block border border-white/20 bg-white/5 rounded-full px-4 py-1 mb-2">
-                    <span className="text-zinc-300 text-sm tracking-widest font-bold mr-2">困境</span>
-                    <span className="text-[#004CE5] font-black text-base">02</span>
-                </div>
-                <h1 className="text-[32px] xl:text-[36px] font-bold text-zinc-100 tracking-wider">
-                    极度受限于“供应链物理半径”，AI全域推荐易导致“流量倒挂”
-                </h1>
-            </div>
-
-            {/* Content Container */}
-            <div className="flex-1 w-full px-12 sm:px-16 pb-8 relative z-10 flex flex-col justify-between min-h-0">
-                <p className="text-zinc-400 text-lg lg:text-[20px] xl:text-[22px] leading-relaxed tracking-wide mb-4 shrink-0 text-justify">
-                    短保烘焙的生命线是“中央工厂+短途物流”的覆盖半径。超出这个物理边界，产品无法保证高新鲜度，且配送折旧成本高企。如果策略一味照搬全国性全域分发，极易出现AI在广州强烈推荐某款高性价比短保面包，但该品牌供应链仅在北方导致南方根本买不到的“流量倒挂”尴尬。
-                </p>
-
-                {/* Table Slot */}
-                <div className="flex-1 bg-zinc-900/60 border border-white/10 rounded-2xl p-6 flex flex-col justify-start gap-4 relative overflow-hidden shadow-2xl min-h-0">
-                    <div className="text-zinc-200 font-bold text-lg xl:text-xl tracking-wider flex items-center gap-2 shrink-0">
-                        <span className="w-2 h-5 bg-[#004CE5] rounded-full"></span>
-                        短保供应链限制与跨区域GEO定位分析
+            <div className="w-full max-w-[1600px] mx-auto flex flex-col h-full min-h-0 relative z-10">
+                <div className="shrink-0 mb-2.5">
+                    <div className="inline-block border border-white/20 bg-white/5 rounded-full px-5 py-1.5 mb-2">
+                        <span className="text-zinc-200 text-lg tracking-widest font-bold mr-2">困境</span>
+                        <span className="text-[#004CE5] font-black text-xl lg:text-2xl">03</span>
                     </div>
-                    <div className="w-full border border-white/5 rounded-xl bg-black/40 overflow-hidden flex-1 flex flex-col min-h-0">
-                        <table className="w-full h-full text-left border-collapse text-base lg:text-[17px] xl:text-[19px] leading-relaxed">
-                            <thead>
-                                <tr className="bg-white/5 border-b border-white/10 text-zinc-300 font-bold tracking-wide text-base lg:text-[18px] xl:text-[20px]">
-                                    <th className="py-3 px-4 xl:py-3.5 xl:px-5 w-[25%] border-r border-white/5">核心数据指标</th>
-                                    <th className="py-3 px-4 xl:py-3.5 xl:px-5 w-[25%] text-center border-r border-white/5">数据表现</th>
-                                    <th className="py-3 px-4 xl:py-3.5 xl:px-5 w-[50%]">行业共识与佐证逻辑</th>
-                                </tr>
-                            </thead>
-                            <tbody className="divide-y divide-white/5">
-                                <tr className="hover:bg-white/[0.02] transition-colors">
-                                    <td className="py-2.5 px-4 xl:py-3 xl:px-5 text-zinc-200 border-r border-white/5 font-semibold leading-snug">核心保质期限制</td>
-                                    <td className="py-2.5 px-4 xl:py-3 xl:px-5 text-center border-r border-white/5 text-[#004CE5] font-black text-lg lg:text-[20px] xl:text-[22px] tracking-wider">3 - 7 天</td>
-                                    <td className="py-2.5 px-4 xl:py-3 xl:px-5 text-zinc-400 leading-relaxed">短保本质上要求极高的物流与上架周转速度，通常是“日产日配、清晨上架”的物理周期限制。</td>
-                                </tr>
-                                <tr className="hover:bg-white/[0.02] transition-colors">
-                                    <td className="py-2.5 px-4 xl:py-3 xl:px-5 text-zinc-200 border-r border-white/5 font-semibold leading-snug">有效销售物流半径</td>
-                                    <td className="py-2.5 px-4 xl:py-3 xl:px-5 text-center border-r border-white/5 text-[#004CE5] font-black text-lg lg:text-[20px] xl:text-[22px] tracking-wider">&lt; 300 - 500 公里</td>
-                                    <td className="py-2.5 px-4 xl:py-3 xl:px-5 text-zinc-400 leading-relaxed">极度依赖中央工厂的辐射范围，超出该半径不仅配送折旧成本陡增，产品的保鲜周期也大打折扣。</td>
-                                </tr>
-                                <tr className="hover:bg-white/[0.02] transition-colors">
-                                    <td className="py-2.5 px-4 xl:py-3 xl:px-5 text-zinc-200 border-r border-white/5 font-semibold leading-snug">跨区域渗透成功率</td>
-                                    <td className="py-2.5 px-4 xl:py-3 xl:px-5 text-center border-r border-white/5 text-[#004CE5] font-black text-lg lg:text-[20px] xl:text-[22px] tracking-wider">极低</td>
-                                    <td className="py-2.5 px-4 xl:py-3 xl:px-5 text-zinc-400 leading-relaxed">行业龙头桃李面包的营收亦高度依赖东北、华北优势产区（占比超6成），因跨区供应链和本土品牌竞争南下受阻。</td>
-                                </tr>
-                                <tr className="hover:bg-white/[0.02] transition-colors">
-                                    <td className="py-2.5 px-4 xl:py-3 xl:px-5 text-zinc-200 border-r border-white/5 font-semibold leading-snug">线上电商购买占比</td>
-                                    <td className="py-2.5 px-4 xl:py-3 xl:px-5 text-center border-r border-white/5 text-[#004CE5] font-black text-lg lg:text-[20px] xl:text-[22px] tracking-wider">极低（主力仍在线下）</td>
-                                    <td className="py-2.5 px-4 xl:py-3 xl:px-5 text-zinc-400 leading-relaxed">由于保质期过短导致快递变质风险极高，消费者主要购买路径仍是本地大商超、品牌便利店或即时O2O。</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                {/* Solution Section */}
-                <div className="shrink-0 mt-4 bg-gradient-to-r from-[#004CE5]/10 via-black to-[#0a0a0a] border border-[#004CE5]/30 rounded-2xl p-5 shadow-[0_0_20px_rgba(0,76,229,0.15)] relative overflow-hidden flex items-center gap-4">
-                    <div className="absolute top-0 left-0 w-2 h-full bg-[#004CE5] shadow-[0_0_10px_rgba(0,76,229,0.5)]"></div>
-                    <div className="bg-[#004CE5]/10 border border-[#004CE5]/30 px-4 py-1.5 rounded-lg text-[#004CE5] text-base xl:text-lg font-black tracking-widest shrink-0 uppercase">
-                        解法
-                    </div>
-                    <p className="text-zinc-200 text-base lg:text-[19px] xl:text-[21px] font-bold leading-relaxed text-justify flex-1">
-                        实施<strong className="text-white">“LBS（基于位置服务）+ O2O渠道强绑定”</strong>的GEO策略。投喂AI语料时高频绑定地域标签和即时零售渠道。
+                    <h1 className="text-[32px] lg:text-[36px] font-black text-white tracking-wide mb-1.5 leading-tight whitespace-nowrap">
+                        头部园区占位：「宝安高端产业园」推荐被雪花科创城占满
+                    </h1>
+                    <p className="text-zinc-400 text-[20px] leading-snug tracking-wide text-justify [text-justify:inter-ideograph]">
+                        真正抢同一批客的赛场在宝安，不在南山或坂田。问「宝安高端产业园 / 工业上楼」，出镜最多的是雪花科创城。创新谷进不了同区第一轮推荐。
                     </p>
                 </div>
 
-                {/* Footer Annotation */}
-                <div className="w-full text-right shrink-0 mt-3">
-                    <p className="text-zinc-500 text-xs tracking-wider">
-                        数据来源：各品牌财报、2024年短保面包行业白皮书、界面新闻行业分析
+                <div className="flex-1 min-h-0 grid grid-cols-2 gap-5 pb-2.5">
+                    <div className="min-h-0 bg-[#0a0a0a] border border-white/10 rounded-[1.5rem] px-6 py-5 flex flex-col">
+                        <div className="text-zinc-200 font-bold text-[20px] mb-2.5 tracking-wider flex items-center gap-2 shrink-0">
+                            <span className="w-2 h-5 bg-[#004CE5] rounded-full"></span>
+                            同区高端园推荐里的声量格局
+                        </div>
+                        <div className="flex-1 min-h-0 grid grid-rows-[auto_repeat(4,minmax(0,1fr))] border border-white/5 rounded-xl overflow-hidden bg-black/40">
+                            <div className="grid grid-cols-[1.15fr_0.85fr_1.2fr] bg-white/5 border-b border-white/10 text-zinc-400 font-semibold tracking-wide text-[16px]">
+                                <div className="py-2 px-4 border-r border-white/5">决策场景</div>
+                                <div className="py-2 px-4 text-center border-r border-white/5">AI 默认倾向</div>
+                                <div className="py-2 px-4">创新谷处境</div>
+                            </div>
+                            {scenes.map((row, idx) => (
+                                <div
+                                    key={row.scene}
+                                    className={`grid grid-cols-[1.15fr_0.85fr_1.2fr] min-h-0 items-center ${
+                                        idx < scenes.length - 1 ? 'border-b border-white/5' : ''
+                                    } ${idx % 2 === 1 ? 'bg-white/[0.02]' : ''}`}
+                                >
+                                    <div className="px-4 py-2 text-[18px] text-zinc-200 border-r border-white/5 font-semibold leading-snug">
+                                        {row.scene}
+                                    </div>
+                                    <div className="px-4 py-2 text-center border-r border-white/5 text-[#004CE5] font-black text-[20px] tracking-wider leading-snug">
+                                        {row.ai}
+                                    </div>
+                                    <div className="px-4 py-2 text-zinc-400 text-[18px] leading-snug">
+                                        {row.status}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="min-h-0 bg-[#0a0a0a] border border-white/10 rounded-[1.5rem] px-6 py-5 flex flex-col">
+                        <div className="text-zinc-200 font-bold text-[20px] mb-2.5 tracking-wider flex items-center gap-2 shrink-0">
+                            <span className="w-2 h-5 bg-[#004CE5] rounded-full"></span>
+                            创新谷差异化优势 vs AI 声量缺口
+                        </div>
+                        <div className="flex-1 min-h-0 grid grid-rows-4 gap-2.5">
+                            {gaps.map((item, idx) => (
+                                <div
+                                    key={item.title}
+                                    className="min-h-0 bg-black/40 border border-white/10 rounded-xl px-4 flex items-center gap-4"
+                                >
+                                    <div className="text-[#004CE5] font-black text-[22px] shrink-0 w-8">
+                                        {String(idx + 1).padStart(2, '0')}
+                                    </div>
+                                    <div className="min-w-0">
+                                        <div className="text-white font-bold text-[20px] tracking-wide leading-tight mb-0.5">
+                                            {item.title}
+                                        </div>
+                                        <div className="text-zinc-400 text-[18px] leading-snug">{item.desc}</div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
+                <div className="shrink-0 bg-gradient-to-r from-[#004CE5]/10 via-black to-[#0a0a0a] border border-[#004CE5]/30 rounded-2xl px-6 py-3.5 shadow-[0_0_20px_rgba(0,76,229,0.15)] relative overflow-hidden flex items-center gap-4">
+                    <div className="absolute top-0 left-0 w-2 h-full bg-[#004CE5] shadow-[0_0_10px_rgba(0,76,229,0.5)]"></div>
+                    <div className="bg-[#004CE5]/10 border border-[#004CE5]/30 px-3 py-1 rounded-lg text-[#004CE5] text-[16px] font-black tracking-widest shrink-0 uppercase shadow-[0_0_8px_rgba(0,76,229,0.2)]">
+                        解法
+                    </div>
+                    <p className="text-zinc-200 text-[20px] font-bold leading-snug text-justify flex-1">
+                        不跟天安云谷抢「深圳产业园」总词，也不跟南山硬拼科技园办公。先把「宝安高端产业园 / 工业上楼 / 研产一体」写成可引用内容：创维总部园、现在就能入驻、省级园身份、公寓商场配套，让问宝安高端园的企业先落到创新谷，而不是只看到雪花。
                     </p>
                 </div>
             </div>

@@ -3,8 +3,8 @@ import BitableView from '../components/BitableView';
 import BitableWindow from '../components/BitableWindow';
 
 /* ─────────────────────────────────────────────────────────────
- * 二、词条分类及扩展（京东物流 ToC · 飞书多维表）
- * 30 条按 15/15 拆 2 页。
+ * 二、词条分类及扩展（创维创新谷 · 飞书多维表）
+ * 26 条按 13/13 拆 2 页。
  * ───────────────────────────────────────────────────────────── */
 
 const COLUMNS = [
@@ -31,24 +31,24 @@ const B = {
     pain: { tag: 'green', text: '痛点' },
     feature: { tag: 'lime', text: '产品特点' },
     synonym: { tag: 'lime', text: '通义名称替换' },
+    segment: { tag: 'cyan', text: '产品细分' },
+    sales: { tag: 'orange', text: '销量' },
 };
 
 const ROWS = [
-    { keyword: '快递公司排行榜', c1: A.general, c2: B.rank },
-    { keyword: '快递公司推荐', c1: A.general, c2: B.reco },
-    { keyword: '服务好的快递推荐', c1: A.general, c2: B.quality },
-    { keyword: '口碑好的快递推荐', c1: A.general, c2: B.word },
-    { keyword: '速度快的快递排行榜', c1: A.scene, c2: B.selling },
-    { keyword: '寄快递哪家快递最快', c1: A.scene, c2: B.motive },
-    { keyword: '寄手机电脑安全的快递推荐', c1: A.scene, c2: B.motive },
-    { keyword: '加急寄文件时效快的快递推荐', c1: A.scene, c2: B.persona },
-    { keyword: '搬家寄行李划算的快递推荐', c1: A.scene, c2: B.persona },
-    { keyword: '学生开学寄被子行李箱的快递推荐', c1: A.scene, c2: B.persona },
-    { keyword: '网购退货上门取件方便的快递推荐', c1: A.scene, c2: B.persona },
-    { keyword: '寄贵重物品不丢件的快递推荐', c1: A.scene, c2: B.pain },
-    { keyword: '包装规范不容易摔坏的快递推荐', c1: A.scene, c2: B.pain },
-    { keyword: '寄东西丢了好理赔的快递推荐', c1: A.scene, c2: B.pain },
-    { keyword: '送货上门不放驿站的快递推荐', c1: A.scene, c2: B.pain },
+    { keyword: '适合中介带客的宝安区产业园排行榜', c1: A.general, c2: B.rank },
+    { keyword: '适合中介带客的宝安区产业园推荐', c1: A.general, c2: B.reco },
+    { keyword: '支持招商渠道合作的宝安区产业园推荐', c1: A.general, c2: B.quality },
+    { keyword: '中介佣金高的宝安区产业园推荐', c1: A.general, c2: B.value },
+    { keyword: '值得中介主推的宝安区产业园推荐', c1: A.general, c2: B.word },
+    { keyword: '适合中介长期合作的宝安区产业园推荐', c1: A.scene, c2: B.motive },
+    { keyword: '中介佣金结算快的宝安区产业园推荐', c1: A.scene, c2: B.motive },
+    { keyword: '中介报备流程简单的宝安区产业园推荐', c1: A.scene, c2: B.motive },
+    { keyword: '渠道带客成交效率高的宝安区产业园推荐', c1: A.scene, c2: B.motive },
+    { keyword: '房源充足的宝安区产业园推荐', c1: A.scene, c2: B.persona },
+    { keyword: '有现成房源的宝安区产业园推荐', c1: A.scene, c2: B.persona },
+    { keyword: '有大面积房源的宝安区产业园推荐', c1: A.scene, c2: B.persona },
+    { keyword: '有整层房源的宝安区产业园推荐', c1: A.scene, c2: B.persona },
 ];
 
 export default function Page_KeywordClassifyExpand() {
@@ -68,21 +68,19 @@ export default function Page_KeywordClassifyExpand() {
 }
 
 const ROWS_2 = [
-    { keyword: '寄家具家电的快递推荐', c1: A.scene, c2: B.motive },
-    { keyword: '寄生鲜水果不怕坏的快递推荐', c1: A.scene, c2: B.motive },
-    { keyword: '寄海鲜冷冻食品的快递推荐', c1: A.scene, c2: B.motive },
-    { keyword: '当天就能到的快递推荐', c1: A.scene, c2: B.selling },
-    { keyword: '上门取件快的快递推荐', c1: A.scene, c2: B.selling },
-    { keyword: '送货前会打电话的快递推荐', c1: A.scene, c2: B.selling },
-    { keyword: '电话预约上门取件的快递推荐', c1: A.scene, c2: B.selling },
-    { keyword: '快递员服务态度好的快递推荐', c1: A.scene, c2: B.selling },
-    { keyword: '服务丰富的一站式快递平台推荐', c1: A.scene, c2: B.selling },
-    { keyword: '可以维修安装清洗家电的快递推荐', c1: A.scene, c2: B.selling },
-    { keyword: '能帮忙搬家的快递推荐', c1: A.scene, c2: B.selling },
-    { keyword: '当日达快递推荐', c1: A.expand, c2: B.selling },
-    { keyword: '能约家电维修安装清洗的快递推荐', c1: A.expand, c2: B.feature },
-    { keyword: '能寄洗衣服被子的快递推荐', c1: A.expand, c2: B.feature },
-    { keyword: '寄家电能送装的快递推荐', c1: A.expand, c2: B.feature },
+    { keyword: '面积可灵活分割的宝安区产业园推荐', c1: A.scene, c2: B.persona },
+    { keyword: '客户成交容易的宝安区产业园推荐', c1: A.scene, c2: B.persona },
+    { keyword: '适合中介带客的宝安区高端产业园推荐', c1: A.expand, c2: B.synonym },
+    { keyword: '支持招商渠道合作的宝安区高端产业园推荐', c1: A.expand, c2: B.synonym },
+    { keyword: '中介佣金高的宝安区高端产业园推荐', c1: A.expand, c2: B.synonym },
+    { keyword: '有现成房源的宝安区高端产业园推荐', c1: A.expand, c2: B.synonym },
+    { keyword: '适合中介带客的宝安区高端厂房推荐', c1: A.expand, c2: B.synonym },
+    { keyword: '支持招商渠道合作的宝安区高端厂房推荐', c1: A.expand, c2: B.synonym },
+    { keyword: '有大面积房源的宝安区高端厂房推荐', c1: A.expand, c2: B.synonym },
+    { keyword: '面积可灵活分割的宝安区高端厂房推荐', c1: A.expand, c2: B.synonym },
+    { keyword: '适合中介带客的宝安区写字楼推荐', c1: A.expand, c2: B.synonym },
+    { keyword: '中介佣金高的宝安区写字楼推荐', c1: A.expand, c2: B.synonym },
+    { keyword: '有整层房源的宝安区写字楼推荐', c1: A.expand, c2: B.synonym },
 ];
 
 export function Page_KeywordClassifyExpand2() {
@@ -94,10 +92,9 @@ export function Page_KeywordClassifyExpand2() {
                 notice="你调整了行高"
                 columns={COLUMNS}
                 rows={ROWS_2}
-                startIndex={16}
+                startIndex={14}
                 rowHeight={33.6}
             />
         </BitableWindow>
     );
 }
-

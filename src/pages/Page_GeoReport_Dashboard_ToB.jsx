@@ -3,48 +3,46 @@ import Frame from '../components/geoone/Frame';
 import GeoOneApp, { MAIN_LEFT } from '../components/geoone/GeoOneApp';
 import {
     C, Card, Icon, Toggle, Checkbox, SoftTag, GhostButton,
-    IconDeepSeek, IconDoubao, IconQwen, IconYuanbao, IconSite,
+    IconDeepSeek, IconDoubao, IconSite,
 } from '../components/geoone/ui';
 import { LineChart, BarChart, BarAxisLabels } from '../components/geoone/charts';
 
 /* ══════════════ 数据：换成新的监测结果时只改这一段 ══════════════ */
 /* 口径：提及率/位次=conversations/stats；影响力排名=influence is_target.rank */
-/* 来源：GEO ONE 项目 420 京东物流-ToB①，2026-08-04 */
+/* 来源：GEO ONE 项目 482 创维创新谷-ToB①，2026-08-14 */
 
-const TARGET = '京东物流';
+const TARGET = '创维创新谷';
 
 const KPI = [
-    { label: '提及率', value: '65.0%' },
-    { label: '平均提及位次', value: 'NO. 5.4' },
-    { label: '行业影响力排名', value: 'NO. 2' },
+    { label: '提及率', value: '2.0%' },
+    { label: '平均提及位次', value: 'NO. 7.9' },
+    { label: '行业影响力排名', value: 'NO. 85' },
     {
         label: 'Top引用来源',
         icons: [
-            <IconSite key="a" size={22} color="#12B7F5" />,
-            <IconSite key="b" size={22} color="#2932E1" />,
-            <IconSite key="c" size={22} color="#FF2442" />,
+            <IconSite key="a" size={22} color="#C8262C" />,
+            <IconSite key="b" size={22} color="#F59E0B" />,
+            <IconSite key="c" size={22} color="#0EA5A4" />,
         ],
     },
 ];
 
-const RATE = '65.0%';
+const RATE = '2.0%';
 
-const LINE_TICKS = ['70.0%', '67.5%', '65.0%', '62.5%', '60.0%'];
+const LINE_TICKS = ['4.0%', '3.0%', '2.0%', '1.0%', '0.0%'];
 const LINE_POINT = { x: 0.5, tick: 2 };
-const LINE_DATES = ['8月4日'];
+const LINE_DATES = ['8月14日'];
 
 const BAR_TICKS = [
-    { label: '100%', v: 100 },
-    { label: '85%', v: 85 },
-    { label: '70%', v: 70 },
-    { label: '55%', v: 55 },
-    { label: '40%', v: 40 },
+    { label: '8%', v: 8 },
+    { label: '6%', v: 6 },
+    { label: '4%', v: 4 },
+    { label: '2%', v: 2 },
+    { label: '0%', v: 0 },
 ];
 const BARS = [
-    { label: 'DeepSeek', value: 53.3, icon: <IconDeepSeek size={24} /> },
-    { label: '豆包', value: 70, icon: <IconDoubao size={24} /> },
-    { label: '元宝', value: 90, icon: <IconYuanbao size={24} /> },
-    { label: '通义千问', value: 46.7, icon: <IconQwen size={24} /> },
+    { label: 'DeepSeek', value: 0, icon: <IconDeepSeek size={24} /> },
+    { label: '豆包', value: 4, icon: <IconDoubao size={24} /> },
 ];
 
 /* ══════════════ 版式常量（取自截图像素采样） ══════════════ */
@@ -115,8 +113,8 @@ function ChartCardHead({ children }) {
 
 export default function Page_GeoReport_Dashboard_ToB() {
     return (
-        <Frame title="核心指标定义与表现概览 · B端" aspect="1586/892.5">
-            <GeoOneApp active="总览" title="总览" target={TARGET} brand="京东物流(ToB)" brandSub="京东物流" avatar="京">
+        <Frame title="核心指标定义与表现概览 · 优化词 B 端" aspect="1586/892.5">
+            <GeoOneApp active="总览" title="总览" target={TARGET} brand="创维创新谷(优化词B端)" brandSub="创维创新谷" avatar="创">
                 {KPI.map((k, i) => (
                     <KpiCard key={i} item={k} left={MAIN_LEFT + i * (KPI_W + GAP)} />
                 ))}

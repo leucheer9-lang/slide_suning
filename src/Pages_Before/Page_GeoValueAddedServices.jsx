@@ -42,7 +42,7 @@ function Page_GeoValueAddedServices() {
                                     <td className="py-2.5 xl:py-3.5 text-zinc-300 align-middle pr-4 border-b border-white/[0.12] border-l border-white/[0.12] pl-5">
                                         <div className="flex flex-col gap-1.5">
                                             <p className="text-zinc-300">
-                                                <strong className="text-white font-bold">1、大模型舆情监测：</strong>日常监测各大 AI 大模型中有关京东物流的言论，每日排查是否存在时效、运费、服务标准或异常客诉等误导性内容。
+                                                <strong className="text-white font-bold">1、大模型舆情监测：</strong>日常监测各大 AI 大模型中有关创维创新谷的言论，每日排查是否存在交通配套、租金价格、物业服务或公寓投诉等误导性内容。
                                             </p>
                                             <p className="text-zinc-300">
                                                 <strong className="text-white font-bold">2、负面快速净化：</strong>定位问题引用源，立即生成高权重澄清和权威说明语料进行补充发布，稀释负面声音并纠正 AI 记忆。
@@ -59,7 +59,7 @@ function Page_GeoValueAddedServices() {
                                     <td className="py-2.5 xl:py-3.5 text-zinc-300 align-middle pr-3 leading-relaxed border-l border-white/[0.12] pl-6 border-b border-white/[0.12]">
                                         <div className="flex flex-col gap-2 bg-white/[0.025] border border-white/[0.06] p-3 rounded-xl shadow-lg">
                                             <p className="text-zinc-300">
-                                                配合提供官方最新的服务标准说明、运费与时效口径，协助判断异常信息的处理优先级。
+                                                配合提供官方最新的产品参数说明、价格与配置口径，协助判断异常信息的处理优先级。
                                             </p>
                                         </div>
                                     </td>
@@ -75,7 +75,7 @@ function Page_GeoValueAddedServices() {
                                     <td className="py-2.5 xl:py-3.5 text-zinc-300 align-middle pr-4 border-b border-white/[0.12] border-l border-white/[0.12] pl-5">
                                         <div className="flex flex-col gap-1.5">
                                             <p className="text-zinc-300">
-                                                <strong className="text-white font-bold">1、数字资产整理：</strong>整合京东物流的品牌历史、仓配网络能力、核心服务卖点（如仓配一体、次日达、上门配送、大件送装等）及官方 Q&A 问答对。
+                                                <strong className="text-white font-bold">1、数字资产整理：</strong>整合创维创新谷的园区背景、创维自持自建实力、核心卖点（如 45 万㎡产城综合体、13 号线上盖、研发办公一体化、人才公寓与商业配套等）及官方 Q&A 问答对。
                                             </p>
                                             <p className="text-zinc-300">
                                                 <strong className="text-white font-bold">2、标准化结构改造：</strong>将零散的事实转化为大模型偏好、利于爬虫收录的标准化结构语料，建立品牌专属知识屋。
@@ -141,7 +141,7 @@ function Page_GeoValueAddedServices() {
                                     <td className="py-2.5 xl:py-3.5 text-zinc-300 align-middle pr-4 border-l border-white/[0.12] pl-5">
                                         <div className="flex flex-col gap-1.5">
                                             <p className="text-zinc-300">
-                                                <strong className="text-white font-bold">1、竞品推荐率监控：</strong>持续追踪主要竞品（如顺丰、中通、圆通等）在各大模型推荐大盘中的位次变化和声量分布。
+                                                <strong className="text-white font-bold">1、竞品推荐率监控：</strong>持续追踪主要竞品（如新桥东先进制造产业园、全至科技创新园、汇智研发中心、雪花科创城等）在各大模型推荐大盘中的位次变化和声量分布。
                                             </p>
                                             <p className="text-zinc-300">
                                                 <strong className="text-white font-bold">2、攻防话术调整：</strong>当竞品提及率出现异常上涨时，立即输出防御及拦截建议，动态调整我们的卖点优势及场景化语料投放方向。

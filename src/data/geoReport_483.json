@@ -1,0 +1,342 @@
+{
+  "meta": {
+    "fetched_at": "2026-08-17T08:14:54.254Z",
+    "api_base": "https://api.geotopone.com",
+    "project_id": 483,
+    "project_name": "创维创新谷-监测词-ToC",
+    "target_product": "创维创新谷",
+    "target_brand_name": null,
+    "start_date": "2026-08-14",
+    "end_date": "2026-08-14"
+  },
+  "platforms": [
+    {
+      "id": 1,
+      "name": "DeepSeek",
+      "url": "https://app.geoindexfuture.com/logo/deepseek.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 15,
+      "crawl_rate_config": {
+        "requests_per_hour": 30,
+        "request_interval_sec": 120,
+        "batch_duration_sec": 24400,
+        "batch_max_requests": 60,
+        "batch_interval_sec": 24400
+      },
+      "crawl_rate_effective": {
+        "requests_per_hour": 30,
+        "request_interval_sec": 120,
+        "batch_duration_sec": 24400,
+        "batch_max_requests": 60,
+        "batch_interval_sec": 24400
+      },
+      "crawl_rate_source": "platform"
+    },
+    {
+      "id": 2,
+      "name": "豆包",
+      "url": "https://app.geoindexfuture.com/logo/doubao.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 10,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    }
+  ],
+  "stats": {
+    "brand_mention_rate": 0,
+    "top1_mention_rate": null,
+    "top3_mention_rate": null,
+    "avg_position": 0,
+    "daily_stats": [],
+    "platform_stats": []
+  },
+  "influence": {
+    "total_conversations": 0,
+    "list": []
+  },
+  "entries": {
+    "total": 20,
+    "list": [
+      {
+        "entry_id": 12781,
+        "entry_name": "创维创新谷怎么样",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 12782,
+        "entry_name": "创维创新谷口碑怎么样",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 12783,
+        "entry_name": "创维创新谷适合入驻吗",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 12784,
+        "entry_name": "创维创新谷适合什么企业",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 12785,
+        "entry_name": "创维创新谷配套怎么样",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 12786,
+        "entry_name": "创维创新谷有公寓酒店吗",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 12787,
+        "entry_name": "创维创新谷是不是现成可入驻",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 12788,
+        "entry_name": "创维创新谷物业怎么样",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 12789,
+        "entry_name": "创维创新谷园区运营怎么样",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 12790,
+        "entry_name": "创维创新谷写字楼质量怎么样",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 12791,
+        "entry_name": "创维创新谷和雪花科创城哪个好",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 12792,
+        "entry_name": "创维创新谷和甲岸美生智谷哪个好",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 12793,
+        "entry_name": "创维创新谷租金贵吗",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 12794,
+        "entry_name": "创维创新谷性价比怎么样",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 12795,
+        "entry_name": "创维创新谷值不值这个价",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 12796,
+        "entry_name": "创维创新谷怎么招租",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 12797,
+        "entry_name": "创维创新谷入驻麻烦吗",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 12798,
+        "entry_name": "创维创新谷政策补贴好申请吗",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 12799,
+        "entry_name": "创维创新谷交通方便吗",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      },
+      {
+        "entry_id": 12800,
+        "entry_name": "创维创新谷比雪花科创城便宜吗",
+        "mention_rate": null,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": null,
+        "last_screenshot_url": null
+      }
+    ]
+  },
+  "compare": {
+    "target_product": "创维创新谷",
+    "mention_rate_ranking": [],
+    "position_ranking": [],
+    "rate_daily": [],
+    "position_daily": [],
+    "brand_total": 1,
+    "mention_rate_ranking_full": [
+      {
+        "rank": 1,
+        "brand_name": "创维",
+        "mention_rate": 0,
+        "is_target": true
+      }
+    ],
+    "position_ranking_full": [],
+    "top1_ranking": [
+      {
+        "rank": 1,
+        "brand_name": "创维",
+        "top1_mention_rate": 0,
+        "is_target": true
+      }
+    ]
+  },
+  "citations": {
+    "total_conversations": 0,
+    "citation_rate": 0,
+    "total_citations": 0,
+    "platform_stats": [],
+    "articles": []
+  },
+  "overview_daily": []
+}

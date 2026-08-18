@@ -2,7 +2,8 @@ import React from 'react';
 import RankPanel from '../components/geoone/RankPanel';
 
 /* ══════════════ 数据：换竞品排名时只改这一段 ══════════════ */
-/* 来源：GEO ONE 420 ToB · mention-rate / top1 / position 全量榜 */
+/* 来源：GEO ONE 项目 482 创维创新谷-ToB①，2026-08-14 · mention-rate / top1 / position 全量榜 */
+/* 三栏均取全量榜前四名 + 本品，本品行带真实 rank（未进前五，不能按行号显示名次）*/
 
 const COLUMNS = [
     {
@@ -10,11 +11,11 @@ const COLUMNS = [
         subtitle: '产品或品牌在AI生态中提及率排名',
         valueLabel: '提及率',
         rows: [
-            { name: '顺丰', value: '72.5%' },
-            { name: '京东物流', value: '58.3%', target: true },
-            { name: '菜鸟', value: '23.3%' },
-            { name: '安能物流', value: '22.5%' },
-            { name: '圆通', value: '20.0%' },
+            { name: '新桥东先进制造产业园', value: '42.0%' },
+            { name: '燕罗智能网联汽车产业园', value: '26.0%' },
+            { name: '汇智研发中心', value: '18.0%' },
+            { name: '中粮', value: '16.0%' },
+            { name: '创维创新谷', value: '2.0%', rank: 72, target: true },
         ],
     },
     {
@@ -22,11 +23,11 @@ const COLUMNS = [
         subtitle: '产品或品牌在AI生态中Top1提及率排名',
         valueLabel: 'Top1提及率',
         rows: [
-            { name: '顺丰', value: '20.0%' },
-            { name: '京东物流', value: '15.8%', target: true },
-            { name: '德邦快递', value: '5.8%' },
-            { name: '安能物流', value: '5.0%' },
-            { name: '申通快递', value: '3.3%' },
+            { name: '新桥东先进制造产业园', value: '22.0%' },
+            { name: '壹方中心', value: '6.0%' },
+            { name: '汇智研发中心', value: '6.0%' },
+            { name: '泰华梧桐岛', value: '6.0%' },
+            { name: '创维创新谷', value: '0.0%', rank: '—', target: true },
         ],
     },
     {
@@ -34,11 +35,11 @@ const COLUMNS = [
         subtitle: '产品或品牌在AI生态中平均提及位次排名',
         valueLabel: '平均提及位次',
         rows: [
-            { name: '顺丰', value: 'NO. 5.1' },
-            { name: '京东物流', value: 'NO. 6.1', target: true },
-            { name: '圆通', value: 'NO. 9.0' },
-            { name: '菜鸟', value: 'NO. 9.0' },
-            { name: '安能物流', value: 'NO. 9.1' },
+            { name: '新桥东先进制造产业园', value: 'NO. 5.3' },
+            { name: '燕罗智能网联汽车产业园', value: 'NO. 6.6' },
+            { name: '汇智研发中心', value: 'NO. 6.9' },
+            { name: '泰华梧桐岛', value: 'NO. 7.0' },
+            { name: '创维创新谷', value: 'NO. 7.9', rank: 70, target: true },
         ],
     },
 ];
@@ -51,7 +52,7 @@ export default function Page_GeoReport_Competitors_Analysis_ToB() {
             <div className="w-full flex flex-col h-full relative z-10 pt-0 gap-3">
                 <div className="text-center mb-4 mt-[-20px] shrink-0 relative z-10">
                     <h1 className="text-[28px] lg:text-[32px] font-bold text-white tracking-widest leading-none">
-                        竞品横向对比 · B端
+                        竞品横向对比 · 优化词 B 端
                     </h1>
                 </div>
 
@@ -67,7 +68,7 @@ export default function Page_GeoReport_Competitors_Analysis_ToB() {
                                 核心发现
                             </h3>
                             <div className="flex-grow text-[16px] lg:text-[18px] xl:text-[20px] text-zinc-200 leading-relaxed text-justify">
-                                京东物流 B 端品牌提及率 58.3%，稳居第二，但落后顺丰（72.5%）约 14 个点；对菜鸟、安能、圆通已形成明显断层优势。
+                                同一批 B 端优化词下，新桥东先进制造产业园提及率 42.0% 排第一，燕罗智能网联汽车产业园 26.0%，汇智研发中心 18.0%；创维创新谷只有 2.0%，在 175 家竞品的全量提及率榜排第 72，行业影响力第 85。
                             </div>
                         </div>
                     </div>
@@ -79,7 +80,7 @@ export default function Page_GeoReport_Competitors_Analysis_ToB() {
                                 竞争格局总结
                             </h3>
                             <div className="flex-grow text-[16px] lg:text-[18px] xl:text-[20px] text-zinc-200 leading-relaxed text-justify">
-                                Top 1 首推率 15.8%，顺丰 20%，差距仅 4.2 个点。B 端首推权争夺比 C 端更胶着，但平均位次 NO. 6.1 仍偏后。
+                                新桥东先进制造产业园 Top1 首推率 22.0%，是第二名壹方中心（6.0%）的近四倍。创维创新谷首推率 0.0%（未进 Top1 榜）、平均位次 NO. 7.9（第 70），即使被提及也落在清单末段。
                             </div>
                         </div>
                     </div>
@@ -91,7 +92,7 @@ export default function Page_GeoReport_Competitors_Analysis_ToB() {
                                 行动建议
                             </h3>
                             <div className="flex-grow text-[16px] lg:text-[18px] xl:text-[20px] text-zinc-200 leading-relaxed text-justify">
-                                守住仓配一体与分仓履约长板，同时用可引用的 B 端案例与行业报告攻坚跨境出海、医药冷链等短板，缩小与顺丰的首推与位次差距。
+                                短期不与新桥东在"宝安区产业园推荐"这类通用词上硬碰，先把已有 50% 提及的"高端 + 现成房源"类窄词做实位次，并把房源参数补进宝安区政府在线、宝安湾等官方信源；再以名录榜单与渠道合作指南形态的内容切入 24 个 0 提及的中介渠道词。
                             </div>
                         </div>
                     </div>

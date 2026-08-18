@@ -227,8 +227,7 @@ export function IconYuanbao({ size = 22 }) {
 }
 
 /** 监测平台叠放圆标（词条表用） */
-export function PlatformDots({ size = 22, overlap = 6 }) {
-    const names = ['deepseek', 'doubao', 'yuanbao', 'qwen'];
+export function PlatformDots({ size = 22, overlap = 6, names = ['deepseek', 'doubao'] }) {
     return (
         <div style={{ display: 'flex', alignItems: 'center' }}>
             {names.map((name, i) => (

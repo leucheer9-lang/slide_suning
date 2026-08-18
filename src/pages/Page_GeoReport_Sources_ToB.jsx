@@ -7,38 +7,38 @@ import {
 import { DonutChart } from '../components/geoone/charts';
 
 /* ══════════════ 数据：换引用源结果时只改这一段 ══════════════ */
-/* 来源：GEO ONE 420 ToB · citations/stats + articles */
+/* 来源：GEO ONE 项目 482 创维创新谷-ToB①，2026-08-14 · citations/stats + articles */
 
 const SEGMENTS = [
-    { name: '腾讯新闻', pct: 6.9, color: '#12B7F5', icon: <IconSite size={24} color="#12B7F5" /> },
-    { name: '百度知道', pct: 5.2, color: '#2932E1', icon: <IconSquareSite size={24} label="知" bg="#2932E1" /> },
-    { name: '今日头条', pct: 3.3, color: '#FF2442', icon: <IconSquareSite size={24} label="头" bg="#FF2442" /> },
-    { name: 'hangyeob.com', pct: 2.8, color: '#F59E0B', icon: <IconSquareSite size={24} label="行" bg="#F59E0B" /> },
-    { name: '新京报', pct: 2.6, color: '#E6162D', icon: <IconSite size={24} color="#E6162D" /> },
-    { name: '其他', pct: 79.2, color: '#9ca3af' },
+    { name: '宝安区政府在线', pct: 14.7, color: '#C8262C', icon: <IconSquareSite size={24} label="宝" bg="#C8262C" /> },
+    { name: '顺企网', pct: 10.5, color: '#F59E0B', icon: <IconSquareSite size={24} label="顺" bg="#F59E0B" /> },
+    { name: '安居客', pct: 5.9, color: '#0EA5A4', icon: <IconSquareSite size={24} label="安" bg="#0EA5A4" /> },
+    { name: '深圳政府在线', pct: 5.4, color: '#1D4ED8', icon: <IconSite size={24} color="#1D4ED8" /> },
+    { name: '宝安湾', pct: 5.1, color: '#7C3AED', icon: <IconSquareSite size={24} label="湾" bg="#7C3AED" /> },
+    { name: '其他', pct: 58.4, color: '#9ca3af' },
 ];
 
 const ARTICLES = [
     {
-        title: '一件代发快递公司推荐｜申通一站式仓配代发...',
-        url: 'https://www.jiemian.com/',
+        title: '宝安集中推出独栋优质物业并介绍相关租金优惠，满足企业多样化空间诉求',
+        url: 'https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_12427414.html',
         mentioned: false,
-        total: 6,
-        avg: '6.0',
+        total: 16,
+        avg: '16.0',
     },
     {
-        title: '金投网 news.cngold.org',
-        url: 'https://news.cngold.org/',
-        mentioned: true,
-        total: 5,
-        avg: '5.0',
+        title: '“宝地兴业”产业空间对接会-知名集团物业专场物业清单(部分)',
+        url: 'https://www.baoan.gov.cn/attachment/1/1700/1700640/12719614.pdf',
+        mentioned: false,
+        total: 11,
+        avg: '11.0',
     },
     {
-        title: '2026国内跨境物流服务商深度评测...',
-        url: 'https://www.cet.com.cn/',
+        title: '知名集团物业齐亮相，28家企业携近8万㎡需求宝安寻“宝地”',
+        url: 'https://appdetail-v2.baoanone.com/content/2026-04/10/content_215908.html',
         mentioned: false,
-        total: 5,
-        avg: '5.0',
+        total: 9,
+        avg: '9.0',
     },
 ];
 
@@ -50,7 +50,7 @@ export default function Page_GeoReport_Sources_ToB() {
     const top = top5[0];
 
     return (
-        <Frame title="引用源分析 · B端" aspect="16/10">
+        <Frame title="引用源分析 · 优化词 B 端" aspect="16/10">
             <div
                 data-geoone-root
                 style={{

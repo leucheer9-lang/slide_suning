@@ -4,21 +4,21 @@ import React from 'react';
 
 const META = {
     source: 'geo-one',
-    dateRange: '2026-08-04 ~ 2026-08-04',
+    dateRange: '2026-08-14 ~ 2026-08-14',
     logic: '按总引用次数排序取前100篇文章',
-    totalArticles: 869,
-    brand: '京东物流系',
-    brandTopN: 100,
+    totalArticles: 572,
+    brand: '创维创新谷',
+    brandTopN: 9,
 };
 
-/** 文章类别分布：左 = 综合 Top100；右 = 提到京东物流/德邦/跨越/达达/秒送的稿件 */
+/** 文章类别分布：左 = 综合 Top100；右 = 正文提到创维创新谷的 9 篇稿件 */
 const ROWS = [
-    { category: '其他', leftCount: 53, leftPct: 53.0, rightCount: 46, rightPct: 46.0, color: '#7B3FA0' },
-    { category: '知识科普', leftCount: 21, leftPct: 21.0, rightCount: 33, rightPct: 33.0, color: '#C65911' },
-    { category: '测评', leftCount: 11, leftPct: 11.0, rightCount: 6, rightPct: 6.0, color: '#C9A227' },
-    { category: '排行榜', leftCount: 6, leftPct: 6.0, rightCount: 11, rightPct: 11.0, color: '#595959' },
-    { category: '单品介绍', leftCount: 6, leftPct: 6.0, rightCount: 3, rightPct: 3.0, color: '#6B8F3C' },
-    { category: '行业资讯', leftCount: 3, leftPct: 3.0, rightCount: 1, rightPct: 1.0, color: '#3B7FC4' },
+    { category: '其他', leftCount: 73, leftPct: 73.0, rightCount: 6, rightPct: 66.7, color: '#7B3FA0' },
+    { category: '单品介绍', leftCount: 15, leftPct: 15.0, rightCount: 1, rightPct: 11.1, color: '#6B8F3C' },
+    { category: '排行榜', leftCount: 4, leftPct: 4.0, rightCount: 1, rightPct: 11.1, color: '#595959' },
+    { category: '知识科普', leftCount: 4, leftPct: 4.0, rightCount: 1, rightPct: 11.1, color: '#C65911' },
+    { category: '行业资讯', leftCount: 4, leftPct: 4.0, rightCount: 0, rightPct: 0.0, color: '#3B7FC4' },
+    { category: '测评', leftCount: 0, leftPct: 0.0, rightCount: 0, rightPct: 0.0, color: '#C9A227' },
 ];
 
 const TOTAL = {
@@ -165,7 +165,7 @@ function Top100Chart() {
                 }}
             >
                 <span style={{ width: 4, height: 16, background: C.headBg, borderRadius: 1 }} />
-                文章类别分布统计（左：综合Top100；右：提到{META.brand}Top{META.brandTopN}）
+                文章类别分布统计（左：综合Top100；右：正文提到{META.brand}的{META.brandTopN}篇）
             </div>
 
             {/* 表头 */}
@@ -249,6 +249,9 @@ export default function Page_ContentStrategyBacktrack() {
                     <h1 className="text-4xl lg:text-[46px] font-black text-white tracking-widest leading-tight">
                         内容策略
                     </h1>
+                    <span className="text-zinc-400 text-[0.95rem] lg:text-[1.05rem] font-medium tracking-wide">
+                        数据日期 2026-08-14 · 共回溯 572 篇独立文章
+                    </span>
                 </div>
 
                 <div className="bg-zinc-900/50 border border-white/5 hover:border-white/10 rounded-2xl py-3 px-4 lg:py-3.5 lg:px-5.5 flex items-start gap-4 shadow-xl backdrop-blur-md relative overflow-hidden transition-all duration-300 shrink-0">
@@ -276,9 +279,13 @@ export default function Page_ContentStrategyBacktrack() {
                             </h3>
                             <p className="text-zinc-300 text-[1.05rem] lg:text-[1.12rem] leading-relaxed tracking-wide font-medium">
                                 依托前期的 <span className="text-white font-bold">GEO 监测数据系统</span>
-                                ，针对特定的目标搜索词条，
+                                ，围绕宝安产业园、厂房出租、园区选址等品类词，
                                 <span className="text-[#004CE5] font-bold">精准定向抓取</span>{' '}
-                                当前已被各类大模型高频引用的头部文章源。
+                                当前已被各类大模型高频引用的头部文章源。左右两列一对照：综合 Top100 里{' '}
+                                <span className="text-white font-bold">73% 是政策通告、招商动态这类「其他」稿件</span>
+                                ，排行榜与知识科普合计只占 8%；但提到创维创新谷的 9 篇里，这两类各占{' '}
+                                <span className="text-red-400 font-black">11.1%</span>
+                                ——榜单与科普型内容以极低的存量撬动了品牌露出。
                             </p>
                         </div>
                     </div>

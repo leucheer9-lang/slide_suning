@@ -147,7 +147,7 @@ async function main() {
   // 平均提及位次全量排名（compare.position_ranking 仅含监测竞品；此接口含真实生态 rank）
   let positionFull = null;
   try {
-    positionFull = await api('/api/competitors/position', { ...range, page: 1, page_size: 100 });
+    positionFull = await api('/api/competitors/position', { ...range, page: 1, page_size: 500 });
   } catch (e) {
     console.warn(`competitors/position 接口不可用（${e.message}），位次全量榜置空`);
   }
@@ -155,7 +155,7 @@ async function main() {
   // 提及率全量排名（含真实 rank；compare.mention_rate_ranking 通常只有监测竞品）
   let mentionFull = null;
   try {
-    mentionFull = await api('/api/competitors/mention-rate', { ...range, page: 1, page_size: 100 });
+    mentionFull = await api('/api/competitors/mention-rate', { ...range, page: 1, page_size: 500 });
   } catch (e) {
     console.warn(`competitors/mention-rate 接口不可用（${e.message}），提及率全量榜置空`);
   }
@@ -222,6 +222,8 @@ async function main() {
       position_ranking: compare.data.position_ranking || [],
       rate_daily: compare.data.rate_daily || compare.data.mention_rate_daily || [],
       position_daily: compare.data.position_daily || [],
+      // 生态内识别到的品牌总数（报告说明页「同期识别竞品约 N 家」取这里，别拿榜单长度当总数）
+      brand_total: mentionFull?.data?.total ?? null,
       // 全量榜（含真实 rank）：页面「前五 / 前四+目标」展示用这个，不要只用监测竞品子集
       mention_rate_ranking_full: (mentionFull?.data?.list || []).map((b) => ({
         rank: b.rank,

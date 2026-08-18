@@ -36,9 +36,21 @@ export default function TOCSlide({ bgImage, title, menuText, brandLabel, service
         </h1>
       </div>
 
-      {/* Left: chapter list */}
+      {/* Left: chapter list（company 组四章在总目录里合并为「关于我们」） */}
       {(() => {
-        const n = chapters.length;
+        const tocItems = [];
+        let sawCompany = false;
+        for (const chapter of chapters) {
+          if (chapter.group === 'company') {
+            if (!sawCompany) {
+              tocItems.push({ title: '关于我们' });
+              sawCompany = true;
+            }
+            continue;
+          }
+          tocItems.push({ title: chapter.title.replace(/\n/g, '') });
+        }
+        const n = tocItems.length;
         const rowHeight = 100;
         const topMin = 390;
         const bottomMargin = 60;
@@ -46,7 +58,7 @@ export default function TOCSlide({ bgImage, title, menuText, brandLabel, service
         const fontSize = Math.min(70, Math.floor(rowHeight / 1.45));
         return (
           <div className={`absolute z-10 flex flex-col ${dbg}`} style={{ top: `${computedTop}px`, left: '132px', gap: '0px' }}>
-            {chapters.map((chapter, i) => (
+            {tocItems.map((item, i) => (
               <div key={i} className="flex items-baseline" style={{ gap: '43px', lineHeight: '1.4' }}>
                 <span
                   className="text-[#004CE5]"
@@ -58,7 +70,7 @@ export default function TOCSlide({ bgImage, title, menuText, brandLabel, service
                   className="text-white"
                   style={{ fontSize: `${fontSize - 2}px`, letterSpacing: '0px', fontFamily: "'MiSans', sans-serif", fontWeight: 200 }}
                 >
-                  {chapter.title}
+                  {item.title}
                 </span>
               </div>
             ))}

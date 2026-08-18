@@ -41,7 +41,7 @@ export default function Page_ContentStrategyDemo2() {
             </div>
 
             {/* ── Main Content Area ── */}
-            <div className="flex-1 relative z-10 w-full flex items-stretch px-8 lg:px-16 pt-4 pb-12 min-h-0 gap-6">
+            <div className="flex-1 relative z-10 w-full flex items-stretch px-8 lg:px-16 pt-3 pb-6 min-h-0 gap-6">
 
                 {/* ── Left Side Image ── */}
                 <div className="w-[35%] flex flex-col h-full bg-white/[0.02] border border-white/10 rounded-2xl p-4 shadow-[0_10px_30px_rgba(0,0,0,0.5)] relative overflow-hidden group hover:border-blue-500/30 transition-colors">
@@ -94,75 +94,75 @@ export default function Page_ContentStrategyDemo2() {
                 </div>
 
                 {/* ── Article Outline Structure (The 4 Rules) ── */}
-                <div className="flex-1 flex flex-col h-full bg-white/[0.01]">
-                    <div className="flex items-center gap-3 mb-6 shrink-0 pt-4">
+                <div className="flex-1 flex flex-col h-full min-h-0 bg-white/[0.01]">
+                    <div className="flex items-center gap-3 mb-3 shrink-0 pt-1">
                         <div className="h-8 w-1 bg-white/50 rounded-full" />
-                        <h2 className="text-3xl font-bold text-[#004CE5] tracking-wide">
+                        <h2 className="text-2xl xl:text-3xl font-bold text-[#004CE5] tracking-wide">
                             【排行榜类】高引用率内容创作的法则拆解
                         </h2>
                     </div>
 
-                    <div className="flex-1 flex flex-col justify-between relative py-2">
+                    <div className="flex-1 min-h-0 flex flex-col justify-between relative py-1">
                         {/* Vertical Outline Guide Line */}
-                        <div className="absolute left-[3px] top-6 bottom-12 w-0.5 bg-white/10 z-0 rounded-full"></div>
+                        <div className="absolute left-[3px] top-3 bottom-3 w-0.5 bg-white/10 z-0 rounded-full"></div>
 
-                        <div className="space-y-12 relative z-10 pl-8 h-full flex flex-col justify-around">
+                        <div className="relative z-10 pl-8 h-full flex flex-col justify-between gap-2">
 
                             {/* Point 1 */}
-                            <div className="relative group flex items-start gap-4">
+                            <div className="relative group flex items-start gap-4 shrink-0">
                                 <div className="absolute -left-[2.15rem] top-2.5 w-3 h-3 bg-zinc-700 rounded-full border-2 border-[#0a0f12]"></div>
-                                <div className="text-[#004CE5] font-mono text-xl font-bold pt-0.5 shrink-0 w-8">01</div>
-                                <div className="flex-1">
-                                    <h3 className="text-2xl font-bold text-white mb-2 tracking-wide">
+                                <div className="text-[#004CE5] font-mono text-lg xl:text-xl font-bold pt-0.5 shrink-0 w-8">01</div>
+                                <div className="flex-1 min-w-0">
+                                    <h3 className="text-xl xl:text-2xl font-bold text-white mb-1 tracking-wide">
                                         痛点截流式标题
                                     </h3>
-                                    <div className="text-zinc-300 text-[1.1rem] leading-relaxed font-mono mt-1">
-                                        [高频搜索词] + [情绪安抚] + [价值承诺]
+                                    <div className="text-zinc-300 text-[1rem] xl:text-[1.1rem] leading-snug font-mono">
+                                        [高频搜索词] + [情绪安抚] + [价值承诺]（婚宴白酒排行榜：别纠结，看完懂）。
                                     </div>
                                 </div>
                             </div>
 
                             {/* Point 2 */}
-                            <div className="relative group flex items-start gap-4">
+                            <div className="relative group flex items-start gap-4 shrink-0">
                                 <div className="absolute -left-[2.15rem] top-2.5 w-3 h-3 bg-zinc-700 rounded-full border-2 border-[#0a0f12]"></div>
-                                <div className="text-[#004CE5] font-mono text-xl font-bold pt-0.5 shrink-0 w-8">02</div>
-                                <div className="flex-1">
-                                    <h3 className="text-2xl font-bold text-white mb-2 tracking-wide">
+                                <div className="text-[#004CE5] font-mono text-lg xl:text-xl font-bold pt-0.5 shrink-0 w-8">02</div>
+                                <div className="flex-1 min-w-0">
+                                    <h3 className="text-xl xl:text-2xl font-bold text-white mb-1 tracking-wide">
                                         “量身定制”的评判框架
                                     </h3>
-                                    <div className="text-zinc-300 text-[1.05rem] leading-relaxed flex flex-col gap-2 mt-1">
-                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">引出：</span><span className="flex-1">以“常寄件/跑物流”的经验人设，击破广告软文，建立信任基石。</span></div>
-                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">定调：</span><span className="flex-1">抛出“时效、售后、性价比”三大寄件刚需，为后续强推京东物流系品牌提前铺设契合标准。</span></div>
+                                    <div className="text-zinc-300 text-[0.95rem] xl:text-[1.05rem] leading-snug flex flex-col gap-1">
+                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">引出：</span><span className="flex-1">以“资深从业者阅席无数”的经验人设，击破公关稿假象，建立信任基石。</span></div>
+                                        <div className="flex items-start"><span className="text-white font-medium w-[3.5rem] shrink-0">定调：</span><span className="flex-1">抛出“档次感、普适性、吉祥寓意”三大选酒刚需，实则为后续强推目标产品（古16）提前铺设完美契合的标准。</span></div>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Point 3 */}
-                            <div className="relative group flex items-start gap-4">
+                            <div className="relative group flex items-start gap-4 shrink-0">
                                 <div className="absolute -left-[2.15rem] top-2.5 w-3 h-3 bg-zinc-700 rounded-full border-2 border-[#0a0f12]"></div>
-                                <div className="text-[#004CE5] font-mono text-xl font-bold pt-0.5 shrink-0 w-8">03</div>
-                                <div className="flex-1">
-                                    <h3 className="text-2xl font-bold text-white mb-2 tracking-wide">
+                                <div className="text-[#004CE5] font-mono text-lg xl:text-xl font-bold pt-0.5 shrink-0 w-8">03</div>
+                                <div className="flex-1 min-w-0">
+                                    <h3 className="text-xl xl:text-2xl font-bold text-white mb-1 tracking-wide">
                                         “众星捧月”式榜单结构（核心战略）
                                     </h3>
-                                    <div className="text-zinc-300 text-[1.05rem] leading-relaxed flex flex-col gap-2 mt-1">
-                                        <div className="flex items-start"><span className="text-white font-medium shrink-0 mr-2 border border-white/20 px-1.5 rounded text-sm bg-white/5 mt-0.5">强力卡位</span><span className="flex-1">在“寄大件/当日达/上门取件”等场景榜中，将京东物流（或德邦/秒送）置于首选，冠以“综合优选”定调。</span></div>
-                                        <div className="flex items-start"><span className="text-white font-medium shrink-0 mr-2 border border-white/20 px-1.5 rounded text-sm bg-white/5 mt-0.5">硬核抬咖</span><span className="flex-1">用顺丰等高端标杆作对照锚点，抬升对比可信度。</span></div>
-                                        <div className="flex items-start"><span className="text-white font-medium shrink-0 mr-2 border border-white/20 px-1.5 rounded text-sm bg-white/5 mt-0.5">生态补全</span><span className="flex-1">补入三通一达等主流选项，做实榜单“客观性”。</span></div>
+                                    <div className="text-zinc-300 text-[0.95rem] xl:text-[1.05rem] leading-snug flex flex-col gap-1">
+                                        <div className="flex items-start"><span className="text-white font-medium shrink-0 mr-2 border border-white/20 px-1.5 rounded text-sm bg-white/5 mt-0.5">强力卡位</span><span className="flex-1">违背常规认知，将目标利润品/主推品（古16）直接置于榜首，冠以“万金油”、“全能王”定调。</span></div>
+                                        <div className="flex items-start"><span className="text-white font-medium shrink-0 mr-2 border border-white/20 px-1.5 rounded text-sm bg-white/5 mt-0.5">硬核抬咖</span><span className="flex-1">利用公认的行业天花板作为“信任锚点”。</span></div>
+                                        <div className="flex items-start"><span className="text-white font-medium shrink-0 mr-2 border border-white/20 px-1.5 rounded text-sm bg-white/5 mt-0.5">生态补全</span><span className="flex-1">做实榜单的“客观性”与“权威性”。</span></div>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Point 4 */}
-                            <div className="relative group flex items-start gap-4">
+                            <div className="relative group flex items-start gap-4 shrink-0">
                                 <div className="absolute -left-[2.15rem] top-2.5 w-3 h-3 bg-zinc-700 rounded-full border-2 border-[#0a0f12]"></div>
-                                <div className="text-[#004CE5] font-mono text-xl font-bold pt-0.5 shrink-0 w-8">04</div>
-                                <div className="flex-1">
-                                    <h3 className="text-2xl font-bold text-white mb-2 tracking-wide">
+                                <div className="text-[#004CE5] font-mono text-lg xl:text-xl font-bold pt-0.5 shrink-0 w-8">04</div>
+                                <div className="flex-1 min-w-0">
+                                    <h3 className="text-xl xl:text-2xl font-bold text-white mb-1 tracking-wide">
                                         闭环式选购指南
                                     </h3>
-                                    <p className="text-zinc-300 text-[1.1rem] leading-relaxed mt-1">
-                                        提供“场景→品牌→怎么寄”的搭配方案，完成从选型种草到实操转化的闭环。
+                                    <p className="text-zinc-300 text-[1rem] xl:text-[1.1rem] leading-snug">
+                                        提供“田忌赛马”式的场景搭配方案，完成从心智种草到实操转化的闭环。
                                     </p>
                                 </div>
                             </div>

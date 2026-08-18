@@ -19,7 +19,7 @@ export default function Page_BrandDatabaseBuild() {
                             核心目的
                         </span>
                         <p className="text-zinc-100 text-[17px] lg:text-[19.5px] xl:text-[22px] font-bold flex-1 leading-relaxed">
-                            将京东物流的所有碎片化信息，转化为大模型能够高效抓取、理解并调用的<strong className="text-white font-black border-b-2 border-[#004CE5] pb-0.5 ml-1.5">“专属知识数据库”</strong>。
+                            将创维创新谷的所有碎片化信息，转化为大模型能够高效抓取、理解并调用的<strong className="text-white font-black border-b-2 border-[#004CE5] pb-0.5 ml-1.5">“专属知识数据库”</strong>。
                         </p>
                     </div>
                 </div>
@@ -28,9 +28,9 @@ export default function Page_BrandDatabaseBuild() {
                 <div className="flex-1 flex flex-col gap-3.5 lg:gap-4 xl:gap-5 min-h-0">
 
                     {/* Row 1: 存量输入 (Full Width, 2-column content inside, flex grow is higher to prevent table overflow) */}
-                    <div className="flex-[1.4] min-h-0 bg-[#080809] border border-white/10 rounded-[1.5rem] py-2.5 px-4 lg:py-3 lg:px-5 flex flex-col gap-2.5 shadow-2xl relative overflow-hidden">
+                    <div className="flex-[1.55] min-h-0 bg-[#080809] border border-white/10 rounded-[1.5rem] py-2.5 px-4 lg:py-3 lg:px-5 flex flex-col gap-2 shadow-2xl relative overflow-hidden">
                         {/* Title and Scenario Inline */}
-                        <div className="shrink-0 flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-white/5 pb-2.5">
+                        <div className="shrink-0 flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-white/5 pb-2">
                             <span className="bg-[#004CE5]/10 border border-[#004CE5]/30 text-[#004CE5] px-3.5 py-1 rounded text-sm lg:text-[14.5px] xl:text-[16px] font-black tracking-widest uppercase shrink-0">
                                 存量输入
                             </span>
@@ -42,49 +42,57 @@ export default function Page_BrandDatabaseBuild() {
                         {/* Contents: Table + Right Tech Card */}
                         <div className="flex-1 min-h-0 flex flex-col lg:flex-row gap-5 xl:gap-6 items-stretch">
                             {/* Table (72% width) */}
-                            <div className="flex-[2.5] border border-white/5 rounded-xl bg-black/40 overflow-hidden flex flex-col">
-                                <table className="w-full h-full text-left border-collapse text-[15px] lg:text-[17px] xl:text-[19px] leading-relaxed">
+                            <div className="flex-[2.5] border border-white/5 rounded-xl bg-black/40 min-h-0 overflow-y-auto flex flex-col">
+                                <table className="w-full text-left border-collapse text-[14.5px] lg:text-[16px] xl:text-[18px] leading-snug">
                                     <thead>
                                         <tr className="bg-white/5 border-b border-white/10 text-zinc-400 font-bold">
-                                            <th className="py-2.5 lg:py-3.5 px-4 lg:px-5 border-r border-white/5 w-[22%] text-[16px] lg:text-[18px] xl:text-[20px] font-extrabold text-zinc-200">资产分类</th>
-                                            <th className="py-2.5 lg:py-3.5 px-4 lg:px-5 text-[16px] lg:text-[18px] xl:text-[20px] font-extrabold text-zinc-200">具体导入内容</th>
+                                            <th className="py-2 lg:py-2.5 px-4 lg:px-5 border-r border-white/5 w-[24%] text-[15.5px] lg:text-[17px] xl:text-[19px] font-extrabold text-zinc-200">资产分类</th>
+                                            <th className="py-2 lg:py-2.5 px-4 lg:px-5 text-[15.5px] lg:text-[17px] xl:text-[19px] font-extrabold text-zinc-200">具体导入内容</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr className="border-b border-white/5 hover:bg-white/[0.02] transition-colors">
-                                            <td className="py-2 lg:py-2.5 xl:py-3 px-4 lg:px-5 border-r border-white/5 font-black text-zinc-100 flex items-center gap-2.5">
-                                                <span className="w-2.5 h-2.5 bg-[#004CE5] rounded-full shadow-[0_0_10px_rgba(0,76,229,0.7)] shrink-0"></span>
-                                                品牌与企业档案
+                                            <td className="py-1.5 lg:py-2 xl:py-2.5 px-4 lg:px-5 border-r border-white/5 font-black text-zinc-100 align-middle">
+                                                <div className="flex items-center gap-2.5">
+                                                    <span className="w-2.5 h-2.5 bg-[#004CE5] rounded-full shadow-[0_0_10px_rgba(0,76,229,0.7)] shrink-0"></span>
+                                                    园区与运营主体档案
+                                                </div>
                                             </td>
-                                            <td className="py-2 lg:py-2.5 xl:py-3 px-4 lg:px-5 text-zinc-300">
-                                                企业发展史、港股上市背景、1600+自营仓与六大网络布局、B端/C端客户结构。
+                                            <td className="py-1.5 lg:py-2 xl:py-2.5 px-4 lg:px-5 text-zinc-300 align-middle">
+                                                园区建设与运营沿革、创维集团自建自持背景、创维集团科技园管理有限公司运营主体、45 万㎡产城综合体的功能分区与招商渠道结构。
                                             </td>
                                         </tr>
                                         <tr className="border-b border-white/5 bg-white/[0.01] hover:bg-white/[0.02] transition-colors">
-                                            <td className="py-2 lg:py-2.5 xl:py-3 px-4 lg:px-5 border-r border-white/5 font-black text-zinc-100 flex items-center gap-2.5">
-                                                <span className="w-2.5 h-2.5 bg-[#004CE5] rounded-full shadow-[0_0_10px_rgba(0,76,229,0.7)] shrink-0"></span>
-                                                产品与服务参数
+                                            <td className="py-1.5 lg:py-2 xl:py-2.5 px-4 lg:px-5 border-r border-white/5 font-black text-zinc-100 align-middle">
+                                                <div className="flex items-center gap-2.5">
+                                                    <span className="w-2.5 h-2.5 bg-[#004CE5] rounded-full shadow-[0_0_10px_rgba(0,76,229,0.7)] shrink-0"></span>
+                                                    房源与硬件参数
+                                                </div>
                                             </td>
-                                            <td className="py-2 lg:py-2.5 xl:py-3 px-4 lg:px-5 text-zinc-300">
-                                                仓配一体/快递快运/大件送装/冷链/跨境等产品口径，时效标准、覆盖范围与核心 SLA。
+                                            <td className="py-1.5 lg:py-2 xl:py-2.5 px-4 lg:px-5 text-zinc-300 align-middle">
+                                                研发写字楼、独栋厂房、人才公寓等业态的在租面积段、层高、荷载、可分割方案、交付状态、物业费与官方租金区间。
                                             </td>
                                         </tr>
                                         <tr className="border-b border-white/5 hover:bg-white/[0.02] transition-colors">
-                                            <td className="py-2 lg:py-2.5 xl:py-3 px-4 lg:px-5 border-r border-white/5 font-black text-zinc-100 flex items-center gap-2.5">
-                                                <span className="w-2.5 h-2.5 bg-[#004CE5] rounded-full shadow-[0_0_10px_rgba(0,76,229,0.7)] shrink-0"></span>
-                                                内容与案例沉淀
+                                            <td className="py-1.5 lg:py-2 xl:py-2.5 px-4 lg:px-5 border-r border-white/5 font-black text-zinc-100 align-middle">
+                                                <div className="flex items-center gap-2.5">
+                                                    <span className="w-2.5 h-2.5 bg-[#004CE5] rounded-full shadow-[0_0_10px_rgba(0,76,229,0.7)] shrink-0"></span>
+                                                    内容与案例沉淀
+                                                </div>
                                             </td>
-                                            <td className="py-2 lg:py-2.5 xl:py-3 px-4 lg:px-5 text-zinc-300">
-                                                官方公关稿、行业解决方案白皮书、客户降本增效案例、寄件场景测评与服务解读。
+                                            <td className="py-1.5 lg:py-2 xl:py-2.5 px-4 lg:px-5 text-zinc-300 align-middle">
+                                                官方新闻稿与招商页、13 号线上盖与交通接驳说明、已入驻企业与产业集群案例、园区配套实拍清单、政府名录与产业指引收录资料。
                                             </td>
                                         </tr>
                                         <tr className="hover:bg-white/[0.02] transition-colors">
-                                            <td className="py-2 lg:py-2.5 xl:py-3 px-4 lg:px-5 border-r border-white/5 font-black text-zinc-100 flex items-center gap-2.5">
-                                                <span className="w-2.5 h-2.5 bg-[#004CE5] rounded-full shadow-[0_0_10px_rgba(0,76,229,0.7)] shrink-0"></span>
-                                                服务与售后政策
+                                            <td className="py-1.5 lg:py-2 xl:py-2.5 px-4 lg:px-5 border-r border-white/5 font-black text-zinc-100 align-middle">
+                                                <div className="flex items-center gap-2.5">
+                                                    <span className="w-2.5 h-2.5 bg-[#004CE5] rounded-full shadow-[0_0_10px_rgba(0,76,229,0.7)] shrink-0"></span>
+                                                    招商与渠道政策
+                                                </div>
                                             </td>
-                                            <td className="py-2 lg:py-2.5 xl:py-3 px-4 lg:px-5 text-zinc-300">
-                                                理赔规则、送货上门标准、破损延误处置流程、一线寄件/售后 Q&A 问答库。
+                                            <td className="py-1.5 lg:py-2 xl:py-2.5 px-4 lg:px-5 text-zinc-300 align-middle">
+                                                入驻条件与签约流程、可申领的区级产业扶持政策、中介报备与佣金结算规则、物业服务标准与招商 Q&A 问答库。
                                             </td>
                                         </tr>
                                     </tbody>
@@ -124,7 +132,7 @@ export default function Page_BrandDatabaseBuild() {
                                 <div className="flex-1">
                                     <h3 className="text-zinc-100 font-black text-[18px] lg:text-[20px] xl:text-[22px] mb-2">业务迭代或更新</h3>
                                     <p className="text-zinc-300 text-[16px] lg:text-[18px] xl:text-[20px] leading-relaxed">
-                                        当推出新时效产品、行业解决方案，或有大促保障、寄件测评等内容发布时，第一时间同步入库，转化为 AI 可调用的最新语料。
+                                        当推出新品或调整套装配置，或有展会、海外众筹、使用测评等内容发布时，第一时间同步入库，转化为 AI 可调用的最新语料。
                                     </p>
                                 </div>
                             </div>

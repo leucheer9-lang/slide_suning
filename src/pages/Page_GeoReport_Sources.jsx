@@ -7,38 +7,39 @@ import {
 import { DonutChart } from '../components/geoone/charts';
 
 /* ══════════════ 数据：换引用源结果时只改这一段 ══════════════ */
-/* 来源：GEO ONE 419 ToC · citations/stats + articles */
+/* 来源：GEO ONE 481 创维创新谷-ToC① · citations/stats + articles，2026-08-14 */
+/* 引用率 92%，总引用 718 次 / 50 次对话 */
 
 const SEGMENTS = [
-    { name: '腾讯新闻', pct: 8.8, color: '#12B7F5', icon: <IconSite size={24} color="#12B7F5" /> },
-    { name: '今日头条', pct: 7.7, color: '#FF2442', icon: <IconSquareSite size={24} label="头" bg="#FF2442" /> },
-    { name: '新浪新闻', pct: 4.3, color: '#E6162D', icon: <IconSite size={24} color="#E6162D" /> },
-    { name: '百度知道', pct: 3.9, color: '#2932E1', icon: <IconSquareSite size={24} label="知" bg="#2932E1" /> },
-    { name: '快递鸟', pct: 3.9, color: '#F59E0B', icon: <IconSquareSite size={24} label="鸟" bg="#F59E0B" /> },
-    { name: '其他', pct: 71.4, color: '#9ca3af' },
+    { name: '宝安区政府在线', pct: 31.1, color: '#C8262C', icon: <IconSquareSite size={24} label="宝" bg="#C8262C" /> },
+    { name: '深圳政府在线', pct: 8.4, color: '#1D4ED8', icon: <IconSite size={24} color="#1D4ED8" /> },
+    { name: '宝安湾', pct: 7.0, color: '#7C3AED', icon: <IconSquareSite size={24} label="湾" bg="#7C3AED" /> },
+    { name: '顺企网', pct: 4.3, color: '#F59E0B', icon: <IconSquareSite size={24} label="顺" bg="#F59E0B" /> },
+    { name: '今日头条', pct: 4.0, color: '#E1251B', icon: <IconSquareSite size={24} label="头" bg="#E1251B" /> },
+    { name: '其他', pct: 45.2, color: '#9ca3af' },
 ];
 
 const ARTICLES = [
     {
-        title: '主流快递深度测评：时效、售后、性价比对比，首选居然是它',
-        url: 'https://www.xnnews.com.cn/',
-        mentioned: false,
-        total: 8,
-        avg: '8.0',
+        title: '宝安区十大产业园区 宝安的工业园区集中在哪里 深圳宝安特色产业园有哪些',
+        url: 'https://m.maigoo.com/top/442066.html',
+        mentioned: true,
+        total: 12,
+        avg: '12.0',
     },
     {
-        title: '顺丰官网 www.sf-express.com',
-        url: 'https://www.sf-express.com/',
+        title: '宝安集中推出独栋优质物业并介绍相关租金优惠，满足企业多样化空间诉求',
+        url: 'https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_12427414.html',
         mentioned: false,
-        total: 7,
-        avg: '7.0',
+        total: 10,
+        avg: '10.0',
     },
     {
-        title: '个人寄件快递测评！四大主流品牌',
-        url: 'https://www.toutiao.com/',
+        title: '宝安区重点片区战略性新兴产业和未来产业集群布局指引(2025年本)',
+        url: 'https://www.baoan.gov.cn/xxgk/xwzx/tzgg/content/post_12196607.html',
         mentioned: false,
-        total: 6,
-        avg: '6.0',
+        total: 9,
+        avg: '9.0',
     },
 ];
 
@@ -50,7 +51,7 @@ export default function Page_GeoReport_Sources() {
     const top = top5[0];
 
     return (
-        <Frame title="引用源分析 · C端" aspect="16/10">
+        <Frame title="引用源分析 · 优化词 C 端" aspect="16/10">
             <div
                 data-geoone-root
                 style={{

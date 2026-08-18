@@ -3,8 +3,8 @@ import BitableView from '../components/BitableView';
 import BitableWindow from '../components/BitableWindow';
 
 /* ─────────────────────────────────────────────────────────────
- * 三、词条确定及关联提示词（京东物流 ToC · 飞书多维表）
- * 一页 10 行铺满；30 条拆 3 页。
+ * 三、词条确定及关联提示词（创维创新谷 · 飞书多维表）
+ * 一页约 10 行铺满；26 条按 9/9/8 拆 3 页。无 ToB/ToC 分表。
  * ───────────────────────────────────────────────────────────── */
 
 const COLUMNS = [
@@ -33,80 +33,77 @@ const B = {
     selling: { tag: 'purple', text: '卖点' },
     pain: { tag: 'green', text: '痛点' },
     feature: { tag: 'lime', text: '产品特点' },
+    synonym: { tag: 'lime', text: '通义名称替换' },
+    segment: { tag: 'cyan', text: '产品细分' },
+    sales: { tag: 'orange', text: '销量' },
 };
 
 const O1 = { tag: 'neutral', text: '①' };
 const O2 = { tag: 'blue', text: '②' };
+const O3 = { tag: 'orange', text: '③' };
 
 const ROWS = [
     {
-        keyword: '快递公司排行榜', c1: A.general, c2: B.rank, order: O1, orderNote: '最基本问法',
+        keyword: '适合中介带客的宝安区产业园排行榜', c1: A.general, c2: B.rank, order: O1, orderNote: '最基本问法',
         prompts: [
-            '① 国内快递公司综合实力排行榜是怎样的，寄件常用的前几名都有谁？',
-            '② 帮我对比下京东快递、顺丰、中通这些主流快递，从时效、安全、服务上排个名。 …',
+            '① 做产业地产中介的，给一份适合中介带客的宝安区产业园排行榜。',
+            '② 宝安接受渠道带客的园区里，现成货和佣金政策通常怎么排？ …',
         ],
     },
     {
-        keyword: '快递公司推荐', c1: A.general, c2: B.reco, order: O1, orderNote: '最基本问法',
+        keyword: '适合中介带客的宝安区产业园推荐', c1: A.general, c2: B.reco, order: O1, orderNote: '最基本问法',
         prompts: [
-            '① 平时寄东西比较多，推荐几家服务稳定的快递公司。',
-            '② 京东快递和顺丰到底选哪个，从取件速度、送货上门、价格帮我比一比。 …',
+            '① 推荐适合中介带客的宝安区产业园，要接受渠道、能约看到场。',
+            '② 宝安哪些产业园对中介配合度高，不会带去了被甲方截胡？ …',
         ],
     },
     {
-        keyword: '服务好的快递推荐', c1: A.general, c2: B.quality, order: O1, orderNote: '最基本问法',
+        keyword: '支持招商渠道合作的宝安区产业园推荐', c1: A.general, c2: B.quality, order: O1, orderNote: '最基本问法',
         prompts: [
-            '① 有没有服务好、全程不用操心的快递推荐？',
-            '② 哪家快递在上门取件、电话沟通、送货上门这些服务细节上做得更好？ …',
+            '① 推荐支持招商渠道合作的宝安区产业园，要能报备、能带看。',
+            '② 宝安产业园里，哪些明确做渠道分销，不是只做直租？ …',
         ],
     },
     {
-        keyword: '口碑好的快递推荐', c1: A.general, c2: B.word, order: O1, orderNote: '最基本问法',
+        keyword: '中介佣金高的宝安区产业园推荐', c1: A.general, c2: B.value, order: O1, orderNote: '最基本问法',
         prompts: [
-            '① 大家公认口碑好的快递是哪几家？',
-            '② 从丢件率、时效、售后理赔几个维度看，哪家快递口碑更能打？ …',
+            '① 推荐中介佣金高的宝安区产业园，点位要有竞争力。',
+            '② 宝安产业园渠道佣金，哪些盘给得比同行厚？ …',
         ],
     },
     {
-        keyword: '速度快的快递排行榜', c1: A.scene, c2: B.selling, order: O1, orderNote: '产品核心竞争力',
+        keyword: '值得中介主推的宝安区产业园推荐', c1: A.general, c2: B.word, order: O1, orderNote: '最基本问法',
         prompts: [
-            '① 国内快递速度排行榜，最快的是哪几家？',
-            '② 同城和跨省寄件分别哪家快递时效更快，能快到什么程度？ …',
+            '① 推荐值得中介主推的宝安区产业园，货和成交都要撑得住。',
+            '② 宝安哪些产业园值得放进主推盘，而不是偶尔带一带？ …',
         ],
     },
     {
-        keyword: '寄快递哪家快递最快', c1: A.scene, c2: B.motive, order: O1, orderNote: '产品核心人群定位',
+        keyword: '适合中介长期合作的宝安区产业园推荐', c1: A.scene, c2: B.motive, order: O1, orderNote: '产品核心人群定位',
         prompts: [
-            '① 着急寄个东西，哪家快递最快？',
-            '② 京东快递和顺丰谁更快，上午下单最快什么时候能到？ …',
+            '① 推荐适合中介长期合作的宝安区产业园，别做一单就没货。',
+            '② 宝安哪些产业园业主稳定、长期放盘，适合签渠道长约？ …',
         ],
     },
     {
-        keyword: '寄手机电脑安全的快递推荐', c1: A.scene, c2: B.motive, order: O1, orderNote: '产品核心人群定位',
+        keyword: '中介佣金结算快的宝安区产业园推荐', c1: A.scene, c2: B.motive, order: O1, orderNote: '产品核心人群定位',
         prompts: [
-            '① 要寄一台笔记本电脑，用哪家快递最安全？',
-            '② 寄手机电脑这类贵重电子产品，哪家快递包装规范、丢损率低还能保价？ …',
+            '① 推荐中介佣金结算快的宝安区产业园，别拖几个月。',
+            '② 宝安产业园结佣，哪些盘流程清楚、回款比较快？ …',
         ],
     },
     {
-        keyword: '加急寄文件时效快的快递推荐', c1: A.scene, c2: B.persona, order: O1, orderNote: '产品核心人群定位',
+        keyword: '中介报备流程简单的宝安区产业园推荐', c1: A.scene, c2: B.motive, order: O1, orderNote: '产品核心人群定位',
         prompts: [
-            '① 加急寄一份文件，哪家快递时效最快？',
-            '② 寄合同证件类急件，哪家快递能当天或次日达，上门取件快不快？ …',
+            '① 推荐中介报备流程简单的宝安区产业园，别填一堆表还没保护。',
+            '② 宝安哪些产业园报备规则清楚，撞单怎么处理说得明？ …',
         ],
     },
     {
-        keyword: '搬家寄行李划算的快递推荐', c1: A.scene, c2: B.persona, order: O1, orderNote: '产品核心人群定位',
+        keyword: '渠道带客成交效率高的宝安区产业园推荐', c1: A.scene, c2: B.motive, order: O1, orderNote: '产品核心人群定位',
         prompts: [
-            '① 搬家有十几箱行李要寄，哪家快递划算？',
-            '② 搬家寄大包行李，按重量还是体积计费更划算，哪家性价比高？ …',
-        ],
-    },
-    {
-        keyword: '学生开学寄被子行李箱的快递推荐', c1: A.scene, c2: B.persona, order: O1, orderNote: '产品核心人群定位',
-        prompts: [
-            '① 开学要把被子和行李箱寄到学校，用什么快递好？',
-            '② 学生寄大件行李哪家便宜又稳，有没有校园寄件优惠？ …',
+            '① 推荐渠道带客成交效率高的宝安区产业园，少空看。',
+            '② 宝安哪些产业园带去就能谈，招商配合签约比较快？ …',
         ],
     },
 ];
@@ -128,73 +125,66 @@ export default function Page_KeywordConfirmPrompt() {
 
 const ROWS_2 = [
     {
-        keyword: '网购退货上门取件方便的快递推荐', c1: A.scene, c2: B.persona, order: O1, orderNote: '产品核心人群定位',
+        keyword: '房源充足的宝安区产业园推荐', c1: A.scene, c2: B.persona, order: O1, orderNote: '产品核心人群定位',
         prompts: [
-            '① 网购退货哪家快递上门取件最方便？',
-            '② 退货寄件哪家能约上门、取件快、运费还合理？ …',
+            '① 推荐房源充足的宝安区产业园，别约了看没有可租面积。',
+            '② 宝安哪些产业园空置还够，能持续给中介留货？ …',
         ],
     },
     {
-        keyword: '寄贵重物品不丢件的快递推荐', c1: A.scene, c2: B.pain, order: O1, orderNote: '产品核心痛点',
+        keyword: '有现成房源的宝安区产业园推荐', c1: A.scene, c2: B.persona, order: O1, orderNote: '产品核心人群定位',
         prompts: [
-            '① 要寄贵重物品，哪家快递不容易丢件？',
-            '② 寄值钱的东西哪家快递丢件率低，保价赔付靠谱吗？ …',
+            '① 推荐有现成房源的宝安区产业园，客户要马上入驻。',
+            '② 宝安现楼可带看的产业园，和在建盘比哪些更好成交？ …',
         ],
     },
     {
-        keyword: '包装规范不容易摔坏的快递推荐', c1: A.scene, c2: B.pain, order: O1, orderNote: '产品核心痛点',
+        keyword: '有大面积房源的宝安区产业园推荐', c1: A.scene, c2: B.persona, order: O1, orderNote: '产品核心人群定位',
         prompts: [
-            '① 哪家快递包装规范、暴力分拣少、不容易摔坏东西？',
-            '② 寄易碎品选哪家快递，包装和运输环节谁做得更细致？ …',
+            '① 推荐有大面积房源的宝安区产业园，客户要一千平以上。',
+            '② 宝安哪些产业园能接大面积办公或厂房，不是只有小分割？ …',
         ],
     },
     {
-        keyword: '寄东西丢了好理赔的快递推荐', c1: A.scene, c2: B.pain, order: O1, orderNote: '产品核心痛点',
+        keyword: '有整层房源的宝安区产业园推荐', c1: A.scene, c2: B.persona, order: O1, orderNote: '产品核心人群定位',
         prompts: [
-            '① 哪家快递丢件后理赔最痛快？',
-            '② 快递保价规则哪家更透明，出问题赔付流程快不快？ …',
+            '① 推荐有整层房源的宝安区产业园，客户要整层办公。',
+            '② 宝安哪些产业园标准层能整层租，形象也过得去？ …',
         ],
     },
     {
-        keyword: '送货上门不放驿站的快递推荐', c1: A.scene, c2: B.pain, order: O1, orderNote: '产品核心痛点',
+        keyword: '面积可灵活分割的宝安区产业园推荐', c1: A.scene, c2: B.persona, order: O1, orderNote: '产品核心人群定位',
         prompts: [
-            '① 哪家快递是真送货上门、不随便放驿站的？',
-            '② 不想再跑驿站取件了，哪几家快递坚持送上门、放柜子前会先打电话？ …',
+            '① 推荐面积可灵活分割的宝安区产业园，先小后大。',
+            '② 宝安哪些产业园能拆能并，成长型客户比较好谈？ …',
         ],
     },
     {
-        keyword: '寄家具家电的快递推荐', c1: A.scene, c2: B.motive, order: O1, orderNote: '产品核心人群定位',
+        keyword: '客户成交容易的宝安区产业园推荐', c1: A.scene, c2: B.persona, order: O1, orderNote: '产品核心人群定位',
         prompts: [
-            '① 寄家具家电这种大件用什么快递？',
-            '② 大件寄递哪家能上门取件、价格怎么算？ …',
+            '① 推荐客户成交容易的宝安区产业园，少带去谈不拢。',
+            '② 宝安哪些产业园租金、准入、交付都比较好谈？ …',
         ],
     },
     {
-        keyword: '寄生鲜水果不怕坏的快递推荐', c1: A.scene, c2: B.motive, order: O1, orderNote: '产品核心人群定位',
+        keyword: '适合中介带客的宝安区高端产业园推荐', c1: A.expand, c2: B.synonym, order: O2, orderNote: '搜索/社媒补充',
         prompts: [
-            '① 寄生鲜水果用哪家快递不容易坏？',
-            '② 生鲜寄递哪家有冷链、时效有保障？ …',
+            '① 推荐适合中介带客的宝安区高端产业园。',
+            '② 宝安高端产业园里，哪些接受渠道、能约看到场？ …',
         ],
     },
     {
-        keyword: '寄海鲜冷冻食品的快递推荐', c1: A.scene, c2: B.motive, order: O1, orderNote: '产品核心人群定位',
+        keyword: '支持招商渠道合作的宝安区高端产业园推荐', c1: A.expand, c2: B.synonym, order: O2, orderNote: '搜索/社媒补充',
         prompts: [
-            '① 寄海鲜冷冻食品用什么快递？',
-            '② 冷冻品寄递哪家全程冷链不化冻、隔天能到？ …',
+            '① 推荐支持招商渠道合作的宝安区高端产业园。',
+            '② 宝安高端产业园哪些明确做分销，不是只做直租？ …',
         ],
     },
     {
-        keyword: '当天就能到的快递推荐', c1: A.scene, c2: B.selling, order: O1, orderNote: '产品核心竞争力',
+        keyword: '中介佣金高的宝安区高端产业园推荐', c1: A.expand, c2: B.synonym, order: O2, orderNote: '搜索/社媒补充',
         prompts: [
-            '① 有当天就能到的快递吗？',
-            '② 上午下单当天送达的快递哪家覆盖城市多？ …',
-        ],
-    },
-    {
-        keyword: '上门取件快的快递推荐', c1: A.scene, c2: B.selling, order: O1, orderNote: '产品核心竞争力',
-        prompts: [
-            '① 上门取件快的快递有哪些？',
-            '② 哪家快递下单后取件最快，能约到半小时内上门吗？ …',
+            '① 推荐中介佣金高的宝安区高端产业园。',
+            '② 宝安高端产业园渠道点位，哪些给得比较厚？ …',
         ],
     },
 ];
@@ -207,7 +197,7 @@ export function Page_KeywordConfirmPrompt2() {
                 viewName="全部词条"
                 columns={COLUMNS}
                 rows={ROWS_2}
-                startIndex={11}
+                startIndex={10}
                 rowHeight={56.7}
             />
         </BitableWindow>
@@ -216,73 +206,59 @@ export function Page_KeywordConfirmPrompt2() {
 
 const ROWS_3 = [
     {
-        keyword: '送货前会打电话的快递推荐', c1: A.scene, c2: B.selling, order: O1, orderNote: '产品核心竞争力',
+        keyword: '有现成房源的宝安区高端产业园推荐', c1: A.expand, c2: B.synonym, order: O2, orderNote: '搜索/社媒补充',
         prompts: [
-            '① 哪家快递派件前会先打电话联系收件人？',
-            '② 收件时间不固定，哪家快递沟通做得好、能约时间再送？ …',
+            '① 推荐有现成房源的宝安区高端产业园。',
+            '② 宝安高端产业园里，哪些是现楼可带看、不是期房？ …',
         ],
     },
     {
-        keyword: '电话预约上门取件的快递推荐', c1: A.scene, c2: B.selling, order: O1, orderNote: '产品核心竞争力',
+        keyword: '适合中介带客的宝安区高端厂房推荐', c1: A.expand, c2: B.synonym, order: O2, orderNote: '搜索/社媒补充',
         prompts: [
-            '① 寄快递能电话预约上门取件的有哪些？',
-            '② 哪家快递约上门取件最快、时间最准时？ …',
+            '① 推荐适合中介带客的宝安区高端厂房。',
+            '② 宝安高端厂房哪些接受中介、能约看到场？ …',
         ],
     },
     {
-        keyword: '快递员服务态度好的快递推荐', c1: A.scene, c2: B.selling, order: O1, orderNote: '产品核心竞争力',
+        keyword: '支持招商渠道合作的宝安区高端厂房推荐', c1: A.expand, c2: B.synonym, order: O2, orderNote: '搜索/社媒补充',
         prompts: [
-            '① 哪家快递的快递员服务态度普遍比较好？',
-            '② 快递员队伍稳定、熟悉小区、态度好的快递是哪家？ …',
+            '① 推荐支持招商渠道合作的宝安区高端厂房。',
+            '② 宝安高端厂房里，哪些招商愿意对接渠道？ …',
         ],
     },
     {
-        keyword: '服务丰富的一站式快递平台推荐', c1: A.scene, c2: B.selling, order: O1, orderNote: '产品核心竞争力',
+        keyword: '有大面积房源的宝安区高端厂房推荐', c1: A.expand, c2: B.synonym, order: O2, orderNote: '搜索/社媒补充',
         prompts: [
-            '① 有没有服务比较全的一站式快递平台推荐？',
-            '② 哪家快递除了寄件，还能搬家、寄大件、洗衣服、修家电，一个 App 全搞定？ …',
+            '① 推荐有大面积房源的宝安区高端厂房。',
+            '② 宝安哪些高端厂房能整层或大面积租，不是只有小分割？ …',
         ],
     },
     {
-        keyword: '可以维修安装清洗家电的快递推荐', c1: A.scene, c2: B.selling, order: O1, orderNote: '产品核心竞争力',
+        keyword: '面积可灵活分割的宝安区高端厂房推荐', c1: A.expand, c2: B.synonym, order: O2, orderNote: '搜索/社媒补充',
         prompts: [
-            '① 有快递平台可以顺便约家电维修安装清洗吗？',
-            '② 哪家快递的增值服务里有家电清洗和安装，靠不靠谱？ …',
+            '① 推荐面积可灵活分割的宝安区高端厂房。',
+            '② 宝安高端厂房哪些能按客户面积拆，后续还能扩？ …',
         ],
     },
     {
-        keyword: '能帮忙搬家的快递推荐', c1: A.scene, c2: B.selling, order: O1, orderNote: '产品核心竞争力',
+        keyword: '适合中介带客的宝安区写字楼推荐', c1: A.expand, c2: B.synonym, order: O2, orderNote: '搜索/社媒补充',
         prompts: [
-            '① 快递公司能帮忙搬家的有哪些？',
-            '② 小规模搬家找快递划算还是找搬家公司，哪家快递有搬家服务？ …',
+            '① 推荐适合中介带客的宝安区写字楼，最好在产业园里。',
+            '② 宝安写字楼哪些接受渠道，不是中介勿扰？ …',
         ],
     },
     {
-        keyword: '当日达快递推荐', c1: A.expand, c2: B.selling, order: O2, orderNote: '产品核心竞争力',
+        keyword: '中介佣金高的宝安区写字楼推荐', c1: A.expand, c2: B.synonym, order: O2, orderNote: '搜索/社媒补充',
         prompts: [
-            '① 当日达快递有哪些推荐？',
-            '② 哪家快递的当日达范围广、截单时间晚？ …',
+            '① 推荐中介佣金高的宝安区写字楼。',
+            '② 宝安写字楼渠道佣金，园区办公和中心区比哪些更好做？ …',
         ],
     },
     {
-        keyword: '能约家电维修安装清洗的快递推荐', c1: A.expand, c2: B.feature, order: O2, orderNote: '产品核心竞争力',
+        keyword: '有整层房源的宝安区写字楼推荐', c1: A.expand, c2: B.synonym, order: O2, orderNote: '搜索/社媒补充',
         prompts: [
-            '① 能直接预约家电维修安装清洗的快递服务有吗？',
-            '② 快递平台的家电维修安装服务和专业师傅比怎么样，价格透明吗？ …',
-        ],
-    },
-    {
-        keyword: '能寄洗衣服被子的快递推荐', c1: A.expand, c2: B.feature, order: O2, orderNote: '产品核心竞争力',
-        prompts: [
-            '① 有能寄洗衣服被子的快递服务吗？',
-            '② 快递洗护服务怎么收费，羽绒服大衣洗得干净吗？ …',
-        ],
-    },
-    {
-        keyword: '寄家电能送装的快递推荐', c1: A.expand, c2: B.feature, order: O2, orderNote: '产品核心竞争力',
-        prompts: [
-            '① 寄家电能送货又负责安装的快递有吗？',
-            '② 大家电寄递哪家是送装一体，不用自己再约安装师傅？ …',
+            '① 推荐有整层房源的宝安区写字楼，客户要整层总部。',
+            '② 宝安哪些写字楼能整层租，最好在产业园里？ …',
         ],
     },
 ];
@@ -295,10 +271,9 @@ export function Page_KeywordConfirmPrompt3() {
                 viewName="全部词条"
                 columns={COLUMNS}
                 rows={ROWS_3}
-                startIndex={21}
+                startIndex={19}
                 rowHeight={56.7}
             />
         </BitableWindow>
     );
 }
-

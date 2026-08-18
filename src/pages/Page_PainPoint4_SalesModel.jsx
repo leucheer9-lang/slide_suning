@@ -1,222 +1,79 @@
 import React from 'react';
-import { C, Tag, GhostButton, Icon, ShotThumb } from '../components/geoone/ui';
-import { NEGATIVE_CASES } from './painpointNegatives.js';
-
-/** 按 GEO ONE 真实截图还原：词条 / 类型 / 问题总结 / 会话截图 / 操作 + 底栏分页 */
-function NegativeListTable({ rows = NEGATIVE_CASES }) {
-    const cols = [
-        { key: 'term', w: 260, label: '词条' },
-        { key: 'type', w: 120, label: '类型', filter: true },
-        { key: 'summary', flex: 1, label: '问题总结' },
-        { key: 'shot', w: 100, label: '会话截图' },
-        { key: 'action', w: 90, label: '操作' },
-    ];
-
-    return (
-        <div
-            className="w-full h-full rounded-xl overflow-hidden flex flex-col bg-white shadow-sm"
-            style={{ border: `1px solid ${C.border}`, fontFamily: 'inherit' }}
-        >
-            <div
-                className="shrink-0 flex items-center px-5"
-                style={{ height: 52, borderBottom: `1px solid ${C.border}` }}
-            >
-                <span style={{ fontSize: 18, fontWeight: 700, color: C.text }}>负面回答列表</span>
-            </div>
-
-            <div
-                className="shrink-0 flex items-center px-4"
-                style={{
-                    height: 42,
-                    background: C.headBg,
-                    borderBottom: `1px solid ${C.border}`,
-                    fontSize: 13.5,
-                    color: C.muted,
-                    fontWeight: 600,
-                }}
-            >
-                {cols.map((c) => (
-                    <div
-                        key={c.key}
-                        style={{
-                            width: c.w,
-                            flex: c.flex || 'none',
-                            flexShrink: c.flex ? 1 : 0,
-                            paddingRight: 12,
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: 4,
-                        }}
-                    >
-                        {c.label}
-                        {c.filter ? <Icon.filter size={14} style={{ color: C.faint }} /> : null}
-                    </div>
-                ))}
-            </div>
-
-            <div className="flex-1 min-h-0 overflow-hidden">
-                {rows.map((r, i) => (
-                    <div
-                        key={i}
-                        className="flex items-center px-4"
-                        style={{
-                            height: 76,
-                            borderBottom: `1px solid ${C.border}`,
-                        }}
-                    >
-                        <div
-                            style={{
-                                width: cols[0].w,
-                                flexShrink: 0,
-                                fontSize: 14.5,
-                                fontWeight: 600,
-                                color: C.text,
-                                paddingRight: 12,
-                                lineHeight: '20px',
-                                wordBreak: 'keep-all',
-                                overflowWrap: 'break-word',
-                            }}
-                        >
-                            {r.term}
-                        </div>
-                        <div style={{ width: cols[1].w, flexShrink: 0, paddingRight: 12 }}>
-                            <Tag color={r.color}>{r.type}</Tag>
-                        </div>
-                        <div
-                            style={{
-                                flex: 1,
-                                minWidth: 0,
-                                fontSize: 14.5,
-                                fontWeight: 500,
-                                color: '#1e293b',
-                                paddingRight: 16,
-                                overflow: 'hidden',
-                                display: '-webkit-box',
-                                WebkitLineClamp: 2,
-                                WebkitBoxOrient: 'vertical',
-                                lineHeight: '20px',
-                            }}
-                        >
-                            {r.summary}
-                        </div>
-                        <div
-                            style={{
-                                width: cols[3].w,
-                                flexShrink: 0,
-                                paddingRight: 12,
-                                display: 'flex',
-                                alignItems: 'center',
-                            }}
-                        >
-                            <ShotThumb src={r.screenshot} width={52} height={38} />
-                        </div>
-                        <div style={{ width: cols[4].w, flexShrink: 0 }}>
-                            {r.screenshot ? (
-                                <GhostButton height={28} fontSize={13}>
-                                    查看
-                                </GhostButton>
-                            ) : (
-                                <span style={{ color: C.faint, fontSize: 14, paddingLeft: 8 }}>—</span>
-                            )}
-                        </div>
-                    </div>
-                ))}
-            </div>
-
-            {/* 底栏：共 N 条 + 每页行数 + 分页 */}
-            <div
-                className="shrink-0 flex items-center justify-between px-5"
-                style={{
-                    height: 48,
-                    borderTop: `1px solid ${C.border}`,
-                    color: C.muted,
-                    fontSize: 13,
-                }}
-            >
-                <div className="flex items-center gap-4">
-                    <span>共 {rows.length} 条数据</span>
-                    <div className="flex items-center gap-2">
-                        <span>每页行数</span>
-                        <div
-                            style={{
-                                height: 28,
-                                minWidth: 52,
-                                padding: '0 8px',
-                                border: `1px solid ${C.border}`,
-                                borderRadius: 6,
-                                display: 'inline-flex',
-                                alignItems: 'center',
-                                justifyContent: 'space-between',
-                                gap: 6,
-                                color: C.text,
-                                background: C.white,
-                            }}
-                        >
-                            <span>10</span>
-                            <Icon.chevronDown size={14} style={{ color: C.faint }} />
-                        </div>
-                    </div>
-                </div>
-
-                <div className="flex items-center gap-1.5">
-                    {[
-                        { label: '«', disabled: true },
-                        { label: '‹', disabled: true },
-                        { label: '1', active: true },
-                        { label: '›', disabled: true },
-                        { label: '»', disabled: true },
-                    ].map((b, i) => (
-                        <div
-                            key={i}
-                            style={{
-                                width: 28,
-                                height: 28,
-                                borderRadius: 6,
-                                display: 'inline-flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                fontSize: 13,
-                                fontWeight: b.active ? 700 : 500,
-                                background: b.active ? C.text : 'transparent',
-                                color: b.active ? '#fff' : b.disabled ? C.faint : C.muted,
-                                border: b.active ? 'none' : `1px solid transparent`,
-                            }}
-                        >
-                            {b.label}
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </div>
-    );
-}
 
 export default function Page_PainPoint4_SalesModel() {
     return (
-        <div className="w-full h-full flex flex-col relative bg-black overflow-hidden text-white font-sans">
-            <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:40px_40px] opacity-20 pointer-events-none" />
+        <div className="w-full h-full flex flex-col relative bg-black overflow-hidden text-white font-sans p-4 lg:p-6 xl:p-8">
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] opacity-20 pointer-events-none"></div>
 
-            <div className="w-full px-12 sm:px-16 pt-4 pb-2 relative z-10 shrink-0 text-left">
-                <div className="inline-block border border-white/20 bg-white/5 rounded-full px-4 py-1 mb-2">
-                    <span className="text-zinc-300 text-sm tracking-widest font-bold mr-2">困境</span>
-                    <span className="text-[#004CE5] font-black text-base">02</span>
-                </div>
-                <h1 className="text-[32px] xl:text-[36px] font-bold text-zinc-100 tracking-wider">
-                    偶发性服务事故极易被AI抓取放大
-                </h1>
-            </div>
-
-            <div className="flex-1 w-full px-12 sm:px-16 pb-3 relative z-10 flex flex-col justify-between min-h-0">
-                <p className="text-zinc-400 text-lg lg:text-[20px] xl:text-[22px] leading-relaxed tracking-wide mb-4 shrink-0 text-justify">
-                    物流服务发生在每天数千万次的线下交付中，破损、延误、丢件、派送纠纷这类个案在任何体量下都不可能归零。这类内容自带情绪和画面，在社交平台的传播效率远高于正常履约。而大模型抓取时并不区分“偶发个案”与“系统性问题”，容易把零星投诉归纳成“这家爱丢件、服务差”，在“哪家快递更靠谱”这类推荐问题上直接扣分。
-                </p>
-
-                <div className="flex-1 flex items-center justify-center min-h-0 pb-0">
-                    <div className="w-full h-full bg-[#0a0a0a] border border-white/10 rounded-2xl p-6 shadow-2xl flex items-center justify-center relative overflow-hidden">
-                        <div className="w-full h-full max-w-full max-h-full rounded-lg overflow-hidden bg-[#f4f6f9] p-3">
-                            <NegativeListTable rows={NEGATIVE_CASES} />
-                        </div>
+            <div className="w-full max-w-[1600px] mx-auto flex flex-col h-full relative z-10 pt-0">
+                <div className="mb-4 lg:mb-5 shrink-0">
+                    <div className="inline-block border border-white/20 bg-white/5 rounded-full px-5 py-2 mb-3 lg:mb-4">
+                        <span className="text-zinc-200 text-lg tracking-widest font-bold mr-2">困境</span>
+                        <span className="text-[#004CE5] font-black text-xl lg:text-2xl">02</span>
                     </div>
+                    <h1 className="text-4xl lg:text-[42px] font-black text-white tracking-widest mb-3 lg:mb-4 leading-tight">
+                        选址强比价：同区租金同一梯度，AI 只拿单价做答案
+                    </h1>
+                    <p className="text-zinc-400 text-[20px] lg:text-[21px] leading-relaxed max-w-[1400px] tracking-wide">
+                        创新谷、雪花科创城、甲岸美生智谷公开挂牌都在同一价格带。企业问「宝安高端产业园哪家划算」时，AI 几乎只比单价。中介页以面积和租金为主，层高、地铁、补贴、配套各写各的；挂牌价从约 35 元写到 98 元，软文甚至出现 86–138 元。抓到哪一条，就会把哪一条当成事实。
+                    </p>
+                </div>
+
+                <div className="flex-1 flex flex-col min-h-0 pb-3">
+                    <div className="w-full h-full overflow-hidden border border-white/10 rounded-2xl bg-[#0a0a0a] shadow-2xl flex flex-col">
+                        <table className="w-full h-full text-left border-collapse">
+                            <thead>
+                                <tr className="bg-white/5 border-b border-white/10 text-[18px] lg:text-[20px] font-bold text-zinc-200 tracking-wider">
+                                    <th className="py-4 px-5 lg:px-6 xl:px-7 w-[22%]">企业典型提问</th>
+                                    <th className="py-4 px-5 lg:px-6 xl:px-7 w-[28%]">AI 易给出的错误结论</th>
+                                    <th className="py-4 px-5 lg:px-6 xl:px-7 w-[22%]">混乱从哪来</th>
+                                    <th className="py-4 px-5 lg:px-6 xl:px-7 w-[28%]">对创新谷的直接伤害</th>
+                                </tr>
+                            </thead>
+                            <tbody className="divide-y divide-white/5 text-[18px] lg:text-[20px]">
+                                <tr className="hover:bg-white/[0.02] transition-colors">
+                                    <td className="py-3 px-5 lg:px-6 xl:px-7 font-bold text-white leading-snug">创维创新谷租金多少一平？</td>
+                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">拿 35 元或 138 元当官方价</td>
+                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">中介挂牌跨度大，软文报价更夸张</td>
+                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">被看成「报价不靠谱」，或比成贵厂房</td>
+                                </tr>
+                                <tr className="hover:bg-white/[0.02] transition-colors">
+                                    <td className="py-3 px-5 lg:px-6 xl:px-7 font-bold text-white leading-snug">宝安高端产业园哪家划算？</td>
+                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">只按单价把三家列成同一档，或直接推雪花</td>
+                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">雪花 60–100、甲岸 65–85，房源页不写配套和政策</td>
+                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">50–72 元其实最低，却被说成偏贵或进不了推荐</td>
+                                </tr>
+                                <tr className="hover:bg-white/[0.02] transition-colors">
+                                    <td className="py-3 px-5 lg:px-6 xl:px-7 font-bold text-white leading-snug">石岩通地铁了吗？招人难不难？</td>
+                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">仍按通车前口径说石岩偏远、没地铁</td>
+                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">13 号线应人石站 2025 年 12 月才开通</td>
+                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">同区比价时，第一轮就被兴东站上盖劝退</td>
+                                </tr>
+                                <tr className="hover:bg-white/[0.02] transition-colors">
+                                    <td className="py-3 px-5 lg:px-6 xl:px-7 font-bold text-white leading-snug">入驻有没有租金补贴？</td>
+                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">把「可申报」写成「入园必给三年补贴」</td>
+                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">中介软文把园区身份夸成到账政策</td>
+                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">预期落空；省级园身份也没写进比价</td>
+                                </tr>
+                                <tr className="hover:bg-white/[0.02] transition-colors">
+                                    <td className="py-3 px-5 lg:px-6 xl:px-7 font-bold text-white leading-snug">这是写字楼还是厂房？能做中试吗？</td>
+                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">按百科写成「创维总工厂」，或按房源网写成普通甲级办公</td>
+                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">工业园、写字楼、产城综合体各写各的</td>
+                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">研产客找不到，纯办公客以为是工厂</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div className="mt-3 lg:mt-4 shrink-0 bg-gradient-to-r from-[#004CE5]/10 via-black to-[#0a0a0a] border border-[#004CE5]/30 rounded-2xl p-4 lg:p-5 shadow-[0_0_20px_rgba(0,76,229,0.15)] relative overflow-hidden flex items-center gap-4">
+                    <div className="absolute top-0 left-0 w-2 h-full bg-[#004CE5] shadow-[0_0_10px_rgba(0,76,229,0.5)]"></div>
+                    <div className="bg-[#004CE5]/10 border border-[#004CE5]/30 px-3 py-1 rounded-lg text-[#004CE5] text-[16px] lg:text-[18px] font-black tracking-widest shrink-0 uppercase shadow-[0_0_8px_rgba(0,76,229,0.2)]">
+                        解法
+                    </div>
+                    <p className="text-zinc-200 text-[20px] lg:text-[21px] font-bold leading-relaxed text-justify flex-1">
+                        建立可溯源的官方口径：租金区间、层高货梯、地铁站点、政策身份、公寓商场配套分开写清楚。向 AI 输出结构化事实，让同区比价从「只比单价」变成比总持有成本，同时压制中介页里的过期报价和夸大补贴。
+                    </p>
                 </div>
             </div>
         </div>

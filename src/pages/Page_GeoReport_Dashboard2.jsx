@@ -10,7 +10,7 @@ export default function Page_GeoReport_Dashboard2() {
                 {/* Header Section - Centered and shifted up by 20px using mt-[-20px] */}
                 <div className="text-center mb-4 mt-[-20px] shrink-0 relative z-10">
                     <h1 className="text-[28px] lg:text-[32px] font-bold text-white tracking-widest leading-none">
-                        数据指标与特征诊断 · C端
+                        数据指标与特征诊断 · 优化词 C 端
                     </h1>
                 </div>
 
@@ -39,21 +39,21 @@ export default function Page_GeoReport_Dashboard2() {
                                     {[
                                         {
                                             name: '整体提及率',
-                                            def: '在 C 端寄件词条下，AI 回复中包含“京东物流”的概率。',
+                                            def: '在不带品牌名的企业选址类优化词下，AI 回复中出现“创维创新谷”的概率。',
                                             note: (
                                                 <>
-                                                    <span className="text-blue-400 font-bold">80.0%</span>
-                                                    （可见度高，但尚未拉开与顺丰的绝对差距）
+                                                    <span className="text-blue-400 font-bold">24.0%</span>
+                                                    （50 次对话命中 12 次，25 个词里 9 个有提及）
                                                 </>
                                             ),
                                         },
                                         {
                                             name: 'Top 1 提及率',
-                                            def: '当被提及建议时，京东物流被排在首位推荐的概率。',
+                                            def: '当被提及时，创维创新谷被排在首位推荐的概率。',
                                             note: (
                                                 <>
-                                                    <span className="text-blue-400 font-bold">7.5%</span>
-                                                    （显著落后顺丰 47.5%，首推权仍被竞品锁定）
+                                                    <span className="text-blue-400 font-bold">2.0%</span>
+                                                    （全量榜第 10，第一名新桥东先进制造产业园为 26.0%）
                                                 </>
                                             ),
                                         },
@@ -62,15 +62,15 @@ export default function Page_GeoReport_Dashboard2() {
                                             def: '被推荐时在 AI 生成文本列表中的平均排名位次。',
                                             note: (
                                                 <>
-                                                    <span className="text-blue-400 font-bold">NO. 3.5</span>
-                                                    （稳居第一梯队，但位次优势弱于顺丰 NO. 3.0）
+                                                    <span className="text-blue-400 font-bold">NO. 8.8</span>
+                                                    （位次榜第 17，新桥东 NO. 6.0、全至 NO. 7.0）
                                                 </>
                                             ),
                                         },
                                         {
                                             name: 'Top 引用来源',
                                             def: 'AI 生成回答时，最底层的数据抓取来源平台。',
-                                            note: '腾讯新闻 (8.8%)、今日头条 (7.7%)、新浪新闻 (4.3%)',
+                                            note: '宝安区政府在线 (31.1%)、深圳政府在线 (8.4%)、宝安湾 (7.0%)',
                                         },
                                     ].map((row) => (
                                         <div
@@ -98,25 +98,25 @@ export default function Page_GeoReport_Dashboard2() {
                         <div className="border border-[#004CE5]/20 bg-white/[0.03] backdrop-blur-xl rounded-2xl p-6 shadow-[-10px_0_30px_rgba(0,76,229,0.1)] flex flex-col h-full min-h-0 gap-4">
                             <h3 className="text-xl lg:text-2xl font-bold text-white shrink-0 flex items-center gap-2">
                                 <span className="w-1.5 h-4 bg-[#004CE5] rounded-full shadow-[0_0_8px_rgba(0,76,229,0.8)]" />
-                                京东物流在 C 端寄件问答生态里的表现特征：
+                                创维创新谷在 C 端企业选址优化词问答里的表现特征：
                             </h3>
 
                             <div className="flex-1 flex flex-col gap-3 min-h-0">
                                 {[
                                     {
                                         n: '01',
-                                        title: '服务口碑与场景词表现拉满',
-                                        body: '在“服务好的快递推荐”、“口碑好的快递推荐”、“寄家具家电的快递推荐”等词下，提及率全部拉满至 100%，排位多落在 NO. 1.0 - 3.0。',
+                                        title: '榜单词与产业属性词已能稳定进榜',
+                                        body: '25 个词里 9 个被提及：“宝安区高端产业园排行榜”“宝安区新型显示产业园推荐”“宝安区产业园排行榜”均为 100%，其中新型显示产业园位次高达 NO. 3。产业标签越贴近创维主业，召回越稳。',
                                     },
                                     {
                                         n: '02',
-                                        title: '“有提及、难首推”的结构性短板',
-                                        body: '整体提及率 80%，但 Top 1 首推率仅 7.5%，顺丰高达 47.5%。AI 把京东物流放进候选清单，却很少把它写成第一答案。',
+                                        title: '通用推荐词与配套条件词仍为 0',
+                                        body: '“宝安区产业园推荐”“宝安区产业园有哪些”“口碑好的宝安区高端产业园推荐”“有政策补贴的宝安区高端产业园推荐”“有人才公寓的宝安区高端产业园推荐”等 16 个词提及率为 0%，配套、补贴、口碑这类软性条件完全没有可引用素材。',
                                     },
                                     {
                                         n: '03',
-                                        title: '极致时效与一站式平台词偏弱',
-                                        body: '“当天就能到的快递推荐”、“寄快递哪家最快”等词提及率仅 50%；“服务丰富的一站式快递平台推荐”更是 0%，场景心智尚未打穿。',
+                                        title: '豆包召回是 DeepSeek 的两倍，但位次更差',
+                                        body: '豆包提及率 32%、位次 NO. 9.8；DeepSeek 提及率 16%、位次 NO. 7.7。豆包更愿意长列表罗列园区，DeepSeek 更依赖官方信源、给出的清单更短，因此进榜难但一旦进榜排位更靠前。',
                                     },
                                 ].map((item) => (
                                     <div
@@ -149,10 +149,10 @@ export default function Page_GeoReport_Dashboard2() {
                     <div className="text-[15px] lg:text-[16px] xl:text-[17px] text-zinc-300 leading-relaxed flex flex-col md:flex-row md:items-center justify-between gap-4">
                         <div className="flex-1">
                             <p className="font-bold text-white mb-0.5 text-[17px] lg:text-[20px]">
-                                从“进清单”走向“占首位”
+                                守住已进榜的产业属性词，把力气花在通用推荐词与配套条件词
                             </p>
                             <p className="text-zinc-300 leading-relaxed text-justify">
-                                C 端可见度已经不低，下一步应围绕“送货上门、大件送装、冷链生鲜、极致时效”等可被 AI 引用的场景内容强势铺量，把高提及率转化为真正的 Top 1 首推权，缩小与顺丰的首位差距。
+                                同一批 C 端词下新桥东先进制造产业园以 54% 提及率、NO. 6.0 位次排第一，全至科技创新园 36%，汇智研发中心 34%，创维创新谷 24% 排第 4、位次 NO. 8.8（第 17）。重点转为两件事：一是把新型显示、电子信息、研发办公一体化这些已能 100% 命中的产业标签写成可被引用的官方口径，把位次从 NO. 8.8 往前拉；二是针对政策补贴、人才公寓、配套齐全、口碑这类 0 提及的软条件补齐事实素材，并推进宝安区政府在线（占引用 31.1%）的载体名录收录。
                             </p>
                         </div>
                     </div>

@@ -7,41 +7,21 @@ const GROUPS = [
     {
         platform: 'DeepSeek',
         rows: [
-            { rank: 1, site: '列表网', self: 29, other: 5, trait: '显著偏好（>3倍于其他平台）', tip: '在DeepSeek上重点投放' },
-            { rank: 2, site: '物流指闻', self: 16, other: 0, trait: '该平台独有', tip: '在DeepSeek上重点投放' },
-            { rank: 3, site: '手机新浪网', self: 9, other: 8, trait: '明显偏好', tip: '在DeepSeek上重点投放' },
-            { rank: 4, site: '网经社', self: 9, other: 2, trait: '显著偏好（>3倍于其他平台）', tip: '在DeepSeek上重点投放' },
-            { rank: 5, site: '山东省邮政管理局', self: 7, other: 12, trait: '其他平台引用较多', tip: '在DeepSeek上重点投放' },
+            { rank: 1, site: '宝安湾', self: 33, other: 8, trait: '显著偏好（>3倍于其他平台）', tip: '在DeepSeek上重点投放' },
+            { rank: 2, site: '百度知道', self: 16, other: 0, trait: '该平台独有', tip: '在DeepSeek上重点投放' },
+            { rank: 3, site: '中原地产', self: 15, other: 1, trait: '显著偏好（>3倍于其他平台）', tip: '在DeepSeek上重点投放' },
+            { rank: 4, site: '咚咚租', self: 11, other: 0, trait: '该平台独有', tip: '在DeepSeek上重点投放' },
+            { rank: 5, site: '搜狐网', self: 8, other: 1, trait: '显著偏好（>3倍于其他平台）', tip: '在DeepSeek上重点投放' },
         ],
     },
     {
         platform: '豆包',
         rows: [
-            { rank: 1, site: '博客园', self: 9, other: 6, trait: '明显偏好', tip: '在豆包上重点投放' },
-            { rank: 2, site: '搜狐网', self: 5, other: 26, trait: '其他平台引用较多', tip: '在豆包上重点投放' },
-            { rank: 3, site: 'Apple', self: 5, other: 6, trait: '其他平台引用较多', tip: '在豆包上重点投放' },
-            { rank: 4, site: '抖音', self: 4, other: 0, trait: '该平台独有', tip: '在豆包上重点投放' },
-            { rank: 5, site: '买购网', self: 2, other: 0, trait: '该平台独有', tip: '在豆包上重点投放' },
-        ],
-    },
-    {
-        platform: '元宝',
-        rows: [
-            { rank: 1, site: 'QQ News', self: 85, other: 5, trait: '显著偏好（>3倍于其他平台）', tip: '在元宝上重点投放' },
-            { rank: 2, site: '搜狐网', self: 21, other: 10, trait: '明显偏好', tip: '在元宝上重点投放' },
-            { rank: 3, site: '快递查询网', self: 13, other: 1, trait: '显著偏好（>3倍于其他平台）', tip: '在元宝上重点投放' },
-            { rank: 4, site: '网易', self: 11, other: 8, trait: '明显偏好', tip: '在元宝上重点投放' },
-            { rank: 5, site: '斑橙云', self: 10, other: 0, trait: '该平台独有', tip: '在元宝上重点投放' },
-        ],
-    },
-    {
-        platform: '通义千问',
-        rows: [
-            { rank: 1, site: '顺丰官网', self: 23, other: 8, trait: '明显偏好', tip: '在通义千问上重点投放' },
-            { rank: 2, site: '界面新闻', self: 13, other: 2, trait: '显著偏好（>3倍于其他平台）', tip: '在通义千问上重点投放' },
-            { rank: 3, site: '山东省邮政管理局', self: 9, other: 10, trait: '其他平台引用较多', tip: '在通义千问上重点投放' },
-            { rank: 4, site: '凤凰网', self: 9, other: 8, trait: '明显偏好', tip: '在通义千问上重点投放' },
-            { rank: 5, site: '哔哩哔哩', self: 9, other: 0, trait: '该平台独有', tip: '在通义千问上重点投放' },
+            { rank: 1, site: '抖音', self: 37, other: 0, trait: '该平台独有', tip: '在豆包上重点投放' },
+            { rank: 2, site: '58同城', self: 31, other: 1, trait: '显著偏好（>3倍于其他平台）', tip: '在豆包上重点投放' },
+            { rank: 3, site: '今日头条', self: 20, other: 2, trait: '显著偏好（>3倍于其他平台）', tip: '在豆包上重点投放' },
+            { rank: 4, site: '1233厂房网', self: 19, other: 1, trait: '显著偏好（>3倍于其他平台）', tip: '在豆包上重点投放' },
+            { rank: 5, site: '网易', self: 14, other: 4, trait: '显著偏好（>3倍于其他平台）', tip: '在豆包上重点投放' },
         ],
     },
 ];
@@ -187,8 +167,7 @@ export default function Page_PlatformFilterLogicB() {
                                 筛选逻辑动作
                             </span>
                             <p className="text-zinc-300 text-[1.15rem] leading-relaxed mt-1">
-                                针对不同 AI 平台偏好，每个平台筛选出1个特定网站，最能体现该 AI
-                                平台差异化特征和信息抓取习惯。
+                                排除 A 组共性网站后，每个 AI 平台再取引用频次最高的 5 个差异化网站。10 个站里 3 个是单平台独有，两家模型的取数习惯泾渭分明：DeepSeek 走本地资讯与商办租赁路线（宝安湾、中原地产、咚咚租），豆包则集中在内容与信息分发平台（抖音、58同城、今日头条、1233厂房网）。
                             </p>
                         </div>
                     </div>

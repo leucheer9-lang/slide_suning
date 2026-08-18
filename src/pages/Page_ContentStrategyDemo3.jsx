@@ -52,7 +52,7 @@ export default function Page_ContentStrategyDemo3() {
                                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2" /><circle cx="8.5" cy="8.5" r="1.5" /><polyline points="21 15 16 10 5 21" /></svg>
                                 </div>
                                 <span className="text-base sm:text-lg font-medium tracking-widest text-zinc-400 uppercase">生成文章示意图</span>
-                                <span className="text-xs sm:text-sm mt-3 text-zinc-600 opacity-80">请在 public/charts/ 中放入图片 file geo-article-generation-demo2.png</span>
+                                <span className="text-xs sm:text-sm mt-3 text-zinc-600 opacity-80">请在 public/charts/ 中放入图片文件 geo-article-generation-demo2.png</span>
                             </div>
                         </div>
                     </div>

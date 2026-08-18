@@ -96,13 +96,13 @@ export default function Page_GeoOptImplementation() {
                                 面对同一个问题，AI 会兵分几路去查：
                                 <div className="mt-1.5 space-y-1 pl-2">
                                     <span className="block text-zinc-300 font-semibold">
-                                        ① 查榜单（一体化供应链服务商排行）
+                                        ① 查榜单（宝安十大产业园区排行）
                                     </span>
                                     <span className="block text-zinc-300 font-semibold">
-                                        ② 查对比（京东物流和顺丰哪个更合适）
+                                        ② 查对比（创维创新谷和新桥东哪个更合适）
                                     </span>
                                     <span className="block text-zinc-300 font-semibold">
-                                        ③ 查避坑（京东物流是不是更贵）
+                                        ③ 查避坑（创维创新谷租金是不是更贵）
                                     </span>
                                 </div>
                             </div>
@@ -239,7 +239,7 @@ export default function Page_GeoOptImplementation() {
                                 通过持续的数据监测，进行闭环验证与调整
                             </h4>
                             <p className="text-zinc-200 text-[13.5px] lg:text-[15.5px] xl:text-[17.5px] leading-relaxed z-10">
-                                文章发出去只是开始。我们会每天监测 AI 到底引用了哪些文章、京东物流排在第几名。根据这些真实反馈，不断调整我们要发什么内容、去哪个平台发。
+                                文章发出去只是开始。我们会每天监测 AI 到底引用了哪些文章、创维创新谷排在第几名。根据这些真实反馈，不断调整我们要发什么内容、去哪个平台发。
                             </p>
                         </div>
                     </div>

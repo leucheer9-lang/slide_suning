@@ -2,7 +2,8 @@
 import RankPanel from '../components/geoone/RankPanel';
 
 /* ══════════════ 数据：换竞品排名时只改这一段 ══════════════ */
-/* 来源：GEO ONE 419 ToC · mention-rate / top1 / position 全量榜 */
+/* 来源：GEO ONE 481 创维创新谷-ToC① · mention-rate / top1 / position 全量榜，2026-08-14 */
+/* 本品未进前五的两栏取前四名 + 本品，本品行带真实 rank */
 
 const COLUMNS = [
     {
@@ -10,11 +11,11 @@ const COLUMNS = [
         subtitle: '产品或品牌在AI生态中提及率排名',
         valueLabel: '提及率',
         rows: [
-            { name: '顺丰', value: '85.8%' },
-            { name: '京东物流', value: '72.5%', target: true },
-            { name: '中通快递', value: '45.0%' },
-            { name: '圆通快递', value: '38.3%' },
-            { name: '申通快递', value: '37.5%' },
+            { name: '新桥东先进制造产业园', value: '54.0%' },
+            { name: '全至科技创新园', value: '36.0%' },
+            { name: '汇智研发中心', value: '34.0%' },
+            { name: '创维创新谷', value: '24.0%', target: true },
+            { name: '宝安桃花源科技创新园', value: '24.0%' },
         ],
     },
     {
@@ -22,11 +23,11 @@ const COLUMNS = [
         subtitle: '产品或品牌在AI生态中Top1提及率排名',
         valueLabel: 'Top1提及率',
         rows: [
-            { name: '顺丰', value: '47.5%' },
-            { name: '京东物流', value: '7.5%', target: true },
-            { name: '德邦快递', value: '5.0%' },
-            { name: '申通快递', value: '5.0%' },
-            { name: '闪送', value: '5.0%' },
+            { name: '新桥东先进制造产业园', value: '26.0%' },
+            { name: '腾讯', value: '6.0%' },
+            { name: '前海科兴科学园', value: '4.0%' },
+            { name: '北大科创园', value: '4.0%' },
+            { name: '创维创新谷', value: '2.0%', rank: 10, target: true },
         ],
     },
     {
@@ -34,11 +35,11 @@ const COLUMNS = [
         subtitle: '产品或品牌在AI生态中平均提及位次排名',
         valueLabel: '平均提及位次',
         rows: [
-            { name: '顺丰', value: 'NO. 3.0' },
-            { name: '京东物流', value: 'NO. 4.2', target: true },
-            { name: '中通快递', value: 'NO. 4.7' },
-            { name: '圆通快递', value: 'NO. 5.3' },
-            { name: '申通快递', value: 'NO. 5.5' },
+            { name: '新桥东先进制造产业园', value: 'NO. 6.0' },
+            { name: '全至科技创新园', value: 'NO. 7.0' },
+            { name: '汇智研发中心', value: 'NO. 7.6' },
+            { name: '宝安桃花源科技创新园', value: 'NO. 8.0' },
+            { name: '创维创新谷', value: 'NO. 8.8', rank: 17, target: true },
         ],
     },
 ];
@@ -51,7 +52,7 @@ export default function Page_GeoReport_Competitors_Analysis() {
             <div className="w-full flex flex-col h-full relative z-10 pt-0 gap-3">
                 <div className="text-center mb-4 mt-[-20px] shrink-0 relative z-10">
                     <h1 className="text-[28px] lg:text-[32px] font-bold text-white tracking-widest leading-none">
-                        竞品横向对比 · C端
+                        竞品横向对比 · 优化词 C 端
                     </h1>
                 </div>
 
@@ -67,7 +68,7 @@ export default function Page_GeoReport_Competitors_Analysis() {
                                 核心发现
                             </h3>
                             <div className="flex-grow text-[16px] lg:text-[18px] xl:text-[20px] text-zinc-200 leading-relaxed text-justify">
-                                京东物流品牌提及率 72.5%，稳居第二，但落后顺丰（85.8%）约 13 个点；对中通、圆通、申通已形成明显断层优势。
+C 端选址场景下新桥东先进制造产业园提及率 54% 排第一，全至科技创新园 36%，汇智研发中心 34%；创维创新谷 24%，在 166 家竞品中排第 4、行业影响力第 8，已经进入第一梯队的边缘。
                             </div>
                         </div>
                     </div>
@@ -79,7 +80,7 @@ export default function Page_GeoReport_Competitors_Analysis() {
                                 竞争格局总结
                             </h3>
                             <div className="flex-grow text-[16px] lg:text-[18px] xl:text-[20px] text-zinc-200 leading-relaxed text-justify">
-                                Top 1 首推率仅 7.5%，顺丰高达 47.5%。C 端问答里“进清单容易、占首位很难”，首位红利几乎被顺丰锁定。
+                                新桥东 Top1 首推率 26%，是第二名腾讯（6%）的四倍多；创维创新谷首推率 2%（第 10）、平均位次 NO. 8.8（第 17）。能进榜，但基本落在长列表中后段，很难成为首选答案。
                             </div>
                         </div>
                     </div>
@@ -91,7 +92,7 @@ export default function Page_GeoReport_Competitors_Analysis() {
                                 行动建议
                             </h3>
                             <div className="flex-grow text-[16px] lg:text-[18px] xl:text-[20px] text-zinc-200 leading-relaxed text-justify">
-                                守住大件送装与服务口碑长板，同时用可引用的时效实测与对比测评内容攻坚 Top 1，缩小对顺丰的首位差距。
+                                提及率已经站住第 4，下一步是把位次从 NO. 8.8 往前推：强化新型显示、电子信息这类差异化产业标签，同时补齐政策补贴、人才公寓、配套等 0 提及的软条件内容。
                             </div>
                         </div>
                     </div>

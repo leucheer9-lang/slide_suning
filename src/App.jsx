@@ -35,7 +35,10 @@ flatSlides.forEach((slide) => {
           subtitle={slide.subtitle}
           brandLabel={slide.brandLabel || parsedConfig.toc?.brandLabel}
           chapterIndex={slide.chapterIndex}
-          chapters={parsedConfig.chapters}
+          navNumber={slide.navNumber}
+          chapters={parsedConfig.chapters.filter(
+            (c) => (c.group || 'default') === (slide.group || 'default')
+          )}
         />
       );
       break;

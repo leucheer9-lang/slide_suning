@@ -28,12 +28,12 @@ function Page_GeoWorkAcceptance() {
                             </thead>
                             <tbody className="text-[17.5px] xl:text-[19px] leading-relaxed">
 
-                                {/* Row 1: Tiles (主要产品词) */}
+                                {/* Row 1: 优化词 */}
                                 <tr className="hover:bg-white/[0.01] transition-colors duration-200">
                                     <td className="py-3 xl:py-4 pl-3.5 font-semibold text-zinc-100 align-middle border-b border-white/[0.22]">
                                         <div className="flex flex-col gap-1 mt-1">
-                                            <span className="text-[18.5px] xl:text-[20.5px] text-white font-black">主要产品词</span>
-                                            <span className="text-[15px] xl:text-[16px] text-zinc-400 font-bold">（儿童护肤品）</span>
+                                            <span className="text-[18.5px] xl:text-[20.5px] text-white font-black">优化词</span>
+                                            <span className="text-[15px] xl:text-[16px] text-zinc-400 font-bold">（产业园区招商 · C端 + B端）</span>
                                         </div>
                                     </td>
                                     <td className="py-3 xl:py-4 text-zinc-300 align-middle pr-4 border-b border-white/[0.22] border-l border-white/[0.22] pl-5">
@@ -45,7 +45,7 @@ function Page_GeoWorkAcceptance() {
                                                 </div>
                                                 <ul className="list-none pl-4 text-zinc-300 flex flex-col gap-1.5 leading-relaxed text-[16.5px] xl:text-[18px]">
                                                     <li>1、<span className="text-white font-semibold">品牌现状诊断：</span>监测品牌提及、推荐排名、竞品对比、负面信息和引用来源。</li>
-                                                    <li>2、<span className="text-white font-semibold">词条策略规划：</span>规划品牌词、产品词、高转化问题词，并做优先级分层。</li>
+                                                    <li>2、<span className="text-white font-semibold">词条策略规划：</span>规划优化词、监测词与高转化问题词，并做优先级分层。</li>
                                                     <li>3、<span className="text-white font-semibold">覆盖平台策略：</span>针对不同 AI 平台制定优化策略，统一品牌表达口径。</li>
                                                 </ul>
                                             </div>
@@ -83,18 +83,18 @@ function Page_GeoWorkAcceptance() {
                                         <div className="flex flex-col gap-2 bg-white/[0.025] border border-white/[0.06] p-3.5 xl:p-4.5 rounded-xl text-center shadow-lg">
                                             <span className="text-[17.5px] xl:text-[19px] text-white font-extrabold tracking-widest">共建品牌资料库</span>
                                             <p className="text-[16px] xl:text-[17px] text-zinc-300 leading-relaxed text-left mt-2 border-t border-white/10 pt-2">
-                                                需品牌方配合提供品牌画册、产品手册、核心产品卖点及近期技术宣发口径等权威信息源。
+                                                需品牌方配合提供园区画册、房源与租金清单、招商政策及渠道合作口径等权威信息源。
                                             </p>
                                         </div>
                                     </td>
                                 </tr>
 
-                                {/* Row 3: Brand (品牌词) */}
+                                {/* Row 3: 负面及错误信息 */}
                                 <tr className="hover:bg-white/[0.01] transition-colors duration-200">
                                     <td className="py-3 xl:py-4 pl-3.5 font-semibold text-zinc-100 align-middle">
                                         <div className="flex flex-col gap-1 mt-1">
-                                            <span className="text-[18.5px] xl:text-[20.5px] text-white font-black">品牌词</span>
-                                            <span className="text-[15px] xl:text-[16px] text-zinc-400 font-bold">（负面及错误）</span>
+                                            <span className="text-[18.5px] xl:text-[20.5px] text-white font-black">负面及错误信息</span>
+                                            <span className="text-[15px] xl:text-[16px] text-zinc-400 font-bold">（纠偏及对冲）</span>
                                         </div>
                                     </td>
                                     <td className="py-3 xl:py-4 text-zinc-300 align-middle pr-4 border-l border-white/[0.22] pl-5">

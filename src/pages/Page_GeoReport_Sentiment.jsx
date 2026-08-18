@@ -4,46 +4,47 @@ import GeoOneApp, { MAIN_LEFT, MAIN_W } from '../components/geoone/GeoOneApp';
 import { C, Tag, GhostButton } from '../components/geoone/ui';
 
 /* ══════════════ 数据：换负面回答列表时只改这一段 ══════════════ */
-/* 来源：GEO ONE /api/sentiments/negative-answers · 419 ToC + 420 ToB · 2026-08-04 */
+/* 来源：GEO ONE /api/sentiments/negative-answers · 483 监测词-ToC / 484 监测词-ToB · 2026-08-15 */
+/* C 端 7 条 + B 端 6 条共 13 条负面；此处取覆盖两类场景的 5 条 */
 
-const TARGET = '京东物流';
+const TARGET = '创维创新谷';
 const APP_H = 633;
 
 const ROWS = [
     {
-        term: '能寄洗衣服被子的快递推荐',
-        type: '价格错误',
-        color: 'blue',
+        term: '创维创新谷配套怎么样',
+        type: '产品信息错误',
+        color: 'orange',
         answer:
-            '回答点名「顺丰标快、京东标快不推荐」寄被子等轻泡货，称按小件首重续重会贵一倍；答案据此贬抑京东标快价格。',
+            '回答写「园区内部配套很强，短板主要是地铁较远」，完全漏掉 13 号线上盖这一事实；引用的招租页标题里明明写着「13 号线上盖」。',
     },
     {
-        term: '网购退货上门取件方便的快递推荐',
-        type: '价格错误',
-        color: 'blue',
+        term: '创维创新谷写字楼质量怎么样',
+        type: '产品信息错误',
+        color: 'orange',
         answer:
-            '回答给出京东退货小件/大件价，并称非京东场景散客价不如顺丰与通达系，构成价格错误叙事。',
+            '两条回答分别称「园区无地铁直达」「13 号线仍在建」，把交通列为主要短板，直接压低了整体评价结论。',
     },
     {
-        term: '当日达快递推荐',
+        term: '创维创新谷物业怎么样',
         type: '负面回答',
         color: 'red',
         answer:
-            '回答称达达快送等仅适 3–5 公里短途、跨区长途急件不推荐，把当日达能力窄化为商圈短途。',
+            '该词条 2 条回答均引用质量万里行、315 投诉平台的公寓投诉帖，归纳为「施工噪音扰民、物业推诿、不退押金」。',
     },
     {
-        term: '性价比高的物流公司推荐',
+        term: '创维创新谷口碑怎么样',
         type: '负面回答',
         color: 'red',
         answer:
-            'B端问答称京东快递（非会员）偏贵、该重量段不划算，强化“价格偏高 / 性价比低”印象。',
+            '承认产业与园区环境评价高，但顺势点出居住与消费体验负面不少，引用的仍是同一批公寓施工噪音与押金纠纷投诉。',
     },
     {
-        term: '一体化供应链服务商推荐',
-        type: '负面回答',
-        color: 'red',
+        term: '创维创新谷和甲岸美生智谷哪个好带客',
+        type: '产品信息错误',
+        color: 'orange',
         answer:
-            '回答将京东物流表述为「品牌溢价高」；对应研报实为正面评价「赢得品牌溢价」，属误读引用。',
+            'B 端带客对比题里以「园区没有地铁」为由把甲岸美生智谷判为更适合带外部客户来访，交通信息错误直接影响渠道推荐结论。',
     },
 ];
 
@@ -72,10 +73,10 @@ export default function Page_GeoReport_Sentiment() {
                                 <div className="bg-white/[0.015] border border-white/[0.06] border-l-4 border-l-rose-500 rounded-r-xl px-3.5 py-2 flex flex-col h-full justify-start gap-1">
                                     <h4 className="text-[17px] lg:text-[18px] xl:text-[19px] font-bold text-white flex items-center gap-2 shrink-0 mb-0.5">
                                         <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
-                                        轻泡件 / 退货资费被标贵
+                                        地铁信息严重滞后
                                     </h4>
                                     <p className="text-[14px] lg:text-[15px] xl:text-[16px] text-zinc-200 leading-relaxed text-justify">
-                                        AI 在寄被子洗衣、网购退货等场景把京东标快写成“按体积重会贵一倍 / 散客不如通达系”，容易把体积重计费机制放大成品牌价格劣势。
+                                        13 条负面里有 9 条属于这一类，说法包括「园区无地铁直达」「应人石站仍在建」。13 号线上盖已是既成事实，但网上缺少可被抓取的权威更新。
                                     </p>
                                 </div>
                             </div>
@@ -84,10 +85,10 @@ export default function Page_GeoReport_Sentiment() {
                                 <div className="bg-white/[0.015] border border-white/[0.06] border-l-4 border-l-rose-500 rounded-r-xl px-3.5 py-2 flex flex-col h-full justify-start gap-1">
                                     <h4 className="text-[17px] lg:text-[18px] xl:text-[19px] font-bold text-white flex items-center gap-2 shrink-0 mb-0.5">
                                         <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
-                                        当日达被窄化为短途
+                                        对比题里被判给竞品
                                     </h4>
                                     <p className="text-[14px] lg:text-[15px] xl:text-[16px] text-zinc-200 leading-relaxed text-justify">
-                                        在「当日达」提问下，达达/京东秒送常被写成仅适 3–5 公里商圈，跨区急件不推荐，削弱「当日达 / 211」心智。
+                                        「和甲岸美生智谷哪个好带客」「和雪花科创城哪个好合作」等 4 条对比词，模型都以交通不便为由把优势判给对方，直接影响中介推荐意愿。
                                     </p>
                                 </div>
                             </div>
@@ -96,10 +97,10 @@ export default function Page_GeoReport_Sentiment() {
                                 <div className="bg-rose-500/[0.015] border border-rose-500/15 border-l-4 border-l-rose-500 rounded-r-xl px-3.5 py-2 flex flex-col h-full justify-start gap-1">
                                     <h4 className="text-[17px] lg:text-[18px] xl:text-[19px] font-bold text-white flex items-center gap-2 shrink-0 mb-0.5">
                                         <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
-                                        「贵 / 溢价高」标签固化
+                                        公寓投诉帖被摘成园区结论
                                     </h4>
                                     <p className="text-[14px] lg:text-[15px] xl:text-[16px] text-zinc-200 leading-relaxed text-justify">
-                                        B 端性价比、一体化供应链问答里反复出现“偏贵、性价比低、品牌溢价高”，需用可核验报价口径与场景选型表对冲。
+                                        问物业、问口碑时，模型直接引用质量万里行与 315 平台的公寓投诉帖，把「施工噪音、不退押金」这类居住侧个案归纳成整个园区的物业水平。
                                     </p>
                                 </div>
                             </div>
@@ -108,7 +109,7 @@ export default function Page_GeoReport_Sentiment() {
                 </div>
             }
         >
-            <GeoOneApp height={APP_H} active="正负面" title="正负面" target={TARGET} brand="京东物流" brandSub="京东物流">
+            <GeoOneApp height={APP_H} active="正负面" title="正负面" target={TARGET} brand="创维创新谷(监测词)" brandSub="创维创新谷" avatar="创">
                 <div
                     style={{
                         position: 'absolute',

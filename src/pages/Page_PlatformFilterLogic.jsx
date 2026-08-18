@@ -13,73 +13,63 @@ import {
 
 const META = {
     source: 'geo-one',
-    platforms: 'DeepSeek、豆包、元宝、通义千问',
-    dateRange: '2026-08-04 ~ 2026-08-04',
-    exportDate: '2026-08-05',
+    platforms: 'DeepSeek、豆包',
+    dateRange: '2026-08-14 ~ 2026-08-14',
+    exportDate: '2026-08-17',
 };
 
 const LOGIC =
-    '筛选逻辑: 取四个AI平台引用Top10交叉合并，挑出在≥2个平台Top10中都出现的前5个共性高频网站';
+    '筛选逻辑: 取两个AI平台引用Top10交叉合并，挑出在≥2个平台Top10中都出现的前5个共性高频网站';
 
 const ROWS = [
     {
         rank: 1,
-        site: '今日头条',
-        total: 79,
-        coverCount: 3,
-        cover: '豆包、元宝、通义千问',
-        deepseek: 0,
-        doubao: 2,
-        yuanbao: 56,
-        tongyi: 21,
-        stars: 4,
+        site: '宝安区政府在线',
+        total: 119,
+        coverCount: 2,
+        cover: 'DeepSeek、豆包',
+        deepseek: 40,
+        doubao: 79,
+        stars: 3,
     },
     {
         rank: 2,
-        site: '新浪新闻',
-        total: 42,
-        coverCount: 3,
-        cover: 'DeepSeek、豆包、元宝',
-        deepseek: 7,
-        doubao: 8,
-        yuanbao: 27,
-        tongyi: 2,
-        stars: 4,
+        site: '深圳政府在线',
+        total: 44,
+        coverCount: 2,
+        cover: 'DeepSeek、豆包',
+        deepseek: 22,
+        doubao: 22,
+        stars: 3,
     },
     {
         rank: 3,
-        site: '百度知道',
-        total: 39,
+        site: '东莞2233厂房网',
+        total: 19,
         coverCount: 2,
-        cover: 'DeepSeek、通义千问',
-        deepseek: 20,
-        doubao: 0,
-        yuanbao: 1,
-        tongyi: 19,
+        cover: 'DeepSeek、豆包',
+        deepseek: 8,
+        doubao: 11,
         stars: 3,
     },
     {
         rank: 4,
-        site: '快递鸟',
-        total: 35,
-        coverCount: 2,
-        cover: 'DeepSeek、元宝',
-        deepseek: 24,
-        doubao: 0,
-        yuanbao: 11,
-        tongyi: 7,
+        site: '广州国检检测有限公司',
+        total: 81,
+        coverCount: 1,
+        cover: '豆包',
+        deepseek: 4,
+        doubao: 81,
         stars: 3,
     },
     {
         rank: 5,
-        site: '咸宁新闻网',
-        total: 28,
-        coverCount: 2,
-        cover: '豆包、通义千问',
-        deepseek: 0,
-        doubao: 2,
-        yuanbao: 6,
-        tongyi: 26,
+        site: '安居客',
+        total: 47,
+        coverCount: 1,
+        cover: '豆包',
+        deepseek: 1,
+        doubao: 47,
         stars: 3,
     },
 ];
@@ -95,7 +85,7 @@ const C = {
     logic: '#1D6FBF',
 };
 
-const COLS = '0.55fr 1.35fr 0.85fr 0.95fr 2.1fr 0.85fr 0.7fr 0.7fr 0.85fr 0.95fr';
+const COLS = '0.55fr 1.6fr 0.95fr 1.05fr 1.9fr 0.9fr 0.8fr 1fr';
 const HEADERS = [
     '排名',
     '网站名称',
@@ -104,8 +94,6 @@ const HEADERS = [
     '覆盖平台',
     'DeepSeek',
     '豆包',
-    '元宝',
-    '通义千问',
     '建议权重',
 ];
 
@@ -172,8 +160,6 @@ function TableA() {
                         </Cell>
                         <Cell border={C.border}>{r.deepseek}</Cell>
                         <Cell border={C.border}>{r.doubao}</Cell>
-                        <Cell border={C.border}>{r.yuanbao}</Cell>
-                        <Cell border={C.border}>{r.tongyi}</Cell>
                         <Cell>
                             <Stars n={r.stars} />
                         </Cell>
@@ -210,8 +196,10 @@ export default function Page_PlatformFilterLogic() {
                                 筛选逻辑动作
                             </span>
                             <p className="text-zinc-300 text-[1.15rem] leading-relaxed mt-1">
-                                查询三个 AI 平台引用来源中出现得最多的前 10 个网站，对其进行交叉合并统计，筛选出前 5
-                                个共性高频引用网站（即所有平台赋予权重均较高的核心阵地）。
+                                取 DeepSeek、豆包两个 AI 平台引用来源各自的前 10 个网站交叉合并，筛选出在 ≥2 个平台
+                                Top10 中都出现的 5 个共性高频网站。这 5 站几乎被竞品包场——行业头部的新桥东先进制造产业园命中率在
+                                50.6%～67.2% 之间，燕罗智能网联汽车产业园也有 10.6%～45.5%；创维创新谷最高只有安居客的
+                                4.2%，东莞2233厂房网上为 0 次。
                             </p>
                         </div>
                     </div>

@@ -29,6 +29,7 @@ export function parseConfig(flatConfig) {
         currentChapter = {
           title: item.title,
           subtitle: item.subtitle || '',
+          group: item.group || 'default',
           brandLabel: item.brandLabel || '',
           backgroundImage: item.backgroundImage,
           sections: [],
@@ -54,6 +55,13 @@ export function parseConfig(flatConfig) {
         }
         break;
     }
+  }
+
+  const groupCounters = {};
+  for (const ch of result.chapters) {
+    const g = ch.group || 'default';
+    groupCounters[g] = (groupCounters[g] || 0) + 1;
+    ch.navNumber = groupCounters[g];
   }
 
   return result;
@@ -95,6 +103,8 @@ export function generateSlides(parsed) {
       brandLabel: chapter.brandLabel,
       backgroundImage: chapter.backgroundImage,
       chapterIndex: ci,
+      group: chapter.group,
+      navNumber: chapter.navNumber,
     });
 
     chapter.sections.forEach((section, si) => {

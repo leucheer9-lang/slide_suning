@@ -1,152 +1,323 @@
 {
-  "419": {
+  "483": {
+    "meta": {
+      "fetched_at": "2026-08-17T08:15:12.766Z",
+      "project_id": 483,
+      "start_date": "2026-08-15",
+      "end_date": "2026-08-15"
+    },
     "stats": {
-      "positive_rate": 97.5,
-      "positive_percentage": 97.5,
-      "negative_percentage": 2.5,
+      "positive_rate": 82.5,
+      "positive_percentage": 82.5,
+      "negative_percentage": 17.5,
       "positive_keywords": [
-        "时效快",
-        "服务规范",
-        "服务体验好"
+        "配套完善",
+        "性价比高",
+        "交通便利"
       ],
       "negative_keywords": [
-        "不推荐",
-        "适用场景有限",
-        "价格偏高",
-        "性价比低",
-        "价格偏贵"
+        "地铁未通",
+        "物业推诿",
+        "噪音扰民",
+        "押金纠纷"
       ],
       "daily_stats": [
         {
-          "date": "2026-08-04",
-          "positive_rate": 97.5
+          "date": "2026-08-15",
+          "positive_rate": 82.5
         }
       ]
     },
     "negatives": {
-      "total": 3,
+      "total": 7,
       "page": 1,
-      "page_size": 50,
+      "page_size": 100,
       "total_pages": 1,
       "list": [
         {
-          "conversation_id": 280384,
-          "entry_id": 11048,
-          "entry_name": "能寄洗衣服被子的快递推荐",
-          "negative_type": "price_error",
-          "negative_type_label": "价格错误",
-          "summary": "回答点名「顺丰标快、京东标快不推荐」寄被子等轻泡货，称按小件首重续重会贵一倍；引用源确有体积重「可能贵一倍」的机制说明，答案据此贬抑京东标快价格，归为价格错误。",
-          "ai_answer": "衣服被子属于轻泡货（体积大、实重轻、不怕摔），又是要寄去洗衣店洗再寄回，核心思路就一句：先抽真空压缩，再走大件快运/比价平台，别用普通顺丰标快。下面按场景给你抄作业。\n一、自己打包寄到洗衣店（最常用）",
-          "screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/6095513937a243f88473c1bfb784fe44.png",
-          "conversation_time": "2026-08-03T16:00:00.000Z",
+          "conversation_id": 369505,
+          "entry_id": 12785,
+          "entry_name": "创维创新谷配套怎么样",
+          "negative_type": "product_info_error",
+          "negative_type_label": "产品信息错误",
+          "summary": "漏写13号线称无地铁",
+          "ai_answer": "深圳宝安石岩・创维创新谷配套\n创维创新谷是产城综合体，园区内部配套很强，短板主要是地铁较远深圳宝安网。\n创维创新谷园区实景\n\n✅园区内部配套（强项）\n1. 商业约 6.1 万㎡商场、餐饮、便利店、影院",
+          "screenshot_url": "https://app.geoindexfuture.com/screenshots/20260815/114337a81fa540a590cd8896749592e3.png",
+          "conversation_time": "2026-08-14T16:00:00.000Z",
           "citations": [
             {
-              "article_id": 413101,
-              "logo_url": "https://p26-spider-image-sign.byteimg.com/isp-i18n-media/image/85a1f404488a843fec0041af8590387f~tplv-e9ol9do63j-thumbnail.jpeg?rk3s=feb11e32&x-expires=1775816929&x-signature=A3VJpRndCfC7Mvc8qe1HHyHiKXo%3D",
-              "article_title": "大件行李怎么寄便宜?自用省钱攻略比价工具实测分享",
-              "link_url": "https://cul.sohu.com/a/996238779_121801689"
+              "article_id": 549125,
+              "logo_url": "",
+              "article_title": "45万㎡科技桃花源_13号线上盖_创维创新谷（宝安石岩）全球招租",
+              "link_url": "http://www.xzhfang.cn/house/2042.html"
             }
           ]
         },
         {
-          "conversation_id": 280383,
-          "entry_id": 11038,
-          "entry_name": "网购退货上门取件方便的快递推荐",
-          "negative_type": "price_error",
-          "negative_type_label": "价格错误",
-          "summary": "回答给出京东退货「小件8元、大件30/50、PLUS免运费」，并称非京东场景散客价14–17元起、不如顺丰与通达系；其中8/30/50与引用源一致，但同时贬低京东散客价且与同答顺丰18–23元自相矛盾，构成价格错误叙事。",
-          "ai_answer": "网购退货要\"省事\"，核心不是单看哪家快递员跑得快，而是看能不能在订单页一键下单、物流自动回传、运费有平台兜底。按场景给你排个序：\n最省事：走平台内置\"上门取件\"，别自己叫快递\n淘宝/天猫/闲鱼 → 直",
-          "screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/5f78274fd3204ae1bad17aa72481a4a0.png",
-          "conversation_time": "2026-08-03T16:00:00.000Z",
-          "citations": [
-            {
-              "article_id": 414763,
-              "logo_url": "https://kimi-web-img.moonshot.cn/prod-data/icon-cache-img/www.dangdangkuaidi.com",
-              "article_title": "京东退快递运费多少钱",
-              "link_url": "https://www.dangdangkuaidi.com/kuaidi/debang/1120289.html"
-            }
-          ]
-        },
-        {
-          "conversation_id": 280375,
-          "entry_id": 11030,
-          "entry_name": "当日达快递推荐",
+          "conversation_id": 369497,
+          "entry_id": 12788,
+          "entry_name": "创维创新谷物业怎么样",
           "negative_type": "negative_answer",
           "negative_type_label": "负面回答",
-          "summary": "回答称达达快送等仅适3–5公里短途、跨区长途急件不推荐；引用源亦写达达高度适配核心商圈短途，超出商圈配送时长显著增加，全城长途紧急急送时效竞争力较弱。",
-          "ai_answer": "当日达按「同城」和「跨省/跨城」两条线选，别混着看。直接给你场景化结论：\n同城当日达（市内/近郊）\n\n•最急+贵重/文件/证件/蛋糕：闪送​ 或顺丰同城一对一专送，不拼单，平均 7 分钟上门、26 分",
-          "screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/270b3f19866649908f7e39def7dd4b38.png",
-          "conversation_time": "2026-08-03T16:00:00.000Z",
+          "summary": "公寓噪音扰民，押金纠纷",
+          "ai_answer": "深圳宝安创维创新谷物业\n物业主体：创维集团科技园管理有限公司（创维自持物业），物业费8 元 /㎡・月创维创新谷，属于大型产城综合体物业（研发办公 + 公寓 + 商业）。\n\n✅ 优点\n1. 硬件与基础运",
+          "screenshot_url": "https://app.geoindexfuture.com/screenshots/20260815/dd189605c0d94e58817007109fa944c2.png",
+          "conversation_time": "2026-08-14T16:00:00.000Z",
           "citations": [
             {
-              "article_id": 412736,
-              "logo_url": "https://p26-spider-image-sign.byteimg.com/isp-i18n-media/image/85a1f404488a843fec0041af8590387f~tplv-e9ol9do63j-thumbnail.jpeg?rk3s=feb11e32&x-expires=1775816929&x-signature=A3VJpRndCfC7Mvc8qe1HHyHiKXo%3D",
-              "article_title": "时效专项横评:即时送达品牌哪家配送时效快?",
-              "link_url": "https://www.sohu.com/a/1034321052_122642012"
+              "article_id": 549264,
+              "logo_url": "",
+              "article_title": "投诉创维创新谷公寓客服物业，对楼下施工置之不理，不调解，不退押金_质量万里行消费服务平台",
+              "link_url": "http://www.315tech.com/web/complaintdetail/4af5558c95a34b92b81d8891cdf486d5/c1"
+            }
+          ]
+        },
+        {
+          "conversation_id": 369496,
+          "entry_id": 12788,
+          "entry_name": "创维创新谷物业怎么样",
+          "negative_type": "negative_answer",
+          "negative_type_label": "负面回答",
+          "summary": "公寓施工噪音，物业不退押金",
+          "ai_answer": "关于创维创新谷的物业，我找到的信息呈现两面性：园区硬件和智慧化管理定位较高，但公寓的客诉处理有过负面记录。\n我把找到的一些关键信息整理成了下表，你可以参考一下：\n\n评价维度 具体情况 信息来源\n---",
+          "screenshot_url": "https://app.geoindexfuture.com/screenshots/20260815/44566d35e18c4f0580e9a082b4a39e6c.png",
+          "conversation_time": "2026-08-14T16:00:00.000Z",
+          "citations": [
+            {
+              "article_id": 549098,
+              "logo_url": "",
+              "article_title": "投诉创维创新谷公寓客服物业，对楼下施工置之不理，不调解，不退押金",
+              "link_url": "http://zlwlx.cn/tousu/house/396251.html"
+            }
+          ]
+        },
+        {
+          "conversation_id": 369487,
+          "entry_id": 12794,
+          "entry_name": "创维创新谷性价比怎么样",
+          "negative_type": "product_info_error",
+          "negative_type_label": "产品信息错误",
+          "summary": "误称应人石站仍在建",
+          "ai_answer": "创维创新谷（宝安石岩）性价比总结\n创维创新谷外观\n园区航拍\n它是产城综合体，包含研发写字楼 + 人才公寓 + 商业，分办公租赁、公寓居住两部分看性价比。\n位置：宝安区石岩塘头一号路，临近机荷、南光高速",
+          "screenshot_url": "https://app.geoindexfuture.com/screenshots/20260815/5684041183ed4e47867881f21e6b358d.png",
+          "conversation_time": "2026-08-14T16:00:00.000Z",
+          "citations": [
+            {
+              "article_id": 549125,
+              "logo_url": "",
+              "article_title": "45万㎡科技桃花源_13号线上盖_创维创新谷（宝安石岩）全球招租",
+              "link_url": "http://www.xzhfang.cn/house/2042.html"
+            }
+          ]
+        },
+        {
+          "conversation_id": 369472,
+          "entry_id": 12782,
+          "entry_name": "创维创新谷口碑怎么样",
+          "negative_type": "negative_answer",
+          "negative_type_label": "负面回答",
+          "summary": "施工噪音扰民，物业不退押金",
+          "ai_answer": "关于深圳创维创新谷的口碑，不同方面的评价差异很大。它在产业和园区环境上评价很高，但居住和消费体验方面的负面反馈也不少。我把它在不同方面的口碑整理了一下，方便你判断：\n\n👍 亮点：产业高地与便利生活\n",
+          "screenshot_url": "https://app.geoindexfuture.com/screenshots/20260815/2884b5b0c50f4382850433d5ebeb8f51.png",
+          "conversation_time": "2026-08-14T16:00:00.000Z",
+          "citations": [
+            {
+              "article_id": 549098,
+              "logo_url": "",
+              "article_title": "投诉创维创新谷公寓客服物业，对楼下施工置之不理，不调解，不退押金",
+              "link_url": "http://zlwlx.cn/tousu/house/396251.html"
+            }
+          ]
+        },
+        {
+          "conversation_id": 369471,
+          "entry_id": 12790,
+          "entry_name": "创维创新谷写字楼质量怎么样",
+          "negative_type": "product_info_error",
+          "negative_type_label": "产品信息错误",
+          "summary": "误称园区无地铁直达",
+          "ai_answer": "深圳创维创新谷写字楼（宝安石岩）质量综合评价\n创维创新谷实景\n园区航拍\n整体：建筑本体质量靠谱，属于产业园区内甲级标准写字楼，2017‑2018 年建成，创维自建自持开发，没有大规模质量维权曝光记录，",
+          "screenshot_url": "https://app.geoindexfuture.com/screenshots/20260815/d4429133e03f4b5398ecc1f67d3dd7b2.png",
+          "conversation_time": "2026-08-14T16:00:00.000Z",
+          "citations": [
+            {
+              "article_id": 549125,
+              "logo_url": "",
+              "article_title": "45万㎡科技桃花源_13号线上盖_创维创新谷（宝安石岩）全球招租",
+              "link_url": "http://www.xzhfang.cn/house/2042.html"
+            }
+          ]
+        },
+        {
+          "conversation_id": 369470,
+          "entry_id": 12790,
+          "entry_name": "创维创新谷写字楼质量怎么样",
+          "negative_type": "product_info_error",
+          "negative_type_label": "产品信息错误",
+          "summary": "误称13号线仍在建",
+          "ai_answer": "从公开信息来看，创维创新谷是一座品质不错的甲级科创产业园区，硬件条件和企业服务都挺扎实的。不过，它的优点和局限性也很明显，主要体现在\"园区自身实力强、配套全\"和\"位置相对偏、交通还在完善中\"这两点上。",
+          "screenshot_url": "https://app.geoindexfuture.com/screenshots/20260815/25812f477bee4be99fa7b590f765eb16.png",
+          "conversation_time": "2026-08-14T16:00:00.000Z",
+          "citations": [
+            {
+              "article_id": 549125,
+              "logo_url": "",
+              "article_title": "45万㎡科技桃花源_13号线上盖_创维创新谷（宝安石岩）全球招租",
+              "link_url": "http://www.xzhfang.cn/house/2042.html"
             }
           ]
         }
       ]
     }
   },
-  "420": {
+  "484": {
+    "meta": {
+      "fetched_at": "2026-08-17T08:15:12.899Z",
+      "project_id": 484,
+      "start_date": "2026-08-15",
+      "end_date": "2026-08-15"
+    },
     "stats": {
-      "positive_rate": 98.3,
-      "positive_percentage": 98.3,
-      "negative_percentage": 1.7,
+      "positive_rate": 85,
+      "positive_percentage": 85,
+      "negative_percentage": 15,
       "positive_keywords": [
-        "网络覆盖广",
-        "时效快",
-        "覆盖广"
+        "配套成熟",
+        "政策支持",
+        "性价比高"
       ],
       "negative_keywords": [
-        "性价比低",
-        "价格偏贵",
-        "品牌溢价高"
+        "地铁未通",
+        "物业推诿",
+        "噪音扰民",
+        "押金纠纷"
       ],
       "daily_stats": [
         {
-          "date": "2026-08-04",
-          "positive_rate": 98.3
+          "date": "2026-08-15",
+          "positive_rate": 85
         }
       ]
     },
     "negatives": {
-      "total": 2,
+      "total": 6,
       "page": 1,
-      "page_size": 50,
+      "page_size": 100,
       "total_pages": 1,
       "list": [
         {
-          "conversation_id": 280490,
-          "entry_id": 11054,
-          "entry_name": "性价比高的物流公司推荐",
+          "conversation_id": 369714,
+          "entry_id": 12810,
+          "entry_name": "创维创新谷报备保护靠谱吗",
           "negative_type": "negative_answer",
           "negative_type_label": "负面回答",
-          "summary": "回答称京东快递（非会员）偏贵、该重量段不划算；引用源亦写京东价与顺丰接近（跨省中件约40–50元），10kg以上跨省过百、不是大件首选。",
-          "ai_answer": "性价比没有\"一家通吃\"，核心是按重量段 + 时效要求 + 是否上门来切。下面按场景给你一张可以直接照抄的清单（价格以 2026 年散户走比价平台/折扣渠道的常见实付价为准，官方挂牌价普遍贵 30%–6",
-          "screenshot_url": "https://app.geoindexfuture.com/screenshots/20260805/e18d36a08a974fc29e0c484bc4820bc0.png",
-          "conversation_time": "2026-08-03T16:00:00.000Z",
+          "summary": "施工噪音扰民，物业不退押金",
+          "ai_answer": "关于“创维创新谷报备保护”是否靠谱，需要区分它是哪种“报备”——从公开信息来看，主要涉及政府的人才住房保障项目和商业办公租赁两种场景，各自的靠谱程度不太一样。\n\n🏠 如果是“人才住房报备”：官方背书",
+          "screenshot_url": "https://app.geoindexfuture.com/screenshots/20260815/28d338bd4a5045fea73eda3d5567b4b6.png",
+          "conversation_time": "2026-08-14T16:00:00.000Z",
           "citations": [
             {
-              "article_id": 417890,
-              "logo_url": "https://p26-spider-image-sign.byteimg.com/isp-i18n-media/image/85a1f404488a843fec0041af8590387f~tplv-e9ol9do63j-thumbnail.jpeg?rk3s=feb11e32&x-expires=1775816929&x-signature=A3VJpRndCfC7Mvc8qe1HHyHiKXo%3D",
-              "article_title": "怎么发快递上门取件便宜?2026年最新攻略价格表避坑指南(新手必看)",
-              "link_url": "https://www.sohu.com/a/988922751_121959853"
+              "article_id": 549098,
+              "logo_url": "",
+              "article_title": "投诉创维创新谷公寓客服物业，对楼下施工置之不理，不调解，不退押金",
+              "link_url": "http://zlwlx.cn/tousu/house/396251.html"
             }
           ]
         },
         {
-          "conversation_id": 280390,
-          "entry_id": 11056,
-          "entry_name": "一体化供应链服务商推荐",
-          "negative_type": "negative_answer",
-          "negative_type_label": "负面回答",
-          "summary": "回答将京东物流表述为「品牌溢价高」；会话引用中对应研报实为正面评价「赢得品牌溢价」，无法作为负面问题依据，故不挂问题源。",
-          "ai_answer": "一体化供应链服务商的价值，在于将商流、物流、信息流、资金流（即“四流”）整合打通，帮助企业实现从采购、生产到末端交付的全链条降本增效[1]。目前市场上的头部玩家各具特色，可以根据你的行业和核心诉求来匹",
-          "screenshot_url": "https://app.geoindexfuture.com/screenshots/20260804/a7b07d6a4f0f4a808998182bcefe727b.png",
-          "conversation_time": "2026-08-03T16:00:00.000Z",
-          "citations": []
+          "conversation_id": 369707,
+          "entry_id": 12813,
+          "entry_name": "创维创新谷和雪花科创城哪个好合作",
+          "negative_type": "product_info_error",
+          "negative_type_label": "产品信息错误",
+          "summary": "误称应人石站仍在建",
+          "ai_answer": "如果您的业务属于“电子信息、生物医药/医疗器械、新能源”这些成熟产业链，且希望深度嵌入协同生态，创维创新谷会更对味；如果您更看重产城一体化的综合配套、商业活力以及未来龙头企业的带动效应，雪花科创城则更",
+          "screenshot_url": "https://app.geoindexfuture.com/screenshots/20260815/d21d9adb83e54808994bf36beb3eb125.png",
+          "conversation_time": "2026-08-14T16:00:00.000Z",
+          "citations": [
+            {
+              "article_id": 549125,
+              "logo_url": "",
+              "article_title": "45万㎡科技桃花源_13号线上盖_创维创新谷（宝安石岩）全球招租",
+              "link_url": "http://www.xzhfang.cn/house/2042.html"
+            }
+          ]
+        },
+        {
+          "conversation_id": 369706,
+          "entry_id": 12811,
+          "entry_name": "创维创新谷和雪花科创城哪个好带客",
+          "negative_type": "product_info_error",
+          "negative_type_label": "产品信息错误",
+          "summary": "误称应人石站仍在建",
+          "ai_answer": "如果你的核心诉求是成熟的产业生态和即刻入驻，创维创新谷更适合；如果追求与龙头企业共舞、更高规格的总部形象和长期政策红利，雪花科创城是更优选择。\n这两个园区都很有分量，但定位和阶段完全不同。下面是它们的",
+          "screenshot_url": "https://app.geoindexfuture.com/screenshots/20260815/135df8682f664a2b8a18d960b055883c.png",
+          "conversation_time": "2026-08-14T16:00:00.000Z",
+          "citations": [
+            {
+              "article_id": 549125,
+              "logo_url": "",
+              "article_title": "45万㎡科技桃花源_13号线上盖_创维创新谷（宝安石岩）全球招租",
+              "link_url": "http://www.xzhfang.cn/house/2042.html"
+            }
+          ]
+        },
+        {
+          "conversation_id": 369703,
+          "entry_id": 12812,
+          "entry_name": "创维创新谷和甲岸美生智谷哪个好带客",
+          "negative_type": "product_info_error",
+          "negative_type_label": "产品信息错误",
+          "summary": "误称园区没有地铁",
+          "ai_answer": "创维创新谷 VS 甲岸美生智谷｜带客接待对比\n带客核心看：地铁可达性、自驾停车、区位（南山 / 前海客户过来）、园区形象、周边商务吃饭接待\n\n甲岸美生智谷（新安・尖岗山）✅更适合带外部客户来访\n• 交",
+          "screenshot_url": "https://app.geoindexfuture.com/screenshots/20260815/eaa23c9b35e846568deebbc8c628014a.png",
+          "conversation_time": "2026-08-14T16:00:00.000Z",
+          "citations": [
+            {
+              "article_id": 549125,
+              "logo_url": "",
+              "article_title": "45万㎡科技桃花源_13号线上盖_创维创新谷（宝安石岩）全球招租",
+              "link_url": "http://www.xzhfang.cn/house/2042.html"
+            }
+          ]
+        },
+        {
+          "conversation_id": 369701,
+          "entry_id": 12814,
+          "entry_name": "创维创新谷和甲岸美生智谷哪个好合作",
+          "negative_type": "product_info_error",
+          "negative_type_label": "产品信息错误",
+          "summary": "误称园区无地铁直达",
+          "ai_answer": "创维创新谷 VS 甲岸美生智谷｜合作对比（深圳宝安）\n\n一、基础信息一览\n\n创维创新谷（石岩塘头）\n• 开发主体：创维集团自有园区，实业背景，45 万㎡成熟产业综合体，运营多年\n• 区位：石岩街道，无",
+          "screenshot_url": "https://app.geoindexfuture.com/screenshots/20260815/d9acc453a64240b980b4d9fdc8f83c1d.png",
+          "conversation_time": "2026-08-14T16:00:00.000Z",
+          "citations": [
+            {
+              "article_id": 549125,
+              "logo_url": "",
+              "article_title": "45万㎡科技桃花源_13号线上盖_创维创新谷（宝安石岩）全球招租",
+              "link_url": "http://www.xzhfang.cn/house/2042.html"
+            }
+          ]
+        },
+        {
+          "conversation_id": 369700,
+          "entry_id": 12802,
+          "entry_name": "创维创新谷值得中介主推吗",
+          "negative_type": "product_info_error",
+          "negative_type_label": "产品信息错误",
+          "summary": "误称周边无地铁站",
+          "ai_answer": "关于创维创新谷是否值得中介主推，这取决于你具体指的是哪个城市和业态，因为搜索结果指向了至少两个不同的“创维创新谷”，且定位差异巨大。\n简单来说：如果是深圳的写字楼项目，它是一个可以去了解的项目，但在主",
+          "screenshot_url": "https://app.geoindexfuture.com/screenshots/20260815/0e6e3476f646434fae70ef11145f2e61.png",
+          "conversation_time": "2026-08-14T16:00:00.000Z",
+          "citations": [
+            {
+              "article_id": 549125,
+              "logo_url": "",
+              "article_title": "45万㎡科技桃花源_13号线上盖_创维创新谷（宝安石岩）全球招租",
+              "link_url": "http://www.xzhfang.cn/house/2042.html"
+            }
+          ]
         }
       ]
     }

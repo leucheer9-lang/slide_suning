@@ -1,0 +1,2042 @@
+{
+  "meta": {
+    "fetched_at": "2026-08-17T08:14:53.030Z",
+    "api_base": "https://api.geotopone.com",
+    "project_id": 482,
+    "project_name": "创维创新谷-ToB①",
+    "target_product": "创维创新谷",
+    "target_brand_name": null,
+    "start_date": "2026-08-14",
+    "end_date": "2026-08-14"
+  },
+  "platforms": [
+    {
+      "id": 1,
+      "name": "DeepSeek",
+      "url": "https://app.geoindexfuture.com/logo/deepseek.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 15,
+      "crawl_rate_config": {
+        "requests_per_hour": 30,
+        "request_interval_sec": 120,
+        "batch_duration_sec": 24400,
+        "batch_max_requests": 60,
+        "batch_interval_sec": 24400
+      },
+      "crawl_rate_effective": {
+        "requests_per_hour": 30,
+        "request_interval_sec": 120,
+        "batch_duration_sec": 24400,
+        "batch_max_requests": 60,
+        "batch_interval_sec": 24400
+      },
+      "crawl_rate_source": "platform"
+    },
+    {
+      "id": 2,
+      "name": "豆包",
+      "url": "https://app.geoindexfuture.com/logo/doubao.png",
+      "crawl_enabled": 1,
+      "max_crawl_accounts": 10,
+      "crawl_rate_config": null,
+      "crawl_rate_effective": {
+        "requests_per_hour": -1,
+        "request_interval_sec": 30,
+        "batch_duration_sec": 86400,
+        "batch_max_requests": 1000,
+        "batch_interval_sec": 60
+      },
+      "crawl_rate_source": "global"
+    }
+  ],
+  "stats": {
+    "brand_mention_rate": 2,
+    "top1_mention_rate": null,
+    "top3_mention_rate": null,
+    "avg_position": 7.9,
+    "daily_stats": [
+      {
+        "date": "2026-08-14",
+        "mention_rate": 2,
+        "avg_position": 7.9
+      }
+    ],
+    "platform_stats": [
+      {
+        "platform_id": 1,
+        "platform_name": "DeepSeek",
+        "platform_logo": "https://app.geoindexfuture.com/logo/deepseek.png",
+        "brand_mention_rate": 0,
+        "avg_position": 0
+      },
+      {
+        "platform_id": 2,
+        "platform_name": "豆包",
+        "platform_logo": "https://app.geoindexfuture.com/logo/doubao.png",
+        "brand_mention_rate": 4,
+        "avg_position": 9.4
+      }
+    ]
+  },
+  "influence": {
+    "total_conversations": 50,
+    "list": [
+      {
+        "rank": 1,
+        "brand_name": "新桥东先进制造产业园",
+        "favicon_url": null,
+        "influence_score": 48,
+        "mention_rate": 42,
+        "avg_position": 5.3,
+        "is_target": false
+      },
+      {
+        "rank": 2,
+        "brand_name": "燕罗智能网联汽车产业园",
+        "favicon_url": null,
+        "influence_score": 33.2,
+        "mention_rate": 26,
+        "avg_position": 6.6,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "brand_name": "汇智研发中心",
+        "favicon_url": null,
+        "influence_score": 27.2,
+        "mention_rate": 18,
+        "avg_position": 6.9,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "brand_name": "泰华梧桐岛",
+        "favicon_url": null,
+        "influence_score": 25.6,
+        "mention_rate": 16,
+        "avg_position": 7,
+        "is_target": false
+      },
+      {
+        "rank": 85,
+        "brand_name": "创维创新谷",
+        "favicon_url": null,
+        "influence_score": 13.6,
+        "mention_rate": 2,
+        "avg_position": 7.9,
+        "is_target": true
+      }
+    ]
+  },
+  "entries": {
+    "total": 25,
+    "list": [
+      {
+        "entry_id": 12742,
+        "entry_name": "有现成房源的宝安区高端产业园推荐",
+        "mention_rate": 50,
+        "position": 4.5,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/fcaf32d73cda4a09bfc1aa37509d4ff0.png"
+      },
+      {
+        "entry_id": 12725,
+        "entry_name": "适合中介带客的宝安区产业园推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/4f442e6046af4391b47e8c4f453acf17.png"
+      },
+      {
+        "entry_id": 12726,
+        "entry_name": "支持招商渠道合作的宝安区产业园推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/900e4bc7efa64d2ab170e4db5d249864.png"
+      },
+      {
+        "entry_id": 12727,
+        "entry_name": "适合中介长期合作的宝安区产业园推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/043987b214704e6283e70f4977d13bc3.png"
+      },
+      {
+        "entry_id": 12728,
+        "entry_name": "值得中介主推的宝安区产业园推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/4d06df39305049888d8e68b11d92c394.png"
+      },
+      {
+        "entry_id": 12729,
+        "entry_name": "中介佣金高的宝安区产业园推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/9ba76632d2954cf2ac7289455fcad6a3.png"
+      },
+      {
+        "entry_id": 12730,
+        "entry_name": "中介佣金结算快的宝安区产业园推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/d4bcd68b3b6f4ae08097db7456c62103.png"
+      },
+      {
+        "entry_id": 12731,
+        "entry_name": "中介报备流程简单的宝安区产业园推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/7edb42788f644c64a8f82eb235a8d92a.png"
+      },
+      {
+        "entry_id": 12732,
+        "entry_name": "渠道带客成交效率高的宝安区产业园推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/b616c8dd128547858bc7394f2e89b336.png"
+      },
+      {
+        "entry_id": 12733,
+        "entry_name": "客户成交容易的宝安区产业园推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/33f5b072786b4e3e81f481ce88ef30cd.png"
+      },
+      {
+        "entry_id": 12734,
+        "entry_name": "房源充足的宝安区产业园推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/9c5c4ba7c1d54c46897489c7d19c73e6.png"
+      },
+      {
+        "entry_id": 12735,
+        "entry_name": "有现成房源的宝安区产业园推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/b6e0e850c6c64a5cbf9d19d718c1a9b9.png"
+      },
+      {
+        "entry_id": 12736,
+        "entry_name": "有大面积房源的宝安区产业园推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/956fdb624b4d427193ae80df2ad39dfd.png"
+      },
+      {
+        "entry_id": 12737,
+        "entry_name": "有整层房源的宝安区产业园推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/51a0a17eecf84e209d670a21975a750d.png"
+      },
+      {
+        "entry_id": 12738,
+        "entry_name": "面积可灵活分割的宝安区产业园推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/16e1169b57384dbdb6d9356b272b4890.png"
+      },
+      {
+        "entry_id": 12739,
+        "entry_name": "适合中介带客的宝安区高端产业园推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/56dca5743a714d07887d8d636d2b5198.png"
+      },
+      {
+        "entry_id": 12740,
+        "entry_name": "支持招商渠道合作的宝安区高端产业园推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/f1cc7e7217404fd9b6d64d133c41a6a6.png"
+      },
+      {
+        "entry_id": 12741,
+        "entry_name": "中介佣金高的宝安区高端产业园推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260814/53a9a975e4e44e489d0f848cc18bfade.png"
+      },
+      {
+        "entry_id": 12743,
+        "entry_name": "适合中介带客的宝安区高端厂房推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/0faeec4d25cf4017bc18cf7a671b3c7f.png"
+      },
+      {
+        "entry_id": 12744,
+        "entry_name": "支持招商渠道合作的宝安区高端厂房推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/e5fa1e6bb5f44630afcc78a3655bd8ac.png"
+      },
+      {
+        "entry_id": 12745,
+        "entry_name": "有大面积房源的宝安区高端厂房推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/d04e1a6f8976423c825fabf5aa926fb2.png"
+      },
+      {
+        "entry_id": 12746,
+        "entry_name": "面积可灵活分割的宝安区高端厂房推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/6a85187d91ab4f438210591cc49900f2.png"
+      },
+      {
+        "entry_id": 12747,
+        "entry_name": "适合中介带客的宝安区写字楼推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/d6be755ce4054ed49f26ed99ef9ca2f6.png"
+      },
+      {
+        "entry_id": 12748,
+        "entry_name": "中介佣金高的宝安区写字楼推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/4a2371a8f328425ab9bddcb12607823b.png"
+      },
+      {
+        "entry_id": 12749,
+        "entry_name": "有整层房源的宝安区写字楼推荐",
+        "mention_rate": 0,
+        "position": null,
+        "platform_ids": [
+          1,
+          2
+        ],
+        "last_conversation_time": "2026-08-13T16:00:00.000Z",
+        "last_screenshot_url": "https://app.geoindexfuture.com/screenshots/20260813/6bbfa3f5539542e5a6d1fee0fe09750d.png"
+      }
+    ]
+  },
+  "compare": {
+    "target_product": "创维创新谷",
+    "mention_rate_ranking": [
+      {
+        "brand_id": 98914,
+        "brand_name": "新桥东先进制造产业园",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "新桥东先进制造产业园",
+        "mention_count": 21,
+        "mention_rate": 42,
+        "is_target": false
+      },
+      {
+        "brand_id": 98916,
+        "brand_name": "燕罗智能网联汽车产业园",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "燕罗智能网联汽车产业园",
+        "mention_count": 13,
+        "mention_rate": 26,
+        "is_target": false
+      },
+      {
+        "brand_id": 98921,
+        "brand_name": "汇智研发中心",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "汇智研发中心",
+        "mention_count": 9,
+        "mention_rate": 18,
+        "is_target": false
+      },
+      {
+        "brand_id": 98915,
+        "brand_name": "中粮",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "中粮",
+        "mention_count": 8,
+        "mention_rate": 16,
+        "is_target": false
+      },
+      {
+        "brand_id": 98946,
+        "brand_name": "创维创新谷",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "创维创新谷",
+        "mention_count": 1,
+        "mention_rate": 2,
+        "is_target": true
+      }
+    ],
+    "position_ranking": [
+      {
+        "brand_id": 98914,
+        "brand_name": "新桥东先进制造产业园",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "新桥东先进制造产业园",
+        "avg_position": 5.3,
+        "mention_count": 21,
+        "is_target": false
+      },
+      {
+        "brand_id": 98916,
+        "brand_name": "燕罗智能网联汽车产业园",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "燕罗智能网联汽车产业园",
+        "avg_position": 6.6,
+        "mention_count": 13,
+        "is_target": false
+      },
+      {
+        "brand_id": 98921,
+        "brand_name": "汇智研发中心",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "汇智研发中心",
+        "avg_position": 6.9,
+        "mention_count": 9,
+        "is_target": false
+      },
+      {
+        "brand_id": 98919,
+        "brand_name": "泰华梧桐岛",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "泰华梧桐岛",
+        "avg_position": 7,
+        "mention_count": 8,
+        "is_target": false
+      },
+      {
+        "brand_id": 98946,
+        "brand_name": "创维创新谷",
+        "product_id": null,
+        "product_name": null,
+        "display_name": "创维创新谷",
+        "avg_position": 7.9,
+        "mention_count": 1,
+        "is_target": true
+      }
+    ],
+    "rate_daily": [
+      {
+        "date": "2026-08-14",
+        "新桥东先进制造产业园": 42,
+        "燕罗智能网联汽车产业园": 26,
+        "汇智研发中心": 18,
+        "中粮": 16,
+        "创维创新谷": 2
+      }
+    ],
+    "position_daily": [
+      {
+        "date": "2026-08-14",
+        "新桥东先进制造产业园": 5.3,
+        "燕罗智能网联汽车产业园": 6.6,
+        "汇智研发中心": 6.9,
+        "泰华梧桐岛": 7,
+        "创维创新谷": 7.9
+      }
+    ],
+    "brand_total": 175,
+    "mention_rate_ranking_full": [
+      {
+        "rank": 1,
+        "brand_name": "新桥东先进制造产业园",
+        "mention_rate": 42,
+        "is_target": false
+      },
+      {
+        "rank": 2,
+        "brand_name": "燕罗智能网联汽车产业园",
+        "mention_rate": 26,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "brand_name": "汇智研发中心",
+        "mention_rate": 18,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "brand_name": "中粮",
+        "mention_rate": 16,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "brand_name": "泰华梧桐岛",
+        "mention_rate": 16,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "brand_name": "宝安AI智选空间",
+        "mention_rate": 12,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "brand_name": "深圳市全至产业新城运营有限公司",
+        "mention_rate": 12,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "brand_name": "大集汇创新产业中心",
+        "mention_rate": 10,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "brand_name": "满京华·科技创新园",
+        "mention_rate": 10,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "brand_name": "中德（欧）产业示范园",
+        "mention_rate": 8,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "brand_name": "前海人寿金融中心",
+        "mention_rate": 8,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "brand_name": "华丰",
+        "mention_rate": 8,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "brand_name": "壹方中心",
+        "mention_rate": 8,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "brand_name": "桃花源科技创新生态园",
+        "mention_rate": 8,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "brand_name": "汇聚新桥 107 创智园",
+        "mention_rate": 8,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "brand_name": "航城智谷",
+        "mention_rate": 8,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "brand_name": "中信宝光电产业园",
+        "mention_rate": 6,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "brand_name": "创新智慧港",
+        "mention_rate": 6,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "brand_name": "华丰国际机器人产业园",
+        "mention_rate": 6,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "brand_name": "华润雪花科创城",
+        "mention_rate": 6,
+        "is_target": false
+      },
+      {
+        "rank": 21,
+        "brand_name": "天格科技园",
+        "mention_rate": 6,
+        "is_target": false
+      },
+      {
+        "rank": 22,
+        "brand_name": "恒明珠金融大厦",
+        "mention_rate": 6,
+        "is_target": false
+      },
+      {
+        "rank": 23,
+        "brand_name": "新安实业第二工业区",
+        "mention_rate": 6,
+        "is_target": false
+      },
+      {
+        "rank": 24,
+        "brand_name": "新桥创谷",
+        "mention_rate": 6,
+        "is_target": false
+      },
+      {
+        "rank": 25,
+        "brand_name": "新桥山产业园",
+        "mention_rate": 6,
+        "is_target": false
+      },
+      {
+        "rank": 26,
+        "brand_name": "润东晟工业园",
+        "mention_rate": 6,
+        "is_target": false
+      },
+      {
+        "rank": 27,
+        "brand_name": "稻兴环球科创中心",
+        "mention_rate": 6,
+        "is_target": false
+      },
+      {
+        "rank": 28,
+        "brand_name": "鸿辉工业园",
+        "mention_rate": 6,
+        "is_target": false
+      },
+      {
+        "rank": 29,
+        "brand_name": "龙光世纪大厦",
+        "mention_rate": 6,
+        "is_target": false
+      },
+      {
+        "rank": 30,
+        "brand_name": "331创意园",
+        "mention_rate": 4,
+        "is_target": false
+      },
+      {
+        "rank": 31,
+        "brand_name": "F518时尚创意园",
+        "mention_rate": 4,
+        "is_target": false
+      },
+      {
+        "rank": 32,
+        "brand_name": "前海Hop国际中心",
+        "mention_rate": 4,
+        "is_target": false
+      },
+      {
+        "rank": 33,
+        "brand_name": "华丰国际智造城",
+        "mention_rate": 4,
+        "is_target": false
+      },
+      {
+        "rank": 34,
+        "brand_name": "嘉达绿色材料产业园",
+        "mention_rate": 4,
+        "is_target": false
+      },
+      {
+        "rank": 35,
+        "brand_name": "大铲湾蓝色未来科技园",
+        "mention_rate": 4,
+        "is_target": false
+      },
+      {
+        "rank": 36,
+        "brand_name": "宝安中集智谷",
+        "mention_rate": 4,
+        "is_target": false
+      },
+      {
+        "rank": 37,
+        "brand_name": "宝安产发集团",
+        "mention_rate": 4,
+        "is_target": false
+      },
+      {
+        "rank": 38,
+        "brand_name": "广兴源互联网创意园",
+        "mention_rate": 4,
+        "is_target": false
+      },
+      {
+        "rank": 39,
+        "brand_name": "海谷科技大厦",
+        "mention_rate": 4,
+        "is_target": false
+      },
+      {
+        "rank": 40,
+        "brand_name": "深圳新能智造产业园",
+        "mention_rate": 4,
+        "is_target": false
+      },
+      {
+        "rank": 41,
+        "brand_name": "碧桂园凤凰智谷",
+        "mention_rate": 4,
+        "is_target": false
+      },
+      {
+        "rank": 42,
+        "brand_name": "福永智美汇志产业园",
+        "mention_rate": 4,
+        "is_target": false
+      },
+      {
+        "rank": 43,
+        "brand_name": "经发智造园",
+        "mention_rate": 4,
+        "is_target": false
+      },
+      {
+        "rank": 44,
+        "brand_name": "美生创谷科技创新园",
+        "mention_rate": 4,
+        "is_target": false
+      },
+      {
+        "rank": 45,
+        "brand_name": "美生智谷",
+        "mention_rate": 4,
+        "is_target": false
+      },
+      {
+        "rank": 46,
+        "brand_name": "鑫鑫田科创园",
+        "mention_rate": 4,
+        "is_target": false
+      },
+      {
+        "rank": 47,
+        "brand_name": "雅美时工业园",
+        "mention_rate": 4,
+        "is_target": false
+      },
+      {
+        "rank": 48,
+        "brand_name": "骏翔U8",
+        "mention_rate": 4,
+        "is_target": false
+      },
+      {
+        "rank": 49,
+        "brand_name": "鸿荣源",
+        "mention_rate": 4,
+        "is_target": false
+      },
+      {
+        "rank": 50,
+        "brand_name": "鹏鼎时代大厦",
+        "mention_rate": 4,
+        "is_target": false
+      },
+      {
+        "rank": 51,
+        "brand_name": "SCT 湾流",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 52,
+        "brand_name": "U8智造产业园",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 53,
+        "brand_name": "一方天地互联网产业园",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 54,
+        "brand_name": "万丰海岸科技城",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 55,
+        "brand_name": "万庭大厦",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 56,
+        "brand_name": "万延工业区",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 57,
+        "brand_name": "万福大厦",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 58,
+        "brand_name": "中粮创芯研发中心",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 59,
+        "brand_name": "中粮大悦中心",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 60,
+        "brand_name": "中粮大悦城",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 61,
+        "brand_name": "中粮福海产业园",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 62,
+        "brand_name": "中集",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 63,
+        "brand_name": "云展广场",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 64,
+        "brand_name": "伙伴产业服务有限公司",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 65,
+        "brand_name": "会展湾中港广场",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 66,
+        "brand_name": "会展湾南岸",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 67,
+        "brand_name": "伟成智能产业园",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 68,
+        "brand_name": "佳裕",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 69,
+        "brand_name": "八方缘科创城",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 70,
+        "brand_name": "兴东地铁口工业上楼产业园",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 71,
+        "brand_name": "凤凰鸿富科技广场",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 72,
+        "brand_name": "创维创新谷",
+        "mention_rate": 2,
+        "is_target": true
+      },
+      {
+        "rank": 73,
+        "brand_name": "前城",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 74,
+        "brand_name": "前海卓越时代广场",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 75,
+        "brand_name": "前海科兴科学园",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 76,
+        "brand_name": "勤诚达大厦",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 77,
+        "brand_name": "华丰智谷",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 78,
+        "brand_name": "华丰智谷・航城产业园",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 79,
+        "brand_name": "华丰智谷福海科技产业园",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 80,
+        "brand_name": "华伦科技园",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 81,
+        "brand_name": "南太创之谷",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 82,
+        "brand_name": "台技工业园",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 83,
+        "brand_name": "吉安泰",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 84,
+        "brand_name": "和一・深港智汇产业园",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 85,
+        "brand_name": "嘉盛",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 86,
+        "brand_name": "固戌原房东产业园",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 87,
+        "brand_name": "固戍高端红本花园厂房",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 88,
+        "brand_name": "奋成智谷大厦",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 89,
+        "brand_name": "宏创产业园",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 90,
+        "brand_name": "宏恒泰",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 91,
+        "brand_name": "宗泰",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 92,
+        "brand_name": "宗泰数字经济产业园",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 93,
+        "brand_name": "定军山电影科技产业园",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 94,
+        "brand_name": "定军山科技大厦",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 95,
+        "brand_name": "宝地兴业",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 96,
+        "brand_name": "宝安产业空间超市",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 97,
+        "brand_name": "宝安区创新创业“无忧空间”网络",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 98,
+        "brand_name": "宝安润慧科技园",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 99,
+        "brand_name": "宝星智荟城",
+        "mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 100,
+        "brand_name": "富尔达产业园",
+        "mention_rate": 2,
+        "is_target": false
+      }
+    ],
+    "position_ranking_full": [
+      {
+        "rank": 1,
+        "brand_name": "新桥东先进制造产业园",
+        "avg_position": 5.3,
+        "is_target": false
+      },
+      {
+        "rank": 2,
+        "brand_name": "燕罗智能网联汽车产业园",
+        "avg_position": 6.6,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "brand_name": "汇智研发中心",
+        "avg_position": 6.9,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "brand_name": "泰华梧桐岛",
+        "avg_position": 7,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "brand_name": "中粮",
+        "avg_position": 7.2,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "brand_name": "壹方中心",
+        "avg_position": 7.3,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "brand_name": "龙光世纪大厦",
+        "avg_position": 7.4,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "brand_name": "前海人寿金融中心",
+        "avg_position": 7.4,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "brand_name": "深圳市全至产业新城运营有限公司",
+        "avg_position": 7.5,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "brand_name": "航城智谷",
+        "avg_position": 7.5,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "brand_name": "华润雪花科创城",
+        "avg_position": 7.5,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "brand_name": "中德（欧）产业示范园",
+        "avg_position": 7.6,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "brand_name": "宝安AI智选空间",
+        "avg_position": 7.6,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "brand_name": "创新智慧港",
+        "avg_position": 7.6,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "brand_name": "前海Hop国际中心",
+        "avg_position": 7.6,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "brand_name": "大集汇创新产业中心",
+        "avg_position": 7.6,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "brand_name": "新安实业第二工业区",
+        "avg_position": 7.6,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "brand_name": "骏翔U8",
+        "avg_position": 7.6,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "brand_name": "华丰",
+        "avg_position": 7.7,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "brand_name": "汇聚新桥 107 创智园",
+        "avg_position": 7.7,
+        "is_target": false
+      },
+      {
+        "rank": 21,
+        "brand_name": "华丰国际机器人产业园",
+        "avg_position": 7.7,
+        "is_target": false
+      },
+      {
+        "rank": 22,
+        "brand_name": "鸿辉工业园",
+        "avg_position": 7.7,
+        "is_target": false
+      },
+      {
+        "rank": 23,
+        "brand_name": "331创意园",
+        "avg_position": 7.7,
+        "is_target": false
+      },
+      {
+        "rank": 24,
+        "brand_name": "F518时尚创意园",
+        "avg_position": 7.7,
+        "is_target": false
+      },
+      {
+        "rank": 25,
+        "brand_name": "满京华·科技创新园",
+        "avg_position": 7.7,
+        "is_target": false
+      },
+      {
+        "rank": 26,
+        "brand_name": "恒明珠金融大厦",
+        "avg_position": 7.7,
+        "is_target": false
+      },
+      {
+        "rank": 27,
+        "brand_name": "鑫鑫田科创园",
+        "avg_position": 7.7,
+        "is_target": false
+      },
+      {
+        "rank": 28,
+        "brand_name": "宝安中集智谷",
+        "avg_position": 7.7,
+        "is_target": false
+      },
+      {
+        "rank": 29,
+        "brand_name": "鹏鼎时代大厦",
+        "avg_position": 7.7,
+        "is_target": false
+      },
+      {
+        "rank": 30,
+        "brand_name": "嘉盛",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 31,
+        "brand_name": "荣超滨海大厦",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 32,
+        "brand_name": "桃花源科技创新生态园",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 33,
+        "brand_name": "润东晟工业园",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 34,
+        "brand_name": "大铲湾蓝色未来科技园",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 35,
+        "brand_name": "宝安产发集团",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 36,
+        "brand_name": "海谷科技大厦",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 37,
+        "brand_name": "福永智美汇志产业园",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 38,
+        "brand_name": "经发智造园",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 39,
+        "brand_name": "前海卓越时代广场",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 40,
+        "brand_name": "愉齐",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 41,
+        "brand_name": "深圳新能智造产业园",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 42,
+        "brand_name": "碧桂园凤凰智谷",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 43,
+        "brand_name": "美生创谷科技创新园",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 44,
+        "brand_name": "鸿荣源",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 45,
+        "brand_name": "中粮大悦城",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 46,
+        "brand_name": "宗泰数字经济产业园",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 47,
+        "brand_name": "泰华",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 48,
+        "brand_name": "甲岸智创园",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 49,
+        "brand_name": "高福中心",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 50,
+        "brand_name": "黄峰岭高新产业园",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 51,
+        "brand_name": "中信宝光电产业园",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 52,
+        "brand_name": "勤诚达大厦",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 53,
+        "brand_name": "台技工业园",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 54,
+        "brand_name": "富比伦工业园",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 55,
+        "brand_name": "恒明珠沙井科技工业园",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 56,
+        "brand_name": "阳基",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 57,
+        "brand_name": "华丰国际智造城",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 58,
+        "brand_name": "中粮大悦中心",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 59,
+        "brand_name": "宏恒泰",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 60,
+        "brand_name": "新桥万丰工业园",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 61,
+        "brand_name": "易尚中心",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 62,
+        "brand_name": "河东骏濠国际",
+        "avg_position": 7.8,
+        "is_target": false
+      },
+      {
+        "rank": 63,
+        "brand_name": "天格科技园",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 64,
+        "brand_name": "新桥创谷",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 65,
+        "brand_name": "新桥山产业园",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 66,
+        "brand_name": "稻兴环球科创中心",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 67,
+        "brand_name": "美生智谷",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 68,
+        "brand_name": "雅美时工业园",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 69,
+        "brand_name": "万庭大厦",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 70,
+        "brand_name": "创维创新谷",
+        "avg_position": 7.9,
+        "is_target": true
+      },
+      {
+        "rank": 71,
+        "brand_name": "华丰智谷・航城产业园",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 72,
+        "brand_name": "吉安泰",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 73,
+        "brand_name": "奋成智谷大厦",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 74,
+        "brand_name": "宝星智荟城",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 75,
+        "brand_name": "怀德翠岗工业园",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 76,
+        "brand_name": "星港同创汇",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 77,
+        "brand_name": "朗峻广场",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 78,
+        "brand_name": "沙一万安工业园",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 79,
+        "brand_name": "福永科技园",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 80,
+        "brand_name": "福海国际科技园",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 81,
+        "brand_name": "航城智慧",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 82,
+        "brand_name": "万延工业区",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 83,
+        "brand_name": "中粮创芯研发中心",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 84,
+        "brand_name": "中粮福海产业园",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 85,
+        "brand_name": "中集",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 86,
+        "brand_name": "伟成智能产业园",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 87,
+        "brand_name": "华丰智谷",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 88,
+        "brand_name": "华丰智谷福海科技产业园",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 89,
+        "brand_name": "华伦科技园",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 90,
+        "brand_name": "固戌原房东产业园",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 91,
+        "brand_name": "宝安润慧科技园",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 92,
+        "brand_name": "沙井北环路独院厂房",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 93,
+        "brand_name": "润宝大厦",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 94,
+        "brand_name": "福永塘尾智创产业园",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 95,
+        "brand_name": "美盈智汇港",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 96,
+        "brand_name": "广兴源互联网创意园",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 97,
+        "brand_name": "一方天地互联网产业园",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 98,
+        "brand_name": "会展湾中港广场",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 99,
+        "brand_name": "会展湾南岸",
+        "avg_position": 7.9,
+        "is_target": false
+      },
+      {
+        "rank": 100,
+        "brand_name": "佳裕",
+        "avg_position": 7.9,
+        "is_target": false
+      }
+    ],
+    "top1_ranking": [
+      {
+        "rank": 1,
+        "brand_name": "新桥东先进制造产业园",
+        "top1_mention_rate": 22,
+        "is_target": false
+      },
+      {
+        "rank": 2,
+        "brand_name": "壹方中心",
+        "top1_mention_rate": 6,
+        "is_target": false
+      },
+      {
+        "rank": 3,
+        "brand_name": "汇智研发中心",
+        "top1_mention_rate": 6,
+        "is_target": false
+      },
+      {
+        "rank": 4,
+        "brand_name": "泰华梧桐岛",
+        "top1_mention_rate": 6,
+        "is_target": false
+      },
+      {
+        "rank": 5,
+        "brand_name": "燕罗智能网联汽车产业园",
+        "top1_mention_rate": 6,
+        "is_target": false
+      },
+      {
+        "rank": 6,
+        "brand_name": "宝安AI智选空间",
+        "top1_mention_rate": 4,
+        "is_target": false
+      },
+      {
+        "rank": 7,
+        "brand_name": "深圳新能智造产业园",
+        "top1_mention_rate": 4,
+        "is_target": false
+      },
+      {
+        "rank": 8,
+        "brand_name": "中粮",
+        "top1_mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 9,
+        "brand_name": "伙伴产业服务有限公司",
+        "top1_mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 10,
+        "brand_name": "前海人寿金融中心",
+        "top1_mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 11,
+        "brand_name": "华丰国际智造城",
+        "top1_mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 12,
+        "brand_name": "华丰国际机器人产业园",
+        "top1_mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 13,
+        "brand_name": "华润雪花科创城",
+        "top1_mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 14,
+        "brand_name": "台技工业园",
+        "top1_mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 15,
+        "brand_name": "嘉盛",
+        "top1_mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 16,
+        "brand_name": "宏恒泰",
+        "top1_mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 17,
+        "brand_name": "宝安中集智谷",
+        "top1_mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 18,
+        "brand_name": "宝安产业空间超市",
+        "top1_mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 19,
+        "brand_name": "宝安产发集团",
+        "top1_mention_rate": 2,
+        "is_target": false
+      },
+      {
+        "rank": 20,
+        "brand_name": "怀德翠岗工业园",
+        "top1_mention_rate": 2,
+        "is_target": false
+      }
+    ]
+  },
+  "citations": {
+    "total_conversations": 50,
+    "citation_rate": 100,
+    "total_citations": 809,
+    "platform_stats": [
+      {
+        "platform_name": "宝安区政府在线",
+        "domain": "baoan.gov.cn",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/www_baoan_gov_cn.ico",
+        "citation_count": 119,
+        "share": 14.7
+      },
+      {
+        "platform_name": "广州国检检测有限公司",
+        "domain": "11467.com",
+        "logo_url": "https://app.geoindexfuture.com/site-icons/11467.com.png",
+        "citation_count": 85,
+        "share": 10.5
+      },
+      {
+        "platform_name": "安居客",
+        "domain": "anjuke.com",
+        "logo_url": "https://cdn.deepseek.com/site-icons/anjuke.com",
+        "citation_count": 48,
+        "share": 5.9
+      },
+      {
+        "platform_name": "深圳政府在线",
+        "domain": "sz.gov.cn",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/www_sz_gov_cn.ico",
+        "citation_count": 44,
+        "share": 5.4
+      },
+      {
+        "platform_name": "宝安湾",
+        "domain": "baoanone.com",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/www_baoanone_com.ico",
+        "citation_count": 41,
+        "share": 5.1
+      }
+    ],
+    "articles": [
+      {
+        "title": "宝安集中推出独栋优质物业并介绍相关租金优惠，满足企业多样化空间诉求",
+        "link_url": "https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_12427414.html",
+        "domain": "sz.gov.cn",
+        "platform_name": "深圳政府在线",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/www_sz_gov_cn.ico",
+        "total_citations": 16,
+        "avg_citations": 16,
+        "has_target_product": false
+      },
+      {
+        "title": "‘宝地兴业’产业空间对接会-知名集团物业专场物业清单(部分)",
+        "link_url": "https://www.baoan.gov.cn/attachment/1/1700/1700640/12719614.pdf",
+        "domain": "baoan.gov.cn",
+        "platform_name": "宝安区政府在线",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/www_baoan_gov_cn.ico",
+        "total_citations": 11,
+        "avg_citations": 11,
+        "has_target_product": false
+      },
+      {
+        "title": "知名集团物业齐亮相，28家企业携近8万㎡需求宝安寻“宝地”",
+        "link_url": "https://appdetail-v2.baoanone.com/content/2026-04/10/content_215908.html",
+        "domain": "baoanone.com",
+        "platform_name": "宝安湾",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/www_baoanone_com.ico",
+        "total_citations": 9,
+        "avg_citations": 9,
+        "has_target_product": false
+      },
+      {
+        "title": "宝安这场对接会为企业送上“大礼包” - 工作动态 - 宝安区人民政府门户网站",
+        "link_url": "https://www.baoan.gov.cn/xxgk/xwzx/tpxw/content/post_12241629.html",
+        "domain": "baoan.gov.cn",
+        "platform_name": "宝安区政府在线",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/www_baoan_gov_cn.ico",
+        "total_citations": 7,
+        "avg_citations": 7,
+        "has_target_product": false
+      },
+      {
+        "title": "“宝地兴业”再出手：找空间、寻场景、融资金一站搞定！",
+        "link_url": "https://appdetail-v2.baoanone.com/content/2026-07/16/content_219723.html",
+        "domain": "baoanone.com",
+        "platform_name": "宝安湾",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/www_baoanone_com.ico",
+        "total_citations": 7,
+        "avg_citations": 7,
+        "has_target_product": false
+      },
+      {
+        "title": "深圳市德运房地产顾问有限公司",
+        "link_url": "https://baike.baidu.com/item/%E6%B7%B1%E5%9C%B3%E5%B8%82%E5%BE%B7%E8%BF%90%E6%88%BF%E5%9C%B0%E4%BA%A7%E9%A1%BE%E9%97%AE%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8",
+        "domain": "baidu.com",
+        "platform_name": "百度知道",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/zhidao_baidu_com.ico",
+        "total_citations": 6,
+        "avg_citations": 6,
+        "has_target_product": false
+      },
+      {
+        "title": "宝安区十大产业园区 宝安的工业园区集中在哪里 深圳宝安特色产业园有哪些",
+        "link_url": "https://m.maigoo.com/top/442066.html",
+        "domain": "maigoo.com",
+        "platform_name": "买购网",
+        "logo_url": "https://app.geoindexfuture.com/site-icons/maigoo.com.ico",
+        "total_citations": 6,
+        "avg_citations": 6,
+        "has_target_product": true
+      },
+      {
+        "title": "宝地兴业：从“听介绍”到“进园区”，让企业眼见为实",
+        "link_url": "https://appdetail-v2.baoanone.com/content/2026-03/20/content_215114.html",
+        "domain": "baoanone.com",
+        "platform_name": "宝安湾",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/www_baoanone_com.ico",
+        "total_citations": 5,
+        "avg_citations": 5,
+        "has_target_product": false
+      },
+      {
+        "title": "从“有空间”到“定制空间”！宝安凭啥让企业扎堆投资加码？ | 百千万工程",
+        "link_url": "https://site.baoanone.com/content210627.html",
+        "domain": "baoanone.com",
+        "platform_name": "宝安湾",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/www_baoanone_com.ico",
+        "total_citations": 5,
+        "avg_citations": 5,
+        "has_target_product": false
+      },
+      {
+        "title": "宝安各街道锐意进取，奋楫争先落地《前海规划》，赋能高质量跨越发展 - 工作动态 - 宝安区人民政府门户网站",
+        "link_url": "https://www.baoan.gov.cn/xxgk/xwzx/tpxw/content/post_11524412.html",
+        "domain": "baoan.gov.cn",
+        "platform_name": "宝安区政府在线",
+        "logo_url": "https://cdn-yb.icon.qq.com/zuowei_dir/www_baoan_gov_cn.ico",
+        "total_citations": 5,
+        "avg_citations": 5,
+        "has_target_product": false
+      }
+    ]
+  },
+  "overview_daily": [
+    {
+      "date": "2026-08-14",
+      "mention_rate": 2,
+      "avg_position": 7.9,
+      "influence_rank": 85
+    }
+  ]
+}

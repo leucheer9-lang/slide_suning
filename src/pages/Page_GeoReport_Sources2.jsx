@@ -1,23 +1,26 @@
 ﻿import React from 'react';
 
+/* 来源：GEO ONE 项目 481 创维创新谷-ToC①，2026-08-14 */
+/* pct 为条形长度，按占比相对第一名（宝安区政府在线 31.1%）归一 */
+
 const RANKINGS = [
-    { name: '腾讯新闻', value: '8.8%', pct: 100 },
-    { name: '今日头条', value: '7.7%', pct: 88 },
-    { name: '新浪新闻', value: '4.3%', pct: 49 },
-    { name: '百度知道', value: '3.9%', pct: 44 },
-    { name: '快递鸟', value: '3.9%', pct: 44 },
+    { name: '宝安区政府在线', value: '31.1%', pct: 100 },
+    { name: '深圳政府在线', value: '8.4%', pct: 27 },
+    { name: '宝安湾', value: '7.0%', pct: 23 },
+    { name: '顺企网', value: '4.3%', pct: 14 },
+    { name: '今日头条', value: '4.0%', pct: 13 },
 ];
 
 const INSIGHTS = [
     {
-        title: '信源偏资讯与问答，权威产业内容不足',
+        title: '信源高度集中在政府门户，官方名录是入场券',
         accent: '#004CE5',
-        body: 'C 端引用池高度集中在腾讯新闻、今日头条、新浪新闻与百度知道。大模型更容易抓取大众测评与问答内容，京东物流需要在这些高权重渠道持续出现“可核验的场景证据”。',
+        body: '宝安区政府在线一家就占 31.1%，加上深圳政府在线 8.4%、宝安湾 7.0%，政府系信源合计 46.5%。这类内容多为产业布局指引、科技创新载体名录、物业清单，事实密度高、AI 采信权重也高。创维创新谷能否被推荐，很大程度取决于是否进入这些官方名录。',
     },
     {
-        title: '高引用文章里本品露出偏弱',
+        title: '高引用文章里只有名录榜单命中本品',
         accent: '#F59E0B',
-        body: 'Top 引用文章多为通用快递测评与顺丰官网，多篇并未稳定提及京东物流。若不对测评榜单与横向对比内容做主动布局，AI 会继续把“首选”写给顺丰。',
+        body: '引用量前十的文章中，只有买购网《宝安区十大产业园区》（12 次）提到了创维创新谷；《宝安集中推出独栋优质物业》10 次、《宝安区重点片区产业集群布局指引》9 次、《宝地兴业物业清单》8 次均未收录本品。补进这些政府文件与名录，是把 16 个 0 提及词打开的最短路径。',
     },
 ];
 
@@ -29,7 +32,7 @@ export default function Page_GeoReport_Sources2() {
             <div className="w-full flex flex-col h-full relative z-10 min-h-0">
                 <div className="text-center mb-4 mt-[-20px] shrink-0">
                     <h1 className="text-[28px] lg:text-[32px] font-bold text-white tracking-widest leading-none">
-                        引用源健康度与诊断 · C端
+                        引用源健康度与诊断 · 优化词 C 端
                     </h1>
                 </div>
 
@@ -45,18 +48,20 @@ export default function Page_GeoReport_Sources2() {
                             {/* 上半：文案铺满 */}
                             <div className="flex-[1.05] min-h-0 flex flex-col justify-between text-[15px] lg:text-[16px] xl:text-[18px] text-zinc-300 leading-relaxed">
                                 <p className="text-justify">
-                                    监测数据显示，决定<strong className="text-white font-semibold">京东物流</strong>在 C 端 AI
-                                    问答中表现的最底层数据抓取来源，呈现出
-                                    <strong className="text-white font-semibold">“资讯媒体 + UGC 问答”</strong>特点。
+                                    50 次 C 端对话中有 <strong className="text-white font-bold">92%</strong> 带引用，共计
+                                    <strong className="text-white font-bold"> 718 次</strong>。决定
+                                    <strong className="text-white font-semibold">创维创新谷</strong> 在 AI 问答中表现的最底层抓取来源，呈现出
+                                    <strong className="text-white font-semibold">“政府门户 + 区域招商媒体”</strong>的特点。
                                 </p>
                                 <p className="text-justify">
                                     排名前三的引用平台分别为：
-                                    <strong className="text-white font-bold">腾讯新闻 (8.8%)</strong>、
-                                    <strong className="text-white font-bold">今日头条 (7.7%)</strong>和
-                                    <strong className="text-white font-bold">新浪新闻 (4.3%)</strong>。
+                                    <strong className="text-white font-bold">宝安区政府在线 (31.1%)</strong>、
+                                    <strong className="text-white font-bold">深圳政府在线 (8.4%)</strong>和
+                                    <strong className="text-white font-bold">宝安湾 (7.0%)</strong>，政府系信源合计
+                                    <strong className="text-white font-bold"> 46.5%</strong>。
                                 </p>
                                 <p className="text-justify border-t border-white/10 pt-3">
-                                    这说明 C 端寄件决策高度依赖大众媒体测评与问答站点。若不能在这些渠道稳定输出对京东物流有利的横向对比内容，AI 推荐仍会偏向顺丰等既有强势品牌。
+                                    这意味着 AI 对宝安产业园的认知主要来自政府产业指引、载体名录和招商通稿。园区官网、招商手册这类自有渠道几乎不在引用池内，能否进入官方名录直接决定了是否被推荐。
                                 </p>
                             </div>
 

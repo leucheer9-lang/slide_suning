@@ -4,23 +4,25 @@ import GeoOneApp, { MAIN_LEFT, MAIN_W } from '../components/geoone/GeoOneApp';
 import { C, Checkbox, Toggle, GhostButton, PlatformDots, ShotThumb } from '../components/geoone/ui';
 
 /* ══════════════ 数据：换监测词条时只改这一段 ══════════════ */
-/* 来源：GEO ONE 项目 420 京东物流-ToB① */
+/* 来源：GEO ONE 项目 482 创维创新谷-ToB①，2026-08-14 */
 
-const TARGET = '京东物流';
+const TARGET = '创维创新谷';
+
+const TOTAL_ENTRIES = 25;
 
 const ROWS = [
-    { term: '电商仓配一体的物流公司推荐', rate: '100.0%', rank: 'NO. 1.3', shot: 'https://app.geoindexfuture.com/screenshots/20260805/91b90b5f79224bb4a6e80b08802c3db5.png', time: '2026/8/4' },
-    { term: '自营仓库覆盖全国的物流公司推荐', rate: '100.0%', rank: 'NO. 1.3', shot: 'https://app.geoindexfuture.com/screenshots/20260804/095c5f9f5f624c5a8b89fc1f7fe6fedd.png', time: '2026/8/4' },
-    { term: '全国分仓就近发货的物流公司推荐', rate: '100.0%', rank: 'NO. 1.8', shot: 'https://app.geoindexfuture.com/screenshots/20260805/21c59677a0d04836a88dd7de23f03369.png', time: '2026/8/4' },
-    { term: '帮企业物流降本增效的供应链服务商推荐', rate: '100.0%', rank: 'NO. 2.8', shot: 'https://app.geoindexfuture.com/screenshots/20260805/792d4b0fcf2a4fe0afb1939b1ae575b7.png', time: '2026/8/4' },
-    { term: '生鲜冷链物流公司推荐', rate: '100.0%', rank: 'NO. 3.0', shot: 'https://app.geoindexfuture.com/screenshots/20260805/a7c2373c989a4a93b838affb5d753235.png', time: '2026/8/4' },
-    { term: '家电家具送装一体的大件物流公司推荐', rate: '100.0%', rank: 'NO. 3.5', shot: 'https://app.geoindexfuture.com/screenshots/20260805/51223d231722451185fc204ea3bf4f6e.png', time: '2026/8/4' },
-    { term: '物流公司排行榜', rate: '100.0%', rank: 'NO. 7.5', shot: 'https://app.geoindexfuture.com/screenshots/20260804/30bacb00bc434696986c79d6e18eaf5b.png', time: '2026/8/4' },
-    { term: '服务好的物流公司推荐', rate: '50.0%', rank: 'NO. 4.3', shot: 'https://app.geoindexfuture.com/screenshots/20260804/7762249b4fe748e09c329125e2f1f9ce.png', time: '2026/8/4' },
-    { term: '订单在途全程可视化的物流公司推荐', rate: '25.0%', rank: 'NO. 6.8', shot: 'https://app.geoindexfuture.com/screenshots/20260804/c427238ae3f04977a36677dddc3dcca6.png', time: '2026/8/4' },
-    { term: '医药冷链物流公司推荐', rate: '25.0%', rank: 'NO. 9.0', shot: 'https://app.geoindexfuture.com/screenshots/20260805/0edd502e4b2941dba04c073a586dc7a7.png', time: '2026/8/4' },
-    { term: '有海外仓的跨境物流公司推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260805/2d266be6f99d4f38a7a3d3831bfcaad7.png', time: '2026/8/4' },
-    { term: '企业出海一站式的跨境物流公司推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260805/0f50b1882895421b815a4525c9b62c21.png', time: '2026/8/4' },
+    { term: '有现成房源的宝安区高端产业园推荐', rate: '50.0%', rank: 'NO. 4.5', shot: 'https://app.geoindexfuture.com/screenshots/20260813/fcaf32d73cda4a09bfc1aa37509d4ff0.png', time: '2026/8/14' },
+    { term: '适合中介带客的宝安区产业园推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260813/4f442e6046af4391b47e8c4f453acf17.png', time: '2026/8/14' },
+    { term: '支持招商渠道合作的宝安区产业园推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260813/900e4bc7efa64d2ab170e4db5d249864.png', time: '2026/8/14' },
+    { term: '适合中介长期合作的宝安区产业园推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260813/043987b214704e6283e70f4977d13bc3.png', time: '2026/8/14' },
+    { term: '值得中介主推的宝安区产业园推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260813/4d06df39305049888d8e68b11d92c394.png', time: '2026/8/14' },
+    { term: '中介佣金高的宝安区产业园推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260813/9ba76632d2954cf2ac7289455fcad6a3.png', time: '2026/8/14' },
+    { term: '中介佣金结算快的宝安区产业园推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260813/d4bcd68b3b6f4ae08097db7456c62103.png', time: '2026/8/14' },
+    { term: '中介报备流程简单的宝安区产业园推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260813/7edb42788f644c64a8f82eb235a8d92a.png', time: '2026/8/14' },
+    { term: '渠道带客成交效率高的宝安区产业园推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260813/b616c8dd128547858bc7394f2e89b336.png', time: '2026/8/14' },
+    { term: '客户成交容易的宝安区产业园推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260813/33f5b072786b4e3e81f481ce88ef30cd.png', time: '2026/8/14' },
+    { term: '房源充足的宝安区产业园推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260813/9c5c4ba7c1d54c46897489c7d19c73e6.png', time: '2026/8/14' },
+    { term: '有大面积房源的宝安区产业园推荐', rate: '0.0%', rank: '—', shot: 'https://app.geoindexfuture.com/screenshots/20260813/956fdb624b4d427193ae80df2ad39dfd.png', time: '2026/8/14' },
 ];
 
 const COLS = [
@@ -39,15 +41,15 @@ const HEAD_H = 44;
 
 export default function Page_GeoReport_Entries_ToB() {
     return (
-        <Frame title="词条表现分析 · B端" aspect="1586/912.5">
+        <Frame title="词条表现分析 · 优化词 B 端" aspect="1586/912.5">
             <GeoOneApp
                 height={912.5}
                 active="词条"
                 title="词条"
                 target={TARGET}
-                brand="京东物流(ToB)"
-                brandSub="京东物流"
-                avatar="京"
+                brand="创维创新谷(优化词B端)"
+                brandSub="创维创新谷"
+                avatar="创"
                 toolbarRight={
                     <>
                         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
@@ -153,6 +155,21 @@ export default function Page_GeoReport_Entries_ToB() {
                             </div>
                         </div>
                     ))}
+
+                    {/* 合计：本页展示 12 条，B 端优化词共 25 条 */}
+                    <div
+                        style={{
+                            height: 32,
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'flex-end',
+                            paddingRight: 16,
+                            fontSize: 13,
+                            color: C.muted,
+                        }}
+                    >
+                        共 {TOTAL_ENTRIES} 条词条，当前展示前 {ROWS.length} 条；{TOTAL_ENTRIES} 条中仅 1 条有提及，其余 24 条提及率均为 0.0%
+                    </div>
                 </div>
             </GeoOneApp>
         </Frame>

@@ -4,6 +4,7 @@ import { C, RankBadge, GhostButton } from './ui';
 /**
  * 竞品横向对比三栏排名。
  * 三栏结构完全一致：标题 / 副标题 / 表头 / 五行 / 展开，保证左右对齐。
+ * 行默认按行号显示名次；本品名次靠后时（如「前四 + 目标产品第 25 名」）给行传 rank 显示真实名次。
  */
 export default function RankPanel({ columns }) {
     return (
@@ -107,7 +108,7 @@ export default function RankPanel({ columns }) {
                                         minHeight: 0,
                                     }}
                                 >
-                                    <RankBadge n={i + 1} size={28} />
+                                    <RankBadge n={r.rank ?? i + 1} size={28} />
                                     <div
                                         style={{
                                             display: 'flex',

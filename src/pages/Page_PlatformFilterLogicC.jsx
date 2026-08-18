@@ -3,69 +3,59 @@ import { ExcelShell, TitleBar, Cell } from '../components/PlatformFilterExcelTab
 
 /* ══════════════ 数据：换 C 组明细时只改这一段 ══════════════ */
 
-/* C组参考品牌 = 行业头部竞品「顺丰」（竞品命中数 TOP1），非自家品牌 */
-const BRAND = '顺丰';
+/* C组参考品牌 = 行业头部竞品「新桥东先进制造产业园」（竞品命中数 TOP1），非自家品牌 */
+const BRAND = '新桥东先进制造产业园';
 
 const ROWS = [
     {
         rank: 1,
-        site: '山东省邮政管理局',
-        cites: 19,
-        hits: 19,
+        site: '租天下',
+        cites: 5,
+        hits: 5,
         rate: '100.00%',
-        deepseek: [7, 7],
-        doubao: [0, 0],
-        yuanbao: [3, 3],
-        tongyi: [9, 9],
-        note: `极高命中率，${BRAND}在此平台强势覆盖`,
+        deepseek: [0, 0],
+        doubao: [5, 5],
+        note: '豆包侧的厂房租赁垂直站，5 次引用全命中',
     },
     {
         rank: 2,
-        site: '凤凰网',
-        cites: 17,
-        hits: 17,
+        site: '深圳外商投资企业协会',
+        cites: 4,
+        hits: 4,
         rate: '100.00%',
-        deepseek: [4, 4],
-        doubao: [1, 1],
-        yuanbao: [3, 3],
-        tongyi: [9, 9],
-        note: `极高命中率，${BRAND}在此平台强势覆盖`,
+        deepseek: [0, 0],
+        doubao: [4, 4],
+        note: '本地招商政策权威站，4 次引用全命中',
     },
     {
         rank: 3,
-        site: '物流指闻',
-        cites: 16,
-        hits: 16,
+        site: '360软件管家',
+        cites: 4,
+        hits: 4,
         rate: '100.00%',
-        deepseek: [16, 16],
-        doubao: [0, 0],
-        yuanbao: [0, 0],
-        tongyi: [0, 0],
-        note: `极高命中率，${BRAND}在此平台强势覆盖`,
+        deepseek: [0, 0],
+        doubao: [4, 4],
+        note: '360 地图园区词条页，4 次引用全命中',
     },
     {
         rank: 4,
-        site: '快递查询网',
-        cites: 14,
-        hits: 14,
+        site: '航城智谷（hangchengzhigu.cn）',
+        cites: 3,
+        hits: 3,
         rate: '100.00%',
         deepseek: [0, 0],
-        doubao: [0, 0],
-        yuanbao: [13, 13],
-        tongyi: [1, 1],
-        note: `极高命中率，${BRAND}在此平台强势覆盖`,
+        doubao: [3, 3],
+        note: '同区园区官网被豆包直接引用',
     },
     {
         rank: 5,
-        site: '网经社',
-        cites: 11,
-        hits: 11,
-        rate: '100.00%',
-        deepseek: [9, 9],
-        doubao: [1, 1],
-        yuanbao: [1, 1],
-        tongyi: [0, 0],
-        note: `极高命中率，${BRAND}在此平台强势覆盖`,
+        site: '人民网健康',
+        cites: 8,
+        hits: 7,
+        rate: '87.50%',
+        deepseek: [2, 1],
+        doubao: [6, 6],
+        note: '央媒地方频道，8 次引用命中 7 次',
     },
 ];
 
@@ -77,8 +67,7 @@ const C = {
     headBorder: 'rgba(255,255,255,0.22)',
 };
 
-const COLS =
-    '0.5fr 1.35fr 0.7fr 0.95fr 0.7fr 0.75fr 0.75fr 0.7fr 0.7fr 0.7fr 0.7fr 0.85fr 0.85fr 1.7fr';
+const COLS = '0.5fr 1.9fr 0.75fr 1.15fr 0.8fr 0.85fr 0.85fr 0.8fr 0.8fr 1.9fr';
 
 const HEADERS = [
     '排名',
@@ -90,10 +79,6 @@ const HEADERS = [
     'DeepSeek 命中',
     '豆包 引用',
     '豆包 命中',
-    '元宝 引用',
-    '元宝 命中',
-    '通义千问 引用',
-    '通义千问 命中',
     '分析说明',
 ];
 
@@ -161,10 +146,6 @@ function TableC() {
                         <Cell border={C.border}>{r.deepseek[1]}</Cell>
                         <Cell border={C.border}>{r.doubao[0]}</Cell>
                         <Cell border={C.border}>{r.doubao[1]}</Cell>
-                        <Cell border={C.border}>{r.yuanbao[0]}</Cell>
-                        <Cell border={C.border}>{r.yuanbao[1]}</Cell>
-                        <Cell border={C.border}>{r.tongyi[0]}</Cell>
-                        <Cell border={C.border}>{r.tongyi[1]}</Cell>
                         <Cell align="left" title={r.note} style={{ fontSize: 12.5 }}>
                             {r.note}
                         </Cell>
@@ -201,7 +182,9 @@ export default function Page_PlatformFilterLogicC() {
                                 筛选逻辑动作
                             </span>
                             <p className="text-zinc-300 text-[1.15rem] leading-relaxed mt-1">
-                                把行业头部竞品「顺丰」单独深挖（竞品命中数 TOP1），将命中率（出现品牌 / 总引用次数）作为验证数值，选出最高命中的 5 个平台。
+                                把行业头部竞品「新桥东先进制造产业园」单独深挖（竞品命中数 TOP1，全站命中率 49.3%，809
+                                次引用中命中 399 次，覆盖 136 个平台），以命中率（品牌出现次数 / 该站总引用次数）为验证值，选出最高命中的
+                                5 个平台（最低 3 次引用）。
                             </p>
                         </div>
                     </div>

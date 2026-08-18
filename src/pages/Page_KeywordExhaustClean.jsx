@@ -3,8 +3,8 @@ import BitableView from '../components/BitableView';
 import BitableWindow from '../components/BitableWindow';
 
 /* ─────────────────────────────────────────────────────────────
- * 一、词条穷举及清洗（京东物流 ToC · 飞书多维表）
- * 一页约 17 行铺满；本表 54 条按 18/18/18 拆 3 页避免末页过稀。
+ * 一、词条穷举及清洗（创维创新谷 · 飞书多维表）
+ * 一页约 17 行铺满；本表 35 条按 18/17 拆 2 页。
  * ───────────────────────────────────────────────────────────── */
 
 const COLUMNS = [
@@ -37,27 +37,28 @@ const F = {
     pain: { tag: 'blue', text: '产品痛点' },
     lowIntent: { tag: 'teal', text: '搜索意图低' },
     common: { tag: 'carmine', text: '品类共性' },
+    expand: { tag: 'orange', text: '扩展词(暂时不显示)' },
 };
 
 const ROWS = [
-    { type: T.fixed, name: '品牌排行榜', desc: '最基本最常见的核心问法', keyword: '快递公司排行榜' },
-    { type: T.fixed, name: '品牌推荐', desc: '最基本最常见的核心问法', keyword: '快递公司推荐' },
-    { type: T.fixed, name: '服务', desc: '最基本最常见的核心问法（快递为服务行业，质量位改「服务」）', keyword: '服务好的快递推荐' },
-    { type: T.fixed, name: '性价比', desc: '最基本最常见的核心问法', keyword: '性价比高的快递推荐', flag: F.pain, flagNote: '价格非优势位，不主动进入比价类问法。' },
-    { type: T.fixed, name: '口碑', desc: '最基本最常见的核心问法', keyword: '口碑好的快递推荐' },
-    { type: T.indMotive, name: '寄件第一诉求是快', desc: '个人寄件最主流的决策标准是「哪家快」，急件、赶时间场景直接按速度选快递。', keyword: '速度快的快递排行榜' },
-    { type: T.indMotive, name: '寄件第一诉求是快', desc: '个人寄件最主流的决策标准是「哪家快」，急件、赶时间场景直接按速度选快递。', keyword: '寄快递哪家快递最快' },
-    { type: T.indMotive, name: '寄贵重物品求安全', desc: '寄手机、电脑等贵重物品最怕丢件和磕碰，会主动搜安全性高的快递。', keyword: '寄手机电脑安全的快递推荐' },
-    { type: T.indMotive, name: '寄活体宠物', desc: '部分用户有寄送宠物活体的需求。', keyword: '寄活体宠物的快递推荐', flag: F.offTarget, flagNote: '快递不承运活体动物，与目标产品服务范围不符。' },
-    { type: T.indScene, name: '加急寄文件', desc: '合同、证件等急件对时效极度敏感，要求当天/次日必达。', keyword: '加急寄文件时效快的快递推荐' },
-    { type: T.indScene, name: '搬家寄行李', desc: '换城市搬家把行李打包寄走，件多且重，关注划算和上门取件。', keyword: '搬家寄行李划算的快递推荐' },
-    { type: T.indScene, name: '学生开学寄行李', desc: '开学季学生把被子、行李箱寄到学校，典型的大件低频寄件场景。', keyword: '学生开学寄被子行李箱的快递推荐' },
-    { type: T.indScene, name: '网购退换货寄件', desc: '电商退货是最高频的个人寄件场景，看重上门取件是否方便。', keyword: '网购退货上门取件方便的快递推荐' },
-    { type: T.indScene, name: '驿站自提', desc: '部分用户习惯到驿站自提包裹。', keyword: '驿站自提方便的快递推荐', flag: F.offTarget, flagNote: '京东快递主打送货上门、不随便放驿站，与驿站自提的服务模式相反。' },
-    { type: T.indSelling, name: '全程物流轨迹可查', desc: '寄收件人都希望实时查看包裹位置。', keyword: '全程可查物流轨迹的快递推荐', flag: F.common, flagNote: '轨迹查询是所有主流快递的标配能力，无法体现差异化。' },
-    { type: T.indPain, name: '丢件损坏理赔难', desc: '快递丢失、损坏后理赔流程长、赔付低，是投诉最集中的痛点。', keyword: '寄贵重物品不丢件的快递推荐' },
-    { type: T.indPain, name: '丢件损坏理赔难', desc: '快递丢失、损坏后理赔流程长、赔付低，是投诉最集中的痛点。', keyword: '包装规范不容易摔坏的快递推荐' },
-    { type: T.indPain, name: '丢件损坏理赔难', desc: '快递丢失、损坏后理赔流程长、赔付低，是投诉最集中的痛点。', keyword: '寄东西丢了好理赔的快递推荐' },
+    { type: T.fixed, name: '品牌排行榜', desc: '最基本最常见的核心问法', keyword: '适合中介带客的宝安区产业园排行榜' },
+    { type: T.fixed, name: '品牌推荐', desc: '最基本最常见的核心问法', keyword: '适合中介带客的宝安区产业园推荐' },
+    { type: T.fixed, name: '服务', desc: '最基本最常见的核心问法', keyword: '支持招商渠道合作的宝安区产业园推荐' },
+    { type: T.fixed, name: '性价比', desc: '最基本最常见的核心问法', keyword: '中介佣金高的宝安区产业园推荐' },
+    { type: T.fixed, name: '口碑', desc: '最基本最常见的核心问法', keyword: '值得中介主推的宝安区产业园推荐' },
+    { type: T.indMotive, name: '找到能带客、能长期合作的园区', desc: '中介选盘先看园区是否接受渠道带客、能不能长期放盘，避免做一单就没货、或甲方不认中介。', keyword: '适合中介长期合作的宝安区产业园推荐' },
+    { type: T.indMotive, name: '佣金高、结算快', desc: '中介收入看佣金点位和回款速度，倾向选择佣金有竞争力、结佣不拖的园区。', keyword: '中介佣金结算快的宝安区产业园推荐' },
+    { type: T.indMotive, name: '佣金高、结算快', desc: '中介收入看佣金点位和回款速度，倾向选择佣金有竞争力、结佣不拖的园区。', keyword: '中介佣金高的宝安区产业园推荐', flag: F.dup, flagNote: '与 0.固定 性价比 语义一致。' },
+    { type: T.indMotive, name: '报备简单、成交效率高', desc: '报备流程短、保护规则清楚、带客后成交顺，才能提高单产、减少撞单和扯皮。', keyword: '中介报备流程简单的宝安区产业园推荐' },
+    { type: T.indMotive, name: '报备简单、成交效率高', desc: '报备流程短、保护规则清楚、带客后成交顺，才能提高单产、减少撞单和扯皮。', keyword: '渠道带客成交效率高的宝安区产业园推荐' },
+    { type: T.indScene, name: '渠道合作与主推选盘', desc: '中介要决定重点推哪些园区，关注是否支持招商渠道合作、值不值得纳入主推盘。', keyword: '支持招商渠道合作的宝安区产业园推荐', flag: F.dup, flagNote: '与 0.固定 服务 语义一致。' },
+    { type: T.indScene, name: '按货盘匹配客户', desc: '手上客户面积、业态不同，需要现成、大面积、整层或可灵活分割的房源来快速匹配。', keyword: '房源充足的宝安区产业园推荐' },
+    { type: T.indScene, name: '按货盘匹配客户', desc: '手上客户面积、业态不同，需要现成、大面积、整层或可灵活分割的房源来快速匹配。', keyword: '有现成房源的宝安区产业园推荐' },
+    { type: T.indScene, name: '按货盘匹配客户', desc: '手上客户面积、业态不同，需要现成、大面积、整层或可灵活分割的房源来快速匹配。', keyword: '有大面积房源的宝安区产业园推荐' },
+    { type: T.indScene, name: '按货盘匹配客户', desc: '手上客户面积、业态不同，需要现成、大面积、整层或可灵活分割的房源来快速匹配。', keyword: '有整层房源的宝安区产业园推荐' },
+    { type: T.indScene, name: '按货盘匹配客户', desc: '手上客户面积、业态不同，需要现成、大面积、整层或可灵活分割的房源来快速匹配。', keyword: '面积可灵活分割的宝安区产业园推荐' },
+    { type: T.indScene, name: '判断客户好不好成交', desc: '带客前会评估园区成交难度，优先推客户更容易落地的盘，减少空看。', keyword: '客户成交容易的宝安区产业园推荐' },
+    { type: T.indSelling, name: '现成可带看、房源充足', desc: '现楼、空置充足，约看就能看、能谈，降低带客扑空。', keyword: '有现成房源的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
 ];
 
 export default function Page_KeywordExhaustClean() {
@@ -76,24 +77,23 @@ export default function Page_KeywordExhaustClean() {
 }
 
 const ROWS_2 = [
-    { type: T.indPain, name: '快递不上门放驿站', desc: '不打招呼直接放驿站/快递柜是全网吐槽最多的服务痛点。', keyword: '送货上门不放驿站的快递推荐' },
-    { type: T.indPain, name: '运费贵', desc: '时效和服务好的快递普遍更贵，价格敏感用户会搜便宜的快递比价。', keyword: '便宜的快递推荐', flag: F.pain, flagNote: '反向击中：价格高于通达系' },
-    { type: T.prodMotive, name: '寄件品类多样', desc: '手机电脑、大家居、家电、生鲜都可以寄递。', keyword: '寄家具家电的快递推荐' },
-    { type: T.prodMotive, name: '冷链寄递生鲜药品', desc: '冷链寄递覆盖生鲜、药品。', keyword: '寄生鲜水果不怕坏的快递推荐' },
-    { type: T.prodMotive, name: '冷链寄递生鲜药品', desc: '冷链寄递覆盖生鲜、药品。', keyword: '寄海鲜冷冻食品的快递推荐' },
-    { type: T.prodMotive, name: '冷链寄递生鲜药品', desc: '冷链寄递覆盖生鲜、药品。', keyword: '寄药品的冷链快递推荐', flag: F.lowIntent, flagNote: '个人寄药品场景小众、搜索量低；冷链意图已由生鲜、海鲜两条承接。' },
-    { type: T.prodScene, name: '顺手寄', desc: '收货同时顺手寄快递，不用单独约快递员。', keyword: '收快递时能顺手寄件的快递推荐', flag: F.lowIntent, flagNote: '顺手寄是收件时被动发现的功能，用户不会主动以此问法搜索快递。' },
-    { type: T.prodSelling, name: '配送快（211限时达）', desc: '大部分地区 11 点下单当天收到，晚上 11 点下单第二天下午 3 点送到。', keyword: '当天就能到的快递推荐' },
-    { type: T.prodSelling, name: '配送快（211限时达）', desc: '大部分地区 11 点下单当天收到，晚上 11 点下单第二天下午 3 点送到。', keyword: '晚上下单第二天能到的快递推荐', flag: F.dup, flagNote: '与「当天就能到的快递推荐」同属 211 时效意图。' },
-    { type: T.prodSelling, name: '取件快', desc: '下单流程快，小哥半小时内电话预约取件。', keyword: '上门取件快的快递推荐' },
-    { type: T.prodSelling, name: '取件快', desc: '下单流程快，小哥半小时内电话预约取件。', keyword: '下单后半小时就来取件的快递推荐', flag: F.dup, flagNote: '与「上门取件快的快递推荐」意思一致。' },
-    { type: T.prodSelling, name: '服务好（电话沟通）', desc: '取件送货都会电话沟通、电话预约。', keyword: '送货前会打电话的快递推荐' },
-    { type: T.prodSelling, name: '服务好（电话沟通）', desc: '取件送货都会电话沟通、电话预约。', keyword: '电话预约上门取件的快递推荐' },
-    { type: T.prodSelling, name: '服务多（一站式）', desc: '大件、搬家、清洗衣物、家电维修安装清洗、冷链寄递等服务一站式搞定。', keyword: '服务丰富的一站式快递平台推荐' },
-    { type: T.prodSelling, name: '服务多（一站式）', desc: '大件、搬家、清洗衣物、家电维修安装清洗、冷链寄递等服务一站式搞定。', keyword: '可以维修安装清洗家电的快递推荐' },
-    { type: T.prodSelling, name: '服务多（一站式）', desc: '大件、搬家、清洗衣物、家电维修安装清洗、冷链寄递等服务一站式搞定。', keyword: '能帮忙搬家的快递推荐' },
-    { type: T.prodSelling, name: '小哥稳定', desc: '快递员与京东物流直接签订劳动合同，工作稳定、更熟悉用户。', keyword: '快递员服务态度好的快递推荐' },
-    { type: T.prodSelling, name: '小哥稳定', desc: '快递员与京东物流直接签订劳动合同，工作稳定、更熟悉用户。', keyword: '快递员是正式员工服务稳定的快递推荐', flag: F.lowIntent, flagNote: '用工模式属品牌背书信息，消费者不会以此搜索；服务价值已由「快递员服务态度好」承接。' },
+    { type: T.indSelling, name: '现成可带看、房源充足', desc: '现楼、空置充足，约看就能看、能谈，降低带客扑空。', keyword: '房源充足的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.indSelling, name: '面积段宽、可整层可分割', desc: '小面积到整层、办公到厂房都能接，一个盘能吃多类客户。', keyword: '有大面积房源的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.indSelling, name: '渠道政策稳定、配合带客', desc: '长期接受中介、政策不朝令夕改，招商配合带看和成交。', keyword: '适合中介长期合作的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.indPain, name: '佣金低、结算慢、报备复杂', desc: '点位低或结佣拖、报备繁琐，中介不愿推。', keyword: '中介佣金结算快的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.indPain, name: '期房或空置不足，带不了客', desc: '还在建或好房源已满，约看没有可成交货。', keyword: '有现成房源的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.indPain, name: '园区不接受中介或客户难成交', desc: '直租为主、中介勿扰，或准入过严导致带去的客户落不了。', keyword: '适合中介带客的宝安区产业园推荐', flag: F.dup, flagNote: '与 0.固定 品牌推荐 语义一致。' },
+    { type: T.prodMotive, name: '现楼即看即租，带客不扑空', desc: '创维创新谷已运营、现楼可看可租，中介带有即时入驻需求的客户时，交付确定性高于在建竞品。', keyword: '有现成房源的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.prodMotive, name: '办公和厂房都有，一类客户都能接', desc: '同一园区有写字楼/研发办公和高标准厂房，中介可用一个盘匹配总部办公和大面积生产类客户。', keyword: '有大面积房源的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.prodMotive, name: '集团自持，长期放盘好合作', desc: '业主为创维集团自持，单一业权、长期持有，适合中介做长期合作盘，减少散户业主跳单。', keyword: '适合中介长期合作的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.prodScene, name: '带企业客户看现成产业园', desc: '客户要马上入驻，中介需要现成房源、能约看到场的园区。', keyword: '有现成房源的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.prodScene, name: '带要大面积或整层的客户', desc: '客户要整层办公或大面积厂房，需要园区有对应货盘。', keyword: '有整层房源的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.prodScene, name: '带要灵活分割的成长型客户', desc: '客户现阶段面积不大、后续可能扩租，需要可灵活分割的空间。', keyword: '面积可灵活分割的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.prodSelling, name: '现成房源、房源充足', desc: '现楼招租，体量约 45 万㎡，仍有可租余量，便于持续带客。', keyword: '房源充足的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.prodSelling, name: '大面积、整层、可灵活分割', desc: '面积段宽，可整层、可分割，办公与厂房两种业态。', keyword: '面积可灵活分割的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.prodSelling, name: '可做渠道带客的稳定放盘', desc: '集团自持、长期运营，具备做渠道长期合作的基础。', keyword: '支持招商渠道合作的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.prodPain, name: '石岩区位，带看距离和地铁不占优', desc: '相对尖岗山竞品，石岩轨道与接南山便利度弱，部分客户嫌远，带看成本更高。', keyword: '地铁口好带看的宝安区产业园推荐', flag: F.offTarget, flagNote: '石岩区位相对尖岗山竞品不占优，不宜作为中介带看主词。' },
+    { type: T.prodPain, name: '对外主推直租，渠道佣金不是公开优势', desc: '官方招商页强调直租与免佣金服务，中介佣金点位未公开，不宜把「佣金最高」当差异化投放。', keyword: '中介佣金最高的宝安区产业园推荐', flag: F.pain, flagNote: '园区对外主推直租，佣金点位未构成可公开的差异化优势。' },
 ];
 
 export function Page_KeywordExhaustClean2() {
@@ -110,40 +110,3 @@ export function Page_KeywordExhaustClean2() {
         </BitableWindow>
     );
 }
-
-const ROWS_3 = [
-    { type: T.search, name: '百度搜索 Top10', desc: '来源于百度搜索数据（辅助参考）', keyword: '1. 快递单号查询', flag: F.noIntent, flagNote: '用户意图是查询包裹状态，而非选择快递公司。' },
-    { type: T.search, name: '百度搜索 Top10', desc: '来源于百度搜索数据（辅助参考）', keyword: '2. 快递100', flag: F.noIntent, flagNote: '主词是第三方查件平台，用户意图为查询包裹，非寄件购买决策。' },
-    { type: T.search, name: '百度搜索 Top10', desc: '来源于百度搜索数据（辅助参考）', keyword: '3. 寄快递哪家便宜', flag: F.pain, flagNote: '价格比价问法；客户要求减少「贵」的评定，不进投放池。' },
-    { type: T.search, name: '百度搜索 Top10', desc: '来源于百度搜索数据（辅助参考）', keyword: '4. 快递什么时候能到', flag: F.noIntent, flagNote: '用户倾向于查询在途时效状态，而非购买决策。' },
-    { type: T.search, name: '百度搜索 Top10', desc: '来源于百度搜索数据（辅助参考）', keyword: '5. 寄大件用什么物流便宜', flag: F.pain, flagNote: '大件比价问法，价格非优势位，不进投放池。' },
-    { type: T.search, name: '百度搜索 Top10', desc: '来源于百度搜索数据（辅助参考）', keyword: '6. 顺丰快递', flag: F.offTarget, flagNote: '主词为竞品品牌「顺丰」，与本轮目标产品无关。' },
-    { type: T.search, name: '百度搜索 Top10', desc: '来源于百度搜索数据（辅助参考）', keyword: '7. 快递驿站怎么加盟', flag: F.noIntent, flagNote: '用户倾向于获取加盟创业信息，而非寄件购买决策。' },
-    { type: T.search, name: '百度搜索 Top10', desc: '来源于百度搜索数据（辅助参考）', keyword: '8. 寄快递怎么收费', flag: F.noIntent, flagNote: '用户倾向于了解资费规则，而非快递公司选择决策。' },
-    { type: T.search, name: '百度搜索 Top10', desc: '来源于百度搜索数据（辅助参考）', keyword: '9. 哪个快递可以寄宠物', flag: F.offTarget, flagNote: '快递不承运活体动物，与目标产品服务范围不符。' },
-    { type: T.search, name: '百度搜索 Top10', desc: '来源于百度搜索数据（辅助参考）', keyword: '10. 什么快递最快', flag: F.dup, flagNote: '与保留词「寄快递哪家快递最快」意思一致。' },
-    { type: T.social, name: '小红书话题 Top', desc: '来源于小红书搜索数据（辅助参考）', keyword: '11. 寄快递省钱攻略', flag: F.noIntent, flagNote: '用户倾向于获取省钱攻略内容，而非快递公司选择决策。' },
-    { type: T.social, name: '小红书话题 Top', desc: '来源于小红书搜索数据（辅助参考）', keyword: '12. 搬家行李邮寄最划算的方式', flag: F.dup, flagNote: '与「搬家寄行李划算的快递推荐」意图一致。' },
-    { type: T.social, name: '小红书话题 Top', desc: '来源于小红书搜索数据（辅助参考）', keyword: '13. 快递不送货上门怎么投诉', flag: F.noIntent, flagNote: '用户倾向于获取投诉维权方法，而非购买决策。' },
-    { type: T.social, name: '小红书话题 Top', desc: '来源于小红书搜索数据（辅助参考）', keyword: '14. 寄电脑怎么打包', flag: F.noIntent, flagNote: '用户倾向于获取打包教程；安全寄递意图已由「寄手机电脑安全的快递推荐」承接。' },
-    { type: T.social, name: '小红书话题 Top', desc: '来源于小红书搜索数据（辅助参考）', keyword: '15. 大学生开学行李邮寄', flag: F.dup, flagNote: '与「学生开学寄被子行李箱的快递推荐」意图一致。' },
-    { type: T.social, name: '小红书话题 Top', desc: '来源于小红书搜索数据（辅助参考）', keyword: '16. 生鲜怎么寄快递不会坏', flag: F.dup, flagNote: '与「寄生鲜水果不怕坏的快递推荐」意图一致。' },
-    { type: T.social, name: '小红书话题 Top', desc: '来源于小红书搜索数据（辅助参考）', keyword: '17. 快递保价怎么赔', flag: F.noIntent, flagNote: '用户倾向于了解保价理赔规则，而非购买决策。' },
-    { type: T.social, name: '小红书话题 Top', desc: '来源于小红书搜索数据（辅助参考）', keyword: '18. 送货上门的快递', flag: F.dup, flagNote: '与「送货上门不放驿站的快递推荐」意思一致。' },
-];
-
-export function Page_KeywordExhaustClean3() {
-    return (
-        <BitableWindow>
-            <BitableView
-                tableName="一、词条穷举及清洗"
-                viewName="全部词条"
-                columns={COLUMNS}
-                rows={ROWS_3}
-                startIndex={37}
-                rowHeight={33.6}
-            />
-        </BitableWindow>
-    );
-}
-
