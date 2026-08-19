@@ -27,4 +27,7 @@ output_slides.pptx
 export-screenshots/
 export-screenshots-all/
 export-screenshots-new/
+export-ppt-ch1-3/
+*.pptx
+~$*
 _verify-shots/

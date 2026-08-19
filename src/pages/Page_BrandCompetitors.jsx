@@ -1,76 +1,91 @@
 import React from 'react';
 
-const cols = 'grid-cols-[148px_1fr_1fr_1fr]';
+const cols = 'grid-cols-[108px_repeat(6,minmax(0,1fr))]';
+
+function keepEnd(text, n = 3) {
+    if (!text || text.length <= n) return text;
+    return (
+        <>
+            {text.slice(0, -n)}
+            <span className="whitespace-nowrap">{text.slice(-n)}</span>
+        </>
+    );
+}
 
 const brands = [
-    { name: '创维创新谷', en: 'SKYWORTH', role: '实业链主 · 已投用', highlight: true },
-    { name: '雪花科创城', en: 'CR SNOW', role: '华润产城 · 新供给' },
-    { name: '甲岸美生智谷', en: 'JIAAN', role: '工改工 · 待交付' },
+    { name: '创维创新谷', role: '实业链主 · 已投用', highlight: true },
+    { name: '雪花科创城', role: '华润产城 · 新供给' },
+    { name: '甲岸美生智谷', role: '工改工 · 待交付' },
+    { name: ['新桥东', '先进制造产业园'], role: '工业上楼 · 标杆园' },
+    { name: '全至科技创新园', role: '沙井 · 国家级孵化器' },
+    { name: '汇智研发中心', role: '西乡 · 专精特新总部' },
 ];
 
 const rows = [
     {
-        label: '地缘圈层',
+        label: '产业定位',
         cells: [
-            { highlight: true, primary: '宝安石岩 · 西部制造带', secondary: '与另外两家抢同一批宝安客' },
-            { primary: '宝安新安 / 尖岗山', secondary: '更近南山，同区横向比价' },
-            { primary: '宝安新安 72 区', secondary: '西乡—新安，同片区替代' },
+            { highlight: true, lines: ['5G+8K / 电子信息主题园', '招链主配套，不是谁来都行'] },
+            { lines: ['华润产城、啤酒总部', '圈层偏装备，电子配套对不上'] },
+            { lines: ['智能制造 / 电子信息', '无链主，租户生态还没起来'] },
+            { lines: ['工业母机、机器人、精密仪器', '先进制造总部 + 专精特新'] },
+            { lines: ['机器人、智能装备孵化', '沙井中小科技主题园'] },
+            { lines: ['专精特新总部基地', '研发办公，不接重生产'] },
         ],
     },
     {
-        label: '交通可达',
+        label: '载体能力',
         cells: [
-            { highlight: true, primary: '地铁 13 号线应人石站已通', secondary: '石岩到南山仍有通勤差' },
-            { primary: '地铁 5 号线兴东站上盖', secondary: '区位是它招商时的主攻点' },
-            { primary: '兴东站步行约 250 米', secondary: '交通条件接近雪花科创城' },
+            { highlight: true, lines: ['工业上楼 + 甲级办公 + 总部', '楼上研发、楼下中试'] },
+            { lines: ['M1 厂房 + M0 研发', '拼承重、卸货、工业用电'] },
+            { lines: ['研发楼 + 厂房 + 宿舍', '工改工，形态近但体量小'] },
+            { lines: ['立体工厂 + 产研综合体', '承重 750kg，层高达 7.8 米'] },
+            { lines: ['甲级办公 + 高层厂房', '产办合一，荷载 750kg'] },
+            { lines: ['14 万㎡纯研发办公', '品质总部楼，重生产接不住'] },
         ],
     },
     {
-        label: '物业形态',
+        label: '交付节点',
         cells: [
-            { highlight: true, primary: '工业上楼 + 甲级办公 + 总部', secondary: '楼上研发、楼下中试，M1+M0' },
-            { primary: 'M1 厂房超 21 万㎡ + M0 研发', secondary: '拼承重、卸货平台、工业用电' },
-            { primary: '研发楼 + 高标准厂房 + 宿舍', secondary: '工改工，形态接近但体量小' },
+            { highlight: true, lines: ['2016 年投用，现在就能住', '2023 省特色园，深圳当年唯一'] },
+            { lines: ['啤酒总部已迁入尖岗山', '电子信息集聚还在形成'] },
+            { lines: ['预计 2026 年中才交付', '现在带客也搬不进去'] },
+            { lines: ['全市首个平方公里级工业上楼', '一号园满园，整体建成在 2031'] },
+            { lines: ['茅洲山旧改，2019 获孵化器', '已运营，入驻率约 90%'] },
+            { lines: ['2022 揭牌，2023 正式开园', '广东首个专精特新总部基地'] },
         ],
     },
     {
-        label: '体量交付',
+        label: '租金政策',
         cells: [
-            { highlight: true, stat: '45 万㎡', primary: '一期 2016 年投用，现在就能入驻' },
-            { stat: '115 万㎡', primary: '总部刚迁入，电子信息集聚还在形成' },
-            { stat: '17.5 万㎡', primary: '预计 2026 年中交付，现在搬不进去' },
+            { highlight: true, lines: ['挂牌 50–72 元，同带最低', '省级园身份，补贴可申报'] },
+            { lines: ['挂牌 60–100 元 /㎡·月', '无省级园，靠华润品牌招商'] },
+            { lines: ['研发楼 65–85 元 /㎡·月', '工改工，补贴落户叠不上'] },
+            { lines: ['工业上楼均价不超过 35 元', '市区专项政策托住租金'] },
+            { lines: ['租金约 35 元 /㎡·月起', '孵化器补贴约 5–30 元'] },
+            { lines: ['挂牌约 35–59 元 /㎡·月', '小巨人 / 上市最高 5 折'] },
         ],
     },
     {
-        label: '产业基因',
+        label: '市场占位',
         cells: [
-            { highlight: true, primary: '创维链主：5G+8K / 电子信息', secondary: '同链近 90 家，彩电全球总部在园' },
-            { primary: '华润啤酒总部 + 智能装备', secondary: '圈层对不上电子配套商' },
-            { primary: '智能制造 / 电子信息', secondary: '无链主，也还没有存量租户生态' },
+            { highlight: true, lines: ['C 端提及 24%，排第 4', 'B 端仅 2%，进不了首选'] },
+            { lines: ['问宝安工业上楼时出镜高', '品牌声量大，GEO 榜落后'] },
+            { lines: ['品牌新、词条少', 'AI 很少单独点名'] },
+            { lines: ['C 端 54%、Top1 双第一', 'B 端 42% 第一，AI 默认首选'] },
+            { lines: ['C 端提及 36%，排第二', '平均位次 NO. 7.0'] },
+            { lines: ['C 端提及 34%，排第三', 'B 端 18%，也进前三'] },
         ],
     },
     {
-        label: '租金梯度',
+        label: '客户认知',
         cells: [
-            { highlight: true, stat: '50–72 元', statAccent: true, primary: '公开挂牌 /㎡·月，三家最低' },
-            { stat: '60–100 元', primary: '同一价格带；客户拿这张单来压价' },
-            { stat: '65–85 元', primary: '研发楼报价；单价接近，配套更薄' },
-        ],
-    },
-    {
-        label: '配套留人',
-        cells: [
-            { highlight: true, primary: '商场 + 1,500 套公寓 + 亚朵', secondary: '石岩少有的办住商酒闭环' },
-            { primary: '啤酒小镇 + 产业宿舍 + 华润运营', secondary: '配套在，电子信息氛围还没起来' },
-            { primary: '人才公寓约 181 套 + 商业约 2,000㎡', secondary: '能住，接待和留人体量差一截' },
-        ],
-    },
-    {
-        label: '政策身份',
-        cells: [
-            { highlight: true, primary: '省级特色产业园 + 科技桃花源', secondary: '2023 年当年深圳唯一，补贴可申报' },
-            { primary: '华润品牌招商，无省级园身份', secondary: '靠央企背书，不靠可申报名额' },
-            { primary: '工改工综合体，无省级园身份', secondary: '租金补贴和落户奖励叠不上' },
+            { highlight: true, lines: ['创维总部园 / 5G+8K 主题园', '常被搜成家电，石岩显偏远'] },
+            { lines: ['华润产城新地标，更近南山', '电子圈层还没立住'] },
+            { lines: ['兴东口工改工，看起来能换', '没有链主故事'] },
+            { lines: ['工业上楼标杆、宝安必推', '政府通稿和名录托着认知'] },
+            { lines: ['沙井工业上楼样板、孵化器', '体量小，中小科技园印象'] },
+            { lines: ['西乡专精特新总部、品质研发楼', '偏办公，重生产接不住'] },
         ],
     },
 ];
@@ -78,31 +93,15 @@ const rows = [
 function Cell({ cell, isLast }) {
     return (
         <div
-            className={`px-6 py-2.5 flex flex-col justify-center gap-1 min-h-0 ${!isLast ? 'border-r border-white/10' : ''} ${
-                cell.highlight ? 'bg-[#004CE5]/10' : ''
-            }`}
+            className={`px-5 py-2.5 flex flex-col justify-center gap-1.5 min-h-0 ${
+                !isLast ? 'border-r border-white/10' : ''
+            } ${cell.highlight ? 'bg-[#004CE5]/12' : 'bg-white/[0.02]'}`}
         >
-            {cell.stat ? (
-                <div
-                    className={`text-[24px] font-black leading-none ${
-                        cell.statAccent ? 'text-[#4B8BFF]' : 'text-white'
-                    }`}
-                >
-                    {cell.stat}
-                </div>
-            ) : null}
-            <p
-                className={`leading-snug ${
-                    cell.stat
-                        ? 'text-[16px] text-zinc-400 font-medium'
-                        : 'text-[18px] text-zinc-100 font-semibold'
-                }`}
-            >
-                {cell.primary}
-            </p>
-            {cell.secondary ? (
-                <p className="text-[15px] text-zinc-500 font-medium leading-snug">{cell.secondary}</p>
-            ) : null}
+            {cell.lines.map((line) => (
+                <p key={line} className="text-[14px] text-zinc-200 font-medium leading-relaxed">
+                    {keepEnd(line)}
+                </p>
+            ))}
         </div>
     );
 }
@@ -112,34 +111,45 @@ export default function Page_BrandCompetitors() {
         <div className="flex-1 min-h-0 w-full flex flex-col relative bg-black overflow-hidden text-white font-sans">
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] opacity-20 pointer-events-none" />
 
-            <div className="shrink-0 text-center pt-2 pb-2 relative z-10 px-8">
+            <div className="shrink-0 text-center pt-2 pb-2 relative z-10 px-10">
                 <h1 className="text-[32px] font-black text-white tracking-widest leading-none mb-1.5">
                     核心竞品对比分析
                 </h1>
                 <p className="text-zinc-400 text-[20px] leading-snug">
-                    竞品不是谁名气大，而是谁在抢同一批宝安硬科技租户
+                    雪花、甲岸在同一张选址表上截流；新桥东、全至、汇智在 AI 推荐里占位
                 </p>
             </div>
 
-            <div className="flex-1 min-h-0 w-full max-w-[1720px] mx-auto px-6 pb-2.5 relative z-10 flex flex-col">
+            <div className="flex-1 min-h-0 w-full max-w-[1760px] mx-auto px-6 pb-2.5 relative z-10 flex flex-col">
                 <div className="flex-1 min-h-0 w-full flex flex-col border border-white/10 rounded-2xl overflow-hidden bg-[#111]">
                     <div className={`grid ${cols} bg-black/70 border-b border-white/10 shrink-0`}>
                         <div className="px-3 py-3.5 flex items-center justify-center border-r border-white/10">
-                            <span className="font-bold text-zinc-400 tracking-widest text-[16px]">比较维度</span>
+                            <span className="font-bold text-zinc-400 tracking-widest text-[16px]">对比项</span>
                         </div>
                         {brands.map((b, i) => (
                             <div
-                                key={b.name}
-                                className={`px-3 py-3.5 flex flex-col items-center justify-center ${
+                                key={b.role}
+                                className={`px-4 py-3 flex flex-col items-center justify-center ${
                                     i < brands.length - 1 ? 'border-r border-white/10' : ''
-                                } ${b.highlight ? 'bg-[#004CE5]/15 relative overflow-hidden' : ''}`}
+                                } ${b.highlight ? 'bg-[#004CE5]/20 relative overflow-hidden shadow-[inset_0_0_0_1px_rgba(0,76,229,0.45)]' : ''}`}
                             >
                                 {b.highlight ? <div className="absolute top-0 left-0 w-full h-1.5 bg-[#004CE5]" /> : null}
-                                <span className="font-bold text-white text-[28px] tracking-wider leading-tight text-center">
-                                    {b.name}
-                                </span>
+                                {Array.isArray(b.name) ? (
+                                    b.name.map((line) => (
+                                        <span
+                                            key={line}
+                                            className="font-bold text-white text-[17px] tracking-wide leading-tight text-center"
+                                        >
+                                            {line}
+                                        </span>
+                                    ))
+                                ) : (
+                                    <span className="font-bold text-white text-[17px] tracking-wide leading-tight text-center whitespace-nowrap">
+                                        {b.name}
+                                    </span>
+                                )}
                                 <span
-                                    className={`text-[16px] font-bold mt-1 ${
+                                    className={`text-[13px] font-bold mt-1 text-center leading-tight ${
                                         b.highlight ? 'text-[#4B8BFF]' : 'text-zinc-400'
                                     }`}
                                 >
@@ -153,13 +163,13 @@ export default function Page_BrandCompetitors() {
                         className="flex-1 min-h-0 grid"
                         style={{ gridTemplateRows: `repeat(${rows.length}, minmax(0, 1fr))` }}
                     >
-                        {rows.map((row, ri) => (
+                        {rows.map((row) => (
                             <div
                                 key={row.label}
                                 className={`grid ${cols} min-h-0 border-b border-white/10 last:border-b-0`}
                             >
                                 <div className="px-3 py-2 flex items-center justify-center border-r border-white/10 bg-black/40">
-                                    <span className="font-bold text-zinc-100 text-center text-[18px] leading-snug">
+                                    <span className="font-bold text-zinc-100 text-center text-[15px] leading-snug whitespace-nowrap">
                                         {row.label}
                                     </span>
                                 </div>
@@ -171,14 +181,16 @@ export default function Page_BrandCompetitors() {
                     </div>
                 </div>
 
-                <div className="shrink-0 mt-2 bg-[#004CE5]/10 border border-[#004CE5]/30 rounded-xl px-5 py-2 flex items-center gap-4">
+                <div className="shrink-0 mt-2 bg-[#004CE5]/10 border border-[#004CE5]/30 rounded-xl px-10 py-2 flex items-center gap-4">
                     <span className="text-[#4B8BFF] text-[16px] font-black tracking-widest shrink-0">招商含义</span>
-                    <p className="text-zinc-200 text-[20px] font-semibold leading-snug">
-                        三家抢的是同一客群：要宝安政策、要研产一体、对成本敏感的硬科技企业。后页拆开看雪花、甲岸怎么截流，以及创新谷怎么对位。
+                    <p className="text-zinc-200 text-[20px] font-semibold leading-snug text-justify [text-justify:inter-ideograph]">
+                        {keepEnd(
+                            '雪花、甲岸是同一张选址表上的截流客；新桥东、全至、汇智是 AI 把创新谷挤出首选的名录竞品。物理竞争和算法占位，要分开打。',
+                        )}
                     </p>
                 </div>
                 <p className="shrink-0 pt-1.5 text-right text-zinc-500 text-[15px] leading-relaxed">
-                    数据来源：广东省工信厅 2023 特色产业园名单、华润置地公开信息、深圳房地产信息网及各园区公开招商信息；租金为市场挂牌区间，非合同成交价
+                    数据来源：广东省工信厅、华润置地、深投控 / 宝安实业、全至科创园、汇智研发中心公开信息；GEO ONE 481 / 482（2026-08）；租金为市场挂牌或政策口径，非合同成交价
                 </p>
             </div>
         </div>

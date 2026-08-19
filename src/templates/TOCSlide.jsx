@@ -36,18 +36,11 @@ export default function TOCSlide({ bgImage, title, menuText, brandLabel, service
         </h1>
       </div>
 
-      {/* Left: chapter list（company 组四章在总目录里合并为「关于我们」） */}
+      {/* Left: chapter list（company 组四章在总目录里合并为「索引未来公司介绍」，排在 01） */}
       {(() => {
-        const tocItems = [];
-        let sawCompany = false;
+        const tocItems = [{ title: '索引未来公司介绍' }];
         for (const chapter of chapters) {
-          if (chapter.group === 'company') {
-            if (!sawCompany) {
-              tocItems.push({ title: '关于我们' });
-              sawCompany = true;
-            }
-            continue;
-          }
+          if (chapter.group === 'company') continue;
           tocItems.push({ title: chapter.title.replace(/\n/g, '') });
         }
         const n = tocItems.length;

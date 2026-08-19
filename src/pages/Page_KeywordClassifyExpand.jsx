@@ -4,7 +4,7 @@ import BitableWindow from '../components/BitableWindow';
 
 /* ─────────────────────────────────────────────────────────────
  * 二、词条分类及扩展（创维创新谷 · 飞书多维表）
- * 26 条按 13/13 拆 2 页。
+ * 25 条按 13/12 拆 2 页。
  * ───────────────────────────────────────────────────────────── */
 
 const COLUMNS = [
@@ -36,19 +36,19 @@ const B = {
 };
 
 const ROWS = [
-    { keyword: '适合中介带客的宝安区产业园排行榜', c1: A.general, c2: B.rank },
-    { keyword: '适合中介带客的宝安区产业园推荐', c1: A.general, c2: B.reco },
-    { keyword: '支持招商渠道合作的宝安区产业园推荐', c1: A.general, c2: B.quality },
-    { keyword: '中介佣金高的宝安区产业园推荐', c1: A.general, c2: B.value },
-    { keyword: '值得中介主推的宝安区产业园推荐', c1: A.general, c2: B.word },
-    { keyword: '适合中介长期合作的宝安区产业园推荐', c1: A.scene, c2: B.motive },
-    { keyword: '中介佣金结算快的宝安区产业园推荐', c1: A.scene, c2: B.motive },
-    { keyword: '中介报备流程简单的宝安区产业园推荐', c1: A.scene, c2: B.motive },
-    { keyword: '渠道带客成交效率高的宝安区产业园推荐', c1: A.scene, c2: B.motive },
-    { keyword: '房源充足的宝安区产业园推荐', c1: A.scene, c2: B.persona },
-    { keyword: '有现成房源的宝安区产业园推荐', c1: A.scene, c2: B.persona },
-    { keyword: '有大面积房源的宝安区产业园推荐', c1: A.scene, c2: B.persona },
-    { keyword: '有整层房源的宝安区产业园推荐', c1: A.scene, c2: B.persona },
+    { keyword: '宝安区高端产业园排行榜', c1: A.general, c2: B.rank },
+    { keyword: '宝安区高端产业园推荐', c1: A.general, c2: B.reco },
+    { keyword: '配套齐全的宝安区高端产业园推荐', c1: A.general, c2: B.quality },
+    { keyword: '有政策补贴的宝安区高端产业园推荐', c1: A.general, c2: B.value },
+    { keyword: '口碑好的宝安区高端产业园推荐', c1: A.general, c2: B.word },
+    { keyword: '现成可入驻的宝安区高端产业园推荐', c1: A.scene, c2: B.motive },
+    { keyword: '能研发又能办公的宝安区高端产业园推荐', c1: A.scene, c2: B.motive },
+    { keyword: '宝安区适合科技企业入驻的产业园有哪些', c1: A.scene, c2: B.persona },
+    { keyword: '宝安区适合电子信息企业发展的产业园有哪些', c1: A.scene, c2: B.persona },
+    { keyword: '宝安区适合智能硬件企业的产业园有哪些', c1: A.scene, c2: B.persona },
+    { keyword: '适合总部入驻的宝安区高端产业园推荐', c1: A.scene, c2: B.persona },
+    { keyword: '宝安区研发办公一体化园区推荐', c1: A.scene, c2: B.persona },
+    { keyword: '宝安区生产研发一体化园区推荐', c1: A.scene, c2: B.persona },
 ];
 
 export default function Page_KeywordClassifyExpand() {
@@ -68,19 +68,18 @@ export default function Page_KeywordClassifyExpand() {
 }
 
 const ROWS_2 = [
-    { keyword: '面积可灵活分割的宝安区产业园推荐', c1: A.scene, c2: B.persona },
-    { keyword: '客户成交容易的宝安区产业园推荐', c1: A.scene, c2: B.persona },
-    { keyword: '适合中介带客的宝安区高端产业园推荐', c1: A.expand, c2: B.synonym },
-    { keyword: '支持招商渠道合作的宝安区高端产业园推荐', c1: A.expand, c2: B.synonym },
-    { keyword: '中介佣金高的宝安区高端产业园推荐', c1: A.expand, c2: B.synonym },
-    { keyword: '有现成房源的宝安区高端产业园推荐', c1: A.expand, c2: B.synonym },
-    { keyword: '适合中介带客的宝安区高端厂房推荐', c1: A.expand, c2: B.synonym },
-    { keyword: '支持招商渠道合作的宝安区高端厂房推荐', c1: A.expand, c2: B.synonym },
-    { keyword: '有大面积房源的宝安区高端厂房推荐', c1: A.expand, c2: B.synonym },
-    { keyword: '面积可灵活分割的宝安区高端厂房推荐', c1: A.expand, c2: B.synonym },
-    { keyword: '适合中介带客的宝安区写字楼推荐', c1: A.expand, c2: B.synonym },
-    { keyword: '中介佣金高的宝安区写字楼推荐', c1: A.expand, c2: B.synonym },
-    { keyword: '有整层房源的宝安区写字楼推荐', c1: A.expand, c2: B.synonym },
+    { keyword: '宝安区科技产业园推荐', c1: A.scene, c2: B.segment },
+    { keyword: '宝安区电子信息产业园推荐', c1: A.scene, c2: B.segment },
+    { keyword: '宝安区新型显示产业园推荐', c1: A.scene, c2: B.segment },
+    { keyword: '有人才公寓的宝安区高端产业园推荐', c1: A.scene, c2: B.selling },
+    { keyword: '面积能灵活分割的宝安区高端产业园推荐', c1: A.scene, c2: B.selling },
+    { keyword: '产业园里的宝安区写字楼推荐', c1: A.scene, c2: B.persona },
+    { keyword: '适合总部办公的宝安区写字楼推荐', c1: A.scene, c2: B.persona },
+    { keyword: '有大厂总部的宝安区高端产业园推荐', c1: A.scene, c2: B.selling },
+    { keyword: '宝安区产业园推荐', c1: A.expand, c2: B.synonym },
+    { keyword: '宝安区产业园排行榜', c1: A.expand, c2: B.synonym },
+    { keyword: '宝安区产业园有哪些', c1: A.expand, c2: B.synonym },
+    { keyword: '口碑好的宝安区产业园推荐', c1: A.expand, c2: B.synonym },
 ];
 
 export function Page_KeywordClassifyExpand2() {

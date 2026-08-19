@@ -8,7 +8,7 @@ import BitableWindow from '../components/BitableWindow';
  * ───────────────────────────────────────────────────────────── */
 
 const COLUMNS = [
-    { key: 'type', label: '类型', width: 292, type: 'select' },
+    { key: 'type', label: '类别', width: 292, type: 'select' },
     { key: 'name', label: '名称', width: 189, type: 'text' },
     { key: 'desc', label: '名称解释', width: 189, type: 'text' },
     { key: 'keyword', label: '词条生成', width: 189, type: 'text' },
@@ -41,24 +41,24 @@ const F = {
 };
 
 const ROWS = [
-    { type: T.fixed, name: '品牌排行榜', desc: '最基本最常见的核心问法', keyword: '适合中介带客的宝安区产业园排行榜' },
-    { type: T.fixed, name: '品牌推荐', desc: '最基本最常见的核心问法', keyword: '适合中介带客的宝安区产业园推荐' },
-    { type: T.fixed, name: '服务', desc: '最基本最常见的核心问法', keyword: '支持招商渠道合作的宝安区产业园推荐' },
-    { type: T.fixed, name: '性价比', desc: '最基本最常见的核心问法', keyword: '中介佣金高的宝安区产业园推荐' },
-    { type: T.fixed, name: '口碑', desc: '最基本最常见的核心问法', keyword: '值得中介主推的宝安区产业园推荐' },
-    { type: T.indMotive, name: '找到能带客、能长期合作的园区', desc: '中介选盘先看园区是否接受渠道带客、能不能长期放盘，避免做一单就没货、或甲方不认中介。', keyword: '适合中介长期合作的宝安区产业园推荐' },
-    { type: T.indMotive, name: '佣金高、结算快', desc: '中介收入看佣金点位和回款速度，倾向选择佣金有竞争力、结佣不拖的园区。', keyword: '中介佣金结算快的宝安区产业园推荐' },
-    { type: T.indMotive, name: '佣金高、结算快', desc: '中介收入看佣金点位和回款速度，倾向选择佣金有竞争力、结佣不拖的园区。', keyword: '中介佣金高的宝安区产业园推荐', flag: F.dup, flagNote: '与 0.固定 性价比 语义一致。' },
-    { type: T.indMotive, name: '报备简单、成交效率高', desc: '报备流程短、保护规则清楚、带客后成交顺，才能提高单产、减少撞单和扯皮。', keyword: '中介报备流程简单的宝安区产业园推荐' },
-    { type: T.indMotive, name: '报备简单、成交效率高', desc: '报备流程短、保护规则清楚、带客后成交顺，才能提高单产、减少撞单和扯皮。', keyword: '渠道带客成交效率高的宝安区产业园推荐' },
-    { type: T.indScene, name: '渠道合作与主推选盘', desc: '中介要决定重点推哪些园区，关注是否支持招商渠道合作、值不值得纳入主推盘。', keyword: '支持招商渠道合作的宝安区产业园推荐', flag: F.dup, flagNote: '与 0.固定 服务 语义一致。' },
-    { type: T.indScene, name: '按货盘匹配客户', desc: '手上客户面积、业态不同，需要现成、大面积、整层或可灵活分割的房源来快速匹配。', keyword: '房源充足的宝安区产业园推荐' },
-    { type: T.indScene, name: '按货盘匹配客户', desc: '手上客户面积、业态不同，需要现成、大面积、整层或可灵活分割的房源来快速匹配。', keyword: '有现成房源的宝安区产业园推荐' },
-    { type: T.indScene, name: '按货盘匹配客户', desc: '手上客户面积、业态不同，需要现成、大面积、整层或可灵活分割的房源来快速匹配。', keyword: '有大面积房源的宝安区产业园推荐' },
-    { type: T.indScene, name: '按货盘匹配客户', desc: '手上客户面积、业态不同，需要现成、大面积、整层或可灵活分割的房源来快速匹配。', keyword: '有整层房源的宝安区产业园推荐' },
-    { type: T.indScene, name: '按货盘匹配客户', desc: '手上客户面积、业态不同，需要现成、大面积、整层或可灵活分割的房源来快速匹配。', keyword: '面积可灵活分割的宝安区产业园推荐' },
-    { type: T.indScene, name: '判断客户好不好成交', desc: '带客前会评估园区成交难度，优先推客户更容易落地的盘，减少空看。', keyword: '客户成交容易的宝安区产业园推荐' },
-    { type: T.indSelling, name: '现成可带看、房源充足', desc: '现楼、空置充足，约看就能看、能谈，降低带客扑空。', keyword: '有现成房源的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.fixed, name: '品牌排行榜', desc: '最基本最常见的核心问法', keyword: '宝安区高端产业园排行榜' },
+    { type: T.fixed, name: '品牌推荐', desc: '最基本最常见的核心问法', keyword: '宝安区高端产业园推荐' },
+    { type: T.fixed, name: '质量', desc: '最基本最常见的核心问法', keyword: '配套齐全的宝安区高端产业园推荐' },
+    { type: T.fixed, name: '性价比', desc: '最基本最常见的核心问法', keyword: '有政策补贴的宝安区高端产业园推荐' },
+    { type: T.fixed, name: '口碑', desc: '最基本最常见的核心问法', keyword: '口碑好的宝安区高端产业园推荐' },
+    { type: T.indMotive, name: '尽快拿到可办公可生产的现成空间', desc: '企业扩张或搬迁有明确时间表，倾向选择已建成、可快速入驻的园区，降低等交付、二次装修带来的工期风险。', keyword: '现成可入驻的宝安区高端产业园推荐' },
+    { type: T.indMotive, name: '降低初期租金与政策成本', desc: '选址时关注租金水平、免租期以及高新/产业补贴能否落地，希望园区能协助申报，减轻前几年现金流压力。', keyword: '有政策补贴的宝安区高端产业园推荐', flag: F.dup, flagNote: '与 0.固定 性价比 语义一致。' },
+    { type: T.indMotive, name: '一次解决办公与轻生产需求', desc: '研发型、智能硬件、电子信息企业希望同一园区内既能办公又能中试/轻生产，避免两地分租。', keyword: '能研发又能办公的宝安区高端产业园推荐' },
+    { type: T.indScene, name: '科技与电子信息企业落户宝安', desc: '企业明确落子宝安，需要匹配科技、电子信息或智能硬件方向的产业园区，便于产业链协同与人才招聘。', keyword: '宝安区适合科技企业入驻的产业园有哪些' },
+    { type: T.indScene, name: '科技与电子信息企业落户宝安', desc: '企业明确落子宝安，需要匹配科技、电子信息或智能硬件方向的产业园区，便于产业链协同与人才招聘。', keyword: '宝安区适合电子信息企业发展的产业园有哪些' },
+    { type: T.indScene, name: '科技与电子信息企业落户宝安', desc: '企业明确落子宝安，需要匹配科技、电子信息或智能硬件方向的产业园区，便于产业链协同与人才招聘。', keyword: '宝安区适合智能硬件企业的产业园有哪些' },
+    { type: T.indScene, name: '总部或区域总部办公选址', desc: '成长型企业需要形象较好的甲级/园区办公空间，同时希望周边有公寓、商业，方便总部职能落地。', keyword: '适合总部入驻的宝安区高端产业园推荐' },
+    { type: T.indScene, name: '研产办一体的园区使用', desc: '团队同时有研发办公和生产中试需求，偏好研发办公一体化或生产研发一体化园区，而不是纯写字楼。', keyword: '宝安区研发办公一体化园区推荐' },
+    { type: T.indScene, name: '研产办一体的园区使用', desc: '团队同时有研发办公和生产中试需求，偏好研发办公一体化或生产研发一体化园区，而不是纯写字楼。', keyword: '宝安区生产研发一体化园区推荐' },
+    { type: T.indSelling, name: '产业集聚与方向匹配', desc: '园区若形成电子信息、新型显示等产业集群，企业更易获得上下游协同、招工与品牌背书。', keyword: '宝安区科技产业园推荐' },
+    { type: T.indSelling, name: '产业集聚与方向匹配', desc: '园区若形成电子信息、新型显示等产业集群，企业更易获得上下游协同、招工与品牌背书。', keyword: '宝安区电子信息产业园推荐' },
+    { type: T.indSelling, name: '产业集聚与方向匹配', desc: '园区若形成电子信息、新型显示等产业集群，企业更易获得上下游协同、招工与品牌背书。', keyword: '宝安区新型显示产业园推荐' },
+    { type: T.indSelling, name: '生活与人才配套', desc: '人才公寓、酒店、商业配套齐全，有利于留人，降低员工通勤与租房成本。', keyword: '有人才公寓的宝安区高端产业园推荐' },
 ];
 
 export default function Page_KeywordExhaustClean() {
@@ -77,23 +77,23 @@ export default function Page_KeywordExhaustClean() {
 }
 
 const ROWS_2 = [
-    { type: T.indSelling, name: '现成可带看、房源充足', desc: '现楼、空置充足，约看就能看、能谈，降低带客扑空。', keyword: '房源充足的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
-    { type: T.indSelling, name: '面积段宽、可整层可分割', desc: '小面积到整层、办公到厂房都能接，一个盘能吃多类客户。', keyword: '有大面积房源的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
-    { type: T.indSelling, name: '渠道政策稳定、配合带客', desc: '长期接受中介、政策不朝令夕改，招商配合带看和成交。', keyword: '适合中介长期合作的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
-    { type: T.indPain, name: '佣金低、结算慢、报备复杂', desc: '点位低或结佣拖、报备繁琐，中介不愿推。', keyword: '中介佣金结算快的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
-    { type: T.indPain, name: '期房或空置不足，带不了客', desc: '还在建或好房源已满，约看没有可成交货。', keyword: '有现成房源的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
-    { type: T.indPain, name: '园区不接受中介或客户难成交', desc: '直租为主、中介勿扰，或准入过严导致带去的客户落不了。', keyword: '适合中介带客的宝安区产业园推荐', flag: F.dup, flagNote: '与 0.固定 品牌推荐 语义一致。' },
-    { type: T.prodMotive, name: '现楼即看即租，带客不扑空', desc: '创维创新谷已运营、现楼可看可租，中介带有即时入驻需求的客户时，交付确定性高于在建竞品。', keyword: '有现成房源的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
-    { type: T.prodMotive, name: '办公和厂房都有，一类客户都能接', desc: '同一园区有写字楼/研发办公和高标准厂房，中介可用一个盘匹配总部办公和大面积生产类客户。', keyword: '有大面积房源的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
-    { type: T.prodMotive, name: '集团自持，长期放盘好合作', desc: '业主为创维集团自持，单一业权、长期持有，适合中介做长期合作盘，减少散户业主跳单。', keyword: '适合中介长期合作的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
-    { type: T.prodScene, name: '带企业客户看现成产业园', desc: '客户要马上入驻，中介需要现成房源、能约看到场的园区。', keyword: '有现成房源的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
-    { type: T.prodScene, name: '带要大面积或整层的客户', desc: '客户要整层办公或大面积厂房，需要园区有对应货盘。', keyword: '有整层房源的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
-    { type: T.prodScene, name: '带要灵活分割的成长型客户', desc: '客户现阶段面积不大、后续可能扩租，需要可灵活分割的空间。', keyword: '面积可灵活分割的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
-    { type: T.prodSelling, name: '现成房源、房源充足', desc: '现楼招租，体量约 45 万㎡，仍有可租余量，便于持续带客。', keyword: '房源充足的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
-    { type: T.prodSelling, name: '大面积、整层、可灵活分割', desc: '面积段宽，可整层、可分割，办公与厂房两种业态。', keyword: '面积可灵活分割的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
-    { type: T.prodSelling, name: '可做渠道带客的稳定放盘', desc: '集团自持、长期运营，具备做渠道长期合作的基础。', keyword: '支持招商渠道合作的宝安区产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
-    { type: T.prodPain, name: '石岩区位，带看距离和地铁不占优', desc: '相对尖岗山竞品，石岩轨道与接南山便利度弱，部分客户嫌远，带看成本更高。', keyword: '地铁口好带看的宝安区产业园推荐', flag: F.offTarget, flagNote: '石岩区位相对尖岗山竞品不占优，不宜作为中介带看主词。' },
-    { type: T.prodPain, name: '对外主推直租，渠道佣金不是公开优势', desc: '官方招商页强调直租与免佣金服务，中介佣金点位未公开，不宜把「佣金最高」当差异化投放。', keyword: '中介佣金最高的宝安区产业园推荐', flag: F.pain, flagNote: '园区对外主推直租，佣金点位未构成可公开的差异化优势。' },
+    { type: T.indSelling, name: '空间灵活可分割', desc: '面积可灵活分割、可整层或小面积起步，适配不同阶段企业的扩租缩租需求。', keyword: '面积能灵活分割的宝安区高端产业园推荐' },
+    { type: T.indPain, name: '园区还在建、无法按期入驻', desc: '期房或持续建设中的园区存在交付不确定，影响产线搬迁与人员到岗。', keyword: '现成可入驻的宝安区高端产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.indPain, name: '只有厂房或只有写字楼，功能割裂', desc: '纯厂房缺形象与配套，纯写字楼又难做中试生产，企业不得不两头租。', keyword: '能研发又能办公的宝安区高端产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.indPain, name: '配套弱、留不住人', desc: '园区偏远或只有宿舍底商，员工不愿住、不愿来，招聘与稳定性受影响。', keyword: '配套齐全的宝安区高端产业园推荐', flag: F.dup, flagNote: '与 0.固定 质量 语义一致。' },
+    { type: T.prodMotive, name: '要马上能用的园区，不想赌交付', desc: '企业希望尽快入驻已运营园区，创维创新谷现楼可看可租，降低搬迁时间风险。', keyword: '现成可入驻的宝安区高端产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.prodMotive, name: '靠近显示 / 电子信息产业链', desc: '从事新型显示、电子信息、智能硬件的企业，希望进入已有集群的园区，便于协作与招工。', keyword: '宝安区电子信息产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.prodMotive, name: '总部形象 + 员工住行一体解决', desc: '既要园区办公形象，也要公寓酒店商业，减少另觅宿舍和食堂的成本。', keyword: '适合总部入驻的宝安区高端产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.prodScene, name: '电子信息 / 科技企业宝安选址', desc: '在宝安范围内比较科技、电子信息类产业园，关注产业匹配与能否注册、申报相关政策。', keyword: '宝安区适合电子信息企业发展的产业园有哪些', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.prodScene, name: '研产办一体使用', desc: '同一园区内安排研发办公与生产研发，减少两园区通勤。', keyword: '宝安区生产研发一体化园区推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.prodScene, name: '园区内写字楼 / 总部办公', desc: '不租独立 CBD 写字楼，而选择产业园内的甲级或研发办公楼做总部职能。', keyword: '产业园里的宝安区写字楼推荐' },
+    { type: T.prodScene, name: '园区内写字楼 / 总部办公', desc: '不租独立 CBD 写字楼，而选择产业园内的甲级或研发办公楼做总部职能。', keyword: '适合总部办公的宝安区写字楼推荐' },
+    { type: T.prodSelling, name: '已运营的产城配套', desc: '商业、人才公寓、酒店配套已落地，不是只靠沙盘的配套承诺。', keyword: '有人才公寓的宝安区高端产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.prodSelling, name: '大厂总部与显示产业链', desc: '创维总部及显示/电子信息相关企业集聚，形成可感知的产业氛围。', keyword: '有大厂总部的宝安区高端产业园推荐' },
+    { type: T.prodSelling, name: '大厂总部与显示产业链', desc: '创维总部及显示/电子信息相关企业集聚，形成可感知的产业氛围。', keyword: '宝安区新型显示产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.prodSelling, name: '空间可研发可办公、面积可灵活分割', desc: '标准层与厂房型空间并存，面积段可组合，适配成长型企业扩租。', keyword: '面积能灵活分割的宝安区高端产业园推荐', flag: F.dup, flagNote: '与其它的词条意思一致。' },
+    { type: T.prodPain, name: '对标尖岗山时区位与地铁不占优', desc: '与雪花科创城、甲岸美生智谷比，石岩轨道与接南山便利度是常见顾虑。', keyword: '石岩地铁口的宝安区高端产业园推荐', flag: F.offTarget, flagNote: '石岩轨道成熟度相对尖岗山竞品不占优，不宜作为投放主词。' },
+    { type: T.prodPain, name: '单纯拼低价租金打不过比价导向', desc: '若用户只搜「最便宜厂房/园区」，容易导向更低价或更大体量在建项目，非本品主战场。', keyword: '便宜的宝安区高端产业园推荐', flag: F.pain, flagNote: '极端低价导向，非创维创新谷相对优势位。' },
 ];
 
 export function Page_KeywordExhaustClean2() {

@@ -1,82 +1,163 @@
 import React from 'react';
 
-const blocks = [
+const cols = 'grid-cols-[120px_repeat(6,minmax(0,1fr))]';
+
+function keepEnd(text, n = 3) {
+    if (!text || text.length <= n) return text;
+    return (
+        <>
+            {text.slice(0, -n)}
+            <span className="whitespace-nowrap">{text.slice(-n)}</span>
+        </>
+    );
+}
+
+const brands = [
+    { name: '创维创新谷', role: '实业链主 · 已投用', highlight: true },
+    { name: '雪花科创城', role: '华润产城 · 新供给' },
+    { name: '甲岸美生智谷', role: '工改工 · 待交付' },
+    { name: ['新桥东', '先进制造产业园'], role: '工业上楼 · 标杆园' },
+    { name: '全至科技创新园', role: '沙井 · 国家级孵化器' },
+    { name: '汇智研发中心', role: '西乡 · 专精特新总部' },
+];
+
+const rows = [
     {
+        label: '空间产品',
         accent: '#004CE5',
-        title: '空间产品',
-        summary: '三期合计约 45 万㎡对外开放，覆盖工业上楼、甲级办公与总部型空间。',
-        items: [
-            { title: '一期研发生产楼', desc: '约 8.8 万㎡，2016 年投用。首层层高 6 米、标准层 4.5 米，可分层或整栋租，适配研发、中试与轻型生产。' },
-            { title: '二期商务办公', desc: '约 26.5 万㎡，2017 年启用。甲级写字楼为主体，公开报价约 50–72 元/㎡·月，160㎡ 起租。' },
-            { title: '三期产学研办公', desc: '约 10 万㎡，2019 年投用。面向区域总部与较大体量研发办公，定位高于一期生产楼。' },
+        cells: [
+            { highlight: true, lines: ['工业上楼 + 甲级办公 + 总部', '三期约 45 万㎡，现在就能租'] },
+            { lines: ['M1 厂房 + M0 研发', '约 115 万㎡，荷载最高 1.5 吨'] },
+            { lines: ['研发楼 + 厂房 + 宿舍', '约 17.5 万㎡，2026 年中才交'] },
+            { lines: ['立体工厂 + 产研综合体', '承重 750kg，层高达 7.8 米'] },
+            { lines: ['甲级办公 + 高层厂房', '约 16.8 万㎡，产办合一'] },
+            { lines: ['4 栋纯研发办公塔楼', '约 14 万㎡，重生产接不住'] },
         ],
     },
     {
+        label: '产城配套',
         accent: '#3B82F6',
-        title: '产城配套',
-        summary: '石岩片区少有的「办公 + 居住 + 商业 + 酒店」闭环，用来留人，不只是把房子租出去。',
-        items: [
-            { title: '创新谷广场', desc: '约 6 万㎡购物中心，含 IMAX 影院与餐饮零售，是石岩片区体量靠前的集中商业。' },
-            { title: '智慧公寓', desc: '约 1,500 套精装公寓，单间到三居可选，解决员工就近住宿，降低通勤流失。' },
-            { title: '商务酒店', desc: '园区配有亚朵等商务酒店，承接客户接待、培训会议与短期驻场。' },
+        cells: [
+            { highlight: true, lines: ['6 万㎡商场，含 IMAX 影院', '1,500 套公寓 + 商务酒店'] },
+            { lines: ['约 4.8 万㎡啤酒小镇', '产业宿舍，偏年轻社交'] },
+            { lines: ['37 层宿舍，约 181 套', '商业约 2,000㎡，配套更薄'] },
+            { lines: ['规划 160 万㎡居住商业', '甘霖苑先开，整体要到 2031'] },
+            { lines: ['公寓、食堂、商业街', '体量小，园内自循环'] },
+            { lines: ['1 栋宿舍 + 裙楼商业', '有公园，没有家庭级商场'] },
         ],
     },
     {
+        label: '产业服务',
         accent: '#10B981',
-        title: '产业服务',
-        summary: '创维以实业方运营园区，招商和服务都围绕企业生命周期，而不是纯物业收租。',
-        items: [
-            { title: '链主协同', desc: '创维 13 家产业公司研发生产在此，彩电公司全球总部亦在园区，上下游可就近对接采购与协作。' },
-            { title: '政策申报支撑', desc: '叠加省级特色产业园、宝安区科技桃花源等身份，符合条件的企业可申报租金补贴与落户奖励。' },
-            { title: '1+4 互动平台', desc: '官方提出搭建企业、政府、机构、创维四方合作平台，把园区从房东做成产业枢纽。' },
+        cells: [
+            { highlight: true, lines: ['13 家产业公司在园协同', '省级园身份，补贴可申报'] },
+            { lines: ['华润品牌 + 总部南迁带客', '没有创维式链主协同'] },
+            { lines: ['PLUS 产业运营平台', '无链主，租户生态还没起来'] },
+            { lines: ['一站式政务 + 产业基金', '圈层是工业母机，不是电子'] },
+            { lines: ['国家级孵化器辅导申报', '中小科技孵化，不是总部园'] },
+            { lines: ['专精特新培育 + 投融资', '准成本供给，不接重生产'] },
         ],
     },
 ];
+
+function Cell({ cell, isLast }) {
+    return (
+        <div
+            className={`px-5 py-4 flex flex-col justify-center gap-2 min-h-0 ${
+                !isLast ? 'border-r border-white/10' : ''
+            } ${cell.highlight ? 'bg-[#004CE5]/12' : 'bg-white/[0.02]'}`}
+        >
+            {cell.lines.map((line) => (
+                <p key={line} className="text-[16px] text-zinc-200 font-medium leading-relaxed">
+                    {keepEnd(line)}
+                </p>
+            ))}
+        </div>
+    );
+}
 
 export default function Page_BrandProducts() {
     return (
         <div className="flex-1 min-h-0 w-full flex flex-col relative bg-black overflow-hidden text-white font-sans">
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] opacity-20 pointer-events-none" />
 
-            <div className="shrink-0 text-center pt-2 pb-3 relative z-10">
-                <h1 className="text-[32px] font-black text-white tracking-widest leading-none">园区产品与业态矩阵</h1>
+            <div className="shrink-0 text-center pt-3 pb-2.5 relative z-10 px-10">
+                <h1 className="text-[32px] font-black text-white tracking-widest leading-none mb-1.5">
+                    园区产品与业态矩阵
+                </h1>
+                <p className="text-zinc-400 text-[20px] leading-snug">
+                    空间、配套、产业服务三件事，六家园放在同一张表上看
+                </p>
             </div>
 
-            <div className="flex-1 min-h-0 w-full max-w-[1680px] mx-auto px-8 pb-4 relative z-10 flex flex-col gap-3">
-                {blocks.map((block) => (
-                    <div
-                        key={block.title}
-                        className="flex-1 min-h-0 bg-[#111] border border-white/10 rounded-2xl flex overflow-hidden relative"
-                    >
-                        <div className="absolute top-0 left-0 w-1.5 h-full" style={{ backgroundColor: block.accent }} />
-
-                        <div className="w-[28%] min-w-0 pl-6 pr-5 py-4 border-r border-white/10 bg-black/40 flex flex-col justify-center">
-                            <h2 className="text-[28px] font-bold text-white tracking-wide leading-tight mb-3">
-                                {block.title}
-                            </h2>
-                            <p className="text-[20px] text-zinc-300 leading-relaxed">
-                                {block.summary}
-                            </p>
+            <div className="flex-1 min-h-0 w-full max-w-[1760px] mx-auto px-6 pb-3 relative z-10 flex flex-col">
+                <div className="flex-1 min-h-0 w-full flex flex-col border border-white/10 rounded-2xl overflow-hidden bg-[#111]">
+                    <div className={`grid ${cols} bg-black/70 border-b border-white/10 shrink-0`}>
+                        <div className="px-4 py-3.5 flex items-center justify-center border-r border-white/10">
+                            <span className="font-bold text-zinc-400 tracking-widest text-[16px]">对比项</span>
                         </div>
-
-                        <div className="flex-1 min-w-0 px-7 py-4 grid grid-cols-3 gap-5 items-stretch">
-                            {block.items.map((item) => (
-                                <div key={item.title} className="min-w-0 flex flex-col justify-center">
-                                    <h4 className="text-[22px] font-bold text-white mb-3 flex items-start gap-2.5 leading-snug">
+                        {brands.map((b, i) => (
+                            <div
+                                key={b.role}
+                                className={`px-4 py-3 flex flex-col items-center justify-center ${
+                                    i < brands.length - 1 ? 'border-r border-white/10' : ''
+                                } ${b.highlight ? 'bg-[#004CE5]/20 relative overflow-hidden shadow-[inset_0_0_0_1px_rgba(0,76,229,0.45)]' : ''}`}
+                            >
+                                {b.highlight ? <div className="absolute top-0 left-0 w-full h-1.5 bg-[#004CE5]" /> : null}
+                                {Array.isArray(b.name) ? (
+                                    b.name.map((line) => (
                                         <span
-                                            className="w-2.5 h-2.5 rounded-full mt-2.5 shrink-0"
-                                            style={{ backgroundColor: block.accent }}
-                                        />
-                                        <span>{item.title}</span>
-                                    </h4>
-                                    <p className="text-[20px] text-zinc-300 leading-[1.65] pl-[22px]">
-                                        {item.desc}
-                                    </p>
-                                </div>
-                            ))}
-                        </div>
+                                            key={line}
+                                            className="font-bold text-white text-[17px] tracking-wide leading-tight text-center"
+                                        >
+                                            {line}
+                                        </span>
+                                    ))
+                                ) : (
+                                    <span className="font-bold text-white text-[17px] tracking-wide leading-tight text-center whitespace-nowrap">
+                                        {b.name}
+                                    </span>
+                                )}
+                                <span
+                                    className={`text-[13px] font-bold mt-1 text-center leading-tight ${
+                                        b.highlight ? 'text-[#4B8BFF]' : 'text-zinc-400'
+                                    }`}
+                                >
+                                    {b.role}
+                                </span>
+                            </div>
+                        ))}
                     </div>
-                ))}
+
+                    <div
+                        className="flex-1 min-h-0 grid"
+                        style={{ gridTemplateRows: `repeat(${rows.length}, minmax(0, 1fr))` }}
+                    >
+                        {rows.map((row) => (
+                            <div
+                                key={row.label}
+                                className={`grid ${cols} min-h-0 border-b border-white/10 last:border-b-0`}
+                            >
+                                <div className="px-3 py-3 flex items-center justify-center border-r border-white/10 bg-black/40 relative">
+                                    <div
+                                        className="absolute top-0 left-0 w-1.5 h-full"
+                                        style={{ backgroundColor: row.accent }}
+                                    />
+                                    <span className="font-bold text-zinc-100 text-center text-[18px] leading-snug whitespace-nowrap">
+                                        {row.label}
+                                    </span>
+                                </div>
+                                {row.cells.map((cell, ci) => (
+                                    <Cell key={ci} cell={cell} isLast={ci === row.cells.length - 1} />
+                                ))}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                <p className="shrink-0 pt-2 text-right text-zinc-500 text-[15px] leading-relaxed">
+                    依据：各园区公开招商口径；雪花、甲岸、新桥东部分配套仍在建设或分期交付
+                </p>
             </div>
         </div>
     );

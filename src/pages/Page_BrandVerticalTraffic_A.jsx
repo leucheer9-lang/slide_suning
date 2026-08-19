@@ -1,6 +1,29 @@
 import React from 'react';
 import { trafficRows } from './data/verticalCompetitorTraffic';
 
+function keepEnd(text, n = 3) {
+    if (!text || text.length <= n) return text;
+    return (
+        <>
+            {text.slice(0, -n)}
+            <span className="whitespace-nowrap">{text.slice(-n)}</span>
+        </>
+    );
+}
+
+function DetailLines({ lines, className }) {
+    return (
+        <p className={className}>
+            {lines.map((line, i) => (
+                <span key={line}>
+                    {i > 0 ? <br /> : null}
+                    {keepEnd(line)}
+                </span>
+            ))}
+        </p>
+    );
+}
+
 /** 同场竞品获客链路 × 创新谷应对 — 经典对比矩阵表 */
 export default function Page_BrandVerticalTraffic_A() {
     return (
@@ -12,26 +35,26 @@ export default function Page_BrandVerticalTraffic_A() {
                     竞品获客链路 × 创新谷应对策略
                 </h1>
                 <p className="text-zinc-400 text-[20px] leading-snug">
-                    雪花吃品牌和报道，甲岸吃房源比价，创新谷要把链主、交付和总持有成本写进答案
+                    雪花、新桥东吃品牌和名录，甲岸、全至、汇智吃替代名单
+                    <br />
+                    创新谷要把链主、交付和总持有成本写进答案
                 </p>
             </div>
 
-            <div className="flex-1 min-h-0 w-full max-w-[1720px] mx-auto px-6 pb-3 relative z-10 flex flex-col">
+            <div className="flex-1 min-h-0 w-full max-w-[1760px] mx-auto px-6 pb-3 relative z-10 flex flex-col">
                 <div className="flex-1 min-h-0 border border-white/10 rounded-2xl overflow-hidden bg-[#111] flex flex-col">
-                    {/* Header */}
-                    <div className="grid grid-cols-[360px_1fr_1fr] shrink-0 bg-black/70 border-b border-white/10">
-                        <div className="px-5 py-3.5 flex items-center border-r border-white/10">
+                    <div className="grid grid-cols-[400px_1fr_1fr] shrink-0 bg-black/70 border-b border-white/10">
+                        <div className="px-10 py-3.5 flex items-center border-r border-white/10">
                             <span className="text-[18px] font-bold text-zinc-400 tracking-widest">竞品类型</span>
                         </div>
-                        <div className="px-6 py-3.5 flex items-center border-r border-white/10">
+                        <div className="px-10 py-3.5 flex items-center border-r border-white/10">
                             <span className="text-[18px] font-bold text-zinc-400 tracking-widest">流量获取链路</span>
                         </div>
-                        <div className="px-6 py-3.5 flex items-center bg-[rgba(245,158,11,0.08)]">
+                        <div className="px-10 py-3.5 flex items-center bg-[rgba(245,158,11,0.08)]">
                             <span className="text-[18px] font-black text-[#F59E0B] tracking-widest">创新谷应对策略</span>
                         </div>
                     </div>
 
-                    {/* Rows */}
                     <div
                         className="flex-1 min-h-0 grid"
                         style={{ gridTemplateRows: `repeat(${trafficRows.length}, minmax(0, 1fr))` }}
@@ -39,13 +62,12 @@ export default function Page_BrandVerticalTraffic_A() {
                         {trafficRows.map((row, i) => (
                             <div
                                 key={row.no}
-                                className={`grid grid-cols-[360px_1fr_1fr] min-h-0 ${
+                                className={`grid grid-cols-[400px_1fr_1fr] min-h-0 ${
                                     i < trafficRows.length - 1 ? 'border-b border-white/10' : ''
                                 }`}
                             >
-                                {/* Type */}
                                 <div
-                                    className="px-5 py-3 border-r border-white/10 flex flex-col justify-center gap-2"
+                                    className="px-10 py-3 border-r border-white/10 flex flex-col justify-center gap-2"
                                     style={{ borderLeftWidth: 5, borderLeftColor: row.accent }}
                                 >
                                     <div className="flex items-center gap-3">
@@ -56,7 +78,7 @@ export default function Page_BrandVerticalTraffic_A() {
                                             {row.no}
                                         </span>
                                         <div className="min-w-0">
-                                            <div className="text-[28px] font-black leading-tight whitespace-nowrap">
+                                            <div className="text-[26px] font-black leading-tight whitespace-nowrap">
                                                 {row.type}
                                             </div>
                                             <div
@@ -79,23 +101,27 @@ export default function Page_BrandVerticalTraffic_A() {
                                     </div>
                                 </div>
 
-                                {/* Chain */}
-                                <div className="px-6 py-3 border-r border-white/10 flex flex-col justify-center gap-1.5">
-                                    <div className="text-[26px] font-black text-white leading-snug">
+                                <div className="px-10 py-3 border-r border-white/10 flex flex-col justify-center gap-1.5">
+                                    <div className="text-[24px] font-black text-white leading-snug whitespace-pre-line">
                                         {row.chainPunch}
                                     </div>
-                                    <p className="text-[20px] text-zinc-300 leading-snug">{row.chainDetail}</p>
+                                    <DetailLines
+                                        lines={row.chainLines}
+                                        className="text-[20px] text-zinc-300 leading-[1.65]"
+                                    />
                                 </div>
 
-                                {/* 创新谷应对 */}
                                 <div
-                                    className="px-6 py-3 flex flex-col justify-center gap-1.5"
+                                    className="px-10 py-3 flex flex-col justify-center gap-1.5"
                                     style={{ backgroundColor: 'rgba(245,158,11,0.06)' }}
                                 >
-                                    <div className="text-[26px] font-black text-[#F59E0B] leading-snug">
-                                        {row.suningPunch}
+                                    <div className="text-[24px] font-black text-[#F59E0B] leading-snug">
+                                        {keepEnd(row.suningPunch)}
                                     </div>
-                                    <p className="text-[20px] text-zinc-200 leading-snug">{row.suningDetail}</p>
+                                    <DetailLines
+                                        lines={row.suningLines}
+                                        className="text-[20px] text-zinc-200 leading-[1.65]"
+                                    />
                                 </div>
                             </div>
                         ))}

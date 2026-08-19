@@ -1,6 +1,6 @@
 import React from 'react';
 
-const cols = 'grid-cols-[1.2fr_1.15fr_1.35fr_1.3fr]';
+const cols = 'grid-cols-[1.05fr_1fr_1.25fr_1.7fr]';
 
 /** 末尾 2–3 字不单独掉行 */
 function keepEnd(text, n = 3) {
@@ -29,6 +29,9 @@ const rows = [
         theirs: [
             { name: '雪花', text: '多家龙头拼成综合总部，圈层散' },
             { name: '甲岸', text: '偏初创和轻量 5G，没有制造巨头带着走' },
+            { name: '新桥东', text: '国企共建，招工业母机，没有电子链主' },
+            { name: '全至', text: '机器人中小企业扎堆，无链主总部在园' },
+            { name: '汇智', text: '专精特新总部，不是供货圈' },
         ],
     },
     {
@@ -46,6 +49,9 @@ const rows = [
         theirs: [
             { name: '雪花', text: '靠华润品牌招商，没有这层省级园身份' },
             { name: '甲岸', text: '工改工，补贴和落户奖励叠不上' },
+            { name: '新桥东', text: '市区专项托租金，不是电子信息省级园' },
+            { name: '全至', text: '孵化器补贴，对总部型企业不够用' },
+            { name: '汇智', text: '小巨人 / 上市折扣，卡的是认定身份' },
         ],
     },
     {
@@ -63,6 +69,9 @@ const rows = [
         theirs: [
             { name: '雪花', text: '也有 M1 厂房，但租金和门槛更高' },
             { name: '甲岸', text: '老厂房改造，接不住大规模重生产' },
+            { name: '新桥东', text: '立体工厂强，圈层是工业母机不是电子' },
+            { name: '全至', text: '高层厂房有，体量只有 16.8 万㎡' },
+            { name: '汇智', text: '纯研发办公，重生产接不住' },
         ],
     },
     {
@@ -80,11 +89,14 @@ const rows = [
         theirs: [
             { name: '雪花', text: '约 4.8 万㎡啤酒小镇，偏年轻社交' },
             { name: '甲岸', text: '配套更薄，带孩子过日子差一截' },
+            { name: '新桥东', text: '规划 160 万㎡居住商业，整体要到 2031' },
+            { name: '全至', text: '公寓食堂商业街，体量小，园内自循环' },
+            { name: '汇智', text: '1 栋宿舍 + 裙楼商业，没有家庭级商场' },
         ],
     },
 ];
 
-const headers = ['谁会选', '他们要什么', '创新谷为什么对得上', '另外两家对不上'];
+const headers = ['谁会选', '他们要什么', '创新谷为什么对得上', '另外五家对不上'];
 
 export default function Page_BrandWhySuning() {
     return (
@@ -93,14 +105,14 @@ export default function Page_BrandWhySuning() {
 
             <div className="shrink-0 text-center pt-4 pb-2.5 relative z-10 px-8">
                 <h1 className="text-[32px] font-black text-white tracking-widest leading-none mb-2">
-                    什么企业会选创维创新谷，而不去雪花科创城或甲岸美生智谷？
+                    什么企业会选创维创新谷，而不去另外五家？
                 </h1>
                 <p className="text-zinc-400 text-[20px] leading-snug">
                     四类客户看的不是谁名气大，是谁能帮他们把产业链、产线、政策和人留下来
                 </p>
             </div>
 
-            <div className="flex-1 min-h-0 w-full max-w-[1720px] mx-auto px-6 pb-3 relative z-10 flex flex-col">
+            <div className="flex-1 min-h-0 w-full max-w-[1760px] mx-auto px-6 pb-3 relative z-10 flex flex-col">
                 <div className="flex-1 min-h-0 w-full flex flex-col border border-white/10 rounded-2xl overflow-hidden bg-[#111]">
                     <div className={`grid ${cols} bg-black/70 border-b border-white/10 shrink-0`}>
                         {headers.map((h, i) => (
@@ -175,13 +187,13 @@ export default function Page_BrandWhySuning() {
                                     ))}
                                 </div>
 
-                                <div className="px-5 py-3 flex flex-col justify-center gap-2">
+                                <div className="px-5 py-2.5 flex flex-col justify-center gap-1">
                                     {row.theirs.map((item) => (
                                         <div key={item.name} className="flex items-start gap-2.5">
-                                            <span className="shrink-0 w-[40px] text-[18px] font-black text-zinc-300 leading-snug">
+                                            <span className="shrink-0 w-[52px] text-[16px] font-black text-zinc-300 leading-snug">
                                                 {item.name}
                                             </span>
-                                            <p className="text-[18px] text-zinc-400 leading-snug">
+                                            <p className="text-[16px] text-zinc-400 leading-snug">
                                                 {keepEnd(item.text)}
                                             </p>
                                         </div>
@@ -193,7 +205,7 @@ export default function Page_BrandWhySuning() {
                 </div>
 
                 <p className="shrink-0 pt-2 text-right text-zinc-500 text-[15px] leading-relaxed">
-                    依据：创维创新谷公开招商资料、广东省特色产业园名单、华润雪花科创城及甲岸美生智谷公开信息
+                    依据：创维创新谷公开招商资料、广东省特色产业园名单、华润雪花科创城、甲岸美生智谷、深投控 / 宝安实业、全至科创园、汇智研发中心公开信息
                 </p>
             </div>
         </div>
