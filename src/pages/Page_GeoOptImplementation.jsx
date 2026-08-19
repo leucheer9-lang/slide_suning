@@ -88,21 +88,23 @@ export default function Page_GeoOptImplementation() {
                         </div>
 
                         {/* AI Mechanism block details */}
-                        <div className="flex-1 flex flex-col gap-2 bg-white/[0.02] border border-white/5 rounded-xl p-3 lg:p-3.5 hover:bg-white/[0.04] transition-colors duration-300 justify-start min-h-0">
+                        <div className="flex-1 flex flex-col gap-2 bg-white/[0.02] border border-white/5 rounded-xl p-3 lg:p-3.5 hover:bg-white/[0.04] transition-colors duration-300 justify-start min-h-0 overflow-hidden">
                             <h4 className="text-white font-black text-[22px] lg:text-[24px] xl:text-[26px] leading-snug shrink-0">
                                 一个问题 → 多个“搜索方向”
                             </h4>
-                            <div className="text-zinc-300 text-[18px] lg:text-[19px] xl:text-[20px] leading-relaxed flex-1">
-                                面对同一个问题，AI 会兵分几路去查：
-                                <div className="mt-1.5 space-y-1 pl-1">
-                                    <span className="block text-zinc-200 font-semibold">
-                                        ① 查榜单（如：靠谱的家电购买平台推荐）
+                            <div className="flex-1 min-h-0 min-w-0 flex flex-col">
+                                <p className="shrink-0 text-zinc-300 text-[20px] leading-[30px] whitespace-nowrap">
+                                    同一问题，AI 会分几路去查：
+                                </p>
+                                <div className="mt-2 flex-1 min-h-0 flex flex-col justify-evenly">
+                                    <span className="block text-zinc-200 font-semibold text-[22px] leading-[32px] whitespace-nowrap">
+                                        ① 查榜单：家电平台推荐
                                     </span>
-                                    <span className="block text-zinc-200 font-semibold">
-                                        ② 查对比（如：京东和苏宁同款谁更划算）
+                                    <span className="block text-zinc-200 font-semibold text-[22px] leading-[32px] whitespace-nowrap">
+                                        ② 查对比：京东苏宁谁划算
                                     </span>
-                                    <span className="block text-zinc-200 font-semibold">
-                                        ③ 查避坑（如：苏宁售后 / 加盟店靠不靠谱）
+                                    <span className="block text-zinc-200 font-semibold text-[22px] leading-[32px] whitespace-nowrap">
+                                        ③ 查避坑：售后和加盟店
                                     </span>
                                 </div>
                             </div>

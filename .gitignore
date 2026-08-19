@@ -23,4 +23,5 @@ npm-debug.log*
 
 # 导出产物
 screenshots/
+_shots/
 output_slides.pptx

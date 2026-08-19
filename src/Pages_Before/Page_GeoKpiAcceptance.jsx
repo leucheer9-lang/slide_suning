@@ -124,10 +124,10 @@ function Page_GeoKpiAcceptance() {
                                 <tr className="h-[26%]">
                                     <td rowSpan={2} className="py-2 pl-2 align-middle border-b border-white/[0.22]">
                                         <div className="flex flex-col gap-2">
-                                            <span className="text-[22px] xl:text-[24px] text-white font-extrabold">优化词</span>
+                                            <span className="text-[22px] xl:text-[24px] text-white font-extrabold">核心场景词</span>
                                             <div className="flex flex-col gap-1 text-[16px] xl:text-[17px] text-zinc-400 font-bold">
-                                                <span>优势词</span>
-                                                <span>常规词</span>
+                                                <span>购买决策场景</span>
+                                                <span>品类对比场景</span>
                                             </div>
                                         </div>
                                     </td>
