@@ -4,6 +4,15 @@ import SlideLayout from '../components/SlideLayout';
 export default function Page_ServiceClients_Sanjiu() {
   const clientGroups = [
     {
+      category: '家居家电',
+      logos: [
+        { src: '/brand-logos/skyworth.png', label: '创维' },
+        { src: '/images/client-home-mus.png', label: '慕思' },
+        { src: '/images/client-home-fotile.png', label: '方太厨具' },
+        { src: '/images/client-home-daikin.png', label: '大金空调' }
+      ]
+    },
+    {
       category: '大健康与医疗',
       logos: [
         { src: '/images/client-health-diqiao.png', label: '迪巧' },
@@ -17,15 +26,6 @@ export default function Page_ServiceClients_Sanjiu() {
         { src: '/images/client-health-sanjiuyiyao.png', label: '三九医药' },
         { src: '/images/client-health-999ganmaoling.png', label: '999感冒灵' },
         { src: '/images/client-health-sanjiuweitai.png', label: '三九胃泰' }
-      ]
-    },
-    {
-      category: '家居家电',
-      logos: [
-        { src: '/brand-logos/skyworth.png', label: '创维' },
-        { src: '/images/client-home-mus.png', label: '慕思' },
-        { src: '/images/client-home-fotile.png', label: '方太厨具' },
-        { src: '/images/client-home-daikin.png', label: '大金空调' }
       ]
     },
     {

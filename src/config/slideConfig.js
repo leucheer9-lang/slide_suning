@@ -18,7 +18,6 @@ import Page_ServiceClients_Sanjiu from '../pages/Page_ServiceClients_Sanjiu';
 import Page_CaseStudy_Double_Combined, {
   Page_CaseStudy_Double_Combined_B,
 } from '../pages/Page_CaseStudy_Double_Combined';
-import Page_CaseStudy_Double_Combined_Health from '../pages/Page_CaseStudy_Double_Combined_Health';
 import Page_CaseStudy_Double_Combined_Health_2 from '../pages/Page_CaseStudy_Double_Combined_Health_2';
 import Page_CaseStudy_Double_Combined_Health_Sanjiu from '../pages/Page_CaseStudy_Double_Combined_Health_Sanjiu';
 import Page_CaseStudy_Double_Combined_2 from '../pages/Page_CaseStudy_Double_Combined_2';
@@ -27,7 +26,6 @@ import Page_TeamEndorsement from '../pages/Page_TeamEndorsement';
 import Page_CompanyArchitecture from '../pages/Page_CompanyArchitecture';
 import Page_TeamIntro from '../pages/Page_TeamIntro';
 import Page_ServiceIntro from '../pages/Page_ServiceIntro';
-import Page_Pricing from '../pages/Page_Pricing';
 import Page_CoreCapabilities from '../pages/Page_CoreCapabilities';
 import Page_GeoMonitorIntro from '../pages/Page_GeoMonitorIntro';
 import Page_GeoMonitorModules from '../pages/Page_GeoMonitorModules';
@@ -144,7 +142,6 @@ import PB_GeoConversionChain from '../Pages_Before/Page_GeoConversionChain';
 import PB_GeoKpiAcceptance from '../Pages_Before/Page_GeoKpiAcceptance';
 import PB_GeoWorkAcceptance from '../Pages_Before/Page_GeoWorkAcceptance';
 import Page_BrandDatabaseBuild from '../pages/Page_BrandDatabaseBuild';
-import Page_BrandDatabaseBuildDetails from '../pages/Page_BrandDatabaseBuildDetails';
 import Page_ContentStrategyBacktrack from '../pages/Page_ContentStrategyBacktrack';
 import Page_ContentStrategyDetails from '../pages/Page_ContentStrategyDetails';
 import Page_ContentStrategyDeconstruct from '../pages/Page_ContentStrategyDeconstruct';
@@ -166,42 +163,6 @@ import Page_NegativeInfoHandling from '../pages/Page_NegativeInfoHandling';
 // Q1 数据监测怎么优化和迭代
 import Page_QA_Monitor_DataReview from '../pages/qa/Page_QA_Monitor_DataReview';
 import Page_QA_Monitor_ModelTracking from '../pages/qa/Page_QA_Monitor_ModelTracking';
-
-// Q2「官网对 GEO 建设是否重要」：先讲行业差异，再走桃李面包官网诊断报告全量页面
-import Page_Web_IndustryCitationRate from '../pages/website/Page_Web_IndustryCitationRate';
-import Page_Web_DiagnosticCriteria from '../pages/website/Page_DiagnosticCriteria';
-import Page_Web_OverallAssessment from '../pages/website/Page_OverallAssessment';
-import Page_Web_Process_Overview from '../pages/website/Page_Process_Overview';
-import Page_Web_Process_Mobile from '../pages/website/Page_Process_Mobile';
-import Page_Web_ArchitectureResult from '../pages/website/Page_ArchitectureResult';
-import Page_Web_Issue_StructureClarity from '../pages/website/Page_Issue_StructureClarity';
-import Page_Web_Issue_HeadingHierarchy from '../pages/website/Page_Issue_HeadingHierarchy';
-import Page_Web_Issue_ImageAlt from '../pages/website/Page_Issue_ImageAlt';
-import Page_Web_Issue_Sitemap from '../pages/website/Page_Issue_Sitemap';
-import Page_Web_Issue_StructuredData from '../pages/website/Page_Issue_StructuredData';
-import Page_Web_CompetitorCrawl from '../pages/website/Page_CompetitorCrawl';
-import Page_Web_ContentCoverageResult from '../pages/website/Page_ContentCoverageResult';
-import Page_Web_Issue_ProductInfo from '../pages/website/Page_Issue_ProductInfo';
-import Page_Web_Issue_AfterSales from '../pages/website/Page_Issue_AfterSales';
-import Page_Web_Issue_UseCase from '../pages/website/Page_Issue_UseCase';
-import Page_Web_Issue_FAQ from '../pages/website/Page_Issue_FAQ';
-import Page_Web_Issue_ContentOps from '../pages/website/Page_Issue_ContentOps';
-import Page_Web_CompetitorContent from '../pages/website/Page_CompetitorContent';
-import Page_Web_Advice_Architecture from '../pages/website/Page_Advice_Architecture';
-import Page_Web_Advice_Content from '../pages/website/Page_Advice_Content';
-import Page_Web_Benchmark_Luckin from '../pages/website/Page_Benchmark_Luckin';
-import Page_Web_Benchmark_Luckin_Robots from '../pages/website/Page_Benchmark_Luckin_Robots';
-import Page_Web_Benchmark_Luckin_Products from '../pages/website/Page_Benchmark_Luckin_Products';
-import Page_Web_Benchmark_Luckin_FAQ from '../pages/website/Page_Benchmark_Luckin_FAQ';
-import Page_Web_Benchmark_Luckin_Open from '../pages/website/Page_Benchmark_Luckin_Open';
-
-// Q3 标书和验收
-// 「预算和项目该如何规划」（300 万分配）暂时下线，保留 import 注释以便随时恢复
-// import Page_QA_Budget_Allocation from '../pages/qa/Page_QA_Budget_Allocation';
-// import Page_QA_Budget_Why from '../pages/qa/Page_QA_Budget_Why';
-// import Page_QA_Budget_Timeline from '../pages/qa/Page_QA_Budget_Timeline';
-import Page_QA_Bid_Threshold from '../pages/qa/Page_QA_Bid_Threshold';
-import Page_QA_Acceptance_Framework from '../pages/qa/Page_QA_Acceptance_Framework';
 
 export const slideConfig = [
   // ─────────────────────── 封面 & 总目录 ───────────────────────
@@ -250,11 +211,10 @@ export const slideConfig = [
   { type: 'page', title: '服务客户', component: Page_ServiceClients_Sanjiu, hideHeader: true },
 
   { type: 'section', title: '案例展示' },
-  { type: 'page', title: '服务案例', component: Page_CaseStudy_Double_Combined_Health, hideHeader: true },
-  { type: 'page', title: '服务案例', component: Page_CaseStudy_Double_Combined_Health_2, hideHeader: true },
-  { type: 'page', title: '服务案例', component: Page_CaseStudy_Double_Combined_Health_Sanjiu, hideHeader: true },
   { type: 'page', title: '服务案例', variants: [Page_CaseStudy_Double_Combined_B, Page_CaseStudy_Double_Combined], hideHeader: true },
   { type: 'page', title: '服务案例', component: Page_CaseStudy_Double_Combined_2, hideHeader: true },
+  { type: 'page', title: '服务案例', component: Page_CaseStudy_Double_Combined_Health_2, hideHeader: true },
+  { type: 'page', title: '服务案例', component: Page_CaseStudy_Double_Combined_Health_Sanjiu, hideHeader: true },
   { type: 'page', title: '服务案例', component: Page_CaseStudy_Double_Combined_3, hideHeader: true },
 
   { type: 'section', title: '团队背书' },
@@ -269,8 +229,6 @@ export const slideConfig = [
   { type: 'chapter', title: '服务介绍', subtitle: 'SERVICE INTRO', backgroundImage: '' },
   { type: 'section', title: '服务内容' },
   { type: 'page', title: '服务内容', component: Page_ServiceIntro, hideHeader: true },
-  { type: 'section', title: '报价' },
-  { type: 'page', title: '报价', component: Page_Pricing, hideHeader: true },
 
   { type: 'chapter', title: '核心能力', subtitle: 'CORE CAPABILITIES', backgroundImage: '' },
   { type: 'section', title: '总览' },
@@ -469,7 +427,7 @@ export const slideConfig = [
   { type: 'chapter', title: 'GEO\n实操要点解析', subtitle: 'GEO EXECUTION ESSENTIALS', backgroundImage: '/proposal-chapters/proposal-chapter-cover-03.jpg' },
 
   { type: 'section', title: '品牌数据库建立' },
-  { type: 'page', title: '品牌数据库建立', components: [Page_BrandDatabaseBuild, Page_BrandDatabaseBuildDetails] },
+  { type: 'page', title: '品牌数据库建立', component: Page_BrandDatabaseBuild },
 
   { type: 'section', title: '内容策略' },
   { type: 'page', title: '内容策略', components: [Page_ContentStrategyBacktrack, Page_ContentStrategyDetails, Page_ContentStrategyDeconstruct, Page_ContentStrategyDemo, Page_ContentStrategyDemo2, Page_ContentStrategyDemo3, Page_ContentStrategyDemo4] },
@@ -489,7 +447,7 @@ export const slideConfig = [
 
   // ══════════════════════════════════════════════════════════
   // ——— 四、Q&A ———
-  // Q1 数据监测怎么优化和迭代 / Q2 官网对 GEO 建设是否重要 / Q3 标书和验收
+  // Q1 数据监测怎么优化和迭代
   // ══════════════════════════════════════════════════════════
   {
     type: 'part',
@@ -515,69 +473,4 @@ export const slideConfig = [
   { type: 'page', title: '数据监测怎么优化和迭代', component: Page_QA_Monitor_DataReview, hideHeader: true },
   { type: 'section', title: '跟随模型变化' },
   { type: 'page', title: '模型一变，策略就得跟着改', component: Page_QA_Monitor_ModelTracking, hideHeader: true },
-
-  {
-    type: 'chapter',
-    title: '官网对GEO建设\n是否重要',
-    subtitle: 'Q2 · OFFICIAL WEBSITE & GEO',
-    backgroundImage: '',
-  },
-
-  { type: 'section', title: '行业差异' },
-  { type: 'page', title: '官网对苏宁到底重不重要', component: Page_Web_IndustryCitationRate, hideHeader: true },
-
-  { type: 'section', title: '官网 GEO 优化案例' },
-  { type: 'page', title: '官网诊断标准', component: Page_Web_DiagnosticCriteria, hideHeader: true },
-  { type: 'page', title: '桃李面包官网诊断结论', component: Page_Web_OverallAssessment, hideHeader: true },
-  { type: 'page', title: '诊断过程（桌面端）', component: Page_Web_Process_Overview, hideHeader: true },
-  { type: 'page', title: '诊断过程（移动端）', component: Page_Web_Process_Mobile, hideHeader: true },
-
-  { type: 'page', title: '网站架构诊断结果', component: Page_Web_ArchitectureResult, hideHeader: true },
-  { type: 'page', title: '问题一：页面结构不清晰', component: Page_Web_Issue_StructureClarity, hideHeader: true },
-  { type: 'page', title: '问题二：标题层级不规范', component: Page_Web_Issue_HeadingHierarchy, hideHeader: true },
-  { type: 'page', title: '问题三：抓取权限与安全漏洞', component: Page_Web_Issue_ImageAlt, hideHeader: true },
-  { type: 'page', title: '问题四：网站地图缺失', component: Page_Web_Issue_Sitemap, hideHeader: true },
-  { type: 'page', title: '问题五：结构化数据缺失', component: Page_Web_Issue_StructuredData, hideHeader: true },
-  { type: 'page', title: '网站架构竞品对比', component: Page_Web_CompetitorCrawl, hideHeader: true },
-
-  { type: 'page', title: '内容覆盖诊断结果', component: Page_Web_ContentCoverageResult, hideHeader: true },
-  { type: 'page', title: '问题一：产品信息缺失', component: Page_Web_Issue_ProductInfo, hideHeader: true },
-  { type: 'page', title: '问题二：售后与服务信息', component: Page_Web_Issue_AfterSales, hideHeader: true },
-  { type: 'page', title: '问题三：使用场景内容', component: Page_Web_Issue_UseCase, hideHeader: true },
-  { type: 'page', title: '问题四：FAQ / 知识科普', component: Page_Web_Issue_FAQ, hideHeader: true },
-  { type: 'page', title: '问题五：内容持续运营', component: Page_Web_Issue_ContentOps, hideHeader: true },
-  { type: 'page', title: '内容覆盖竞品对比', component: Page_Web_CompetitorContent, hideHeader: true },
-
-  { type: 'page', title: '网站架构优化建议', component: Page_Web_Advice_Architecture, hideHeader: true },
-  { type: 'page', title: '内容覆盖优化建议', component: Page_Web_Advice_Content, hideHeader: true },
-
-  { type: 'page', title: '标杆案例：瑞幸咖啡', component: Page_Web_Benchmark_Luckin, hideHeader: true },
-  { type: 'page', title: '瑞幸·robots.txt', component: Page_Web_Benchmark_Luckin_Robots, hideHeader: true },
-  { type: 'page', title: '瑞幸·产品页', component: Page_Web_Benchmark_Luckin_Products, hideHeader: true },
-  { type: 'page', title: '瑞幸·FAQ', component: Page_Web_Benchmark_Luckin_FAQ, hideHeader: true },
-  { type: 'page', title: '瑞幸·内容开放', component: Page_Web_Benchmark_Luckin_Open, hideHeader: true },
-
-  // 「预算和项目该如何规划」（300 万分配）暂时下线，需要时取消注释即可恢复
-  // {
-  //   type: 'chapter',
-  //   title: '预算和项目\n该如何规划',
-  //   subtitle: 'Q · BUDGET & PLANNING',
-  //   backgroundImage: '',
-  // },
-  // { type: 'section', title: '预算规划' },
-  // { type: 'page', title: '单品 300 万，怎么分', component: Page_QA_Budget_Allocation, hideHeader: true },
-  // { type: 'page', title: '重点投在哪里，为什么', component: Page_QA_Budget_Why, hideHeader: true },
-  // { type: 'section', title: '项目排期' },
-  // { type: 'page', title: '300 万怎么花：12 个月节奏', component: Page_QA_Budget_Timeline, hideHeader: true },
-
-  {
-    type: 'chapter',
-    title: '标书和验收',
-    subtitle: 'Q3 · BIDDING & ACCEPTANCE',
-    backgroundImage: '',
-  },
-  { type: 'section', title: '招标门槛' },
-  { type: 'page', title: '招标怎么设门槛', component: Page_QA_Bid_Threshold, hideHeader: true },
-  { type: 'section', title: '验收设计' },
-  { type: 'page', title: '验收怎么设计', component: Page_QA_Acceptance_Framework, hideHeader: true },
 ];
