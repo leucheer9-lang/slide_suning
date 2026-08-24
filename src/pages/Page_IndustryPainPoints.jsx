@@ -15,30 +15,30 @@ const cards = [
     {
         no: '01',
         pos: 'top',
-        kicker: '「品牌隐身」',
-        lines: ['园区在 AI 答案中', '被创维家电词淹没'],
-        punch: '搜「创维」先出电视，搜园区却很难单独点到创新谷',
+        kicker: '「身份错位」',
+        lines: ['AI 把太力答成', '塑料家居用品公司'],
+        punch: '官网写纳米材料，百科和金融平台都写家居用品',
     },
     {
         no: '02',
         pos: 'top',
-        kicker: '选址强比价',
-        lines: ['同区租金同一梯度，', 'AI 只拿单价做答案'],
-        punch: '跟雪花、甲岸同一价格带，中介页只剩面积和单价',
+        kicker: '品牌名歧义',
+        lines: ['「太力科技」被答成', '北京的工业软件公司'],
+        punch: '同名主体、台湾同名商标、太龙药业都会混进来',
     },
     {
         no: '03',
         pos: 'bottom',
-        kicker: '头部园区占位',
-        lines: ['「宝安高端产业园」推荐', '被雪花科创城占满'],
-        punch: '问宝安高端园 / 工业上楼，答案先落到尖岗山',
+        kicker: '头部问题占位',
+        lines: ['防护、纳米材料、机器人、', '航天，四张名单全缺席'],
+        punch: '有真实履历，却进不了任何一份推荐名单',
     },
     {
         no: '04',
         pos: 'bottom',
-        kicker: '公开信息依赖第三方',
-        lines: ['错误事实与刻板印象', '易被 AI 放大'],
-        punch: '工厂身份、没地铁、距宝安中心一公里，都会进训练池',
+        kicker: '官方口径自相矛盾',
+        lines: ['专利数、上太空次数、', '防弹表述互相打架'],
+        punch: '同一个页面写了两个专利数，AI 只会退回旧语料',
     },
 ];
 
@@ -50,14 +50,14 @@ export default function Page_IndustryPainPoints() {
             <div className="w-full max-w-[1560px] mx-auto flex flex-col h-full relative z-10">
                 <div className="w-full shrink-0 pt-1 pb-6">
                     <h1 className="text-[36px] font-black text-white tracking-widest mb-4 text-center">
-                        主题产业园 GEO 难点解析
+                        转型期品牌 GEO 难点解析
                     </h1>
                     <p className="text-zinc-400 text-[20px] lg:text-[22px] leading-[1.7] tracking-wide text-justify [text-justify:inter-ideograph]">
-                        创维创新谷面向市场招租的是产业空间，不是家电。真正抢同一批客的，是宝安区内的雪花科创城和甲岸美生智谷。企业问的是
+                        太力要对外讲的是纳米材料与安全防护，但公开语料里它只有一个身份——真空压缩袋第一名。客户真正在问的是
                         <strong className="text-[#004CE5]">
-                            「宝安高端园去哪、能不能做中试、跟哪条链、租金和政策怎么算」
+                            「防刺服哪家能过警标、机器人防护材料找谁、这家公司到底做什么」
                         </strong>
-                        。从同区比价和主题园特性出发，创新谷在 GEO 里会先撞上这四件事：
+                        。从身份、名称、名单和口径四个角度看，太力在 GEO 里会先撞上这四件事：
                     </p>
                 </div>
 

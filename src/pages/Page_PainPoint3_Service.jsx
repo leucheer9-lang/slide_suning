@@ -2,28 +2,28 @@ import React from 'react';
 
 const channels = [
     {
-        tag: '中介房源页',
-        title: '区位租金乱写',
-        points: ['挂牌价从约 35 元写到 98 元，软文更高', '「距宝安中心 1 公里」与事实不符', '层高、车位、竣工年份互相打架'],
-        example: '咚咚租楼盘简介仍写「临近南关高速、距宝安中心只需 1 公里」；同站挂牌既有 35 元，也有 75 元。雪花、甲岸的单常被拿来压价，配套却写不进同一张表。',
+        tag: '导购榜单',
+        title: '身份锁在旧主体',
+        points: ['榜单挂的仍是「太力家庭用品」旧公司名', '介绍语一律写「塑料家庭用品企业」', '同一批站点在防护品类里不收录太力'],
+        example: 'CNPP、买购、中国品牌网把太力排在真空压缩袋第一，但主体写的是已废弃的中山市太力家庭用品制造有限公司。',
     },
     {
-        tag: '招商软文',
-        title: '政策口径被夸大',
-        points: ['把「可申报」写成入园必到账', '税收返还、三年补贴、产业基金混为一谈', '企业按软文预期看房，落地后对不上'],
-        example: '部分招商稿把省级园、桃花源身份直接写成「初创企业最高可获 3 年租金补贴，年补贴可达百万元」。',
+        tag: '百科词条',
+        title: '主体词条是空壳',
+        points: ['「广东太力科技集团」词条几乎只有经营范围', '旧主体词条更完整，定义却是塑料企业', '索引快照与实际页面内容不一致'],
+        example: '搜索快照里有航天、专利、上市信息，实际抓取到的页面只剩经营范围和一条荣誉——两次抓取会得到两个答案。',
     },
     {
-        tag: '百科 / 点评',
-        title: '身份被写成工厂',
-        points: ['维基等条目仍称石岩园为「创维总工厂」', '写字楼网又只按甲级办公收录', '研产一体、产城配套在公开条目里几乎看不见'],
-        example: '公开百科把创新谷写成创维集团总工厂；房源站则按写字楼出租，两套身份同时进入 AI 训练池。',
+        tag: '双域名与英文站',
+        title: '官方自己在打架',
+        points: ['tailigo.com 仍是旧收纳版，关键词全是压缩袋', '英文站还写 700 项专利、家居收纳领先', '同一段公司简介被复制到五个 URL'],
+        example: 'zs-taili.com 已改成纳米材料叙事，tailigo.com 同时在线、写着 29 次进入太空。AI 抓到哪一个都算「官方」。',
     },
     {
-        tag: '片区旧印象',
-        title: '交通认知停在通车前',
-        points: ['石岩长期被写成偏远工业区、招人难', '13 号线应人石站 2025 年 12 月才开通', '旧帖比新通车新闻更容易被反复抓取'],
-        example: '通车前「石岩没地铁、去南山要一小时」的讨论仍大量在线；地铁已通，答案却经常还停在旧口径。',
+        tag: '行业分类',
+        title: '被归进轻工制造',
+        points: ['同花顺申万分类：轻工制造—家居用品', '工商库归入电气机械和器材制造业', '金融数据平台正是 AI 的高频引用源'],
+        example: '任何按「新材料」「航天」「机器人产业链」筛选出来的名单，从数据源头就不会包含太力。',
     },
 ];
 
@@ -41,10 +41,10 @@ export default function Page_PainPoint3_Service() {
                         <span className="text-[#004CE5] font-black text-xl lg:text-2xl">04</span>
                     </div>
                     <h1 className="text-[32px] lg:text-[36px] font-black text-white tracking-widest mb-1.5 leading-tight">
-                        公开信息依赖第三方，错误事实与刻板印象易被 AI 放大
+                        公开信息依赖第三方，过时口径持续被 AI 放大
                     </h1>
-                    <p className="text-zinc-400 text-[20px] leading-snug tracking-wide">
-                        创新谷在公开网上出现最多的地方，是中介站和转载稿，不是业主官网。雪花科创城有华润置地招商矩阵和总部南迁报道托着口径；创新谷的租金、区位、身份、地铁一旦写错，就会被 AI 无差别抓取，放大成「石岩偏远、创新谷就是工厂」。
+                    <p className="text-zinc-400 text-[20px] leading-snug tracking-wide text-justify [text-justify:inter-ideograph]">
+                        太力在公开网上出现最多的地方，是导购榜单、旧百科和第三方数据库，不是自己的官网。官网没有技术白皮书，也没有任何产品参数页，新闻列表页甚至打不开；最权威的信息全躺在巨潮资讯网的 PDF 年报里——那恰好是 AI 最难吃进去的格式。最容易被抓取的内容，全是过时定位。
                     </p>
                 </div>
 
@@ -53,10 +53,10 @@ export default function Page_PainPoint3_Service() {
                         错误从哪来
                     </div>
                     <div className="px-5 py-2.5 text-center text-white text-[20px] font-bold tracking-wide border-l border-[#004CE5]/25">
-                        第三方错误口径
+                        具体表现
                     </div>
                     <div className="px-5 py-2.5 text-center text-white text-[20px] font-bold tracking-wide border-l border-[#004CE5]/25">
-                        中介页 / 软文 / 旧帖
+                        公开出处
                     </div>
                 </div>
 
@@ -72,7 +72,7 @@ export default function Page_PainPoint3_Service() {
                                 </span>
                             </div>
 
-                            <div className="px-4 flex flex-col justify-center border-r border-white/10 min-w-0">
+                            <div className="px-6 flex flex-col justify-center border-r border-white/10 min-w-0">
                                 <div className="text-[#4B8BFF] text-[16px] font-bold tracking-widest mb-1">
                                     {card.tag}
                                 </div>
@@ -81,7 +81,7 @@ export default function Page_PainPoint3_Service() {
                                 </div>
                             </div>
 
-                            <div className="min-w-0 px-5 flex flex-col justify-center gap-1.5 border-r border-white/10">
+                            <div className="min-w-0 px-6 flex flex-col justify-center gap-1.5 border-r border-white/10">
                                 {card.points.map((point) => (
                                     <div
                                         key={point}
@@ -93,11 +93,11 @@ export default function Page_PainPoint3_Service() {
                                 ))}
                             </div>
 
-                            <div className="min-w-0 bg-[#004CE5]/[0.06] px-5 flex flex-col justify-center gap-1">
+                            <div className="min-w-0 bg-[#004CE5]/[0.06] px-6 flex flex-col justify-center gap-1">
                                 <div className="text-[#4B8BFF] text-[16px] font-bold tracking-widest">
-                                    公开出处
+                                    实际例子
                                 </div>
-                                <p className="text-zinc-100 text-[20px] font-medium leading-[1.45] tracking-normal">
+                                <p className="text-zinc-100 text-[20px] font-medium leading-[1.45] tracking-normal text-justify [text-justify:inter-ideograph]">
                                     {card.example}
                                 </p>
                             </div>

@@ -3,9 +3,9 @@ import React from 'react';
 const cols = 'grid-cols-[176px_1fr_1fr_1fr]';
 
 const platforms = [
-    { name: '创维创新谷', en: 'Skyworth', color: '#F59E0B', highlight: true },
-    { name: '雪花科创城', en: 'CR Snow', color: '#F97316' },
-    { name: '甲岸美生智谷', en: 'Jiaan', color: '#EC4899' },
+    { name: '太力科技', en: 'TAILI', color: '#F59E0B', highlight: true },
+    { name: '3M', en: 'Command', color: '#F97316' },
+    { name: '恒辉安防', en: 'Henghui', color: '#EC4899' },
 ];
 
 const rows = [
@@ -13,45 +13,45 @@ const rows = [
         zone: '心智',
         label: '客户怎么认识它',
         cells: [
-            { line1: '创维总部所在地 · 5G+8K 主题园', line2: '常被搜成「创维电视 / 创维集团」' },
-            { line1: '华润产城 · 啤酒总部南迁', line2: '尖岗山新地标，更靠近南山' },
-            { line1: '72 区工改工 · 兴东地铁口', line2: '产品形态接近，没有链主故事' },
+            { line1: '真空压缩袋第一品牌 · 航天同款', line2: '常被记成收纳品牌，材料认知几乎为零' },
+            { line1: '全球材料科技公司 · 无痕系列', line2: '材料能力与消费品牌互相加持' },
+            { line1: '安防材料上市公司 · 机器人概念', line2: '不做 C 端，认知全部押在 B 端' },
         ],
     },
     {
         zone: '线上',
-        label: '房源与询盘入口',
+        label: '流量与销售入口',
         cells: [
-            { line1: '写字楼网 / 咚咚租 / 中介站为主', line2: '官网信息薄，询盘多停在比价' },
-            { line1: '华润置地招商矩阵 + 项目官网', line2: '总部南迁新闻就能带客' },
-            { line1: '写字楼网 / 咚咚租 / 中介站为主', line2: '品牌站弱，询盘停在面积和单价' },
+            { line1: '天猫 / 抖音 / 京东 / 亚马逊多店', line2: '线上约占八成，流量成本持续走高' },
+            { line1: '官网技术库 + 各平台旗舰店', line2: '产品页带承重、材质、适用面材参数' },
+            { line1: '官网技术稿 + 投资者互动平台', line2: '受众是机构和产业客户，不是消费者' },
         ],
     },
     {
         zone: '渠道',
         label: '获客结构',
         cells: [
-            { line1: '业主直签 + 中介分佣并行', line2: '产业链转介绍是暗线，线上看不见' },
-            { line1: '业主直销 + 华润品牌带客', line2: '啤酒总部和工业上楼示范是钩子' },
-            { line1: '集体业主 + 美生包租运营', line2: '中介分销铺量，转介绍尚未成势' },
+            { line1: '品牌电商 + 全球 ODM + 军警 B 端', line2: 'B 端链路最长，公开内容几乎看不见' },
+            { line1: '全球分销 + 工业直销 + 品牌授权', line2: '消费端与工业端共用一套技术叙事' },
+            { line1: '工业直销 + 出口 + 产业链配套', line2: '全部资源压在单一 B 端叙事上' },
         ],
     },
     {
         zone: '内容',
         label: '公开内容长什么样',
         cells: [
-            { line1: '政府荣誉稿、本地新闻', line2: '缺选址对比、研产场景、租户故事' },
-            { line1: '总部南迁、啤酒小镇、工业上楼', line2: '华润口径清晰，媒体稿充足' },
-            { line1: '封顶 / 招商软文为主', line2: '租户故事和产业叙事都薄' },
+            { line1: '十大品牌榜、导购种草、财报新闻', line2: '缺技术参数页、认证明细和应用白皮书' },
+            { line1: '技术白皮书、应用案例、标准参与', line2: '每个产品都有可直接引用的参数' },
+            { line1: '公告、机构调研、行业报告点名', line2: '新进展一出现就有可检索的出处' },
         ],
     },
     {
         zone: '搜索',
         label: '搜索与 AI 可见度',
         cells: [
-            { line1: '园区词条少，集团词条抢答案', line2: 'AI 容易把园区说成家电公司' },
-            { line1: '品牌词独立，新产城出镜高', line2: '问「宝安工业上楼」时容易出现' },
-            { line1: '品牌新、词条少', line2: '问宝安产业园时很少被单独点名' },
+            { line1: '收纳类问题必答，防护类零出现', line2: 'AI 把太力定义为家居用品企业' },
+            { line1: '问挂钩、问工业胶带都能被点名', line2: '材料公司身份在 AI 里非常稳固' },
+            { line1: '问机器人防护材料稳定出现', line2: '同一个问题里太力完全不在场' },
         ],
     },
 ];
@@ -77,10 +77,10 @@ export default function Page_BrandAdMatrix() {
             <div className="flex-1 min-h-0 w-full max-w-[1720px] mx-auto px-6 pb-4 relative z-10 flex flex-col gap-4">
                 <div className="shrink-0 pt-1">
                     <h1 className="text-[32px] font-black text-white tracking-widest leading-none">
-                        主流园区招商获客渠道对比
+                        主流品牌营销获客渠道对比
                     </h1>
                     <p className="mt-3 text-[20px] text-zinc-400 tracking-wide">
-                        产业园区不靠电商广告获客，比的是心智、房源入口，以及搜索和 AI 里有没有被讲清楚
+                        太力和 3M 都是「材料能力 + 消费品牌」的组合，但只有 3M 把这件事讲进了搜索结果
                     </p>
                 </div>
 

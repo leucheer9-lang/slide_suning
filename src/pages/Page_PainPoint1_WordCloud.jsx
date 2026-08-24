@@ -1,42 +1,42 @@
 import React from 'react';
 
-const applianceWords = [
-    { text: '创维电视', size: 'text-[2rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
-    { text: '创维集团', size: 'text-[1.9rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
-    { text: '创维大厦', size: 'text-[1.7rem]', weight: 'font-black', color: 'text-zinc-200', opacity: 'opacity-95' },
-    { text: '酷开', size: 'text-[1.6rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
-    { text: 'OLED电视', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
-    { text: '创维股价', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
-    { text: '南山总部', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-90' },
-    { text: '哪款电视好', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-95' },
-    { text: '创维售后', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-85' },
-    { text: '创维数字', size: 'text-[1.3rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
-    { text: '智能电视推荐', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-85' },
-    { text: '高新南一道', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-80' },
-    { text: '创维工业园', size: 'text-[1.3rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-85' },
-    { text: '平板电视工厂', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-80' },
-    { text: '创维空调', size: 'text-[1.1rem]', weight: 'font-normal', color: 'text-zinc-400', opacity: 'opacity-75' },
-    { text: 'Mini LED', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-80' },
-    { text: '创维总工厂', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
-    { text: '以旧换新', size: 'text-[1.1rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-70' },
-    { text: '创维半导体大厦', size: 'text-[1.1rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-70' },
-    { text: '电视参数对比', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-80' },
+const storageWords = [
+    { text: '真空压缩袋', size: 'text-[2rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
+    { text: '太力压缩袋', size: 'text-[1.9rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
+    { text: '压缩袋十大品牌', size: 'text-[1.7rem]', weight: 'font-black', color: 'text-zinc-200', opacity: 'opacity-95' },
+    { text: '收纳袋', size: 'text-[1.6rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
+    { text: '吸盘挂钩', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
+    { text: '免抽气压缩袋', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
+    { text: '太力家庭用品', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-90' },
+    { text: '会不会漏气', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-95' },
+    { text: '塑料家庭用品', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
+    { text: '被子收纳袋', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-85' },
+    { text: '换季收纳', size: 'text-[1.3rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
+    { text: '轻工制造', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-90' },
+    { text: '抽气泵', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-85' },
+    { text: '无痕挂钩', size: 'text-[1.3rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-85' },
+    { text: '收纳好物', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-80' },
+    { text: '太力旗舰店', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-80' },
+    { text: '家居收纳', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-80' },
+    { text: '免钉免胶扶手', size: 'text-[1.1rem]', weight: 'font-normal', color: 'text-zinc-400', opacity: 'opacity-75' },
+    { text: '租房好物', size: 'text-[1.1rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-70' },
+    { text: '太力宜尚', size: 'text-[1.1rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-70' },
 ];
 
-const parkWords = [
-    { text: '创维创新谷', size: 'text-[1.8rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
-    { text: '5G+8K园区', size: 'text-[1.6rem]', weight: 'font-black', color: 'text-zinc-200', opacity: 'opacity-100' },
-    { text: '工业上楼', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-95' },
-    { text: '石岩研发楼', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-90' },
-    { text: '省级特色产业园', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-85' },
-    { text: '宝安高端产业园', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-80' },
-    { text: '宝安产业园', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-80' },
-    { text: '科技桃花源', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-80' },
-    { text: '楼上研发楼下中试', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-80' },
-    { text: '创维彩电总部', size: 'text-[1.3rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-85' },
-    { text: '应人石站', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-75' },
-    { text: '链主园区', size: 'text-[1.1rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-70' },
-    { text: '产城综合体', size: 'text-[1.1rem]', weight: 'font-light', color: 'text-zinc-500', opacity: 'opacity-65' },
+const materialWords = [
+    { text: '高性能纳米材料', size: 'text-[1.8rem]', weight: 'font-black', color: 'text-white', opacity: 'opacity-100' },
+    { text: '剪切增稠纳米流体', size: 'text-[1.6rem]', weight: 'font-black', color: 'text-zinc-200', opacity: 'opacity-100' },
+    { text: '防刺割手套', size: 'text-[1.5rem]', weight: 'font-bold', color: 'text-zinc-200', opacity: 'opacity-95' },
+    { text: '航天真空封装', size: 'text-[1.4rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-90' },
+    { text: '机器人防护材料', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-85' },
+    { text: '柔性防弹衣', size: 'text-[1.3rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-80' },
+    { text: '蘑菇搭扣', size: 'text-[1.3rem]', weight: 'font-bold', color: 'text-zinc-300', opacity: 'opacity-85' },
+    { text: '功能粘胶', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-80' },
+    { text: '气调保鲜膜', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-80' },
+    { text: '警标 A 类', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-300', opacity: 'opacity-80' },
+    { text: '太力科技 301595', size: 'text-[1.2rem]', weight: 'font-medium', color: 'text-zinc-400', opacity: 'opacity-75' },
+    { text: '专精特新小巨人', size: 'text-[1.1rem]', weight: 'font-normal', color: 'text-zinc-500', opacity: 'opacity-70' },
+    { text: '纳米防护涂层', size: 'text-[1.1rem]', weight: 'font-light', color: 'text-zinc-500', opacity: 'opacity-65' },
 ];
 
 export default function Page_PainPoint1_WordCloud() {
@@ -61,11 +61,11 @@ export default function Page_PainPoint1_WordCloud() {
                         <span className="text-[#004CE5] font-black text-xl lg:text-2xl">01</span>
                     </div>
                     <h1 className="text-4xl lg:text-[44px] font-black text-white tracking-widest mb-3 lg:mb-4 leading-tight">
-                        「品牌隐身」：园区在 AI 答案中被创维家电词淹没
+                        「身份错位」：AI 把太力答成塑料家居用品公司
                     </h1>
 
-                    <p className="text-zinc-400 text-[20px] lg:text-[21px] leading-relaxed max-w-[1400px] tracking-wide">
-                        「创维」在公开语料里首先是电视品牌。集团办公总部在南山科技园创维大厦，石岩这边又长期被写成工业园、总工厂。企业问「创维」时，AI 先讲产品和股价；问「宝安高端产业园」时，又很少主动点到创新谷——园区没有自己的独立选址词，传统「品牌词铺量」在这里用不上。
+                    <p className="text-zinc-400 text-[20px] lg:text-[21px] leading-relaxed max-w-[1400px] tracking-wide text-justify [text-justify:inter-ideograph]">
+                        「太力」在公开语料里首先是真空压缩袋。导购榜把它排第一，但挂靠的主体名仍是已废弃的「中山市太力家庭用品制造有限公司」；同花顺按轻工制造—家居用品归类，百度百科写「专业塑料家庭用品企业」。官网讲纳米材料和安全防护，这套叙事在外部语料里几乎没有落点——问「太力是不是新材料公司」，AI 会用它自己的年报数据回答「不是」。
                     </p>
                 </div>
 
@@ -78,12 +78,12 @@ export default function Page_PainPoint1_WordCloud() {
                                 <span className="text-[#004CE5] font-black text-xl">A</span>
                             </div>
                             <div>
-                                <h3 className="text-[26px] font-bold text-white tracking-widest">家电 / 集团词（AI 默认召回）</h3>
+                                <h3 className="text-[26px] font-bold text-white tracking-widest">收纳 / 导购词（AI 默认召回）</h3>
                             </div>
                         </div>
 
                         <div className="flex-1 flex flex-wrap justify-center content-center items-center gap-x-4 gap-y-2.5 lg:gap-x-5 lg:gap-y-3.5">
-                            {applianceWords.map((word, idx) => (
+                            {storageWords.map((word, idx) => (
                                 <span
                                     key={idx}
                                     style={{ fontSize: getScaledSize(word.size) }}
@@ -107,15 +107,15 @@ export default function Page_PainPoint1_WordCloud() {
 
                         <div className="flex items-center gap-4 mb-6 shrink-0">
                             <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center border border-white/20">
-                                <span className="text-white font-black text-xl">P</span>
+                                <span className="text-white font-black text-xl">M</span>
                             </div>
                             <div>
-                                <h3 className="text-[26px] font-bold text-white tracking-widest">园区 / 选址词（稀疏难召回）</h3>
+                                <h3 className="text-[26px] font-bold text-white tracking-widest">材料 / 防护词（稀疏难召回）</h3>
                             </div>
                         </div>
 
                         <div className="flex-1 flex flex-wrap justify-center content-center items-center gap-x-4 gap-y-2.5 lg:gap-x-5 lg:gap-y-3.5">
-                            {parkWords.map((word, idx) => (
+                            {materialWords.map((word, idx) => (
                                 <span
                                     key={idx}
                                     style={{ fontSize: getScaledSize(word.size) }}
@@ -133,8 +133,8 @@ export default function Page_PainPoint1_WordCloud() {
                     <div className="bg-[#004CE5]/10 border border-[#004CE5]/30 px-3 py-1 rounded-lg text-[#004CE5] text-[16px] lg:text-[18px] font-black tracking-widest shrink-0 uppercase shadow-[0_0_8px_rgba(0,76,229,0.2)]">
                         解法
                     </div>
-                    <p className="text-zinc-200 text-[20px] lg:text-[21px] font-bold leading-relaxed text-justify flex-1">
-                        把「创维创新谷」从集团品牌里拆出来，做成可检索的园区实体：绑住宝安高端产业园、5G+8K、工业上楼、石岩研发楼、省级特色产业园这些选址词，让 AI 在「宝安去哪落户」而不是「买哪台电视」时召回创新谷。
+                    <p className="text-zinc-200 text-[20px] lg:text-[21px] font-bold leading-relaxed text-justify [text-justify:inter-ideograph] flex-1">
+                        不否认收纳第一，而是把它变成材料能力的证据：让「航天真空封装」「剪切增稠纳米流体」「防刺割」「壁挂连接材料」成为可检索的独立实体，把太力从品类榜单搬进材料供应商名单。
                     </p>
                 </div>
             </div>

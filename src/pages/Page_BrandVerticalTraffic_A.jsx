@@ -1,7 +1,18 @@
 import React from 'react';
 import { trafficRows } from './data/verticalCompetitorTraffic';
 
-/** 同场竞品获客链路 × 创新谷应对 — 经典对比矩阵表 */
+/** 末尾 2–3 字不单独掉行 */
+function keepEnd(text, n = 3) {
+    if (!text || text.length <= n) return text;
+    return (
+        <>
+            {text.slice(0, -n)}
+            <span className="whitespace-nowrap">{text.slice(-n)}</span>
+        </>
+    );
+}
+
+/** 同场竞品获客链路 × 太力应对 — 经典对比矩阵表 */
 export default function Page_BrandVerticalTraffic_A() {
     return (
         <div className="flex-1 min-h-0 w-full flex flex-col relative bg-black overflow-hidden text-white font-sans">
@@ -9,10 +20,10 @@ export default function Page_BrandVerticalTraffic_A() {
 
             <div className="shrink-0 text-center pt-3 pb-2 relative z-10 px-8">
                 <h1 className="text-[38px] font-black text-white tracking-widest leading-none mb-1.5">
-                    竞品获客链路 × 创新谷应对策略
+                    竞品获客链路 × 太力应对策略
                 </h1>
                 <p className="text-zinc-400 text-[20px] leading-snug">
-                    雪花吃品牌和报道，甲岸吃房源比价，创新谷要把链主、交付和总持有成本写进答案
+                    榜单吃身份，白牌吃价格，赛道对手吃答案位；太力要把材料、认证和成本写进答案
                 </p>
             </div>
 
@@ -27,7 +38,7 @@ export default function Page_BrandVerticalTraffic_A() {
                             <span className="text-[18px] font-bold text-zinc-400 tracking-widest">流量获取链路</span>
                         </div>
                         <div className="px-6 py-3.5 flex items-center bg-[rgba(245,158,11,0.08)]">
-                            <span className="text-[18px] font-black text-[#F59E0B] tracking-widest">创新谷应对策略</span>
+                            <span className="text-[18px] font-black text-[#F59E0B] tracking-widest">太力应对策略</span>
                         </div>
                     </div>
 
@@ -80,22 +91,26 @@ export default function Page_BrandVerticalTraffic_A() {
                                 </div>
 
                                 {/* Chain */}
-                                <div className="px-6 py-3 border-r border-white/10 flex flex-col justify-center gap-1.5">
-                                    <div className="text-[26px] font-black text-white leading-snug">
+                                <div className="px-10 py-3 border-r border-white/10 flex flex-col justify-center gap-1.5">
+                                    <div className="text-[26px] font-black text-white leading-snug break-keep">
                                         {row.chainPunch}
                                     </div>
-                                    <p className="text-[20px] text-zinc-300 leading-snug">{row.chainDetail}</p>
+                                    <p className="text-[20px] text-zinc-300 leading-snug break-keep">
+                                        {keepEnd(row.chainDetail)}
+                                    </p>
                                 </div>
 
-                                {/* 创新谷应对 */}
+                                {/* 太力应对 */}
                                 <div
-                                    className="px-6 py-3 flex flex-col justify-center gap-1.5"
+                                    className="px-10 py-3 flex flex-col justify-center gap-1.5"
                                     style={{ backgroundColor: 'rgba(245,158,11,0.06)' }}
                                 >
-                                    <div className="text-[26px] font-black text-[#F59E0B] leading-snug">
-                                        {row.suningPunch}
+                                    <div className="text-[26px] font-black text-[#F59E0B] leading-snug break-keep">
+                                        {row.ourPunch}
                                     </div>
-                                    <p className="text-[20px] text-zinc-200 leading-snug">{row.suningDetail}</p>
+                                    <p className="text-[20px] text-zinc-200 leading-snug break-keep">
+                                        {keepEnd(row.ourDetail)}
+                                    </p>
                                 </div>
                             </div>
                         ))}

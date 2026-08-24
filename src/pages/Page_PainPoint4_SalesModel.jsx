@@ -1,5 +1,38 @@
 import React from 'react';
 
+const rows = [
+    {
+        q: '太力科技是什么公司？',
+        wrong: '答成北京的太力信息（工业软件）',
+        why: '北京有同名主体，榜单挂的仍是旧名',
+        harm: '专业客户第一步就查错对象，直接流失',
+    },
+    {
+        q: '太力有多少项专利？',
+        wrong: '在 700 到 1200 之间随机取值',
+        why: '同一页并存 1200 余项与 900+ 项',
+        harm: '数字一被质疑，整套技术叙事跟着掉价',
+    },
+    {
+        q: '太力产品上过几次太空？',
+        wrong: '25、28、29、30 都能找到出处',
+        why: '官网两页分别写 31 次与 29 次',
+        harm: '最硬的一条背书，变成说不清的数字',
+    },
+    {
+        q: '太力做防弹产品吗？',
+        wrong: '答「是，已有防弹衣在售」',
+        why: '官网称防弹，年报写开发验证阶段',
+        harm: '面对军警客户，不实宣称足以推翻信任',
+    },
+    {
+        q: '太力上市了吗？业绩如何？',
+        wrong: '答「还在 IPO 排队」或业绩很好',
+        why: '过会到上市隔 18 个月，旧稿还在线',
+        harm: '投资与合作方拿到过期或片面的结论',
+    },
+];
+
 export default function Page_PainPoint4_SalesModel() {
     return (
         <div className="w-full h-full flex flex-col relative bg-black overflow-hidden text-white font-sans p-4 lg:p-6 xl:p-8">
@@ -12,10 +45,10 @@ export default function Page_PainPoint4_SalesModel() {
                         <span className="text-[#004CE5] font-black text-xl lg:text-2xl">02</span>
                     </div>
                     <h1 className="text-4xl lg:text-[42px] font-black text-white tracking-widest mb-3 lg:mb-4 leading-tight">
-                        选址强比价：同区租金同一梯度，AI 只拿单价做答案
+                        名称歧义与口径混乱：AI 抓到哪条，就把哪条当事实
                     </h1>
-                    <p className="text-zinc-400 text-[20px] lg:text-[21px] leading-relaxed max-w-[1400px] tracking-wide">
-                        创新谷、雪花科创城、甲岸美生智谷公开挂牌都在同一价格带。企业问「宝安高端产业园哪家划算」时，AI 几乎只比单价。中介页以面积和租金为主，层高、地铁、补贴、配套各写各的；挂牌价从约 35 元写到 98 元，软文甚至出现 86–138 元。抓到哪一条，就会把哪一条当成事实。
+                    <p className="text-zinc-400 text-[20px] lg:text-[21px] leading-relaxed max-w-[1400px] tracking-wide text-justify [text-justify:inter-ideograph]">
+                        太力的问题不是曝光少，而是同一个事实有太多版本，且矛盾就出现在官方自己的页面上。官网首页写「1200 余项授权专利」，同一页又写「900+ 项」，年报审计口径是 985 项；上太空次数在官网两页分别是 31 次和 29 次。AI 无法从自相矛盾的信源里提取事实，只会退回最一致的那一簇语料。
                     </p>
                 </div>
 
@@ -24,43 +57,21 @@ export default function Page_PainPoint4_SalesModel() {
                         <table className="w-full h-full text-left border-collapse">
                             <thead>
                                 <tr className="bg-white/5 border-b border-white/10 text-[18px] lg:text-[20px] font-bold text-zinc-200 tracking-wider">
-                                    <th className="py-4 px-5 lg:px-6 xl:px-7 w-[22%]">企业典型提问</th>
-                                    <th className="py-4 px-5 lg:px-6 xl:px-7 w-[28%]">AI 易给出的错误结论</th>
-                                    <th className="py-4 px-5 lg:px-6 xl:px-7 w-[22%]">混乱从哪来</th>
-                                    <th className="py-4 px-5 lg:px-6 xl:px-7 w-[28%]">对创新谷的直接伤害</th>
+                                    <th className="py-4 px-5 lg:px-6 xl:px-7 w-[22%]">客户典型提问</th>
+                                    <th className="py-4 px-5 lg:px-6 xl:px-7 w-[26%]">AI 易给出的错误结论</th>
+                                    <th className="py-4 px-5 lg:px-6 xl:px-7 w-[26%]">混乱从哪来</th>
+                                    <th className="py-4 px-5 lg:px-6 xl:px-7 w-[26%]">对太力的直接伤害</th>
                                 </tr>
                             </thead>
                             <tbody className="divide-y divide-white/5 text-[18px] lg:text-[20px]">
-                                <tr className="hover:bg-white/[0.02] transition-colors">
-                                    <td className="py-3 px-5 lg:px-6 xl:px-7 font-bold text-white leading-snug">创维创新谷租金多少一平？</td>
-                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">拿 35 元或 138 元当官方价</td>
-                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">中介挂牌跨度大，软文报价更夸张</td>
-                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">被看成「报价不靠谱」，或比成贵厂房</td>
-                                </tr>
-                                <tr className="hover:bg-white/[0.02] transition-colors">
-                                    <td className="py-3 px-5 lg:px-6 xl:px-7 font-bold text-white leading-snug">宝安高端产业园哪家划算？</td>
-                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">只按单价把三家列成同一档，或直接推雪花</td>
-                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">雪花 60–100、甲岸 65–85，房源页不写配套和政策</td>
-                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">50–72 元其实最低，却被说成偏贵或进不了推荐</td>
-                                </tr>
-                                <tr className="hover:bg-white/[0.02] transition-colors">
-                                    <td className="py-3 px-5 lg:px-6 xl:px-7 font-bold text-white leading-snug">石岩通地铁了吗？招人难不难？</td>
-                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">仍按通车前口径说石岩偏远、没地铁</td>
-                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">13 号线应人石站 2025 年 12 月才开通</td>
-                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">同区比价时，第一轮就被兴东站上盖劝退</td>
-                                </tr>
-                                <tr className="hover:bg-white/[0.02] transition-colors">
-                                    <td className="py-3 px-5 lg:px-6 xl:px-7 font-bold text-white leading-snug">入驻有没有租金补贴？</td>
-                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">把「可申报」写成「入园必给三年补贴」</td>
-                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">中介软文把园区身份夸成到账政策</td>
-                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">预期落空；省级园身份也没写进比价</td>
-                                </tr>
-                                <tr className="hover:bg-white/[0.02] transition-colors">
-                                    <td className="py-3 px-5 lg:px-6 xl:px-7 font-bold text-white leading-snug">这是写字楼还是厂房？能做中试吗？</td>
-                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">按百科写成「创维总工厂」，或按房源网写成普通甲级办公</td>
-                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">工业园、写字楼、产城综合体各写各的</td>
-                                    <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">研产客找不到，纯办公客以为是工厂</td>
-                                </tr>
+                                {rows.map((row) => (
+                                    <tr key={row.q} className="hover:bg-white/[0.02] transition-colors">
+                                        <td className="py-3 px-5 lg:px-6 xl:px-7 font-bold text-white leading-snug">{row.q}</td>
+                                        <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">{row.wrong}</td>
+                                        <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">{row.why}</td>
+                                        <td className="py-3 px-5 lg:px-6 xl:px-7 text-zinc-300 leading-relaxed">{row.harm}</td>
+                                    </tr>
+                                ))}
                             </tbody>
                         </table>
                     </div>
@@ -71,8 +82,8 @@ export default function Page_PainPoint4_SalesModel() {
                     <div className="bg-[#004CE5]/10 border border-[#004CE5]/30 px-3 py-1 rounded-lg text-[#004CE5] text-[16px] lg:text-[18px] font-black tracking-widest shrink-0 uppercase shadow-[0_0_8px_rgba(0,76,229,0.2)]">
                         解法
                     </div>
-                    <p className="text-zinc-200 text-[20px] lg:text-[21px] font-bold leading-relaxed text-justify flex-1">
-                        建立可溯源的官方口径：租金区间、层高货梯、地铁站点、政策身份、公寓商场配套分开写清楚。向 AI 输出结构化事实，让同区比价从「只比单价」变成比总持有成本，同时压制中介页里的过期报价和夸大补贴。
+                    <p className="text-zinc-200 text-[20px] lg:text-[21px] font-bold leading-relaxed text-justify [text-justify:inter-ideograph] flex-1">
+                        先立一套唯一且可溯源的官方口径：专利数、航天次数、检测认证、在售与在研分开写清，双域名和英文站同步更新，并把「太力科技」与北京同名主体做成两个明确实体。让 AI 抓到任何一页，得到的都是同一个答案。
                     </p>
                 </div>
             </div>

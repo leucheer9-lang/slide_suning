@@ -1,5 +1,16 @@
 import React from 'react';
 
+/** 末尾 2–3 字不单独掉行 */
+function keepEnd(text, n = 6) {
+    if (!text || text.length <= n) return text;
+    return (
+        <>
+            {text.slice(0, -n)}
+            <span className="whitespace-nowrap">{text.slice(-n)}</span>
+        </>
+    );
+}
+
 export default function Page_PainPoint3_Service_Solution() {
     return (
         <div className="w-full h-full flex flex-col relative bg-black overflow-hidden text-white font-sans p-4 lg:p-6 xl:p-8 pb-2.5 lg:pb-4 xl:pb-5">
@@ -12,10 +23,10 @@ export default function Page_PainPoint3_Service_Solution() {
                         <span className="text-[#004CE5] font-black text-xl lg:text-[22px]">04</span>
                     </div>
                     <h1 className="text-4xl lg:text-[44px] font-black text-white tracking-widest mb-3 leading-tight">
-                        把园区事实从第三方口径里拿回来
+                        把品牌事实从第三方口径里拿回来
                     </h1>
-                    <p className="text-zinc-400 text-[20px] lg:text-[21px] leading-relaxed max-w-[1400px] tracking-wide">
-                        租金、地铁、身份、层高这些事实，不能继续只活在中介页和旧帖里。需要一套能改错、能覆盖、能防再污染的口径治理。
+                    <p className="text-zinc-400 text-[20px] lg:text-[21px] leading-relaxed max-w-[1400px] tracking-wide text-justify [text-justify:inter-ideograph]">
+                        专利数、航天次数、检测认证、公司性质这几件事，不能继续只活在导购榜和旧百科里。需要一套能改错、能覆盖、能防再污染的口径治理。
                     </p>
                 </div>
 
@@ -24,25 +35,25 @@ export default function Page_PainPoint3_Service_Solution() {
                         {
                             step: '01',
                             title: '高频溯源',
-                            desc: '持续监测中介页、百科、问答和 AI 答案里的创新谷错误：租金、区位、工厂身份、地铁是否已通。',
+                            desc: '持续监测榜单、百科、问答和 AI 答案里的太力错误：专利数、航天次数、防弹表述、公司性质与总部所在地，每一条都记下出处。',
                         },
                         {
                             step: '02',
                             title: '物理拔除',
-                            desc: '对「距宝安中心 1 公里」、过期未通车、总工厂等错误事实，推动更正或下架，切断可被反复抓取的源头。',
+                            desc: '对旧主体名、700 项专利、「拟上市」这类过期内容推动更正或下架，同时统一旧域名与英文站口径，切断可被反复抓取的源头。',
                         },
                         {
                             step: '03',
                             title: '高维压制',
-                            desc: '投放可引用的官方口径：层高货梯、应人石站、省级园身份、创维链主事实，在权威源上盖过中介稿。',
+                            desc: '在官网补齐技术参数页与认证明细，把 985 项授权专利、警标 A 类、航天履历写成结构化网页，而不是只躺在年报里。',
                         },
                         {
                             step: '04',
                             title: '长效防御',
-                            desc: '建立园区数据库，租金、政策、交通分开更新，避免中介再把补贴写成到账、把产城写成工厂。',
+                            desc: '建立品牌数据库，在售与在研分开维护。每次航天任务、新认证、新专利都同步到全部官方阵地，避免再出现同一页两个数字。',
                         },
                     ].map((item) => (
-                        <div key={item.step} className="bg-[#0a0a0a] border border-white/10 rounded-[2rem] px-6 py-8 lg:px-7 lg:py-10 xl:px-8 xl:py-12 flex flex-col relative overflow-hidden shadow-2xl">
+                        <div key={item.step} className="bg-[#0a0a0a] border border-white/10 rounded-[2rem] px-10 py-8 lg:px-10 lg:py-10 xl:px-10 xl:py-12 flex flex-col relative overflow-hidden shadow-2xl">
                             <div className="text-[100px] lg:text-[120px] font-['AlimamaShuHeiTi'] text-white/[0.06] absolute -bottom-3 -right-1 pointer-events-none select-none leading-none">
                                 {item.step}
                             </div>
@@ -51,8 +62,8 @@ export default function Page_PainPoint3_Service_Solution() {
                                 <h3 className="text-3xl lg:text-[2.2rem] xl:text-[2.5rem] font-bold text-white tracking-widest leading-tight my-6 lg:my-8">
                                     {item.title}
                                 </h3>
-                                <p className="text-zinc-200 text-[20px] lg:text-[22px] xl:text-[1.35rem] leading-[1.7] tracking-wide flex-1">
-                                    {item.desc}
+                                <p className="text-zinc-200 text-[22px] lg:text-[24px] xl:text-[26px] leading-[1.7] tracking-wide flex-1 text-justify [text-justify:inter-ideograph]">
+                                    {keepEnd(item.desc)}
                                 </p>
                             </div>
                         </div>
@@ -64,8 +75,8 @@ export default function Page_PainPoint3_Service_Solution() {
                     <div className="bg-[#004CE5]/10 border border-[#004CE5]/30 px-3 py-1 rounded-lg text-[#004CE5] text-[16px] lg:text-[18px] font-black tracking-widest shrink-0 uppercase shadow-[0_0_8px_rgba(0,76,229,0.2)]">
                         解法
                     </div>
-                    <p className="text-zinc-200 text-[20px] lg:text-[21px] font-bold leading-relaxed text-justify flex-1">
-                        建立「高频溯源 — 物理拔除 — 高维压制 — 长效防御」四步走，把园区事实从中介页和旧帖里拿回业主侧（对齐方案第四部分）。
+                    <p className="text-zinc-200 text-[20px] lg:text-[21px] font-bold leading-relaxed text-justify [text-justify:inter-ideograph] flex-1">
+                        建立「高频溯源 — 物理拔除 — 高维压制 — 长效防御」四步走，把品牌事实从第三方口径里收回官方侧（对齐方案第四部分）。
                     </p>
                 </div>
             </div>

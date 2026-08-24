@@ -3,74 +3,66 @@ import React from 'react';
 const cols = 'grid-cols-[148px_1fr_1fr_1fr]';
 
 const brands = [
-    { name: '创维创新谷', en: 'SKYWORTH', role: '实业链主 · 已投用', highlight: true },
-    { name: '雪花科创城', en: 'CR SNOW', role: '华润产城 · 新供给' },
-    { name: '甲岸美生智谷', en: 'JIAAN', role: '工改工 · 待交付' },
+    { name: '太力科技', en: 'TAILI', role: '301595 · 转型中', highlight: true },
+    { name: '恒辉安防', en: 'HENGHUI', role: '300952 · 已交付' },
+    { name: '中科力信', en: 'CAS STF', role: '中科院系 · 未上市' },
 ];
 
 const rows = [
     {
-        label: '地缘圈层',
+        label: '主体身份',
         cells: [
-            { highlight: true, primary: '宝安石岩 · 西部制造带', secondary: '与另外两家抢同一批宝安客' },
-            { primary: '宝安新安 / 尖岗山', secondary: '更近南山，同区横向比价' },
-            { primary: '宝安新安 72 区', secondary: '西乡—新安，同片区替代' },
+            { highlight: true, primary: '创业板 301595 · 消费品起家', secondary: '2025 年上市，正在转向材料平台' },
+            { primary: '创业板 300952 · 安防材料专精', secondary: '从绳缆、手套一路做到高性能纤维' },
+            { primary: '中科院力学所团队发起', secondary: '冲击防护方向，规模小但标签清晰' },
         ],
     },
     {
-        label: '交通可达',
+        label: '核心材料',
         cells: [
-            { highlight: true, primary: '地铁 13 号线应人石站已通', secondary: '石岩到南山仍有通勤差' },
-            { primary: '地铁 5 号线兴东站上盖', secondary: '区位是它招商时的主攻点' },
-            { primary: '兴东站步行约 250 米', secondary: '交通条件接近雪花科创城' },
+            { highlight: true, primary: '剪切增稠纳米流体 + 纳米膜材', secondary: '纳米粒子已实现自主合成' },
+            { primary: 'UHMWPE 超高分子量聚乙烯纤维', secondary: '走纤维产能路线，重资产投入' },
+            { primary: '剪切增稠液体 STF', secondary: '与太力同一材料路线，正面对位' },
         ],
     },
     {
-        label: '物业形态',
+        label: '落地阶段',
         cells: [
-            { highlight: true, primary: '工业上楼 + 甲级办公 + 总部', secondary: '楼上研发、楼下中试，M1+M0' },
-            { primary: 'M1 厂房超 21 万㎡ + M0 研发', secondary: '拼承重、卸货平台、工业用电' },
-            { primary: '研发楼 + 高标准厂房 + 宿舍', secondary: '工改工，形态接近但体量小' },
+            { highlight: true, primary: '防刺割已量产在售', secondary: '机器人防护仍处客户验证阶段' },
+            { primary: '机器人关节保护件已商品化交付', secondary: '已公开披露落地，不是规划' },
+            { primary: 'STF 防护装备已产品化', secondary: '被行业报告列为国内代表企业' },
         ],
     },
     {
-        label: '体量交付',
+        label: '权威背书',
         cells: [
-            { highlight: true, stat: '45 万㎡', primary: '一期 2016 年投用，现在就能入驻' },
-            { stat: '115 万㎡', primary: '总部刚迁入，电子信息集聚还在形成' },
-            { stat: '17.5 万㎡', primary: '预计 2026 年中交付，现在搬不进去' },
+            { highlight: true, stat: '31 次', statAccent: true, primary: '进入太空；载人航天协作单位' },
+            { stat: '12.5 亿', primary: '投建万吨级纤维产线，资本市场认的是产能' },
+            { stat: '中科院', primary: '力学所技术出身，行业共识里的抗冲击龙头' },
         ],
     },
     {
-        label: '产业基因',
+        label: '内容资产',
         cells: [
-            { highlight: true, primary: '创维链主：5G+8K / 电子信息', secondary: '同链近 90 家，彩电全球总部在园' },
-            { primary: '华润啤酒总部 + 智能装备', secondary: '圈层对不上电子配套商' },
-            { primary: '智能制造 / 电子信息', secondary: '无链主，也还没有存量租户生态' },
+            { highlight: true, primary: '官网无技术参数页与白皮书', secondary: '可引用的技术材料几乎只在年报里' },
+            { primary: '官网技术稿 + 投资者互动高频回复', secondary: '每条进展都有可检索的出处' },
+            { primary: '技术专栏 + 多份行业报告点名', secondary: '媒体专访反复强化同一套口径' },
         ],
     },
     {
-        label: '租金梯度',
+        label: 'AI 答案位置',
         cells: [
-            { highlight: true, stat: '50–72 元', statAccent: true, primary: '公开挂牌 /㎡·月，三家最低' },
-            { stat: '60–100 元', primary: '同一价格带；客户拿这张单来压价' },
-            { stat: '65–85 元', primary: '研发楼报价；单价接近，配套更薄' },
+            { highlight: true, primary: '问收纳必答，问防护材料零出现', secondary: '行业分类被归到轻工制造 / 家居用品' },
+            { primary: '问机器人防护材料必被点名', secondary: '稳定出现在前排答案' },
+            { primary: '问 STF 产业化的默认答案', secondary: '几乎垄断这个词的解释权' },
         ],
     },
     {
-        label: '配套留人',
+        label: '营收基本盘',
         cells: [
-            { highlight: true, primary: '商场 + 1,500 套公寓 + 亚朵', secondary: '石岩少有的办住商酒闭环' },
-            { primary: '啤酒小镇 + 产业宿舍 + 华润运营', secondary: '配套在，电子信息氛围还没起来' },
-            { primary: '人才公寓约 181 套 + 商业约 2,000㎡', secondary: '能住，接待和留人体量差一截' },
-        ],
-    },
-    {
-        label: '政策身份',
-        cells: [
-            { highlight: true, primary: '省级特色产业园 + 科技桃花源', secondary: '2023 年当年深圳唯一，补贴可申报' },
-            { primary: '华润品牌招商，无省级园身份', secondary: '靠央企背书，不靠可申报名额' },
-            { primary: '工改工综合体，无省级园身份', secondary: '租金补贴和落户奖励叠不上' },
+            { highlight: true, stat: '约 85%', primary: '来自家居收纳；防护约一成，增速最快' },
+            { stat: '同源', primary: '安防主业与机器人新赛道同一条材料线' },
+            { stat: '未公开', primary: '体量小，但赛道标签没有杂音' },
         ],
     },
 ];
@@ -117,7 +109,7 @@ export default function Page_BrandCompetitors() {
                     核心竞品对比分析
                 </h1>
                 <p className="text-zinc-400 text-[20px] leading-snug">
-                    竞品不是谁名气大，而是谁在抢同一批宝安硬科技租户
+                    收纳类目太力已是第一；真正要争的是防护与材料赛道，而那里 AI 已经有了默认答案
                 </p>
             </div>
 
@@ -153,7 +145,7 @@ export default function Page_BrandCompetitors() {
                         className="flex-1 min-h-0 grid"
                         style={{ gridTemplateRows: `repeat(${rows.length}, minmax(0, 1fr))` }}
                     >
-                        {rows.map((row, ri) => (
+                        {rows.map((row) => (
                             <div
                                 key={row.label}
                                 className={`grid ${cols} min-h-0 border-b border-white/10 last:border-b-0`}
@@ -172,13 +164,13 @@ export default function Page_BrandCompetitors() {
                 </div>
 
                 <div className="shrink-0 mt-2 bg-[#004CE5]/10 border border-[#004CE5]/30 rounded-xl px-5 py-2 flex items-center gap-4">
-                    <span className="text-[#4B8BFF] text-[16px] font-black tracking-widest shrink-0">招商含义</span>
+                    <span className="text-[#4B8BFF] text-[16px] font-black tracking-widest shrink-0">策略含义</span>
                     <p className="text-zinc-200 text-[20px] font-semibold leading-snug">
-                        三家抢的是同一客群：要宝安政策、要研产一体、对成本敏感的硬科技企业。后页拆开看雪花、甲岸怎么截流，以及创新谷怎么对位。
+                        太力的材料能力不比对手弱，缺的是可被引用的证据链。恒辉用「已交付」压掉「在验证」，中科力信用中科院背书占住 STF 的解释权。
                     </p>
                 </div>
                 <p className="shrink-0 pt-1.5 text-right text-zinc-500 text-[15px] leading-relaxed">
-                    数据来源：广东省工信厅 2023 特色产业园名单、华润置地公开信息、深圳房地产信息网及各园区公开招商信息；租金为市场挂牌区间，非合同成交价
+                    数据来源：太力科技官网及公开披露文件、恒辉安防公开公告、新思界产业研究与券商行业研究报告；竞品资料均取自公开渠道
                 </p>
             </div>
         </div>

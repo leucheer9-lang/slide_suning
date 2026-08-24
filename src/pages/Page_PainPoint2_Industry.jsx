@@ -2,32 +2,32 @@ import React from 'react';
 
 const scenes = [
     {
-        scene: '宝安高端产业园推荐哪个？',
-        ai: '雪花科创城',
-        status: '华润品牌和总部南迁报道更密，石岩被写成工厂区',
+        scene: '防刺服 / 防割手套哪个好？',
+        ai: '中天锋、安思尔',
+        status: '产品已在售并过警标，十大品牌榜里一次没出现',
     },
     {
-        scene: '宝安工业上楼去哪？',
-        ai: '雪花科创城',
-        status: '新供给招商稿先占住这个词，已投用的研发上楼缺席',
+        scene: '国产纳米材料公司有哪些？',
+        ai: '德方纳米',
+        status: '官网主打高性能纳米材料，推荐名单里完全没有',
     },
     {
-        scene: '宝安哪里适合硬科技总部？',
-        ai: '新安 / 尖岗山',
-        status: '雪花更近南山；石岩通勤差的旧印象还在',
+        scene: '机器人防护材料找谁？',
+        ai: '恒辉安防',
+        status: '恒辉已公告商品化交付，太力还在客户验证阶段',
     },
     {
-        scene: '宝安电子信息 / 超高清园区',
-        ai: '尚有空位',
-        status: '省级特色产业园身份在，但可引用的选址内容仍薄',
+        scene: '航天材料供应商有哪些？',
+        ai: '西部材料',
+        status: '独家供应资格在手，却被归进轻工制造捞不出来',
     },
 ];
 
 const gaps = [
-    { title: '创维链主在场', desc: '彩电全球总部、同链近 90 家在园。AI 很少把「挨着创维做生意」写成选高端园的理由' },
-    { title: '现在就能入驻', desc: '一期 2016 年已投用。雪花电子信息集聚还在形成，甲岸预计 2026 年中才交' },
-    { title: '省级园 + 科技桃花源', desc: '2023 年深圳唯一省级特色产业园。高端园推荐和中介页几乎不提这层身份' },
-    { title: '办住商酒闭环', desc: '商场 + 1,500 套公寓 + 亚朵，是石岩少有的高端配套；AI 仍按工业区来写' },
+    { title: '航天独家供应资格', desc: '连续 16 年保障载人航天任务，却没有一份航天材料名单提到过它' },
+    { title: '纳米粒子自主合成', desc: '公司称单位成本降 90% 以上、打破进口垄断，只有一份券商研报写过' },
+    { title: '检测已过警标美标', desc: '防刺通过警标 A 类与美标防刀、防锥测试，官网没有参数页承接' },
+    { title: '国际零售供应链在手', desc: '宜家指定材料、三大零售商吸盘唯一供应商，公开内容几乎不提' },
 ];
 
 export default function Page_PainPoint2_Industry() {
@@ -42,24 +42,24 @@ export default function Page_PainPoint2_Industry() {
                         <span className="text-[#004CE5] font-black text-xl lg:text-2xl">03</span>
                     </div>
                     <h1 className="text-[32px] lg:text-[36px] font-black text-white tracking-wide mb-1.5 leading-tight whitespace-nowrap">
-                        头部园区占位：「宝安高端产业园」推荐被雪花科创城占满
+                        头部问题占位：四类推荐名单里，太力全部缺席
                     </h1>
                     <p className="text-zinc-400 text-[20px] leading-snug tracking-wide text-justify [text-justify:inter-ideograph]">
-                        真正抢同一批客的赛场在宝安，不在南山或坂田。问「宝安高端产业园 / 工业上楼」，出镜最多的是雪花科创城。创新谷进不了同区第一轮推荐。
+                        决定新定位能不能立住的赛场就是这四个问题。太力在其中两项上有别人没有的履历，却一份名单都没进——因为它被行业分类归入轻工制造，任何新材料、航天、机器人的筛选器都捞不到它。
                     </p>
                 </div>
 
                 <div className="flex-1 min-h-0 grid grid-cols-2 gap-5 pb-2.5">
-                    <div className="min-h-0 bg-[#0a0a0a] border border-white/10 rounded-[1.5rem] px-6 py-5 flex flex-col">
+                    <div className="min-h-0 bg-[#0a0a0a] border border-white/10 rounded-[1.5rem] px-10 py-5 flex flex-col">
                         <div className="text-zinc-200 font-bold text-[20px] mb-2.5 tracking-wider flex items-center gap-2 shrink-0">
                             <span className="w-2 h-5 bg-[#004CE5] rounded-full"></span>
-                            同区高端园推荐里的声量格局
+                            四类头部问题里的声量格局
                         </div>
                         <div className="flex-1 min-h-0 grid grid-rows-[auto_repeat(4,minmax(0,1fr))] border border-white/5 rounded-xl overflow-hidden bg-black/40">
                             <div className="grid grid-cols-[1.15fr_0.85fr_1.2fr] bg-white/5 border-b border-white/10 text-zinc-400 font-semibold tracking-wide text-[16px]">
                                 <div className="py-2 px-4 border-r border-white/5">决策场景</div>
                                 <div className="py-2 px-4 text-center border-r border-white/5">AI 默认倾向</div>
-                                <div className="py-2 px-4">创新谷处境</div>
+                                <div className="py-2 px-4">太力处境</div>
                             </div>
                             {scenes.map((row, idx) => (
                                 <div
@@ -82,16 +82,16 @@ export default function Page_PainPoint2_Industry() {
                         </div>
                     </div>
 
-                    <div className="min-h-0 bg-[#0a0a0a] border border-white/10 rounded-[1.5rem] px-6 py-5 flex flex-col">
+                    <div className="min-h-0 bg-[#0a0a0a] border border-white/10 rounded-[1.5rem] px-10 py-5 flex flex-col">
                         <div className="text-zinc-200 font-bold text-[20px] mb-2.5 tracking-wider flex items-center gap-2 shrink-0">
                             <span className="w-2 h-5 bg-[#004CE5] rounded-full"></span>
-                            创新谷差异化优势 vs AI 声量缺口
+                            太力真实优势 vs AI 声量缺口
                         </div>
                         <div className="flex-1 min-h-0 grid grid-rows-4 gap-2.5">
                             {gaps.map((item, idx) => (
                                 <div
                                     key={item.title}
-                                    className="min-h-0 bg-black/40 border border-white/10 rounded-xl px-4 flex items-center gap-4"
+                                    className="min-h-0 bg-black/40 border border-white/10 rounded-xl px-6 flex items-center gap-4"
                                 >
                                     <div className="text-[#004CE5] font-black text-[22px] shrink-0 w-8">
                                         {String(idx + 1).padStart(2, '0')}
@@ -113,8 +113,8 @@ export default function Page_PainPoint2_Industry() {
                     <div className="bg-[#004CE5]/10 border border-[#004CE5]/30 px-3 py-1 rounded-lg text-[#004CE5] text-[16px] font-black tracking-widest shrink-0 uppercase shadow-[0_0_8px_rgba(0,76,229,0.2)]">
                         解法
                     </div>
-                    <p className="text-zinc-200 text-[20px] font-bold leading-snug text-justify flex-1">
-                        不跟天安云谷抢「深圳产业园」总词，也不跟南山硬拼科技园办公。先把「宝安高端产业园 / 工业上楼 / 研产一体」写成可引用内容：创维总部园、现在就能入驻、省级园身份、公寓商场配套，让问宝安高端园的企业先落到创新谷，而不是只看到雪花。
+                    <p className="text-zinc-200 text-[20px] font-bold leading-snug text-justify [text-justify:inter-ideograph] flex-1">
+                        不去硬拼「国产纳米材料龙头」这类总词。先把最有实据的两条打进名单——航天真空封装与防刺割检测，用可核查的参数和认证编号占位，再往机器人防护和新能源材料延伸。
                     </p>
                 </div>
             </div>

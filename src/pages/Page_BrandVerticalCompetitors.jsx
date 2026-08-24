@@ -14,39 +14,45 @@ function keepEnd(text, n = 3) {
 const competitors = [
     {
         no: '01',
-        title: '华润产城品牌截流',
-        hook: '新闻就能带客上门',
-        platforms: ['雪花科创城', '华润置地招商'],
+        title: '榜单锁定身份',
+        hook: '导购站就是标准答案',
+        platforms: ['十大品牌榜', 'CNPP / 买购', '中国品牌网'],
         accent: '#F97316',
         accentSoft: 'rgba(249,115,22,0.15)',
-        playPunch: '总部南迁报道\n先占住「宝安工业上楼」',
-        playDetail: '华润啤酒总部刚迁入，媒体和官网口径清晰。客户还没比链主和交付，搜索和 AI 里先看到了尖岗山。',
-        threatPunch: '电子配套客\n也被它截进比价',
-        threatDetail: '圈层是啤酒和智能装备，对不上创维链。但品牌声量更大，问工业上楼时它先出镜，创新谷变成后补选项。',
+        playPunch: '收纳榜稳居第一\n代价是被写成「家庭用品企业」',
+        playDetail:
+            '这类榜单互相抄写、覆盖极广，而页面上挂靠的主体介绍一律是「塑料家庭用品」。材料与防护的新身份，在这里完全没有位置。',
+        threatPunch: '想被认成材料公司\n榜单先把你钉回收纳',
+        threatDetail:
+            '第一名是真实的，但它锁定的正是太力要摆脱的那个身份。AI 抓到的第一批语料，几乎全部出自这里。',
     },
     {
         no: '02',
-        title: '工改工同形态截流',
-        hook: '在中介页做成替代',
-        platforms: ['甲岸美生智谷', '新安 72 区'],
+        title: '白牌低价比价',
+        hook: '同一页里只剩单价',
+        platforms: ['工厂店 / 白牌', '抖音低价链接', '同规格比价'],
         accent: '#EC4899',
         accentSoft: 'rgba(236,72,153,0.15)',
-        playPunch: '研发楼 + 厂房 + 宿舍\n看起来就能换',
-        playDetail: '写字楼网只露出面积、单价和兴东站 250 米。没有链主、2026 年中才交、配套更薄，房源页上都看不出来。',
-        threatPunch: '同片区名单里\n它先被写成下一站',
-        threatDetail: '创新谷若同样只露出报价，就会被比成石岩那一栋，而不是创维总部园。选址表会先把它写上。',
+        playPunch: '同规格价格腰斩\nAI 只拿单价做推荐',
+        playDetail:
+            '收纳类目高度同质化，详情页能讲的只有尺寸和价格。航天级材料、行业标准、4 倍抗穿刺，都进不了比价这张表。',
+        threatPunch: '贵在哪里说不清\n就会被当成溢价',
+        threatDetail:
+            '消费者真正在意的是漏不漏气、能不能反复用。这些恰好是太力的强项，却没被写成可被引用的结构化事实。',
     },
     {
         no: '03',
-        title: '同一价格带压价',
-        hook: '用报价单来谈创新谷',
-        platforms: ['雪花 60–100 元', '甲岸 65–85 元'],
+        title: '赛道答案被占',
+        hook: '问了也点不到太力',
+        platforms: ['恒辉安防', '中科力信', '安思尔 / 霍尼韦尔'],
         accent: '#F59E0B',
         accentSoft: 'rgba(245,158,11,0.15)',
-        playPunch: '三家租金同一梯度\n拿另外两家的单就能压价',
-        playDetail: '公开渠道几乎只比单价。工业上楼、1,500 套公寓、商场和省级园身份，很少被写进房源页。',
-        threatPunch: '只比单价时\n配套和政策都看不见',
-        threatDetail: '50–72 元其实是三家最低。如果不把留人和补贴算进总持有成本，创新谷就会被说成偏贵。',
+        playPunch: '机器人防护已交付\nSTF 有中科院背书',
+        playDetail:
+            '对手把「已落地」和「有出身」写成了可检索的事实。问机器人防护材料、问 STF 产业化，答案稳定落在他们身上。',
+        threatPunch: '太力在同类问题里\n一次都不会被点名',
+        threatDetail:
+            '不是能力不够，是证据没上线。防刺割已达国标美标顶级、纳米粒子已自主合成，这些话在公开网上找不到出处。',
     },
 ];
 
@@ -57,10 +63,10 @@ export default function Page_BrandVerticalCompetitors() {
 
             <div className="shrink-0 text-center pt-3 pb-2 relative z-10 px-8">
                 <h1 className="text-[40px] font-black text-white tracking-widest leading-none mb-1.5">
-                    同一批宝安客，谁在截流？
+                    同一批客户，谁在截流？
                 </h1>
                 <p className="text-zinc-400 text-[20px] leading-snug max-w-[1100px] mx-auto">
-                    雪花科创城和甲岸美生智谷，用品牌、房源和报价三刀来抢——不是三场比赛，是同一张选址表
+                    榜单、比价页和赛道答案三处同时发力——不是三场比赛，是同一条决策路径
                 </p>
             </div>
 
@@ -118,7 +124,7 @@ export default function Page_BrandVerticalCompetitors() {
                                 className="text-[16px] font-black tracking-widest"
                                 style={{ color: c.accent }}
                             >
-                                对创新谷的威胁
+                                对太力的威胁
                             </div>
                             <div className="text-[28px] font-black text-white leading-snug whitespace-pre-line break-keep">
                                 {c.threatPunch}
