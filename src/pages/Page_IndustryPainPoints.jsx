@@ -36,9 +36,9 @@ const cards = [
     {
         no: '04',
         pos: 'bottom',
-        kicker: '官方口径自相矛盾',
-        lines: ['专利数、上太空次数、', '防弹表述互相打架'],
-        punch: '同一个页面写了两个专利数，AI 只会退回旧语料',
+        kicker: '公开语料被第三方占据',
+        lines: ['导购榜、旧百科和旧站', '在替太力发言'],
+        punch: '官网没有参数页承接，AI 只能引用过时的收纳口径',
     },
 ];
 
@@ -57,7 +57,7 @@ export default function Page_IndustryPainPoints() {
                         <strong className="text-[#004CE5]">
                             「防刺服哪家能过警标、机器人防护材料找谁、这家公司到底做什么」
                         </strong>
-                        。从身份、名称、名单和口径四个角度看，太力在 GEO 里会先撞上这四件事：
+                        。从身份、名称、名单和语料四个角度看，太力在 GEO 里会先撞上这四件事：
                     </p>
                 </div>
 

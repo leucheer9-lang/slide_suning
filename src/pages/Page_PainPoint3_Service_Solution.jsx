@@ -26,7 +26,7 @@ export default function Page_PainPoint3_Service_Solution() {
                         把品牌事实从第三方口径里拿回来
                     </h1>
                     <p className="text-zinc-400 text-[20px] lg:text-[21px] leading-relaxed max-w-[1400px] tracking-wide text-justify [text-justify:inter-ideograph]">
-                        专利数、航天次数、检测认证、公司性质这几件事，不能继续只活在导购榜和旧百科里。需要一套能改错、能覆盖、能防再污染的口径治理。
+                        公司性质、主体名称、检测认证、技术履历这几件事，不能继续只活在导购榜和旧百科里。需要一套能改错、能覆盖、能防再污染的口径治理。
                     </p>
                 </div>
 
@@ -35,22 +35,22 @@ export default function Page_PainPoint3_Service_Solution() {
                         {
                             step: '01',
                             title: '高频溯源',
-                            desc: '持续监测榜单、百科、问答和 AI 答案里的太力错误：专利数、航天次数、防弹表述、公司性质与总部所在地，每一条都记下出处。',
+                            desc: '持续监测榜单、百科、问答和 AI 答案里的太力错误：公司性质、主体名称、总部所在地、上市状态，每一条都记下出处和抓取时间。',
                         },
                         {
                             step: '02',
                             title: '物理拔除',
-                            desc: '对旧主体名、700 项专利、「拟上市」这类过期内容推动更正或下架，同时统一旧域名与英文站口径，切断可被反复抓取的源头。',
+                            desc: '对旧主体名、「拟上市」、家庭用品制造这类过期表述推动更正或下架，同时收敛旧域名与英文站，切断可被反复抓取的源头。',
                         },
                         {
                             step: '03',
                             title: '高维压制',
-                            desc: '在官网补齐技术参数页与认证明细，把 985 项授权专利、警标 A 类、航天履历写成结构化网页，而不是只躺在年报里。',
+                            desc: '在官网补齐技术参数页与认证明细，把授权专利、警标 A 类检测、航天履历写成结构化网页，让 AI 有官方出处可以直接引用。',
                         },
                         {
                             step: '04',
                             title: '长效防御',
-                            desc: '建立品牌数据库，在售与在研分开维护。每次航天任务、新认证、新专利都同步到全部官方阵地，避免再出现同一页两个数字。',
+                            desc: '建立品牌数据库，在售与在研分开维护。每次航天任务、新认证、新专利都同步到全部官方阵地，让各处口径始终保持一致。',
                         },
                     ].map((item) => (
                         <div key={item.step} className="bg-[#0a0a0a] border border-white/10 rounded-[2rem] px-10 py-8 lg:px-10 lg:py-10 xl:px-10 xl:py-12 flex flex-col relative overflow-hidden shadow-2xl">
